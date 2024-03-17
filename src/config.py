@@ -1,6 +1,7 @@
 
 # Imports
 import datetime
+import imageio
 import shutil
 import json
 import io
@@ -33,12 +34,15 @@ RESOURCE_PACK_FORMAT = 28
 DATA_VERSION = 3823	# 24w11a
 
 # Other constants
-OVERRIDE_FOLDER = "override"
-BUILD_FOLDER = "build"
-TEXTURES_FOLDER = "textures"
+ROOT = "/".join(os.path.dirname(os.path.abspath(__file__)).replace("\\", "/").split("/")[:-1])
+OVERRIDE_FOLDER = f"{ROOT}/override"
+BUILD_FOLDER = f"{ROOT}/build"
+TEXTURES_FOLDER = f"{ROOT}/textures"
 DATAPACK_NAME = "ImagineYourCraft"
 AUTHOR = "Stoupy51"
 DESCRIPTION = f"{DATAPACK_NAME} [{VERSION}] by {AUTHOR}"
+BUILD_DATAPACK = f"{BUILD_FOLDER}/datapack"
+BUILD_RESOURCE_PACK = f"{BUILD_FOLDER}/resource_pack"
 BUILD_COPY_DESTINATIONS = ("D:/5) Energy System/world/datapacks", "C:/Users/Alexandre-PC/AppData/Roaming/.minecraft/1.13+/resourcepacks")
 DATABASE = {}
 DATABASE_DEBUG = "database_debug.json"
@@ -46,22 +50,5 @@ DATABASE_DEBUG = "database_debug.json"
 # Technical constants
 CUSTOM_BLOCK_VANILLA = "minecraft:barrel"
 CUSTOM_ITEM_VANILLA = "minecraft:command_block"
-
-# For easy file management
-def super_open(file_path: str, mode: str) -> io.TextIOWrapper:
-	""" Open a file with the given mode, creating the directory if it doesn't exist
-	Args:
-		file_path	(str): The path to the file
-		mode		(str): The mode to open the file with, ex: "w", "r", "a", "wb", "rb", "ab"
-	Returns:
-		open: The file object, ready to be used
-	"""
-	# Make directory
-	os.makedirs(os.path.dirname(file_path), exist_ok=True)
-
-	# Open file and return
-	return open(file_path, mode, encoding="utf-8") # Always use utf-8 encoding to avoid issues
-ROOT = "/".join(os.path.dirname(os.path.abspath(__file__)).replace("\\", "/").split("/")[:-1])
-BUILD_DATAPACK = f"{ROOT}/{BUILD_FOLDER}/datapack"
-BUILD_RESOURCE_PACK = f"{ROOT}/{BUILD_FOLDER}/resource_pack"
+CRAFTING_RECIPES = "result_of_crafting"
 

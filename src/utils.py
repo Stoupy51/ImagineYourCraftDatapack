@@ -14,3 +14,18 @@ def ingredient_repr(id: str, count: int|None = None) -> dict:
 	else:
 		return {"Count": count, "custom_data": f"{NAMESPACE}.{id}"}
 
+# For easy file management
+def super_open(file_path: str, mode: str) -> io.TextIOWrapper:
+	""" Open a file with the given mode, creating the directory if it doesn't exist
+	Args:
+		file_path	(str): The path to the file
+		mode		(str): The mode to open the file with, ex: "w", "r", "a", "wb", "rb", "ab"
+	Returns:
+		open: The file object, ready to be used
+	"""
+	# Make directory
+	os.makedirs(os.path.dirname(file_path), exist_ok=True)
+
+	# Open file and return
+	return open(file_path, mode, encoding="utf-8") # Always use utf-8 encoding to avoid issues
+

@@ -4,14 +4,14 @@ from src.importer import *
 
 # Copy override folder content to build
 print()
-if os.path.exists(f"{ROOT}/{OVERRIDE_FOLDER}"):
-	shutil.copytree(f"{ROOT}/{OVERRIDE_FOLDER}", f"{ROOT}/{BUILD_FOLDER}", dirs_exist_ok = True)
+if os.path.exists(f"{OVERRIDE_FOLDER}"):
+	shutil.copytree(f"{OVERRIDE_FOLDER}", f"{BUILD_FOLDER}", dirs_exist_ok = True)
 	info(f"Override folder content copied to build folder")
 
 
 # Generate zip files
-datapack_path = f"{ROOT}/{BUILD_FOLDER}/{DATAPACK_NAME}_datapack"
-resourcepack_path = f"{ROOT}/{BUILD_FOLDER}/{DATAPACK_NAME}_resource_pack"
+datapack_path = f"{BUILD_FOLDER}/{DATAPACK_NAME}_datapack"
+resourcepack_path = f"{BUILD_FOLDER}/{DATAPACK_NAME}_resource_pack"
 if os.path.exists(BUILD_DATAPACK):
 	shutil.make_archive(datapack_path, 'zip', BUILD_DATAPACK)
 	info(f"Datapack zip file generated at '{datapack_path.replace(f'{ROOT}/','')}.zip'")

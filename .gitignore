@@ -1,4 +1,6 @@
 
 *__pycache__/
 build
+items.json
+database_debug.json
 

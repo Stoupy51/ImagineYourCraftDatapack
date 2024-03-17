@@ -35,10 +35,16 @@ DATA_VERSION = 3823	# 24w11a
 # Other constants
 OVERRIDE_FOLDER = "override"
 BUILD_FOLDER = "build"
-NAME = "ImagineYourCraft"
+TEXTURES_FOLDER = "textures"
+DATAPACK_NAME = "ImagineYourCraft"
 AUTHOR = "Stoupy51"
-DESCRIPTION = f"{NAME} [{VERSION}] by {AUTHOR}"
+DESCRIPTION = f"{DATAPACK_NAME} [{VERSION}] by {AUTHOR}"
 BUILD_COPY_DESTINATIONS = ("D:/5) Energy System/world/datapacks", "C:/Users/Alexandre-PC/AppData/Roaming/.minecraft/1.13+/resourcepacks")
+DATABASE = {}
+
+# Technical constants
+CUSTOM_BLOCK_VANILLA = "minecraft:barrel"
+CUSTOM_ITEM_VANILLA = "minecraft:command_block"
 
 # For easy file management
 def super_open(file_path: str, mode: str) -> io.TextIOWrapper:

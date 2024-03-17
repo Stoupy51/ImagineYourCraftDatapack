@@ -10,8 +10,8 @@ if os.path.exists(f"{ROOT}/{OVERRIDE_FOLDER}"):
 
 
 # Generate zip files
-datapack_path = f"{ROOT}/{BUILD_FOLDER}/{NAME}_datapack"
-resourcepack_path = f"{ROOT}/{BUILD_FOLDER}/{NAME}_resource_pack"
+datapack_path = f"{ROOT}/{BUILD_FOLDER}/{DATAPACK_NAME}_datapack"
+resourcepack_path = f"{ROOT}/{BUILD_FOLDER}/{DATAPACK_NAME}_resource_pack"
 if os.path.exists(BUILD_DATAPACK):
 	shutil.make_archive(datapack_path, 'zip', BUILD_DATAPACK)
 	info(f"Datapack zip file generated at '{datapack_path.replace(f'{ROOT}/','')}.zip'")

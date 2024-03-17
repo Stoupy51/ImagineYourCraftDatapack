@@ -92,15 +92,6 @@ for ore in ores:
 			DATABASE[item]["id"] = f"minecraft:diamond_{gear}"	# Diamond tools by default
 		DATABASE[item]["smithed"] = {}
 		DATABASE[item]["smithed"]["dict"] = {armor_or_tools: {ore: 1, gear: 1}}
-		"""
-		"crafting": [
-			{"type": "shaped", "result_count": 1, "ingredients": {
-				"0":[{"Slot":0,"tag":{"smithed":{"dict":{"ingot":{"simplunium":1}}}}},{"Slot":1,"tag":{"smithed":{"dict":{"ingot":{"simplunium":1}}}}},{"Slot":2,"tag":{"smithed":{"dict":{"ingot":{"simplunium":1}}}}}],
-				"1":[{"Slot":0,"tag":{"smithed":{"dict":{"ingot":{"simplunium":1}}}}},{"Slot":1,"id":"minecraft:air"},{"Slot":2,"tag":{"smithed":{"dict":{"ingot":{"simplunium":1}}}}}]
-			}}
-		]
-		"""
-		DATABASE[item][CRAFTING_RECIPES] = []
 		craft_gear = None
 		ingr = f"{ore}_ingot" if f"{ore}_ingot.png" in textures_filenames else ore	# Check if it's an ingot or no
 		if gear == "helmet":
@@ -122,8 +113,8 @@ for ore in ores:
 		elif gear == "hoe":
 			craft_gear = {"type": "shaped", "result_count": 1, "shape": "XX  S  S ", "ingredients": {"X": ingredient_repr(ingr), "S": {"id":"minecraft:stick"}}}
 		if craft_gear:
-			DATABASE[item][CRAFTING_RECIPES].append(str(craft_gear))
-		
+			DATABASE[item][CRAFTING_RECIPES] = [str(craft_gear)]
+
 		# If armor, get color and put it in display
 		if armor_or_tools == "armor" and color:
 			if not DATABASE[item].get("display"):

@@ -33,7 +33,7 @@ info("Vanilla models created")
 os.makedirs(f"{BUILD_RESOURCE_PACK}/assets/{NAMESPACE}/textures/block", exist_ok=True)
 os.makedirs(f"{BUILD_RESOURCE_PACK}/assets/{NAMESPACE}/textures/item", exist_ok=True)
 faces = ["down", "up", "north", "south", "west", "east"]
-sides = ["side", "top", "bottom", "front", "back"]
+sides = ["side", "top", "bottom", "front", "back", "inner"]
 for item, data in DATABASE.items():
 	block_or_item = "block" if data["id"] == "minecraft:barrel" else "item"
 

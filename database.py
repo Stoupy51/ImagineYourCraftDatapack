@@ -182,7 +182,7 @@ for texture in textures_filenames:
 	path = f"{TEXTURES_FOLDER}/{texture}".replace(f"{ROOT}/","")
 	warning(f"Texture '{path}' is not used in the database")
 	pass
-info("Database generated, here are the keys: " + ", ".join(shuffled(list(DATABASE.keys()))[:8]) + "...")
+info("Database generated, here are the keys: " + ", ".join(shuffled(list(DATABASE.keys()))[:7]) + "...")
 
 # Export database to JSON for debugging generation
 with open(DATABASE_DEBUG, "w") as f:

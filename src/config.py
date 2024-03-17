@@ -53,4 +53,5 @@ SOURCE_LORE = f'[{{"text":"{DATAPACK_NAME}","italic":true,"color":"blue"}}]'
 CUSTOM_BLOCK_VANILLA = "minecraft:barrel"
 CUSTOM_ITEM_VANILLA = "minecraft:command_block"
 CRAFTING_RECIPES = "result_of_crafting"
+random.seed(3)
 

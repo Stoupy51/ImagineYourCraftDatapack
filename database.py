@@ -38,13 +38,10 @@ for ore in ores:
 		if placeable == "block":
 			if f"{ore}_ingot.png" in textures_filenames:
 				DATABASE[block]["result_of_crafting"].append(str({"type":"shapeless", "result_count": 1, "ingredients": [{"Count":9, "custom_data":f"{NAMESPACE}.{ore}_ingot"}]}))
+			if f"{ore}_fragment.png" in textures_filenames:
+				DATABASE[block]["result_of_crafting"].append(str({"type":"shapeless", "result_count": 1, "ingredients": [{"Count":9, "custom_data":f"{NAMESPACE}.{ore}_fragment"}]}))
 			if f"{ore}.png" in textures_filenames:
-				DATABASE[block]["result_of_crafting"].append(str({"type":"shapeless", "result_count": 1, "ingredients": [{"Count":9, "custom_data":f"{NAMESPACE}.{ore}"}]}))
-
-		
-		# If no crafting, remove
-		if not DATABASE[block]["result_of_crafting"]:
-			del DATABASE[block]["result_of_crafting"]
+				DATABASE[block]["result_of_crafting"].append(str({"type":"shapeless", "result_count": 1, "ingredients": [{"Count":9, "custom_data":f"{NAMESPACE}.{ore}"}]}))		
 		pass
 	
 	# Ingredients (ingot, nugget, raw, and other)
@@ -73,16 +70,20 @@ for ore in ores:
 
 			# Crafting
 			DATABASE[item]["result_of_crafting"] = []
-
-			# If no crafting, remove
-			if not DATABASE[item]["result_of_crafting"]:
-				del DATABASE[item]["result_of_crafting"]
+			if ingredient == "ingot" or ingredient == "":
+				DATABASE[item]["result_of_crafting"] += [
+					str({"type":"shapeless", "result_count": 1, "ingredients": [{"Count":9, "custom_data":f"{NAMESPACE}.{item}"}]}),
+				]
 		pass
 
 	# Armors
 
 	pass
 
+# If no crafting, remove
+for k in DATABASE.keys():
+	if not DATABASE[k]["result_of_crafting"]:
+		del DATABASE[k]["result_of_crafting"]
 
 
 # Print not used textures and then all the keys
@@ -95,9 +96,9 @@ info("Database generated, here are the keys:\n" + ", ".join(DATABASE.keys()))
 
 # Export database to JSON for debugging generation
 with open(DATABASE_DEBUG, "w") as f:
-	deep_copy = json.loads(json.dumps(DATABASE))	# Deep copy to avoid modifying the original database
 	
 	# Adjustments for better readability
+	deep_copy = json.loads(json.dumps(DATABASE))	# Deep copy to avoid modifying the original database
 	for k in deep_copy.keys():
 		deep_copy[k]["smithed"] = str(deep_copy[k]["smithed"])
 		deep_copy[k]["display"] = str(deep_copy[k]["display"])

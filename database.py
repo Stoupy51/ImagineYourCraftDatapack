@@ -164,6 +164,8 @@ for k in DATABASE.keys():
 		DATABASE[k]["display"]["Lore"] = [SOURCE_LORE]
 	else:
 		DATABASE[k]["display"]["Lore"].append(SOURCE_LORE)
+	if not DATABASE[k].get("custom_model_data"):
+		DATABASE[k]["custom_model_data"] = "PREFIX_XXX"
 
 	# Private custom_data for
 	DATABASE[k][NAMESPACE] = {k:1}

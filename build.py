@@ -8,6 +8,9 @@ from src.initialize import *
 # Generate items/blocks database
 from database import *
 
+# Generate resource pack
+from src.resource_pack import *
+
 # Finalyze build process
 from src.finalyze import *
 

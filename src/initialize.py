@@ -1,6 +1,6 @@
 
 # Import config
-from src.config import *
+from src.importer import *
 
 # Delete build folder and database_debug
 print()

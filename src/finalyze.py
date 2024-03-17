@@ -1,6 +1,6 @@
 
 # Import config
-from src.config import *
+from src.importer import *
 
 # Copy override folder content to build
 print()

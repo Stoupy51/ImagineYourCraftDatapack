@@ -1,6 +1,6 @@
 
 # Imports
-from src.config import *
+from src.importer import *
 
 # Initialize build process
 from src.initialize import *

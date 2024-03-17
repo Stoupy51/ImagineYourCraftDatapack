@@ -1,7 +1,7 @@
 
 # This file contains every single details about the items and blocks data, it is used to generate every datapack file
 # Everything stored in a dictionnary. This python script should be imported
-from src.config import *
+from src.importer import *
 
 # Get every item texture paths from textures folder
 textures_filenames = [f for f in os.listdir(TEXTURES_FOLDER) if os.path.isfile(os.path.join(TEXTURES_FOLDER, f))]
@@ -33,15 +33,15 @@ for ore in ores:
 			DATABASE[block]["display"]["Lore"] = [f'[{{"text":"{DATAPACK_NAME}","italic":true,"color":"blue"}}]']
 			DATABASE[block][NAMESPACE] = {block:1}
 		
-		# Crafting 9x ingot into block
+		# Recipes
 		DATABASE[block]["result_of_crafting"] = []
 		if placeable == "block":
 			if f"{material}_ingot.png" in textures_filenames:
-				DATABASE[block]["result_of_crafting"].append(str({"type":"shapeless", "result_count": 1, "ingredients": [{"Count":9, "custom_data":f"{NAMESPACE}.{ore}_ingot"}]}))
+				DATABASE[block]["result_of_crafting"].append(str({"type":"shapeless", "result_count": 1, "ingredients": [ingredient_repr(f"{ore}_ingot", count = 9)]}))
 			if f"{material}_fragment.png" in textures_filenames:
-				DATABASE[block]["result_of_crafting"].append(str({"type":"shapeless", "result_count": 1, "ingredients": [{"Count":9, "custom_data":f"{NAMESPACE}.{ore}_fragment"}]}))
+				DATABASE[block]["result_of_crafting"].append(str({"type":"shapeless", "result_count": 1, "ingredients": [ingredient_repr(f"{ore}_fragment", count = 9)]}))
 			if f"{material}.png" in textures_filenames:
-				DATABASE[block]["result_of_crafting"].append(str({"type":"shapeless", "result_count": 1, "ingredients": [{"Count":9, "custom_data":f"{NAMESPACE}.{ore}"}]}))		
+				DATABASE[block]["result_of_crafting"].append(str({"type":"shapeless", "result_count": 1, "ingredients": [ingredient_repr(ore, count = 9)]}))
 		pass
 	
 	# Ingredients (ingot, nugget, raw, and other)
@@ -67,13 +67,19 @@ for ore in ores:
 			DATABASE[item]["display"]["Lore"] = [f'[{{"text":"{DATAPACK_NAME}","italic":true,"color":"blue"}}]']
 		DATABASE[item][NAMESPACE] = {item:1}
 
-		# Crafting
+		# Recipes
 		DATABASE[item]["result_of_crafting"] = []
 		if ingredient == "ingot" or ingredient == "":
 			if f"{ore}_block.png" in textures_filenames:
-				DATABASE[item]["result_of_crafting"].append(str({"type":"shapeless", "result_count": 9, "ingredients": [{"Count":1, "custom_data":f"{NAMESPACE}.{ore}_block"}]}))
+				DATABASE[item]["result_of_crafting"].append(str({"type":"shapeless", "result_count": 9, "ingredients": [ingredient_repr(f"{ore}_block", count = 1)]}))
 			if f"{ore}_nugget.png" in textures_filenames:
-				DATABASE[item]["result_of_crafting"].append(str({"type":"shapeless", "result_count": 1, "ingredients": [{"Count":9, "custom_data":f"{NAMESPACE}.{ore}_nugget"}]}))
+				DATABASE[item]["result_of_crafting"].append(str({"type":"shapeless", "result_count": 1, "ingredients": [ingredient_repr(f"{ore}_nugget", count = 9)]}))
+			if f"raw_{ore}.png" in textures_filenames:
+				DATABASE[item]["result_of_crafting"].append(str({"type":"smelting", "result_count": 1, "ingredient": ingredient_repr(f"raw_{ore}")}))
+			if f"{ore}_dust.png" in textures_filenames:
+				DATABASE[item]["result_of_crafting"].append(str({"type":"smelting", "result_count": 1, "ingredient": ingredient_repr(f"{ore}_dust")}))
+			if f"{ore}_ore.png" in textures_filenames:
+				DATABASE[item]["result_of_crafting"].append(str({"type":"smelting", "result_count": 1, "ingredient": ingredient_repr(f"{ore}_ore")}))
 		pass
 
 	# Armors

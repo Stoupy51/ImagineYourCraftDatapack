@@ -36,44 +36,44 @@ for ore in ores:
 		# Crafting 9x ingot into block
 		DATABASE[block]["result_of_crafting"] = []
 		if placeable == "block":
-			if f"{ore}_ingot.png" in textures_filenames:
+			if f"{material}_ingot.png" in textures_filenames:
 				DATABASE[block]["result_of_crafting"].append(str({"type":"shapeless", "result_count": 1, "ingredients": [{"Count":9, "custom_data":f"{NAMESPACE}.{ore}_ingot"}]}))
-			if f"{ore}_fragment.png" in textures_filenames:
+			if f"{material}_fragment.png" in textures_filenames:
 				DATABASE[block]["result_of_crafting"].append(str({"type":"shapeless", "result_count": 1, "ingredients": [{"Count":9, "custom_data":f"{NAMESPACE}.{ore}_fragment"}]}))
-			if f"{ore}.png" in textures_filenames:
+			if f"{material}.png" in textures_filenames:
 				DATABASE[block]["result_of_crafting"].append(str({"type":"shapeless", "result_count": 1, "ingredients": [{"Count":9, "custom_data":f"{NAMESPACE}.{ore}"}]}))		
 		pass
 	
 	# Ingredients (ingot, nugget, raw, and other)
-	if ore != "massive_obsidian":
-		for ingredient in ingredients:
-			item = ""
-			if ingredient == "raw":
-				item = f"raw_{ore}"
-			elif ingredient == "":
-				item = ore
-			else:
-				item = f"{ore}_{ingredient}"
-			if f"{item}.png" not in textures_filenames: # Skip if the item doesn't have a texture
-				continue
-			item_str = item.replace("_"," ").title()
-			if any(item in texture for texture in textures_filenames):
-				DATABASE[item] = {}
-				DATABASE[item]["id"] = CUSTOM_ITEM_VANILLA	# Item for ingredients
-				DATABASE[item]["smithed"] = {}
-				DATABASE[item]["smithed"]["dict"] = {ingredient: {ore: 1}}
-				DATABASE[item]["smithed"]["ignore"] = {"functionality": 1, "crafting": 1}	# As it's a custom item, we don't want the CUSTOM_ITEM_VANILLA to be used
-				DATABASE[item]["display"] = {}
-				DATABASE[item]["display"]["Name"] = f'[{{"text":"{item_str}","italic":false,"color":"white"}}]'
-				DATABASE[item]["display"]["Lore"] = [f'[{{"text":"{DATAPACK_NAME}","italic":true,"color":"blue"}}]']
-			DATABASE[item][NAMESPACE] = {item:1}
+	for ingredient in ingredients:
+		item = ""
+		if ingredient == "raw":
+			item = f"raw_{ore}"
+		elif ingredient == "":
+			item = ore
+		else:
+			item = f"{ore}_{ingredient}"
+		if f"{item}.png" not in textures_filenames: # Skip if the item doesn't have a texture
+			continue
+		item_str = item.replace("_"," ").title()
+		if any(item in texture for texture in textures_filenames):
+			DATABASE[item] = {}
+			DATABASE[item]["id"] = CUSTOM_ITEM_VANILLA	# Item for ingredients
+			DATABASE[item]["smithed"] = {}
+			DATABASE[item]["smithed"]["dict"] = {ingredient: {ore: 1}}
+			DATABASE[item]["smithed"]["ignore"] = {"functionality": 1, "crafting": 1}	# As it's a custom item, we don't want the CUSTOM_ITEM_VANILLA to be used
+			DATABASE[item]["display"] = {}
+			DATABASE[item]["display"]["Name"] = f'[{{"text":"{item_str}","italic":false,"color":"white"}}]'
+			DATABASE[item]["display"]["Lore"] = [f'[{{"text":"{DATAPACK_NAME}","italic":true,"color":"blue"}}]']
+		DATABASE[item][NAMESPACE] = {item:1}
 
-			# Crafting
-			DATABASE[item]["result_of_crafting"] = []
-			if ingredient == "ingot" or ingredient == "":
-				DATABASE[item]["result_of_crafting"] += [
-					str({"type":"shapeless", "result_count": 1, "ingredients": [{"Count":9, "custom_data":f"{NAMESPACE}.{item}"}]}),
-				]
+		# Crafting
+		DATABASE[item]["result_of_crafting"] = []
+		if ingredient == "ingot" or ingredient == "":
+			if f"{ore}_block.png" in textures_filenames:
+				DATABASE[item]["result_of_crafting"].append(str({"type":"shapeless", "result_count": 9, "ingredients": [{"Count":1, "custom_data":f"{NAMESPACE}.{ore}_block"}]}))
+			if f"{ore}_nugget.png" in textures_filenames:
+				DATABASE[item]["result_of_crafting"].append(str({"type":"shapeless", "result_count": 1, "ingredients": [{"Count":9, "custom_data":f"{NAMESPACE}.{ore}_nugget"}]}))
 		pass
 
 	# Armors

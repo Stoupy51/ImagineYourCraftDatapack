@@ -179,7 +179,8 @@ for k in DATABASE.keys():
 textures_filenames = [texture for texture in textures_filenames if not DATABASE.get(texture.replace(".png",""))]
 
 for texture in textures_filenames:
-	warning(f"Texture '{texture}' is not used in the database")
+	path = f"{TEXTURES_FOLDER}/{texture}".replace(f"{ROOT}/","")
+	warning(f"Texture '{path}' is not used in the database")
 	pass
 info("Database generated, here are the keys: " + ", ".join(shuffled(list(DATABASE.keys()))[:8]) + "...")
 

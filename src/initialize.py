@@ -2,9 +2,10 @@
 # Import config
 from src.config import *
 
-# Delete build folder
+# Delete build folder and database_debug
 print()
 shutil.rmtree(BUILD_FOLDER, ignore_errors=True)
+shutil.rmtree(DATABASE_DEBUG, ignore_errors=True)
 
 
 # Setup pack.mcmeta

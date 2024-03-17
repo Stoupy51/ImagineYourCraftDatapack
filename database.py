@@ -17,6 +17,8 @@ for ore in ores:
 	# Placeables
 	for placeable in placeables:
 		block = f"{ore}_{placeable}"
+		if f"{block}.png" not in textures_filenames: # Skip if the block doesn't have a texture
+			continue
 		block_str = block.replace("_"," ").title()
 		if any(block in texture for texture in textures_filenames):
 			DATABASE[block] = {}
@@ -31,11 +33,18 @@ for ore in ores:
 			DATABASE[block]["display"]["Lore"] = [f'[{{"text":"{DATAPACK_NAME}","italic":true,"color":"blue"}}]']
 			DATABASE[block][NAMESPACE] = {block:1}
 		
-		# Crafting block into 9x ingot
-		if placeable == "block" and any(f"{ore}_ingot" in texture for texture in textures_filenames):
-			DATABASE[block]["crafting"] = [
-				str({"type":"shapeless", "result_count": 9, "ingredients": [{"Count":1,"custom_data":f"{NAMESPACE}.{block}"}]}),
-			]
+		# Crafting 9x ingot into block
+		DATABASE[block]["result_of_crafting"] = []
+		if placeable == "block":
+			if f"{ore}_ingot.png" in textures_filenames:
+				DATABASE[block]["result_of_crafting"].append(str({"type":"shapeless", "result_count": 1, "ingredients": [{"Count":9, "custom_data":f"{NAMESPACE}.{ore}_ingot"}]}))
+			if f"{ore}.png" in textures_filenames:
+				DATABASE[block]["result_of_crafting"].append(str({"type":"shapeless", "result_count": 1, "ingredients": [{"Count":9, "custom_data":f"{NAMESPACE}.{ore}"}]}))
+
+		
+		# If no crafting, remove
+		if not DATABASE[block]["result_of_crafting"]:
+			del DATABASE[block]["result_of_crafting"]
 		pass
 	
 	# Ingredients (ingot, nugget, raw, and other)
@@ -63,40 +72,39 @@ for ore in ores:
 			DATABASE[item][NAMESPACE] = {item:1}
 
 			# Crafting
-			DATABASE[item]["crafting"] = []
+			DATABASE[item]["result_of_crafting"] = []
 
 			# If no crafting, remove
-			if not DATABASE[item]["crafting"]:
-				del DATABASE[item]["crafting"]
+			if not DATABASE[item]["result_of_crafting"]:
+				del DATABASE[item]["result_of_crafting"]
 		pass
 
 	# Armors
 
-
+	pass
 
 
 
 # Print not used textures and then all the keys
-for k in DATABASE.keys():
-	if k in textures_filenames:
-		textures_filenames.remove(k)
-		pass
-	pass
+textures_filenames = [texture for texture in textures_filenames if not DATABASE.get(texture.replace(".png",""))]
+
 for texture in textures_filenames:
 	warning(f"Texture '{texture}' is not used in the database")
 	pass
 info("Database generated, here are the keys:\n" + ", ".join(DATABASE.keys()))
 
-# Adjustments
-for k in DATABASE.keys():
-	DATABASE[k]["smithed"] = str(DATABASE[k]["smithed"])
-	DATABASE[k]["display"] = str(DATABASE[k]["display"])
-	if DATABASE[k].get(NAMESPACE):
-		DATABASE[k][NAMESPACE] = str(DATABASE[k][NAMESPACE])
-
-
-# Export database to JSON for debugging generation (TO COMMENT WHEN NOT DEBUGGING)
-with open("database_debug.json", "w") as f:
-	json.dump(DATABASE, f, indent = '\t')
+# Export database to JSON for debugging generation
+with open(DATABASE_DEBUG, "w") as f:
+	deep_copy = json.loads(json.dumps(DATABASE))	# Deep copy to avoid modifying the original database
+	
+	# Adjustments for better readability
+	for k in deep_copy.keys():
+		deep_copy[k]["smithed"] = str(deep_copy[k]["smithed"])
+		deep_copy[k]["display"] = str(deep_copy[k]["display"])
+		if deep_copy[k].get(NAMESPACE):
+			deep_copy[k][NAMESPACE] = str(deep_copy[k][NAMESPACE])
+	
+	# Adjustments for better readability
+	json.dump(deep_copy, f, indent = '\t')
 	pass
 

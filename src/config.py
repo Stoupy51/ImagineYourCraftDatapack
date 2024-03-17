@@ -41,6 +41,7 @@ AUTHOR = "Stoupy51"
 DESCRIPTION = f"{DATAPACK_NAME} [{VERSION}] by {AUTHOR}"
 BUILD_COPY_DESTINATIONS = ("D:/5) Energy System/world/datapacks", "C:/Users/Alexandre-PC/AppData/Roaming/.minecraft/1.13+/resourcepacks")
 DATABASE = {}
+DATABASE_DEBUG = "database_debug.json"
 
 # Technical constants
 CUSTOM_BLOCK_VANILLA = "minecraft:barrel"

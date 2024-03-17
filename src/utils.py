@@ -2,7 +2,7 @@
 from src.config import *
 
 # Function mainly used for database generation
-def ingredient_repr(id: str, count: int|None = None) -> dict:
+def ingr_repr(id: str, count: int|None = None) -> dict:
 	""" Get the identity of the ingredient from its id for custom crafts
 	Args:
 		id	(str): The id of the ingredient, ex: adamantium_ingot
@@ -13,6 +13,7 @@ def ingredient_repr(id: str, count: int|None = None) -> dict:
 		return {"custom_data": f"{NAMESPACE}.{id}"}
 	else:
 		return {"Count": count, "custom_data": f"{NAMESPACE}.{id}"}
+
 
 # For easy file management
 def super_open(file_path: str, mode: str) -> io.TextIOWrapper:
@@ -28,4 +29,17 @@ def super_open(file_path: str, mode: str) -> io.TextIOWrapper:
 
 	# Open file and return
 	return open(file_path, mode, encoding="utf-8") # Always use utf-8 encoding to avoid issues
+
+
+# For nothing really special
+def shuffled(lst: list) -> list:
+	""" Return a shuffled version of the given list
+	Args:
+		lst	(list): The list to shuffle
+	Returns:
+		list: The shuffled list
+	"""
+	lst = lst.copy()
+	random.shuffle(lst)
+	return lst
 

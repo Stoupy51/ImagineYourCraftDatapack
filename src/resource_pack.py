@@ -34,3 +34,13 @@ for id in vanilla_ids:
 		file.write(formatted_content.replace('"__LIST__"', f'[\n\t\t{overrides}\n\t]') + "\n")
 	pass
 
+# Copy textures to the resource pack
+os.makedirs(f"{BUILD_RESOURCE_PACK}/assets/{NAMESPACE}/textures/block", exist_ok=True)
+os.makedirs(f"{BUILD_RESOURCE_PACK}/assets/{NAMESPACE}/textures/item", exist_ok=True)
+for item, data in DATABASE.items():
+	block_or_item = "block" if data["id"] == "minecraft:barrel" else "item"
+	source = f"{TEXTURES_FOLDER}/{item}.png"
+	destination = f"{BUILD_RESOURCE_PACK}/assets/{NAMESPACE}/textures/{block_or_item}/{item}.png"
+	shutil.copyfile(source, destination)
+
+

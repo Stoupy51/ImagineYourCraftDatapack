@@ -138,6 +138,14 @@ for ore in ores:
 		pass
 	pass
 
+# Apply database additions
+from database_additions import database_additions
+for k, v in database_additions.items():
+	if k in DATABASE:
+		DATABASE[k].update(v)
+	else:
+		DATABASE[k] = v
+
 # For every key
 for k in DATABASE.keys():
 
@@ -150,16 +158,20 @@ for k in DATABASE.keys():
 	item_str = k.replace("_"," ").title()
 	if not DATABASE[k].get("display"):
 		DATABASE[k]["display"] = {}
-	DATABASE[k]["display"]["Name"] = f'[{{"text":"{item_str}","italic":false,"color":"white"}}]'
-	DATABASE[k]["display"]["Lore"] = [f'[{{"text":"{DATAPACK_NAME}","italic":true,"color":"blue"}}]']
+	if not DATABASE[k]["display"].get("Name"):
+		DATABASE[k]["display"]["Name"] = f'[{{"text":"{item_str}","italic":false,"color":"white"}}]' 
+	if not DATABASE[k]["display"].get("Lore"):
+		DATABASE[k]["display"]["Lore"] = [SOURCE_LORE]
+	else:
+		DATABASE[k]["display"]["Lore"].append(SOURCE_LORE)
 
 	# Private custom_data for
 	DATABASE[k][NAMESPACE] = {k:1}
 
 	# Smithed ignore vanilla behaviours
+	if not DATABASE[k].get("smithed"):
+		DATABASE[k]["smithed"] = {}
 	DATABASE[k]["smithed"]["ignore"] = {"functionality": 1, "crafting": 1}
-
-
 
 # Print not used textures and then all the keys
 textures_filenames = [texture for texture in textures_filenames if not DATABASE.get(texture.replace(".png",""))]

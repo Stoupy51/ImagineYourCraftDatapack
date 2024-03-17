@@ -47,6 +47,7 @@ BUILD_RESOURCE_PACK = f"{BUILD_FOLDER}/resource_pack"
 BUILD_COPY_DESTINATIONS = ("D:/5) Energy System/world/datapacks", "C:/Users/Alexandre-PC/AppData/Roaming/.minecraft/1.13+/resourcepacks")
 DATABASE = {}
 DATABASE_DEBUG = "database_debug.json"
+SOURCE_LORE = f'[{{"text":"{DATAPACK_NAME}","italic":true,"color":"blue"}}]'
 
 # Technical constants
 CUSTOM_BLOCK_VANILLA = "minecraft:barrel"

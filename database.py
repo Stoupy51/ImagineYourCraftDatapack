@@ -83,6 +83,10 @@ for ore in ores:
 		pass
 
 	# Armors
+	# TODO
+
+	# Others (stick, ...)
+	# TODO
 
 	pass
 

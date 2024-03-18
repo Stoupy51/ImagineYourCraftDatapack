@@ -40,6 +40,6 @@ CUSTOM_ITEM_VANILLA = "minecraft:command_block"
 CRAFTING_RECIPES = "result_of_crafting"
 random.seed(3)
 
-# For easy testing (can be a empty list)
+# For easy testing (can be an empty list)
 BUILD_COPY_DESTINATIONS = ("D:/5) Energy System/world/datapacks", "C:/Users/Alexandre-PC/AppData/Roaming/.minecraft/1.13+/resourcepacks")
 

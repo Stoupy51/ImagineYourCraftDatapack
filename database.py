@@ -4,6 +4,7 @@
 from src.importer import *
 
 # Get every item texture paths from textures folder
+# TODO : remove faces/sides textures from the list
 textures_filenames = [f for f in os.listdir(TEXTURES_FOLDER) if os.path.isfile(os.path.join(TEXTURES_FOLDER, f))]
 
 # Generate ores things

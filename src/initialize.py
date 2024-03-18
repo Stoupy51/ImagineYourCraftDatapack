@@ -24,4 +24,3 @@ with super_open(f"{BUILD_RESOURCE_PACK}/pack.mcmeta", "w") as file:
 	info(f"pack.mcmeta file created")
 	pass
 
-

@@ -24,3 +24,25 @@ with super_open(f"{BUILD_RESOURCE_PACK}/pack.mcmeta", "w") as file:
 	info(f"pack.mcmeta file created")
 	pass
 
+
+# Convert textures names if needed
+REPLACEMENTS = {
+	"_off": "",
+	"_down": "_bottom",
+	"_up": "_top",
+	"_north": "_front",
+	"_south": "_back",
+	"_west": "_left",
+	"_east": "_right"
+}
+for root, dirs, files in os.walk(TEXTURES_FOLDER):
+	for file in files:
+		for k, v in REPLACEMENTS.items():
+			if k in file:
+				new_name = file.replace(k, v)
+				os.rename(f"{root}/{file}", f"{root}/{new_name}")
+				info(f"Renamed {file} to {new_name}")
+				pass
+		pass
+	pass
+

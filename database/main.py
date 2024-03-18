@@ -2,6 +2,7 @@
 # This python script tries generates a database of every block and item by using checking the textures folder
 # It should be imported to fill the DATABASE variable
 from src.importer import *
+from database.additions import database_additions
 
 # Get every item texture paths from textures folder
 # TODO : remove faces/sides textures from the list
@@ -140,7 +141,6 @@ for ore in ores:
 	pass
 
 # Apply database additions
-from database_additions import database_additions
 for k, v in database_additions.items():
 	if k in DATABASE:
 		DATABASE[k].update(v)

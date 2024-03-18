@@ -11,5 +11,9 @@ database_additions = {
 			"Silk Touch?": "Also supported"
 		}
 	},
+	"iron_furnace": {
+		"id": "minecraft:barrel",
+		"custom_model_data":"PREFIX_XXX"
+	},
 }
 

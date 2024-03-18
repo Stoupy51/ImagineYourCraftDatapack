@@ -7,27 +7,29 @@ os.makedirs(f"{BUILD_RESOURCE_PACK}/assets/{NAMESPACE}/textures/block", exist_ok
 os.makedirs(f"{BUILD_RESOURCE_PACK}/assets/{NAMESPACE}/textures/item", exist_ok=True)
 faces = ["down", "up", "north", "south", "west", "east"]
 sides = ["side", "top", "bottom", "front", "back", "inner"]
+both = faces + sides
 for item, data in DATABASE.items():
 	block_or_item = "block" if data["id"] == "minecraft:barrel" else "item"
 
 	# Copy textures to the resource pack
 	source = f"{TEXTURES_FOLDER}/{item}.png"
-	destination = f"{BUILD_RESOURCE_PACK}/assets/{NAMESPACE}/textures/{block_or_item}/{item}.png"
-	shutil.copyfile(source, destination)
+	if os.path.exists(source):
+		destination = f"{BUILD_RESOURCE_PACK}/assets/{NAMESPACE}/textures/{block_or_item}/{item}.png"
+		shutil.copyfile(source, destination)
 
 	# Get all textures for the block
-	textures_path_list = []
+	additional_textures = []
 	for root, dirs, files in os.walk(f"{TEXTURES_FOLDER}/"):
 		for file in files:
 			if file.startswith(item):
-				textures_path_list.append(file.replace(".png", ""))
+				if any(x in file.replace(item, "") for x in both):
+					additional_textures.append(file.replace(".png", ""))	# Only keep the textures for sides/faces
 
 				# Copy textures to the resource pack
 				source = f"{TEXTURES_FOLDER}/{file}"
 				destination = f"{BUILD_RESOURCE_PACK}/assets/{NAMESPACE}/textures/{block_or_item}/{file}"
 				shutil.copyfile(source, destination)
 		pass
-	textures_path_list = [path for path in textures_path_list if path != item and any(face in path for face in faces)]	# Only keep the textures for sides/faces
 
 	# Generate its model file
 	with super_open(f"{BUILD_RESOURCE_PACK}/assets/{NAMESPACE}/models/{block_or_item}/{item}.json", "w") as f:
@@ -60,7 +62,7 @@ for item, data in DATABASE.items():
 			content["textures"] = {}
 
 			# If only one, apply everywhere
-			if not textures_path_list:
+			if not additional_textures:
 				content["textures"]["all"] = f"{NAMESPACE}:{block_or_item}/{item}"
 			else:
 				# TODO: need to test all cases
@@ -68,7 +70,7 @@ for item, data in DATABASE.items():
 				content["elements"] = [{"from": [0, 0, 0], "to": [16, 16, 16], "faces": {}}]
 				for side in faces:
 
-					if f"{item}_{side}" in textures_path_list:
+					if f"{item}_{side}" in additional_textures:
 						content["textures"][side] = f"{NAMESPACE}:{block_or_item}/{item}_{side}"
 						content["elements"][0]["faces"][side] = {"texture": f"#{side}", "cullface": side}
 					else:

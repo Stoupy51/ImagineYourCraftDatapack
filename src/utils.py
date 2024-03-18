@@ -1,5 +1,6 @@
 
 from src.config import *
+import json
 import io
 
 # Function mainly used for database generation
@@ -43,6 +44,47 @@ def shuffled(lst: list) -> list:
 	lst = lst.copy()
 	random.shuffle(lst)
 	return lst
+
+# JSON dump with indentation for only 3 levels
+#	json.dump(deep_copy, f, indent = '\t')
+
+def super_json_dump(data: dict, file: io.TextIOWrapper = None, max_level: int = 2) -> str:
+	""" Dump the given data to a JSON file with indentation for only 2 levels by default
+	Args:
+		data (dict): 				The data to dump
+		file (io.TextIOWrapper): 	The file to dump the data to, if None, the data is returned as a string
+		max_level (int):			The level of where indentation should stop
+	Returns:
+		str: The content of the file in every case
+	"""
+	content = json.dumps(data, indent = '\t')
+
+	# Seek in content to remove to high indentations
+	longest_indentation = 0
+	for line in content.split("\n"):
+		indentation = 0
+		for char in line:
+			if char == "\t":
+				indentation += 1
+			else:
+				break
+		longest_indentation = max(longest_indentation, indentation)
+	for i in range(longest_indentation, max_level, -1):
+		content = content.replace("\n" + "\t" * i, "")
+		pass
+
+	# To finalyze, fix the last indentations
+	finishes = ('}', ']')
+	for char in finishes:
+		to_replace = "\n" + "\t" * max_level + char
+		content = content.replace(to_replace, char)
+	
+	# Write file content and return it
+	if file:
+		file.write(content)
+	return content
+
+
 
 # Colors constants
 GREEN = "\033[92m"

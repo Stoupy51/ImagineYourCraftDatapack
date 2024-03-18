@@ -186,18 +186,6 @@ info("Database generated, here are the keys: " + ", ".join(shuffled(list(DATABAS
 
 # Export database to JSON for debugging generation
 with open(DATABASE_DEBUG, "w") as f:
-	
-	# Adjustments for better readability
-	deep_copy = json.loads(json.dumps(DATABASE))	# Deep copy to avoid modifying the original database
-	for k in deep_copy.keys():
-		if deep_copy[k].get("smithed"):
-			deep_copy[k]["smithed"] = str(deep_copy[k]["smithed"])
-		if deep_copy[k].get("display"):
-			deep_copy[k]["display"] = str(deep_copy[k]["display"])
-		if deep_copy[k].get(NAMESPACE):
-			deep_copy[k][NAMESPACE] = str(deep_copy[k][NAMESPACE])
-	
-	# Adjustments for better readability
-	json.dump(deep_copy, f, indent = '\t')
+	super_json_dump(DATABASE, f)
 	pass
 

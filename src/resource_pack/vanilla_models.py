@@ -13,18 +13,15 @@ blocks = [CUSTOM_BLOCK_VANILLA, "command_block"]
 for id in vanilla_ids:
 	with super_open(f"{BUILD_RESOURCE_PACK}/assets/minecraft/models/item/{id}.json", "w") as file:
 		block_or_item = "block" if id in blocks else "item"
-		content = {"parent": f"{block_or_item}/{id}", "overrides": "__LIST__"}
-		formatted_content = json.dumps(content, indent = '\t')
+		content = {"parent": f"{block_or_item}/{id}", "overrides": []}
 
 		# Get overrides
-		overrides = []
 		for item, data in DATABASE.items():
 			if data["id"].replace("minecraft:","") == id:
-				overrides.append(f'{{"predicate": {{ "custom_model_data": {data["custom_model_data"]}}}, "model": "{NAMESPACE}:{block_or_item}/{item}" }}')
-		overrides = ",\n\t\t".join(overrides)
+				content["overrides"].append({"predicate": { "custom_model_data": data["custom_model_data"]}, "model": f"{NAMESPACE}:{block_or_item}/{item}" })
 
 		# Write the content to the file
-		file.write(formatted_content.replace('"__LIST__"', f'[\n\t\t{overrides}\n\t]') + "\n")
+		file.write(super_json_dump(content).replace('{"','{ "').replace('"}','" }').replace(',"', ', "') + "\n")
 	pass
 info("Vanilla models created")
 

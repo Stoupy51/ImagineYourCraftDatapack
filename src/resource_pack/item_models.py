@@ -52,11 +52,11 @@ for item, data in DATABASE.items():
 
 				# If more than one, apply to each side
 				else:
-					content["elements"] = [{"from": [0, 0, 0], "to": [16, 16, 16], "FACES": {}}]
+					content["elements"] = [{"from": [0, 0, 0], "to": [16, 16, 16], "faces": {}}]
 
 					# Generate links between FACES and textures
 					for face in FACES:
-						content["elements"][0]["FACES"][face] = {"texture": f"#{face}", "cullface": face}
+						content["elements"][0]["faces"][face] = {"texture": f"#{face}", "cullface": face}
 		
 					# For each possible side (in reverse order)
 					for i in range(len(SIDES), 0, -1):
@@ -98,7 +98,7 @@ for item, data in DATABASE.items():
 				pass
 			
 			# Write content
-			formatted_content = json.dumps(content, indent = '\t')
+			formatted_content = super_json_dump(content, max_level = 4)
 			f.write(formatted_content + "\n")
 
 		# Generate placed models for item_display if it's a block
@@ -106,7 +106,7 @@ for item, data in DATABASE.items():
 			dest_base_model = f"{BUILD_RESOURCE_PACK}/assets/{NAMESPACE}/models/{block_or_item}/for_item_display"
 			content["display"] = MODEL_DISPLAY
 			with super_open(f"{dest_base_model}/{item}{on_off}.json", "w") as f:
-				formatted_content = json.dumps(content, indent = '\t')
+				formatted_content = super_json_dump(content, max_level = 4)
 				f.write(formatted_content + "\n")
 	pass
 info("Custom models created")

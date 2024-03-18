@@ -1,11 +1,7 @@
 
 # Imports
 import datetime
-import imageio
 import random
-import shutil
-import json
-import io
 import os
 
 # Import time constant

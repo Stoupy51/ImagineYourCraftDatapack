@@ -1,5 +1,6 @@
 
 from src.config import *
+import io
 
 # Function mainly used for database generation
 def ingr_repr(id: str, count: int|None = None) -> dict:

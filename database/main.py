@@ -151,9 +151,8 @@ for k, v in database_additions.items():
 for k in DATABASE.keys():
 
 	# Remove craft if not
-	if DATABASE[k].get(CRAFTING_RECIPES) and not DATABASE[k][CRAFTING_RECIPES]:
+	if DATABASE[k].get(CRAFTING_RECIPES) == []:
 		del DATABASE[k][CRAFTING_RECIPES]
-		pass
 	
 	# Make display for every item
 	item_str = k.replace("_"," ").title()

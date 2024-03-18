@@ -2,12 +2,17 @@
 # Import config
 from src.importer import *
 
-# For each item,
+# Make directories
 os.makedirs(f"{BUILD_RESOURCE_PACK}/assets/{NAMESPACE}/textures/block", exist_ok=True)
 os.makedirs(f"{BUILD_RESOURCE_PACK}/assets/{NAMESPACE}/textures/item", exist_ok=True)
+
+# Get every block variant
 faces = ["down", "up", "north", "south", "west", "east"]
 sides = ["side", "top", "bottom", "front", "back", "inner"]
 both = faces + sides
+armors = ["helmet", "chestplate", "leggings", "boots"]
+
+# For each item,
 for item, data in DATABASE.items():
 	block_or_item = "block" if data["id"] == "minecraft:barrel" else "item"
 
@@ -82,7 +87,26 @@ for item, data in DATABASE.items():
 		
 		# Else, it's an item
 		else:
-			# TODO
+			"""{
+    "parent": "item/handheld",
+    "textures": {
+        "layer0": "simplenergy:item/equipments/simplunium_axe"
+    }
+}
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "simplenergy:item/equipments/simplunium_chestplate",
+        "layer1": "simplenergy:item/equipments/simplunium_chestplate"
+    }
+}
+"""
+			# If not an armor
+			if not any(x in item for x in armors):
+				content = {"parent": "item/handheld", "textures": {"layer0": f"{NAMESPACE}:{block_or_item}/{item}"}}
+			else:
+				content = {"parent": "item/generated", "textures": {"layer0": f"{NAMESPACE}:{block_or_item}/{item}"}}
+				content["textures"]["layer1"] = content["textures"]["layer0"]
 			pass
 		
 		# Write content

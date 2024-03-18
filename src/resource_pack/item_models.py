@@ -15,11 +15,13 @@ armors = ["helmet", "chestplate", "leggings", "boots"]
 # For each item,
 for item, data in DATABASE.items():
 	block_or_item = "block" if data["id"] == "minecraft:barrel" else "item"
+	dest_base = f"{BUILD_RESOURCE_PACK}/assets/{NAMESPACE}/models/{block_or_item}"
+	os.makedirs(dest_base, exist_ok=True)
 
 	# Copy textures to the resource pack
 	source = f"{TEXTURES_FOLDER}/{item}.png"
 	if os.path.exists(source):
-		destination = f"{BUILD_RESOURCE_PACK}/assets/{NAMESPACE}/textures/{block_or_item}/{item}.png"
+		destination = f"{dest_base}/{item}.png"
 		shutil.copyfile(source, destination)
 
 	# Get all textures for the block
@@ -32,12 +34,12 @@ for item, data in DATABASE.items():
 
 				# Copy textures to the resource pack
 				source = f"{TEXTURES_FOLDER}/{file}"
-				destination = f"{BUILD_RESOURCE_PACK}/assets/{NAMESPACE}/textures/{block_or_item}/{file}"
+				destination = f"{dest_base}/{file}"
 				shutil.copyfile(source, destination)
 		pass
 
 	# Generate its model file
-	with super_open(f"{BUILD_RESOURCE_PACK}/assets/{NAMESPACE}/models/{block_or_item}/{item}.json", "w") as f:
+	with super_open(f"{dest_base}/{item}.json", "w") as f:
 		if block_or_item == "block":
 			"""{
 				"parent": "minecraft:block/cube_all",
@@ -62,7 +64,6 @@ for item, data in DATABASE.items():
 					}
 				}]
 			}"""
-			# OR
 			content = {"parent": "block/cube_all"}
 			content["textures"] = {}
 
@@ -73,6 +74,7 @@ for item, data in DATABASE.items():
 				# TODO: need to test all cases
 				# If more than one, apply to each side
 				content["elements"] = [{"from": [0, 0, 0], "to": [16, 16, 16], "faces": {}}]
+				print(f"Additional textures for {item}: {additional_textures}")
 				for side in faces:
 
 					if f"{item}_{side}" in additional_textures:
@@ -87,20 +89,6 @@ for item, data in DATABASE.items():
 		
 		# Else, it's an item
 		else:
-			"""{
-    "parent": "item/handheld",
-    "textures": {
-        "layer0": "simplenergy:item/equipments/simplunium_axe"
-    }
-}
-{
-    "parent": "item/generated",
-    "textures": {
-        "layer0": "simplenergy:item/equipments/simplunium_chestplate",
-        "layer1": "simplenergy:item/equipments/simplunium_chestplate"
-    }
-}
-"""
 			# If not an armor
 			if not any(x in item for x in armors):
 				content = {"parent": "item/handheld", "textures": {"layer0": f"{NAMESPACE}:{block_or_item}/{item}"}}

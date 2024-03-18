@@ -30,7 +30,6 @@ AUTHOR = "Stoupy51"
 DESCRIPTION = f"{DATAPACK_NAME} [{VERSION}] by {AUTHOR}"
 BUILD_DATAPACK = f"{BUILD_FOLDER}/datapack"
 BUILD_RESOURCE_PACK = f"{BUILD_FOLDER}/resource_pack"
-BUILD_COPY_DESTINATIONS = ("D:/5) Energy System/world/datapacks", "C:/Users/Alexandre-PC/AppData/Roaming/.minecraft/1.13+/resourcepacks")
 DATABASE = {}
 DATABASE_DEBUG = "database_debug.json"
 SOURCE_LORE = f'[{{"text":"{DATAPACK_NAME}","italic":true,"color":"blue"}}]'
@@ -40,4 +39,7 @@ CUSTOM_BLOCK_VANILLA = "minecraft:barrel"
 CUSTOM_ITEM_VANILLA = "minecraft:command_block"
 CRAFTING_RECIPES = "result_of_crafting"
 random.seed(3)
+
+# For easy testing (can be a empty list)
+BUILD_COPY_DESTINATIONS = ("D:/5) Energy System/world/datapacks", "C:/Users/Alexandre-PC/AppData/Roaming/.minecraft/1.13+/resourcepacks")
 

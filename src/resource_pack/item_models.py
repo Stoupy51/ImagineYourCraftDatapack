@@ -3,7 +3,7 @@
 from src.importer import *
 
 # Make directories
-os.makedirs(f"{BUILD_RESOURCE_PACK}/assets/{NAMESPACE}/models/block", exist_ok=True)
+os.makedirs(f"{BUILD_RESOURCE_PACK}/assets/{NAMESPACE}/models/block/for_item_display", exist_ok=True)
 os.makedirs(f"{BUILD_RESOURCE_PACK}/assets/{NAMESPACE}/models/item", exist_ok=True)
 os.makedirs(f"{BUILD_RESOURCE_PACK}/assets/{NAMESPACE}/textures/block", exist_ok=True)
 os.makedirs(f"{BUILD_RESOURCE_PACK}/assets/{NAMESPACE}/textures/item", exist_ok=True)
@@ -87,22 +87,29 @@ for item, data in DATABASE.items():
 								content["textures"]["down"] = path
 				pass
 
-			# TODO: generate placed models for item_display
-		
 		# Else, it's an item
 		else:
 			# If not an armor
 			path = f"{NAMESPACE}:{block_or_item}/{item}"
 			if not any(x in item for x in armors):
-				content = {"parent": "item/handheld", "textures": {"layer0": path}}
+				content = {"parent": "item/handheld",	"textures": {"layer0": path}}
 			else:
-				content = {"parent": "item/generated", "textures": {"layer0": path}}
+				content = {"parent": "item/generated",	"textures": {"layer0": path}}
 				content["textures"]["layer1"] = content["textures"]["layer0"]
 			pass
 		
 		# Write content
 		formatted_content = json.dumps(content, indent = '\t')
 		f.write(formatted_content + "\n")
+
+	# Generate placed models for item_display if it's a block
+	if block_or_item == "block":
+		dest_base_model += "/for_item_display"
+		content["display"] = MODEL_DISPLAY
+		with super_open(f"{dest_base_model}/{item}.json", "w") as f:
+			formatted_content = json.dumps(content, indent = '\t')
+			f.write(formatted_content + "\n")
+
 	pass
 info("Custom models created")
 

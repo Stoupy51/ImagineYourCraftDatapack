@@ -45,9 +45,7 @@ def shuffled(lst: list) -> list:
 	random.shuffle(lst)
 	return lst
 
-# JSON dump with indentation for only 3 levels
-#	json.dump(deep_copy, f, indent = '\t')
-
+# JSON dump with indentation for levels
 def super_json_dump(data: dict, file: io.TextIOWrapper = None, max_level: int = 2) -> str:
 	""" Dump the given data to a JSON file with indentation for only 2 levels by default
 	Args:

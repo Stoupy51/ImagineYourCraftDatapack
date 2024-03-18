@@ -11,6 +11,9 @@ from database.main import *
 # Generate resource pack
 from src.resource_pack.main import *
 
+# Generate datapack
+from src.datapack.main import *
+
 # Finalyze build process
 from src.finalyze import *
 

@@ -1,4 +1,6 @@
 
+from src.config import *
+
 # Give Additional data for every item
 database_additions = {
 	"adamantium_ore": {
@@ -12,7 +14,7 @@ database_additions = {
 		}
 	},
 	"iron_furnace": {
-		"id": "minecraft:barrel",
+		"id": CUSTOM_BLOCK_VANILLA,
 		"custom_model_data":"PREFIX_XXX"
 	},
 }

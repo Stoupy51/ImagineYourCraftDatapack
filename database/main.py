@@ -5,8 +5,8 @@ from src.importer import *
 from database.additions import database_additions
 
 # Get every item texture paths from textures folder
-# TODO : remove faces/sides textures from the list
 textures_filenames = [f for f in os.listdir(TEXTURES_FOLDER) if os.path.isfile(os.path.join(TEXTURES_FOLDER, f))]
+textures_filenames = [f for f in textures_filenames if not any(s in f for s in SIDES)]	# Remove sides
 
 # Generate ores things
 others = ["stick", "rod"]

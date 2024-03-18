@@ -9,7 +9,7 @@ from src.initialize import *
 from database import *
 
 # Generate resource pack
-from src.resource_pack import *
+from src.resource_pack.main import *
 
 # Finalyze build process
 from src.finalyze import *

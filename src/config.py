@@ -29,6 +29,9 @@ BUILD_RESOURCE_PACK = f"{BUILD_FOLDER}/resource_pack"
 DATABASE = {}
 DATABASE_DEBUG = f"{ROOT}/database_debug.json"
 SOURCE_LORE = f'[{{"text":"{DATAPACK_NAME}","italic":true,"color":"blue"}}]'
+FACES = ("down", "up", "north", "south", "west", "east")
+SIDES = ("bottom", "top", "front", "back", "left", "right", "side")
+
 
 # Technical constants
 CUSTOM_BLOCK_VANILLA = "minecraft:barrel"

@@ -26,25 +26,16 @@ else:
 
 
 # Copy datapack and resource pack to a specific location
-if BUILD_COPY_DESTINATIONS and type(BUILD_COPY_DESTINATIONS) == tuple:
-	if os.path.exists(datapack_path + ".zip"):
-		if type(BUILD_COPY_DESTINATIONS[0]) == str:
-			shutil.copy(datapack_path + ".zip", BUILD_COPY_DESTINATIONS[0])
-			info(f"Datapack zip file copied to '{BUILD_COPY_DESTINATIONS[0]}/'")
-		else:
-			warning("First copy destination is not a string")
-	else:
-		warning(f"Datapack zip file not found at '{datapack_path.replace(f'{ROOT}/','')}.zip'")
-
-	if os.path.exists(resourcepack_path + ".zip"):
-		if type(BUILD_COPY_DESTINATIONS[1]) == str:
-			shutil.copy(resourcepack_path + ".zip", BUILD_COPY_DESTINATIONS[1])
-			info(f"Resource pack zip file copied to '{BUILD_COPY_DESTINATIONS[1]}/'")
-		else:
-			warning("Second copy destination is not a string")
-	else:
-		warning(f"Resource pack zip file not found at '{resourcepack_path.replace(f'{ROOT}/','')}.zip'")
-
+try:
+	shutil.copy(datapack_path + ".zip", BUILD_COPY_DESTINATIONS[0])
+	info(f"Datapack zip file copied to '{BUILD_COPY_DESTINATIONS[0]}/'")
+except:
+	warning(f"Could not copy datapack to '{BUILD_COPY_DESTINATIONS[0]}/'")
+try:
+	shutil.copy(resourcepack_path + ".zip", BUILD_COPY_DESTINATIONS[1])
+	info(f"Resource pack zip file copied to '{BUILD_COPY_DESTINATIONS[1]}/'")
+except:
+	warning(f"Could not copy resource pack to '{BUILD_COPY_DESTINATIONS[1]}/'")
 
 # Remove __pycache__ folders because they are annoying
 for root, dirs, files in os.walk(ROOT):

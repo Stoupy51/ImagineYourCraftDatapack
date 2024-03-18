@@ -9,9 +9,7 @@ os.makedirs(f"{BUILD_RESOURCE_PACK}/assets/{NAMESPACE}/textures/block", exist_ok
 os.makedirs(f"{BUILD_RESOURCE_PACK}/assets/{NAMESPACE}/textures/item", exist_ok=True)
 
 # Get every block variant
-faces = ["down", "up", "north", "south", "west", "east"]
-sides = ["bottom", "top", "front", "back", "left", "right", "side"]
-both = faces + sides
+both = FACES + SIDES
 armors = ["helmet", "chestplate", "leggings", "boots"]
 
 def custom_separators(level):
@@ -39,7 +37,7 @@ for item, data in DATABASE.items():
 		for file in files:
 			if file.startswith(item):
 				if any(x in file.replace(item, "") for x in both):
-					additional_textures.append(file.replace(".png", ""))	# Only keep the textures for sides/faces
+					additional_textures.append(file.replace(".png", ""))	# Only keep the textures for SIDES/FACES
 
 				# Copy textures to the resource pack
 				source = f"{TEXTURES_FOLDER}/{file}"
@@ -59,27 +57,27 @@ for item, data in DATABASE.items():
 
 			# If more than one, apply to each side
 			else:
-				content["elements"] = [{"from": [0, 0, 0], "to": [16, 16, 16], "faces": {}}]
+				content["elements"] = [{"from": [0, 0, 0], "to": [16, 16, 16], "FACES": {}}]
 
-				# Generate links between faces and textures
-				for face in faces:
-					content["elements"][0]["faces"][face] = {"texture": f"#{face}", "cullface": face}
+				# Generate links between FACES and textures
+				for face in FACES:
+					content["elements"][0]["FACES"][face] = {"texture": f"#{face}", "cullface": face}
 	
 				# For each possible side (in reverse order)
-				for i in range(len(sides), 0, -1):
-					side = sides[i - 1]
+				for i in range(len(SIDES), 0, -1):
+					side = SIDES[i - 1]
     
 					# If we have a texture for the side
 					if any(side in x for x in additional_textures):
 						path = f"{NAMESPACE}:{block_or_item}/{item}_{side}"
 						
-						# If it's a side, apply to all faces (as it is first, it will be overwritten by the others)
+						# If it's a side, apply to all FACES (as it is first, it will be overwritten by the others)
 						if side == "side":
-							for face in faces:
+							for face in FACES:
 								content["textures"][face] = path
 						# Else, apply the texture to the face with the same name
 						else:
-							face = faces[i - 1]
+							face = FACES[i - 1]
 							content["textures"][face] = path
     
 							# Exception: apply top texture also to bottom

@@ -13,9 +13,6 @@ database_additions = {
 			"Silk Touch?": "Also supported"
 		}
 	},
-	"iron_furnace": {
-		"id": CUSTOM_BLOCK_VANILLA,
-		"custom_model_data":"PREFIX_XXX"
-	},
+	"iron_furnace": { "id": CUSTOM_BLOCK_VANILLA, "custom_model_data":"PREFIX_XXX"},
 }
 

@@ -27,7 +27,7 @@ DESCRIPTION = f"{DATAPACK_NAME} [{VERSION}] by {AUTHOR}"
 BUILD_DATAPACK = f"{BUILD_FOLDER}/datapack"
 BUILD_RESOURCE_PACK = f"{BUILD_FOLDER}/resource_pack"
 DATABASE = {}
-DATABASE_DEBUG = "database_debug.json"
+DATABASE_DEBUG = f"{ROOT}/database_debug.json"
 SOURCE_LORE = f'[{{"text":"{DATAPACK_NAME}","italic":true,"color":"blue"}}]'
 
 # Technical constants

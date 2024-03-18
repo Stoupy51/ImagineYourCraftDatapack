@@ -33,16 +33,19 @@ REPLACEMENTS = {
 	"_north": "_front",
 	"_south": "_back",
 	"_west": "_left",
-	"_east": "_right"
+	"_east": "_right",
+	"saphir": "sapphire",
+	"rubies": "ruby",
+	"topaze": "topaz",
 }
 for root, dirs, files in os.walk(TEXTURES_FOLDER):
 	for file in files:
+		new_name = file.lower()
 		for k, v in REPLACEMENTS.items():
 			if k in file:
-				new_name = file.replace(k, v)
-				os.rename(f"{root}/{file}", f"{root}/{new_name}")
-				info(f"Renamed {file} to {new_name}")
-				pass
-		pass
+				new_name = new_name.replace(k, v)
+		if new_name != file:
+			os.rename(f"{root}/{file}", f"{root}/{new_name}")
+			info(f"Renamed {file} to {new_name}")
 	pass
 

@@ -10,12 +10,18 @@ IMPORT_TIME = datetime.datetime.now()
 # Datapack related constants
 MINECRAFT_VERSION = "24w11a" # 1.20.5 snapshot
 VERSION = "0.0.1"
-SCORE_VERSION = "00001" # major1.minor2.patch2, ex for v4.27.34: 42734
 NAMESPACE = "imagineyourcraft"
 GLOBAL_NAMESPACE = "stoupy"
 PACK_FORMAT = 33
 RESOURCE_PACK_FORMAT = 28
 DATA_VERSION = 3823	# 24w11a
+DEPENDENCIES = {	# namespace: [major, minor, patch]
+	"smithed.custom_block": [0, 0, 0],
+	"smithed.crafter": [0, 0, 0],
+	"energy": [0, 6, 0],
+	"smart_ore_generation": [2, 0, 0],
+	"durability_multiplier": [2, 0, 0],
+}
 
 # Other constants
 ROOT = "/".join(os.path.dirname(os.path.abspath(__file__)).replace("\\", "/").split("/")[:-1])

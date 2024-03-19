@@ -83,8 +83,43 @@ execute if score #game_version {NAMESPACE}.data matches 1.. if score #mcload_err
 """)
 	pass
 
-# TODO: confirm load
+
+# Confirm load
+items_storage = ""
+content = ""
+for item, data in DATABASE.items():
+	mc_data = {"id":"","count":1, "components":{"custom_model_data":-1}}
+	for k, v in data.items():
+		if k not in NOT_COMPONENTS:
+			mc_data["components"][k] = v
+		else:
+			mc_data[k] = v
+	items_storage += f"data modify storage {NAMESPACE}:items all.{item} set value " + super_json_dump(mc_data, max_level = 0)
+	pass
+
+with super_open(f"{BUILD_DATAPACK}/data/{NAMESPACE}/functions/load/confirm_load.mcfunction", "w") as f:
+	f.write(f"""
+tellraw @a[tag=convention.debug] {{"text":"[Loaded {DATAPACK_NAME} v{VERSION}]","color":"green"}}
+
+scoreboard objectives add {NAMESPACE}.private dummy
+scoreboard objectives add {NAMESPACE}.right_click minecraft.used:minecraft.warped_fungus_on_a_stick
+
+scoreboard players set #{NAMESPACE}.loaded load.status 1
+execute store result score #second switch.data run random value 1..19
+
+# Items storage
+data modify storage {NAMESPACE}:items all set value {{}}
+{items_storage}
+""")
+	pass
 
 
+# Tick verification
+with super_open(f"{BUILD_DATAPACK}/data/{NAMESPACE}/functions/load/tick_verification.mcfunction", "w") as f:
+	f.write(f"""
+execute if score #{NAMESPACE}.loaded load.status matches 1 run function {NAMESPACE}:tick
 
+""")
+	pass
+info("All loading functions and tags created")
 

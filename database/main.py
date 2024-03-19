@@ -33,10 +33,10 @@ for ore in ores:
 		block_str = block.replace("_"," ").title()
 		DATABASE[block] = {}
 		DATABASE[block]["id"] = CUSTOM_BLOCK_VANILLA	# Item for placing custom block
-		DATABASE[block]["smithed"] = {}
-		DATABASE[block]["smithed"]["dict"] = {"block": {material: 1}}
+		DATABASE[block]["custom_data"] = {"smithed":{}}	# Smithed convention
+		DATABASE[block]["custom_data"]["smithed"]["dict"] = {"block": {material: 1}}
 		if placeable == "ore":
-			DATABASE[block]["smithed"]["dict"]["ore"] = {material: 1}
+			DATABASE[block]["custom_data"]["smithed"]["dict"]["ore"] = {material: 1}
 		
 		# Recipes
 		DATABASE[block][CRAFTING_RECIPES] = []
@@ -61,9 +61,9 @@ for ore in ores:
 			continue
 		item_str = item.replace("_"," ").title()
 		DATABASE[item] = {}
-		DATABASE[item]["id"] = CUSTOM_ITEM_VANILLA	# Item for ingredients
-		DATABASE[item]["smithed"] = {}
-		DATABASE[item]["smithed"]["dict"] = {ingredient: {material: 1}}
+		DATABASE[item]["id"] = CUSTOM_ITEM_VANILLA		# Item for ingredients
+		DATABASE[item]["custom_data"] = {"smithed":{}}	# Smithed convention
+		DATABASE[item]["custom_data"]["smithed"]["dict"] = {ingredient: {material: 1}} if ingredient else {"material": {material: 1}}
 
 		# Recipes
 		DATABASE[item][CRAFTING_RECIPES] = []
@@ -92,8 +92,8 @@ for ore in ores:
 			DATABASE[item]["id"] = f"minecraft:leather_{gear}"	# Leather armor by default
 		else:
 			DATABASE[item]["id"] = f"minecraft:diamond_{gear}"	# Diamond tools by default
-		DATABASE[item]["smithed"] = {}
-		DATABASE[item]["smithed"]["dict"] = {armor_or_tools: {material: 1, gear: 1}}
+		DATABASE[item]["custom_data"] = {"smithed":{}}			# Smithed convention
+		DATABASE[item]["custom_data"]["smithed"]["dict"] = {armor_or_tools: {material: 1, gear: 1}}
 		craft_gear = None
 		if gear == "helmet":
 			craft_gear = {"type": "shaped", "result_count": 1, "shape": "XXXX X", "ingredients": {"X": ingr_repr(ingr)}}
@@ -118,9 +118,7 @@ for ore in ores:
 
 		# If armor, get color and put it in display
 		if armor_or_tools == "armor" and color:
-			if not DATABASE[item].get("display"):
-				DATABASE[item]["display"] = {}
-			DATABASE[item]["display"]["color"] = color
+			DATABASE[item]["dyed_color"] = color
 			
 
 	# Others (stick, rod, ...)
@@ -130,9 +128,9 @@ for ore in ores:
 			continue
 		item_str = item.replace("_"," ").title()
 		DATABASE[item] = {}
-		DATABASE[item]["id"] = CUSTOM_ITEM_VANILLA	# Item for ingredients
-		DATABASE[item]["smithed"] = {}
-		DATABASE[item]["smithed"]["dict"] = {misc: {material: 1}}
+		DATABASE[item]["id"] = CUSTOM_ITEM_VANILLA		# Item for ingredients
+		DATABASE[item]["custom_data"] = {"smithed":{}}	# Smithed convention
+		DATABASE[item]["custom_data"]["smithed"]["dict"] = {misc: {material: 1}}
 		if misc == "stick":
 			DATABASE[item][CRAFTING_RECIPES] = [ str({"type":"shaped", "result_count": 2, "shape": "X  X  ", "ingredients": {"X": ingr_repr(ingr)}}) ]
 		elif misc == "rod":
@@ -154,26 +152,26 @@ for k in DATABASE.keys():
 	if DATABASE[k].get(CRAFTING_RECIPES) == []:
 		del DATABASE[k][CRAFTING_RECIPES]
 	
+	# Make custom data if not made
+	if not DATABASE[k].get("custom_data"):
+		DATABASE[k]["custom_data"] = {}
+	
 	# Make display for every item
 	item_str = k.replace("_"," ").title()
-	if not DATABASE[k].get("display"):
-		DATABASE[k]["display"] = {}
-	if not DATABASE[k]["display"].get("Name"):
-		DATABASE[k]["display"]["Name"] = f'[{{"text":"{item_str}","italic":false,"color":"white"}}]' 
-	if not DATABASE[k]["display"].get("Lore"):
-		DATABASE[k]["display"]["Lore"] = [SOURCE_LORE]
-	else:
-		DATABASE[k]["display"]["Lore"].append(SOURCE_LORE)
+	DATABASE[k]["custom_name"] = f'[{{"text":"{item_str}","italic":false,"color":"white"}}]' 
+	if not DATABASE[k].get("lore"):
+		DATABASE[k]["lore"] = []
+	DATABASE[k]["lore"].append(SOURCE_LORE)
 	if not DATABASE[k].get("custom_model_data"):
 		DATABASE[k]["custom_model_data"] = "PREFIX_XXX"
 
-	# Private custom_data for
-	DATABASE[k][NAMESPACE] = {k:1}
+	# Private custom_data for namespace
+	DATABASE[k]["custom_data"][NAMESPACE] = {k: 1}
 
 	# Smithed ignore vanilla behaviours
-	if not DATABASE[k].get("smithed"):
-		DATABASE[k]["smithed"] = {}
-	DATABASE[k]["smithed"]["ignore"] = {"functionality": 1, "crafting": 1}
+	if not DATABASE[k]["custom_data"].get("smithed"):
+		DATABASE[k]["custom_data"]["smithed"] = {}
+	DATABASE[k]["custom_data"]["smithed"]["ignore"] = {"functionality": 1, "crafting": 1}
 
 # Print not used textures and then all the keys
 textures_filenames = [texture for texture in textures_filenames if not DATABASE.get(texture.replace(".png",""))]

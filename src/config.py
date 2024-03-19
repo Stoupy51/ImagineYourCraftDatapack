@@ -47,6 +47,7 @@ CUSTOM_BLOCK_VANILLA = "minecraft:barrel"
 CUSTOM_ITEM_VANILLA = "minecraft:command_block"
 CRAFTING_RECIPES = "result_of_crafting"
 MODEL_DISPLAY = {"head":{"rotation":[0,0,0],"translation":[0,-30.42,0],"scale":[1.605,1.605,1.605]},"fixed":{"rotation":[-90,0,0],"translation":[0,0,-16],"scale":[2.0075,2.0075,2.0075]}}
+NOT_COMPONENTS = ["id", "wiki", CRAFTING_RECIPES]
 random.seed(3)
 
 # For easy testing (can be an empty list)

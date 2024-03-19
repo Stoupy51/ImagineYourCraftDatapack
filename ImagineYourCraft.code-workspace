@@ -2,6 +2,9 @@
 	"folders": [
 		{
 			"path": "."
+		},
+		{
+			"path": "D:/5) Energy System/world/datapacks/SimplEnergy"
 		}
 	],
 	"settings": {}

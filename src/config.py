@@ -10,6 +10,7 @@ IMPORT_TIME = datetime.datetime.now()
 # Datapack related constants
 MINECRAFT_VERSION = "24w11a" # 1.20.5 snapshot
 VERSION = "0.0.1"
+SCORE_VERSION = "00001" # major1.minor2.patch2, ex for v4.27.34: 42734
 NAMESPACE = "imagineyourcraft"
 GLOBAL_NAMESPACE = "stoupy"
 PACK_FORMAT = 33

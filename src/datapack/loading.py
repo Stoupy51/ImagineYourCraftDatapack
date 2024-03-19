@@ -45,10 +45,10 @@ with super_open(f"{BUILD_DATAPACK}/data/{NAMESPACE}/functions/load/check_depende
 	checks = ""
 	for namespace, value in DEPENDENCIES.items():
 		major, minor, patch = value["version"]
-		checks += f"execute if score #load_error {NAMESPACE}.data matches 0 unless score #{namespace}.major load.status matches {major}.. unless score #{namespace}.minor load.status matches {minor}.. unless score #{namespace}.patch load.status matches {patch}.. run scoreboard players set #load_error {NAMESPACE}.data 1\n"
+		checks += f"execute if score #dependency_error {NAMESPACE}.data matches 0 unless score #{namespace}.major load.status matches {major}.. unless score #{namespace}.minor load.status matches {minor}.. unless score #{namespace}.patch load.status matches {patch}.. run scoreboard players set #dependency_error {NAMESPACE}.data 1\n"
 	f.write(f"""
 ## Check if {DATAPACK_NAME} is loadable (dependencies)
-scoreboard players set #load_error {NAMESPACE}.data 0
+scoreboard players set #dependency_error {NAMESPACE}.data 0
 {checks}
 """)
 	pass
@@ -61,7 +61,7 @@ with super_open(f"{BUILD_DATAPACK}/data/{NAMESPACE}/functions/load/waiting_for_p
 		major, minor, patch = value["version"]
 		name = value["name"]
 		url = value["url"]
-		decoder_checks += f'execute if score #load_error {NAMESPACE}.data matches 1 unless score #{namespace}.major load.status matches {major}.. unless score #{namespace}.minor load.status matches {minor}.. unless score #{namespace}.patch load.status matches {patch}.. run tellraw @a {{"text":"- [{name}]","color":"gold","clickEvent":{{"action":"open_url","value":"{url}"}}}}\n'
+		decoder_checks += f'execute if score #dependency_error {NAMESPACE}.data matches 1 unless score #{namespace}.major load.status matches {major}.. unless score #{namespace}.minor load.status matches {minor}.. unless score #{namespace}.patch load.status matches {patch}.. run tellraw @a {{"text":"- [{name}]","color":"gold","clickEvent":{{"action":"open_url","value":"{url}"}}}}\n'
 	f.write(f"""
 # Waiting for a player to get the game version, but stop function if no player found
 execute unless entity @p run schedule function {NAMESPACE}:load/waiting_for_player 1t replace
@@ -78,7 +78,7 @@ execute if score #mcload_error {NAMESPACE}.data matches 2 run tellraw @a {{"text
 {decoder_checks}
 
 # Load {DATAPACK_NAME}
-execute if score #game_version {NAMESPACE}.data matches 1.. if score #mcload_error {NAMESPACE}.data matches 0 if score #load_error {NAMESPACE}.data matches 0 run function {NAMESPACE}:load/confirm_load
+execute if score #game_version {NAMESPACE}.data matches 1.. if score #mcload_error {NAMESPACE}.data matches 0 if score #dependency_error {NAMESPACE}.data matches 0 run function {NAMESPACE}:load/confirm_load
 
 """)
 	pass

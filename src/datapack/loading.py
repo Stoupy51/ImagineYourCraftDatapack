@@ -74,7 +74,7 @@ execute unless score #game_version {NAMESPACE}.data matches {DATA_VERSION}.. run
 
 # Decode errors
 execute if score #mcload_error {NAMESPACE}.data matches 1 run tellraw @a {{"text":"{DATAPACK_NAME} Error: This version is made for Minecraft {MINECRAFT_VERSION}+.","color":"red"}}
-execute if score #mcload_error {NAMESPACE}.data matches 2 run tellraw @a {{"text":"{DATAPACK_NAME} Error: Libraries are missing\nplease download the right {DATAPACK_NAME} datapack\nor download each of these libraries one by one:","color":"red"}}
+execute if score #mcload_error {NAMESPACE}.data matches 2 run tellraw @a {{"text":"{DATAPACK_NAME} Error: Libraries are missing\\nplease download the right {DATAPACK_NAME} datapack\\nor download each of these libraries one by one:","color":"red"}}
 {decoder_checks}
 
 # Load {DATAPACK_NAME}

@@ -98,16 +98,14 @@ for item, data in DATABASE.items():
 				pass
 			
 			# Write content
-			formatted_content = super_json_dump(content, max_level = 4)
-			f.write(formatted_content + "\n")
+			super_json_dump(content, f, max_level = 4)
 
 		# Generate placed models for item_display if it's a block
 		if block_or_item == "block":
 			dest_base_model = f"{BUILD_RESOURCE_PACK}/assets/{NAMESPACE}/models/{block_or_item}/for_item_display"
 			content["display"] = MODEL_DISPLAY
 			with super_open(f"{dest_base_model}/{item}{on_off}.json", "w") as f:
-				formatted_content = super_json_dump(content, max_level = 4)
-				f.write(formatted_content + "\n")
+				super_json_dump(content, f, max_level = 4)
 	pass
 info("Custom models created")
 

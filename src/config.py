@@ -15,12 +15,13 @@ GLOBAL_NAMESPACE = "stoupy"
 PACK_FORMAT = 33
 RESOURCE_PACK_FORMAT = 28
 DATA_VERSION = 3823	# 24w11a
-DEPENDENCIES = {	# namespace: [major, minor, patch]
-	"smithed.custom_block": [0, 0, 0],
-	"smithed.crafter": [0, 0, 0],
-	"energy": [0, 6, 0],
-	"smart_ore_generation": [2, 0, 0],
-	"durability_multiplier": [2, 0, 0],
+DEPENDENCIES = {
+	"smithed.custom_block": {"version":[0, 0, 0], "name":"Smithed Custom Block Placement", "url":"https://wiki.smithed.dev/libraries/custom-block/"},
+	"smithed.crafter": {"version":[0, 0, 0], "name":"Smithed Crafter", "url":"https://wiki.smithed.dev/libraries/crafter/"},
+	"smart_ore_generation": {"version":[2, 0, 0], "name":"Stoupy's Smart Ore Generation", "url":"https://github.com/Stoupy51/SmartOreGeneration"},
+	"durability_multiplier": {"version":[2, 0, 0], "name":"Stoupy's Durability Multiplier", "url":"https://github.com/Stoupy51/DurabilityMultiplier"},
+	# "energy": {"version":[0, 6, 0], "name":"DatapackEnergy", "url":"https://github.com/ICY105/DatapackEnergy"},
+	# "furnace_nbt_recipes": {"version":[2, 0, 0], "name":"Stoupy's Furnace NBT Recipes", "url":"https://github.com/Stoupy51/FurnaceNbtRecipes"},
 }
 
 # Other constants

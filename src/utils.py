@@ -76,6 +76,7 @@ def super_json_dump(data: dict, file: io.TextIOWrapper = None, max_level: int = 
 	for char in finishes:
 		to_replace = "\n" + "\t" * max_level + char
 		content = content.replace(to_replace, char)
+	content += "\n"
 	
 	# Write file content and return it
 	if file:

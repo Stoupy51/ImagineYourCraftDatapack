@@ -29,7 +29,25 @@ for item, data in DATABASE.items():
 	with super_open(f"{BUILD_DATAPACK}/data/{NAMESPACE}/loot_tables/i/{item}.json", "w") as f:
 		super_json_dump(loot_table, f, max_level = -1)
 	pass
+info("Made loot tables for every item")
 
-# TODO: loot tables for recipes count
-info("Loot tables files created")
+
+# Loot tables for items with crafting recipes
+for item, data in DATABASE.items():
+	if data.get(CRAFTING_RECIPES):
+		results = []
+		for d in data[CRAFTING_RECIPES]:
+			count = d["result_count"]
+			if count != 1:
+				results.append(count)
+
+		# For each result count, create a loot table for it
+		for result_count in results:
+			loot_table = {"pools":[{"rolls":1,"entries":[{"type":"minecraft:loot_table","name":f"{NAMESPACE}:i/{item}","functions":[{"function":"minecraft:set_count","count":result_count}]}]}]}
+			with super_open(f"{BUILD_DATAPACK}/data/{NAMESPACE}/loot_tables/i/{item}_x{result_count}.json", "w") as f:
+				super_json_dump(loot_table, f, max_level = -1)
+info("Multiple counts loot tables made for every item with crafting recipes")
+
+
+# TODO: give all
 

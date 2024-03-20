@@ -12,14 +12,14 @@ shutil.rmtree(DATABASE_DEBUG, ignore_errors=True)
 with super_open(f"{BUILD_DATAPACK}/pack.mcmeta", "w") as file:
 	pack_mcmeta =  {"pack":{"pack_format": PACK_FORMAT, "description": DESCRIPTION}, "id": NAMESPACE}
 	super_json_dump(pack_mcmeta, file)
-	info(f"pack.mcmeta file created")
+	info(f"pack.mcmeta file created for datapack")
 	pass
 
 # Setup pack.mcmeta for the resource pack
 with super_open(f"{BUILD_RESOURCE_PACK}/pack.mcmeta", "w") as file:
 	pack_mcmeta =  {"pack":{"pack_format": RESOURCE_PACK_FORMAT, "description": DESCRIPTION}, "id": NAMESPACE}
 	super_json_dump(pack_mcmeta, file)
-	info(f"pack.mcmeta file created")
+	info(f"pack.mcmeta file created for resource pack")
 	pass
 
 

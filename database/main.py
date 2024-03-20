@@ -132,9 +132,9 @@ for ore in ores:
 		DATABASE[item]["custom_data"] = {"smithed":{}}	# Smithed convention
 		DATABASE[item]["custom_data"]["smithed"]["dict"] = {misc: {material: 1}}
 		if misc == "stick":
-			DATABASE[item][CRAFTING_RECIPES] = [ str({"type":"shaped", "result_count": 2, "shape": "X  X  ", "ingredients": {"X": ingr_repr(ingr)}}) ]
+			DATABASE[item][CRAFTING_RECIPES] = [{"type":"shaped", "result_count": 2, "shape": "X  X  ", "ingredients": {"X": ingr_repr(ingr)}}]
 		elif misc == "rod":
-			DATABASE[item][CRAFTING_RECIPES] = [ str({"type":"shaped", "result_count": 1, "shape": "X  X  X  ", "ingredients": {"X": ingr_repr(ingr)}}) ]
+			DATABASE[item][CRAFTING_RECIPES] = [{"type":"shaped", "result_count": 1, "shape": "X  X  X  ", "ingredients": {"X": ingr_repr(ingr)}}]
 		pass
 	pass
 

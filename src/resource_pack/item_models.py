@@ -11,6 +11,7 @@ os.makedirs(f"{BUILD_RESOURCE_PACK}/assets/{NAMESPACE}/textures/item", exist_ok=
 # Get every block variant
 both = FACES + SIDES
 armors = ["helmet", "chestplate", "leggings", "boots"]
+tools = ["sword", "pickaxe", "axe", "shovel", "hoe"]
 
 # For each item,
 for item, data in DATABASE.items():
@@ -92,6 +93,8 @@ for item, data in DATABASE.items():
 				content = {"parent": "item/generated",	"textures": {"layer0": path}}
 				if any(x in item for x in armors):
 					content["textures"]["layer1"] = content["textures"]["layer0"]
+				if any(x in item for x in tools):
+					content["parent"] = "item/handheld"
 				pass
 			
 			# Write content

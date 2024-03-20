@@ -49,5 +49,6 @@ for item, data in DATABASE.items():
 info("Multiple counts loot tables made for every item with crafting recipes")
 
 
-# TODO: give all
+# TODO Make a give all command that gives chests with all the items
+number_of_chests = (len(DATABASE) + 26) // 27
 

@@ -1,5 +1,6 @@
 
-from src.config import *
+# Imports
+from src.importer import *
 
 # Give Additional data for every item
 database_additions = {
@@ -13,6 +14,14 @@ database_additions = {
 			["Silk Touch?", "Also supported"]
 		]
 	},
-	"iron_furnace": {"id": CUSTOM_BLOCK_VANILLA, "custom_model_data":"PREFIX_XXX"},
+	"iron_furnace": {"id": CUSTOM_BLOCK_VANILLA},
 }
+
+# Update the database with new data
+for k, v in database_additions.items():
+	if k in DATABASE:
+		DATABASE[k].update(v)
+	else:
+		DATABASE[k] = v
+info("Database additions loaded")
 

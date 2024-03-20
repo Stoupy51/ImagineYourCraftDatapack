@@ -127,4 +127,5 @@ for ore in ORES:
 			DATABASE[item][CRAFTING_RECIPES] = [{"type":"shaped", "result_count": 1, "shape": "X  X  X  ", "INGREDIENTS": {"X": ingr_repr(ingr)}}]
 		pass
 	pass
+info("Ores related stuff generated in the database")
 

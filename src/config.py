@@ -51,5 +51,5 @@ NOT_COMPONENTS = ["id", "wiki", CRAFTING_RECIPES]
 random.seed(3)
 
 # For easy testing (can be an empty list)
-BUILD_COPY_DESTINATIONS = ("D:/5) Energy System/world/datapacks", "C:/Users/Alexandre-PC/AppData/Roaming/.minecraft/1.13+/resourcepacks")
+BUILD_COPY_DESTINATIONS = ("D:/latest_snapshot/world/datapacks", "C:/Users/Alexandre-PC/AppData/Roaming/.minecraft/1.13+/resourcepacks")
 

@@ -5,7 +5,6 @@ from src.importer import *
 # Give Additional data for every item
 database_additions = {
 	"adamantium_ore": {
-		"custom_model_data":"PREFIX_XXX",
 		"wiki": [
 			["Description", "Adamantium Ore is a mineable ore found in the overworld caves."],
 			["How to get one?", "In the overworld, anywhere below y=40"],

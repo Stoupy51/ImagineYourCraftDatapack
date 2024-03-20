@@ -9,7 +9,8 @@ for v in DATABASE.values():
 		vanilla_ids.append(v["id"].replace("minecraft:", ""))
 
 # For each vanilla ID, create the json model file
-blocks = [CUSTOM_BLOCK_VANILLA, "command_block"]
+blocks = [CUSTOM_BLOCK_VANILLA]
+blocks = [x.replace("minecraft:", "") for x in blocks]
 for id in vanilla_ids:
 	with super_open(f"{BUILD_RESOURCE_PACK}/assets/minecraft/models/item/{id}.json", "w") as file:
 		block_or_item = "block" if id in blocks else "item"

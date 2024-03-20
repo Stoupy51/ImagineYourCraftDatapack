@@ -18,8 +18,7 @@ for item, data in DATABASE.items():
 	for k, v in data.items():
 		if k not in NOT_COMPONENTS and k != "custom_data":
 			if k == "dyed_color":
-				r,g,b = v//65536, (v//256)%256, v%256
-				set_components["components"]["minecraft:dyed_color"] = {"rgb":(r,g,b)}
+				set_components["components"]["minecraft:dyed_color"] = {"rgb": v, "show_in_tooltip": False}
 			else:
 				set_components["components"][f"minecraft:{k}"] = v
 	

@@ -88,12 +88,9 @@ for item, data in DATABASE.items():
 			# Else, it's an item
 			else:
 
-				# If not an armor
 				path = f"{NAMESPACE}:{block_or_item}/{item}{on_off}"
-				if not any(x in item for x in armors):
-					content = {"parent": "item/handheld",	"textures": {"layer0": path}}
-				else:
-					content = {"parent": "item/generated",	"textures": {"layer0": path}}
+				content = {"parent": "item/generated",	"textures": {"layer0": path}}
+				if any(x in item for x in armors):
 					content["textures"]["layer1"] = content["textures"]["layer0"]
 				pass
 			

@@ -49,5 +49,21 @@ info("Multiple counts loot tables made for every item with crafting recipes")
 
 
 # TODO Make a give all command that gives chests with all the items
+"""
+give @s chest[container=[
+	{slot:0,item:{
+		count:1,id:"minecraft:diamond_sword",components:{
+			"minecraft:custom_data":{
+				imagineyourcraft:{adamantium_sword:1},
+				smithed:{dict:{tools:{adamantium:1,sword:1}},
+				ignore:{crafting:1,functionality:1}}
+			},
+			"minecraft:custom_model_data":2015007,
+			"minecraft:custom_name":'{"color":"white","italic":false,"text":"Adamantium Sword"}',
+			"minecraft:lore":['{"color":"blue","italic":true,"text":"ImagineYourCraft"}']
+		}
+	}}
+]]
+"""
 number_of_chests = (len(DATABASE) + 26) // 27
 

@@ -32,11 +32,11 @@ for ore in ORES:
 		DATABASE[block][CRAFTING_RECIPES] = []
 		if placeable == "block":
 			if f"{material}_ingot.png" in textures_filenames:
-				DATABASE[block][CRAFTING_RECIPES].append({"type":"shapeless", "result_count": 1, "INGREDIENTS": [ingr_repr(f"{material}_ingot", count = 9)]})
+				DATABASE[block][CRAFTING_RECIPES].append({"type":"shapeless", "result_count": 1, "ingredients": [ingr_repr(f"{material}_ingot", count = 9)]})
 			if f"{material}_fragment.png" in textures_filenames:
-				DATABASE[block][CRAFTING_RECIPES].append({"type":"shapeless", "result_count": 1, "INGREDIENTS": [ingr_repr(f"{material}_fragment", count = 9)]})
+				DATABASE[block][CRAFTING_RECIPES].append({"type":"shapeless", "result_count": 1, "ingredients": [ingr_repr(f"{material}_fragment", count = 9)]})
 			if f"{material}.png" in textures_filenames:
-				DATABASE[block][CRAFTING_RECIPES].append({"type":"shapeless", "result_count": 1, "INGREDIENTS": [ingr_repr(material, count = 9)]})
+				DATABASE[block][CRAFTING_RECIPES].append({"type":"shapeless", "result_count": 1, "ingredients": [ingr_repr(material, count = 9)]})
 		pass
 	
 	# Ingredients (ingot, nugget, raw, and other)
@@ -59,9 +59,9 @@ for ore in ORES:
 		DATABASE[item][CRAFTING_RECIPES] = []
 		if ingredient == "ingot" or ingredient == "":
 			if f"{ore}_block.png" in textures_filenames:
-				DATABASE[item][CRAFTING_RECIPES].append({"type":"shapeless", "result_count": 9, "INGREDIENTS": [ingr_repr(f"{ore}_block", count = 1)]})
+				DATABASE[item][CRAFTING_RECIPES].append({"type":"shapeless", "result_count": 9, "ingredients": [ingr_repr(f"{ore}_block", count = 1)]})
 			if f"{ore}_nugget.png" in textures_filenames:
-				DATABASE[item][CRAFTING_RECIPES].append({"type":"shapeless", "result_count": 1, "INGREDIENTS": [ingr_repr(f"{ore}_nugget", count = 9)]})
+				DATABASE[item][CRAFTING_RECIPES].append({"type":"shapeless", "result_count": 1, "ingredients": [ingr_repr(f"{ore}_nugget", count = 9)]})
 			if f"raw_{ore}.png" in textures_filenames:
 				DATABASE[item][CRAFTING_RECIPES].append({"type":"smelting", "result_count": 1, "ingredient": ingr_repr(f"raw_{ore}")})
 			if f"{ore}_dust.png" in textures_filenames:
@@ -86,23 +86,23 @@ for ore in ORES:
 		DATABASE[item]["custom_data"]["smithed"]["dict"] = {armor_or_tools: {material: 1, gear: 1}}
 		craft_gear = None
 		if gear == "helmet":
-			craft_gear = {"type": "shaped", "result_count": 1, "shape": "XXXX X", "INGREDIENTS": {"X": ingr_repr(ingr)}}
+			craft_gear = {"type": "shaped", "result_count": 1, "shape": "XXXX X", "ingredients": {"X": ingr_repr(ingr)}}
 		elif gear == "chestplate":
-			craft_gear = {"type": "shaped", "result_count": 1, "shape": "X XXXXXXX", "INGREDIENTS": {"X": ingr_repr(ingr)}}
+			craft_gear = {"type": "shaped", "result_count": 1, "shape": "X XXXXXXX", "ingredients": {"X": ingr_repr(ingr)}}
 		elif gear == "leggings":
-			craft_gear = {"type": "shaped", "result_count": 1, "shape": "XXXX XX X", "INGREDIENTS": {"X": ingr_repr(ingr)}}
+			craft_gear = {"type": "shaped", "result_count": 1, "shape": "XXXX XX X", "ingredients": {"X": ingr_repr(ingr)}}
 		elif gear == "boots":
-			craft_gear = {"type": "shaped", "result_count": 1, "shape": "X XX X", "INGREDIENTS": {"X": ingr_repr(ingr)}}
+			craft_gear = {"type": "shaped", "result_count": 1, "shape": "X XX X", "ingredients": {"X": ingr_repr(ingr)}}
 		elif gear == "sword":
-			craft_gear = {"type": "shaped", "result_count": 1, "shape": "X  X  S", "INGREDIENTS": {"X": ingr_repr(ingr), "S": {"id":"minecraft:stick"}}}
+			craft_gear = {"type": "shaped", "result_count": 1, "shape": "X  X  S", "ingredients": {"X": ingr_repr(ingr), "S": {"id":"minecraft:stick"}}}
 		elif gear == "pickaxe":
-			craft_gear = {"type": "shaped", "result_count": 1, "shape": "XXX S  S ", "INGREDIENTS": {"X": ingr_repr(ingr), "S": {"id":"minecraft:stick"}}}
+			craft_gear = {"type": "shaped", "result_count": 1, "shape": "XXX S  S ", "ingredients": {"X": ingr_repr(ingr), "S": {"id":"minecraft:stick"}}}
 		elif gear == "axe":
-			craft_gear = {"type": "shaped", "result_count": 1, "shape": "XX XS  S ", "INGREDIENTS": {"X": ingr_repr(ingr), "S": {"id":"minecraft:stick"}}}
+			craft_gear = {"type": "shaped", "result_count": 1, "shape": "XX XS  S ", "ingredients": {"X": ingr_repr(ingr), "S": {"id":"minecraft:stick"}}}
 		elif gear == "shovel":
-			craft_gear = {"type": "shaped", "result_count": 1, "shape": "X  S  S  ", "INGREDIENTS": {"X": ingr_repr(ingr), "S": {"id":"minecraft:stick"}}}
+			craft_gear = {"type": "shaped", "result_count": 1, "shape": "X  S  S  ", "ingredients": {"X": ingr_repr(ingr), "S": {"id":"minecraft:stick"}}}
 		elif gear == "hoe":
-			craft_gear = {"type": "shaped", "result_count": 1, "shape": "XX  S  S ", "INGREDIENTS": {"X": ingr_repr(ingr), "S": {"id":"minecraft:stick"}}}
+			craft_gear = {"type": "shaped", "result_count": 1, "shape": "XX  S  S ", "ingredients": {"X": ingr_repr(ingr), "S": {"id":"minecraft:stick"}}}
 		if craft_gear:
 			DATABASE[item][CRAFTING_RECIPES] = [craft_gear]
 
@@ -122,9 +122,9 @@ for ore in ORES:
 		DATABASE[item]["custom_data"] = {"smithed":{}}	# Smithed convention
 		DATABASE[item]["custom_data"]["smithed"]["dict"] = {misc: {material: 1}}
 		if misc == "stick":
-			DATABASE[item][CRAFTING_RECIPES] = [{"type":"shaped", "result_count": 2, "shape": "X  X  ", "INGREDIENTS": {"X": ingr_repr(ingr)}}]
+			DATABASE[item][CRAFTING_RECIPES] = [{"type":"shaped", "result_count": 2, "shape": "X  X  ", "ingredients": {"X": ingr_repr(ingr)}}]
 		elif misc == "rod":
-			DATABASE[item][CRAFTING_RECIPES] = [{"type":"shaped", "result_count": 1, "shape": "X  X  X  ", "INGREDIENTS": {"X": ingr_repr(ingr)}}]
+			DATABASE[item][CRAFTING_RECIPES] = [{"type":"shaped", "result_count": 1, "shape": "X  X  X  ", "ingredients": {"X": ingr_repr(ingr)}}]
 		pass
 	pass
 info("Ores related stuff generated in the database")

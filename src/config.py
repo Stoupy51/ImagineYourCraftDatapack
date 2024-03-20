@@ -39,7 +39,7 @@ DATABASE = {}
 DATABASE_DEBUG = f"{DATABASE_FOLDER}/database_debug.json"
 SOURCE_LORE = f'[{{"text":"{DATAPACK_NAME}","italic":true,"color":"blue"}}]'
 FACES = ("down", "up", "north", "south", "west", "east")
-SIDES = ("bottom", "top", "front", "back", "left", "right", "side")
+SIDES = ("bottom", "top", "front", "back", "left", "right", "side")	# TODO, fix the problem with "topaz" being detected as "top"
 
 
 # Technical constants

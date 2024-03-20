@@ -2,7 +2,6 @@
 # Import config
 from src.importer import *
 
-## Finally, for each .mcfunction file, add small header (called by what functions)
 # Get all mcfunctions paths
 mcfunctions = {}
 functions_folder = f"{BUILD_DATAPACK}/data/{NAMESPACE}/functions/"
@@ -13,11 +12,6 @@ for root, _, files in os.walk(f"{BUILD_DATAPACK}/data/{NAMESPACE}/functions/"):
 			mcfunctions[to_be_called] = {"path":f"{root}/{file}", "within":[]}
 	pass
 
-"""
-#> simplenergy:tick
-#
-# @within			simplenergy:utils/tick_verification
-#"""
 # For each json file, get the functions that it calls
 functions_tags_folder = f"{BUILD_DATAPACK}/data/{NAMESPACE}/tags/functions/"
 for root, _, files in os.walk(functions_tags_folder):

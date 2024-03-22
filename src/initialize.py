@@ -36,8 +36,10 @@ REPLACEMENTS = {
 	"rubies": "ruby",
 	"topaze": "topaz",
 }
-for root, dirs, files in os.walk(TEXTURES_FOLDER):
+for root, _, files in os.walk(TEXTURES_FOLDER):
 	for file in files:
+		if not file.endswith(".png"):
+			continue
 		new_name = file.lower()
 		for k, v in REPLACEMENTS.items():
 			if k in file:

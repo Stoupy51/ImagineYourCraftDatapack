@@ -1,6 +1,7 @@
 
 # Import config
 from src.importer import *
+from database.additions import *
 
 # Get every vanilla IDs
 vanilla_ids = []
@@ -39,6 +40,10 @@ for id in vanilla_ids:
 		for item, data in DATABASE.items():
 			if data["id"].replace("minecraft:","") == id:
 				content["overrides"].append({"predicate": { "custom_model_data": data["custom_model_data"]}, "model": f"{NAMESPACE}:{block_or_item}/{item}" })
+
+				# Additionally, add a "_on" model if there is
+				if os.path.exists(f"{BUILD_RESOURCE_PACK}/assets/{NAMESPACE}/models/{block_or_item}/{item}_on.json"):
+					content["overrides"].append({"predicate": { "custom_model_data": data["custom_model_data"] + 1}, "model": f"{NAMESPACE}:{block_or_item}/{item}_on" })
 
 		# Write the content to the file
 		file.write(super_json_dump(content).replace('{"','{ "').replace('"}','" }').replace(',"', ', "') + "\n")

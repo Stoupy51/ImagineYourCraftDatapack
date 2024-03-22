@@ -24,7 +24,7 @@ for ore, data in ORES.items():
 		# Get new properties and updated them
 		equivalent = EQUIPMENTS[e][data["equivalent_to"]].copy()
 		equivalent["durability"] = int(equivalent["durability"] * durability)
-		if "armor" in data and "armor" in equivalent:
+		if "armor" in equivalent:
 			equivalent["armor"] = round(equivalent["armor"] * damage_resist, 1)
 		if "attack_damage" in data and "attack_damage" in equivalent:
 			equivalent["attack_damage"] = round(equivalent["attack_damage"] * damage_resist, 1)
@@ -68,4 +68,5 @@ for ore, data in ORES.items():
 		if "speed" in data and "attack_speed" in equivalent:
 			uuid = UUIDS["speed"][e]
 			DATABASE[item]["attribute_modifiers"].append({"type":"player.block_break_speed","uuid":uuid,"name":"player.block_break_speed","amount":speed,"operation":"add_value","slot":"mainhand"})
+info("Added new properties to each ore item")
 

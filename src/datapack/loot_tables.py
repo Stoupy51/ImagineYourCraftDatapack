@@ -48,22 +48,29 @@ for item, data in DATABASE.items():
 info("Multiple counts loot tables made for every item with crafting recipes")
 
 
-# TODO Make a give all command that gives chests with all the items
-"""
-give @s chest[container=[
-	{slot:0,item:{
-		count:1,id:"minecraft:diamond_sword",components:{
-			"minecraft:custom_data":{
-				imagineyourcraft:{adamantium_sword:1},
-				smithed:{dict:{tools:{adamantium:1,sword:1}},
-				ignore:{crafting:1,functionality:1}}
-			},
-			"minecraft:custom_model_data":2015007,
-			"minecraft:custom_name":'{"color":"white","italic":false,"text":"Adamantium Sword"}',
-			"minecraft:lore":['{"color":"blue","italic":true,"text":"ImagineYourCraft"}']
-		}
-	}}
-]]
-"""
-number_of_chests = (len(DATABASE) + 26) // 27
+# Make a give all command that gives chests with all the items
+CHEST_SIZE = 27
+chests_remaining = (len(DATABASE) + CHEST_SIZE - 1) // CHEST_SIZE
+chests = []
+database_copy = DATABASE.copy()
+for i in range(chests_remaining):
+	chest_contents = []
+ 
+	# For each slot of the chest, append an item and remove it from the copy
+	for j in range(CHEST_SIZE):
+		if not database_copy:
+			break
+		item, data = database_copy.popitem()
+		data = data.copy()
+		id = data["id"]
+		for k in NOT_COMPONENTS:	# Remove non-component data
+			if data.get(k):
+				del data[k]
+		chest_contents.append(f'{{slot:{j},item:{{count:1,id:"{id}",components:{json.dumps(data)}}}}}')
+	joined_content = ",".join(chest_contents)
+	chests.append(f'{{slot:{i},item:{{count:1,id:"minecraft:chest",components:{{"minecraft:container":[{joined_content}]}}}}}}')
+joined_chests = ",".join(chests) + "]]"
+with super_open(f"{BUILD_DATAPACK}/data/{NAMESPACE}/functions/_give_all.mcfunction", "w") as f:
+	f.write(f"\ngive @s chest[container=[{joined_chests}]]\n\n")
+info("Give all function successfully made")
 

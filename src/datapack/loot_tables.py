@@ -23,7 +23,7 @@ for item, data in DATABASE.items():
 	loot_table["pools"][0]["entries"][0]["functions"] = [copy_custom_data, set_components]
 
 	with super_open(f"{BUILD_DATAPACK}/data/{NAMESPACE}/loot_tables/i/{item}.json", "w") as f:
-		super_json_dump(loot_table, f, max_level = -1)
+		super_json_dump(loot_table, f, max_level = 9)
 	pass
 info("Made loot tables for every item")
 

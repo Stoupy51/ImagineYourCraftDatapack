@@ -61,7 +61,7 @@ for item, data in DATABASE.items():
 		
 					# For each possible side (in reverse order)
 					for i in range(len(SIDES), 0, -1):
-						side = SIDES[i - 1]
+						side = SIDES[i - 1].replace("_", "")
 		
 						# If we have a texture for the side
 						if any(side in x for x in additional_textures):

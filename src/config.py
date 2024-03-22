@@ -19,7 +19,6 @@ DEPENDENCIES = {
 	"smithed.custom_block": {"version":[0, 0, 0], "name":"Smithed Custom Block Placement", "url":"https://wiki.smithed.dev/libraries/custom-block/"},
 	"smithed.crafter": {"version":[0, 0, 0], "name":"Smithed Crafter", "url":"https://wiki.smithed.dev/libraries/crafter/"},
 	"smart_ore_generation": {"version":[2, 0, 0], "name":"Stoupy's Smart Ore Generation", "url":"https://github.com/Stoupy51/SmartOreGeneration"},
-	"durability_multiplier": {"version":[2, 0, 0], "name":"Stoupy's Durability Multiplier", "url":"https://github.com/Stoupy51/DurabilityMultiplier"},
 	# "energy": {"version":[0, 6, 0], "name":"DatapackEnergy", "url":"https://github.com/ICY105/DatapackEnergy"},
 	# "furnace_nbt_recipes": {"version":[2, 0, 0], "name":"Stoupy's Furnace NBT Recipes", "url":"https://github.com/Stoupy51/FurnaceNbtRecipes"},
 }
@@ -39,7 +38,7 @@ DATABASE = {}
 DATABASE_DEBUG = f"{DATABASE_FOLDER}/database_debug.json"
 SOURCE_LORE = f'[{{"text":"{DATAPACK_NAME}","italic":true,"color":"blue"}}]'
 FACES = ("down", "up", "north", "south", "west", "east")
-SIDES = ("bottom", "top", "front", "back", "left", "right", "side")	# TODO, fix the problem with "topaz" being detected as "top"
+SIDES = ("_bottom", "_top", "_front", "_back", "_left", "_right", "_side")
 
 
 # Technical constants

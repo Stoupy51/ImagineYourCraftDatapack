@@ -76,7 +76,7 @@ for ore in ORES:
 		if f"{item}.png" not in textures_filenames:	# Skip if the item doesn't have a texture
 			continue
 		item_str = item.replace("_"," ").title()
-		armor_or_tools = "armor" if gear in EQUIPMENTS[:4] else "tools"
+		armor_or_tools = "armor" if gear in ARMORS else "tools"
 		DATABASE[item] = {}
 		if armor_or_tools == "armor": # Is Armor?
 			DATABASE[item]["id"] = f"minecraft:leather_{gear}"	# Leather armor by default

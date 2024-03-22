@@ -2,6 +2,9 @@
 # Generate ores in database
 from database.insert_ores import *
 
+# Add more information for each type of ore
+from database.ores_properties import *
+
 # Apply database additions
 from database.additions import *
 

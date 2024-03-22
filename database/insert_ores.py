@@ -10,10 +10,12 @@ for ore in ORES:
 
 	# Get ore color (for armor and other stuff)
 	color = None
-	if f"{ore}_block.png" in textures_filenames:
-		with open(f"{TEXTURES_FOLDER}/{ore}_block.png", "rb") as file:
-			color = imageio.imread(file).mean(axis = (0,1))	# Get average color (r,g,b,a)
-			color = int(256*256*color[0] + 256*color[1] + color[2])	# Convert to int (Minecraft format: 256*256*red + 256*green + blue)
+	if f"{material}_chestplate.png" in textures_filenames:
+		with open(f"{TEXTURES_FOLDER}/{material}_chestplate.png", "rb") as file:
+			color = imageio.imread(file)										# Get image (2D Array)
+			color = [(r,g,b) for dim in color for (r,g,b,a) in dim if a > 0]	# Get all colors that are not transparent
+			color = [sum(x) / len(color) for x in zip(*color)]					# Get the average color
+			color = int(color[0]) << 16 | int(color[1]) << 8 | int(color[2])	# Convert to int (Minecraft format: Red<<16 + Green<<8 + Blue)
 
 	# Placeables
 	for placeable in PLACEABLES:
@@ -108,7 +110,7 @@ for ore in ORES:
 
 		# If armor, get color and put it in display
 		if armor_or_tools == "armor" and color:
-			DATABASE[item]["dyed_color"] = color
+			DATABASE[item]["dyed_color"] = {"rgb": color, "show_in_tooltip": False}
 			
 
 	# Others (stick, rod, ...)

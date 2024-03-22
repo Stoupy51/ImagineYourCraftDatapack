@@ -17,10 +17,7 @@ for item, data in DATABASE.items():
 	set_components = {"function":"minecraft:set_components","components":{}}
 	for k, v in data.items():
 		if k not in NOT_COMPONENTS and k != "custom_data":
-			if k == "dyed_color":
-				set_components["components"]["minecraft:dyed_color"] = {"rgb": v, "show_in_tooltip": False}
-			else:
-				set_components["components"][f"minecraft:{k}"] = v
+			set_components["components"][f"minecraft:{k}"] = v
 	
 	# Add functions
 	loot_table["pools"][0]["entries"][0]["functions"] = [copy_custom_data, set_components]

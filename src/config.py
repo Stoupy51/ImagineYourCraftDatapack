@@ -8,12 +8,12 @@ import os
 IMPORT_TIME = datetime.datetime.now()
 
 # Datapack related constants
-MINECRAFT_VERSION = "24w11a" # 1.20.5 snapshot
+MINECRAFT_VERSION = "24w12a" # 1.20.5 snapshot
 VERSION = "0.0.1"
 NAMESPACE = "imagineyourcraft"
 GLOBAL_NAMESPACE = "stoupy"
-PACK_FORMAT = 33
-RESOURCE_PACK_FORMAT = 28
+PACK_FORMAT = 34
+RESOURCE_PACK_FORMAT = 29
 DATA_VERSION = 3823	# 24w11a
 DEPENDENCIES = {
 	# "smithed.custom_block": {"version":[0, 0, 0], "name":"Smithed Custom Block Placement", "url":"https://wiki.smithed.dev/libraries/custom-block/"},

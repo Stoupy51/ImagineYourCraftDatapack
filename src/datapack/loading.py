@@ -66,7 +66,7 @@ with super_open(f"{BUILD_DATAPACK}/data/{NAMESPACE}/functions/load/waiting_for_p
 # Waiting for a player to get the game version, but stop function if no player found
 execute unless entity @p run schedule function {NAMESPACE}:load/waiting_for_player 1t replace
 execute unless entity @p run return 0
-execute store result score #{NAMESPACE}.game_version {NAMESPACE}.data run data get entity @p DataVersion
+execute store result score #game_version {NAMESPACE}.data run data get entity @p DataVersion
 
 # Check if the game version is supported
 scoreboard players set #mcload_error {NAMESPACE}.data 0

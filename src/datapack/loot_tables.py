@@ -50,10 +50,10 @@ info("Multiple counts loot tables made for every item with crafting recipes")
 
 # Make a give all command that gives chests with all the items
 CHEST_SIZE = 27
-chests_remaining = (len(DATABASE) + CHEST_SIZE - 1) // CHEST_SIZE
+total_chests = (len(DATABASE) + CHEST_SIZE - 1) // CHEST_SIZE
 chests = []
 database_copy = DATABASE.copy()
-for i in range(chests_remaining):
+for i in range(total_chests):
 	chest_contents = []
  
 	# For each slot of the chest, append an item and remove it from the copy
@@ -68,9 +68,8 @@ for i in range(chests_remaining):
 				del data[k]
 		chest_contents.append(f'{{slot:{j},item:{{count:1,id:"{id}",components:{json.dumps(data)}}}}}')
 	joined_content = ",".join(chest_contents)
-	chests.append(f'{{slot:{i},item:{{count:1,id:"minecraft:chest",components:{{"minecraft:container":[{joined_content}]}}}}}}')
-joined_chests = ",".join(chests) + "]]"
+	chests.append(f'give @s chest[container=[{joined_content}],custom_name=\'{{"text":"Chest [{i+1}/{total_chests}]","color":"yellow"}}\',lore=[\'{{"text":"{DATAPACK_NAME}","italic":true,"color":"blue"}}\']]')
 with super_open(f"{BUILD_DATAPACK}/data/{NAMESPACE}/functions/_give_all.mcfunction", "w") as f:
-	f.write(f"\ngive @s chest[container=[{joined_chests}]]\n\n")
+	f.write("\n" + "\n\n".join(chests) + "\n\n")
 info("Give all function successfully made")
 

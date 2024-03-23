@@ -48,10 +48,11 @@ def RecipeShaped(recipe: dict, item: str) -> dict:
 # Generate recipes with vanilla input (no components)
 for item, data in DATABASE.items():
 	if data.get(CRAFTING_RECIPES) and data[CRAFTING_RECIPES] != []:
-		i = 1
+		i = 0
 		for recipe in data[CRAFTING_RECIPES]:
 
 			# Get ingredients
+			name = f"{item}" if i == 0 else f"{item}_{i}"
 			ingr = recipe.get("ingredients")
 			if not ingr:
 				ingr = [recipe.get("ingredient")]
@@ -61,14 +62,14 @@ for item, data in DATABASE.items():
 				if any(i.get("item") == None for i in ingr):
 					continue
 				r = RecipeShapeless(recipe, item)
-				with super_open(f"{BUILD_DATAPACK}/data/{NAMESPACE}/recipes/{item}_{i}.json", "w") as f:
+				with super_open(f"{BUILD_DATAPACK}/data/{NAMESPACE}/recipes/{name}.json", "w") as f:
 					super_json_dump(r, f, max_level = -1)
 					i += 1
 			elif recipe["type"] == "crafting_shaped":
 				if any(i.get("item") == None for i in ingr.values()):
 					continue
 				r = RecipeShaped(recipe, item)
-				with super_open(f"{BUILD_DATAPACK}/data/{NAMESPACE}/recipes/{item}_{i}.json", "w") as f:
+				with super_open(f"{BUILD_DATAPACK}/data/{NAMESPACE}/recipes/{name}.json", "w") as f:
 					super_json_dump(r, f, max_level = -1)
 					i += 1
 

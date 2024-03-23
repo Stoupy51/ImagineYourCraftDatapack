@@ -15,7 +15,7 @@ tools = ["sword", "pickaxe", "axe", "shovel", "hoe"]
 
 # For each item,
 for item, data in DATABASE.items():
-	block_or_item = "block" if data["id"] == "minecraft:barrel" else "item"
+	block_or_item = "block" if data["id"] == CUSTOM_BLOCK_VANILLA else "item"
 	dest_base_textu = f"{BUILD_RESOURCE_PACK}/assets/{NAMESPACE}/textures/{block_or_item}"
 
 	# Copy textures to the resource pack

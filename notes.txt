@@ -5,4 +5,3 @@ hot_chocolate = 30s speed 1
 redbull = 30s regeneration
 hops -> beer
 2 iron -> chainmail -> armors
-Steel armor/tools => adamantium textures but gray

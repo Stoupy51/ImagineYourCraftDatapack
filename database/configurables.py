@@ -36,8 +36,8 @@ ORES = {
 	"topaz": {"equivalent_to": "diamond", "durability": 1281, "attack_damage":6, "speed": 1.0},
 	"massive_obsidian": {"equivalent_to": "diamond", "durability": 3902, "attack_damage":4.8, "speed": 0.8},
 	"emerald": {"equivalent_to": "diamond", "durability": 736, "attack_damage":5, "speed": 1.0, "luck": 0.25},
+	"steel": {"equivalent_to": "diamond", "durability": 444, "attack_damage":4, "speed": 0.7},
 
-	"steel": {},
 	"lignite": {},
 	"slate": {},
 

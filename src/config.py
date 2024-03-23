@@ -4,8 +4,9 @@ import datetime
 import random
 import os
 
-# Import time constant
+# Import time constant and enable colors in Windows 10 console
 IMPORT_TIME = datetime.datetime.now()
+os.system("color")
 
 # Datapack related constants
 MINECRAFT_VERSION = "24w12a" # 1.20.5 snapshot

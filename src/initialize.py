@@ -32,9 +32,6 @@ REPLACEMENTS = {
 	"_south": "_back",
 	"_west": "_left",
 	"_east": "_right",
-	"saphir": "sapphire",
-	"rubies": "ruby",
-	"topaze": "topaz",
 }
 for root, _, files in os.walk(TEXTURES_FOLDER):
 	for file in files:

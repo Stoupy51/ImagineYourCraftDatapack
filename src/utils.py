@@ -11,13 +11,14 @@ def ingr_repr(id: str, count: int|None = None) -> dict:
 	Returns:
 		str: The identity of the ingredient for custom crafts,
 			ex: "custom_data": "imagineyourcraft.adamantium_ingot"
-			ex: "id": "minecraft:stick"
+			ex: "item": "minecraft:stick"
 	"""
-	field = "id" if ":" in id else "custom_data"
+	field = "item" if ":" in id else "custom_data"
+	new_id = id if ":" in id else f"{NAMESPACE}.{id}"
 	if count is None:
-		return {field: f"{NAMESPACE}.{id}"}
+		return {field: new_id}
 	else:
-		return {"count": count, field: f"{NAMESPACE}.{id}"}
+		return {"count": count, field: new_id}
 
 
 # For easy file management

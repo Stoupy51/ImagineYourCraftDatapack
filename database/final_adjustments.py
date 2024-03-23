@@ -29,11 +29,11 @@ for k in DATABASE.keys():
 			i += 1
 
 	# Private custom_data for namespace
-	DATABASE[k]["custom_data"][NAMESPACE] = {k: 1}
+	DATABASE[k]["custom_data"][NAMESPACE] = {k: True}
 
 	# Smithed ignore vanilla behaviours
 	if not DATABASE[k]["custom_data"].get("smithed"):
 		DATABASE[k]["custom_data"]["smithed"] = {}
-	DATABASE[k]["custom_data"]["smithed"]["ignore"] = {"functionality": 1, "crafting": 1}
+	DATABASE[k]["custom_data"]["smithed"]["ignore"] = {"functionality": True, "crafting": True}
 info("Final adjustments applied")
 

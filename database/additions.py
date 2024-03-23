@@ -16,7 +16,8 @@ database_additions = {
 	"iron_furnace": {"id": CUSTOM_BLOCK_VANILLA},
 
 	# Materials for food
-
+	"beer_mug":			{"id": CUSTOM_ITEM_VANILLA, CRAFTING_RECIPES:[{"type":"shaped","result_count":4,"shape":"XX X XXX ","ingredients":{"X":{"id":"minecraft:glass"}}},{"type":"shaped","result_count":4,"shape":" XXX X XX","ingredients":{"X":{"id":"minecraft:glass"}}}]},
+	"caffeine":			{"id": CUSTOM_ITEM_VANILLA, CRAFTING_RECIPES:[{"type":"shaped","result_count":4,"shape":"X","ingredients":{"X":{"id":"minecraft:blaze_powder"}}}]},
 
 	# Foods
 	"apple_juice":		{"id": CUSTOM_ITEM_VANILLA, "food":{"can_always_eat":True, "nutrition":2, "saturation_modifier":0.6, "effects":[{"effect":"minecraft:absorption","duration":30*20,"amplifier":0,"probability":1.0}]}},

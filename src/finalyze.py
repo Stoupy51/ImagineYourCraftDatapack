@@ -29,6 +29,13 @@ else:
 try:
 	shutil.copy(datapack_path + ".zip", BUILD_COPY_DESTINATIONS[0])
 	info(f"Datapack zip file copied to '{BUILD_COPY_DESTINATIONS[0]}/'")
+
+	# Copy libraries
+	for root, dirs, files in os.walk(f"{ROOT}/libs"):
+		for file in files:
+			if file.endswith(".zip"):
+				shutil.copy(f"{root}/{file}", BUILD_COPY_DESTINATIONS[0])
+				info(f"Library '{file}' copied to '{BUILD_COPY_DESTINATIONS[0]}/'")
 except:
 	warning(f"Could not copy datapack to '{BUILD_COPY_DESTINATIONS[0]}/'")
 try:

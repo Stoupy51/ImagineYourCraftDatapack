@@ -17,6 +17,7 @@ PACK_FORMAT = 34
 RESOURCE_PACK_FORMAT = 29
 DATA_VERSION = 3823	# 24w11a
 DEPENDENCIES = {
+	"common_signals": {"version":[0, 0, 0], "name":"Common Signals", "url":"https://github.com/Stoupy51/CommonSignals"},
 	# "smithed.custom_block": {"version":[0, 0, 0], "name":"Smithed Custom Block Placement", "url":"https://wiki.smithed.dev/libraries/custom-block/"},
 	# "smithed.crafter": {"version":[0, 0, 0], "name":"Smithed Crafter", "url":"https://wiki.smithed.dev/libraries/crafter/"},
 	# "smart_ore_generation": {"version":[2, 0, 0], "name":"Stoupy's Smart Ore Generation", "url":"https://github.com/Stoupy51/SmartOreGeneration"},

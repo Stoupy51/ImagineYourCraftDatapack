@@ -5,3 +5,9 @@ hot_chocolate = 30s speed 1
 redbull = 30s regeneration
 hops -> beer
 2 iron -> chainmail -> armors
+taurine drops when breaking sugar cane sometimes (replace the sugar cane to avoid dup)
+caffeine drops when breaking hops sometimes
+cola drops when breaking wheat sometimes
+
+
+

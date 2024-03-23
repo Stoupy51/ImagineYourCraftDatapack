@@ -48,11 +48,11 @@ def RecipeShaped(recipe: dict, item: str) -> dict:
 # Generate recipes with vanilla input (no components)
 for item, data in DATABASE.items():
 	if data.get(CRAFTING_RECIPES) and data[CRAFTING_RECIPES] != []:
-		i = 0
+		i = 1
 		for recipe in data[CRAFTING_RECIPES]:
 
 			# Get ingredients
-			name = f"{item}" if i == 0 else f"{item}_{i}"
+			name = f"{item}" if i == 1 else f"{item}_{i}"
 			ingr = recipe.get("ingredients")
 			if not ingr:
 				ingr = [recipe.get("ingredient")]

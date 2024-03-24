@@ -7,6 +7,11 @@ from database.configurables import *
 for ore in ORES:
 	material = ore.replace("massive_","")
 	ingr = f"{material}_ingot" if f"{material}_ingot.png" in textures_filenames else ore	# Check if it's an ingot or no
+	# Get ingr repr
+	if ingr in VANILLA_ITEMS:
+		ingr = ingr_repr(f"minecraft:{ingr}")
+	else:
+		ingr = ingr_repr(ingr)
 
 	# Get ore color (for armor and other stuff)
 	color = None
@@ -91,23 +96,23 @@ for ore in ORES:
 		DATABASE[item]["custom_data"]["smithed"]["dict"] = {armor_or_tools: {material: True, gear: True}}
 		craft_gear = None
 		if gear == "helmet":
-			craft_gear = {"type":"crafting_shaped","result_count":1,"category":"equipment","group":material,"shape":["XXX","X X"],"ingredients":{"X": ingr_repr(ingr)}}
+			craft_gear = {"type":"crafting_shaped","result_count":1,"category":"equipment","shape":["XXX","X X"],"ingredients":{"X": ingr}}
 		elif gear == "chestplate":
-			craft_gear = {"type":"crafting_shaped","result_count":1,"category":"equipment","group":material,"shape":["X X","XXX","XXX"],"ingredients":{"X": ingr_repr(ingr)}}
+			craft_gear = {"type":"crafting_shaped","result_count":1,"category":"equipment","shape":["X X","XXX","XXX"],"ingredients":{"X": ingr}}
 		elif gear == "leggings":
-			craft_gear = {"type":"crafting_shaped","result_count":1,"category":"equipment","group":material,"shape":["XXX","X X","X X"],"ingredients":{"X": ingr_repr(ingr)}}
+			craft_gear = {"type":"crafting_shaped","result_count":1,"category":"equipment","shape":["XXX","X X","X X"],"ingredients":{"X": ingr}}
 		elif gear == "boots":
-			craft_gear = {"type":"crafting_shaped","result_count":1,"category":"equipment","group":material,"shape":["X X","X X"],"ingredients":{"X": ingr_repr(ingr)}}
+			craft_gear = {"type":"crafting_shaped","result_count":1,"category":"equipment","shape":["X X","X X"],"ingredients":{"X": ingr}}
 		elif gear == "sword":
-			craft_gear = {"type":"crafting_shaped","result_count":1,"category":"equipment","group":material,"shape":["X  ","X  ","S  "],"ingredients":{"X": ingr_repr(ingr),"S":ingr_repr("minecraft:stick")}}
+			craft_gear = {"type":"crafting_shaped","result_count":1,"category":"equipment","shape":["X  ","X  ","S  "],"ingredients":{"X": ingr,"S":ingr_repr("minecraft:stick")}}
 		elif gear == "pickaxe":
-			craft_gear = {"type":"crafting_shaped","result_count":1,"category":"equipment","group":material,"shape":["XXX"," S "," S "],"ingredients":{"X": ingr_repr(ingr),"S":ingr_repr("minecraft:stick")}}
+			craft_gear = {"type":"crafting_shaped","result_count":1,"category":"equipment","shape":["XXX"," S "," S "],"ingredients":{"X": ingr,"S":ingr_repr("minecraft:stick")}}
 		elif gear == "axe":
-			craft_gear = {"type":"crafting_shaped","result_count":1,"category":"equipment","group":material,"shape":["XX ","XS "," S "],"ingredients":{"X": ingr_repr(ingr),"S":ingr_repr("minecraft:stick")}}
+			craft_gear = {"type":"crafting_shaped","result_count":1,"category":"equipment","shape":["XX ","XS "," S "],"ingredients":{"X": ingr,"S":ingr_repr("minecraft:stick")}}
 		elif gear == "shovel":
-			craft_gear = {"type":"crafting_shaped","result_count":1,"category":"equipment","group":material,"shape":["X  ","S  ","S  "],"ingredients":{"X": ingr_repr(ingr),"S":ingr_repr("minecraft:stick")}}
+			craft_gear = {"type":"crafting_shaped","result_count":1,"category":"equipment","shape":["X  ","S  ","S  "],"ingredients":{"X": ingr,"S":ingr_repr("minecraft:stick")}}
 		elif gear == "hoe":
-			craft_gear = {"type":"crafting_shaped","result_count":1,"category":"equipment","group":material,"shape":["XX "," S "," S "],"ingredients":{"X": ingr_repr(ingr),"S":ingr_repr("minecraft:stick")}}
+			craft_gear = {"type":"crafting_shaped","result_count":1,"category":"equipment","shape":["XX "," S "," S "],"ingredients":{"X": ingr,"S":ingr_repr("minecraft:stick")}}
 		if craft_gear:
 			DATABASE[item][CRAFTING_RECIPES] = [craft_gear]
 
@@ -127,9 +132,9 @@ for ore in ORES:
 		DATABASE[item]["custom_data"] = {"smithed":{}}	# Smithed convention
 		DATABASE[item]["custom_data"]["smithed"]["dict"] = {misc: {material: True}}
 		if misc == "stick":
-			DATABASE[item][CRAFTING_RECIPES] = [{"type":"crafting_shaped","result_count":2,"shape":["X  ","X  "],"ingredients":{"X":ingr_repr(ingr)}}]
+			DATABASE[item][CRAFTING_RECIPES] = [{"type":"crafting_shaped","result_count":2,"shape":["X  ","X  "],"ingredients":{"X":ingr}}]
 		elif misc == "rod":
-			DATABASE[item][CRAFTING_RECIPES] = [{"type":"crafting_shaped","result_count":1,"shape":["X  ","X  ","X  "],"ingredients":{"X":ingr_repr(ingr)}}]
+			DATABASE[item][CRAFTING_RECIPES] = [{"type":"crafting_shaped","result_count":1,"shape":["X  ","X  ","X  "],"ingredients":{"X":ingr}}]
 		pass
 	pass
 info("Ores related stuff generated in the database")

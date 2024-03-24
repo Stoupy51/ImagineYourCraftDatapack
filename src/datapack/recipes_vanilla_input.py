@@ -46,6 +46,7 @@ def RecipeShaped(recipe: dict, item: str) -> dict:
 	return to_return
 
 # Generate recipes with vanilla input (no components)
+generated_recipes = []
 for item, data in DATABASE.items():
 	if data.get(CRAFTING_RECIPES) and data[CRAFTING_RECIPES] != []:
 		i = 1
@@ -65,6 +66,7 @@ for item, data in DATABASE.items():
 				with super_open(f"{BUILD_DATAPACK}/data/{NAMESPACE}/recipes/{name}.json", "w") as f:
 					super_json_dump(r, f, max_level = -1)
 					i += 1
+				generated_recipes.append(name)
 			elif recipe["type"] == "crafting_shaped":
 				if any(i.get("item") == None for i in ingr.values()):
 					continue
@@ -72,4 +74,14 @@ for item, data in DATABASE.items():
 				with super_open(f"{BUILD_DATAPACK}/data/{NAMESPACE}/recipes/{name}.json", "w") as f:
 					super_json_dump(r, f, max_level = -1)
 					i += 1
+				generated_recipes.append(name)
+	pass
+
+# Create a function that will give all recipes
+with super_open(f"{BUILD_DATAPACK}/data/{NAMESPACE}/functions/utils/get_all_recipes.mcfunction", "w") as f:
+	content = "\n# Get all recipes\n"
+	for recipe in generated_recipes:
+		content += f"recipe give @s {NAMESPACE}:{recipe}\n"
+	f.write(content + "\n")
+info("Vanilla recipes generated")
 

@@ -10,13 +10,6 @@ for v in DATABASE.values():
 		vanilla_ids.append(v["id"].replace("minecraft:", ""))
 	pass
 
-"""{
-    "parent": "item/handheld",
-  	"textures": {
-    	"layer0": "item/leather_chestplate",
-    	"layer1": "item/leather_chestplate_overlay"
-  	},
-"""
 
 # For each vanilla ID, create the json model file
 blocks = [CUSTOM_BLOCK_VANILLA, CUSTOM_ITEM_VANILLA]

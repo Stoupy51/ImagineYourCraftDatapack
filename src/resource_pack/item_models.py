@@ -8,6 +8,7 @@ armors = ["helmet", "chestplate", "leggings", "boots"]
 tools = ["sword", "pickaxe", "axe", "shovel", "hoe"]
 
 # For each item,
+used_textures = set()
 for item, data in DATABASE.items():
 	block_or_item = "block" if data["id"] == CUSTOM_BLOCK_VANILLA else "item"
 	dest_base_textu = f"{BUILD_RESOURCE_PACK}/assets/{NAMESPACE}/textures/{block_or_item}"
@@ -64,6 +65,7 @@ for item, data in DATABASE.items():
 							path = f"{NAMESPACE}:{block_or_item}/{item}_{side}"
 							if on_off == "_on" and f"{item}_{side}_on" in additional_textures:
 								path += "_on"
+							used_textures.add(path)
 
 							# If it's a side, apply to all FACES (as it is first, it will be overwritten by the others)
 							if side == "side":
@@ -84,6 +86,7 @@ for item, data in DATABASE.items():
 			else:
 
 				path = f"{NAMESPACE}:{block_or_item}/{item}{on_off}"
+				used_textures.add(path)
 				content = {"parent": "item/generated",	"textures": {"layer0": path}}
 				if any(x in item for x in armors):
 					content["textures"]["layer1"] = content["textures"]["layer0"]
@@ -101,5 +104,14 @@ for item, data in DATABASE.items():
 			with super_open(f"{dest_base_model}/{item}{on_off}.json", "w") as f:
 				super_json_dump(content, f, max_level = 4)
 	pass
+
+# Make warning for missing textures
+warns = []
+for texture in used_textures:
+	path = TEXTURES_FOLDER + "/" + texture.split("/")[-1] + ".png"
+	if not os.path.exists(path):
+		warns.append(f"Texture '{path}' not found")
+if warns:
+	warning("The following textures are used but missing:\n" + "\n".join(warns))
 info("Custom models created")
 

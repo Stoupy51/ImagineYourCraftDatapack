@@ -106,7 +106,7 @@ for ore in ORES:
 		elif gear == "sword":
 			craft_gear = {"type":"crafting_shaped","result_count":1,"category":"equipment","shape":["X","X","S"],"ingredients":{"X": ingr,"S":ingr_repr("minecraft:stick")}}
 		elif gear == "pickaxe":
-			craft_gear = {"type":"crafting_shaped","result_count":1,"category":"equipment","shape":["XXX"," S"," S"],"ingredients":{"X": ingr,"S":ingr_repr("minecraft:stick")}}
+			craft_gear = {"type":"crafting_shaped","result_count":1,"category":"equipment","shape":["XXX"," S "," S "],"ingredients":{"X": ingr,"S":ingr_repr("minecraft:stick")}}
 		elif gear == "axe":
 			craft_gear = {"type":"crafting_shaped","result_count":1,"category":"equipment","shape":["XX","XS"," S"],"ingredients":{"X": ingr,"S":ingr_repr("minecraft:stick")}}
 		elif gear == "shovel":

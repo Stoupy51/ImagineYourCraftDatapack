@@ -63,7 +63,8 @@ for i in range(total_chests):
 		for k in NOT_COMPONENTS:	# Remove non-component data
 			if data.get(k):
 				del data[k]
-		chest_contents.append(f'{{slot:{j},item:{{count:1,id:"{id}",components:{json.dumps(data)}}}}}')
+		json_content = super_json_dump(data, max_level = 0).replace("\n","")
+		chest_contents.append(f'{{slot:{j},item:{{count:1,id:"{id}",components:{json_content}}}}}')
 	joined_content = ",".join(chest_contents)
 	chests.append(f'give @s chest[container=[{joined_content}],custom_name=\'{{"text":"Chest [{i+1}/{total_chests}]","color":"yellow"}}\',lore=[\'{{"text":"{DATAPACK_NAME}","italic":true,"color":"blue"}}\']]')
 with super_open(f"{BUILD_DATAPACK}/data/{NAMESPACE}/functions/_give_all.mcfunction", "w") as f:

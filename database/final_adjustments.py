@@ -17,7 +17,8 @@ for k in DATABASE.keys():
 	
 	# Make display for every item
 	item_str = k.replace("_"," ").title()
-	DATABASE[k]["custom_name"] = f'[{{"text":"{item_str}","italic":false,"color":"white"}}]' 
+	if not DATABASE[k].get("custom_name"):
+		DATABASE[k]["custom_name"] = f'[{{"text":"{item_str}","italic":false,"color":"white"}}]' 
 	if not DATABASE[k].get("lore"):
 		DATABASE[k]["lore"] = []
 	DATABASE[k]["lore"].append(SOURCE_LORE)

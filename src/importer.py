@@ -1,10 +1,12 @@
 
-# Install required library
-try:
-	import imageio
-except ImportError:
-	import os
-	os.system("pip install imageio")
+# Install required libraries
+import os
+required = ["imageio"]
+for package in required:
+	try:
+		__import__(package)
+	except ImportError:
+		os.system(f"pip install {package}")
 
 # Additional imports
 import imageio

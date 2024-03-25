@@ -8,6 +8,9 @@ from database.ores_properties import *
 # Apply database additions
 from database.additions import *
 
+# Add custom records
+from database.records import *
+
 # For every key, apply common data and remove unused keys
 from database.final_adjustments import *
 

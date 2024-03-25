@@ -1,5 +1,6 @@
 
 from src.config import *
+import shutil
 import json
 import io
 
@@ -36,6 +37,20 @@ def super_open(file_path: str, mode: str) -> io.TextIOWrapper:
 
 	# Open file and return
 	return open(file_path, mode, encoding="utf-8") # Always use utf-8 encoding to avoid issues
+
+
+# For easy file copy
+def super_copy(src: str, dst: str) -> shutil.copy:
+	""" Copy a file from the source to the destination
+	Args:
+		src	(str): The source file path
+		dst	(str): The destination file path
+	"""
+	# Make directory
+	os.makedirs(os.path.dirname(dst), exist_ok=True)
+
+	# Copy file
+	return shutil.copy(src, dst)
 
 
 # JSON dump with indentation for levels

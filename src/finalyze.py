@@ -27,19 +27,19 @@ else:
 
 # Copy datapack and resource pack to a specific location
 try:
-	shutil.copy(datapack_path + ".zip", BUILD_COPY_DESTINATIONS[0])
+	super_copy(datapack_path + ".zip", BUILD_COPY_DESTINATIONS[0])
 	info(f"Datapack zip file copied to '{BUILD_COPY_DESTINATIONS[0]}/'")
 
 	# Copy libraries
 	for root, dirs, files in os.walk(f"{ROOT}/libs"):
 		for file in files:
 			if file.endswith(".zip"):
-				shutil.copy(f"{root}/{file}", BUILD_COPY_DESTINATIONS[0])
+				super_copy(f"{root}/{file}", BUILD_COPY_DESTINATIONS[0])
 				info(f"Library '{file}' copied to '{BUILD_COPY_DESTINATIONS[0]}/'")
 except:
 	warning(f"Could not copy datapack to '{BUILD_COPY_DESTINATIONS[0]}/'")
 try:
-	shutil.copy(resourcepack_path + ".zip", BUILD_COPY_DESTINATIONS[1])
+	super_copy(resourcepack_path + ".zip", BUILD_COPY_DESTINATIONS[1])
 	info(f"Resource pack zip file copied to '{BUILD_COPY_DESTINATIONS[1]}/'")
 except:
 	warning(f"Could not copy resource pack to '{BUILD_COPY_DESTINATIONS[1]}/'")

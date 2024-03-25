@@ -2,12 +2,6 @@
 # Import config
 from src.importer import *
 
-# Make directories
-os.makedirs(f"{BUILD_RESOURCE_PACK}/assets/{NAMESPACE}/models/block/for_item_display", exist_ok=True)
-os.makedirs(f"{BUILD_RESOURCE_PACK}/assets/{NAMESPACE}/models/item", exist_ok=True)
-os.makedirs(f"{BUILD_RESOURCE_PACK}/assets/{NAMESPACE}/textures/block", exist_ok=True)
-os.makedirs(f"{BUILD_RESOURCE_PACK}/assets/{NAMESPACE}/textures/item", exist_ok=True)
-
 # Get every block variant
 both = FACES + SIDES
 armors = ["helmet", "chestplate", "leggings", "boots"]
@@ -22,7 +16,7 @@ for item, data in DATABASE.items():
 	source = f"{TEXTURES_FOLDER}/{item}.png"
 	if os.path.exists(source):
 		destination = f"{dest_base_textu}/{item}.png"
-		shutil.copyfile(source, destination)
+		super_copy(source, destination)
 
 	# Get all textures for the block
 	additional_textures = []
@@ -35,7 +29,7 @@ for item, data in DATABASE.items():
 				# Copy textures to the resource pack
 				source = f"{TEXTURES_FOLDER}/{file}"
 				destination = f"{dest_base_textu}/{file}"
-				shutil.copyfile(source, destination)
+				super_copy(source, destination)
 		pass
 
 	# Generate its model file

@@ -19,7 +19,7 @@ for root, dirs, files in os.walk(f"{ROOT}/textures/records"):
 			}
 
 			# Add to sounds
-			sounds[record] = {"category": "music", "sounds": [{"name": f"{NAMESPACE}/{record}","stream": True}]}
+			sounds[record] = {"category": "music", "sounds": [{"name": f"{NAMESPACE}:{record}","stream": True}]}
 			super_copy(f"{root}/{file}", f"{BUILD_RESOURCE_PACK}/assets/{NAMESPACE}/sounds/{record}.ogg")
 
 			# Next

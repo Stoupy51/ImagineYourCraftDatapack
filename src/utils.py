@@ -63,7 +63,7 @@ def super_json_dump(data: dict|list, file: io.TextIOWrapper = None, max_level: i
 	Returns:
 		str: The content of the file in every case
 	"""
-	content = json.dumps(data, indent = '\t')
+	content = json.dumps(data, indent = '\t', ensure_ascii = False)
 	if max_level > -1:
 
 		# Seek in content to remove to high indentations

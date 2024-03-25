@@ -36,14 +36,14 @@ for ore in ORES:
 			DATABASE[block]["custom_data"]["smithed"]["dict"]["ore"] = {material: True}
 		
 		# Recipes
-		DATABASE[block][CRAFTING_RECIPES] = []
+		DATABASE[block][RESULT_OF_CRAFTING] = []
 		if placeable == "block":
 			if f"{material}_ingot.png" in textures_filenames:
-				DATABASE[block][CRAFTING_RECIPES].append({"type":"crafting_shaped","result_count":1,"group":material,"category":"misc","shape":["XXX","XXX","XXX"],"ingredients":{"X":ingr_repr(f"{material}_ingot")}})
+				DATABASE[block][RESULT_OF_CRAFTING].append({"type":"crafting_shaped","result_count":1,"group":material,"category":"misc","shape":["XXX","XXX","XXX"],"ingredients":{"X":ingr_repr(f"{material}_ingot")}})
 			if f"{material}_fragment.png" in textures_filenames:
-				DATABASE[block][CRAFTING_RECIPES].append({"type":"crafting_shaped","result_count":1,"group":material,"category":"misc","shape":["XXX","XXX","XXX"],"ingredients":{"X":ingr_repr(f"{material}_fragment")}})
+				DATABASE[block][RESULT_OF_CRAFTING].append({"type":"crafting_shaped","result_count":1,"group":material,"category":"misc","shape":["XXX","XXX","XXX"],"ingredients":{"X":ingr_repr(f"{material}_fragment")}})
 			if f"{material}.png" in textures_filenames:
-				DATABASE[block][CRAFTING_RECIPES].append({"type":"crafting_shaped","result_count":1,"group":material,"category":"misc","shape":["XXX","XXX","XXX"],"ingredients":{"X":ingr_repr(material)}})
+				DATABASE[block][RESULT_OF_CRAFTING].append({"type":"crafting_shaped","result_count":1,"group":material,"category":"misc","shape":["XXX","XXX","XXX"],"ingredients":{"X":ingr_repr(material)}})
 		pass
 	
 	# Ingredients (ingot, nugget, raw, and other)
@@ -63,21 +63,21 @@ for ore in ORES:
 		DATABASE[item]["custom_data"]["smithed"]["dict"] = {ingredient: {material: True}} if ingredient else {"material": {material: True}}
 
 		# Recipes
-		DATABASE[item][CRAFTING_RECIPES] = []
+		DATABASE[item][RESULT_OF_CRAFTING] = []
 		if ingredient == "ingot" or ingredient == "":
 			if f"{ore}_block.png" in textures_filenames:
-				DATABASE[item][CRAFTING_RECIPES].append({"type":"crafting_shapeless","result_count":9,"category":"misc","group":material,"ingredients":[ingr_repr(f"{ore}_block")]})
+				DATABASE[item][RESULT_OF_CRAFTING].append({"type":"crafting_shapeless","result_count":9,"category":"misc","group":material,"ingredients":[ingr_repr(f"{ore}_block")]})
 			if f"{ore}_nugget.png" in textures_filenames:
-				DATABASE[item][CRAFTING_RECIPES].append({"type":"crafting_shaped","result_count":1,"category":"misc","group":material,"shape":["XXX","XXX","XXX"],"ingredients":{"X":ingr_repr(f"{ore}_nugget")}})
+				DATABASE[item][RESULT_OF_CRAFTING].append({"type":"crafting_shaped","result_count":1,"category":"misc","group":material,"shape":["XXX","XXX","XXX"],"ingredients":{"X":ingr_repr(f"{ore}_nugget")}})
 			if f"raw_{ore}.png" in textures_filenames:
-				DATABASE[item][CRAFTING_RECIPES].append({"type":"smelting","result_count":1,"category":"misc","group":material,"experience":0.8,"cookingtime":200,"ingredient":ingr_repr(f"raw_{ore}")})
-				DATABASE[item][CRAFTING_RECIPES].append({"type":"blasting","result_count":1,"category":"misc","group":material,"experience":0.8,"cookingtime":100,"ingredient":ingr_repr(f"raw_{ore}")})
+				DATABASE[item][RESULT_OF_CRAFTING].append({"type":"smelting","result_count":1,"category":"misc","group":material,"experience":0.8,"cookingtime":200,"ingredient":ingr_repr(f"raw_{ore}")})
+				DATABASE[item][RESULT_OF_CRAFTING].append({"type":"blasting","result_count":1,"category":"misc","group":material,"experience":0.8,"cookingtime":100,"ingredient":ingr_repr(f"raw_{ore}")})
 			if f"{ore}_dust.png" in textures_filenames:
-				DATABASE[item][CRAFTING_RECIPES].append({"type":"smelting","result_count":1,"category":"misc","group":material,"experience":0.8,"cookingtime":200,"ingredient":ingr_repr(f"{ore}_dust")})
-				DATABASE[item][CRAFTING_RECIPES].append({"type":"blasting","result_count":1,"category":"misc","group":material,"experience":0.8,"cookingtime":100,"ingredient":ingr_repr(f"{ore}_dust")})
+				DATABASE[item][RESULT_OF_CRAFTING].append({"type":"smelting","result_count":1,"category":"misc","group":material,"experience":0.8,"cookingtime":200,"ingredient":ingr_repr(f"{ore}_dust")})
+				DATABASE[item][RESULT_OF_CRAFTING].append({"type":"blasting","result_count":1,"category":"misc","group":material,"experience":0.8,"cookingtime":100,"ingredient":ingr_repr(f"{ore}_dust")})
 			if f"{ore}_ore.png" in textures_filenames:
-				DATABASE[item][CRAFTING_RECIPES].append({"type":"smelting","result_count":1,"category":"misc","group":material,"experience":0.8,"cookingtime":200,"ingredient":ingr_repr(f"{ore}_ore")})
-				DATABASE[item][CRAFTING_RECIPES].append({"type":"blasting","result_count":1,"category":"misc","group":material,"experience":0.8,"cookingtime":100,"ingredient":ingr_repr(f"{ore}_ore")})
+				DATABASE[item][RESULT_OF_CRAFTING].append({"type":"smelting","result_count":1,"category":"misc","group":material,"experience":0.8,"cookingtime":200,"ingredient":ingr_repr(f"{ore}_ore")})
+				DATABASE[item][RESULT_OF_CRAFTING].append({"type":"blasting","result_count":1,"category":"misc","group":material,"experience":0.8,"cookingtime":100,"ingredient":ingr_repr(f"{ore}_ore")})
 		pass
 
 	# Armors and Tools
@@ -114,7 +114,7 @@ for ore in ORES:
 		elif gear == "hoe":
 			craft_gear = {"type":"crafting_shaped","result_count":1,"category":"equipment","shape":["XX "," S "," S "],"ingredients":{"X": ingr,"S":ingr_repr("minecraft:stick")}}
 		if craft_gear:
-			DATABASE[item][CRAFTING_RECIPES] = [craft_gear]
+			DATABASE[item][RESULT_OF_CRAFTING] = [craft_gear]
 
 		# If armor, get color and put it in display
 		if armor_or_tools == "armor" and color:
@@ -132,9 +132,9 @@ for ore in ORES:
 		DATABASE[item]["custom_data"] = {"smithed":{}}	# Smithed convention
 		DATABASE[item]["custom_data"]["smithed"]["dict"] = {misc: {material: True}}
 		if misc == "stick":
-			DATABASE[item][CRAFTING_RECIPES] = [{"type":"crafting_shaped","result_count":2,"shape":["X  ","X  "],"ingredients":{"X":ingr}}]
+			DATABASE[item][RESULT_OF_CRAFTING] = [{"type":"crafting_shaped","result_count":2,"shape":["X  ","X  "],"ingredients":{"X":ingr}}]
 		elif misc == "rod":
-			DATABASE[item][CRAFTING_RECIPES] = [{"type":"crafting_shaped","result_count":1,"shape":["X  ","X  ","X  "],"ingredients":{"X":ingr}}]
+			DATABASE[item][RESULT_OF_CRAFTING] = [{"type":"crafting_shaped","result_count":1,"shape":["X  ","X  ","X  "],"ingredients":{"X":ingr}}]
 		pass
 	pass
 info("Ores related stuff generated in the database")

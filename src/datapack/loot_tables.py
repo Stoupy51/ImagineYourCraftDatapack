@@ -30,9 +30,9 @@ info("Made loot tables for every item")
 
 # Loot tables for items with crafting recipes
 for item, data in DATABASE.items():
-	if data.get(CRAFTING_RECIPES):
+	if data.get(RESULT_OF_CRAFTING):
 		results = []
-		for d in data[CRAFTING_RECIPES]:
+		for d in data[RESULT_OF_CRAFTING]:
 			count = d["result_count"]
 			if count != 1:
 				results.append(count)

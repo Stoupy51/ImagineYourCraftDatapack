@@ -46,9 +46,10 @@ SIDES = ("_bottom", "_top", "_front", "_back", "_left", "_right", "_side")
 # Technical constants
 CUSTOM_BLOCK_VANILLA = "minecraft:furnace"
 CUSTOM_ITEM_VANILLA = "minecraft:command_block"
-CRAFTING_RECIPES = "result_of_crafting"
+RESULT_OF_CRAFTING = "result_of_crafting"
+USED_FOR_CRAFTING = "used_for_crafting"	# Should not be wrote manually unless you are crafting a vanilla item (ex: imagineyourcraft.chainmail -> chainmail armor)
 MODEL_DISPLAY = {"head":{"rotation":[0,0,0],"translation":[0,-30.42,0],"scale":[1.605,1.605,1.605]},"fixed":{"rotation":[-90,0,0],"translation":[0,0,-16],"scale":[2.0075,2.0075,2.0075]}}
-NOT_COMPONENTS = ["id", "wiki", CRAFTING_RECIPES]
+NOT_COMPONENTS = ["id", "wiki", RESULT_OF_CRAFTING, USED_FOR_CRAFTING]
 VANILLA_ITEMS = ["emerald"]
 random.seed(3)
 

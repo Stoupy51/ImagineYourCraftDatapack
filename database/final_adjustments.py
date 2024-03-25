@@ -8,8 +8,8 @@ i = 0
 for k in DATABASE.keys():
 
 	# Remove craft if not
-	if DATABASE[k].get(CRAFTING_RECIPES) == []:
-		del DATABASE[k][CRAFTING_RECIPES]
+	if DATABASE[k].get(RESULT_OF_CRAFTING) == []:
+		del DATABASE[k][RESULT_OF_CRAFTING]
 	
 	# Make custom data if not made
 	if not DATABASE[k].get("custom_data"):

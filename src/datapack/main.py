@@ -15,8 +15,5 @@ import src.datapack.loot_tables
 
 # Generate custom recipes
 import src.datapack.recipes
-
-# Finally, add a small header for each .mcfunction file
-import src.datapack.headers
 info("Datapack successfully generated!")
 

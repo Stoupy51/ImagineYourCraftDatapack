@@ -5,10 +5,11 @@ from src.importer import *
 # Get all mcfunctions paths
 mcfunctions = {}
 functions_folder = f"{BUILD_DATAPACK}/data/{NAMESPACE}/functions/"
-for root, _, files in os.walk(f"{BUILD_DATAPACK}/data/{NAMESPACE}/functions/"):
+for root, _, files in os.walk(functions_folder):
 	for file in files:
 		if file.endswith(".mcfunction"):
 			to_be_called = f"{NAMESPACE}:" + f"{root}/{file}".replace(functions_folder, "").replace(".mcfunction","")
+			to_be_called = to_be_called.replace(":/",":").replace("\\","/")
 			mcfunctions[to_be_called] = {"path":f"{root}/{file}", "within":[]}
 	pass
 
@@ -18,6 +19,7 @@ for root, _, files in os.walk(functions_tags_folder):
 	for file in files:
 		if file.endswith(".json"):
 			to_be_called = f"#{NAMESPACE}:" + f"{root}/{file}".replace(functions_tags_folder, "").replace(".json","")
+			to_be_called = to_be_called.replace(":/",":").replace("\\","/")
 			with super_open(f"{root}/{file}", "r") as f:
 				data = json.load(f)
 				if data.get("values"):

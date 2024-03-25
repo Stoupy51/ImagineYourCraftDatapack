@@ -8,6 +8,8 @@ if os.path.exists(f"{OVERRIDE_FOLDER}"):
 	shutil.copytree(f"{OVERRIDE_FOLDER}", f"{BUILD_FOLDER}", dirs_exist_ok = True)
 	info(f"Override folder content copied to build folder")
 
+# Add a small header for each .mcfunction file
+import src.datapack.headers
 
 # Generate zip files
 datapack_path = f"{BUILD_FOLDER}/{DATAPACK_NAME}_datapack"

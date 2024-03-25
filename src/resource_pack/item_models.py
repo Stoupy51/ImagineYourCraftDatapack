@@ -3,7 +3,7 @@
 from src.importer import *
 
 # Get every block variant
-both = FACES + SIDES
+variants = FACES + SIDES + ("_on",)
 armors = ["helmet", "chestplate", "leggings", "boots"]
 tools = ["sword", "pickaxe", "axe", "shovel", "hoe"]
 
@@ -24,7 +24,7 @@ for item, data in DATABASE.items():
 	for root, dirs, files in os.walk(f"{TEXTURES_FOLDER}/"):
 		for file in files:
 			if file.startswith(item):
-				if any(x in file.replace(item, "") for x in both):
+				if any(x in file.replace(item, "") for x in variants):
 					additional_textures.append(file.replace(".png", ""))	# Only keep the textures for SIDES/FACES
 
 				# Copy textures to the resource pack
@@ -49,10 +49,12 @@ for item, data in DATABASE.items():
 				# If more than one, apply to each side
 				else:
 					content["elements"] = [{"from": [0, 0, 0], "to": [16, 16, 16], "faces": {}}]
+					default_texture = f"{NAMESPACE}:{block_or_item}/{item}{on_off}"
 
 					# Generate links between FACES and textures
 					for face in FACES:
 						content["elements"][0]["faces"][face] = {"texture": f"#{face}", "cullface": face}
+						content["textures"][face] = default_texture
 		
 					# For each possible side (in reverse order)
 					for i in range(len(SIDES), 0, -1):
@@ -112,6 +114,6 @@ for texture in used_textures:
 	if not os.path.exists(path):
 		warns.append(f"Texture '{path}' not found")
 if warns:
-	warning("The following textures are used but missing:\n" + "\n".join(warns))
+	warning("The following textures are used but missing:\n" + "\n".join(sorted(warns)))
 info("Custom models created")
 

@@ -45,6 +45,7 @@ SIDES = ("_bottom", "_top", "_front", "_back", "_left", "_right", "_side")
 
 # Technical constants
 CUSTOM_BLOCK_VANILLA = "minecraft:furnace"
+CUSTOM_ENTITY_VANILLA = "minecraft:item_frame" # Useful for blocks that can be placed on walls or on player's position
 CUSTOM_ITEM_VANILLA = "minecraft:command_block"
 RESULT_OF_CRAFTING = "result_of_crafting"
 USED_FOR_CRAFTING = "used_for_crafting"	# Should not be wrote manually unless you are crafting a vanilla item (ex: imagineyourcraft.chainmail -> chainmail armor)
@@ -52,6 +53,18 @@ MODEL_DISPLAY = {"head":{"rotation":[0,0,0],"translation":[0,-30.42,0],"scale":[
 NOT_COMPONENTS = ["id", "wiki", RESULT_OF_CRAFTING, USED_FOR_CRAFTING]
 VANILLA_ITEMS = ["emerald"]
 random.seed(3)
+
+# UUIDs for attribute modifiers to avoid conflicts
+UUIDS = {
+	"attack_damage":		{"helmet": [0,1,2,3], "chestplate": [0,4,5,6], "leggings": [0,7,8,9], "boots": [0,10,11,12], "sword": [0,13,14,15], "pickaxe": [0,16,17,18], "axe": [0,19,20,21], "shovel": [0,22,23,24], "hoe": [0,25,26,27]},
+	"attack_speed":			{"helmet": [1,1,2,3], "chestplate": [1,4,5,6], "leggings": [1,7,8,9], "boots": [1,10,11,12], "sword": [1,13,14,15], "pickaxe": [1,16,17,18], "axe": [1,19,20,21], "shovel": [1,22,23,24], "hoe": [1,25,26,27]},
+	"armor":				{"helmet": [2,1,2,3], "chestplate": [2,4,5,6], "leggings": [2,7,8,9], "boots": [2,10,11,12], "sword": [2,13,14,15], "pickaxe": [2,16,17,18], "axe": [2,19,20,21], "shovel": [2,22,23,24], "hoe": [2,25,26,27]},
+	"armor_toughness":		{"helmet": [3,1,2,3], "chestplate": [3,4,5,6], "leggings": [3,7,8,9], "boots": [3,10,11,12], "sword": [3,13,14,15], "pickaxe": [3,16,17,18], "axe": [3,19,20,21], "shovel": [3,22,23,24], "hoe": [3,25,26,27]},
+	"knockback_resistance":	{"helmet": [4,1,2,3], "chestplate": [4,4,5,6], "leggings": [4,7,8,9], "boots": [4,10,11,12], "sword": [4,13,14,15], "pickaxe": [4,16,17,18], "axe": [4,19,20,21], "shovel": [4,22,23,24], "hoe": [4,25,26,27]},
+	"luck":					{"helmet": [5,1,2,3], "chestplate": [5,4,5,6], "leggings": [5,7,8,9], "boots": [5,10,11,12], "sword": [5,13,14,15], "pickaxe": [5,16,17,18], "axe": [5,19,20,21], "shovel": [5,22,23,24], "hoe": [5,25,26,27]},
+	"mining_speed":			{"helmet": [6,1,2,3], "chestplate": [6,4,5,6], "leggings": [6,7,8,9], "boots": [6,10,11,12], "sword": [6,13,14,15], "pickaxe": [6,16,17,18], "axe": [6,19,20,21], "shovel": [6,22,23,24], "hoe": [6,25,26,27]},
+	"gravity":				{"helmet": [7,1,2,3], "chestplate": [7,4,5,6], "leggings": [7,7,8,9], "boots": [7,10,11,12], "sword": [7,13,14,15], "pickaxe": [7,16,17,18], "axe": [7,19,20,21], "shovel": [7,22,23,24], "hoe": [7,25,26,27]},
+}
 
 # For easy testing (can be an empty list)
 BUILD_COPY_DESTINATIONS = ("D:/latest_snapshot/world/datapacks", "C:/Users/Alexandre-PC/AppData/Roaming/.minecraft/1.13+/resourcepacks")

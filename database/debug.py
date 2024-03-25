@@ -11,12 +11,12 @@ for texture in textures_filenames:
 	not_used += (f"\n'{path}' not found in the database")
 	pass
 if not_used:
-	warning("Some textures not used in the database: " + not_used)
+	warning("Some textures are not used in the database: " + not_used)
 
 # Print a few keys of the database
 lst = list(DATABASE.keys())
 random.shuffle(lst)
-info("Database generated, here are some keys: " + ", ".join(lst[:7]) + "...")
+info("Database generated, here are some keys:\n" + ", ".join(lst[:8]) + "...")
 
 # Export database to JSON for debugging generation
 export_database()

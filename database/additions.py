@@ -20,11 +20,11 @@ database_additions = {
 	"box_speed": {"id": CUSTOM_BLOCK_VANILLA, RESULT_OF_CRAFTING:[{"type":"crafting_shapeless","result_count":1,"category":"misc","ingredients":[ingr_repr("minecraft:oak_planks"),ingr_repr("sapphire")]}]},
 
 	# Materials for food
-	"beer_mug":			{"id": CUSTOM_ITEM_VANILLA, RESULT_OF_CRAFTING:[{"type":"crafting_shaped","result_count":4,"category":"misc","shape":["XX ","X X","XX "],"ingredients":{"X":ingr_repr("minecraft:glass")}},{"type":"shaped","result_count":4,"shape":" XXX X XX","ingredients":{"X":ingr_repr("minecraft:glass")}}]},
+	"beer_mug":			{"id": CUSTOM_ITEM_VANILLA, RESULT_OF_CRAFTING:[{"type":"crafting_shaped","result_count":4,"category":"misc","group":"beer_mug","shape":["XX","X X","XX"],"ingredients":{"X":ingr_repr("minecraft:glass")}},{"type":"shaped","result_count":4,"category":"misc","group":"beer_mug","shape":[" XX","X X"," XX"],"ingredients":{"X":ingr_repr("minecraft:glass")}}]},
 	"caffeine":			{"id": CUSTOM_ITEM_VANILLA},
-	"can":				{"id": CUSTOM_ITEM_VANILLA, RESULT_OF_CRAFTING:[{"type":"crafting_shaped","result_count":4,"category":"misc","shape":["XSX"," X "],"ingredients":{"X":ingr_repr("minecraft:iron_ingot"),"S":ingr_repr("steel_ingot")}}]},
+	"can":				{"id": CUSTOM_ITEM_VANILLA, RESULT_OF_CRAFTING:[{"type":"crafting_shaped","result_count":4,"category":"misc","shape":["XSX"," X"],"ingredients":{"X":ingr_repr("minecraft:iron_ingot"),"S":ingr_repr("steel_ingot")}}]},
 	"cola":				{"id": CUSTOM_ITEM_VANILLA},
-	"empty_glass":		{"id": CUSTOM_ITEM_VANILLA, RESULT_OF_CRAFTING:[{"type":"crafting_shaped","result_count":4,"category":"misc","shape":["X X","X X"," X "],"ingredients":{"X":ingr_repr("minecraft:glass")}}]},
+	"empty_glass":		{"id": CUSTOM_ITEM_VANILLA, RESULT_OF_CRAFTING:[{"type":"crafting_shaped","result_count":4,"category":"misc","shape":["X X","X X"," X"],"ingredients":{"X":ingr_repr("minecraft:glass")}}]},
 	"toast":			{"id": CUSTOM_ITEM_VANILLA, RESULT_OF_CRAFTING:[{"type":"crafting_shaped","result_count":4,"category":"misc","shape":["XXX"],"ingredients":{"X":ingr_repr("minecraft:bread")}}]},
 	"hops":				{"id": CUSTOM_ITEM_VANILLA},
 	"glass_pot":		{"id": CUSTOM_ITEM_VANILLA, RESULT_OF_CRAFTING:[{"type":"crafting_shaped","result_count":1,"category":"misc","shape":["X X","X X","XXX"],"ingredients":{"X":ingr_repr("minecraft:glass")}}]},

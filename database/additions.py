@@ -40,6 +40,16 @@ database_additions = {
 	"nutella":			{"id": CUSTOM_ITEM_VANILLA, "food":{"can_always_eat":False, "nutrition":10, "saturation_modifier":0.6}, 																										RESULT_OF_CRAFTING:[{"type":"crafting_shapeless","result_count":1,"category":"food","ingredients":[ingr_repr("minecraft:cocoa_beans")]*3 + [ingr_repr("minecraft:sugar")]*2 + [ingr_repr("minecraft:milk_bucket"), ingr_repr("glass_pot")]}]},
 	"nutella_toast":	{"id": CUSTOM_ITEM_VANILLA, "food":{"can_always_eat":False, "nutrition":12, "saturation_modifier":0.6}, 																										RESULT_OF_CRAFTING:[{"type":"crafting_shapeless","result_count":4,"category":"food","ingredients":[ingr_repr("nutella")] + [ingr_repr("toast")]*4}]},
 	"red_bull":			{"id": CUSTOM_ITEM_VANILLA, "food":{"can_always_eat":True, "nutrition":2, "saturation_modifier":0.6, "effects":[{"effect":{"id":"minecraft:regeneration","duration":30*20,"amplifier":0},"probability":1.0}]}, 	RESULT_OF_CRAFTING:[{"type":"crafting_shapeless","result_count":1,"category":"food","ingredients":[ingr_repr("can"), ingr_repr("taurine"), ingr_repr("minecraft:sugar"), ingr_repr("caffeine")]}]},
+
+	# Items crafting vanilla items
+	"chainmail": {"id": CUSTOM_ITEM_VANILLA, RESULT_OF_CRAFTING:[{"type":"crafting_shapeless","result_count":4,"category":"misc","ingredients":[ingr_repr("minecraft:chain")]*2}],
+		USED_FOR_CRAFTING:[
+			{"type":"crafting_shaped","result_count":1,"category":"equipment","shape":["XXX","X X"],"ingredients":{"X":ingr_repr("chainmail")},"result":ingr_repr("minecraft:chainmail_chestplate", count = 1)},
+			{"type":"crafting_shaped","result_count":1,"category":"equipment","shape":["X X","XXX","XXX"],"ingredients":{"X":ingr_repr("chainmail")},"result":ingr_repr("minecraft:chainmail_chestplate", count = 1)},
+			{"type":"crafting_shaped","result_count":1,"category":"equipment","shape":["XXX","X X","X X"],"ingredients":{"X":ingr_repr("chainmail")},"result":ingr_repr("minecraft:chainmail_leggings", count = 1)},
+			{"type":"crafting_shaped","result_count":1,"category":"equipment","shape":["X X","X X"],"ingredients":{"X":ingr_repr("chainmail")},"result":ingr_repr("minecraft:chainmail_boots", count = 1)},
+		]
+	},
 }
 
 # Update the database with new data

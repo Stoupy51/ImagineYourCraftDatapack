@@ -15,16 +15,24 @@ def RecipeShapeless(recipe: dict, item: str) -> dict:
 	to_return = {
 		"type": "minecraft:" + recipe["type"],
 		"category": recipe["category"],
+		"group": recipe["group"] if recipe.get("group") else None,
 		"ingredients": recipe["ingredients"],
-		"result": {"id": data["id"], "count": recipe["result_count"]}
+		"result": {"id": data["id"], "count": recipe["result_count"]} if not recipe.get("result") else recipe["result"]
 	}
-	if recipe.get("group"):
-		to_return["group"] = recipe["group"]
-	for k, v in data.items():
-		if k not in NOT_COMPONENTS:
-			if to_return["result"].get("components") is None:
-				to_return["result"]["components"] = {}
-			to_return["result"]["components"][f"minecraft:{k}"] = v
+	if not to_return["group"]:
+		del to_return["group"]
+	if not recipe.get("result"):
+		for k, v in data.items():
+			if k not in NOT_COMPONENTS:
+				if to_return["result"].get("components") is None:
+					to_return["result"]["components"] = {}
+				to_return["result"]["components"][f"minecraft:{k}"] = v
+	else:
+		# Replace "item" to "id" but keep "id" as the first key 
+		result = {"id":to_return["result"]["item"]}
+		result.update(to_return["result"])
+		result.pop("item")
+		to_return["result"] = result
 	return to_return
 
 def RecipeShaped(recipe: dict, item: str) -> dict:
@@ -32,25 +40,38 @@ def RecipeShaped(recipe: dict, item: str) -> dict:
 	to_return = {
 		"type": "minecraft:" + recipe["type"],
 		"category": recipe["category"],
+		"group": recipe["group"] if recipe.get("group") else None,
 		"pattern": recipe["shape"],
 		"key": recipe["ingredients"],
-		"result": {"id": data["id"], "count": recipe["result_count"]}
+		"result": {"id": data["id"], "count": recipe["result_count"]} if not recipe.get("result") else recipe["result"]
 	}
-	if recipe.get("group"):
-		to_return["group"] = recipe["group"]
-	for k, v in data.items():
-		if k not in NOT_COMPONENTS:
-			if to_return["result"].get("components") is None:
-				to_return["result"]["components"] = {}
-			to_return["result"]["components"][f"minecraft:{k}"] = v
+	if not to_return["group"]:
+		del to_return["group"]
+	if not recipe.get("result"):
+		for k, v in data.items():
+			if k not in NOT_COMPONENTS:
+				if to_return["result"].get("components") is None:
+					to_return["result"]["components"] = {}
+				to_return["result"]["components"][f"minecraft:{k}"] = v
+	else:
+		# Replace "item" to "id" but keep "id" as the first key 
+		result = {"id":to_return["result"]["item"]}
+		result.update(to_return["result"])
+		result.pop("item")
+		to_return["result"] = result
 	return to_return
 
 # Generate recipes with vanilla input (no components)
 generated_recipes = []
 for item, data in DATABASE.items():
-	if data.get(RESULT_OF_CRAFTING) and data[RESULT_OF_CRAFTING] != []:
+	crafts = []
+	if data.get(RESULT_OF_CRAFTING):
+		crafts += data[RESULT_OF_CRAFTING]
+	if data.get(USED_FOR_CRAFTING):
+		crafts += data[USED_FOR_CRAFTING]
+	if crafts:
 		i = 1
-		for recipe in data[RESULT_OF_CRAFTING]:
+		for recipe in crafts:
 
 			# Get ingredients
 			name = f"{item}" if i == 1 else f"{item}_{i}"
@@ -64,7 +85,7 @@ for item, data in DATABASE.items():
 					continue
 				r = RecipeShapeless(recipe, item)
 				with super_open(f"{BUILD_DATAPACK}/data/{NAMESPACE}/recipes/{name}.json", "w") as f:
-					super_json_dump(r, f, max_level = -1)
+					super_json_dump(r, f, max_level = 5)
 					i += 1
 				generated_recipes.append(name)
 			elif recipe["type"] == "crafting_shaped":
@@ -72,7 +93,7 @@ for item, data in DATABASE.items():
 					continue
 				r = RecipeShaped(recipe, item)
 				with super_open(f"{BUILD_DATAPACK}/data/{NAMESPACE}/recipes/{name}.json", "w") as f:
-					super_json_dump(r, f, max_level = -1)
+					super_json_dump(r, f, max_level = 5)
 					i += 1
 				generated_recipes.append(name)
 	pass

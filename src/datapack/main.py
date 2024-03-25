@@ -14,7 +14,7 @@ import src.datapack.loot_tables
 # TODO: Custom Ores generation
 
 # Generate custom recipes
-import src.datapack.recipes_vanilla_input
+import datapack.recipes
 
 # Finally, add a small header for each .mcfunction file
 import src.datapack.headers

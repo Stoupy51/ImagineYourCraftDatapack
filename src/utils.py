@@ -10,15 +10,16 @@ def ingr_repr(id: str, count: int|None = None) -> dict:
 		id	(str): The id of the ingredient, ex: adamantium_ingot
 	Returns:
 		str: The identity of the ingredient for custom crafts,
-			ex: "custom_data": "imagineyourcraft.adamantium_ingot"
-			ex: "item": "minecraft:stick"
+			ex: {"components":{"custom_data":{imagineyourcraft:{adamantium_ingot=True}}}}
+			ex: {"item": "minecraft:stick"}
 	"""
-	field = "item" if ":" in id else "custom_data"
-	new_id = id if ":" in id else f"{NAMESPACE}.{id}"
-	if count is None:
-		return {field: new_id}
+	if ":" in id:
+		to_return = {"item": id}
 	else:
-		return {"count": count, field: new_id}
+		to_return = {"components":{"custom_data":{NAMESPACE:{id:True}}}}
+	if count is not None:
+		to_return["count"] = count
+	return to_return
 
 
 # For easy file management
@@ -36,18 +37,6 @@ def super_open(file_path: str, mode: str) -> io.TextIOWrapper:
 	# Open file and return
 	return open(file_path, mode, encoding="utf-8") # Always use utf-8 encoding to avoid issues
 
-
-# For nothing really special
-def shuffled(lst: list) -> list:
-	""" Return a shuffled version of the given list
-	Args:
-		lst	(list): The list to shuffle
-	Returns:
-		list: The shuffled list
-	"""
-	lst = lst.copy()
-	random.shuffle(lst)
-	return lst
 
 # JSON dump with indentation for levels
 def super_json_dump(data: dict|list, file: io.TextIOWrapper = None, max_level: int = 2) -> str:
@@ -88,6 +77,16 @@ def super_json_dump(data: dict|list, file: io.TextIOWrapper = None, max_level: i
 		file.write(content)
 	return content
 
+
+# Exporting database
+def export_database(path: str = DATABASE_DEBUG) -> None:
+	""" Export the database to a JSON file for debugging generation
+	Args:
+		path (str): The path to the JSON file (optional)
+	"""
+	with super_open(path, "w") as f:
+		super_json_dump(DATABASE, f)
+	return
 
 
 # Colors constants

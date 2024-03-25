@@ -14,10 +14,10 @@ if not_used:
 	warning("Some textures not used in the database: " + not_used)
 
 # Print a few keys of the database
-info("Database generated, here are some keys: " + ", ".join(shuffled(list(DATABASE.keys()))[:7]) + "...")
+lst = list(DATABASE.keys())
+random.shuffle(lst)
+info("Database generated, here are some keys: " + ", ".join(lst[:7]) + "...")
 
 # Export database to JSON for debugging generation
-with open(DATABASE_DEBUG, "w") as f:
-	super_json_dump(DATABASE, f)
-	pass
+export_database()
 

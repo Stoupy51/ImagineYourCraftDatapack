@@ -19,12 +19,9 @@ database_additions = {
 	"box_jump": {"id": CUSTOM_BLOCK_VANILLA, CATEGORY: "building",			RESULT_OF_CRAFTING:[{"type":"crafting_shapeless","result_count":1,"category":"misc","ingredients":[ingr_repr("minecraft:oak_planks"),ingr_repr("ruby")]}]},
 	"box_speed": {"id": CUSTOM_BLOCK_VANILLA, CATEGORY: "building",			RESULT_OF_CRAFTING:[{"type":"crafting_shapeless","result_count":1,"category":"misc","ingredients":[ingr_repr("minecraft:oak_planks"),ingr_repr("sapphire")]}]},
 	"blue_block_ctf": {"id": CUSTOM_BLOCK_VANILLA, CATEGORY: "building",	RESULT_OF_CRAFTING:[{"type":"crafting_shaped","result_count":8,"category":"misc","shape":["XXX","XGX","XXX"],"ingredients":{"X":ingr_repr("minecraft:blue_wool"),"G":ingr_repr("minecraft:glass")}}]},
-	"blank": {"id": CUSTOM_ITEM_VANILLA, CATEGORY: MISC},
-	"blob": {"id": CUSTOM_ENTITY_VANILLA, CATEGORY: MISC},
 	"bolt": {"id": "minecraft:arrow", CATEGORY: "equipment",				"lore": ['{"text":"x1.5 damage arrow","color":"gray","italic":false}'], RESULT_OF_CRAFTING:[{"type":"crafting_shapeless","result_count":1,"category":"equipment","ingredients":[ingr_repr("minecraft:iron_ingot"),ingr_repr("minecraft:arrow")]}]},
 	"clear_glass": {"id": CUSTOM_BLOCK_VANILLA, CATEGORY: "building",		RESULT_OF_CRAFTING:[{"type":"crafting_shapeless","result_count":4,"category":"misc","ingredients":[ingr_repr("minecraft:glass")]*9}]},
 	"cloud": {"id": CUSTOM_ENTITY_VANILLA, CATEGORY: "building"},
-	"coin": {"id": CUSTOM_ITEM_VANILLA, CATEGORY: MISC},
 	"flatware": {"id": CUSTOM_ENTITY_VANILLA, CATEGORY: "building"},
 	"helice_hat": {"id": "minecraft:leather_helmet", CATEGORY: "equipment",	"lore": ['{"text":"A hat that makes you fly","color":"gray","italic":false}'], RESULT_OF_CRAFTING:[{"type":"crafting_shapeless","result_count":1,"category":"equipment","ingredients":[ingr_repr("minecraft:iron_ingot"),ingr_repr("minecraft:elytra")]}], "attribute_modifiers":[{"type":"generic.gravity","uuid":UUIDS["gravity"]["helmet"],"name":"generic.gravity","amount":-0.09,"operation":"add_value","slot":"head"}]},
 	"hops_seeds": {"id": CUSTOM_ENTITY_VANILLA, CATEGORY: "material"},
@@ -35,13 +32,8 @@ database_additions = {
 	"oak_wood_lantern": {"id": CUSTOM_BLOCK_VANILLA, CATEGORY: "building",		RESULT_OF_CRAFTING:[{"type":"crafting_shapeless","result_count":1,"category":"blocks","group":"wood_lantern","ingredients":[ingr_repr("minecraft:glowstone"),ingr_repr("minecraft:oak_wood")]}]},
 	"spruce_wood_lantern": {"id": CUSTOM_BLOCK_VANILLA, CATEGORY: "building",	RESULT_OF_CRAFTING:[{"type":"crafting_shapeless","result_count":1,"category":"blocks","group":"wood_lantern","ingredients":[ingr_repr("minecraft:glowstone"),ingr_repr("minecraft:spruce_wood")]}]},
 	"iron_lantern": {"id": CUSTOM_BLOCK_VANILLA, CATEGORY: "building",			RESULT_OF_CRAFTING:[{"type":"crafting_shapeless","result_count":1,"category":"blocks","ingredients":[ingr_repr("minecraft:glowstone"),ingr_repr("minecraft:iron_block")]}]},
-	"lignite_torch": {"id": CUSTOM_ENTITY_VANILLA, CATEGORY: MISC,				RESULT_OF_CRAFTING:[{"type":"crafting_shapeless","result_count":4,"category":"blocks","ingredients":[ingr_repr("minecraft:stick"),ingr_repr("lignite")]}]},
-	"nuclear_bomb": {"id": CUSTOM_BLOCK_VANILLA, CATEGORY: MISC,				"lore": ['{"text":"Power of 5 TNTs","color":"gray","italic":false}'], RESULT_OF_CRAFTING:[{"type":"crafting_shaped","result_count":1,"category":"blocks","shape":[" X ","XTX","XXX"],"ingredients":{"X":ingr_repr("minecraft:tnt"),"D":ingr_repr("topaz")}}]},
-	"quiver": {"id": CUSTOM_ITEM_VANILLA, CATEGORY: MISC},
 	"red_light": {"id": CUSTOM_BLOCK_VANILLA, CATEGORY: "building",				RESULT_OF_CRAFTING:[{"type":"crafting_shapeless","result_count":1,"category":"blocks","ingredients":[ingr_repr("minecraft:redstone_lamp"),ingr_repr("minecraft:red_wool")]}]},
 	"reversed_oak_planks": {"id": CUSTOM_BLOCK_VANILLA, CATEGORY: "building",	RESULT_OF_CRAFTING:[{"type":"crafting_shaped","result_count":4,"category":"blocks","shape":[" X","XX","X "],"ingredients":{"X":ingr_repr("minecraft:oak_planks")}}]},
-	"rock": {"id": "minecraft:snowball", CATEGORY: MISC, "max_stack_size": 99,	"lore": ['{"text":"Can be thrown","color":"gray","italic":false}']},
-	"screwdriver": {"id": CUSTOM_ITEM_VANILLA, CATEGORY: MISC},
 	"sw1911": {"id": CUSTOM_ITEM_VANILLA, CATEGORY: "equipment",				"lore": ['{"text":"Uses steel nuggets as bullets","color":"gray","italic":false}'], RESULT_OF_CRAFTING:[{"type":"crafting_shaped","result_count":1,"category":"equipment","shape":["SX ","  X"," X "],"ingredients":{"X":ingr_repr("steel_ingot"),"A":ingr_repr("slate")}}]},
 	"black_flower": {"id": CUSTOM_ENTITY_VANILLA, CATEGORY: "building"},
 	"blue_flower": {"id": CUSTOM_ENTITY_VANILLA, CATEGORY: "building"},
@@ -78,6 +70,16 @@ database_additions = {
 			{"type":"crafting_shaped","result_count":1,"category":"equipment","shape":["X X","X X"],"ingredients":{"X":ingr_repr("chainmail")},"result":ingr_repr("minecraft:chainmail_boots", count = 1)},
 		]
 	},
+
+	# Miscellaneous
+	"blank": {"id": CUSTOM_ITEM_VANILLA, CATEGORY: MISC},
+	"blob": {"id": CUSTOM_ENTITY_VANILLA, CATEGORY: MISC},
+	"coin": {"id": CUSTOM_ITEM_VANILLA, CATEGORY: MISC},
+	"lignite_torch": {"id": CUSTOM_ENTITY_VANILLA, CATEGORY: MISC,				RESULT_OF_CRAFTING:[{"type":"crafting_shapeless","result_count":4,"category":"blocks","ingredients":[ingr_repr("minecraft:stick"),ingr_repr("lignite")]}]},
+	"nuclear_bomb": {"id": CUSTOM_BLOCK_VANILLA, CATEGORY: MISC,				"lore": ['{"text":"Power of 5 TNTs","color":"gray","italic":false}'], RESULT_OF_CRAFTING:[{"type":"crafting_shaped","result_count":1,"category":"blocks","shape":[" X ","XTX","XXX"],"ingredients":{"X":ingr_repr("minecraft:tnt"),"D":ingr_repr("topaz")}}]},
+	"quiver": {"id": CUSTOM_ITEM_VANILLA, CATEGORY: MISC},
+	"rock": {"id": "minecraft:snowball", CATEGORY: MISC, "max_stack_size": 99,	"lore": ['{"text":"Can be thrown","color":"gray","italic":false}']},
+	"screwdriver": {"id": CUSTOM_ITEM_VANILLA, CATEGORY: MISC},
 }
 
 # Update the database with new data

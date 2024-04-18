@@ -2,6 +2,7 @@
 from src.config import *
 import shutil
 import json
+import sys
 import io
 
 # Function mainly used for database generation
@@ -118,6 +119,8 @@ def debug(text: str) -> None:
 	print(f"{BLUE}[DEBUG {current_time()}] {text}{RESET}")
 def warning(text: str) -> None:
 	print(f"{YELLOW}[WARNING {current_time()}] {text}{RESET}")
-def error(text: str) -> None:
+def error(text: str, exit: bool = True) -> None:
 	print(f"{RED}[ERROR {current_time()}] {text}{RESET}")
+	if exit:
+		sys.exit(1)
 

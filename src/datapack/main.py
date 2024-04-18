@@ -3,6 +3,9 @@
 from src.importer import *
 print()
 
+# Generate manual
+import src.datapack.manual
+
 # Generate datapack loading
 import src.datapack.loading
 

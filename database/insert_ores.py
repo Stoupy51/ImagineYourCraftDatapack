@@ -30,6 +30,7 @@ for ore in ORES:
 		block_str = block.replace("_"," ").title()
 		DATABASE[block] = {}
 		DATABASE[block]["id"] = CUSTOM_BLOCK_VANILLA	# Item for placing custom block
+		DATABASE[block][CATEGORY] = "material"			# Category
 		DATABASE[block]["custom_data"] = {"smithed":{}}	# Smithed convention
 		DATABASE[block]["custom_data"]["smithed"]["dict"] = {"block": {material: True}}
 		if placeable == "ore":
@@ -59,6 +60,7 @@ for ore in ORES:
 		item_str = item.replace("_"," ").title()
 		DATABASE[item] = {}
 		DATABASE[item]["id"] = CUSTOM_ITEM_VANILLA		# Item for INGREDIENTS
+		DATABASE[item][CATEGORY] = "material"			# Category
 		DATABASE[item]["custom_data"] = {"smithed":{}}	# Smithed convention
 		DATABASE[item]["custom_data"]["smithed"]["dict"] = {ingredient: {material: True}} if ingredient else {"material": {material: True}}
 
@@ -92,6 +94,7 @@ for ore in ORES:
 			DATABASE[item]["id"] = f"minecraft:leather_{gear}"	# Leather armor by default
 		else:
 			DATABASE[item]["id"] = f"minecraft:diamond_{gear}"	# Diamond tools by default
+		DATABASE[item][CATEGORY] = "equipment"					# Category
 		DATABASE[item]["custom_data"] = {"smithed":{}}			# Smithed convention
 		DATABASE[item]["custom_data"]["smithed"]["dict"] = {armor_or_tools: {material: True, gear: True}}
 		craft_gear = None
@@ -129,6 +132,7 @@ for ore in ORES:
 		item_str = item.replace("_"," ").title()
 		DATABASE[item] = {}
 		DATABASE[item]["id"] = CUSTOM_ITEM_VANILLA		# Item for INGREDIENTS
+		DATABASE[item][CATEGORY] = "material"			# Category
 		DATABASE[item]["custom_data"] = {"smithed":{}}	# Smithed convention
 		DATABASE[item]["custom_data"]["smithed"]["dict"] = {misc: {material: True}}
 		if misc == "stick":

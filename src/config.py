@@ -49,8 +49,10 @@ CUSTOM_ENTITY_VANILLA = "minecraft:item_frame" # Useful for blocks that can be p
 CUSTOM_ITEM_VANILLA = "minecraft:command_block"
 RESULT_OF_CRAFTING = "result_of_crafting"
 USED_FOR_CRAFTING = "used_for_crafting"	# Should not be wrote manually unless you are crafting a vanilla item (ex: imagineyourcraft.chainmail -> chainmail armor)
+CATEGORY = "category" # Key for the category, ex: "category":"material" or "category":"equipment"
+MISC = "miscellaneous"
 MODEL_DISPLAY = {"head":{"rotation":[0,0,0],"translation":[0,-30.42,0],"scale":[1.605,1.605,1.605]},"fixed":{"rotation":[-90,0,0],"translation":[0,0,-16],"scale":[2.0075,2.0075,2.0075]}}
-NOT_COMPONENTS = ["id", "wiki", "category", RESULT_OF_CRAFTING, USED_FOR_CRAFTING]
+NOT_COMPONENTS = ["id", "wiki", CATEGORY, RESULT_OF_CRAFTING, USED_FOR_CRAFTING]
 VANILLA_ITEMS = ["emerald"]
 random.seed(3)
 

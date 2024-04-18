@@ -16,7 +16,7 @@ if not_used:
 # Print a few keys of the database
 lst = list(DATABASE.keys())
 random.shuffle(lst)
-info("Database generated, here are some keys:\n" + ", ".join(lst[:8]) + "...")
+debug("Database generated, here are some keys:\n" + ", ".join(lst[:8]) + "...")
 
 # Export database to JSON for debugging generation
 export_database()

@@ -19,6 +19,6 @@ for item, data in DATABASE.items():
 # Debug categories and sizes
 s = ""
 for category, items in categories.items():
-	s += f"\n{category}: {len(items)} items"
-info(f"Found {len(categories)} categories:{s}")
+	s += f"\n- {category}: {len(items)} items"
+debug(f"Found {len(categories)} categories:{s}")
 

@@ -1,6 +1,7 @@
 
 # Import config
 from src.importer import *
+from src.manual.utils import *
 
 # Constants
 MAX_ITEMS_PER_ROW = 5
@@ -9,15 +10,6 @@ MAX_ITEMS_PER_PAGE = MAX_ITEMS_PER_ROW * MAX_ROWS_PER_PAGE # (for showing up all
 
 # Calculate left padding for categories pages depending on MAX_ITEMS_PER_ROW: higher the value, lower the padding
 left_padding = 6 - MAX_ITEMS_PER_ROW
-
-# Utils functions for fonts (item start at 0x0000, pages at 0xa000)
-def get_font(i: int):
-	""" Return the character that will be used for font, ex: "\u0002" with i = 2"""
-	return f"\\u{i:04x}"
-def get_page_font(i: int) -> str:
-	return get_font(i + 0xa000)
-def get_item_font(i: int) -> str:
-	return get_font(i)
 
 # Generate categories list
 categories = {}
@@ -84,7 +76,8 @@ second_page = {}
 		"[{\"text\":\"test\"}]",
 		"[{\"text\":\"test\"}]"
 	]
-}"""
+}
+"""
 
 # Encode pages
 for page in pages:
@@ -114,4 +107,17 @@ for page in pages:
 			
 
 
+# Finally, prepend the manual to the database
+manual_database = {f"{NAMESPACE}_manual":
+	{
+		"id": "minecraft:written_book",
+		"written_book_content": {
+			"title": f"{DATAPACK_NAME} Manual",
+			"author": AUTHOR,
+			"pages": []
+		}
+	}
+}
+DATABASE.update(manual_database)
+info(f"Added manual to the database")
 

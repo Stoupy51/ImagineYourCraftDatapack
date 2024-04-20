@@ -3,16 +3,12 @@
 from src.importer import *
 print()
 
-# Generate manual
-import src.datapack.manual
-
 # Generate datapack loading
 import src.datapack.loading
 
 # Generate items loot tables
 import src.datapack.loot_tables
 
-# TODO: Basic structure (tick, second, minute)
 # TODO: Custom Blocks (place + destroy)
 # TODO: Custom Ores generation
 

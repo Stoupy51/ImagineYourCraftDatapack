@@ -13,9 +13,9 @@ MINECRAFT_VERSION = "1.20.5 pre-release 1"
 VERSION = "0.0.1"
 NAMESPACE = "imagineyourcraft"
 GLOBAL_NAMESPACE = "stoupy"
-PACK_FORMAT = 39
-RESOURCE_PACK_FORMAT = 31
-DATA_VERSION = 3829
+PACK_FORMAT = 41
+RESOURCE_PACK_FORMAT = 32
+DATA_VERSION = 3835
 DEPENDENCIES = {
 	"common_signals": {"version":[0, 0, 0], "name":"Common Signals", "url":"https://github.com/Stoupy51/CommonSignals"},
 	# "smithed.custom_block": {"version":[0, 0, 0], "name":"Smithed Custom Block Placement", "url":"https://wiki.smithed.dev/libraries/custom-block/"},

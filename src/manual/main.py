@@ -124,6 +124,8 @@ assets_path = f"{ROOT}/src/manual/assets/"
 assets = os.listdir(assets_path)
 if not DEBUG_MODE:
 	assets.remove("none.png")
+else:
+	assets.remove("none_release.png")
 os.makedirs(f"{BUILD_RESOURCE_PACK}/assets/{NAMESPACE}/textures/font", exist_ok = True)
 for file in assets:
 	if file.endswith(".png"):
@@ -142,7 +144,7 @@ manual_database = {"manual":
 		"written_book_content": {
 			"title": f"{DATAPACK_NAME} Manual",
 			"author": AUTHOR,
-			"pages": [str(i).replace("\\\\", "\\") for i in book_content]
+			"pages": [str(i).replace("\\\\", "\\").replace(" ", "") for i in book_content]
 		},
 		"custom_model_data": lowest_cmd - 1
 	}

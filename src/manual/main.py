@@ -54,7 +54,6 @@ for category, items in categories.items():
 		i += MAX_ITEMS_PER_PAGE
 
 # Prepare pages (append categories first, then items)
-pages = []
 i = 2 # Skip first two pages (introduction + categories)
 for page_name, items in categories_pages.items():
 	pages.append({"number": i, "name": page_name, "raw_data": items, "type": CATEGORY})
@@ -101,23 +100,21 @@ for page in pages:
 		if data.get(RESULT_OF_CRAFTING):
 			first_craft = data[RESULT_OF_CRAFTING][0]
 			l = generate_craft_content(first_craft, name, item_font)
-			book_content.append(l)
-			break
+			if l:
+				book_content.append(l)
 
 
 # Add fonts
 fonts = {"providers": []}
 providers = []
-providers.append({"type":"bitmap","file":f"{NAMESPACE}:font/none.png", "ascent": 8, "height": 19, "chars": [NONE_FONT]})
+providers.append({"type":"bitmap","file":f"{NAMESPACE}:font/none.png", "ascent": 8, "height": 20, "chars": [NONE_FONT]})
 providers.append({"type":"bitmap","file":f"{NAMESPACE}:font/none.png", "ascent": 8, "height": 13, "chars": [SMALL_NONE_FONT*2]})
-# providers.append({"type":"bitmap","file":f"{NAMESPACE}:font/shaped_1x1.png", "ascent": 12, "height": 139, "chars": [SHAPED_1X1_FONT]})
-# providers.append({"type":"bitmap","file":f"{NAMESPACE}:font/shaped_2x2.png", "ascent": 12, "height": 139, "chars": [SHAPED_2X2_FONT]})
-# providers.append({"type":"bitmap","file":f"{NAMESPACE}:font/shaped_3x3.png", "ascent": 12, "height": 139, "chars": [SHAPED_3X3_FONT]})
-# providers.append({"type":"bitmap","file":f"{NAMESPACE}:font/furnace.png", "ascent": 12, "height": 139, "chars": [FURNACE_FONT]})
+providers.append({"type":"bitmap","file":f"{NAMESPACE}:font/shaped_2x2.png", "ascent": 12, "height": 72, "chars": [SHAPED_2X2_FONT]})
+providers.append({"type":"bitmap","file":f"{NAMESPACE}:font/shaped_3x3.png", "ascent": 0, "height": 64, "chars": [SHAPED_3X3_FONT]})
+providers.append({"type":"bitmap","file":f"{NAMESPACE}:font/furnace.png", "ascent": 12, "height": 72, "chars": [FURNACE_FONT]})
 fonts["providers"] = providers
 with super_open(f"{BUILD_RESOURCE_PACK}/assets/{NAMESPACE}/font/manual.json", "w") as f:
 	f.write(super_json_dump(fonts).replace("\\\\", "\\"))
-debug(book_content[0])
 
 # Copy assets in the resource pack
 assets_path = f"{ROOT}/src/manual/assets/"
@@ -129,13 +126,16 @@ else:
 os.makedirs(f"{BUILD_RESOURCE_PACK}/assets/{NAMESPACE}/textures/font", exist_ok = True)
 for file in assets:
 	if file.endswith(".png"):
-		if "none_release" == file and not DEBUG_MODE:
+		if "none_release.png" == file and not DEBUG_MODE:
 			shutil.copyfile(f"{assets_path}/none_release.png", f"{BUILD_RESOURCE_PACK}/assets/{NAMESPACE}/textures/font/none.png")
 		else:
 			shutil.copyfile(f"{assets_path}/{file}", f"{BUILD_RESOURCE_PACK}/assets/{NAMESPACE}/textures/font/{file}")
 
 		
-
+# Debug book_content
+with super_open(f"{BUILD_RESOURCE_PACK}/debug_manual.json", "w") as f:
+	f.write(super_json_dump(book_content).replace("\\\\", "\\"))
+	debug(f"Debug book_content at '{BUILD_RESOURCE_PACK}/debug_manual.json'")
 
 # Finally, prepend the manual to the database
 manual_database = {"manual":

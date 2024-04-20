@@ -38,6 +38,7 @@ DESCRIPTION = f"{DATAPACK_NAME} [{VERSION}] by {AUTHOR}"
 BUILD_DATAPACK = f"{BUILD_FOLDER}/datapack"
 BUILD_RESOURCE_PACK = f"{BUILD_FOLDER}/resource_pack"
 DATABASE = {}
+EXTERNAL_DATABASE = {}		# Can be used to required an item from another datapack for a recipe or anything else
 DATABASE_DEBUG = f"{DATABASE_FOLDER}/database_debug.json"
 SOURCE_LORE = f'[{{"text":"{DATAPACK_NAME}","italic":true,"color":"blue"}}]'
 FACES = ("down", "up", "north", "south", "west", "east")
@@ -54,7 +55,7 @@ CATEGORY = "category" # Key for the category, ex: "category":"material" or "cate
 MISC = "miscellaneous"
 MODEL_DISPLAY = {"head":{"rotation":[0,0,0],"translation":[0,-30.42,0],"scale":[1.605,1.605,1.605]},"fixed":{"rotation":[-90,0,0],"translation":[0,0,-16],"scale":[2.0075,2.0075,2.0075]}}
 NOT_COMPONENTS = ["id", "wiki", CATEGORY, RESULT_OF_CRAFTING, USED_FOR_CRAFTING]
-VANILLA_ITEMS = ["emerald"]
+VANILLA_ITEMS = ["emerald","stone"]
 random.seed(3)
 
 # UUIDs for attribute modifiers to avoid conflicts

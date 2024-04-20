@@ -7,6 +7,7 @@ from database.configurables import *
 for ore in ORES:
 	material = ore.replace("massive_","")
 	ingr = f"{material}_ingot" if f"{material}_ingot.png" in textures_filenames else ore	# Check if it's an ingot or no
+	ingr = f"{material}_fragment" if f"{material}_fragment.png" in textures_filenames else ingr	# Check if it's a fragment or no
 	# Get ingr repr
 	if ingr in VANILLA_ITEMS:
 		ingr = ingr_repr(f"minecraft:{ingr}")

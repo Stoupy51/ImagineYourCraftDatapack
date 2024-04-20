@@ -16,4 +16,5 @@ from database.final_adjustments import *
 
 # Print not used textures and a bit of the database keys, then dump the database to a JSON file
 from database.debug import *
+print()
 

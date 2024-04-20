@@ -9,6 +9,7 @@ IMPORT_TIME = datetime.datetime.now()
 os.system("color")
 
 # Datapack related constants
+DEBUG_MODE = True
 MINECRAFT_VERSION = "1.20.5 pre-release 1"
 VERSION = "0.0.1"
 NAMESPACE = "imagineyourcraft"

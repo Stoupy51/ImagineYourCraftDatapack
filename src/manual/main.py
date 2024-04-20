@@ -80,8 +80,8 @@ second_page = {}
 """
 
 # Encode pages
+book_content = []
 for page in pages:
-	content = []
 
 	# Encode categories
 	if page["type"] == CATEGORY:
@@ -100,22 +100,51 @@ for page in pages:
 		# If there are crafts
 		if data.get(RESULT_OF_CRAFTING):
 			first_craft = data[RESULT_OF_CRAFTING][0]
+			l = generate_craft_content(first_craft, name, item_font)
+			book_content.append(l)
+			break
 
-			"""
-			item='{"text":"\\\\uef01","font":"simpledrawer:font","color":"white","hoverEvent":{"action":"show_item","contents":XXX},"clickEvent":{"action":"change_page","value":"YYY"}},'
-			"""
-			
+
+# Add fonts
+fonts = {"providers": []}
+providers = []
+providers.append({"type":"bitmap","file":f"{NAMESPACE}:font/none.png", "ascent": 8, "height": 19, "chars": [NONE_FONT]})
+providers.append({"type":"bitmap","file":f"{NAMESPACE}:font/none.png", "ascent": 8, "height": 13, "chars": [SMALL_NONE_FONT*2]})
+# providers.append({"type":"bitmap","file":f"{NAMESPACE}:font/shaped_1x1.png", "ascent": 12, "height": 139, "chars": [SHAPED_1X1_FONT]})
+# providers.append({"type":"bitmap","file":f"{NAMESPACE}:font/shaped_2x2.png", "ascent": 12, "height": 139, "chars": [SHAPED_2X2_FONT]})
+# providers.append({"type":"bitmap","file":f"{NAMESPACE}:font/shaped_3x3.png", "ascent": 12, "height": 139, "chars": [SHAPED_3X3_FONT]})
+# providers.append({"type":"bitmap","file":f"{NAMESPACE}:font/furnace.png", "ascent": 12, "height": 139, "chars": [FURNACE_FONT]})
+fonts["providers"] = providers
+with super_open(f"{BUILD_RESOURCE_PACK}/assets/{NAMESPACE}/font/manual.json", "w") as f:
+	f.write(super_json_dump(fonts).replace("\\\\", "\\"))
+debug(book_content[0])
+
+# Copy assets in the resource pack
+assets_path = f"{ROOT}/src/manual/assets/"
+assets = os.listdir(assets_path)
+if not DEBUG_MODE:
+	assets.remove("none.png")
+os.makedirs(f"{BUILD_RESOURCE_PACK}/assets/{NAMESPACE}/textures/font", exist_ok = True)
+for file in assets:
+	if file.endswith(".png"):
+		if "none_release" == file and not DEBUG_MODE:
+			shutil.copyfile(f"{assets_path}/none_release.png", f"{BUILD_RESOURCE_PACK}/assets/{NAMESPACE}/textures/font/none.png")
+		else:
+			shutil.copyfile(f"{assets_path}/{file}", f"{BUILD_RESOURCE_PACK}/assets/{NAMESPACE}/textures/font/{file}")
+
+		
 
 
 # Finally, prepend the manual to the database
-manual_database = {f"{NAMESPACE}_manual":
+manual_database = {"manual":
 	{
 		"id": "minecraft:written_book",
 		"written_book_content": {
 			"title": f"{DATAPACK_NAME} Manual",
 			"author": AUTHOR,
-			"pages": []
-		}
+			"pages": [str(i).replace("\\\\", "\\") for i in book_content]
+		},
+		"custom_model_data": lowest_cmd - 1
 	}
 }
 DATABASE.update(manual_database)

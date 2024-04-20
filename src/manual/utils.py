@@ -5,6 +5,9 @@ from src.importer import *
 # Utils functions for fonts (item start at 0x0000, pages at 0xa000)
 # Return the character that will be used for font, ex: "\u0002" with i = 2
 def get_font(i: int):
+	i += 0x1000	# Minecraft only allow starting this value
+	if i > 0xffff:
+		error(f"Font index {i} is too big. Maximum is 0xffff.")
 	return f"\\u{i:04x}"
 def get_page_font(i: int) -> str:
 	return get_font(i + 0xa000)

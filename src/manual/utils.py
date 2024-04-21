@@ -1,18 +1,7 @@
 
-# Import config
+# Import config & font textures
 from src.importer import *
-
-# Utils functions for fonts (item start at 0x0000, pages at 0xa000)
-# Return the character that will be used for font, ex: "\u0002" with i = 2
-def get_font(i: int):
-	i += 0x0020	# Minecraft only allow starting this value
-	if i > 0xffff:
-		error(f"Font index {i} is too big. Maximum is 0xffff.")
-	return f"\\u{i:04x}"
-def get_page_font(i: int) -> str:
-	return get_font(i + 0xa000)
-def get_item_font(i: int) -> str:
-	return get_font(i + 0x1000)
+from src.manual.font_textures import *
 
 # Convert craft function
 def convert_shapeless_to_shaped(craft: dict) -> dict:
@@ -116,14 +105,7 @@ def get_item_component(ingredient: dict, name: str) -> dict:
 	# Return
 	return formatted
 
-
-"""
-item_hover = '{"text":"\uef01","font":"simpledrawer:font","color":"white","hoverEvent":{"action":"show_item","contents":XXX},"clickEvent":{"action":"change_page","value":"YYY"}},'
-
-"""
-
 # Constants
-FURNACES_RECIPES_TYPES = ("smelting", "blasting", "smoking", "campfire_cooking")
 NONE_FONT = get_font(0x0000)
 SMALL_NONE_FONT = get_font(0x0001)
 SHAPED_2X2_FONT = get_font(0x0002)
@@ -131,18 +113,20 @@ SHAPED_3X3_FONT = get_font(0x0003)
 FURNACE_FONT = get_font(0x0004)
 FONT = f"{NAMESPACE}:manual"
 
-
 # Generate all craft types content
-def generate_craft_content(craft: dict, name: str, item_font: str) -> list:
+def generate_craft_content(craft: dict, name: str, page_font: str) -> list:
 	""" Generate the content for the craft type
 	Args:
 		craft		(dict):	The craft dictionary, ex: {"type": "crafting_shaped","result_count": 1,"category": "equipment","shape": ["XXX","X X"],"ingredients": {"X": {"components": {"custom_data": {"imagineyourcraft": {"adamantium": true}}}}}}
 		name		(str):	The name of the item, ex: "adamantium_pickaxe"
-		item_font	(str):	The font for the item, ex: "\u0002"
+		page_font	(str):	The font for the page, ex: "\u0002"
 	"""
-	## TODO: all type (crafting_shaped, crafting_shapeless, ...)
 	craft_type = craft["type"]
 	content = [{"text": "", "font": FONT, "color": "white"}]	# Make default font for every next component
+	
+	# Show up item title
+	titled = name.replace("_", " ").title() + "\n"
+	content.append({"text": titled, "font": "minecraft:default", "color": "black", "underlined": True})
 
 	# Convert shapeless crafting to shaped crafting
 	if craft_type == "crafting_shapeless":
@@ -156,22 +140,14 @@ def generate_craft_content(craft: dict, name: str, item_font: str) -> list:
 		formatted_ingredients = {}
 		for k, v in craft["ingredients"].items():
 			formatted_ingredients[k] = get_item_component(v, name)
-		
-		# Show up item title
-		titled = name.replace("_", " ").title() + "\n"
-		content.append({"text": titled, "font": "minecraft:default", "color": "black", "underlined": True})
 
 		# Get the font to show up
 		shape = SHAPED_2X2_FONT if max(len(craft["shape"][0]), len(craft["shape"])) == 2 else SHAPED_3X3_FONT
 		content.append(SMALL_NONE_FONT + shape + "\n")
 
-		# TODO: add the craft
-		# for i in range(64):
-		# 	content.append({"text": NONE_FONT, "color": "white", "hoverEvent": {"action": "show_text", "value": f"Ingredient {i+1}"}})
 		# Add each ingredient to the craft
-		for i, line in enumerate(craft["shape"]):
-			duplicate_lines = 3 if i == 1 else 2	# x2 because it needs to be bigger, but x3 for the 2nd line
-			for _ in range(duplicate_lines):
+		for line in craft["shape"]:
+			for _ in range(2):	# We need two lines to make a square, otherwise it will be a rectangle
 				content.append(SMALL_NONE_FONT)
 				for k in line:
 					if k == " ":

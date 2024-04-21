@@ -63,21 +63,6 @@ for item, data in DATABASE.items():
 		pages.append({"number": i, "name": item, "raw_data": data, "type": "item"})
 		i += 1
 
-## TODO Prepare first two pages (introduction + link to categories)
-first_page = {}
-second_page = {}
-
-"""
-"minecraft:written_book_content": {
-	"title": "Title",
-	"author": "Author",
-	"pages": [
-		"[{\"text\":\"test\"}]",
-		"[{\"text\":\"test\"}]"
-	]
-}
-"""
-
 # Encode pages
 book_content = []
 for page in pages:
@@ -90,7 +75,7 @@ for page in pages:
 	else:
 
 		# Get item data and page font depending on the custom model data
-		name = page["name"]
+		name = str(page["name"])
 		data = page["raw_data"]
 		base_id = data["custom_model_data"] - lowest_cmd
 		page_font = get_page_font(base_id)
@@ -102,17 +87,21 @@ for page in pages:
 			l = generate_craft_content(first_craft, name, item_font)
 			if l:
 				book_content.append(l)
+		
+		else:
+			titled = name.replace("_", " ").title() + "\n"
+			content = [{"text": "", "font": FONT, "color": "white"}]	# Make default font for every next component
+			content.append({"text": titled, "font": "minecraft:default", "color": "black", "underlined": True})
+			book_content.append(content)
 
 
 # Add fonts
-fonts = {"providers": []}
-providers = []
 providers.append({"type":"bitmap","file":f"{NAMESPACE}:font/none.png", "ascent": 8, "height": 20, "chars": [NONE_FONT]})
 providers.append({"type":"bitmap","file":f"{NAMESPACE}:font/none.png", "ascent": 8, "height": 13, "chars": [SMALL_NONE_FONT*2]})
 providers.append({"type":"bitmap","file":f"{NAMESPACE}:font/shaped_2x2.png", "ascent": 12, "height": 72, "chars": [SHAPED_2X2_FONT]})
-providers.append({"type":"bitmap","file":f"{NAMESPACE}:font/shaped_3x3.png", "ascent": 0, "height": 64, "chars": [SHAPED_3X3_FONT]})
+providers.append({"type":"bitmap","file":f"{NAMESPACE}:font/shaped_3x3.png", "ascent": 0, "height": 60, "chars": [SHAPED_3X3_FONT]})
 providers.append({"type":"bitmap","file":f"{NAMESPACE}:font/furnace.png", "ascent": 12, "height": 72, "chars": [FURNACE_FONT]})
-fonts["providers"] = providers
+fonts = {"providers": providers}
 with super_open(f"{BUILD_RESOURCE_PACK}/assets/{NAMESPACE}/font/manual.json", "w") as f:
 	f.write(super_json_dump(fonts).replace("\\\\", "\\"))
 

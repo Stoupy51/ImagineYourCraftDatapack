@@ -1,7 +1,7 @@
 
 # Install required libraries
 import os
-required = ["imageio", "PIL"]
+required = ["imageio", "PIL", "OpenGL.GL", "glfw"]
 for package in required:
 	try:
 		__import__(package)

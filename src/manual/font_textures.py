@@ -17,7 +17,7 @@ def get_item_font(i: int) -> str:
 # Generate page font function (called in utils)
 providers = []
 FURNACES_RECIPES_TYPES = ("smelting", "blasting", "smoking", "campfire_cooking")
-MANUAL_PATH = f"{BUILD_FOLDER}/manual"
+MANUAL_PATH = f"{ROOT}/manual"
 def generate_page_font(name: str, page_font: str, craft: dict|None = None) -> None:
 	""" Generate the page font image with the proper items
 	"""
@@ -26,7 +26,14 @@ def generate_page_font(name: str, page_font: str, craft: dict|None = None) -> No
 
 # TODO Generate iso renders for every item in the DATABASE
 path = MANUAL_PATH + "/items"
-for item in DATABASE:
-	pass
+os.makedirs(path, exist_ok = True)
+for item, data in DATABASE.items():
+	
+	# If it's not a block, simply copy the texture
+	try:
+		shutil.copy(f"{TEXTURES_FOLDER}/{item}.png", path)
+	except:
+		# Else, render all the block textures and faces
+ 		pass
 
 

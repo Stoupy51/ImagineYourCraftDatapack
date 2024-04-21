@@ -84,7 +84,7 @@ for page in pages:
 		# If there are crafts
 		if data.get(RESULT_OF_CRAFTING):
 			first_craft = data[RESULT_OF_CRAFTING][0]
-			l = generate_craft_content(first_craft, name, item_font)
+			l = generate_craft_content(first_craft, name, page_font)
 			if l:
 				book_content.append(l)
 		

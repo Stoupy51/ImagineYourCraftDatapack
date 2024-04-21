@@ -14,11 +14,19 @@ def get_page_font(i: int) -> str:
 def get_item_font(i: int) -> str:
 	return get_font(i + 0x1000)
 
-# Generate page font
+# Generate page font function (called in utils)
 providers = []
 FURNACES_RECIPES_TYPES = ("smelting", "blasting", "smoking", "campfire_cooking")
+MANUAL_PATH = f"{BUILD_FOLDER}/manual"
 def generate_page_font(name: str, page_font: str, craft: dict|None = None) -> None:
 	""" Generate the page font image with the proper items
 	"""
 	pass
+
+
+# TODO Generate iso renders for every item in the DATABASE
+path = MANUAL_PATH + "/items"
+for item in DATABASE:
+	pass
+
 

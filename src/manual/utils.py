@@ -108,9 +108,6 @@ def get_item_component(ingredient: dict, name: str) -> dict:
 # Constants
 NONE_FONT = get_font(0x0000)
 SMALL_NONE_FONT = get_font(0x0001)
-SHAPED_2X2_FONT = get_font(0x0002)
-SHAPED_3X3_FONT = get_font(0x0003)
-FURNACE_FONT = get_font(0x0004)
 FONT = f"{NAMESPACE}:manual"
 
 # Generate all craft types content
@@ -142,8 +139,7 @@ def generate_craft_content(craft: dict, name: str, page_font: str) -> list:
 			formatted_ingredients[k] = get_item_component(v, name)
 
 		# Get the font to show up
-		shape = SHAPED_2X2_FONT if max(len(craft["shape"][0]), len(craft["shape"])) == 2 else SHAPED_3X3_FONT
-		content.append(SMALL_NONE_FONT + shape + "\n")
+		content.append(SMALL_NONE_FONT + page_font + "\n")
 
 		# Add each ingredient to the craft
 		for line in craft["shape"]:

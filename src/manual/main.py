@@ -98,9 +98,9 @@ for page in pages:
 # Add fonts
 providers.append({"type":"bitmap","file":f"{NAMESPACE}:font/none.png", "ascent": 8, "height": 20, "chars": [NONE_FONT]})
 providers.append({"type":"bitmap","file":f"{NAMESPACE}:font/none.png", "ascent": 8, "height": 13, "chars": [SMALL_NONE_FONT*2]})
-providers.append({"type":"bitmap","file":f"{NAMESPACE}:font/shaped_2x2.png", "ascent": 12, "height": 72, "chars": [SHAPED_2X2_FONT]})
-providers.append({"type":"bitmap","file":f"{NAMESPACE}:font/shaped_3x3.png", "ascent": 0, "height": 60, "chars": [SHAPED_3X3_FONT]})
-providers.append({"type":"bitmap","file":f"{NAMESPACE}:font/furnace.png", "ascent": 12, "height": 72, "chars": [FURNACE_FONT]})
+# providers.append({"type":"bitmap","file":f"{NAMESPACE}:font/shaped_2x2.png", "ascent": 12, "height": 72, "chars": [SHAPED_2X2_FONT]})
+# providers.append({"type":"bitmap","file":f"{NAMESPACE}:font/shaped_3x3.png", "ascent": 0, "height": 60, "chars": [SHAPED_3X3_FONT]})
+# providers.append({"type":"bitmap","file":f"{NAMESPACE}:font/furnace.png", "ascent": 12, "height": 72, "chars": [FURNACE_FONT]})
 fonts = {"providers": providers}
 with super_open(f"{BUILD_RESOURCE_PACK}/assets/{NAMESPACE}/font/manual.json", "w") as f:
 	f.write(super_json_dump(fonts).replace("\\\\", "\\"))

@@ -1,7 +1,7 @@
 
 # Install required libraries
 import os
-required = ["imageio"]
+required = ["imageio", "PIL"]
 for package in required:
 	try:
 		__import__(package)
@@ -9,6 +9,7 @@ for package in required:
 		os.system(f"pip install {package}")
 
 # Additional imports
+from PIL import Image, ImageEnhance
 import imageio
 import shutil
 import json

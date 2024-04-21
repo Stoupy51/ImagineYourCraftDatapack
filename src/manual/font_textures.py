@@ -23,6 +23,39 @@ def generate_page_font(name: str, page_font: str, craft: dict|None = None) -> No
 	"""
 	pass
 
+import numpy as np
+def rotation_matrix_3d(angle_x, angle_y, angle_z):
+    """
+    Create a 3D rotation matrix from the specified angles.
+    
+    :param angle_x: Rotation angle around the x-axis (in degrees)
+    :param angle_y: Rotation angle around the y-axis (in degrees)
+    :param angle_z: Rotation angle around the z-axis (in degrees)
+    :return: 3x3 rotation matrix
+    """
+    # Convert angles to radians
+    angle_x_rad = np.radians(angle_x)
+    angle_y_rad = np.radians(angle_y)
+    angle_z_rad = np.radians(angle_z)
+    
+    # Rotation matrices around each axis
+    Rx = np.array([[1, 0, 0],
+                   [0, np.cos(angle_x_rad), -np.sin(angle_x_rad)],
+                   [0, np.sin(angle_x_rad), np.cos(angle_x_rad)]])
+    
+    Ry = np.array([[np.cos(angle_y_rad), 0, np.sin(angle_y_rad)],
+                   [0, 1, 0],
+                   [-np.sin(angle_y_rad), 0, np.cos(angle_y_rad)]])
+    
+    Rz = np.array([[np.cos(angle_z_rad), -np.sin(angle_z_rad), 0],
+                   [np.sin(angle_z_rad), np.cos(angle_z_rad), 0],
+                   [0, 0, 1]])
+    
+    # Combine the rotation matrices
+    rotation_matrix = Rz @ Ry @ Rx  # Apply rotations in the order: x, y, z
+    
+    return rotation_matrix
+
 
 # TODO Generate iso renders for every item in the DATABASE
 path = MANUAL_PATH + "/items"
@@ -33,7 +66,27 @@ for item, data in DATABASE.items():
 	try:
 		shutil.copy(f"{TEXTURES_FOLDER}/{item}.png", path)
 	except:
+			continue
 		# Else, render all the block textures and faces
- 		pass
+#		try:
+			# Load textures
+			SCALING = 8
+			working_size = (16*SCALING, 16*SCALING)
+			front_texture = Image.open(f"{TEXTURES_FOLDER}/{item}_front.png")
+			side_texture = Image.open(f"{TEXTURES_FOLDER}/{item}_side.png")
+			top_texture = Image.open(f"{TEXTURES_FOLDER}/{item}_top.png")
+
+			# Resize
+			front_texture = front_texture.resize(working_size, Image.NEAREST)
+			side_texture = side_texture.resize(working_size, Image.NEAREST)
+			top_texture = top_texture.resize(working_size, Image.NEAREST)
+
+			# Make front texture 50% darker and side_texture 25% darker
+			front_texture = ImageEnhance.Brightness(front_texture).enhance(0.5)
+			side_texture = ImageEnhance.Brightness(side_texture).enhance(0.75)
+
+#		except Exception as e:
+#			warning(f"Failed to render iso for item {item}: {e}")
+			error("noob")
 
 

@@ -153,9 +153,6 @@ def generate_page_font(name: str, page_font: str, craft: dict|None = None) -> No
 path = MANUAL_PATH + "/items"
 os.makedirs(f"{path}/{NAMESPACE}", exist_ok = True)
 for item, data in DATABASE.items():
-	# Skip if item is already generated
-	if os.path.exists(f"{path}/{NAMESPACE}/{item}.png"):
-		continue
 	
 	# If it's not a block, simply copy the texture
 	try:
@@ -165,6 +162,9 @@ for item, data in DATABASE.items():
 	except:
 		# Else, render all the block textures and faces
 		try:
+			# Skip if item is already generated (to prevent launcher OpenGL for nothing)
+			if os.path.exists(f"{path}/{NAMESPACE}/{item}.png"):
+				continue
 
 			# Load front texture
 			sides = ("_front", "_side", "_top", "_bottom", "")

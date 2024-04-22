@@ -135,6 +135,8 @@ def generate_craft_content(craft: dict, name: str, page_font: str) -> list:
 	# Generate the image for the page
 	generate_page_font(name, page_font, craft)
 
+	# TODO: Add mouseEvent also for result item
+
 	# If the craft is shaped
 	if craft_type == "crafting_shaped":
 

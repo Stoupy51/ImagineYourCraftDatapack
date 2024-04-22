@@ -44,7 +44,7 @@ DATABASE_DEBUG = f"{DATABASE_FOLDER}/database_debug.json"
 SOURCE_LORE = f'[{{"text":"{DATAPACK_NAME}","italic":true,"color":"blue"}}]'
 FACES = ("down", "up", "north", "south", "west", "east")
 SIDES = ("_bottom", "_top", "_front", "_back", "_left", "_right", "_side")
-OPENGL_RESOLUTION = 32
+OPENGL_RESOLUTION = 64
 
 # Technical constants
 CUSTOM_BLOCK_VANILLA = "minecraft:furnace"

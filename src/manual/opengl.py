@@ -129,9 +129,9 @@ def take_screenshot(save_path: str) -> None:
 
 	image = Image.frombytes("RGBA", display, data)
 	image = image.transpose(Image.FLIP_TOP_BOTTOM)
-	x_crop = display[0] // 40
-	y_crop = display[1] // 40
-	#image = image.crop((x_crop, y_crop, display[0] - x_crop, display[1] - y_crop))
+	x_crop = display[0] // 20
+	y_crop = display[1] // 20
+	image = image.crop((x_crop, y_crop, display[0] - x_crop, display[1] - y_crop))
 	image.save(save_path, format = "PNG")
 	pygame.display.flip()
 

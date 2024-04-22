@@ -23,6 +23,27 @@ def ingr_repr(id: str, count: int|None = None) -> dict:
 		to_return["count"] = count
 	return to_return
 
+def ingr_to_id(ingredient: dict, add_namespace: bool = True) -> str:
+	""" Get the id from an ingredient dict
+	Args:
+		ingredient (dict): The ingredient dict
+			ex: {"components":{"custom_data":{imagineyourcraft:{adamantium_ingot=True}}}}
+			ex: {"item": "minecraft:stick"}
+	Returns:
+		str: The id of the ingredient, ex: "minecraft:stick" or "imagineyourcraft:adamantium_ingot"
+	"""
+	if ingredient.get("item"):
+		if not add_namespace:
+			return ingredient["item"].split(":")[1]
+		return ingredient["item"]
+	else:
+		custom_data = ingredient["components"]["custom_data"]
+		namespace = list(custom_data.keys())[0]
+		id = list(custom_data[namespace].keys())[0]
+		if add_namespace:
+			return namespace + ":" + id
+		return id
+
 
 # For easy file management
 def super_open(file_path: str, mode: str) -> io.TextIOWrapper:

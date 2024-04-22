@@ -11,6 +11,7 @@ for package in required:
 
 # Additional imports
 from PIL import Image, ImageEnhance
+import requests
 import imageio
 import shutil
 import math

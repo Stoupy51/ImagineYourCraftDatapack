@@ -79,8 +79,9 @@ def get_item_component(ingredient: dict, name: str) -> dict:
 	else:
 		# Get the item in the database
 		custom_data = ingredient["components"]["custom_data"]
+		id = ingr_to_id(ingredient, add_namespace = False)
 		if custom_data.get(NAMESPACE):
-			item = DATABASE.get(list(custom_data[NAMESPACE].keys())[0])
+			item = DATABASE.get(id)
 		else:
 			for data in custom_data.values():
 				item = EXTERNAL_DATABASE.get(list(data.keys())[0])
@@ -129,6 +130,9 @@ def generate_craft_content(craft: dict, name: str, page_font: str) -> list:
 	if craft_type == "crafting_shapeless":
 		craft = convert_shapeless_to_shaped(craft)
 		craft_type = "crafting_shaped"
+	
+	# Generate the image for the page
+	generate_page_font(name, page_font, craft)
 
 	# If the craft is shaped
 	if craft_type == "crafting_shaped":

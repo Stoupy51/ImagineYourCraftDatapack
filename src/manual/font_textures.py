@@ -20,10 +20,46 @@ def get_item_font(i: int) -> str:
 # Generate page font function (called in utils)
 providers = []
 FURNACES_RECIPES_TYPES = ("smelting", "blasting", "smoking", "campfire_cooking")
+TEMPLATES_PATH = f"{ROOT}/src/manual/assets"
+FONT_FOLDER = f"{BUILD_RESOURCE_PACK}/assets/{NAMESPACE}/textures/font"
+os.makedirs(f"{FONT_FOLDER}/page", exist_ok=True)
 def generate_page_font(name: str, page_font: str, craft: dict|None = None) -> None:
 	""" Generate the page font image with the proper items
+	Args:
+		name (str): Name of the item
+		page_font (str): Font string for the page
+		craft (dict): Crafting recipe dictionary
 	"""
-	pass
+	print(name, page_font, craft["type"] if craft else "None")
+	
+	# Crafting shaped
+	if craft and craft["type"] == "crafting_shaped":
+
+		# Get the image template and append the provider
+		shaped_size = max(2, max(len(craft["shape"]), len(craft["shape"][0])))
+		template = Image.open(f"{TEMPLATES_PATH}/shaped_{shaped_size}x{shaped_size}.png")
+		providers.append({"type":"bitmap","file":f"{NAMESPACE}:font/page/{name}.png", "ascent": 0, "height": 60, "chars": [page_font]})
+
+		# Loop the shape matrix
+		STARTING_PIXEL = (4, 4)
+		SQUARE_SIZE = 32
+		for i, row in enumerate(craft["shape"]):
+			for j, symbol in enumerate(row):
+				if symbol != " ":
+					coords = (j*(SQUARE_SIZE + STARTING_PIXEL[0]), i*(SQUARE_SIZE + STARTING_PIXEL[1]))
+					ingredient = craft["ingredients"][symbol]
+					if ingredient.get("components"):
+						# get "steel_ingot" in {'components': {'custom_data': {'imagineyourcraft': {'steel_ingot': True}}}}
+						temp = ingredient["components"]["custom_data"]
+						ns = list(temp.keys())[0]
+						item = list(temp[ns].keys())[0]
+						item = ns + ":" + item		# Custom item, ex: "imagineyourcraft:steel_ingot"
+					else:
+						item = ingredient["item"]	# Vanilla item, ex: "minecraft:glowstone"
+					print(item)
+
+		# Save the image
+		template.save(f"{FONT_FOLDER}/page/{name}.png")
 
 # TODO Generate iso renders for every item in the DATABASE
 path = MANUAL_PATH + "/items"
@@ -34,7 +70,7 @@ for item, data in DATABASE.items():
 	try:
 		if data["id"] == CUSTOM_BLOCK_VANILLA:
 			raise Exception()
-		shutil.copy(f"{TEXTURES_FOLDER}/{item}.png", path)
+		shutil.copy(f"{TEXTURES_FOLDER}/{NAMESPACE}_{item}.png", path)
 	except:
 		# Else, render all the block textures and faces
 		try:
@@ -66,7 +102,7 @@ for item, data in DATABASE.items():
 
 			# Render block and take a screenshot
 			opengl.render_block(front_texture, side_texture, top_texture)
-			opengl.take_screenshot(f"{path}/{item}.png")			
+			opengl.take_screenshot(f"{path}/{NAMESPACE}_{item}.png")
 
 		except Exception as e:
 			warning(f"Failed to render iso for item {item}: {e}")

@@ -60,17 +60,22 @@ def generate_page_font(name: str, page_font: str, craft: dict|None = None) -> No
 
 		# Save the image
 		template.save(f"{FONT_FOLDER}/page/{name}.png")
+	
+	return
 
-# TODO Generate iso renders for every item in the DATABASE
+
+
+# Generate iso renders for every item in the DATABASE
 path = MANUAL_PATH + "/items"
 os.makedirs(path, exist_ok = True)
+os.makedirs(f"{path}/{NAMESPACE}", exist_ok = True)
 for item, data in DATABASE.items():
 	
 	# If it's not a block, simply copy the texture
 	try:
 		if data["id"] == CUSTOM_BLOCK_VANILLA:
 			raise Exception()
-		shutil.copy(f"{TEXTURES_FOLDER}/{NAMESPACE}_{item}.png", path)
+		shutil.copy(f"{TEXTURES_FOLDER}/{NAMESPACE}/{item}.png", path)
 	except:
 		# Else, render all the block textures and faces
 		try:
@@ -102,7 +107,7 @@ for item, data in DATABASE.items():
 
 			# Render block and take a screenshot
 			opengl.render_block(front_texture, side_texture, top_texture)
-			opengl.take_screenshot(f"{path}/{NAMESPACE}_{item}.png")
+			opengl.take_screenshot(f"{path}/{NAMESPACE}/{item}.png")
 
 		except Exception as e:
 			warning(f"Failed to render iso for item {item}: {e}")

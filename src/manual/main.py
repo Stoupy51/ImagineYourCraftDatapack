@@ -79,7 +79,6 @@ for page in pages:
 		data = page["raw_data"]
 		base_id = data["custom_model_data"] - lowest_cmd
 		page_font = get_page_font(base_id)
-		item_font = get_item_font(base_id)
 
 		# If there are crafts
 		if data.get(RESULT_OF_CRAFTING):

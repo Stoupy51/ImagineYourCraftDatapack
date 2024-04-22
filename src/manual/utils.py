@@ -122,9 +122,10 @@ def generate_craft_content(craft: dict, name: str, page_font: str) -> list:
 	craft_type = craft["type"]
 	content = [{"text": "", "font": FONT, "color": "white"}]	# Make default font for every next component
 	
-	# Show up item title
+	# Show up item title and page font
 	titled = name.replace("_", " ").title() + "\n"
 	content.append({"text": titled, "font": "minecraft:default", "color": "black", "underlined": True})
+	content.append(SMALL_NONE_FONT + page_font + "\n")
 
 	# Convert shapeless crafting to shaped crafting
 	if craft_type == "crafting_shapeless":
@@ -142,9 +143,6 @@ def generate_craft_content(craft: dict, name: str, page_font: str) -> list:
 		for k, v in craft["ingredients"].items():
 			formatted_ingredients[k] = get_item_component(v, name)
 
-		# Get the font to show up
-		content.append(SMALL_NONE_FONT + page_font + "\n")
-
 		# Add each ingredient to the craft
 		for line in craft["shape"]:
 			for _ in range(2):	# We need two lines to make a square, otherwise it will be a rectangle
@@ -158,7 +156,15 @@ def generate_craft_content(craft: dict, name: str, page_font: str) -> list:
 	
 	# If the type is furnace type,
 	elif craft_type in FURNACES_RECIPES_TYPES:
-		pass
+		
+		# Convert ingredient to its text component
+		formatted_ingredient = get_item_component(craft["ingredient"], name)
+
+		# Add the ingredient to the craft
+		for _ in range(2):
+			content.append(SMALL_NONE_FONT)
+			content.append(formatted_ingredient)
+			content.append("\n")
 
 	return content
 

@@ -13,8 +13,6 @@ def get_font(i: int):
 		error(f"Font index {i} is too big. Maximum is 0xffff.")
 	return f"\\u{i:04x}"
 def get_page_font(i: int) -> str:
-	return get_font(i + 0xa000)
-def get_item_font(i: int) -> str:
 	return get_font(i + 0x1000)
 
 # Generate an image showing the result count
@@ -113,7 +111,7 @@ def generate_page_font(name: str, page_font: str, craft: dict|None = None) -> No
 			# Save the image
 			template.save(f"{FONT_FOLDER}/page/{name}.png")
 	
-		elif craft and craft["type"] in FURNACES_RECIPES_TYPES:
+		elif craft["type"] in FURNACES_RECIPES_TYPES:
 			
 			# Get the image template and append the provider
 			template = Image.open(f"{TEMPLATES_PATH}/furnace.png")

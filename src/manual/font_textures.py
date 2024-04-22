@@ -17,6 +17,29 @@ def get_page_font(i: int) -> str:
 def get_item_font(i: int) -> str:
 	return get_font(i + 0x1000)
 
+# Generate an image showing the result count
+def image_count(count: int) -> Image:
+	""" Generate an image showing the result count
+	Args:
+		count (int): The count to show
+	Returns:
+		Image: The image with the count
+	"""
+	# Create the image
+	img = Image.new("RGBA", (32, 32), (0, 0, 0, 0))
+	draw = ImageDraw.Draw(img)
+	font = ImageFont.truetype(f"{ROOT}/src/manual/assets/minecraft_font.ttf", size = 16)
+
+	# Calculate text size and positions of the two texts
+	text_width, text_height = draw.textsize(str(count), font = font)
+	pos_1 = (32-text_width), (32-text_height)
+	pos_2 = (30-text_width), (30-text_height)
+	
+	# Draw the count
+	draw.text(pos_1, str(count), (50, 50, 50), font = font)
+	draw.text(pos_2, str(count), (255, 255, 255), font = font)
+	return img
+
 # Generate page font function (called in utils)
 providers = []
 SQUARE_SIZE = 32
@@ -82,6 +105,11 @@ def generate_page_font(name: str, page_font: str, craft: dict|None = None) -> No
 			coords = (148, 40) if shaped_size == 3 else (118, 25)
 			template.paste(result_texture, coords, result_mask)
 
+			# Place count if the result is greater than 1
+			if craft["result_count"] > 1:
+				count_img = image_count(craft["result_count"])
+				template.paste(count_img, [x + 2 for x in coords], count_img)
+
 			# Save the image
 			template.save(f"{FONT_FOLDER}/page/{name}.png")
 	
@@ -103,8 +131,14 @@ def generate_page_font(name: str, page_font: str, craft: dict|None = None) -> No
 			mask = item_texture.convert("RGBA").split()[3]
 			template.paste(item_texture, (4, 4), mask)
 
-			# Place the result item and save the image
-			template.paste(result_texture, (124, 40), result_mask)
+			# Place the result item and count if the result is greater than 1
+			coords = (124, 40)
+			template.paste(result_texture, coords, result_mask)
+			if craft["result_count"] > 1:
+				count_img = image_count(craft["result_count"])
+				template.paste(count_img, [x + 2 for x in coords], count_img)
+			
+			# Save the image
 			template.save(f"{FONT_FOLDER}/page/{name}.png")
 	
 	# Else, there is no craft, just put the item in a box

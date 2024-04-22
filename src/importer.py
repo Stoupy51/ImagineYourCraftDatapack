@@ -10,7 +10,7 @@ for package in required:
 		os.system(f"pip install {package}")
 
 # Additional imports
-from PIL import Image, ImageEnhance
+from PIL import Image, ImageEnhance, ImageDraw, ImageFont
 import requests
 import imageio
 import shutil

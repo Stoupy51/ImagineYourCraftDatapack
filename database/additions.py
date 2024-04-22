@@ -75,7 +75,7 @@ database_additions = {
 	"blank": {"id": CUSTOM_ITEM_VANILLA, CATEGORY: MISC},
 	"blob": {"id": CUSTOM_ENTITY_VANILLA, CATEGORY: MISC},
 	"coin": {"id": CUSTOM_ITEM_VANILLA, CATEGORY: MISC},
-	"lignite_torch": {"id": CUSTOM_ENTITY_VANILLA, CATEGORY: MISC,				RESULT_OF_CRAFTING:[{"type":"crafting_shapeless","result_count":4,"category":"blocks","ingredients":[ingr_repr("minecraft:stick"),ingr_repr("lignite")]}]},
+	"lignite_torch": {"id": CUSTOM_ENTITY_VANILLA, CATEGORY: MISC,				RESULT_OF_CRAFTING:[{"type":"crafting_shaped","result_count":4,"category":"blocks","shape":["X","S"],"ingredients":{"S":ingr_repr("minecraft:stick"),"X":ingr_repr("lignite")}}]},
 	"nuclear_bomb": {"id": CUSTOM_BLOCK_VANILLA, CATEGORY: MISC,				"lore": ['{"text":"Power of 5 TNTs","color":"gray","italic":false}'], RESULT_OF_CRAFTING:[{"type":"crafting_shaped","result_count":1,"category":"blocks","shape":[" X ","XTX","XXX"],"ingredients":{"X":ingr_repr("minecraft:tnt"),"T":ingr_repr("topaz")}}]},
 	"quiver": {"id": CUSTOM_ITEM_VANILLA, CATEGORY: MISC},
 	"rock": {"id": "minecraft:snowball", CATEGORY: MISC, "max_stack_size": 99,	"lore": ['{"text":"Can be thrown","color":"gray","italic":false}']},

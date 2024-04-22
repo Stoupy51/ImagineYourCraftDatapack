@@ -42,27 +42,33 @@ def load_textures(textures: list[Image.Image]):
 	glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, new_width, new_height, 0, GL_RGBA, GL_UNSIGNED_BYTE, texture_data)
 	return
 
-# Init pygame
-pygame.init()
+
 display = (OPENGL_RESOLUTION, OPENGL_RESOLUTION)
-window = pygame.display.set_mode(display, DOUBLEBUF | OPENGL | NOFRAME)
+window = None
 TRANSPARENCY_COLOR_INT = b"\x00\xfe\x00\xff"
 TRANSPARENCY_COLOR_FLOAT = (0, 254/255, 0, 0)
+is_setup = False
+def setup_opengl():
+	# Init pygame
+	pygame.init()
+	global window, is_setup
+	window = pygame.display.set_mode(display, DOUBLEBUF | OPENGL | NOFRAME)
 
-glEnable(GL_TEXTURE_2D) # Enable texturing
-glEnable(GL_BLEND)		# Enable blending (for transparency)
-glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA)
+	glEnable(GL_TEXTURE_2D) # Enable texturing
+	glEnable(GL_BLEND)		# Enable blending (for transparency)
+	glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA)
 
-# Set up isometric projection
-glMatrixMode(GL_PROJECTION)
-glLoadIdentity()
-scale = 1.75
-glOrtho(-scale, scale, -scale, scale, -scale, scale)
-glMatrixMode(GL_MODELVIEW)
-glPushMatrix()
-glLoadIdentity()
-glRotatef(35.264, 1.0, 0.0, 0.0)
-glRotatef(45.0, 0.0, 1.0, 0.0)
+	# Set up isometric projection
+	glMatrixMode(GL_PROJECTION)
+	glLoadIdentity()
+	scale = 1.75
+	glOrtho(-scale, scale, -scale, scale, -scale, scale)
+	glMatrixMode(GL_MODELVIEW)
+	glPushMatrix()
+	glLoadIdentity()
+	glRotatef(35.264, 1.0, 0.0, 0.0)
+	glRotatef(45.0, 0.0, 1.0, 0.0)
+	is_setup = True
 
 # Function for rendering block
 def render_block(front_texture: Image, side_texture: Image, top_texture: Image) -> None:
@@ -72,6 +78,8 @@ def render_block(front_texture: Image, side_texture: Image, top_texture: Image) 
 		side_texture (Image): The side texture
 		top_texture (Image): The top texture
 	"""
+	if not is_setup:
+		setup_opengl()
 	load_textures([front_texture, side_texture, top_texture])
 
 	glClearColor(*TRANSPARENCY_COLOR_FLOAT)
@@ -130,5 +138,6 @@ def take_screenshot(save_path: str) -> None:
 # Stop OpenGL
 def stop_opengl() -> None:
 	""" Stop OpenGL and close the window """
-	pygame.quit()
+	if is_setup:
+		pygame.quit()
 

@@ -58,7 +58,10 @@ def super_open(file_path: str, mode: str) -> io.TextIOWrapper:
 	os.makedirs(os.path.dirname(file_path), exist_ok=True)
 
 	# Open file and return
-	return open(file_path, mode, encoding="utf-8") # Always use utf-8 encoding to avoid issues
+	if "b" in mode:
+		return open(file_path, mode)
+	else:
+		return open(file_path, mode, encoding="utf-8") # Always use utf-8 encoding to avoid issues
 
 
 # For easy file copy

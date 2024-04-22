@@ -9,7 +9,7 @@ IMPORT_TIME = datetime.datetime.now()
 os.system("color")
 
 # Datapack related constants
-DEBUG_MODE = True
+DEBUG_MODE = True		# Shows up grids in manual, do not redownload minecraft assets, do not re-render items for the manual (manual/items/*.png)
 MINECRAFT_VERSION = "1.20.5 pre-release 1"
 VERSION = "0.0.1"
 NAMESPACE = "imagineyourcraft"

@@ -37,13 +37,14 @@ AUTHOR = "Stoupy51"
 DESCRIPTION = f"{DATAPACK_NAME} [{VERSION}] by {AUTHOR}"
 BUILD_DATAPACK = f"{BUILD_FOLDER}/datapack"
 BUILD_RESOURCE_PACK = f"{BUILD_FOLDER}/resource_pack"
+MANUAL_PATH = f"{ROOT}/manual"
 DATABASE = {}
 EXTERNAL_DATABASE = {}		# Can be used to required an item from another datapack for a recipe or anything else
 DATABASE_DEBUG = f"{DATABASE_FOLDER}/database_debug.json"
 SOURCE_LORE = f'[{{"text":"{DATAPACK_NAME}","italic":true,"color":"blue"}}]'
 FACES = ("down", "up", "north", "south", "west", "east")
 SIDES = ("_bottom", "_top", "_front", "_back", "_left", "_right", "_side")
-
+OPENGL_RESOLUTION = 64
 
 # Technical constants
 CUSTOM_BLOCK_VANILLA = "minecraft:furnace"

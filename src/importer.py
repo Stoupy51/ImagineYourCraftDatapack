@@ -1,7 +1,8 @@
 
 # Install required libraries
 import os
-required = ["imageio", "PIL", "OpenGL.GL", "glfw"]
+os.environ['PYGAME_HIDE_SUPPORT_PROMPT'] = "hide"
+required = ["imageio", "PIL", "OpenGL.GL", "glfw", "pygame"]
 for package in required:
 	try:
 		__import__(package)
@@ -12,6 +13,8 @@ for package in required:
 from PIL import Image, ImageEnhance
 import imageio
 import shutil
+import math
+import time
 import json
 import io
 

@@ -2,6 +2,9 @@
 # Import config
 from src.importer import *
 
+# Import OpenGL
+import src.manual.opengl as opengl
+
 # Utils functions for fonts (item start at 0x0000, pages at 0xa000)
 # Return the character that will be used for font, ex: "\u0002" with i = 2
 def get_font(i: int):
@@ -17,23 +20,10 @@ def get_item_font(i: int) -> str:
 # Generate page font function (called in utils)
 providers = []
 FURNACES_RECIPES_TYPES = ("smelting", "blasting", "smoking", "campfire_cooking")
-MANUAL_PATH = f"{ROOT}/manual"
 def generate_page_font(name: str, page_font: str, craft: dict|None = None) -> None:
 	""" Generate the page font image with the proper items
 	"""
 	pass
-
-
-# Import OpenGL
-import OpenGL.GL as gl
-import glfw
-glfw.init()
-
-# Create a window
-window = glfw.create_window(256, 256, "Isometric Render", None, None)
-glfw.make_context_current(window)
-gl.glEnable(gl.GL_BLEND)
-gl.glBlendFunc(gl.GL_SRC_ALPHA, gl.GL_ONE_MINUS_SRC_ALPHA)
 
 # TODO Generate iso renders for every item in the DATABASE
 path = MANUAL_PATH + "/items"
@@ -42,44 +32,46 @@ for item, data in DATABASE.items():
 	
 	# If it's not a block, simply copy the texture
 	try:
+		if data["id"] == CUSTOM_BLOCK_VANILLA:
+			raise Exception()
 		shutil.copy(f"{TEXTURES_FOLDER}/{item}.png", path)
 	except:
-			#continue
 		# Else, render all the block textures and faces
-#		try:
-			# Load textures & Make front texture 50% darker and side_texture 25% darker
-			front_texture = ImageEnhance.Brightness(Image.open(f"{TEXTURES_FOLDER}/{item}_front.png")).enhance(0.5)
-			side_texture = ImageEnhance.Brightness(Image.open(f"{TEXTURES_FOLDER}/{item}_side.png")).enhance(0.75)
-			top_texture = Image.open(f"{TEXTURES_FOLDER}/{item}_top.png")
-			
-			# Create the isometric render
-			while not glfw.window_should_close(window):
-				glfw.poll_events()
-        
-				gl.glClear(gl.GL_COLOR_BUFFER_BIT | gl.GL_DEPTH_BUFFER_BIT)
-				gl.glLoadIdentity()
-				
-				# Set up the projection matrix and view matrix for isometric view
-				gl.glMatrixMode(gl.GL_PROJECTION)
-				gl.glLoadIdentity()
-				gl.glMatrixMode(gl.GL_MODELVIEW)
-				gl.glLoadIdentity()
-				
-				# Draw the block
-				gl.glBegin(gl.GL_QUADS)
-				gl.glColor3f(1, 1, 1)
-				gl.glVertex3f(-1, -1, -1)
-				gl.glVertex3f(1, -1, -1)
-				gl.glVertex3f(1, 1, -1)
-				gl.glVertex3f(-1, 1, -1)
-				gl.glEnd()
-				
-				glfw.swap_buffers(window)
-			
+		try:
 
+			# Load front texture
+			sides = ("_front", "_side", "_top", "_bottom", "")
+			front_path = f"{TEXTURES_FOLDER}/{item}"
+			for side in sides:
+				if os.path.exists(f"{front_path}{side}.png"):
+					front_path += side
+					break
+			front_texture = Image.open(front_path + ".png")
+			side_texture = front_texture
+			top_texture = front_texture
 
-#		except Exception as e:
-#			warning(f"Failed to render iso for item {item}: {e}")
-			error("noob")
+			# Try to load side
+			side_path = f"{TEXTURES_FOLDER}/{item}_side.png"
+			if os.path.exists(side_path):
+				side_texture = Image.open(side_path)
+			
+			# Try to load top texture
+			top_path = f"{TEXTURES_FOLDER}/{item}_top.png"
+			if os.path.exists(top_path):
+				top_texture = Image.open(top_path)
+			
+			# Make front texture 50% darker and side texture 25% darker
+			front_texture = ImageEnhance.Brightness(front_texture).enhance(0.5)
+			side_texture = ImageEnhance.Brightness(side_texture).enhance(0.75)
+
+			# Render block and take a screenshot
+			opengl.render_block(front_texture, side_texture, top_texture)
+			opengl.take_screenshot(f"{path}/{item}.png")			
+
+		except Exception as e:
+			warning(f"Failed to render iso for item {item}: {e}")
+
+opengl.stop_opengl()
+error()
 
 

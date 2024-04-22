@@ -30,7 +30,6 @@ def generate_page_font(name: str, page_font: str, craft: dict|None = None) -> No
 		page_font (str): Font string for the page
 		craft (dict): Crafting recipe dictionary
 	"""
-	print(name, page_font, craft["type"] if craft else "None")
 	
 	# Crafting shaped
 	if craft and craft["type"] == "crafting_shaped":
@@ -58,12 +57,27 @@ def generate_page_font(name: str, page_font: str, craft: dict|None = None) -> No
 					item = item.replace(":", "/")
 					item_texture = Image.open(f"{MANUAL_PATH}/items/{item}.png")
 					factor = SQUARE_SIZE / item_texture.size[0]
-					item_texture = item_texture.resize((int(item_texture.size[0]*factor), int(item_texture.size[1]*factor)), Image.NEAREST)
+					item_texture = item_texture.resize(
+						(int(item_texture.size[0]*factor), int(item_texture.size[1]*factor)),
+						Image.NEAREST
+					)
 					coords = (
 						j * (SQUARE_SIZE + CASE_OFFSETS[0]) + STARTING_PIXEL[0],
 						i * (SQUARE_SIZE + CASE_OFFSETS[1]) + STARTING_PIXEL[1]
 					)
-					template.paste(item_texture, coords, item_texture)
+					mask = item_texture.convert("RGBA").split()[3]
+					template.paste(item_texture, coords, mask)
+		
+		# Place the result item
+		item_texture = Image.open(f"{MANUAL_PATH}/items/{NAMESPACE}/{name}.png")
+		factor = SQUARE_SIZE / item_texture.size[0]
+		item_texture = item_texture.resize(
+			(int(item_texture.size[0]*factor), int(item_texture.size[1]*factor)),
+			Image.NEAREST
+		)
+		coords = (148, 40) if shaped_size == 3 else (118, 25)
+		mask = item_texture.convert("RGBA").split()[3]
+		template.paste(item_texture, coords, mask)
 
 		# Save the image
 		template.save(f"{FONT_FOLDER}/page/{name}.png")
@@ -77,6 +91,9 @@ path = MANUAL_PATH + "/items"
 os.makedirs(path, exist_ok = True)
 os.makedirs(f"{path}/{NAMESPACE}", exist_ok = True)
 for item, data in DATABASE.items():
+	# Skip if item is already generated
+	if os.path.exists(f"{path}/{NAMESPACE}/{item}.png"):
+		continue
 	
 	# If it's not a block, simply copy the texture
 	try:
@@ -116,8 +133,11 @@ for item, data in DATABASE.items():
 			opengl.render_block(front_texture, side_texture, top_texture)
 			opengl.take_screenshot(f"{path}/{NAMESPACE}/{item}.png")
 
-		except Exception as e:
-			warning(f"Failed to render iso for item {item}: {e}")
+		except:
+			try:
+				shutil.copy(f"{TEXTURES_FOLDER}/{item}.png", f"{path}/{NAMESPACE}/{item}.png")
+			except:
+				error(f"Failed to render iso for item '{item}', please add it manually to '{path}/{NAMESPACE}/{item}.png'")
 opengl.stop_opengl()
 
 
@@ -133,11 +153,14 @@ for item, data in DATABASE.items():
 			ingredients = []
 			if "ingredients" in recipe:
 				ingredients = recipe["ingredients"]
+				if isinstance(ingredients, dict):
+					ingredients = ingredients.values()
 			elif "ingredient" in recipe:
 				ingredients = [recipe["ingredient"]]
 			for ingredient in ingredients:
 				if "item" in ingredient:
 					used_vanilla_items.add(ingredient["item"].split(":")[1])
+	pass
 
 # Download all the vanilla textures from the wiki
 wiki_link = "https://minecraft.wiki/images/Invicon_ITEM.png"
@@ -156,4 +179,5 @@ for item in used_vanilla_items:
 				continue
 		with open(destination, "wb") as file:
 			file.write(response.content)
+	pass
 

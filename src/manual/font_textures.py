@@ -72,6 +72,4 @@ for item, data in DATABASE.items():
 			warning(f"Failed to render iso for item {item}: {e}")
 
 opengl.stop_opengl()
-error()
-
 

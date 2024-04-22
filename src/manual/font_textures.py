@@ -19,6 +19,7 @@ def get_item_font(i: int) -> str:
 
 # Generate page font function (called in utils)
 providers = []
+SQUARE_SIZE = 32
 FURNACES_RECIPES_TYPES = ("smelting", "blasting", "smoking", "campfire_cooking")
 TEMPLATES_PATH = f"{ROOT}/src/manual/assets"
 FONT_FOLDER = f"{BUILD_RESOURCE_PACK}/assets/{NAMESPACE}/textures/font"
@@ -30,57 +31,87 @@ def generate_page_font(name: str, page_font: str, craft: dict|None = None) -> No
 		page_font (str): Font string for the page
 		craft (dict): Crafting recipe dictionary
 	"""
+	# Get result texture (to place later)
+	result_texture = Image.open(f"{MANUAL_PATH}/items/{NAMESPACE}/{name}.png")
 	
 	# Crafting shaped
-	if craft and craft["type"] == "crafting_shaped":
-
-		# Get the image template and append the provider
-		shaped_size = max(2, max(len(craft["shape"]), len(craft["shape"][0])))
-		template = Image.open(f"{TEMPLATES_PATH}/shaped_{shaped_size}x{shaped_size}.png")
-		providers.append({"type":"bitmap","file":f"{NAMESPACE}:font/page/{name}.png", "ascent": 0, "height": 60, "chars": [page_font]})
-
-		# Loop the shape matrix
-		STARTING_PIXEL = (4, 4)
-		CASE_OFFSETS = (4, 4)
-		SQUARE_SIZE = 32
-		for i, row in enumerate(craft["shape"]):
-			for j, symbol in enumerate(row):
-				if symbol != " ":
-					ingredient = craft["ingredients"][symbol]
-					if ingredient.get("components"):
-						# get "steel_ingot" in {'components': {'custom_data': {'imagineyourcraft': {'steel_ingot': True}}}}
-						item = ingr_to_id(ingredient)
-					else:
-						item = ingredient["item"]	# Vanilla item, ex: "minecraft:glowstone"
-					
-					# Get the texture and place it at the coords
-					item = item.replace(":", "/")
-					item_texture = Image.open(f"{MANUAL_PATH}/items/{item}.png")
-					factor = SQUARE_SIZE / item_texture.size[0]
-					item_texture = item_texture.resize(
-						(int(item_texture.size[0]*factor), int(item_texture.size[1]*factor)),
-						Image.NEAREST
-					)
-					coords = (
-						j * (SQUARE_SIZE + CASE_OFFSETS[0]) + STARTING_PIXEL[0],
-						i * (SQUARE_SIZE + CASE_OFFSETS[1]) + STARTING_PIXEL[1]
-					)
-					mask = item_texture.convert("RGBA").split()[3]
-					template.paste(item_texture, coords, mask)
-		
-		# Place the result item
-		item_texture = Image.open(f"{MANUAL_PATH}/items/{NAMESPACE}/{name}.png")
-		factor = SQUARE_SIZE / item_texture.size[0]
-		item_texture = item_texture.resize(
-			(int(item_texture.size[0]*factor), int(item_texture.size[1]*factor)),
+	if craft:
+		factor = SQUARE_SIZE / result_texture.size[0]
+		result_texture = result_texture.resize(
+			(int(result_texture.size[0]*factor), int(result_texture.size[1]*factor)),
 			Image.NEAREST
 		)
-		coords = (148, 40) if shaped_size == 3 else (118, 25)
-		mask = item_texture.convert("RGBA").split()[3]
-		template.paste(item_texture, coords, mask)
+		result_mask = result_texture.convert("RGBA").split()[3]
 
-		# Save the image
-		template.save(f"{FONT_FOLDER}/page/{name}.png")
+		if craft["type"] == "crafting_shaped":
+
+			# Get the image template and append the provider
+			shaped_size = max(2, max(len(craft["shape"]), len(craft["shape"][0])))
+			template = Image.open(f"{TEMPLATES_PATH}/shaped_{shaped_size}x{shaped_size}.png")
+			providers.append({"type":"bitmap","file":f"{NAMESPACE}:font/page/{name}.png", "ascent": 0, "height": 60, "chars": [page_font]})
+
+			# Loop the shape matrix
+			STARTING_PIXEL = (4, 4)
+			CASE_OFFSETS = (4, 4)
+			for i, row in enumerate(craft["shape"]):
+				for j, symbol in enumerate(row):
+					if symbol != " ":
+						ingredient = craft["ingredients"][symbol]
+						if ingredient.get("components"):
+							# get "steel_ingot" in {'components': {'custom_data': {'imagineyourcraft': {'steel_ingot': True}}}}
+							item = ingr_to_id(ingredient)
+						else:
+							item = ingredient["item"]	# Vanilla item, ex: "minecraft:glowstone"
+						
+						# Get the texture and place it at the coords
+						item = item.replace(":", "/")
+						item_texture = Image.open(f"{MANUAL_PATH}/items/{item}.png")
+						factor = SQUARE_SIZE / item_texture.size[0]
+						item_texture = item_texture.resize(
+							(int(item_texture.size[0]*factor), int(item_texture.size[1]*factor)),
+							Image.NEAREST
+						)
+						coords = (
+							j * (SQUARE_SIZE + CASE_OFFSETS[0]) + STARTING_PIXEL[0],
+							i * (SQUARE_SIZE + CASE_OFFSETS[1]) + STARTING_PIXEL[1]
+						)
+						mask = item_texture.convert("RGBA").split()[3]
+						template.paste(item_texture, coords, mask)
+			
+			# Place the result item
+			coords = (148, 40) if shaped_size == 3 else (118, 25)
+			template.paste(result_texture, coords, result_mask)
+
+			# Save the image
+			template.save(f"{FONT_FOLDER}/page/{name}.png")
+	
+		elif craft and craft["type"] in FURNACES_RECIPES_TYPES:
+			
+			# Get the image template and append the provider
+			template = Image.open(f"{TEMPLATES_PATH}/furnace.png")
+			providers.append({"type":"bitmap","file":f"{NAMESPACE}:font/page/{name}.png", "ascent": 0, "height": 60, "chars": [page_font]})
+
+			# Place input item
+			input_item = ingr_to_id(craft["ingredient"])
+			input_item = input_item.replace(":", "/")
+			item_texture = Image.open(f"{MANUAL_PATH}/items/{input_item}.png")
+			factor = SQUARE_SIZE / item_texture.size[0]
+			item_texture = item_texture.resize(
+				(int(item_texture.size[0]*factor), int(item_texture.size[1]*factor)),
+				Image.NEAREST
+			)
+			mask = item_texture.convert("RGBA").split()[3]
+			template.paste(item_texture, (4, 4), mask)
+
+			# Place the result item and save the image
+			template.paste(result_texture, (124, 40), result_mask)
+			template.save(f"{FONT_FOLDER}/page/{name}.png")
+	
+	# Else, there is no craft, just put the item in a box
+	else:
+		# TODO
+		pass
+
 	
 	return
 

@@ -107,19 +107,10 @@ with super_open(f"{BUILD_RESOURCE_PACK}/assets/{NAMESPACE}/font/manual.json", "w
 
 # Copy assets in the resource pack
 assets_path = f"{ROOT}/src/manual/assets/"
-assets = os.listdir(assets_path)
 if not DEBUG_MODE:
-	assets.remove("none.png")
+	super_copy(f"{assets_path}/none_release.png", f"{BUILD_RESOURCE_PACK}/assets/{NAMESPACE}/textures/font/none.png")
 else:
-	assets.remove("none_release.png")
-os.makedirs(f"{BUILD_RESOURCE_PACK}/assets/{NAMESPACE}/textures/font", exist_ok = True)
-for file in assets:
-	if file.endswith(".png"):
-		if "none_release.png" == file and not DEBUG_MODE:
-			shutil.copyfile(f"{assets_path}/none_release.png", f"{BUILD_RESOURCE_PACK}/assets/{NAMESPACE}/textures/font/none.png")
-		else:
-			shutil.copyfile(f"{assets_path}/{file}", f"{BUILD_RESOURCE_PACK}/assets/{NAMESPACE}/textures/font/{file}")
-
+	super_copy(f"{assets_path}/none.png", f"{BUILD_RESOURCE_PACK}/assets/{NAMESPACE}/textures/font/none.png")
 		
 # Debug book_content
 with super_open(f"{BUILD_RESOURCE_PACK}/debug_manual.json", "w") as f:

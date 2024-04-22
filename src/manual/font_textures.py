@@ -88,7 +88,6 @@ def generate_page_font(name: str, page_font: str, craft: dict|None = None) -> No
 
 # Generate iso renders for every item in the DATABASE
 path = MANUAL_PATH + "/items"
-os.makedirs(path, exist_ok = True)
 os.makedirs(f"{path}/{NAMESPACE}", exist_ok = True)
 for item, data in DATABASE.items():
 	# Skip if item is already generated
@@ -99,7 +98,7 @@ for item, data in DATABASE.items():
 	try:
 		if data["id"] == CUSTOM_BLOCK_VANILLA:
 			raise Exception()
-		shutil.copy(f"{TEXTURES_FOLDER}/{item}.png", f"{path}/{NAMESPACE}/{item}.png")
+		super_copy(f"{TEXTURES_FOLDER}/{item}.png", f"{path}/{NAMESPACE}/{item}.png")
 	except:
 		# Else, render all the block textures and faces
 		try:
@@ -135,7 +134,7 @@ for item, data in DATABASE.items():
 
 		except:
 			try:
-				shutil.copy(f"{TEXTURES_FOLDER}/{item}.png", f"{path}/{NAMESPACE}/{item}.png")
+				super_copy(f"{TEXTURES_FOLDER}/{item}.png", f"{path}/{NAMESPACE}/{item}.png")
 			except:
 				error(f"Failed to render iso for item '{item}', please add it manually to '{path}/{NAMESPACE}/{item}.png'")
 opengl.stop_opengl()
@@ -143,8 +142,6 @@ opengl.stop_opengl()
 
 
 ## Copy every used vanilla items
-os.makedirs(f"{path}/minecraft", exist_ok=True)
-
 # Get every used vanilla items
 used_vanilla_items = set()
 for item, data in DATABASE.items():
@@ -177,7 +174,7 @@ for item in used_vanilla_items:
 			if response.status_code != 200:
 				error(f"Failed to download texture for item '{item}', please add it manually in '{path}/minecraft'")
 				continue
-		with open(destination, "wb") as file:
+		with super_open(destination, "wb") as file:
 			file.write(response.content)
 	pass
 

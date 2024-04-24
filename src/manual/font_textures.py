@@ -163,7 +163,7 @@ for item, data in DATABASE.items():
 		# Else, render all the block textures and faces
 		try:
 			# Skip if item is already generated (to prevent launcher OpenGL for nothing)
-			if os.path.exists(f"{path}/{NAMESPACE}/{item}.png") and DEBUG_MODE:
+			if os.path.exists(f"{path}/{NAMESPACE}/{item}.png") and CACHE_MODE:
 				continue
 
 			# Load front texture
@@ -226,7 +226,7 @@ for item, data in DATABASE.items():
 wiki_link = "https://minecraft.wiki/images/Invicon_ITEM.png"
 for item in used_vanilla_items:
 	destination = f"{path}/minecraft/{item}.png"
-	if not (os.path.exists(destination) and DEBUG_MODE):
+	if not (os.path.exists(destination) and CACHE_MODE):
 		response = requests.get(wiki_link.replace("ITEM", item.title()))
 		if response.status_code != 200:
 			# If the item is type of "X_block", try to get "block_of_X" texture instead

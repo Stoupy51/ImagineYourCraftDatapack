@@ -59,13 +59,12 @@ def get_page_number(item_id: str) -> int:
 
 # Convert ingredient to formatted JSON for book
 COMPONENTS_TO_IGNORE = NOT_COMPONENTS + ["custom_data", "count"]
-def get_item_component(ingredient: dict, name: str) -> dict:
+def get_item_component(ingredient: dict) -> dict:
 	""" Generate item hover text for a craft ingredient
 	Args:
 		ingredient (dict): The ingredient
 			ex: {'components': {'custom_data': {'imagineyourcraft': {'adamantium_fragment': True}}}}
 			ex: {'item': 'minecraft:stick'}
-		name (str): The name of the item, ex: "adamantium_fragment"
 	Returns:
 		dict: The text component
 			ex: {"text":"\uef01","color":"white","hoverEvent":{"action":"show_item","contents":{"id":"minecraft:command_block", "components": {...}}},"clickEvent":{"action":"change_page","value":"8"}}
@@ -99,7 +98,7 @@ def get_item_component(ingredient: dict, name: str) -> dict:
 		formatted["hoverEvent"]["contents"]["components"] = components
 
 		# If item is from my datapack, get its page number
-		page_number = get_page_number(name)
+		page_number = get_page_number(id)
 		if page_number != -1:
 			formatted["clickEvent"] = {"action":"change_page","value":str(page_number)}
 	
@@ -143,7 +142,7 @@ def generate_craft_content(craft: dict, name: str, page_font: str) -> list:
 		# Convert each ingredients to its text component
 		formatted_ingredients = {}
 		for k, v in craft["ingredients"].items():
-			formatted_ingredients[k] = get_item_component(v, name)
+			formatted_ingredients[k] = get_item_component(v)
 
 		# Add each ingredient to the craft
 		for line in craft["shape"]:
@@ -160,7 +159,7 @@ def generate_craft_content(craft: dict, name: str, page_font: str) -> list:
 	elif craft_type in FURNACES_RECIPES_TYPES:
 		
 		# Convert ingredient to its text component
-		formatted_ingredient = get_item_component(craft["ingredient"], name)
+		formatted_ingredient = get_item_component(craft["ingredient"])
 
 		# Add the ingredient to the craft
 		for _ in range(2):

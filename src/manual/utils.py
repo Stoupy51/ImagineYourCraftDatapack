@@ -59,42 +59,51 @@ def get_page_number(item_id: str) -> int:
 
 # Convert ingredient to formatted JSON for book
 COMPONENTS_TO_IGNORE = NOT_COMPONENTS + ["custom_data", "count"]
-def get_item_component(ingredient: dict) -> dict:
+def get_item_component(ingredient: dict|str, only_those_components: list[str] = None) -> dict:
 	""" Generate item hover text for a craft ingredient
 	Args:
-		ingredient (dict): The ingredient
+		ingredient (dict|str): The ingredient
 			ex: {'components': {'custom_data': {'imagineyourcraft': {'adamantium_fragment': True}}}}
 			ex: {'item': 'minecraft:stick'}
+			ex: "adamantium_fragment"	# Only available for the datapack items
 	Returns:
 		dict: The text component
 			ex: {"text":"\uef01","color":"white","hoverEvent":{"action":"show_item","contents":{"id":"minecraft:command_block", "components": {...}}},"clickEvent":{"action":"change_page","value":"8"}}
 			ex: {"text":"\uef02","color":"white","hoverEvent":{"action":"show_item","contents":{"id":"minecraft:stick"}}}
 	"""
 	# Get the item id
-	formatted = {"text": NONE_FONT, "hoverEvent":{"action":"show_item","contents":{"id":""}}}
-	id = ingredient.get("item")
-	if id:
-		formatted["hoverEvent"]["contents"]["id"] = id
+	formatted = {"text": NONE_FONT, "hoverEvent":{"action":"show_item","contents":{"id":""}}}	# Default hoverEvent
+	if isinstance(ingredient, dict) and ingredient.get("item"):
+		formatted["hoverEvent"]["contents"]["id"] = ingredient["item"]
 	else:
 		# Get the item in the database
-		custom_data = ingredient["components"]["custom_data"]
-		id = ingr_to_id(ingredient, add_namespace = False)
-		if custom_data.get(NAMESPACE):
-			item = DATABASE.get(id)
+		if isinstance(ingredient, str):
+			id = ingredient
+			item = DATABASE[ingredient]
 		else:
-			for data in custom_data.values():
-				item = EXTERNAL_DATABASE.get(list(data.keys())[0])
-				if item:
-					break
+			custom_data = ingredient["components"]["custom_data"]
+			id = ingr_to_id(ingredient, add_namespace = False)
+			if custom_data.get(NAMESPACE):
+				item = DATABASE.get(id)
+			else:
+				for data in custom_data.values():
+					item = EXTERNAL_DATABASE.get(list(data.keys())[0])
+					if item:
+						break
 		if not item:
 			error("Item not found in database or external database: " + str(ingredient))
 		
 		# Copy id and components
-		formatted["hoverEvent"]["contents"]["id"] = item["id"]
+		formatted["hoverEvent"]["contents"]["id"] = item["id"].replace("minecraft:", "")
 		components = {}
-		for key, value in item.items():
-			if key not in COMPONENTS_TO_IGNORE:
-				components[key] = value
+		if only_those_components:
+			for key, value in item.items():
+				if key in only_those_components:
+					components[key] = value
+		else:
+			for key, value in item.items():
+				if key not in COMPONENTS_TO_IGNORE:
+					components[key] = value
 		formatted["hoverEvent"]["contents"]["components"] = components
 
 		# If item is from my datapack, get its page number
@@ -108,6 +117,7 @@ def get_item_component(ingredient: dict) -> dict:
 # Constants
 NONE_FONT = get_font(0x0000)
 SMALL_NONE_FONT = get_font(0x0001)
+VERY_SMALL_NONE_FONT = get_font(0x0002)
 FONT = f"{NAMESPACE}:manual"
 
 # Generate all craft types content

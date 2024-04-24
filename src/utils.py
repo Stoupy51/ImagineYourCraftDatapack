@@ -61,7 +61,7 @@ def super_open(file_path: str, mode: str) -> io.TextIOWrapper:
 	if "b" in mode:
 		return open(file_path, mode)
 	else:
-		return open(file_path, mode, encoding="utf-8") # Always use utf-8 encoding to avoid issues
+		return open(file_path, mode, encoding = "utf-8") # Always use utf-8 encoding to avoid issues
 
 
 # For easy file copy
@@ -102,7 +102,7 @@ def super_json_dump(data: dict|list, file: io.TextIOWrapper = None, max_level: i
 					break
 			longest_indentation = max(longest_indentation, indentation)
 		for i in range(longest_indentation, max_level, -1):
-			content = content.replace("\n" + "\t" * i, " ")
+			content = content.replace("\n" + "\t" * i, "")
 			pass
 
 		# To finalyze, fix the last indentations

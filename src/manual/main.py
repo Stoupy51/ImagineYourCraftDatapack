@@ -88,7 +88,7 @@ for page in pages:
 		file_name = name.replace(" ", "_").replace("#", "").lower()
 		providers.append({"type":"bitmap","file":f"{NAMESPACE}:font/category/{file_name}.png", "ascent": 0, "height": 130, "chars": [page_font]})
 		content.append({"text": "", "font": FONT, "color": "white"})	# Make default font for every next component
-		content.append({"text": " ➤ ", "font": "minecraft:default", "color": "black"})
+		content.append({"text": "➤ ", "font": "minecraft:default", "color": "black"})
 		content.append({"text": titled, "font": "minecraft:default", "color": "black", "underlined": True})
 		content.append(SMALL_NONE_FONT + page_font + "\n")
 

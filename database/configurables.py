@@ -42,7 +42,7 @@ all_textures = [f for f in os.listdir(TEXTURES_FOLDER) if os.path.isfile(os.path
 
 # Remove sides and ignored textures
 IGNORED_TEXTURES = [f"{ore.replace('massive_','')}_layer_{layer+1}" for ore in ORES for layer in range(2)]
-IGNORED_TEXTURES += ["red_light_on"]
+IGNORED_TEXTURES += ["red_light_on", "manual", "cherry_cake_inner"]
 IGNORED_TEXTURES = [t + ".png" for t in IGNORED_TEXTURES]	# Add .png to the list
 textures_filenames = [f for f in all_textures if not any(s in f for s in SIDES) and f not in IGNORED_TEXTURES]
 

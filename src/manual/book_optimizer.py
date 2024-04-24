@@ -1,6 +1,7 @@
 
 # Import config
 from src.importer import *
+from src.manual.utils import *
 
 # Page optimizer
 def optimize_array(page_content: list) -> list:
@@ -49,6 +50,10 @@ def optimize_array(page_content: list) -> list:
 			# Always merge two strings
 			elif isinstance(compound, str) and isinstance(new_page_content[-1], str):
 				new_page_content[-1] += compound
+			
+			# Merge the compound if the previous compound is a dict of the same font and the current one is a small none font (that is always at the very left)
+			elif isinstance(compound, str) and isinstance(new_page_content[-1], dict) and not new_page_content[-1].get("font") and compound == SMALL_NONE_FONT:
+				new_page_content[-1]["text"] += compound
 			
 			# Otherwise, just add the compound
 			else:

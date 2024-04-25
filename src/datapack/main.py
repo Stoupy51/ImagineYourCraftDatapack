@@ -1,6 +1,7 @@
 
 # Import config
-from src.importer import *
+from src.config import *
+from src.utils.print import *
 print()
 
 # Generate datapack loading

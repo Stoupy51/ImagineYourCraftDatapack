@@ -1,6 +1,9 @@
 
 # Import config
-from src.importer import *
+from src.config import *
+from src.utils.ingredients import *
+from src.utils.print import *
+from src.utils.io import *
 
 # Imports
 import src.manual.opengl as opengl

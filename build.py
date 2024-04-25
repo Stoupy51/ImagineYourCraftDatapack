@@ -16,7 +16,7 @@ if __name__ == "__main__":
 	START_TIME = time.time()
 	os.system("color")
 
-	from src.importer import *
+	from src.config import *
 
 	# Initialize build process
 	from src.initialize import *
@@ -35,7 +35,6 @@ if __name__ == "__main__":
 
 	# Finalyze build process
 	from src.finalyze import *
-	src_finalyze()
 
 	# Total time
 	total_time = time.time() - START_TIME

@@ -1,7 +1,8 @@
 
 # Imports
-from src.importer import *
+from src.config import *
 from database.configurables import *
+from src.utils.print import *
 
 # For each ore, apply new properties
 SLOTS = {"helmet": "head", "chestplate": "chest", "leggings": "legs", "boots": "feet", "sword": "mainhand", "pickaxe": "mainhand", "axe": "mainhand", "shovel": "mainhand", "hoe": "mainhand"}

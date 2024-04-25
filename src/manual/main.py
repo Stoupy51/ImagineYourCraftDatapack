@@ -1,6 +1,8 @@
 
 # Import config
-from src.importer import *
+from src.config import *
+from src.utils.io import *
+from src.utils.print import *
 from src.manual.utils import *
 from src.manual.book_optimizer import *
 
@@ -161,9 +163,9 @@ with super_open(f"{BUILD_RESOURCE_PACK}/assets/{NAMESPACE}/font/manual.json", "w
 	f.write(super_json_dump(fonts).replace("\\\\", "\\"))
 		
 # Debug book_content
-with super_open(f"{BUILD_RESOURCE_PACK}/debug_manual.json", "w") as f:
+with super_open(MANUAL_DEBUG, "w") as f:
 	f.write(super_json_dump(book_content).replace("\\\\", "\\"))
-	debug(f"Debug book_content at '{BUILD_RESOURCE_PACK}/debug_manual.json'")
+	debug(f"Debug book_content at '{MANUAL_DEBUG}'")
 
 # Finally, prepend the manual to the database
 manual_database = {"manual":

@@ -1,6 +1,8 @@
 
 # Import config
-from src.importer import *
+from src.config import *
+from src.utils.io import *
+from src.utils.print import *
 
 # For each item in the database, create a loot table
 for item, data in DATABASE.items():

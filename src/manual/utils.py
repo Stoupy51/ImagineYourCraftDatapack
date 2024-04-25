@@ -1,6 +1,6 @@
 
 # Import config & font textures
-from src.importer import *
+from src.config import *
 from src.manual.font_textures import *
 
 # Convert craft function

@@ -1,6 +1,8 @@
 
 # Import config
-from src.importer import *
+from src.config import *
+from src.utils.io import *
+from src.utils.print import *
 
 # Functions for recipes
 def RecipeShapeless(recipe: dict, item: str) -> dict:

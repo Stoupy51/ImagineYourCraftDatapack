@@ -1,7 +1,9 @@
 
 # Imports
-from src.importer import *
+from src.config import *
 from database.configurables import *
+from src.utils.print import *
+from src.utils.io import *
 import random
 random.seed(3)
 
@@ -21,5 +23,6 @@ random.shuffle(lst)
 debug("Database generated, here are some keys:\n" + ", ".join(lst[:8]) + "...")
 
 # Export database to JSON for debugging generation
-export_database()
+with super_open(DATABASE_DEBUG, "w") as f:
+	super_json_dump(DATABASE, f)
 

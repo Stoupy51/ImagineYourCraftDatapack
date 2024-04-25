@@ -1,6 +1,6 @@
 
 # Import config
-from src.importer import *
+from src.config import *
 
 # Import OpenGL and PIL Images
 import pygame

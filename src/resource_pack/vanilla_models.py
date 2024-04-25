@@ -1,7 +1,8 @@
 
 # Import config
-from src.importer import *
+from src.config import *
 from database.additions import *
+from src.utils.io import *
 
 # Get every vanilla IDs
 vanilla_ids = []

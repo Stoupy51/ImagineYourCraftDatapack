@@ -1,6 +1,8 @@
 
 # Import config
-from src.importer import *
+from src.config import *
+from src.utils.io import *
+from src.utils.print import *
 
 # Get every block variant
 variants = FACES + SIDES + ("_on",)

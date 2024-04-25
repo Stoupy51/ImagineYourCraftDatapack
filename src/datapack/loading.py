@@ -1,6 +1,8 @@
 
 # Import config
-from src.importer import *
+from src.config import *
+from src.utils.io import *
+from src.utils.print import *
 
 # Setup load json files and tick json file
 with super_open(f"{BUILD_DATAPACK}/data/load/tags/functions/load.json", "w") as f:

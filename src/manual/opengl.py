@@ -46,7 +46,7 @@ def load_textures(textures: list[Image.Image]):
 
 display = (OPENGL_RESOLUTION, OPENGL_RESOLUTION)
 window = None
-TRANSPARENCY_COLOR_INT = b"\x00\xfe\x00\xff"
+TRANSPARENCY_COLOR_INT = (0, 254, 0, 255)
 TRANSPARENCY_COLOR_FLOAT = (0, 254/255, 0, 0)
 is_setup = False
 def setup_opengl():
@@ -121,18 +121,24 @@ def take_screenshot(save_path: str) -> None:
 	Args:
 		save_path (str): The path where to save the screenshot
 	"""
-	# For each pixel, if it's equal to the transparency, put alpha to 0
-	data = bytearray(glReadPixels(0, 0, display[0], display[1], GL_RGBA, GL_UNSIGNED_BYTE))
-	for i in range(0, len(data), 4):
-		if data[i:i + 4] == TRANSPARENCY_COLOR_INT:
-			data[i + 3] = 0
-	data = bytes(data)
-
+	data = glReadPixels(0, 0, display[0], display[1], GL_RGBA, GL_UNSIGNED_BYTE)
 	image = Image.frombytes("RGBA", display, data)
 	image = image.transpose(Image.FLIP_TOP_BOTTOM)
+
+	# Small crop
 	x_crop = display[0] // 20
 	y_crop = display[1] // 20
 	image = image.crop((x_crop, y_crop, display[0] - x_crop, display[1] - y_crop))
+
+	# Remove transparency + optimize image size
+	pixels = image.load()
+	width, height = image.size
+	for x in range(width):
+		for y in range(height):
+			r, g, b, a = pixels[x, y]
+			if a == 0 or (r, g, b, a) == TRANSPARENCY_COLOR_INT:
+				pixels[x, y] = (0, 0, 0, 0)
+
 	image.save(save_path, format = "PNG")
 	pygame.display.flip()
 

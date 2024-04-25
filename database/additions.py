@@ -82,6 +82,7 @@ database_additions = {
 	"quiver": {"id": CUSTOM_ITEM_VANILLA, CATEGORY: MISC},
 	"rock": {"id": "minecraft:snowball", CATEGORY: MISC, "max_stack_size": 99,	"lore": ['{"text":"Can be thrown","color":"gray","italic":false}']},
 	"screwdriver": {"id": CUSTOM_ITEM_VANILLA, CATEGORY: MISC},
+	"old_ruby": {"id": CUSTOM_ITEM_VANILLA},
 }
 
 # Update the database with new data

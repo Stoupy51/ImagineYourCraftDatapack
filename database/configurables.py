@@ -30,8 +30,7 @@ ORES = {
 	"lignite": {},
 	"slate": {},
 
-	"stone": {},
-	"old_ruby": {}
+	"stone": {}
 }
 PLACEABLES = ["block", "ore"]
 INGREDIENTS = ["ingot", "nugget", "dust", "fragment", "raw", ""]

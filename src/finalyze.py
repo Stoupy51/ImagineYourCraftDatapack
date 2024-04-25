@@ -24,17 +24,17 @@ processes = [
 for source, destination, copy_destination in processes:
 	source_no_root = source.replace(f"{ROOT}/", "")
 	dest_no_root = destination.replace(f"{ROOT}/", "")
-	copy_no_root = copy_destination.replace(f"{ROOT}/", "")
 	if os.path.exists(source):
 		shutil.make_archive(destination, 'zip', source)
 		debug(f"'{dest_no_root}.zip' file generated")
 	else:
 		warning(f"'{source_no_root}' folder not found")
 	try:
-		super_copy(f"{destination}.zip", f"{copy_destination}.zip")
-		debug(f"'{dest_no_root}.zip' file copied to '{copy_no_root}.zip'")
+		file = f"{dest_no_root}.zip".split("/")[-1]
+		super_copy(f"{destination}.zip", f"{copy_destination}/{file}")
+		debug(f"'{dest_no_root}.zip' file copied to '{copy_destination}/{file}'")
 	except:
-		warning(f"Unable to copy '{dest_no_root}.zip' to '{copy_no_root}.zip'")
+		warning(f"Unable to copy '{dest_no_root}.zip' to '{copy_destination}'")
 
 
 # Copy datapack libraries

@@ -14,7 +14,8 @@ def super_open(file_path: str, mode: str) -> io.TextIOWrapper:
 		open: The file object, ready to be used
 	"""
 	# Make directory
-	os.makedirs(os.path.dirname(file_path), exist_ok=True)
+	if "/" in file_path or "\\" in file_path:
+		os.makedirs(os.path.dirname(file_path), exist_ok=True)
 
 	# Open file and return
 	if "b" in mode:

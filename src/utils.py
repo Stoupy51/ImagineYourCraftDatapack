@@ -1,5 +1,6 @@
 
 from src.config import *
+from multiprocessing import Pool
 import shutil
 import json
 import sys
@@ -127,6 +128,27 @@ def export_database(path: str = DATABASE_DEBUG) -> None:
 	with super_open(path, "w") as f:
 		super_json_dump(DATABASE, f)
 	return
+
+# Easy multiprocessing functions
+def parallelized_thread(function: callable, kwargs: dict):
+	""" Function runned for each thread
+	Args:
+		function	(callable):	The function to call
+		kwargs		(dict):		The args to pass to the function
+	Returns:
+		Any: The return of the function
+	"""
+	return function(**kwargs)
+def parallelize(processes: list[tuple[callable, dict]]):
+	""" Parallelize the function
+	Args:
+		processes	(list[tuple[callable, dict]):	A list of tuples containing the function and the args to pass to it
+			ex: [(my_func, {"path": "uwu"}), (my_func, {"path": "uwu2})]
+	Returns:
+		list[Any]: The return of the function for each process
+	"""
+	with Pool(processes = CPU_THREADS) as pool:
+		return pool.map(parallelized_thread, processes)
 
 
 # Colors constants

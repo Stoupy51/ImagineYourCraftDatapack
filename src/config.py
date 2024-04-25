@@ -46,6 +46,7 @@ SOURCE_LORE = f'[{{"text":"{DATAPACK_NAME}","italic":true,"color":"blue"}}]'
 FACES = ("down", "up", "north", "south", "west", "east")
 SIDES = ("_bottom", "_top", "_front", "_back", "_left", "_right", "_side")
 OPENGL_RESOLUTION = 64
+CPU_THREADS = int(os.cpu_count() * 0.75)	# 75% of the CPU threads
 
 # Technical constants
 CUSTOM_BLOCK_VANILLA = "minecraft:furnace"

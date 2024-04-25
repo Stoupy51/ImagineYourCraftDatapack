@@ -130,20 +130,25 @@ def export_database(path: str = DATABASE_DEBUG) -> None:
 	return
 
 # Easy multiprocessing functions
-def parallelized_thread(function: callable, kwargs: dict):
+def parallelized_thread(function: callable, args: dict|tuple|list):
 	""" Function runned for each thread
 	Args:
 		function	(callable):	The function to call
-		kwargs		(dict):		The args to pass to the function
+		args		(dict):		The args to pass to the function
 	Returns:
 		Any: The return of the function
 	"""
-	return function(**kwargs)
-def parallelize(processes: list[tuple[callable, dict]]):
+	if isinstance(args, dict):
+		return function(**args)
+	elif isinstance(args, (tuple, list)):
+		return function(*args)
+
+def parallelize(processes: list[tuple[callable, dict|tuple|list]]):
 	""" Parallelize the function
 	Args:
 		processes	(list[tuple[callable, dict]):	A list of tuples containing the function and the args to pass to it
 			ex: [(my_func, {"path": "uwu"}), (my_func, {"path": "uwu2})]
+			ex: [(my_func, ("uwu")), (my_func, ("uwu2"))]
 	Returns:
 		list[Any]: The return of the function for each process
 	"""

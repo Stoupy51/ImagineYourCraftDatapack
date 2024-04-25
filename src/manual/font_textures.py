@@ -2,8 +2,10 @@
 # Import config
 from src.importer import *
 
-# Import OpenGL
+# Imports
 import src.manual.opengl as opengl
+from PIL import Image, ImageEnhance, ImageDraw, ImageFont
+import requests
 
 # Utils functions for fonts (item start at 0x0000, pages at 0xa000)
 # Return the character that will be used for font, ex: "\u0002" with i = 2

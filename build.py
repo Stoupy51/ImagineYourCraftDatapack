@@ -1,22 +1,43 @@
 
+# Install required libraries
+import os
+os.environ['PYGAME_HIDE_SUPPORT_PROMPT'] = "hide"
+required = ["PIL", "OpenGL.GL", "glfw", "pygame"]
+for package in required:
+	try:
+		__import__(package)
+	except ImportError:
+		os.system(f"pip install {package}")
+
 # Imports
-from src.importer import *
+if __name__ == "__main__":
+	# Get start time & Enable colors in Windows 10 console
+	import time
+	START_TIME = time.time()
+	os.system("color")
 
-# Initialize build process
-from src.initialize import *
+	from src.importer import *
 
-# Generate items/blocks database
-from database.main import *
+	# Initialize build process
+	from src.initialize import *
 
-# Generate manual
-from src.manual.main import *
+	# Generate items/blocks database
+	from database.main import *
 
-# Generate resource pack
-from src.resource_pack.main import *
+	# Generate manual
+	from src.manual.main import *
 
-# Generate datapack
-from src.datapack.main import *
+	# Generate resource pack
+	from src.resource_pack.main import *
 
-# Finalyze build process
-from src.finalyze import *
+	# Generate datapack
+	from src.datapack.main import *
+
+	# Finalyze build process
+	from src.finalyze import *
+	src_finalyze()
+
+	# Total time
+	total_time = time.time() - START_TIME
+	info(f"Build finished in {total_time:.3f} seconds")
 

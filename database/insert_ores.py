@@ -2,6 +2,7 @@
 # Imports
 from src.importer import *
 from database.configurables import *
+from PIL import Image
 
 # Generate ores in database
 for ore in ORES:
@@ -17,11 +18,11 @@ for ore in ORES:
 	# Get ore color (for armor and other stuff)
 	color = None
 	if f"{material}_chestplate.png" in textures_filenames:
-		with super_open(f"{TEXTURES_FOLDER}/{material}_chestplate.png", "rb") as file:
-			color = imageio.imread(file)										# Get image (2D Array)
-			color = [(r,g,b) for dim in color for (r,g,b,a) in dim if a > 0]	# Get all colors that are not transparent
-			color = [sum(x) / len(color) for x in zip(*color)]					# Get the average color
-			color = int(color[0]) << 16 | int(color[1]) << 8 | int(color[2])	# Convert to int (Minecraft format: Red<<16 + Green<<8 + Blue)
+		color = Image.open(f"{TEXTURES_FOLDER}/{material}_chestplate.png")
+		color = list(color.getdata())										# Get image (1D Array)
+		color = [(r,g,b) for (r,g,b,a) in color if a > 0]					# Get all colors that are not transparent
+		color = [sum(x) / len(color) for x in zip(*color)]					# Get the average color
+		color = int(color[0]) << 16 | int(color[1]) << 8 | int(color[2])	# Convert to int (Minecraft format: Red<<16 + Green<<8 + Blue)
 
 	# Placeables
 	for placeable in PLACEABLES:

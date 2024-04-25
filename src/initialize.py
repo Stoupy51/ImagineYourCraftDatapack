@@ -1,6 +1,7 @@
 
 # Import config
 from src.importer import *
+import shutil
 
 # Delete build folder and database_debug
 print()

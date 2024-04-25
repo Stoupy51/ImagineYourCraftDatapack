@@ -2,6 +2,8 @@
 # Imports
 from src.importer import *
 from database.configurables import *
+import random
+random.seed(3)
 
 # Print not used textures
 textures_filenames = [texture for texture in textures_filenames if not DATABASE.get(texture.replace(".png",""))]

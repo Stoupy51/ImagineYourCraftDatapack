@@ -1,6 +1,7 @@
 
 # Import config
 from src.importer import *
+import json
 
 # Get all mcfunctions paths
 mcfunctions = {}

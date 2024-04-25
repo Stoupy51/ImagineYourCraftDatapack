@@ -1,6 +1,6 @@
 
 from src.config import *
-from multiprocessing import Pool
+import time
 import shutil
 import json
 import sys
@@ -129,33 +129,6 @@ def export_database(path: str = DATABASE_DEBUG) -> None:
 		super_json_dump(DATABASE, f)
 	return
 
-# Easy multiprocessing functions
-def parallelized_thread(function: callable, args: dict|tuple|list):
-	""" Function runned for each thread
-	Args:
-		function	(callable):	The function to call
-		args		(dict):		The args to pass to the function
-	Returns:
-		Any: The return of the function
-	"""
-	if isinstance(args, dict):
-		return function(**args)
-	elif isinstance(args, (tuple, list)):
-		return function(*args)
-
-def parallelize(processes: list[tuple[callable, dict|tuple|list]]):
-	""" Parallelize the function
-	Args:
-		processes	(list[tuple[callable, dict]):	A list of tuples containing the function and the args to pass to it
-			ex: [(my_func, {"path": "uwu"}), (my_func, {"path": "uwu2})]
-			ex: [(my_func, ("uwu")), (my_func, ("uwu2"))]
-	Returns:
-		list[Any]: The return of the function for each process
-	"""
-	with Pool(processes = CPU_THREADS) as pool:
-		return pool.map(parallelized_thread, processes)
-
-
 # Colors constants
 GREEN = "\033[92m"
 BLUE = "\033[94m"
@@ -163,7 +136,7 @@ YELLOW = "\033[93m"
 RED = "\033[91m"
 RESET = "\033[0m"
 def current_time() -> str:
-	return datetime.datetime.now().strftime("%H:%M:%S")
+	return time.strftime("%H:%M:%S")
 def info(text: str = "") -> None:
 	print(f"{GREEN}[INFO  {current_time()}] {text}{RESET}")
 def debug(text: str = "") -> None:

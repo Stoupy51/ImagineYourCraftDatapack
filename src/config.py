@@ -1,12 +1,6 @@
 
 # Imports
-import datetime
-import random
 import os
-
-# Import time constant and enable colors in Windows 10 console
-IMPORT_TIME = datetime.datetime.now()
-os.system("color")
 
 # Datapack related constants
 DEBUG_MODE = True		# Shows up grids in manual
@@ -59,7 +53,6 @@ MISC = "miscellaneous"
 MODEL_DISPLAY = {"head":{"rotation":[0,0,0],"translation":[0,-30.42,0],"scale":[1.605,1.605,1.605]},"fixed":{"rotation":[-90,0,0],"translation":[0,0,-16],"scale":[2.0075,2.0075,2.0075]}}
 NOT_COMPONENTS = ["id", "wiki", CATEGORY, RESULT_OF_CRAFTING, USED_FOR_CRAFTING]
 VANILLA_ITEMS = ["emerald","stone"]
-random.seed(3)
 
 # UUIDs for attribute modifiers to avoid conflicts
 UUIDS = {

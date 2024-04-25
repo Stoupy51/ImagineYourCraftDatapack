@@ -2,12 +2,13 @@
 # Import config
 from src.importer import *
 
-# Import OpenGL
+# Import OpenGL and PIL Images
 import pygame
 from pygame.locals import *
 from OpenGL.GL import *
 from OpenGL.GLUT import *
 from OpenGL.GLU import *
+from PIL import Image
 
 # Load texture
 texture_id = None

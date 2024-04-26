@@ -191,37 +191,24 @@ def add_border(image: Image.Image, border_color: tuple, border_size: int) -> Ima
 	Returns:
 		Image: The image with the border
 	"""
-	# Convert image to RGBA
-	image = image.copy().convert("RGBA")
-
-	# Get the size of the image and load image
-	width, height = image.size
+	# Convert image to RGBA and load
+	image = image.convert("RGBA")
 	pixels = image.load()
 
-	# For each pixel
-	for x in range(width):
-		for y in range(height):
-			
-			# If the pixel is transparent,
-			if pixels[x, y][3] == 0:
-				
-				# Check if there is a pixel in a border_size*border_size range that is not transparent or equal to the border color
-				found = False
-				for dx in range(-border_size, border_size + 1):
-					for dy in range(-border_size, border_size + 1):
-						try:
-							pixel = pixels[x + dx, y + dy]
-							if pixel[3] != 0 and pixel != border_color:
-								found = True
-								break
-						except IndexError:
-							pass
-					if found:
-						break
-				
-				# If found, place the color
-				if found:
-					pixels[x, y] = border_color
+	# Get all transparent pixels
+	pixels_to_change = [(x, y) for x in range(image.width) for y in range(image.height) if pixels[x, y][3] == 0]
+
+	# Setup pixel view range (border_size * border_size)
+	r = range(-border_size, border_size + 1)
+
+	# For each pixel in the list,
+	for x, y in pixels_to_change:
+		try:
+			# If there is a pixel that is not transparent or equal to the border color in the range, place border_color
+			if any(pixels[x + dx, y + dy][3] != 0 and pixels[x + dx, y + dy] != border_color for dx in r for dy in r):
+				pixels[x, y] = border_color
+		except:
+			pass
 	
 	# Return the image
 	return image

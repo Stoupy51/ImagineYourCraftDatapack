@@ -7,8 +7,6 @@ from src.manual.utils import *
 from src.manual.book_optimizer import *
 
 # Constants
-MAX_ITEMS_PER_ROW = 5
-MAX_ROWS_PER_PAGE = 5
 MAX_ITEMS_PER_PAGE = MAX_ITEMS_PER_ROW * MAX_ROWS_PER_PAGE # (for showing up all items in the categories pages)
 
 # Calculate left padding for categories pages depending on MAX_ITEMS_PER_ROW: higher the value, lower the padding
@@ -92,7 +90,7 @@ for page in pages:
 		content.append({"text": "", "font": FONT, "color": "white"})	# Make default font for every next component
 		content.append({"text": "➤ ", "font": "minecraft:default", "color": "black"})
 		content.append({"text": titled, "font": "minecraft:default", "color": "black", "underlined": True})
-		content.append(SMALL_NONE_FONT + page_font + "\n")
+		content.append(SMALL_NONE_FONT * LEFT_PADDING + page_font + "\n")
 
 		# Prepare image and line list
 		page_image = Image.new("RGBA", (256, 256), (0, 0, 0, 0))
@@ -114,10 +112,12 @@ for page in pages:
 			x += 36
 
 			# Add the clickEvent part to the line and add the 2 times the line if enough items
-			line.append(get_item_component(item, ["custom_model_data", "custom_name"]))
+			component = get_item_component(item, ["custom_model_data", "custom_name"])
+			component["text"] = MEDIUM_NONE_FONT
+			line.append(component)
 			if len(line) == MAX_ITEMS_PER_ROW:
 				line[-1]["text"] += "\n"
-				line[0]["text"] = VERY_SMALL_NONE_FONT + line[0]["text"]
+				line[0]["text"] = SMALL_NONE_FONT * LEFT_PADDING + line[0]["text"]
 				content += line * 2
 				line = []
 				x = 2
@@ -126,7 +126,7 @@ for page in pages:
 		# If remaining items in the line, add them
 		if len(line) > 0:
 			line[-1]["text"] += "\n"
-			line[0]["text"] = VERY_SMALL_NONE_FONT + line[0]["text"]
+			line[0]["text"] = SMALL_NONE_FONT * LEFT_PADDING + line[0]["text"]
 			content += line * 2
 		
 		# Add the 2 pixels border
@@ -162,7 +162,7 @@ book_content = optimize_book(book_content)
 
 # Add fonts
 providers.append({"type":"bitmap","file":f"{NAMESPACE}:font/none.png", "ascent": 8, "height": 20, "chars": [NONE_FONT]})
-providers.append({"type":"bitmap","file":f"{NAMESPACE}:font/none.png", "ascent": 8, "height": 15, "chars": [MEDIUM_NONE_FONT]})
+providers.append({"type":"bitmap","file":f"{NAMESPACE}:font/none.png", "ascent": 8, "height": 18, "chars": [MEDIUM_NONE_FONT]})
 providers.append({"type":"bitmap","file":f"{NAMESPACE}:font/none.png", "ascent": 7, "height": 7, "chars": [SMALL_NONE_FONT]})
 providers.append({"type":"bitmap","file":f"{NAMESPACE}:font/none.png", "ascent": 0, "height": 2, "chars": [VERY_SMALL_NONE_FONT]})
 fonts = {"providers": providers}

@@ -3,7 +3,7 @@
 import os
 
 # Datapack related constants
-DEBUG_MODE = True		# Shows up grids in manual
+DEBUG_MODE = False		# Shows up grids in manual
 CACHE_MODE = True		# Caches the minecraft assets and the items renders for the manual (manual/items/*.png)
 MINECRAFT_VERSION = "1.20.5 pre-release 1"
 VERSION = "0.0.1"
@@ -54,6 +54,8 @@ MISC = "miscellaneous"
 MODEL_DISPLAY = {"head":{"rotation":[0,0,0],"translation":[0,-30.42,0],"scale":[1.605,1.605,1.605]},"fixed":{"rotation":[-90,0,0],"translation":[0,0,-16],"scale":[2.0075,2.0075,2.0075]}}
 NOT_COMPONENTS = ["id", "wiki", CATEGORY, RESULT_OF_CRAFTING, USED_FOR_CRAFTING]
 VANILLA_ITEMS = ["emerald","stone"]
+MAX_ITEMS_PER_ROW = 5	# Max number of items per row in the manual
+MAX_ROWS_PER_PAGE = 6	# Max number of rows per page in the manual
 
 # UUIDs for attribute modifiers to avoid conflicts
 UUIDS = {

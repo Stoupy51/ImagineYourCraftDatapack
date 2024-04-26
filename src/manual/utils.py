@@ -68,8 +68,8 @@ def get_item_component(ingredient: dict|str, only_those_components: list[str] = 
 			ex: "adamantium_fragment"	# Only available for the datapack items
 	Returns:
 		dict: The text component
-			ex: {"text":"\uef01","color":"white","hoverEvent":{"action":"show_item","contents":{"id":"minecraft:command_block", "components": {...}}},"clickEvent":{"action":"change_page","value":"8"}}
-			ex: {"text":"\uef02","color":"white","hoverEvent":{"action":"show_item","contents":{"id":"minecraft:stick"}}}
+			ex: {"text":NONE_FONT,"color":"white","hoverEvent":{"action":"show_item","contents":{"id":"minecraft:command_block", "components": {...}}},"clickEvent":{"action":"change_page","value":"8"}}
+			ex: {"text":NONE_FONT,"color":"white","hoverEvent":{"action":"show_item","contents":{"id":"minecraft:stick"}}}
 	"""
 	# Get the item id
 	formatted = {"text": NONE_FONT, "hoverEvent":{"action":"show_item","contents":{"id":""}}}	# Default hoverEvent

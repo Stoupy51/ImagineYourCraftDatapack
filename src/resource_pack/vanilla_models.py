@@ -10,6 +10,8 @@ for v in DATABASE.values():
 	if v["id"] not in vanilla_ids:
 		vanilla_ids.append(v["id"].replace("minecraft:", ""))
 	pass
+if "deepslate" in vanilla_ids:
+	error("'minecraft:deepslate' is a reserved ID. Please change the ID in the database for items that use it.")
 
 
 # For each vanilla ID, create the json model file
@@ -42,5 +44,15 @@ for id in vanilla_ids:
 		# Write the content to the file
 		file.write(super_json_dump(content).replace('{"','{ "').replace('"}','" }').replace(',"', ', "') + "\n")
 	pass
+
+# Generate deepslate models
+with super_open(f"{BUILD_RESOURCE_PACK}/assets/minecraft/models/item/deepslate.json", "w") as file:
+	content = {"parent": "block/deepslate", "overrides": []}
+	for item, data in DATABASE.items():
+		if data["id"] in (CUSTOM_BLOCK_VANILLA, CUSTOM_ENTITY_VANILLA):
+			content["overrides"].append({"predicate": { "custom_model_data": data["custom_model_data"]}, "model": f"{NAMESPACE}:block/for_item_display/{item}" })
+	file.write(super_json_dump(content).replace('{"','{ "').replace('"}','" }').replace(',"', ', "') + "\n")
+
+
 info("Vanilla models created")
 

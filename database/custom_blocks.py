@@ -19,7 +19,7 @@ vanilla_blocks = {
 	"lignite_ore": {VANILLA_BLOCK: VANILLA_BLOCK_FOR_ORES},
 	"slate_block": {VANILLA_BLOCK: "minecraft:coal_block"},
 	"slate_ore": {VANILLA_BLOCK: VANILLA_BLOCK_FOR_ORES},
-	"iron_furnace": {VANILLA_BLOCK: "minecraft:furnace"},
+	"iron_furnace": {VANILLA_BLOCK: {"id":"minecraft:furnace", "block_states":["facing"]}},
 	"box_jump": {VANILLA_BLOCK: "minecraft:oak_planks"},
 	"box_speed": {VANILLA_BLOCK: "minecraft:oak_planks"},
 	"blue_block_ctf": {VANILLA_BLOCK: "minecraft:glass"},
@@ -37,7 +37,7 @@ vanilla_blocks = {
 	# Items using item_frame for placing
 	"cloud": {VANILLA_BLOCK: "minecraft:structure_void"},
 	"flatware": {VANILLA_BLOCK: "minecraft:structure_void"},
-	"hops_seeds": {VANILLA_BLOCK: "minecraft:wheat_seeds"},
+	"hops_seeds": {VANILLA_BLOCK: "minecraft:wheat"},
 	"iron_ladder": {VANILLA_BLOCK: "minecraft:ladder"},
 	"black_flower": {VANILLA_BLOCK: "minecraft:structure_void"},
 	"blue_flower": {VANILLA_BLOCK: "minecraft:structure_void"},

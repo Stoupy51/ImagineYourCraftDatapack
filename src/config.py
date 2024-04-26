@@ -51,7 +51,7 @@ VANILLA_BLOCK_FOR_ORES = "minecraft:polished_deepslate"	# Uses a tip for optimiz
 RESULT_OF_CRAFTING = "result_of_crafting"
 USED_FOR_CRAFTING = "used_for_crafting"	# Should not be wrote manually unless you are crafting a vanilla item (ex: imagineyourcraft.chainmail -> chainmail armor)
 CATEGORY = "category" # Key for the category, ex: "category":"material" or "category":"equipment"
-VANILLA_BLOCK = "vanilla_block"	# Vanilla block that will be place for custom block interaction, ex: adamantium_block will have netherite_block
+VANILLA_BLOCK = "vanilla_block"	# Vanilla block that will be place for custom block interaction, value can either a string of a dict {"id":"minecraft:chest", "block_states": ["facing", "type=single", "waterlogged=false"]}
 COMMANDS_ON_PLACEMENT = "commands_on_placement"	# Commands to execute when a custom block is placed, should be a list of strings or a single string with break lines
 COMMANDS_ON_BREAK = "commands_on_break"	# Commands to execute when a custom block is broken, should be a list of strings or a single string with break lines
 NOT_COMPONENTS = ["id", "wiki", CATEGORY, RESULT_OF_CRAFTING, USED_FOR_CRAFTING, VANILLA_BLOCK]

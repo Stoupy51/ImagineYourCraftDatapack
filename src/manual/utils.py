@@ -116,8 +116,9 @@ def get_item_component(ingredient: dict|str, only_those_components: list[str] = 
 
 # Constants
 NONE_FONT = get_font(0x0000)
-SMALL_NONE_FONT = get_font(0x0001)
-VERY_SMALL_NONE_FONT = get_font(0x0002)
+MEDIUM_NONE_FONT = get_font(0x0001)
+SMALL_NONE_FONT = get_font(0x0002)
+VERY_SMALL_NONE_FONT = get_font(0x0003)
 FONT = f"{NAMESPACE}:manual"
 
 # Generate all craft types content
@@ -180,5 +181,49 @@ def generate_craft_content(craft: dict, name: str, page_font: str) -> list:
 	return content
 
 
+# Generate a border for a given Image
+def add_border(image: Image.Image, border_color: tuple, border_size: int) -> Image.Image:
+	""" Add a border to every part of the image
+	Args:
+		image			(Image):	The image to add the border
+		border_color	(tuple):	The color of the border
+		border_size		(int):		The size of the border
+	Returns:
+		Image: The image with the border
+	"""
+	# Convert image to RGBA
+	image = image.copy().convert("RGBA")
+
+	# Get the size of the image and load image
+	width, height = image.size
+	pixels = image.load()
+
+	# For each pixel
+	for x in range(width):
+		for y in range(height):
+			
+			# If the pixel is transparent,
+			if pixels[x, y][3] == 0:
+				
+				# Check if there is a pixel in a border_size*border_size range that is not transparent or equal to the border color
+				found = False
+				for dx in range(-border_size, border_size + 1):
+					for dy in range(-border_size, border_size + 1):
+						try:
+							pixel = pixels[x + dx, y + dy]
+							if pixel[3] != 0 and pixel != border_color:
+								found = True
+								break
+						except IndexError:
+							pass
+					if found:
+						break
+				
+				# If found, place the color
+				if found:
+					pixels[x, y] = border_color
+	
+	# Return the image
+	return image
 
 

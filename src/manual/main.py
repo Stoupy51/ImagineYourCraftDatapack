@@ -129,7 +129,13 @@ for page in pages:
 			line[0]["text"] = VERY_SMALL_NONE_FONT + line[0]["text"]
 			content += line * 2
 		
-		# Add the border & Save the image
+		# Add the 2 pixels border
+		BORDER_COLOR = 0xB64E2F
+		BORDER_SIZE = 2
+		BORDER_COLOR = (BORDER_COLOR >> 16) & 0xFF, (BORDER_COLOR >> 8) & 0xFF, BORDER_COLOR & 0xFF, 255
+		page_image = add_border(page_image, BORDER_COLOR, BORDER_SIZE)
+		
+		# Save the image
 		page_image.save(f"{FONT_FOLDER}/category/{file_name}.png")
 
 	# Encode items
@@ -156,6 +162,7 @@ book_content = optimize_book(book_content)
 
 # Add fonts
 providers.append({"type":"bitmap","file":f"{NAMESPACE}:font/none.png", "ascent": 8, "height": 20, "chars": [NONE_FONT]})
+providers.append({"type":"bitmap","file":f"{NAMESPACE}:font/none.png", "ascent": 8, "height": 15, "chars": [MEDIUM_NONE_FONT]})
 providers.append({"type":"bitmap","file":f"{NAMESPACE}:font/none.png", "ascent": 7, "height": 7, "chars": [SMALL_NONE_FONT]})
 providers.append({"type":"bitmap","file":f"{NAMESPACE}:font/none.png", "ascent": 0, "height": 2, "chars": [VERY_SMALL_NONE_FONT]})
 fonts = {"providers": providers}
@@ -176,6 +183,7 @@ manual_database = {"manual":
 			"author": AUTHOR,
 			"pages": [str(i).replace("\\\\", "\\") for i in book_content]
 		},
+		"lore": [SOURCE_LORE],
 		"custom_model_data": lowest_cmd - 1
 	}
 }

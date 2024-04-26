@@ -68,5 +68,5 @@ UUIDS = {
 }
 
 # For easy testing (can be an empty list)
-BUILD_COPY_DESTINATIONS = ("D:/latest_snapshot/world/datapacks", "C:/Users/Alexandre-PC/AppData/Roaming/.minecraft/snapshot/resourcepacks")
+BUILD_COPY_DESTINATIONS = ("D:/latest_snapshot/world/datapacks", "D:/minecraft/snapshot/resourcepacks")
 

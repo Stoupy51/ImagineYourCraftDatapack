@@ -31,7 +31,7 @@ for source, destination, copy_destination in processes:
 		warning(f"'{source_no_root}' folder not found")
 	try:
 		file = f"{dest_no_root}.zip".split("/")[-1]
-		super_copy(f"{destination}.zip", f"{copy_destination}/{file}")
+		shutil.copy(f"{destination}.zip", f"{copy_destination}/{file}")
 		debug(f"'{dest_no_root}.zip' file copied to '{copy_destination}/{file}'")
 	except:
 		warning(f"Unable to copy '{dest_no_root}.zip' to '{copy_destination}'")
@@ -42,7 +42,7 @@ try:
 	for root, dirs, files in os.walk(f"{ROOT}/libs"):
 		for file in files:
 			if file.endswith(".zip"):
-				super_copy(f"{root}/{file}", BUILD_COPY_DESTINATIONS[0])
+				shutil.copy(f"{root}/{file}", BUILD_COPY_DESTINATIONS[0])
 				info(f"Library '{file}' copied to '{BUILD_COPY_DESTINATIONS[0]}/'")
 except:
 	warning(f"Could not copy datapack libraries to '{BUILD_COPY_DESTINATIONS[0]}/'")

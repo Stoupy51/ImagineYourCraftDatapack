@@ -11,6 +11,9 @@ from database.additions import *
 # Add custom records
 from database.records import *
 
+# Add custom blocks vanilla block
+from database.custom_blocks import *
+
 # For every key, apply common data and remove unused keys
 from database.final_adjustments import *
 

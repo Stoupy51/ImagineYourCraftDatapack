@@ -11,6 +11,7 @@ import src.datapack.loading
 import src.datapack.loot_tables
 
 # TODO: Custom Blocks (place + destroy)
+import src.datapack.custom_blocks
 # TODO: Custom Ores generation
 
 # Generate custom recipes

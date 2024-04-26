@@ -47,15 +47,18 @@ CPU_THREADS = int(os.cpu_count() * 0.75)	# 75% of the CPU threads
 CUSTOM_BLOCK_VANILLA = "minecraft:furnace"
 CUSTOM_ENTITY_VANILLA = "minecraft:item_frame" # Useful for blocks that can be placed on walls or on player's position
 CUSTOM_ITEM_VANILLA = "minecraft:command_block"
+VANILLA_BLOCK_FOR_ORES = "minecraft:polished_deepslate"	# Uses a tip for optimization, don't ask questions
 RESULT_OF_CRAFTING = "result_of_crafting"
 USED_FOR_CRAFTING = "used_for_crafting"	# Should not be wrote manually unless you are crafting a vanilla item (ex: imagineyourcraft.chainmail -> chainmail armor)
 CATEGORY = "category" # Key for the category, ex: "category":"material" or "category":"equipment"
+VANILLA_BLOCK = "vanilla_block"	# Vanilla block that will be place for custom block interaction, ex: adamantium_block will have netherite_block
+COMMANDS_ON_PLACEMENT = "commands_on_placement"	# Commands to execute when a custom block is placed, should be a list of strings or a single string with break lines
+COMMANDS_ON_BREAK = "commands_on_break"	# Commands to execute when a custom block is broken, should be a list of strings or a single string with break lines
+NOT_COMPONENTS = ["id", "wiki", CATEGORY, RESULT_OF_CRAFTING, USED_FOR_CRAFTING, VANILLA_BLOCK]
 MISC = "miscellaneous"
 MODEL_DISPLAY = {"head":{"rotation":[0,0,0],"translation":[0,-30.42,0],"scale":[1.605,1.605,1.605]},"fixed":{"rotation":[-90,0,0],"translation":[0,0,-16],"scale":[2.0075,2.0075,2.0075]}}
-NOT_COMPONENTS = ["id", "wiki", CATEGORY, RESULT_OF_CRAFTING, USED_FOR_CRAFTING]
-VANILLA_ITEMS = ["emerald","stone"]
 MAX_ITEMS_PER_ROW = 5	# Max number of items per row in the manual
-MAX_ROWS_PER_PAGE = 6	# Max number of rows per page in the manual
+MAX_ROWS_PER_PAGE = 5	# Max number of rows per page in the manual
 
 # UUIDs for attribute modifiers to avoid conflicts
 UUIDS = {

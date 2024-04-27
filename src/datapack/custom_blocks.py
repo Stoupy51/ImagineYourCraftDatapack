@@ -39,8 +39,8 @@ for item, data in DATABASE.items():
 
 		# Secondary function
 		with super_open(f"{path}/place_secondary.mcfunction", "w") as f:
-			block = block.replace(":","_")
 			unique_blocks.add(block)
+			block = block.replace(":","_")
 			custom_model_data = data["custom_model_data"]
 			content = f"""
 # Add convention and utils tags, and the custom block tag
@@ -86,6 +86,53 @@ execute if score #rotation {NAMESPACE}.data matches 0 store success score #rotat
 
 
 # Destroy functions
+with super_open(f"{BUILD_DATAPACK}/data/{NAMESPACE}/functions/custom_blocks/destroy.mcfunction", "w") as f:
+	content = "\n"
+	for block in unique_blocks:
+		block_underscore = block.replace(":","_")
+		content += f"execute if entity @s[tag={NAMESPACE}.vanilla.{block_underscore}] unless block ~ ~ ~ {block} run function {NAMESPACE}:custom_blocks/_groups/{block_underscore}\n"
+	f.write(content + "\n")
+for block in unique_blocks:
+	block_underscore = block.replace(":","_")
+	with super_open(f"{BUILD_DATAPACK}/data/{NAMESPACE}/functions/custom_blocks/_groups/{block_underscore}.mcfunction", "w") as f:
+		content = "\n"
+		for item, data in DATABASE.items():
+			if data.get(VANILLA_BLOCK):
+
+				# Get the vanilla block
+				this_block = data[VANILLA_BLOCK]
+				if isinstance(this_block, dict):
+					this_block = this_block["id"]
+				this_block = this_block.replace(":","_")
+
+				# Add the call to the right function
+				if this_block == block_underscore:
+					content += f"execute if entity @s[tag={NAMESPACE}.{item}] run function {NAMESPACE}:custom_blocks/{item}/destroy\n"
+		f.write(content + "\n")
+for item, data in DATABASE.items():
+	if data.get(VANILLA_BLOCK):
+		block = data[VANILLA_BLOCK]
+		path = f"{BUILD_DATAPACK}/data/{NAMESPACE}/functions/custom_blocks/{item}"
+		if isinstance(block, dict):
+			block = block["id"]
+		
+		# Destroy function
+		with super_open(f"{path}/destroy.mcfunction", "w") as f:
+			content = f"""
+# Kill undesired items and replace the item
+data modify entity @e[type=item,nbt={{Item:{{id:"{block}"}}}},limit=1,sort=nearest,distance=..1] Item.components set from storage {NAMESPACE}:items all.{item}.components
+data modify entity @e[type=item,nbt={{Item:{{id:"{block}"}}}},limit=1,sort=nearest,distance=..1] Item.id set from storage {NAMESPACE}:items all.{item}.id
+"""
+			# Add the commands on destruction if any
+			if COMMANDS_ON_BREAK in data:
+				if isinstance(data[COMMANDS_ON_BREAK], list):
+					content += "\n".join(data[COMMANDS_ON_BREAK]) + "\n"
+				else:
+					content += f"{data[COMMANDS_ON_BREAK]}\n"
+			
+			# Write file
+			f.write(content + "kill @s\n\n")
+
 
 
 

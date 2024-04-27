@@ -8,7 +8,7 @@ def ingr_repr(id: str, count: int|None = None) -> dict:
 		id	(str): The id of the ingredient, ex: adamantium_ingot
 	Returns:
 		str: The identity of the ingredient for custom crafts,
-			ex: {"components":{"custom_data":{imagineyourcraft:{adamantium_ingot=True}}}}
+			ex: {"components":{"custom_data":{iyc:{adamantium_ingot=True}}}}
 			ex: {"item": "minecraft:stick"}
 	"""
 	if ":" in id:
@@ -24,10 +24,10 @@ def ingr_to_id(ingredient: dict, add_namespace: bool = True) -> str:
 	""" Get the id from an ingredient dict
 	Args:
 		ingredient (dict): The ingredient dict
-			ex: {"components":{"custom_data":{imagineyourcraft:{adamantium_ingot=True}}}}
+			ex: {"components":{"custom_data":{iyc:{adamantium_ingot=True}}}}
 			ex: {"item": "minecraft:stick"}
 	Returns:
-		str: The id of the ingredient, ex: "minecraft:stick" or "imagineyourcraft:adamantium_ingot"
+		str: The id of the ingredient, ex: "minecraft:stick" or "iyc:adamantium_ingot"
 	"""
 	if ingredient.get("item"):
 		if not add_namespace:

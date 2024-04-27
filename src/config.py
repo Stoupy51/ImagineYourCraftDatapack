@@ -24,6 +24,7 @@ DEPENDENCIES = {
 # Other constants
 ROOT = "/".join(os.path.dirname(os.path.abspath(__file__)).replace("\\", "/").split("/")[:-1])
 MERGE_FOLDER = f"{ROOT}/merge"
+MANUAL_PATH = f"{ROOT}/manual"
 BUILD_FOLDER = f"{ROOT}/build"
 TEXTURES_FOLDER = f"{ROOT}/textures"
 DATABASE_FOLDER = f"{ROOT}/database"
@@ -32,7 +33,6 @@ AUTHOR = "Stoupy51"
 DESCRIPTION = f"{DATAPACK_NAME} [{VERSION}] by {AUTHOR}"
 BUILD_DATAPACK = f"{BUILD_FOLDER}/datapack"
 BUILD_RESOURCE_PACK = f"{BUILD_FOLDER}/resource_pack"
-MANUAL_PATH = f"{ROOT}/manual"
 DATABASE = {}
 EXTERNAL_DATABASE = {}		# Can be used to required an item from another datapack for a recipe or anything else
 DATABASE_DEBUG = f"{ROOT}/database_debug.json"
@@ -49,7 +49,7 @@ CUSTOM_ENTITY_VANILLA = "minecraft:item_frame" # Useful for blocks that can be p
 CUSTOM_ITEM_VANILLA = "minecraft:command_block"
 VANILLA_BLOCK_FOR_ORES = "minecraft:polished_deepslate"	# Uses a tip for optimization, don't ask questions
 RESULT_OF_CRAFTING = "result_of_crafting"
-USED_FOR_CRAFTING = "used_for_crafting"	# Should not be wrote manually unless you are crafting a vanilla item (ex: imagineyourcraft.chainmail -> chainmail armor)
+USED_FOR_CRAFTING = "used_for_crafting"	# Should not be wrote manually unless you are crafting a vanilla item (ex: iyc.chainmail -> chainmail armor)
 CATEGORY = "category" # Key for the category, ex: "category":"material" or "category":"equipment"
 VANILLA_BLOCK = "vanilla_block"	# Vanilla block that will be place for custom block interaction, value can either a string of a dict {"id":"minecraft:chest", "block_states": ["facing", "type=single", "waterlogged=false"]}
 COMMANDS_ON_PLACEMENT = "commands_on_placement"	# Commands to execute when a custom block is placed, should be a list of strings or a single string with break lines

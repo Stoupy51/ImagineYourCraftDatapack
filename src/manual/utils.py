@@ -63,7 +63,7 @@ def get_item_component(ingredient: dict|str, only_those_components: list[str] = 
 	""" Generate item hover text for a craft ingredient
 	Args:
 		ingredient (dict|str): The ingredient
-			ex: {'components': {'custom_data': {'imagineyourcraft': {'adamantium_fragment': True}}}}
+			ex: {'components': {'custom_data': {'iyc': {'adamantium_fragment': True}}}}
 			ex: {'item': 'minecraft:stick'}
 			ex: "adamantium_fragment"	# Only available for the datapack items
 	Returns:
@@ -125,7 +125,7 @@ FONT = f"{NAMESPACE}:manual"
 def generate_craft_content(craft: dict, name: str, page_font: str) -> list:
 	""" Generate the content for the craft type
 	Args:
-		craft		(dict):	The craft dictionary, ex: {"type": "crafting_shaped","result_count": 1,"category": "equipment","shape": ["XXX","X X"],"ingredients": {"X": {"components": {"custom_data": {"imagineyourcraft": {"adamantium": true}}}}}}
+		craft		(dict):	The craft dictionary, ex: {"type": "crafting_shaped","result_count": 1,"category": "equipment","shape": ["XXX","X X"],"ingredients": {"X": {"components": {"custom_data": {"iyc": {"adamantium": true}}}}}}
 		name		(str):	The name of the item, ex: "adamantium_pickaxe"
 		page_font	(str):	The font for the page, ex: "\u0002"
 	"""

@@ -84,7 +84,7 @@ def generate_page_font(name: str, page_font: str, craft: dict|None = None) -> No
 					if symbol != " ":
 						ingredient = craft["ingredients"][symbol]
 						if ingredient.get("components"):
-							# get "steel_ingot" in {'components': {'custom_data': {'imagineyourcraft': {'steel_ingot': True}}}}
+							# get "steel_ingot" in {'components': {'custom_data': {'iyc': {'steel_ingot': True}}}}
 							item = ingr_to_id(ingredient)
 						else:
 							item = ingredient["item"]	# Vanilla item, ex: "minecraft:glowstone"

@@ -5,6 +5,7 @@ from src.utils.io import *
 from src.utils.print import *
 
 # For each custom block
+unique_blocks = set()
 for item, data in DATABASE.items():
 
 	# Custom block
@@ -39,6 +40,7 @@ for item, data in DATABASE.items():
 		# Secondary function
 		with super_open(f"{path}/place_secondary.mcfunction", "w") as f:
 			block = block.replace(":","_")
+			unique_blocks.add(block)
 			custom_model_data = data["custom_model_data"]
 			content = f"""
 # Add convention and utils tags, and the custom block tag
@@ -79,7 +81,11 @@ execute if score #rotation {NAMESPACE}.data matches 0 store success score #rotat
 			
 			# Write file
 			f.write(content)
+	pass
 
+
+
+# Destroy functions
 
 
 

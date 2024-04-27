@@ -5,11 +5,11 @@ from src.utils.io import *
 from src.utils.print import *
 import shutil
 
-# Copy override folder content to build
+# Copy merge folder content to build
 print()
-if os.path.exists(f"{OVERRIDE_FOLDER}"):
-	shutil.copytree(f"{OVERRIDE_FOLDER}", f"{BUILD_FOLDER}", dirs_exist_ok = True)
-	info(f"Override folder content copied to build folder")
+if os.path.exists(f"{MERGE_FOLDER}"):
+	shutil.copytree(f"{MERGE_FOLDER}", f"{BUILD_FOLDER}", dirs_exist_ok = True)
+	info(f"Merge folder content copied to build folder")
 
 
 # Add a small header for each .mcfunction file

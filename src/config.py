@@ -3,11 +3,11 @@
 import os
 
 # Datapack related constants
-DEBUG_MODE = False		# Shows up grids in manual
+DEBUG_MODE = True		# Shows up grids in manual
 CACHE_MODE = True		# Caches the minecraft assets and the items renders for the manual (manual/items/*.png)
-MINECRAFT_VERSION = "1.20.5 pre-release 1"
+MINECRAFT_VERSION = "1.20.6"
 VERSION = "0.0.1"
-NAMESPACE = "imagineyourcraft"
+NAMESPACE = "iyc"
 GLOBAL_NAMESPACE = "stoupy"
 PACK_FORMAT = 41
 RESOURCE_PACK_FORMAT = 32
@@ -23,7 +23,7 @@ DEPENDENCIES = {
 
 # Other constants
 ROOT = "/".join(os.path.dirname(os.path.abspath(__file__)).replace("\\", "/").split("/")[:-1])
-OVERRIDE_FOLDER = f"{ROOT}/override"
+MERGE_FOLDER = f"{ROOT}/merge"
 BUILD_FOLDER = f"{ROOT}/build"
 TEXTURES_FOLDER = f"{ROOT}/textures"
 DATABASE_FOLDER = f"{ROOT}/database"

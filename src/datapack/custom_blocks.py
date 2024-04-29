@@ -88,6 +88,15 @@ execute if score #rotation {NAMESPACE}.data matches 0 store success score #rotat
 		write_to_file(f"{path}/place_secondary.mcfunction", content)
 	pass
 
+# Link the custom block library to the datapack
+write_to_file(f"{BUILD_DATAPACK}/data/smithed.custom_block/tags/functions/event/on_place.json", super_json_dump({"values": [f"{NAMESPACE}:custom_blocks/on_place"]}))
+write_to_file(f"{DATAPACK_FUNCTIONS}/custom_blocks/on_place.mcfunction", f"execute if data storage smithed.custom_block:main blockApi.__data.Items[0].components.\"minecraft:custom_data\".smithed.block{{from:\"{NAMESPACE}\"}} run function {NAMESPACE}:custom_blocks/place\n")
+content = f"tag @s add {NAMESPACE}.placer\n"
+for item, data in DATABASE.items():
+	if data["id"] == CUSTOM_BLOCK_VANILLA:
+		content += f"execute if data storage smithed.custom_block:main blockApi{{id:\"{NAMESPACE}:{item}\"}} run function {NAMESPACE}:custom_blocks/{item}/place_main\n"
+content += f"tag @s remove {NAMESPACE}.placer\n"
+write_to_file(f"{DATAPACK_FUNCTIONS}/custom_blocks/place.mcfunction", content)
 
 
 ## Destroy functions

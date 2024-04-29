@@ -65,6 +65,8 @@ for file, data in mcfunctions.items():
 
 	# Get file content
 	content = FILES_TO_WRITE[data["path"]]
+	if not content.startswith("\n"):
+		content = "\n" + content
 	
 	# Prepare header
 	header: str = f"""

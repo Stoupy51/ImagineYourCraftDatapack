@@ -108,7 +108,8 @@ def super_merge_dict(dict1: dict, dict2: dict) -> dict:
 
 # The majority of files will be written at the end of the program to prevent excessive disk access (reading + appending + writing)
 FILES_TO_WRITE: dict[str, str] = {}
-def write_to_file(file_path: str, content: str):
+def write_to_file(file_path: str, content: str, overwrite: bool = False):
+	file_path = file_path.replace("\\", "/")
 	if file_path not in FILES_TO_WRITE:
 		FILES_TO_WRITE[file_path] = ""
 	FILES_TO_WRITE[file_path] += str(content)

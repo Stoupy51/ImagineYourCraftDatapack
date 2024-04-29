@@ -112,7 +112,7 @@ for page in pages:
 			x += 36
 
 			# Add the clickEvent part to the line and add the 2 times the line if enough items
-			component = get_item_component(item, ["custom_model_data", "custom_name"])
+			component = get_item_component(item, ["custom_model_data", "item_name", "custom_name"])
 			component["text"] = MEDIUM_NONE_FONT
 			line.append(component)
 			if len(line) == MAX_ITEMS_PER_ROW:

@@ -17,7 +17,7 @@ for root, dirs, files in os.walk(f"{ROOT}/textures/records"):
 			DATABASE[record] = {
 				"id": CUSTOM_ITEM_VANILLA,
 				"custom_data": {NAMESPACE:{record: True}},
-				"custom_name": f'[{{"text":"{item_str}","italic":false,"color":"white"}}]'
+				"item_name": f'[{{"text":"{item_str}","italic":false,"color":"white"}}]'
 			}
 
 			# Add to sounds

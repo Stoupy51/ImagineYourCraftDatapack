@@ -97,9 +97,9 @@ def get_item_component(ingredient: dict|str, only_those_components: list[str] = 
 		formatted["hoverEvent"]["contents"]["id"] = item["id"].replace("minecraft:", "")
 		components = {}
 		if only_those_components:
-			for key, value in item.items():
-				if key in only_those_components:
-					components[key] = value
+			for key in only_those_components:
+				if key in item:
+					components[key] = item[key]
 		else:
 			for key, value in item.items():
 				if key not in COMPONENTS_TO_IGNORE:

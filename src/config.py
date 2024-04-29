@@ -2,17 +2,42 @@
 # Imports
 import os
 
+# Folders
+ROOT: str = os.path.dirname(os.path.dirname(os.path.realpath(__file__))).replace("\\", "/")
+MERGE_FOLDER: str = f"{ROOT}/merge"					# If a file exists in both merge and build folder, they will be merged. Otherwise, it's just copied.
+MANUAL_PATH: str = f"{ROOT}/manual"					# Cached manual item assets
+BUILD_FOLDER: str = f"{ROOT}/build"					# Folder where the final datapack and resource pack are built
+ASSETS_FOLDER: str = f"{ROOT}/assets"				# Folder containing the all assets (textures, sounds, ...) for the datapack
+LIBS_FOLDER: str = f"{ROOT}/libs"					# The libraries are copied to the build destination, and merged with the datapack using Weld in make_release.py
+BUILD_COPY_DESTINATIONS: tuple[str, str] = ("D:/latest_snapshot/world/datapacks", "D:/minecraft/snapshot/resourcepacks")	# Can be an empty list if you don't want to copy the generated files
+
+
+# Dev constants
+HAS_MANUAL: bool = False							# Do the program generate a manual/guide?
+DEBUG_MODE: bool = True								# Shows up grids in manual,
+DATABASE_DEBUG: str = f"{ROOT}/database_debug.json"	# Dump of the database for debugging purposes
+CACHE_MANUAL_ASSETS: bool = True					# Caches the MC assets and the items renders for the manual (manual/items/*.png)
+CACHE_MANUAL_PAGES: bool = True						# Caches the content of the manual 
+MANUAL_DEBUG: str = f"{ROOT}/debug_manual.json"		# Dump of the manual for debugging purposes	(used when CACHE_MANUAL_PAGES is true)
+
+
 # Datapack related constants
-DEBUG_MODE = True		# Shows up grids in manual
-CACHE_MODE = True		# Caches the minecraft assets and the items renders for the manual (manual/items/*.png)
-MINECRAFT_VERSION = "1.20.6"
-VERSION = "0.0.1"
-NAMESPACE = "iyc"
-GLOBAL_NAMESPACE = "stoupy"
-PACK_FORMAT = 41
-RESOURCE_PACK_FORMAT = 32
-DATA_VERSION = 3835
-DEPENDENCIES = {
+AUTHOR: str = "Stoupy51"				# Author(s) name(s) displayed in pack.mcmeta, also used to add convention.debug tag to the players of the same name(s) <-- showing additionnal displays like datapack loading
+DATAPACK_NAME: str = "ImagineYourCraft"	# Name of the datapack, used for messages and items lore
+MINECRAFT_VERSION: str = "1.20.6"		# Text used when loading the datapack to warn the user when the data version is not right
+DATA_VERSION: int = 3835				# Depending on MC version, given by /data get entity @p DataVersion to check if the datapack is not running in an older version of MC
+VERSION: str = "0.0.1"					# Datapack version in the following mandatory format: major.minor.patch, ex: 1.0.0 or 1.21.615
+NAMESPACE: str = "iyc"					# Should be the same you use in the merge folder. Used to namespace functions, tags, etc.
+PACK_FORMAT: int = 41					# Pack format version, see https://minecraft.wiki/w/Pack_format#List_of_data_pack_formats
+RESOURCE_PACK_FORMAT: int = 32			# Resource pack format version, see https://minecraft.wiki/w/Pack_format#List_of_resource_pack_formats
+DESCRIPTION = f"{DATAPACK_NAME} [{VERSION}] by {AUTHOR}"	# Pack description displayed in pack.mcmeta
+DEPENDENCIES: dict[str, dict[str, list[int] | str]] = {
+	# Automagically, the datapack will check for the presence of dependencies and their minimum required versions at runtime
+	# The url is used when the dependency is not found to suggest where to get it
+	# The version dict key contains the minimum required version of the dependency in [major, minor, patch] format
+	# The main key is the dependency namespace to check for
+	# The name can be whatever you want, it's just used in messages
+
 	"common_signals": {"version":[0, 0, 0], "name":"Common Signals", "url":"https://github.com/Stoupy51/CommonSignals"},
 	# "smithed.custom_block": {"version":[0, 0, 0], "name":"Smithed Custom Block Placement", "url":"https://wiki.smithed.dev/libraries/custom-block/"},
 	# "smithed.crafter": {"version":[0, 0, 0], "name":"Smithed Crafter", "url":"https://wiki.smithed.dev/libraries/crafter/"},
@@ -21,46 +46,22 @@ DEPENDENCIES = {
 	# "furnace_nbt_recipes": {"version":[2, 0, 0], "name":"Stoupy's Furnace NBT Recipes", "url":"https://github.com/Stoupy51/FurnaceNbtRecipes"},
 }
 
-# Other constants
-ROOT = "/".join(os.path.dirname(os.path.abspath(__file__)).replace("\\", "/").split("/")[:-1])
-MERGE_FOLDER = f"{ROOT}/merge"
-MANUAL_PATH = f"{ROOT}/manual"
-BUILD_FOLDER = f"{ROOT}/build"
-TEXTURES_FOLDER = f"{ROOT}/textures"
-DATABASE_FOLDER = f"{ROOT}/database"
-DATAPACK_NAME = "ImagineYourCraft"
-AUTHOR = "Stoupy51"
-DESCRIPTION = f"{DATAPACK_NAME} [{VERSION}] by {AUTHOR}"
-BUILD_DATAPACK = f"{BUILD_FOLDER}/datapack"
-BUILD_RESOURCE_PACK = f"{BUILD_FOLDER}/resource_pack"
-DATABASE = {}
-EXTERNAL_DATABASE = {}		# Can be used to required an item from another datapack for a recipe or anything else
-DATABASE_DEBUG = f"{ROOT}/database_debug.json"
-MANUAL_DEBUG = f"{ROOT}/debug_manual.json"
-SOURCE_LORE = f'[{{"text":"{DATAPACK_NAME}","italic":true,"color":"blue"}}]'
-FACES = ("down", "up", "north", "south", "west", "east")
-SIDES = ("_bottom", "_top", "_front", "_back", "_left", "_right", "_side")
-OPENGL_RESOLUTION = 64
-CPU_THREADS = int(os.cpu_count() * 0.75)	# 75% of the CPU threads
-
 # Technical constants
-CUSTOM_BLOCK_VANILLA = "minecraft:furnace"
-CUSTOM_ENTITY_VANILLA = "minecraft:item_frame" # Useful for blocks that can be placed on walls or on player's position
-CUSTOM_ITEM_VANILLA = "minecraft:command_block"
-VANILLA_BLOCK_FOR_ORES = "minecraft:polished_deepslate"	# Uses a tip for optimization, don't ask questions
-RESULT_OF_CRAFTING = "result_of_crafting"
-USED_FOR_CRAFTING = "used_for_crafting"	# Should not be wrote manually unless you are crafting a vanilla item (ex: iyc.chainmail -> chainmail armor)
-CATEGORY = "category" # Key for the category, ex: "category":"material" or "category":"equipment"
-VANILLA_BLOCK = "vanilla_block"	# Vanilla block that will be place for custom block interaction, value can either a string of a dict {"id":"minecraft:chest", "block_states": ["facing", "type=single", "waterlogged=false"]}
-COMMANDS_ON_PLACEMENT = "commands_on_placement"	# Commands to execute when a custom block is placed, should be a list of strings or a single string with break lines
-COMMANDS_ON_BREAK = "commands_on_break"	# Commands to execute when a custom block is broken, should be a list of strings or a single string with break lines
-NOT_COMPONENTS = ["id", "wiki", CATEGORY, RESULT_OF_CRAFTING, USED_FOR_CRAFTING, VANILLA_BLOCK]
+BUILD_DATAPACK: str = f"{BUILD_FOLDER}/datapack"									# Folder where the final datapack will be built
+BUILD_RESOURCE_PACK: str = f"{BUILD_FOLDER}/resource_pack"							# Folder where the final resource pack will be built
+SOURCE_LORE: str = f'[{{"text":"{DATAPACK_NAME}","italic":true,"color":"blue"}}]'	# Appended lore to any custom item, can be an empty string
+FACES: tuple = ("down", "up", "north", "south", "west", "east")						# Faces of a block, used for resource pack and blocks orientation
+SIDES: tuple = ("_bottom", "_top", "_front", "_back", "_left", "_right", "_side")	# Sides of a block, used for resource pack
+CUSTOM_BLOCK_VANILLA: str = "minecraft:furnace"			# Vanilla block used as base for custom blocks, must have the "facing" blockstate
+CUSTOM_ENTITY_VANILLA: str = "minecraft:item_frame"		# Same purpose as previous, but useful for blocks that can be placed on walls or on player's position (ex: flowers)
+CUSTOM_ITEM_VANILLA: str = "minecraft:command_block"	# Vanilla item used as base for custom items, must not have any survival vanilla behaviour
 MISC = "miscellaneous"
 MODEL_DISPLAY = {"head":{"rotation":[0,0,0],"translation":[0,-30.42,0],"scale":[1.605,1.605,1.605]},"fixed":{"rotation":[-90,0,0],"translation":[0,0,-16],"scale":[2.0075,2.0075,2.0075]}}
 MAX_ITEMS_PER_ROW = 5	# Max number of items per row in the manual
 MAX_ROWS_PER_PAGE = 5	# Max number of rows per page in the manual
+OPENGL_RESOLUTION = 64
 
-# UUIDs for attribute modifiers to avoid conflicts
+# UUIDs for attribute modifiers to avoid conflicts, feel free to use them for your database
 UUIDS = {
 	"attack_damage":		{"helmet": [0,1,2,3], "chestplate": [0,4,5,6], "leggings": [0,7,8,9], "boots": [0,10,11,12], "sword": [0,13,14,15], "pickaxe": [0,16,17,18], "axe": [0,19,20,21], "shovel": [0,22,23,24], "hoe": [0,25,26,27]},
 	"attack_speed":			{"helmet": [1,1,2,3], "chestplate": [1,4,5,6], "leggings": [1,7,8,9], "boots": [1,10,11,12], "sword": [1,13,14,15], "pickaxe": [1,16,17,18], "axe": [1,19,20,21], "shovel": [1,22,23,24], "hoe": [1,25,26,27]},
@@ -72,6 +73,15 @@ UUIDS = {
 	"gravity":				{"helmet": [7,1,2,3], "chestplate": [7,4,5,6], "leggings": [7,7,8,9], "boots": [7,10,11,12], "sword": [7,13,14,15], "pickaxe": [7,16,17,18], "axe": [7,19,20,21], "shovel": [7,22,23,24], "hoe": [7,25,26,27]},
 }
 
-# For easy testing (can be an empty list)
-BUILD_COPY_DESTINATIONS = ("D:/latest_snapshot/world/datapacks", "D:/minecraft/snapshot/resourcepacks")
+# Databases
+RESULT_OF_CRAFTING: str = "result_of_crafting"			# Key to a list of recipes to craft the item, ex: "adamantium": {RESULT_OF_CRAFTING: [...]}
+USED_FOR_CRAFTING: str = "used_for_crafting"			# Should not be used unless you are crafting a vanilla item (ex: iyc.chainmail -> chainmail armor)
+CATEGORY: str = "category"								# Key for the category, used for recipes and the manual, ex: CATEGORY:"material" or CATEGORY:"equipment"
+COMMANDS_ON_PLACEMENT: str = "commands_on_placement"	# Key to a list of commands to execute when a custom block is placed, should be a list of strings or a single string (with break lines if multiple commands)
+COMMANDS_ON_BREAK: str = "commands_on_break"			# Key to a list of commands to execute when a custom block is broken, should be a list of strings or a single string (with break lines if multiple commands)
+VANILLA_BLOCK: str = "vanilla_block"					# Key to a vanilla block that will be placed for custom block interaction, value can either a string of a dict {"id":"minecraft:chest", "block_states": ["facing", "type=single", "waterlogged=false"]}
+VANILLA_BLOCK_FOR_ORES: str = "minecraft:polished_deepslate"	# Vanilla block that will be used for an optimization tip for ores, don't ask questions
+NOT_COMPONENTS: list[str] = ["id", "wiki", CATEGORY, RESULT_OF_CRAFTING, USED_FOR_CRAFTING, VANILLA_BLOCK]	# Keys that should not be considered as components, used for recipes and loot tables
+DATABASE: dict[str, dict] = {}				# Dictionnary containing all the items, blocks, recipes, etc. used by the program. See format in database/README.md
+EXTERNAL_DATABASE: dict[str, dict] = {}		# Should be filled when you require an item from another datapack for a recipe or anything else
 

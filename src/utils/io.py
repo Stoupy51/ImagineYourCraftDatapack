@@ -115,6 +115,14 @@ def write_to_file(file_path: str, content: str, overwrite: bool = False):
 	FILES_TO_WRITE[file_path] += str(content)
 def write_all_files():
 	for file_path, content in FILES_TO_WRITE.items():
+
+		# Make sure the content ends with two break lines
+		if not content.endswith("\n\n"):
+			if content.endswith("\n"):
+				content += "\n"
+			else:
+				content += "\n\n"
+
 		with super_open(file_path, "w") as f:
 			f.write(content)
 

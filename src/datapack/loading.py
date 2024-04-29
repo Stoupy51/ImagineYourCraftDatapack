@@ -14,7 +14,7 @@ write_to_file(f"{BUILD_DATAPACK}/data/minecraft/tags/functions/tick.json", super
 
 
 # Setup load main and secondary function
-write_to_file(f"{BUILD_DATAPACK}/data/{NAMESPACE}/functions/load/main.mcfunction", f"""
+write_to_file(f"{DATAPACK_FUNCTIONS}/load/main.mcfunction", f"""
 # Avoiding multiple executions of the same load function
 execute unless score {DATAPACK_NAME} load.status matches 1.. run function {NAMESPACE}:load/secondary
 
@@ -35,7 +35,7 @@ function {NAMESPACE}:load/check_dependencies
 function {NAMESPACE}:load/waiting_for_player
 
 """
-write_to_file(f"{BUILD_DATAPACK}/data/{NAMESPACE}/functions/load/secondary.mcfunction", content)
+write_to_file(f"{DATAPACK_FUNCTIONS}/load/secondary.mcfunction", content)
 
 
 # Check dependencies
@@ -47,7 +47,7 @@ content = f"""
 ## Check if {DATAPACK_NAME} is loadable (dependencies)
 scoreboard players set #dependency_error {NAMESPACE}.data 0"""
 content += "\n" + checks + "\n"
-write_to_file(f"{BUILD_DATAPACK}/data/{NAMESPACE}/functions/load/check_dependencies.mcfunction", content)
+write_to_file(f"{DATAPACK_FUNCTIONS}/load/check_dependencies.mcfunction", content)
 
 
 # Waiting for player
@@ -57,7 +57,7 @@ for namespace, value in DEPENDENCIES.items():
 	name = value["name"]
 	url = value["url"]
 	decoder_checks += f'execute if score #dependency_error {NAMESPACE}.data matches 1 unless score #{namespace}.major load.status matches {major}.. unless score #{namespace}.minor load.status matches {minor}.. unless score #{namespace}.patch load.status matches {patch}.. run tellraw @a {{"text":"- [{name}]","color":"gold","clickEvent":{{"action":"open_url","value":"{url}"}}}}\n'
-write_to_file(f"{BUILD_DATAPACK}/data/{NAMESPACE}/functions/load/waiting_for_player.mcfunction", f"""
+write_to_file(f"{DATAPACK_FUNCTIONS}/load/waiting_for_player.mcfunction", f"""
 # Waiting for a player to get the game version, but stop function if no player found
 execute unless entity @p run schedule function {NAMESPACE}:load/waiting_for_player 1t replace
 execute unless entity @p run return 0
@@ -90,13 +90,14 @@ for item, data in DATABASE.items():
 	items_storage += f"data modify storage {NAMESPACE}:items all.{item} set value " + super_json_dump(mc_data, max_level = 0)
 	pass
 
-write_to_file(f"{BUILD_DATAPACK}/data/{NAMESPACE}/functions/load/confirm_load.mcfunction", f"""
+write_to_file(f"{DATAPACK_FUNCTIONS}/load/confirm_load.mcfunction", f"""
 tellraw @a[tag=convention.debug] {{"text":"[Loaded {DATAPACK_NAME} v{VERSION}]","color":"green"}}
 
 scoreboard objectives add {NAMESPACE}.private dummy
 scoreboard objectives add {NAMESPACE}.right_click minecraft.used:minecraft.warped_fungus_on_a_stick
 
 scoreboard players set #{NAMESPACE}.loaded load.status 1
+# "#second" starts at a random time for better load distribution
 execute store result score #second {NAMESPACE}.data run random value 1..19
 
 # Items storage
@@ -106,7 +107,7 @@ data modify storage {NAMESPACE}:items all set value {{}}
 
 
 # Tick verification
-write_to_file(f"{BUILD_DATAPACK}/data/{NAMESPACE}/functions/load/tick_verification.mcfunction", f"""
+write_to_file(f"{DATAPACK_FUNCTIONS}/load/tick_verification.mcfunction", f"""
 execute if score #{NAMESPACE}.loaded load.status matches 1 run function {NAMESPACE}:tick
 
 """)

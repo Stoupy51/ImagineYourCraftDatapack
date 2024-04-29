@@ -7,7 +7,7 @@ import json
 
 # Get all mcfunctions paths
 mcfunctions = {}
-functions_folder = f"{BUILD_DATAPACK}/data/{NAMESPACE}/functions"
+functions_folder = f"{DATAPACK_FUNCTIONS}"
 for file_path in FILES_TO_WRITE:
 	if functions_folder in file_path and file_path.endswith(".mcfunction"):
 			

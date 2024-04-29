@@ -10,6 +10,9 @@ import src.datapack.loading
 # Generate items loot tables
 import src.datapack.loot_tables
 
+# Generate basic datapack structure (tick, tick_2, second, second_5, minute)
+import src.datapack.basic_structure
+
 # TODO: Custom Blocks (place + destroy)
 import src.datapack.custom_blocks
 # TODO: Custom Ores generation

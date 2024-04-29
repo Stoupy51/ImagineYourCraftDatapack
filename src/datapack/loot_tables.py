@@ -59,6 +59,6 @@ for i in range(total_chests):
 		chest_contents.append(f'{{slot:{j},item:{{count:1,id:"{id}",components:{json_content}}}}}')
 	joined_content = ",".join(chest_contents)
 	chests.append(f'give @s chest[container=[{joined_content}],custom_name=\'{{"text":"Chest [{i+1}/{total_chests}]","color":"yellow"}}\',lore=[\'{{"text":"{DATAPACK_NAME}","italic":true,"color":"blue"}}\']]')
-write_to_file(f"{BUILD_DATAPACK}/data/{NAMESPACE}/functions/_give_all.mcfunction", "\n" + "\n\n".join(chests) + "\n\n")
+write_to_file(f"{DATAPACK_FUNCTIONS}/_give_all.mcfunction", "\n" + "\n\n".join(chests) + "\n\n")
 info("Give all function successfully made")
 

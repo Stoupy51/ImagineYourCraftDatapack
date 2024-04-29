@@ -108,6 +108,6 @@ for item, data in DATABASE.items():
 content = "\n# Get all recipes\n"
 for recipe in generated_recipes:
 	content += f"recipe give @s {NAMESPACE}:{recipe}\n"
-write_to_file(f"{BUILD_DATAPACK}/data/{NAMESPACE}/functions/utils/get_all_recipes.mcfunction", content + "\n")
+write_to_file(f"{DATAPACK_FUNCTIONS}/utils/get_all_recipes.mcfunction", content + "\n")
 info("Vanilla recipes generated")
 

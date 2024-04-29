@@ -48,6 +48,7 @@ DEPENDENCIES: dict[str, dict[str, list[int] | str]] = {
 
 # Technical constants
 BUILD_DATAPACK: str = f"{BUILD_FOLDER}/datapack"									# Folder where the final datapack will be built
+DATAPACK_FUNCTIONS: str = f"{BUILD_DATAPACK}/data/{NAMESPACE}/functions"			# Folder where the datapack functions are built
 BUILD_RESOURCE_PACK: str = f"{BUILD_FOLDER}/resource_pack"							# Folder where the final resource pack will be built
 SOURCE_LORE: str = f'[{{"text":"{DATAPACK_NAME}","italic":true,"color":"blue"}}]'	# Appended lore to any custom item, can be an empty string
 FACES: tuple = ("down", "up", "north", "south", "west", "east")						# Faces of a block, used for resource pack and blocks orientation

@@ -11,7 +11,7 @@ for item, data in DATABASE.items():
 	# Custom block
 	if data.get(VANILLA_BLOCK):
 		block = data[VANILLA_BLOCK]
-		path = f"{BUILD_DATAPACK}/data/{NAMESPACE}/functions/custom_blocks/{item}"
+		path = f"{DATAPACK_FUNCTIONS}/custom_blocks/{item}"
 
 		## Place function	
 		# Place block
@@ -96,7 +96,7 @@ content = "\n"
 for block in unique_blocks:
 	block_underscore = block.replace(":","_")
 	content += f"execute if entity @s[tag={NAMESPACE}.vanilla.{block_underscore}] unless block ~ ~ ~ {block} run function {NAMESPACE}:custom_blocks/_groups/{block_underscore}\n"
-write_to_file(f"{BUILD_DATAPACK}/data/{NAMESPACE}/functions/custom_blocks/destroy.mcfunction", content + "\n")
+write_to_file(f"{DATAPACK_FUNCTIONS}/custom_blocks/destroy.mcfunction", content + "\n")
 
 # For each unique block, make the group function
 for block in unique_blocks:
@@ -116,13 +116,13 @@ for block in unique_blocks:
 			# Add the line if it's the same vanilla block
 			if this_block == block_underscore:
 				content += f"execute if entity @s[tag={NAMESPACE}.{item}] run function {NAMESPACE}:custom_blocks/{item}/destroy\n"
-	write_to_file(f"{BUILD_DATAPACK}/data/{NAMESPACE}/functions/custom_blocks/_groups/{block_underscore}.mcfunction", content + "\n")
+	write_to_file(f"{DATAPACK_FUNCTIONS}/custom_blocks/_groups/{block_underscore}.mcfunction", content + "\n")
 
 # For each custom block, make it's destroy function
 for item, data in DATABASE.items():
 	if data.get(VANILLA_BLOCK):
 		block = data[VANILLA_BLOCK]
-		path = f"{BUILD_DATAPACK}/data/{NAMESPACE}/functions/custom_blocks/{item}"
+		path = f"{DATAPACK_FUNCTIONS}/custom_blocks/{item}"
 		if isinstance(block, dict):
 			block = block["id"]
 		
@@ -143,17 +143,31 @@ data modify entity @e[type=item,nbt={{Item:{{id:"{block}"}}}},limit=1,sort=neare
 		write_to_file(f"{path}/destroy.mcfunction", content + "kill @s\n\n")
 
 
-# Write the used_vanilla_blocks tag, the predicate to check the blocks with the tag, and the tick_2 function to check the blocks
+# Write the used_vanilla_blocks tag, the predicate to check the blocks with the tag and an advanced one
 VANILLA_BLOCKS_TAG = "used_vanilla_blocks"
 write_to_file(f"{BUILD_DATAPACK}/data/{NAMESPACE}/tags/blocks/{VANILLA_BLOCKS_TAG}.json", super_json_dump({"values": list(unique_blocks)}))
 predicate = {"condition": "minecraft:location_check", "predicate": {"block": {"blocks": f"#{NAMESPACE}:{VANILLA_BLOCKS_TAG}"}}}
 write_to_file(f"{BUILD_DATAPACK}/data/{NAMESPACE}/predicates/check_vanilla_blocks.json", super_json_dump(predicate))
-write_to_file(f"{BUILD_DATAPACK}/data/{NAMESPACE}/functions/tick_2.mcfunction", f"""
+advanced_predicate = {"condition": "minecraft:any_of", "terms": []}
+for block in unique_blocks:
+	block_underscore = block.replace(":","_")
+	predicate = {"condition": "minecraft:entity_properties", "entity": "this", "predicate": { "nbt": f"{{Tags:[\"iyc.vanilla.{block_underscore}\"]}}", "location": { "block": { "blocks": [block] }}}}
+	advanced_predicate["terms"].append(predicate)
+write_to_file(f"{BUILD_DATAPACK}/data/{NAMESPACE}/predicates/advanced_check_vanilla_blocks.json", super_json_dump(advanced_predicate))
+
+# Write a destroy check every 2 ticks, every second, and every 5 seconds
+write_to_file(f"{DATAPACK_FUNCTIONS}/tick_2.mcfunction", f"""
 # 2 ticks destroy detection
 execute as @e[type=item_display,tag={NAMESPACE}.custom_block,tag=!{NAMESPACE}.vanilla.{VANILLA_BLOCK_FOR_ORES.replace(':', '_')},predicate=!{NAMESPACE}:check_vanilla_blocks] at @s run function {NAMESPACE}:custom_blocks/destroy
-
 """)
-
+write_to_file(f"{DATAPACK_FUNCTIONS}/second.mcfunction", f"""
+# 1 second break detection
+execute as @e[type=item_display,tag={NAMESPACE}.custom_block,tag=!{NAMESPACE}.vanilla.{VANILLA_BLOCK_FOR_ORES.replace(':', '_')},predicate=!{NAMESPACE}:advanced_check_vanilla_blocks] at @s run function {NAMESPACE}:custom_blocks/destroy
+""")
+write_to_file(f"{DATAPACK_FUNCTIONS}/second_5.mcfunction", f"""
+# 5 seconds break detection
+execute as @e[type=item_display,tag={NAMESPACE}.custom_block,predicate=!{NAMESPACE}:advanced_check_vanilla_blocks] at @s run function {NAMESPACE}:custom_blocks/destroy
+""")
 
 
 

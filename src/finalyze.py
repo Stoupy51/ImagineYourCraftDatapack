@@ -5,11 +5,23 @@ from src.utils.io import *
 from src.utils.print import *
 import shutil
 
-# Copy merge folder content to build
+# For every file in the merge folder, copy it to the build folder (with append content)
 print()
-if os.path.exists(f"{MERGE_FOLDER}"):
-	shutil.copytree(f"{MERGE_FOLDER}", f"{BUILD_FOLDER}", dirs_exist_ok = True)
-	info(f"Merge folder content copied to build folder")
+for root, _, files in os.walk(MERGE_FOLDER):
+	for file in files:
+		path = f"{root}/{file}".replace("\\", "/")
+		build_equivalent = path.replace(MERGE_FOLDER, BUILD_FOLDER)
+		
+		# Append content to the build file
+		if os.path.exists(build_equivalent):
+			with super_open(path, "r") as f:
+				content = f.read()
+			with super_open(build_equivalent, "a") as f:
+				f.write(content)
+			info(f"Content from '{path}' appended to '{build_equivalent}'")
+		else:
+			super_copy(path, build_equivalent)
+info(f"All content in the '{MERGE_FOLDER.replace(ROOT, '')}' folder copied to '{BUILD_FOLDER.replace(ROOT, '')}'")
 
 
 # Add a small header for each .mcfunction file

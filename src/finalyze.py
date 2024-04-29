@@ -9,18 +9,31 @@ import shutil
 print()
 for root, _, files in os.walk(MERGE_FOLDER):
 	for file in files:
-		path = f"{root}/{file}".replace("\\", "/")
-		build_equivalent = path.replace(MERGE_FOLDER, BUILD_FOLDER)
+		merge_path = f"{root}/{file}".replace("\\", "/")
+		build_path = merge_path.replace(MERGE_FOLDER, BUILD_FOLDER)
 		
-		# Append content to the build file
-		if os.path.exists(build_equivalent):
-			with super_open(path, "r") as f:
-				content = f.read()
-			with super_open(build_equivalent, "a") as f:
-				f.write(content)
-			info(f"Content from '{path}' appended to '{build_equivalent}'")
+		# Append content to the build file is any
+		if os.path.isfile(build_path):
+
+			# If file is not JSON format,
+			if not file.endswith(".json"):
+				with super_open(merge_path, "r") as f:
+					content = f.read()
+				with super_open(build_path, "a") as f:
+					f.write(content)
+
+			else:
+				# Load to two dictionnaries
+				with super_open(merge_path, "r") as f:
+					merge_dict = json.load(f)
+				with super_open(build_path, "r") as f:
+					build_dict = json.load(f)
+				
+				# Write the merged dictionnaries to the build file
+				with super_open(build_path, "w") as f:
+					super_json_dump(super_merge_dict(build_dict, merge_dict), -1)
 		else:
-			super_copy(path, build_equivalent)
+			super_copy(merge_path, build_path)
 info(f"All content in the '{MERGE_FOLDER.replace(ROOT, '')}' folder copied to '{BUILD_FOLDER.replace(ROOT, '')}'")
 
 

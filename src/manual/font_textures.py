@@ -58,7 +58,10 @@ def generate_page_font(name: str, page_font: str, craft: dict|None = None) -> No
 		craft (dict): Crafting recipe dictionary
 	"""
 	# Get result texture (to place later)
-	result_texture = Image.open(f"{MANUAL_PATH}/items/{NAMESPACE}/{name}.png")
+	image_path = f"{MANUAL_PATH}/items/{NAMESPACE}/{name}.png"
+	if not os.path.exists(image_path):
+		error(f"Missing item texture at '{image_path}'")
+	result_texture = Image.open(image_path)
 	
 	# Crafting shaped
 	if craft:
@@ -91,7 +94,10 @@ def generate_page_font(name: str, page_font: str, craft: dict|None = None) -> No
 						
 						# Get the texture and place it at the coords
 						item = item.replace(":", "/")
-						item_texture = Image.open(f"{MANUAL_PATH}/items/{item}.png")
+						image_path = f"{MANUAL_PATH}/items/{item}.png"
+						if not os.path.exists(image_path):
+							error(f"Missing item texture at '{image_path}'")
+						item_texture = Image.open(image_path)
 						factor = SQUARE_SIZE / item_texture.size[0]
 						item_texture = item_texture.resize(
 							(int(item_texture.size[0]*factor), int(item_texture.size[1]*factor)),
@@ -125,7 +131,10 @@ def generate_page_font(name: str, page_font: str, craft: dict|None = None) -> No
 			# Place input item
 			input_item = ingr_to_id(craft["ingredient"])
 			input_item = input_item.replace(":", "/")
-			item_texture = Image.open(f"{MANUAL_PATH}/items/{input_item}.png")
+			image_path = f"{MANUAL_PATH}/items/{input_item}.png"
+			if not os.path.exists(image_path):
+				error(f"Missing item texture at '{image_path}'")
+			item_texture = Image.open(image_path)
 			factor = SQUARE_SIZE / item_texture.size[0]
 			item_texture = item_texture.resize(
 				(int(item_texture.size[0]*factor), int(item_texture.size[1]*factor)),
@@ -163,17 +172,17 @@ for item, data in DATABASE.items():
 	try:
 		if data["id"] == CUSTOM_BLOCK_VANILLA:
 			raise Exception()
-		super_copy(f"{TEXTURES_FOLDER}/{item}.png", f"{path}/{NAMESPACE}/{item}.png")
+		super_copy(f"{ASSETS_FOLDER}/{item}.png", f"{path}/{NAMESPACE}/{item}.png")
 	except:
 		# Else, render all the block textures and faces
 		try:
 			# Skip if item is already generated (to prevent launcher OpenGL for nothing)
-			if os.path.exists(f"{path}/{NAMESPACE}/{item}.png") and CACHE_MODE:
+			if os.path.exists(f"{path}/{NAMESPACE}/{item}.png") and CACHE_MANUAL_ASSETS:
 				continue
 
 			# Load front texture
 			sides = ("_front", "_side", "_top", "_bottom", "")
-			front_path = f"{TEXTURES_FOLDER}/{item}"
+			front_path = f"{ASSETS_FOLDER}/{item}"
 			for side in sides:
 				if os.path.exists(f"{front_path}{side}.png"):
 					front_path += side
@@ -183,12 +192,12 @@ for item, data in DATABASE.items():
 			top_texture = front_texture
 
 			# Try to load side
-			side_path = f"{TEXTURES_FOLDER}/{item}_side.png"
+			side_path = f"{ASSETS_FOLDER}/{item}_side.png"
 			if os.path.exists(side_path):
 				side_texture = Image.open(side_path)
 			
 			# Try to load top texture
-			top_path = f"{TEXTURES_FOLDER}/{item}_top.png"
+			top_path = f"{ASSETS_FOLDER}/{item}_top.png"
 			if os.path.exists(top_path):
 				top_texture = Image.open(top_path)
 			
@@ -202,7 +211,7 @@ for item, data in DATABASE.items():
 
 		except:
 			try:
-				super_copy(f"{TEXTURES_FOLDER}/{item}.png", f"{path}/{NAMESPACE}/{item}.png")
+				super_copy(f"{ASSETS_FOLDER}/{item}.png", f"{path}/{NAMESPACE}/{item}.png")
 			except:
 				error(f"Failed to render iso for item '{item}', please add it manually to '{path}/{NAMESPACE}/{item}.png'")
 opengl.stop_opengl()
@@ -231,7 +240,7 @@ for item, data in DATABASE.items():
 wiki_link = "https://minecraft.wiki/images/Invicon_ITEM.png"
 for item in used_vanilla_items:
 	destination = f"{path}/minecraft/{item}.png"
-	if not (os.path.exists(destination) and CACHE_MODE):
+	if not (os.path.exists(destination) and CACHE_MANUAL_ASSETS):
 		response = requests.get(wiki_link.replace("ITEM", item.title()))
 		if response.status_code != 200:
 			# If the item is type of "X_block", try to get "block_of_X" texture instead

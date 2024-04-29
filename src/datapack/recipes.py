@@ -13,10 +13,13 @@ def RecipeShapeless(recipe: dict, item: str) -> dict:
 	Returns:
 		dict: The generated recipe
 	"""
-	data = DATABASE[item]
+	try:
+		data = DATABASE[item]
+	except:
+		data = EXTERNAL_DATABASE[item]
 	to_return = {
 		"type": "minecraft:" + recipe["type"],
-		"category": recipe["category"],
+		"category": recipe[CATEGORY],
 		"group": recipe["group"] if recipe.get("group") else None,
 		"ingredients": recipe["ingredients"],
 		"result": {"id": data["id"], "count": recipe["result_count"]} if not recipe.get("result") else recipe["result"]
@@ -38,10 +41,13 @@ def RecipeShapeless(recipe: dict, item: str) -> dict:
 	return to_return
 
 def RecipeShaped(recipe: dict, item: str) -> dict:
-	data = DATABASE[item]
+	try:
+		data = DATABASE[item]
+	except:
+		data = EXTERNAL_DATABASE[item]
 	to_return = {
 		"type": "minecraft:" + recipe["type"],
-		"category": recipe["category"],
+		"category": recipe[CATEGORY],
 		"group": recipe["group"] if recipe.get("group") else None,
 		"pattern": recipe["shape"],
 		"key": recipe["ingredients"],

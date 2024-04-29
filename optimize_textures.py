@@ -9,7 +9,7 @@ os.system("color")
 
 # For each texture in the textures folder, optimize it without loosing any quality
 from PIL import Image
-for root, _, files in os.walk(TEXTURES_FOLDER):
+for root, _, files in os.walk(ASSETS_FOLDER):
 	for file in files:
 		if not file.endswith(".png"):
 			continue

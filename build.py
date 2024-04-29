@@ -21,11 +21,13 @@ if __name__ == "__main__":
 	# Initialize build process
 	from src.initialize import *
 
-	# Generate items/blocks database
+	# Generate items/blocks database and verify the format
 	from database.main import *
+	from src.verify_database import *
 
 	# Generate manual
-	from src.manual.main import *
+	if HAS_MANUAL:
+		from src.manual.main import *
 
 	# Generate resource pack
 	from src.resource_pack.main import *

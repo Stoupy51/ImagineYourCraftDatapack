@@ -26,13 +26,15 @@ execute unless score {DATAPACK_NAME} load.status matches 1.. run function {NAMES
 """)
 with super_open(f"{BUILD_DATAPACK}/data/{NAMESPACE}/functions/load/secondary.mcfunction", "w") as f:
 	major, minor, patch = VERSION.split(".")
+	authors = AUTHOR.split(" ")
+	convention_debug = "".join([f"tag {author} add convention.debug\n" for author in authors])
 	f.write(f"""
 # {DATAPACK_NAME}
 scoreboard objectives add {NAMESPACE}.data dummy
 scoreboard players set #{NAMESPACE}.major load.status {major}
 scoreboard players set #{NAMESPACE}.minor load.status {minor}
 scoreboard players set #{NAMESPACE}.patch load.status {patch}
-tag {AUTHOR} add convention.debug
+{convention_debug}
 
 # Check dependencies and wait for a player to connect (to get server version)
 function {NAMESPACE}:load/check_dependencies
@@ -86,7 +88,7 @@ execute if score #game_version {NAMESPACE}.data matches 1.. if score #mcload_err
 
 
 # Confirm load
-items_storage = ""
+items_storage = ""	# Storage representation of every item in the database
 content = ""
 for item, data in DATABASE.items():
 	mc_data = {"id":"","count":1, "components":{"custom_model_data":-1}}
@@ -106,7 +108,7 @@ scoreboard objectives add {NAMESPACE}.private dummy
 scoreboard objectives add {NAMESPACE}.right_click minecraft.used:minecraft.warped_fungus_on_a_stick
 
 scoreboard players set #{NAMESPACE}.loaded load.status 1
-execute store result score #second switch.data run random value 1..19
+execute store result score #second {NAMESPACE}.data run random value 1..19
 
 # Items storage
 data modify storage {NAMESPACE}:items all set value {{}}

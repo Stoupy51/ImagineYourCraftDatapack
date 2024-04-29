@@ -20,7 +20,7 @@ for ore in ORES:
 	# Get ore color (for armor and other stuff)
 	color = None
 	if f"{material}_chestplate.png" in textures_filenames:
-		color = Image.open(f"{TEXTURES_FOLDER}/{material}_chestplate.png")
+		color = Image.open(f"{ASSETS_FOLDER}/{material}_chestplate.png")
 		color = list(color.getdata())										# Get image (1D Array)
 		color = [(r,g,b) for (r,g,b,a) in color if a > 0]					# Get all colors that are not transparent
 		color = [sum(x) / len(color) for x in zip(*color)]					# Get the average color

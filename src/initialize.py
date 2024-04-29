@@ -36,7 +36,7 @@ REPLACEMENTS = {
 	"_west": "_left",
 	"_east": "_right",
 }
-for root, _, files in os.walk(TEXTURES_FOLDER):
+for root, _, files in os.walk(ASSETS_FOLDER):
 	for file in files:
 		if not file.endswith(".png"):
 			continue

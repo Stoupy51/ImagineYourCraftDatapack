@@ -37,7 +37,7 @@ INGREDIENTS = ["ingot", "nugget", "dust", "fragment", "raw", ""]
 ARMORS = list(EQUIPMENTS)[:4]
 
 # Get every item texture paths from textures folder
-all_textures = [f for f in os.listdir(TEXTURES_FOLDER) if os.path.isfile(os.path.join(TEXTURES_FOLDER, f))]
+all_textures = [f for f in os.listdir(ASSETS_FOLDER) if os.path.isfile(os.path.join(ASSETS_FOLDER, f))]
 
 # Remove sides and ignored textures
 IGNORED_TEXTURES = [f"{ore.replace('massive_','')}_layer_{layer+1}" for ore in ORES for layer in range(2)]

@@ -21,7 +21,7 @@ def parallelized_thread(function: callable, args: dict|tuple|list):
 def chunk_thread(args):
 	return parallelized_thread(*args)
 
-def parallelize(processes: list[tuple[callable, dict|tuple|list]]):
+def parallelize(processes: list[tuple[callable, dict|tuple|list]], nb_workers: int = os.cpu_count()):
 	""" Parallelize the function
 	Args:
 		processes	(list[tuple[callable, dict]):	A list of tuples containing the function and the args to pass to it
@@ -30,8 +30,6 @@ def parallelize(processes: list[tuple[callable, dict|tuple|list]]):
 	Returns:
 		list[Any]: The return of the function for each process
 	"""
-	nb_workers = os.cpu_count if CPU_THREADS < 1 else CPU_THREADS
-	nb_workers = min(nb_workers, len(processes))
-	with Pool(processes = nb_workers) as pool:
+	with Pool(processes = min(nb_workers, len(processes))) as pool:
 		return pool.map(chunk_thread, processes)
 

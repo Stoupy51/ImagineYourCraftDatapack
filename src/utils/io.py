@@ -106,3 +106,14 @@ def super_merge_dict(dict1: dict, dict2: dict) -> dict:
 	# Return the new dict
 	return new_dict
 
+# The majority of files will be written at the end of the program to prevent excessive disk access (reading + appending + writing)
+FILES_TO_WRITE: dict[str, str] = {}
+def write_to_file(file_path: str, content: str):
+	if file_path not in FILES_TO_WRITE:
+		FILES_TO_WRITE[file_path] = ""
+	FILES_TO_WRITE[file_path] += str(content)
+def write_all_files():
+	for file_path, content in FILES_TO_WRITE.items():
+		with super_open(file_path, "w") as f:
+			f.write(content)
+

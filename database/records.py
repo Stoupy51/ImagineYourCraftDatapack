@@ -5,6 +5,7 @@ from src.utils.print import *
 from src.utils.io import *
 
 # Not Usable Records
+# TODO, add official support
 i = 1
 sounds = {}
 for root, dirs, files in os.walk(f"{ROOT}/textures/records"):
@@ -29,7 +30,6 @@ for root, dirs, files in os.walk(f"{ROOT}/textures/records"):
 	pass
 
 # Write sounds.json
-with super_open(f"{BUILD_RESOURCE_PACK}/assets/{NAMESPACE}/sounds.json", "w") as f:
-	super_json_dump(sounds, f, max_level = 1)
+write_to_file(f"{BUILD_RESOURCE_PACK}/assets/{NAMESPACE}/sounds.json", super_json_dump(sounds, max_level = 1))
 info("Records added")
 

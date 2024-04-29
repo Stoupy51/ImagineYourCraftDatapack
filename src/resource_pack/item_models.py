@@ -9,6 +9,7 @@ variants = FACES + SIDES + ("_on",)
 armors = ["helmet", "chestplate", "leggings", "boots"]
 tools = ["sword", "pickaxe", "axe", "shovel", "hoe"]
 
+
 # For each item,
 used_textures = set()
 for item, data in DATABASE.items():
@@ -39,75 +40,71 @@ for item, data in DATABASE.items():
 	powered = ["","_on"] if any(x for x in additional_textures if x.endswith("_on")) > 0 else [""]
 	for on_off in powered:
 		dest_base_model = f"{BUILD_RESOURCE_PACK}/assets/{NAMESPACE}/models/{block_or_item}"
-		with super_open(f"{dest_base_model}/{item}{on_off}.json", "w") as f:
-			if block_or_item == "block":
-				content = {"parent": "block/cube_all"}
-				content["textures"] = {}
+		if block_or_item == "block":
+			content = {"parent": "block/cube_all"}
+			content["textures"] = {}
 
-				# If only one, apply everywhere
-				if not additional_textures:
-					content["textures"]["all"] = f"{NAMESPACE}:{block_or_item}/{item}"
+			# If only one, apply everywhere
+			if not additional_textures:
+				content["textures"]["all"] = f"{NAMESPACE}:{block_or_item}/{item}"
 
-				# If more than one, apply to each side
-				else:
-					content["elements"] = [{"from": [0, 0, 0], "to": [16, 16, 16], "faces": {}}]
-					default_texture = f"{NAMESPACE}:{block_or_item}/{item}{on_off}"
-
-					# Generate links between FACES and textures
-					for face in FACES:
-						content["elements"][0]["faces"][face] = {"texture": f"#{face}", "cullface": face}
-						content["textures"][face] = default_texture
-		
-					# For each possible side (in reverse order)
-					for i in range(len(SIDES), 0, -1):
-						side = SIDES[i - 1].replace("_", "")
-		
-						# If we have a texture for the side
-						if any(side in x for x in additional_textures):
-
-							# Get path
-							path = f"{NAMESPACE}:{block_or_item}/{item}_{side}"
-							if on_off == "_on" and f"{item}_{side}_on" in additional_textures:
-								path += "_on"
-							used_textures.add(path)
-
-							# If it's a side, apply to all FACES (as it is first, it will be overwritten by the others)
-							if side == "side":
-								for face in FACES:
-									content["textures"][face] = path
-
-							# Else, apply the texture to the face with the same name
-							else:
-								face = FACES[i - 1]
-								content["textures"][face] = path
-		
-								# Exception: apply top texture also to bottom
-								if face == "up":
-									content["textures"]["down"] = path
-					pass
-
-			# Else, it's an item
+			# If more than one, apply to each side
 			else:
+				content["elements"] = [{"from": [0, 0, 0], "to": [16, 16, 16], "faces": {}}]
+				default_texture = f"{NAMESPACE}:{block_or_item}/{item}{on_off}"
 
-				path = f"{NAMESPACE}:{block_or_item}/{item}{on_off}"
-				used_textures.add(path)
-				content = {"parent": "item/generated",	"textures": {"layer0": path}}
-				if any(x in item for x in armors):
-					content["textures"]["layer1"] = content["textures"]["layer0"]
-				if any(x in item for x in tools):
-					content["parent"] = "item/handheld"
-				pass
+				# Generate links between FACES and textures
+				for face in FACES:
+					content["elements"][0]["faces"][face] = {"texture": f"#{face}", "cullface": face}
+					content["textures"][face] = default_texture
+	
+				# For each possible side (in reverse order)
+				for i in range(len(SIDES), 0, -1):
+					side = SIDES[i - 1].replace("_", "")
+	
+					# If we have a texture for the side
+					if any(side in x for x in additional_textures):
+
+						# Get path
+						path = f"{NAMESPACE}:{block_or_item}/{item}_{side}"
+						if on_off == "_on" and f"{item}_{side}_on" in additional_textures:
+							path += "_on"
+						used_textures.add(path)
+
+						# If it's a side, apply to all FACES (as it is first, it will be overwritten by the others)
+						if side == "side":
+							for face in FACES:
+								content["textures"][face] = path
+
+						# Else, apply the texture to the face with the same name
+						else:
+							face = FACES[i - 1]
+							content["textures"][face] = path
+	
+							# Exception: apply top texture also to bottom
+							if face == "up":
+								content["textures"]["down"] = path
+
+		# Else, it's an item
+		else:
+
+			path = f"{NAMESPACE}:{block_or_item}/{item}{on_off}"
+			used_textures.add(path)
+			content = {"parent": "item/generated",	"textures": {"layer0": path}}
+			if any(x in item for x in armors):
+				content["textures"]["layer1"] = content["textures"]["layer0"]
+			if any(x in item for x in tools):
+				content["parent"] = "item/handheld"
 			
-			# Write content
-			super_json_dump(content, f, max_level = 4)
+		# Write content
+		write_to_file(f"{dest_base_model}/{item}{on_off}.json", super_json_dump(content, max_level = 4))
 
 		# Generate placed models for item_display if it's a block
 		if block_or_item == "block":
 			dest_base_model = f"{BUILD_RESOURCE_PACK}/assets/{NAMESPACE}/models/{block_or_item}/for_item_display"
 			content["display"] = MODEL_DISPLAY
-			with super_open(f"{dest_base_model}/{item}{on_off}.json", "w") as f:
-				super_json_dump(content, f, max_level = 4)
-	pass
+			write_to_file(f"{dest_base_model}/{item}{on_off}.json", super_json_dump(content, max_level = 4))
+
 
 # Make warning for missing textures
 warns = []

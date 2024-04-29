@@ -4,31 +4,25 @@ from src.config import *
 from src.utils.io import *
 from src.utils.print import *
 
+
 # Setup load json files and tick json file
-with super_open(f"{BUILD_DATAPACK}/data/load/tags/functions/load.json", "w") as f:
-	f.write(super_json_dump({"values": [f"#{NAMESPACE}:load/main"]}))
-with super_open(f"{BUILD_DATAPACK}/data/{NAMESPACE}/tags/functions/load/main.json", "w") as f:
-	f.write(super_json_dump({"values": [{"id":f"#{NAMESPACE}:load/dependencies","required":False}, f"{NAMESPACE}:load/main"]}, max_level = 3))
-with super_open(f"{BUILD_DATAPACK}/data/{NAMESPACE}/tags/functions/load/dependencies.json", "w") as f:
-	calls = [{"id":f"#{namespace}:load", "required": False} for namespace in DEPENDENCIES.keys()]
-	f.write(super_json_dump({"values": calls}))
-with super_open(f"{BUILD_DATAPACK}/data/minecraft/tags/functions/tick.json", "w") as f:
-	f.write(super_json_dump({"values": [f"{NAMESPACE}:load/tick_verification"]}))
-	pass
+write_to_file(f"{BUILD_DATAPACK}/data/load/tags/functions/load.json", super_json_dump({"values": [f"#{NAMESPACE}:load/main"]}))
+write_to_file(f"{BUILD_DATAPACK}/data/{NAMESPACE}/tags/functions/load/main.json", super_json_dump({"values": [{"id":f"#{NAMESPACE}:load/dependencies","required":False}, f"{NAMESPACE}:load/main"]}, max_level = 3))
+calls = [{"id":f"#{namespace}:load", "required": False} for namespace in DEPENDENCIES.keys()]
+write_to_file(f"{BUILD_DATAPACK}/data/{NAMESPACE}/tags/functions/load/dependencies.json", super_json_dump({"values": calls}))
+write_to_file(f"{BUILD_DATAPACK}/data/minecraft/tags/functions/tick.json", super_json_dump({"values": [f"{NAMESPACE}:load/tick_verification"]}))
 
 
 # Setup load main and secondary function
-with super_open(f"{BUILD_DATAPACK}/data/{NAMESPACE}/functions/load/main.mcfunction", "w") as f:
-	f.write(f"""
+write_to_file(f"{BUILD_DATAPACK}/data/{NAMESPACE}/functions/load/main.mcfunction", f"""
 # Avoiding multiple executions of the same load function
 execute unless score {DATAPACK_NAME} load.status matches 1.. run function {NAMESPACE}:load/secondary
 
 """)
-with super_open(f"{BUILD_DATAPACK}/data/{NAMESPACE}/functions/load/secondary.mcfunction", "w") as f:
-	major, minor, patch = VERSION.split(".")
-	authors = AUTHOR.split(" ")
-	convention_debug = "".join([f"tag {author} add convention.debug\n" for author in authors])
-	f.write(f"""
+major, minor, patch = VERSION.split(".")
+authors = AUTHOR.split(" ")
+convention_debug = "".join([f"tag {author} add convention.debug\n" for author in authors])
+content = f"""
 # {DATAPACK_NAME}
 scoreboard objectives add {NAMESPACE}.data dummy
 scoreboard players set #{NAMESPACE}.major load.status {major}
@@ -40,33 +34,30 @@ scoreboard players set #{NAMESPACE}.patch load.status {patch}
 function {NAMESPACE}:load/check_dependencies
 function {NAMESPACE}:load/waiting_for_player
 
-""")
-	pass
+"""
+write_to_file(f"{BUILD_DATAPACK}/data/{NAMESPACE}/functions/load/secondary.mcfunction", content)
 
 
-# Check Dependencies
-with super_open(f"{BUILD_DATAPACK}/data/{NAMESPACE}/functions/load/check_dependencies.mcfunction", "w") as f:
-	checks = ""
-	for namespace, value in DEPENDENCIES.items():
-		major, minor, patch = value["version"]
-		checks += f"execute if score #dependency_error {NAMESPACE}.data matches 0 unless score #{namespace}.major load.status matches {major}.. unless score #{namespace}.minor load.status matches {minor}.. unless score #{namespace}.patch load.status matches {patch}.. run scoreboard players set #dependency_error {NAMESPACE}.data 1\n"
-	f.write(f"""
+# Check dependencies
+checks = ""
+for namespace, value in DEPENDENCIES.items():
+	major, minor, patch = value["version"]
+	checks += f"execute if score #dependency_error {NAMESPACE}.data matches 0 unless score #{namespace}.major load.status matches {major}.. unless score #{namespace}.minor load.status matches {minor}.. unless score #{namespace}.patch load.status matches {patch}.. run scoreboard players set #dependency_error {NAMESPACE}.data 1\n"
+content = f"""
 ## Check if {DATAPACK_NAME} is loadable (dependencies)
-scoreboard players set #dependency_error {NAMESPACE}.data 0
-{checks}
-""")
-	pass
+scoreboard players set #dependency_error {NAMESPACE}.data 0"""
+content += "\n" + checks + "\n"
+write_to_file(f"{BUILD_DATAPACK}/data/{NAMESPACE}/functions/load/check_dependencies.mcfunction", content)
 
 
 # Waiting for player
-with super_open(f"{BUILD_DATAPACK}/data/{NAMESPACE}/functions/load/waiting_for_player.mcfunction", "w") as f:
-	decoder_checks = ""
-	for namespace, value in DEPENDENCIES.items():
-		major, minor, patch = value["version"]
-		name = value["name"]
-		url = value["url"]
-		decoder_checks += f'execute if score #dependency_error {NAMESPACE}.data matches 1 unless score #{namespace}.major load.status matches {major}.. unless score #{namespace}.minor load.status matches {minor}.. unless score #{namespace}.patch load.status matches {patch}.. run tellraw @a {{"text":"- [{name}]","color":"gold","clickEvent":{{"action":"open_url","value":"{url}"}}}}\n'
-	f.write(f"""
+decoder_checks = ""
+for namespace, value in DEPENDENCIES.items():
+	major, minor, patch = value["version"]
+	name = value["name"]
+	url = value["url"]
+	decoder_checks += f'execute if score #dependency_error {NAMESPACE}.data matches 1 unless score #{namespace}.major load.status matches {major}.. unless score #{namespace}.minor load.status matches {minor}.. unless score #{namespace}.patch load.status matches {patch}.. run tellraw @a {{"text":"- [{name}]","color":"gold","clickEvent":{{"action":"open_url","value":"{url}"}}}}\n'
+write_to_file(f"{BUILD_DATAPACK}/data/{NAMESPACE}/functions/load/waiting_for_player.mcfunction", f"""
 # Waiting for a player to get the game version, but stop function if no player found
 execute unless entity @p run schedule function {NAMESPACE}:load/waiting_for_player 1t replace
 execute unless entity @p run return 0
@@ -84,7 +75,6 @@ execute if score #dependency_error {NAMESPACE}.data matches 1 run tellraw @a {{"
 execute if score #game_version {NAMESPACE}.data matches 1.. if score #mcload_error {NAMESPACE}.data matches 0 if score #dependency_error {NAMESPACE}.data matches 0 run function {NAMESPACE}:load/confirm_load
 
 """)
-	pass
 
 
 # Confirm load
@@ -100,8 +90,7 @@ for item, data in DATABASE.items():
 	items_storage += f"data modify storage {NAMESPACE}:items all.{item} set value " + super_json_dump(mc_data, max_level = 0)
 	pass
 
-with super_open(f"{BUILD_DATAPACK}/data/{NAMESPACE}/functions/load/confirm_load.mcfunction", "w") as f:
-	f.write(f"""
+write_to_file(f"{BUILD_DATAPACK}/data/{NAMESPACE}/functions/load/confirm_load.mcfunction", f"""
 tellraw @a[tag=convention.debug] {{"text":"[Loaded {DATAPACK_NAME} v{VERSION}]","color":"green"}}
 
 scoreboard objectives add {NAMESPACE}.private dummy
@@ -114,15 +103,12 @@ execute store result score #second {NAMESPACE}.data run random value 1..19
 data modify storage {NAMESPACE}:items all set value {{}}
 {items_storage}
 """)
-	pass
 
 
 # Tick verification
-with super_open(f"{BUILD_DATAPACK}/data/{NAMESPACE}/functions/load/tick_verification.mcfunction", "w") as f:
-	f.write(f"""
+write_to_file(f"{BUILD_DATAPACK}/data/{NAMESPACE}/functions/load/tick_verification.mcfunction", f"""
 execute if score #{NAMESPACE}.loaded load.status matches 1 run function {NAMESPACE}:tick
 
 """)
-	pass
 info("All loading functions and tags created")
 

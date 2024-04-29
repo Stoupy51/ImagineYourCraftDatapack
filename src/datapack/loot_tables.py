@@ -17,9 +17,7 @@ for item, data in DATABASE.items():
 	# Add functions
 	loot_table["pools"][0]["entries"][0]["functions"] = [set_components]
 
-	with super_open(f"{BUILD_DATAPACK}/data/{NAMESPACE}/loot_tables/i/{item}.json", "w") as f:
-		super_json_dump(loot_table, f, max_level = 9)
-	pass
+	write_to_file(f"{BUILD_DATAPACK}/data/{NAMESPACE}/loot_tables/i/{item}.json", super_json_dump(loot_table, max_level = 9))
 info("Made loot tables for every item")
 
 
@@ -35,8 +33,7 @@ for item, data in DATABASE.items():
 		# For each result count, create a loot table for it
 		for result_count in results:
 			loot_table = {"pools":[{"rolls":1,"entries":[{"type":"minecraft:loot_table","value":f"{NAMESPACE}:i/{item}","functions":[{"function":"minecraft:set_count","count":result_count}]}]}]}
-			with super_open(f"{BUILD_DATAPACK}/data/{NAMESPACE}/loot_tables/i/{item}_x{result_count}.json", "w") as f:
-				super_json_dump(loot_table, f, max_level = -1)
+			write_to_file(f"{BUILD_DATAPACK}/data/{NAMESPACE}/loot_tables/i/{item}_x{result_count}.json", super_json_dump(loot_table, max_level = -1))
 info("Multiple counts loot tables made for every item with crafting recipes")
 
 
@@ -62,7 +59,6 @@ for i in range(total_chests):
 		chest_contents.append(f'{{slot:{j},item:{{count:1,id:"{id}",components:{json_content}}}}}')
 	joined_content = ",".join(chest_contents)
 	chests.append(f'give @s chest[container=[{joined_content}],custom_name=\'{{"text":"Chest [{i+1}/{total_chests}]","color":"yellow"}}\',lore=[\'{{"text":"{DATAPACK_NAME}","italic":true,"color":"blue"}}\']]')
-with super_open(f"{BUILD_DATAPACK}/data/{NAMESPACE}/functions/_give_all.mcfunction", "w") as f:
-	f.write("\n" + "\n\n".join(chests) + "\n\n")
+write_to_file(f"{BUILD_DATAPACK}/data/{NAMESPACE}/functions/_give_all.mcfunction", "\n" + "\n\n".join(chests) + "\n\n")
 info("Give all function successfully made")
 

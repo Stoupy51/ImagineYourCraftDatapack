@@ -5,6 +5,10 @@ from src.utils.io import *
 from src.utils.print import *
 import shutil
 
+# Write every pending files
+write_all_files()
+debug("All pending files written")
+
 # For every file in the merge folder, copy it to the build folder (with append content)
 print()
 for root, _, files in os.walk(MERGE_FOLDER):

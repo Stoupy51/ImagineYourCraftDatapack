@@ -55,11 +55,10 @@ SIDES: tuple = ("_bottom", "_top", "_front", "_back", "_left", "_right", "_side"
 CUSTOM_BLOCK_VANILLA: str = "minecraft:furnace"			# Vanilla block used as base for custom blocks, must have the "facing" blockstate
 CUSTOM_ENTITY_VANILLA: str = "minecraft:item_frame"		# Same purpose as previous, but useful for blocks that can be placed on walls or on player's position (ex: flowers)
 CUSTOM_ITEM_VANILLA: str = "minecraft:command_block"	# Vanilla item used as base for custom items, must not have any survival vanilla behaviour
-MISC = "miscellaneous"
-MODEL_DISPLAY = {"head":{"rotation":[0,0,0],"translation":[0,-30.42,0],"scale":[1.605,1.605,1.605]},"fixed":{"rotation":[-90,0,0],"translation":[0,0,-16],"scale":[2.0075,2.0075,2.0075]}}
-MAX_ITEMS_PER_ROW = 5	# Max number of items per row in the manual
-MAX_ROWS_PER_PAGE = 5	# Max number of rows per page in the manual
-OPENGL_RESOLUTION = 64
+MODEL_DISPLAY: dict[str, dict] = {"head":{"rotation":[0,0,0],"translation":[0,-30.42,0],"scale":[1.605,1.605,1.605]},"fixed":{"rotation":[-90,0,0],"translation":[0,0,-16],"scale":[2.0075,2.0075,2.0075]}}	# Model display base for custom blocks
+MAX_ITEMS_PER_ROW: int = 5		# Max number of items per row in the manual, should not exceed 6
+MAX_ROWS_PER_PAGE: int = 5		# Max number of rows per page in the manual, should not exceed 6
+OPENGL_RESOLUTION: int = 64		# Resolution of the OpenGL renders used in the manual, best value is 64 <--- 64x64
 
 # UUIDs for attribute modifiers to avoid conflicts, feel free to use them for your database
 UUIDS = {

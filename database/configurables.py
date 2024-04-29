@@ -2,6 +2,7 @@
 from src.config import *
 
 # Constants
+MISC = "miscellaneous"
 STARTING_CMD = 2015000	# Prefix for custom_model_data
 EQUIPMENTS = {
 	"helmet":		{"diamond":{"durability":363,"armor":3,"armor_toughness":2},"netherite":{"durability":407,"armor":3,"armor_toughness":3,"knockback_resistance":0.1}},

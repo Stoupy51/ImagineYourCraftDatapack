@@ -137,7 +137,7 @@ for item, data in DATABASE.items():
 		
 		# Destroy function
 		content = f"""
-# Kill undesired items and replace the item
+# Replace the item with the custom one
 data modify entity @e[type=item,nbt={{Item:{{id:"{block}"}}}},limit=1,sort=nearest,distance=..1] Item.components set from storage {NAMESPACE}:items all.{item}.components
 data modify entity @e[type=item,nbt={{Item:{{id:"{block}"}}}},limit=1,sort=nearest,distance=..1] Item.id set from storage {NAMESPACE}:items all.{item}.id
 """
@@ -149,7 +149,7 @@ data modify entity @e[type=item,nbt={{Item:{{id:"{block}"}}}},limit=1,sort=neare
 				content += f"{data[COMMANDS_ON_BREAK]}\n"
 		
 		# Write file
-		write_to_file(f"{path}/destroy.mcfunction", content + "kill @s\n\n")
+		write_to_file(f"{path}/destroy.mcfunction", content + "\n# Kill the custom block entity\nkill @s\n\n")
 
 
 # Write the used_vanilla_blocks tag, the predicate to check the blocks with the tag and an advanced one

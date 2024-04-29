@@ -135,6 +135,26 @@ data modify entity @e[type=item,nbt={{Item:{{id:"{block}"}}}},limit=1,sort=neare
 
 
 
+# Write the used_vanilla_blocks tag, the predicate to check the blocks with the tag, and the tick_2 function to check the blocks
+VANILLA_BLOCKS_TAG = "used_vanilla_blocks"
+with super_open(f"{BUILD_DATAPACK}/data/{NAMESPACE}/tags/blocks/{VANILLA_BLOCKS_TAG}.json", "w") as f:
+	super_json_dump({"values": list(unique_blocks)}, f)
+with super_open(f"{BUILD_DATAPACK}/data/{NAMESPACE}/predicates/check_vanilla_blocks.json", "w") as f:
+	predicate = {"condition": "minecraft:location_check", "predicate": {"block": {"blocks": f"#{NAMESPACE}:{VANILLA_BLOCKS_TAG}"}}}
+	super_json_dump(predicate, f)
+"""
+# 2 ticks destroy detection
+execute as @e[tag=simplenergy.destroyer,tag=!simplenergy.item_destroy,predicate=!simplenergy:check_destroyer] at @s run function simplenergy:destroy/all
+"""
+with super_open(f"{BUILD_DATAPACK}/data/{NAMESPACE}/functions/tick_2.mcfunction", "w") as f:
+	f.write(f"""
+# 2 ticks destroy detection
+execute as @e[type=item_display,tag={NAMESPACE}.custom_block,tag=!{NAMESPACE}.vanilla.{VANILLA_BLOCK_FOR_ORES.replace(':', '')},predicate=!{NAMESPACE}:check_vanilla_blocks] at @s run function {NAMESPACE}:custom_blocks/destroy
+
+""")
+
+
+
 
 info("All customs blocks are now placeable and destroyable!")
 

@@ -150,7 +150,7 @@ predicate = {"condition": "minecraft:location_check", "predicate": {"block": {"b
 write_to_file(f"{BUILD_DATAPACK}/data/{NAMESPACE}/predicates/check_vanilla_blocks.json", super_json_dump(predicate))
 write_to_file(f"{BUILD_DATAPACK}/data/{NAMESPACE}/functions/tick_2.mcfunction", f"""
 # 2 ticks destroy detection
-execute as @e[type=item_display,tag={NAMESPACE}.custom_block,tag=!{NAMESPACE}.vanilla.{VANILLA_BLOCK_FOR_ORES.replace(':', '')},predicate=!{NAMESPACE}:check_vanilla_blocks] at @s run function {NAMESPACE}:custom_blocks/destroy
+execute as @e[type=item_display,tag={NAMESPACE}.custom_block,tag=!{NAMESPACE}.vanilla.{VANILLA_BLOCK_FOR_ORES.replace(':', '_')},predicate=!{NAMESPACE}:check_vanilla_blocks] at @s run function {NAMESPACE}:custom_blocks/destroy
 
 """)
 

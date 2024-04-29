@@ -178,6 +178,7 @@ write_to_file(f"{DATAPACK_FUNCTIONS}/second_5.mcfunction", f"""
 execute as @e[type=item_display,tag={NAMESPACE}.custom_block,predicate=!{NAMESPACE}:advanced_check_vanilla_blocks] at @s run function {NAMESPACE}:custom_blocks/destroy
 """)
 
+# TODO: Custom ore destruction
 
 
 info("All customs blocks are now placeable and destroyable!")

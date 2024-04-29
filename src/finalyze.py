@@ -71,7 +71,7 @@ for source, destination, copy_destination in processes:
 
 # Copy datapack libraries
 try:
-	for root, dirs, files in os.walk(f"{ROOT}/libs"):
+	for root, dirs, files in os.walk(LIBS_FOLDER + "/datapack"):
 		for file in files:
 			if file.endswith(".zip"):
 				shutil.copy(f"{root}/{file}", BUILD_COPY_DESTINATIONS[0])

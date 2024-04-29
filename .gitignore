@@ -1,6 +1,7 @@
 
 *__pycache__/
 build
+manual
 debug_manual.json
 database_debug.json
 

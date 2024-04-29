@@ -99,6 +99,10 @@ def super_merge_dict(dict1: dict, dict2: dict) -> dict:
 		if key in dict1 and isinstance(dict1[key], dict) and isinstance(value, dict):
 			new_dict[key] = super_merge_dict(dict1[key], value)
 		
+		# Else if it's a list, merge it
+		elif key in dict1 and isinstance(dict1[key], list) and isinstance(value, list):
+			new_dict[key] = list(set(dict1[key] + value))
+		
 		# Else, just overwrite or add value
 		else:
 			new_dict[key] = value

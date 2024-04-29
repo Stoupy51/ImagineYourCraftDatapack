@@ -7,24 +7,32 @@ import json
 
 # Get all mcfunctions paths
 mcfunctions = {}
-functions_folder = f"{DATAPACK_FUNCTIONS}"
+functions_folder = "/functions/"
 for file_path in FILES_TO_WRITE:
 	if functions_folder in file_path and file_path.endswith(".mcfunction"):
+
+		# Get namespace of the file
+		splitted = file_path.split(functions_folder)
+		namespace = splitted[0].split("/")[-1]
 			
-		# Get string that is used for calling the function (ex: "function:my_function")
-		to_be_called = f"{NAMESPACE}:" + file_path.replace(functions_folder + "/", "").replace(".mcfunction","")
+		# Get string that is used for calling the function (ex: "namespace:my_function")
+		to_be_called = f"{NAMESPACE}:" + splitted[1].replace(".mcfunction","")
 		
 		# Add to mcfunctions dictionary
 		mcfunctions[to_be_called] = {"path": file_path, "within":[]}
 
 
 # For each json file, get the functions that it calls
-functions_tags_folder = f"{BUILD_DATAPACK}/data/{NAMESPACE}/tags/functions"
+functions_tags_folder = "/tags/functions/"
 for file_path in FILES_TO_WRITE:
 	if functions_tags_folder in file_path and file_path.endswith(".json"):
 
-		# Get string that is used for calling the function (ex: "function:my_function")
-		to_be_called = f"#{NAMESPACE}:" + file_path.replace(functions_tags_folder + "/", "").replace(".json","")
+		# Get namespace of the file
+		splitted = file_path.split(functions_tags_folder)
+		namespace = splitted[0].split("/")[-1]
+
+		# Get string that is used for calling the function (ex: "#namespace:my_function")
+		to_be_called = f"#{namespace}:" + splitted[1].replace(".json","")
 
 		# Read the json file and loop its values
 		data = json.loads(FILES_TO_WRITE[file_path])

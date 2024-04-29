@@ -27,7 +27,7 @@ for root, _, files in os.walk(MERGE_FOLDER):
 				build_dict = json.loads(FILES_TO_WRITE[build_path])
 				
 				# Write the merged dictionnaries to the build file
-				FILES_TO_WRITE[build_path] = super_json_dump(super_merge_dict(build_dict, merge_dict), -1)
+				FILES_TO_WRITE[build_path] = super_json_dump(super_merge_dict(build_dict, merge_dict), max_level = -1)
 		else:
 			# Get content of .mcfunction file to correctly append headers
 			if file.endswith((".json",".mcfunction")):

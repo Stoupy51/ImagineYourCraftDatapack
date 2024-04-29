@@ -178,7 +178,26 @@ write_to_file(f"{DATAPACK_FUNCTIONS}/second_5.mcfunction", f"""
 execute as @e[type=item_display,tag={NAMESPACE}.custom_block,predicate=!{NAMESPACE}:advanced_check_vanilla_blocks] at @s run function {NAMESPACE}:custom_blocks/destroy
 """)
 
-# TODO: Custom ore destruction
+
+
+## Custom ores break detection
+write_to_file(f"{BUILD_DATAPACK}/data/common_signals/tags/functions/signals/on_new_item.json", super_json_dump({"values": [f"{NAMESPACE}:calls/common_signals/new_item"]}))
+write_to_file(f"{DATAPACK_FUNCTIONS}/calls/common_signals/new_item.mcfunction", f"""
+# If the item is from a custom ore, launch the on_ore_destroyed function
+execute if data entity @s Item.components.\"minecraft:custom_data\".common_signals.temp at @s align xyz run function {NAMESPACE}:calls/common_signals/on_ore_destroyed
+""")
+write_to_file(f"{DATAPACK_FUNCTIONS}/calls/common_signals/on_ore_destroyed.mcfunction", f"""
+# Get in a score the item count and if it is a silk touch
+scoreboard players set #item_count {NAMESPACE}.data 0
+scoreboard players set #is_silk_touch {NAMESPACE}.data 0
+execute store result score #item_count {NAMESPACE}.data run data get entity @s Item.count
+execute store success score #is_silk_touch {NAMESPACE}.data if data entity @s Item.components."minecraft:custom_data".common_signals.silk_touch
+
+# Try to destroy the block
+execute as @e[tag={NAMESPACE}.custom_block,dx=0,dy=0,dz=0] at @s run function {NAMESPACE}:custom_blocks/destroy
+""")
+
+
 
 
 info("All customs blocks are now placeable and destroyable!")

@@ -1,7 +1,8 @@
 
 # Import config
 from src.config import *
-from database.additions import *
+from database.configurables import STARTING_CMD
+from src.utils.print import *
 from src.utils.io import *
 
 # Get every vanilla IDs
@@ -52,10 +53,12 @@ content = {"parent": "block/deepslate", "overrides": []}
 for item, data in DATABASE.items():
 	if data["id"] in (CUSTOM_BLOCK_VANILLA, CUSTOM_ENTITY_VANILLA):
 		content["overrides"].append({"predicate": { "custom_model_data": data["custom_model_data"]}, "model": f"{NAMESPACE}:block/for_item_display/{item}" })
+content["overrides"].append({"predicate": { "custom_model_data": 2010000}, "model": f"minecraft:item/none"})
 write_to_file(
 	f"{BUILD_RESOURCE_PACK}/assets/minecraft/models/item/deepslate.json",
 	super_json_dump(content).replace('{"','{ "').replace('"}','" }').replace(',"', ', "') + "\n"
 )
+write_to_file(f"{BUILD_RESOURCE_PACK}/assets/minecraft/models/item/none.json", "")
 
 info("Vanilla models created")
 

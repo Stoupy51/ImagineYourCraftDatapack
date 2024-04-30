@@ -1,5 +1,5 @@
 
-from src.config import *
+from config import *
 
 # Constants
 MISC = "miscellaneous"

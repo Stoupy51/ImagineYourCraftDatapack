@@ -1,6 +1,6 @@
 
 # Import config
-from src.config import *
+from config import *
 print()
 
 # For each item, copy textures and make models

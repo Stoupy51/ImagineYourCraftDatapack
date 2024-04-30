@@ -1,6 +1,6 @@
 
 ## TODO: verify database and dump it before hand
-from src.config import *
+from config import *
 
 # Add additional data to the custom blocks
 for item, data in DATABASE.items():

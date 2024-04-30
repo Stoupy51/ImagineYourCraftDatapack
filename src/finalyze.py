@@ -1,7 +1,7 @@
 
 # Import config
 print()
-from src.config import *
+from config import *
 from src.utils.io import *
 from src.utils.print import *
 import shutil

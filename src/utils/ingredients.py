@@ -1,5 +1,5 @@
 
-from src.config import NAMESPACE
+from config import NAMESPACE
 
 # Function mainly used for database generation
 def ingr_repr(id: str, count: int|None = None) -> dict:

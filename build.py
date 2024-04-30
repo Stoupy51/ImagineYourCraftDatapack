@@ -16,7 +16,7 @@ if __name__ == "__main__":
 	START_TIME = time.time()
 	os.system("color")
 
-	from src.config import *
+	from config import *
 
 	# Initialize build process
 	from src.initialize import *

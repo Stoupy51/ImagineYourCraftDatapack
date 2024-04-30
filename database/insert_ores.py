@@ -1,6 +1,6 @@
 
 # Imports
-from src.config import *
+from config import *
 from database.configurables import *
 from src.utils.ingredients import *
 from src.utils.print import *

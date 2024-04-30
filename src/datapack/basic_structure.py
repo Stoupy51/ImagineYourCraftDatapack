@@ -1,6 +1,6 @@
 
 # Imports
-from src.config import *
+from config import *
 from src.utils.io import *
 from src.utils.print import *
 

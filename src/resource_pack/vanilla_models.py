@@ -40,6 +40,7 @@ for id in vanilla_ids:
 				content["overrides"].append({"predicate": { "custom_model_data": data["custom_model_data"] + 1}, "model": f"{NAMESPACE}:{block_or_item}/{item}_on" })
 
 	# Write the content to the file
+	content["overrides"].sort(key=lambda x: x["predicate"]["custom_model_data"])
 	write_to_file(
 		f"{BUILD_RESOURCE_PACK}/assets/minecraft/models/item/{id}.json",
 		super_json_dump(content).replace('{"','{ "').replace('"}','" }').replace(',"', ', "') + "\n"
@@ -47,11 +48,13 @@ for id in vanilla_ids:
 
 
 # Generate deepslate models
-content = {"parent": "block/deepslate", "overrides": []}
+content = {"parent": "block/deepslate"}
+content["overrides"] = []
 for item, data in DATABASE.items():
 	if data["id"] in (CUSTOM_BLOCK_VANILLA, CUSTOM_ENTITY_VANILLA):
 		content["overrides"].append({"predicate": { "custom_model_data": data["custom_model_data"]}, "model": f"{NAMESPACE}:block/for_item_display/{item}" })
 content["overrides"].append({"predicate": { "custom_model_data": 2010000}, "model": f"minecraft:item/none"})
+content["overrides"].sort(key=lambda x: x["predicate"]["custom_model_data"])
 write_to_file(
 	f"{BUILD_RESOURCE_PACK}/assets/minecraft/models/item/deepslate.json",
 	super_json_dump(content).replace('{"','{ "').replace('"}','" }').replace(',"', ', "') + "\n"

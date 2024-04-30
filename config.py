@@ -83,7 +83,12 @@ COMMANDS_ON_PLACEMENT: str = "commands_on_placement"	# Key to a list of commands
 COMMANDS_ON_BREAK: str = "commands_on_break"			# Key to a list of commands to execute when a custom block is broken, should be a list of strings or a single string (with break lines if multiple commands)
 VANILLA_BLOCK: str = "vanilla_block"					# Key to a vanilla block that will be placed for custom block interaction, value can either a string of a dict {"id":"minecraft:chest", "block_states": ["facing", "type=single", "waterlogged=false"]}
 VANILLA_BLOCK_FOR_ORES: str = "minecraft:polished_deepslate"	# Vanilla block that will be used for an optimization tip for ores, don't ask questions
-NOT_COMPONENTS: list[str] = ["id", "wiki", CATEGORY, RESULT_OF_CRAFTING, USED_FOR_CRAFTING, VANILLA_BLOCK]	# Keys that should not be considered as components, used for recipes and loot tables
+NO_SILK_TOUCH_DROP: str = "no_silk_touch_drop"			# Key to an item ID in the database that will drop when silk touch is not used. Must be used only when using the vanilla block for ores, ex: "adamantium_fragment" for adamantium ore
+NOT_COMPONENTS: list[str] = [							# Keys that should not be considered as components. Used for recipes, loot tables, etc.
+	"id", "wiki", CATEGORY, RESULT_OF_CRAFTING,
+	USED_FOR_CRAFTING, VANILLA_BLOCK,
+	NO_SILK_TOUCH_DROP, COMMANDS_ON_PLACEMENT,
+	COMMANDS_ON_BREAK]
 DATABASE: dict[str, dict] = {}				# Dictionnary containing all the items, blocks, recipes, etc. used by the program. See format in database/README.md
 EXTERNAL_DATABASE: dict[str, dict] = {}		# Should be filled when you require an item from another datapack for a recipe or anything else
 

@@ -138,8 +138,7 @@ for item, data in DATABASE.items():
 		# Destroy function
 		content = f"""
 # Replace the item with the custom one
-data modify entity @e[type=item,nbt={{Item:{{id:"{block}"}}}},limit=1,sort=nearest,distance=..1] Item.components set from storage {NAMESPACE}:items all.{item}.components
-data modify entity @e[type=item,nbt={{Item:{{id:"{block}"}}}},limit=1,sort=nearest,distance=..1] Item.id set from storage {NAMESPACE}:items all.{item}.id
+execute as @e[type=item,nbt={{Item:{{id:"{block}"}}}},limit=1,sort=nearest,distance=..1] run function {NAMESPACE}:custom_blocks/{item}/replace_item
 """
 		# Add the commands on break if any
 		if COMMANDS_ON_BREAK in data:
@@ -147,9 +146,46 @@ data modify entity @e[type=item,nbt={{Item:{{id:"{block}"}}}},limit=1,sort=neare
 				content += "\n".join(data[COMMANDS_ON_BREAK]) + "\n"
 			else:
 				content += f"{data[COMMANDS_ON_BREAK]}\n"
-		
-		# Write file
 		write_to_file(f"{path}/destroy.mcfunction", content + "\n# Kill the custom block entity\nkill @s\n\n")
+
+		# Replace item function
+		if block != VANILLA_BLOCK_FOR_ORES:
+			content = f"""
+data modify entity @s Item.components set from storage {NAMESPACE}:items all.{item}.components
+data modify entity @s Item.id set from storage {NAMESPACE}:items all.{item}.id
+"""
+			"""
+# Replace the item by the ore if the player is holding a silk touch pickaxe
+execute if score #is_silk_touch simplenergy.data matches 1 run data modify entity @e[type=item,nbt={Item:{id:"minecraft:polished_deepslate"}},limit=1,sort=nearest,distance=..1] Item set from storage simplenergy:main all.deepslate_simplunium_ore
+
+# Replace the item by the raw form if the player is not holding a silk touch pickaxe
+execute if score #is_silk_touch simplenergy.data matches 0 run data modify entity @e[type=item,nbt={Item:{id:"minecraft:polished_deepslate"}},limit=1,sort=nearest,distance=..1] Item set from storage simplenergy:main all.raw_simplunium
+execute if score #is_silk_touch simplenergy.data matches 0 run scoreboard players operation #count simplenergy.data = #item_count simplenergy.data
+execute if score #is_silk_touch simplenergy.data matches 0 store result score #temp simplenergy.data run data get entity @s UUID[1]
+execute if score #is_silk_touch simplenergy.data matches 0 run scoreboard players operation #temp simplenergy.data %= #4 simplenergy.data
+execute if score #is_silk_touch simplenergy.data matches 0 run scoreboard players add #temp simplenergy.data 1
+execute if score #is_silk_touch simplenergy.data matches 0 run scoreboard players operation #count simplenergy.data *= #temp simplenergy.data
+execute if score #is_silk_touch simplenergy.data matches 0 store result entity @e[type=item,nbt={Age:0s,Item:{tag:{simplenergy:{raw_simplunium:1b}}}},limit=1,sort=nearest,distance=..1] Item.Count byte 1 run scoreboard players get #count simplenergy.data
+
+# Remove the block
+kill @s
+
+"""
+		else:
+			no_silk_touch_drop = data[NO_SILK_TOUCH_DROP]
+			content = f"""
+# If silk touch applied
+execute if score #is_silk_touch {NAMESPACE}.data matches 1 run data modify entity @s Item.components set from storage {NAMESPACE}:items all.{item}.components
+execute if score #is_silk_touch {NAMESPACE}.data matches 1 run data modify entity @s Item.id set from storage {NAMESPACE}:items all.{item}.id
+
+# Else, no silk touch
+execute if score #is_silk_touch {NAMESPACE}.data matches 0 run data modify entity @s Item.components set from storage {NAMESPACE}:items all.{no_silk_touch_drop}.components
+execute if score #is_silk_touch {NAMESPACE}.data matches 0 run data modify entity @s Item.id set from storage {NAMESPACE}:items all.{no_silk_touch_drop}.id
+
+# Get item count in every case
+execute store result entity @s Item.count byte 1 run scoreboard players get #item_count {NAMESPACE}.data
+"""
+		write_to_file(f"{path}/replace_item.mcfunction", content)
 
 
 # Write the used_vanilla_blocks tag, the predicate to check the blocks with the tag and an advanced one

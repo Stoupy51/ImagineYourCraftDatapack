@@ -172,6 +172,7 @@ kill @s
 
 """
 		else:
+			# TODO: support for namespace, currently only working with items from database
 			no_silk_touch_drop = data[NO_SILK_TOUCH_DROP]
 			content = f"""
 # If silk touch applied

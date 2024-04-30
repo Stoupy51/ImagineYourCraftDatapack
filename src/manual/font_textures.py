@@ -46,7 +46,6 @@ def image_count(count: int) -> Image:
 # Generate page font function (called in utils)
 providers = []
 SQUARE_SIZE = 32
-FURNACES_RECIPES_TYPES = ("smelting", "blasting", "smoking", "campfire_cooking")
 TEMPLATES_PATH = f"{ROOT}/src/manual/assets"
 FONT_FOLDER = f"{MANUAL_PATH}/font"
 os.makedirs(f"{FONT_FOLDER}/page", exist_ok=True)
@@ -72,7 +71,7 @@ def generate_page_font(name: str, page_font: str, craft: dict|None = None) -> No
 		)
 		result_mask = result_texture.convert("RGBA").split()[3]
 
-		if craft["type"] == "crafting_shaped":
+		if craft["type"] in "crafting_shaped":
 
 			# Get the image template and append the provider
 			shaped_size = max(2, max(len(craft["shape"]), len(craft["shape"][0])))

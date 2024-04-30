@@ -5,7 +5,7 @@ from src.utils.io import *
 from src.utils.print import *
 
 # Functions for recipes
-def RecipeShapeless(recipe: dict, item: str) -> dict:
+def shapeless_recipe(recipe: dict, item: str) -> dict:
 	""" Generate the dictionnary for the recipe json file
 	Args:
 		recipe	(dict):	The recipe to generate
@@ -40,7 +40,7 @@ def RecipeShapeless(recipe: dict, item: str) -> dict:
 		to_return["result"] = result
 	return to_return
 
-def RecipeShaped(recipe: dict, item: str) -> dict:
+def shaped_recipe(recipe: dict, item: str) -> dict:
 	try:
 		data = DATABASE[item]
 	except:
@@ -91,14 +91,14 @@ for item, data in DATABASE.items():
 			if recipe["type"] == "crafting_shapeless":
 				if any(i.get("item") == None for i in ingr):
 					continue
-				r = RecipeShapeless(recipe, item)
+				r = shapeless_recipe(recipe, item)
 				write_to_file(f"{BUILD_DATAPACK}/data/{NAMESPACE}/recipes/{name}.json", super_json_dump(r, max_level = 5))
 				i += 1
 				generated_recipes.append(name)
 			elif recipe["type"] == "crafting_shaped":
 				if any(i.get("item") == None for i in ingr.values()):
 					continue
-				r = RecipeShaped(recipe, item)
+				r = shaped_recipe(recipe, item)
 				write_to_file(f"{BUILD_DATAPACK}/data/{NAMESPACE}/recipes/{name}.json", super_json_dump(r, max_level = 5))
 				i += 1
 				generated_recipes.append(name)

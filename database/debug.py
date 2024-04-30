@@ -22,7 +22,3 @@ lst = list(DATABASE.keys())
 random.shuffle(lst)
 debug("Database generated, here are some keys:\n" + ", ".join(lst[:8]) + "...")
 
-# Export database to JSON for debugging generation
-with super_open(DATABASE_DEBUG, "w") as f:
-	super_json_dump(DATABASE, f)
-

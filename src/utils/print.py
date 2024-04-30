@@ -18,6 +18,9 @@ def warning(text: str = "") -> None:
 def error(text: str = "", exit: bool = True) -> None:
 	print(f"{RED}[ERROR {current_time()}] {text}{RESET}")
 	if exit:
-		import sys
-		sys.exit(1)
+		try:
+			input("Press enter to ignore error and continue or 'CTRL+C' to stop the program... ")
+		except KeyboardInterrupt:
+			import sys
+			sys.exit(1)
 

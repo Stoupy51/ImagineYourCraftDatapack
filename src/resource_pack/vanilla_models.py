@@ -9,9 +9,6 @@ from src.utils.io import *
 vanilla_ids = set()
 for v in DATABASE.values():
 	vanilla_ids.add(v["id"].replace("minecraft:", ""))
-if "deepslate" in vanilla_ids:
-	error("'minecraft:deepslate' is a reserved ID. Please change the ID in the database for items that use it.")
-
 
 # For each vanilla ID, create the json model file
 blocks = [CUSTOM_BLOCK_VANILLA, CUSTOM_ITEM_VANILLA]
@@ -51,7 +48,7 @@ for id in vanilla_ids:
 content = {"parent": "block/deepslate"}
 content["overrides"] = []
 for item, data in DATABASE.items():
-	if data["id"] in (CUSTOM_BLOCK_VANILLA, CUSTOM_ENTITY_VANILLA):
+	if data["id"] in (CUSTOM_BLOCK_VANILLA, CUSTOM_BLOCK_ALTERNATIVE):
 		content["overrides"].append({"predicate": { "custom_model_data": data["custom_model_data"]}, "model": f"{NAMESPACE}:block/for_item_display/{item}" })
 content["overrides"].append({"predicate": { "custom_model_data": 2010000}, "model": f"minecraft:item/none"})
 content["overrides"].sort(key=lambda x: x["predicate"]["custom_model_data"])

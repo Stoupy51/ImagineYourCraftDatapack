@@ -1,6 +1,10 @@
 
 from config import NAMESPACE
 
+# Recipes constants
+FURNACES_RECIPES_TYPES = ("smelting", "blasting", "smoking", "campfire_cooking")
+CRAFTING_RECIPES_TYPES = ("crafting_shaped", "crafting_shapeless")
+
 # Function mainly used for database generation
 def ingr_repr(id: str, count: int|None = None) -> dict:
 	""" Get the identity of the ingredient from its id for custom crafts

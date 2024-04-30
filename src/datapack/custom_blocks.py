@@ -172,16 +172,19 @@ kill @s
 
 """
 		else:
-			# TODO: support for namespace, currently only working with items from database
 			no_silk_touch_drop = data[NO_SILK_TOUCH_DROP]
+			if ':' in no_silk_touch_drop:
+				silk_text = f'execute if score #is_silk_touch {NAMESPACE}.data matches 0 run data modify entity @s Item.id set value "{no_silk_touch_drop}"'
+			else:
+				silk_text = f"execute if score #is_silk_touch {NAMESPACE}.data matches 0 run data modify entity @s Item.id set from storage {NAMESPACE}:items all.{no_silk_touch_drop}.id"
+				silk_text += f"\nexecute if score #is_silk_touch {NAMESPACE}.data matches 0 run data modify entity @s Item.components set from storage {NAMESPACE}:items all.{no_silk_touch_drop}.components"
 			content = f"""
 # If silk touch applied
-execute if score #is_silk_touch {NAMESPACE}.data matches 1 run data modify entity @s Item.components set from storage {NAMESPACE}:items all.{item}.components
 execute if score #is_silk_touch {NAMESPACE}.data matches 1 run data modify entity @s Item.id set from storage {NAMESPACE}:items all.{item}.id
+execute if score #is_silk_touch {NAMESPACE}.data matches 1 run data modify entity @s Item.components set from storage {NAMESPACE}:items all.{item}.components
 
 # Else, no silk touch
-execute if score #is_silk_touch {NAMESPACE}.data matches 0 run data modify entity @s Item.components set from storage {NAMESPACE}:items all.{no_silk_touch_drop}.components
-execute if score #is_silk_touch {NAMESPACE}.data matches 0 run data modify entity @s Item.id set from storage {NAMESPACE}:items all.{no_silk_touch_drop}.id
+{silk_text}
 
 # Get item count in every case
 execute store result entity @s Item.count byte 1 run scoreboard players get #item_count {NAMESPACE}.data

@@ -48,7 +48,7 @@ providers = []
 SQUARE_SIZE = 32
 FURNACES_RECIPES_TYPES = ("smelting", "blasting", "smoking", "campfire_cooking")
 TEMPLATES_PATH = f"{ROOT}/src/manual/assets"
-FONT_FOLDER = f"{BUILD_RESOURCE_PACK}/assets/{NAMESPACE}/textures/font"
+FONT_FOLDER = f"{MANUAL_PATH}/font"
 os.makedirs(f"{FONT_FOLDER}/page", exist_ok=True)
 def generate_page_font(name: str, page_font: str, craft: dict|None = None) -> None:
 	""" Generate the page font image with the proper items

@@ -26,16 +26,19 @@ def super_open(file_path: str, mode: str) -> io.TextIOWrapper:
 
 # For easy file copy
 def super_copy(src: str, dst: str) -> shutil.copy:
-	""" Copy a file from the source to the destination
+	""" Copy a file (or a folder) from the source to the destination
 	Args:
-		src	(str): The source file path
-		dst	(str): The destination file path
+		src	(str): The source path
+		dst	(str): The destination path
 	"""
 	# Make directory
 	os.makedirs(os.path.dirname(dst), exist_ok=True)
 
-	# Copy file
-	return shutil.copy(src, dst)
+	# If source is a folder, copy it recursively
+	if os.path.isdir(src):
+		return shutil.copytree(src, dst, dirs_exist_ok = True)
+	else:
+		return shutil.copy(src, dst)
 
 
 # JSON dump with indentation for levels

@@ -5,7 +5,7 @@ import os
 # Folders
 ROOT: str = os.path.dirname(os.path.realpath(__file__)).replace("\\", "/")
 MERGE_FOLDER: str = f"{ROOT}/merge"					# If a file exists in both merge and build folder, they will be merged. Otherwise, it's just copied.
-MANUAL_PATH: str = f"{ROOT}/manual"					# Cached manual item assets
+MANUAL_PATH: str = f"{ROOT}/manual"					# Cached manual assets
 BUILD_FOLDER: str = f"{ROOT}/build"					# Folder where the final datapack and resource pack are built
 ASSETS_FOLDER: str = f"{ROOT}/assets"				# Folder containing the all assets (textures, sounds, ...) for the datapack
 LIBS_FOLDER: str = f"{ROOT}/libs"					# The libraries are copied to the build destination, and merged with the datapack using Weld
@@ -13,12 +13,12 @@ BUILD_COPY_DESTINATIONS: tuple[str, str] = ("D:/latest_snapshot/world/datapacks"
 
 
 # Dev constants
-HAS_MANUAL: bool = False							# Do the program generate a manual/guide?
+HAS_MANUAL: bool = True							# Do the program generate a manual/guide?
 DEBUG_MODE: bool = True								# Shows up grids in manual,
 DATABASE_DEBUG: str = f"{ROOT}/database_debug.json"	# Dump of the database for debugging purposes
 CACHE_MANUAL_ASSETS: bool = True					# Caches the MC assets and the items renders for the manual (manual/items/*.png)
-CACHE_MANUAL_PAGES: bool = True						# Caches the content of the manual 
-MANUAL_DEBUG: str = f"{ROOT}/debug_manual.json"		# Dump of the manual for debugging purposes	(used when CACHE_MANUAL_PAGES is true)
+CACHE_MANUAL_PAGES: bool = True						# Caches the content of the manual and the images (manual/pages/*.png)
+MANUAL_DEBUG: str = f"{ROOT}/debug_manual.json"		# Dump of the manual for debugging purposes
 MERGE_LIBS: bool = False							# Make new zip of merged libraries with the datapack and resource pack using Smithed Weld
 
 

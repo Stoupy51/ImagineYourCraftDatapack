@@ -13,18 +13,19 @@ BUILD_COPY_DESTINATIONS: tuple[str, str] = ("D:/latest_snapshot/world/datapacks"
 
 
 # Dev constants
-HAS_MANUAL: bool = True							# Do the program generate a manual/guide?
+HAS_MANUAL: bool = True								# Do the program generate a manual/guide?
 DEBUG_MODE: bool = True								# Shows up grids in manual,
 DATABASE_DEBUG: str = f"{ROOT}/database_debug.json"	# Dump of the database for debugging purposes
 CACHE_MANUAL_ASSETS: bool = True					# Caches the MC assets and the items renders for the manual (manual/items/*.png)
 CACHE_MANUAL_PAGES: bool = True						# Caches the content of the manual and the images (manual/pages/*.png)
 MANUAL_DEBUG: str = f"{ROOT}/debug_manual.json"		# Dump of the manual for debugging purposes
-MERGE_LIBS: bool = False							# Make new zip of merged libraries with the datapack and resource pack using Smithed Weld
+MERGE_LIBS: bool = True								# Make new zip of merged libraries with the datapack and resource pack using Smithed Weld
 
 
 # Datapack related constants
 AUTHOR: str = "Stoupy51"				# Author(s) name(s) displayed in pack.mcmeta, also used to add convention.debug tag to the players of the same name(s) <-- showing additionnal displays like datapack loading
 DATAPACK_NAME: str = "ImagineYourCraft"	# Name of the datapack, used for messages and items lore
+DATAPACK_NAME_SIMPLE: str = "".join([c for c in DATAPACK_NAME if c.isalnum()])	# Simplified version of the datapack name, used for paths
 MINECRAFT_VERSION: str = "1.20.6"		# Text used when loading the datapack to warn the user when the data version is not right
 DATA_VERSION: int = 3835				# Depending on MC version, given by /data get entity @p DataVersion to check if the datapack is not running in an older version of MC
 VERSION: str = "0.0.1"					# Datapack version in the following mandatory format: major.minor.patch, ex: 1.0.0 or 1.21.615

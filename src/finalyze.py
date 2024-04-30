@@ -50,8 +50,8 @@ debug("All pending files written")
 
 # Generate zip files
 processes = [
-	(BUILD_DATAPACK, f"{BUILD_FOLDER}/{DATAPACK_NAME}_datapack", BUILD_COPY_DESTINATIONS[0]),
-	(BUILD_RESOURCE_PACK, f"{BUILD_FOLDER}/{DATAPACK_NAME}_resource_pack", BUILD_COPY_DESTINATIONS[1])
+	(BUILD_DATAPACK, f"{BUILD_FOLDER}/{DATAPACK_NAME_SIMPLE}_datapack", BUILD_COPY_DESTINATIONS[0]),
+	(BUILD_RESOURCE_PACK, f"{BUILD_FOLDER}/{DATAPACK_NAME_SIMPLE}_resource_pack", BUILD_COPY_DESTINATIONS[1])
 ]
 for source, destination, copy_destination in processes:
 	source_no_root = source.replace(f"{ROOT}/", "")
@@ -78,6 +78,21 @@ try:
 				info(f"Library '{file}' copied to '{BUILD_COPY_DESTINATIONS[0]}/'")
 except:
 	warning(f"Could not copy datapack libraries to '{BUILD_COPY_DESTINATIONS[0]}/'")
+
+
+# If merge libs is enabled, use weld to generate datapack and resource pack with bundled libraries
+if MERGE_LIBS:
+	from src.utils.weld import *
+	weld_dp = f"{BUILD_FOLDER}/{DATAPACK_NAME_SIMPLE}_datapack_with_libs.zip"
+	weld_rp = f"{BUILD_FOLDER}/{DATAPACK_NAME_SIMPLE}_resource_pack_with_libs.zip"
+	weld_datapack(weld_dp)
+	weld_resource_pack(weld_rp)
+	try:
+		shutil.copy(weld_rp, BUILD_COPY_DESTINATIONS[1])
+	except OSError:
+		pass
+	info("Datapack and resource pack merged with bundled libraries")
+
 
 # Remove __pycache__ folders because they are annoying
 for root, dirs, files in os.walk(ROOT):

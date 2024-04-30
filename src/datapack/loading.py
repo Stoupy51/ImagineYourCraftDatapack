@@ -16,7 +16,7 @@ write_to_file(f"{BUILD_DATAPACK}/data/minecraft/tags/functions/tick.json", super
 # Setup load main and secondary function
 write_to_file(f"{DATAPACK_FUNCTIONS}/load/main.mcfunction", f"""
 # Avoiding multiple executions of the same load function
-execute unless score {DATAPACK_NAME} load.status matches 1.. run function {NAMESPACE}:load/secondary
+execute unless score {DATAPACK_NAME_SIMPLE} load.status matches 1.. run function {NAMESPACE}:load/secondary
 
 """)
 major, minor, patch = VERSION.split(".")

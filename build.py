@@ -2,7 +2,7 @@
 # Install required libraries
 import os
 os.environ['PYGAME_HIDE_SUPPORT_PROMPT'] = "hide"
-required = ["PIL", "OpenGL.GL", "glfw", "pygame"]
+required = ["PIL", "OpenGL.GL", "glfw", "pygame", "smithed"]
 for package in required:
 	try:
 		__import__(package)

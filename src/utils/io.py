@@ -115,11 +115,21 @@ def super_merge_dict(dict1: dict, dict2: dict) -> dict:
 
 # The majority of files will be written at the end of the program to prevent excessive disk access (reading + appending + writing)
 FILES_TO_WRITE: dict[str, str] = {}
+def is_in_write_queue(file_path: str) -> bool:
+	return file_path.replace("\\", "/") in FILES_TO_WRITE
+
 def write_to_file(file_path: str, content: str, overwrite: bool = False):
+
+	# Clean path
 	file_path = file_path.replace("\\", "/")
-	if file_path not in FILES_TO_WRITE:
+
+	# If file doesn't exists or overwrite is true, made it empty
+	if file_path not in FILES_TO_WRITE or overwrite:
 		FILES_TO_WRITE[file_path] = ""
+	
+	# Add the content to the file
 	FILES_TO_WRITE[file_path] += str(content)
+
 def write_all_files():
 	for file_path, content in FILES_TO_WRITE.items():
 

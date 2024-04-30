@@ -6,11 +6,9 @@ from src.utils.print import *
 from src.utils.io import *
 
 # Get every vanilla IDs
-vanilla_ids = []
+vanilla_ids = set()
 for v in DATABASE.values():
-	if v["id"] not in vanilla_ids:
-		vanilla_ids.append(v["id"].replace("minecraft:", ""))
-	pass
+	vanilla_ids.add(v["id"].replace("minecraft:", ""))
 if "deepslate" in vanilla_ids:
 	error("'minecraft:deepslate' is a reserved ID. Please change the ID in the database for items that use it.")
 
@@ -38,7 +36,7 @@ for id in vanilla_ids:
 			content["overrides"].append({"predicate": { "custom_model_data": data["custom_model_data"]}, "model": f"{NAMESPACE}:{block_or_item}/{item}" })
 
 			# Additionally, add a "_on" model if there is
-			if os.path.exists(f"{BUILD_RESOURCE_PACK}/assets/{NAMESPACE}/models/{block_or_item}/{item}_on.json"):
+			if is_in_write_queue(f"{BUILD_RESOURCE_PACK}/assets/{NAMESPACE}/models/{block_or_item}/{item}_on.json"):
 				content["overrides"].append({"predicate": { "custom_model_data": data["custom_model_data"] + 1}, "model": f"{NAMESPACE}:{block_or_item}/{item}_on" })
 
 	# Write the content to the file
@@ -58,7 +56,7 @@ write_to_file(
 	f"{BUILD_RESOURCE_PACK}/assets/minecraft/models/item/deepslate.json",
 	super_json_dump(content).replace('{"','{ "').replace('"}','" }').replace(',"', ', "') + "\n"
 )
-write_to_file(f"{BUILD_RESOURCE_PACK}/assets/minecraft/models/item/none.json", "")
+write_to_file(f"{BUILD_RESOURCE_PACK}/assets/minecraft/models/item/none.json", "{}")
 
 info("Vanilla models created")
 

@@ -14,7 +14,9 @@ def lang_format(text: str):
 	Returns:
 		str: The formatted text
 	"""
-	text = text.replace("\\n", "_").replace(".","_")
+	to_underscore = ["\\n", ".", "/", ":"]
+	for char in to_underscore:
+		text = text.replace(char, "_")
 	alpha_num = "".join(char for char in text if char.isalnum() or char in " _-").lower()
 	for char in [' ', '-', "__"]:
 		alpha_num = alpha_num.replace(char, "_")
@@ -52,6 +54,9 @@ for file, content in FILES_TO_WRITE.items():
 								break
 					except IndexError:
 						pass
+
+				# Get text position in the line
+				text_position = line.find(text)
 				text = text[:text_end]	# Get the text without the ending " (and the rest of the line)
 				text = text.replace("\\n", "\n")	# Replace \n by a real new line
 
@@ -63,7 +68,7 @@ for file, content in FILES_TO_WRITE.items():
 					warning(f"The text '{text}' is already used by '{lang[key_for_lang]}' for key '{key_for_lang}' with a different value.")
 
 				# Replace the text in the line by the lang format
-				line = line.replace(text, key_for_lang, 1)
+				line = line[:text_position] + key_for_lang + line[text_position+len(text):]
 
 				# Replace "text" by "translate"
 				line = line.replace(possible_text, possible_text.replace("text", "translate"), 1)

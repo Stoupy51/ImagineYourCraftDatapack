@@ -68,6 +68,6 @@ for ore, data in ORES.items():
 		
 		if "speed" in data and "attack_speed" in equivalent:
 			uuid = UUIDS["mining_speed"][e]
-			DATABASE[item]["attribute_modifiers"].append({"type":"player.block_break_speed","uuid":uuid,"name":"player.block_break_speed","amount":speed,"operation":"add_value","slot":"mainhand"})
+			DATABASE[item]["attribute_modifiers"].append({"type":"player.mining_efficiency","uuid":uuid,"name":"player.mining_efficiency","amount":speed,"operation":"add_value","slot":"mainhand"})
 info("Added new properties to each ore item")
 

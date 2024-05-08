@@ -53,6 +53,7 @@ for file, content in FILES_TO_WRITE.items():
 					except IndexError:
 						pass
 				text = text[:text_end]	# Get the text without the ending " (and the rest of the line)
+				text = text.replace("\\n", "\n")	# Replace \n by a real new line
 
 				# Get the lang format and add the key value to the dictionnary
 				key_for_lang = lang_format(text)

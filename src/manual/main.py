@@ -66,15 +66,17 @@ else:
 			categories_pages[page_name] = new_items
 			i += MAX_ITEMS_PER_PAGE
 
-	# Prepare pages (append categories first, then items)
+	# Prepare pages (append categories first, then items depending on categories order
 	i = 2 # Skip first two pages (introduction + categories)
 	for page_name, items in categories_pages.items():
 		i += 1
 		pages.append({"number": i, "name": page_name, "raw_data": items, "type": CATEGORY})
-	for item, data in DATABASE.items():
-		if CATEGORY in data:
-			i += 1
-			pages.append({"number": i, "name": item, "raw_data": data, "type": "item"})
+	items_with_category = [(item, data) for item, data in DATABASE.items() if CATEGORY in data]
+	category_list = list(categories.keys())
+	sorted_database_on_category = sorted(items_with_category, key = lambda x: category_list.index(x[1][CATEGORY]))
+	for item, data in sorted_database_on_category:
+		i += 1
+		pages.append({"number": i, "name": item, "raw_data": data, "type": "item"})
 
 	# Encode pages
 	book_content = []
@@ -88,7 +90,7 @@ else:
 		raw_data = page["raw_data"]
 		titled = name.replace("_", " ").title() + "\n"
 
-		# TODO Encode categories {'number': 2, 'name': 'Material #1', 'raw_data': ['adamantium_block', 'adamantium_fragment', ...]}
+		# Encode categories {'number': 2, 'name': 'Material #1', 'raw_data': ['adamantium_block', 'adamantium_fragment', ...]}
 		if page["type"] == CATEGORY:
 			file_name = name.replace(" ", "_").replace("#", "").lower()
 			providers.append({"type":"bitmap","file":f"{NAMESPACE}:font/category/{file_name}.png", "ascent": 0, "height": 130, "chars": [page_font]})
@@ -163,8 +165,17 @@ else:
 
 		# Add page to the book
 		book_content.append(content)
-	book_content = optimize_book(book_content)
 
+	# Add categories page
+	content = []
+	content.append({"text": "", "font": FONT, "color": "white"})	# Make default font for every next component
+	for page in pages:
+		if page["type"] == CATEGORY:
+			content.append({"text": "➤ ", "font": "minecraft:default", "color": "black"})
+			content.append({"text": page["name"] + "\n", "font": "minecraft:default", "color": "black", "underlined": True})
+
+	# Optimize the book size
+	book_content = optimize_book(book_content)
 
 	# Add fonts
 	providers.append({"type":"bitmap","file":f"{NAMESPACE}:font/none.png", "ascent": 8, "height": 20, "chars": [NONE_FONT]})

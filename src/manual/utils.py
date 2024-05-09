@@ -149,7 +149,10 @@ def generate_craft_content(craft: dict, name: str, page_font: str) -> list:
 	# Generate the image for the page
 	generate_page_font(name, page_font, craft)
 
-	# TODO: Add mouseEvent also for result item
+	# Get result component
+	result_component = get_item_component(name)
+	if result_component.get("clickEvent"):
+		del result_component["clickEvent"]	# Remove clickEvent for result item (as we already are on the page)
 
 	# If the craft is shaped
 	if craft_type == "crafting_shaped":
@@ -169,6 +172,47 @@ def generate_craft_content(craft: dict, name: str, page_font: str) -> list:
 					else:
 						content.append(formatted_ingredients[k])
 				content.append("\n")
+		
+		# Add the result to the craft
+		if len(craft["shape"]) <= 2 and len(craft["shape"][0]) <= 2:
+
+			# First layer of the square
+			len_1 = len(craft["shape"][0])
+			offset_1 = 3 - len_1
+			break_line_pos = content.index("\n", content.index("\n") + 1)	# Find the second line break
+			content.insert(break_line_pos, NONE_FONT * offset_1)
+			content.insert(break_line_pos + 1, result_component)
+			
+			# Second layer of the square
+			len_2 = len(craft["shape"][1]) if len(craft["shape"]) > 1 else 0
+			offset_2 = 3 - len_2
+			if len_2 == 0:
+				content.insert(break_line_pos + 2, "\n" + SMALL_NONE_FONT)
+			break_line_pos = content.index("\n", break_line_pos + 3)	# Find the third line break
+			content.insert(break_line_pos, NONE_FONT * offset_2)
+			content.insert(break_line_pos + 1, result_component)
+		else:
+			# First layer of the square
+			len_line = len(craft["shape"][1]) if len(craft["shape"]) > 1 else 0
+			offset = 4 - len_line
+			break_line_pos = content.index("\n", content.index("\n") + 1)	# Find the second line break
+			try:
+				break_line_pos = content.index("\n", break_line_pos + 1) # Find the third line break
+			except:
+				content.append(SMALL_NONE_FONT)
+				break_line_pos = len(content)
+			content.insert(break_line_pos, NONE_FONT * (offset - 1) + SMALL_NONE_FONT * 2)
+			content.insert(break_line_pos + 1, result_component)
+
+			# Second layer of the square
+			try:
+				break_line_pos = content.index("\n", break_line_pos + 3)	# Find the fourth line break
+			except:
+				content.append("\n" + SMALL_NONE_FONT)
+				break_line_pos = len(content)
+			content.insert(break_line_pos, NONE_FONT * (offset - 1) + SMALL_NONE_FONT * 2)
+			content.insert(break_line_pos + 1, result_component)
+		
 	
 	# If the type is furnace type,
 	elif craft_type in FURNACES_RECIPES_TYPES:
@@ -181,6 +225,13 @@ def generate_craft_content(craft: dict, name: str, page_font: str) -> list:
 			content.append(SMALL_NONE_FONT)
 			content.append(formatted_ingredient)
 			content.append("\n")
+		
+		# Add the result to the craft
+		for _ in range(2):
+			content.append(SMALL_NONE_FONT * 4 + NONE_FONT * 2)
+			content.append(result_component)
+			content.append("\n")
+		content.append("\n\n\n")
 
 	return content
 
@@ -229,7 +280,7 @@ def add_border(image: Image.Image, border_color: tuple, border_size: int, is_rec
 		# Paste the border color in the image
 		border = Image.new("RGBA", (width + 2, height + 2), border_color)
 		border.paste(image, (0, 0), image)
-		image = border
+		image.paste(border, (0, 0), border)
 	
 	# Return the image
 	return image

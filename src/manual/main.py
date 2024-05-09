@@ -136,9 +136,6 @@ else:
 				content += line * 2
 			
 			# Add the 2 pixels border
-			BORDER_COLOR = 0xB64E2F
-			BORDER_SIZE = 2
-			BORDER_COLOR = (BORDER_COLOR >> 16) & 0xFF, (BORDER_COLOR >> 8) & 0xFF, BORDER_COLOR & 0xFF, 255
 			is_rectangle_shape = len(raw_data) % MAX_ITEMS_PER_ROW == 0
 			page_image = add_border(page_image, BORDER_COLOR, BORDER_SIZE, is_rectangle_shape)
 			
@@ -156,9 +153,16 @@ else:
 					content += l
 			
 			else:
-				#providers.append({"type":"bitmap","file":f"{NAMESPACE}:font/page/{name}.png", "ascent": 0, "height": 60, "chars": [page_font]})
+				generate_page_font(name, page_font, craft = None)
+				component = get_item_component(name)
+				component["text"] *= 2
 				content.append({"text": "", "font": FONT, "color": "white"})	# Make default font for every next component
 				content.append({"text": titled, "font": "minecraft:default", "color": "black", "underlined": True})
+				content.append(MEDIUM_NONE_FONT * 2 + page_font + "\n")
+				for _ in range(4):
+					content.append(MEDIUM_NONE_FONT * 2)
+					content.append(component)
+					content.append("\n")
 
 			# TODO: add wiki icons things
 

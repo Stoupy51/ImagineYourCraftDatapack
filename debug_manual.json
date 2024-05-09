@@ -369,11 +369,27 @@
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
-		{"text": "Adamantium Ore\n","font": "minecraft:default","color": "black","underlined": true}
+		{"text": "Adamantium Ore\n","font": "minecraft:default","color": "black","underlined": true},
+		"\u0021\u0021\u102c\n\u0021\u0021",
+		{"text": "\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "furnace","components": {"item_name": "[{\"text\":\"Adamantium Ore\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015001,"container": [{"slot": 0,"item": {"id": "minecraft:stone","count": 1,"components": {"minecraft:custom_data": {"smithed": {"block": {"id": "iyc:adamantium_ore","from": "iyc"}}}}}}]}}},"clickEvent": {"action": "change_page","value": "12"}},
+		"\u0021\u0021",
+		{"text": "\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "furnace","components": {"item_name": "[{\"text\":\"Adamantium Ore\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015001,"container": [{"slot": 0,"item": {"id": "minecraft:stone","count": 1,"components": {"minecraft:custom_data": {"smithed": {"block": {"id": "iyc:adamantium_ore","from": "iyc"}}}}}}]}}},"clickEvent": {"action": "change_page","value": "12"}},
+		"\u0021\u0021",
+		{"text": "\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "furnace","components": {"item_name": "[{\"text\":\"Adamantium Ore\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015001,"container": [{"slot": 0,"item": {"id": "minecraft:stone","count": 1,"components": {"minecraft:custom_data": {"smithed": {"block": {"id": "iyc:adamantium_ore","from": "iyc"}}}}}}]}}},"clickEvent": {"action": "change_page","value": "12"}},
+		"\u0021\u0021",
+		{"text": "\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "furnace","components": {"item_name": "[{\"text\":\"Adamantium Ore\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015001,"container": [{"slot": 0,"item": {"id": "minecraft:stone","count": 1,"components": {"minecraft:custom_data": {"smithed": {"block": {"id": "iyc:adamantium_ore","from": "iyc"}}}}}}]}}},"clickEvent": {"action": "change_page","value": "12"}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
-		{"text": "Adamantium Fragment\n","font": "minecraft:default","color": "black","underlined": true}
+		{"text": "Adamantium Fragment\n","font": "minecraft:default","color": "black","underlined": true},
+		"\u0021\u0021\u102d\n\u0021\u0021",
+		{"text": "\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Adamantium Fragment\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015002}}},"clickEvent": {"action": "change_page","value": "13"}},
+		"\u0021\u0021",
+		{"text": "\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Adamantium Fragment\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015002}}},"clickEvent": {"action": "change_page","value": "13"}},
+		"\u0021\u0021",
+		{"text": "\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Adamantium Fragment\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015002}}},"clickEvent": {"action": "change_page","value": "13"}},
+		"\u0021\u0021",
+		{"text": "\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Adamantium Fragment\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015002}}},"clickEvent": {"action": "change_page","value": "13"}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -397,7 +413,15 @@
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
-		{"text": "Sapphire Ore\n","font": "minecraft:default","color": "black","underlined": true}
+		{"text": "Sapphire Ore\n","font": "minecraft:default","color": "black","underlined": true},
+		"\u0021\u0021\u102f\n\u0021\u0021",
+		{"text": "\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "furnace","components": {"item_name": "[{\"text\":\"Sapphire Ore\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015013,"container": [{"slot": 0,"item": {"id": "minecraft:stone","count": 1,"components": {"minecraft:custom_data": {"smithed": {"block": {"id": "iyc:sapphire_ore","from": "iyc"}}}}}}]}}},"clickEvent": {"action": "change_page","value": "15"}},
+		"\u0021\u0021",
+		{"text": "\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "furnace","components": {"item_name": "[{\"text\":\"Sapphire Ore\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015013,"container": [{"slot": 0,"item": {"id": "minecraft:stone","count": 1,"components": {"minecraft:custom_data": {"smithed": {"block": {"id": "iyc:sapphire_ore","from": "iyc"}}}}}}]}}},"clickEvent": {"action": "change_page","value": "15"}},
+		"\u0021\u0021",
+		{"text": "\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "furnace","components": {"item_name": "[{\"text\":\"Sapphire Ore\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015013,"container": [{"slot": 0,"item": {"id": "minecraft:stone","count": 1,"components": {"minecraft:custom_data": {"smithed": {"block": {"id": "iyc:sapphire_ore","from": "iyc"}}}}}}]}}},"clickEvent": {"action": "change_page","value": "15"}},
+		"\u0021\u0021",
+		{"text": "\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "furnace","components": {"item_name": "[{\"text\":\"Sapphire Ore\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015013,"container": [{"slot": 0,"item": {"id": "minecraft:stone","count": 1,"components": {"minecraft:custom_data": {"smithed": {"block": {"id": "iyc:sapphire_ore","from": "iyc"}}}}}}]}}},"clickEvent": {"action": "change_page","value": "15"}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -433,7 +457,15 @@
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
-		{"text": "Ruby Ore\n","font": "minecraft:default","color": "black","underlined": true}
+		{"text": "Ruby Ore\n","font": "minecraft:default","color": "black","underlined": true},
+		"\u0021\u0021\u1032\n\u0021\u0021",
+		{"text": "\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "furnace","components": {"item_name": "[{\"text\":\"Ruby Ore\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015025,"container": [{"slot": 0,"item": {"id": "minecraft:stone","count": 1,"components": {"minecraft:custom_data": {"smithed": {"block": {"id": "iyc:ruby_ore","from": "iyc"}}}}}}]}}},"clickEvent": {"action": "change_page","value": "18"}},
+		"\u0021\u0021",
+		{"text": "\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "furnace","components": {"item_name": "[{\"text\":\"Ruby Ore\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015025,"container": [{"slot": 0,"item": {"id": "minecraft:stone","count": 1,"components": {"minecraft:custom_data": {"smithed": {"block": {"id": "iyc:ruby_ore","from": "iyc"}}}}}}]}}},"clickEvent": {"action": "change_page","value": "18"}},
+		"\u0021\u0021",
+		{"text": "\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "furnace","components": {"item_name": "[{\"text\":\"Ruby Ore\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015025,"container": [{"slot": 0,"item": {"id": "minecraft:stone","count": 1,"components": {"minecraft:custom_data": {"smithed": {"block": {"id": "iyc:ruby_ore","from": "iyc"}}}}}}]}}},"clickEvent": {"action": "change_page","value": "18"}},
+		"\u0021\u0021",
+		{"text": "\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "furnace","components": {"item_name": "[{\"text\":\"Ruby Ore\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015025,"container": [{"slot": 0,"item": {"id": "minecraft:stone","count": 1,"components": {"minecraft:custom_data": {"smithed": {"block": {"id": "iyc:ruby_ore","from": "iyc"}}}}}}]}}},"clickEvent": {"action": "change_page","value": "18"}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -469,7 +501,15 @@
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
-		{"text": "Topaz Ore\n","font": "minecraft:default","color": "black","underlined": true}
+		{"text": "Topaz Ore\n","font": "minecraft:default","color": "black","underlined": true},
+		"\u0021\u0021\u1035\n\u0021\u0021",
+		{"text": "\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "furnace","components": {"item_name": "[{\"text\":\"Topaz Ore\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015037,"container": [{"slot": 0,"item": {"id": "minecraft:stone","count": 1,"components": {"minecraft:custom_data": {"smithed": {"block": {"id": "iyc:topaz_ore","from": "iyc"}}}}}}]}}},"clickEvent": {"action": "change_page","value": "21"}},
+		"\u0021\u0021",
+		{"text": "\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "furnace","components": {"item_name": "[{\"text\":\"Topaz Ore\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015037,"container": [{"slot": 0,"item": {"id": "minecraft:stone","count": 1,"components": {"minecraft:custom_data": {"smithed": {"block": {"id": "iyc:topaz_ore","from": "iyc"}}}}}}]}}},"clickEvent": {"action": "change_page","value": "21"}},
+		"\u0021\u0021",
+		{"text": "\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "furnace","components": {"item_name": "[{\"text\":\"Topaz Ore\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015037,"container": [{"slot": 0,"item": {"id": "minecraft:stone","count": 1,"components": {"minecraft:custom_data": {"smithed": {"block": {"id": "iyc:topaz_ore","from": "iyc"}}}}}}]}}},"clickEvent": {"action": "change_page","value": "21"}},
+		"\u0021\u0021",
+		{"text": "\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "furnace","components": {"item_name": "[{\"text\":\"Topaz Ore\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015037,"container": [{"slot": 0,"item": {"id": "minecraft:stone","count": 1,"components": {"minecraft:custom_data": {"smithed": {"block": {"id": "iyc:topaz_ore","from": "iyc"}}}}}}]}}},"clickEvent": {"action": "change_page","value": "21"}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -538,7 +578,15 @@
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
-		{"text": "Steel Ore\n","font": "minecraft:default","color": "black","underlined": true}
+		{"text": "Steel Ore\n","font": "minecraft:default","color": "black","underlined": true},
+		"\u0021\u0021\u103a\n\u0021\u0021",
+		{"text": "\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "furnace","components": {"item_name": "[{\"text\":\"Steel Ore\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015069,"container": [{"slot": 0,"item": {"id": "minecraft:stone","count": 1,"components": {"minecraft:custom_data": {"smithed": {"block": {"id": "iyc:steel_ore","from": "iyc"}}}}}}]}}},"clickEvent": {"action": "change_page","value": "26"}},
+		"\u0021\u0021",
+		{"text": "\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "furnace","components": {"item_name": "[{\"text\":\"Steel Ore\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015069,"container": [{"slot": 0,"item": {"id": "minecraft:stone","count": 1,"components": {"minecraft:custom_data": {"smithed": {"block": {"id": "iyc:steel_ore","from": "iyc"}}}}}}]}}},"clickEvent": {"action": "change_page","value": "26"}},
+		"\u0021\u0021",
+		{"text": "\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "furnace","components": {"item_name": "[{\"text\":\"Steel Ore\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015069,"container": [{"slot": 0,"item": {"id": "minecraft:stone","count": 1,"components": {"minecraft:custom_data": {"smithed": {"block": {"id": "iyc:steel_ore","from": "iyc"}}}}}}]}}},"clickEvent": {"action": "change_page","value": "26"}},
+		"\u0021\u0021",
+		{"text": "\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "furnace","components": {"item_name": "[{\"text\":\"Steel Ore\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015069,"container": [{"slot": 0,"item": {"id": "minecraft:stone","count": 1,"components": {"minecraft:custom_data": {"smithed": {"block": {"id": "iyc:steel_ore","from": "iyc"}}}}}}]}}},"clickEvent": {"action": "change_page","value": "26"}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -590,7 +638,15 @@
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
-		{"text": "Lignite Ore\n","font": "minecraft:default","color": "black","underlined": true}
+		{"text": "Lignite Ore\n","font": "minecraft:default","color": "black","underlined": true},
+		"\u0021\u0021\u103e\n\u0021\u0021",
+		{"text": "\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "furnace","components": {"item_name": "[{\"text\":\"Lignite Ore\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015082,"container": [{"slot": 0,"item": {"id": "minecraft:stone","count": 1,"components": {"minecraft:custom_data": {"smithed": {"block": {"id": "iyc:lignite_ore","from": "iyc"}}}}}}]}}},"clickEvent": {"action": "change_page","value": "30"}},
+		"\u0021\u0021",
+		{"text": "\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "furnace","components": {"item_name": "[{\"text\":\"Lignite Ore\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015082,"container": [{"slot": 0,"item": {"id": "minecraft:stone","count": 1,"components": {"minecraft:custom_data": {"smithed": {"block": {"id": "iyc:lignite_ore","from": "iyc"}}}}}}]}}},"clickEvent": {"action": "change_page","value": "30"}},
+		"\u0021\u0021",
+		{"text": "\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "furnace","components": {"item_name": "[{\"text\":\"Lignite Ore\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015082,"container": [{"slot": 0,"item": {"id": "minecraft:stone","count": 1,"components": {"minecraft:custom_data": {"smithed": {"block": {"id": "iyc:lignite_ore","from": "iyc"}}}}}}]}}},"clickEvent": {"action": "change_page","value": "30"}},
+		"\u0021\u0021",
+		{"text": "\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "furnace","components": {"item_name": "[{\"text\":\"Lignite Ore\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015082,"container": [{"slot": 0,"item": {"id": "minecraft:stone","count": 1,"components": {"minecraft:custom_data": {"smithed": {"block": {"id": "iyc:lignite_ore","from": "iyc"}}}}}}]}}},"clickEvent": {"action": "change_page","value": "30"}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -626,7 +682,15 @@
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
-		{"text": "Slate Ore\n","font": "minecraft:default","color": "black","underlined": true}
+		{"text": "Slate Ore\n","font": "minecraft:default","color": "black","underlined": true},
+		"\u0021\u0021\u1041\n\u0021\u0021",
+		{"text": "\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "furnace","components": {"item_name": "[{\"text\":\"Slate Ore\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015085,"container": [{"slot": 0,"item": {"id": "minecraft:stone","count": 1,"components": {"minecraft:custom_data": {"smithed": {"block": {"id": "iyc:slate_ore","from": "iyc"}}}}}}]}}},"clickEvent": {"action": "change_page","value": "33"}},
+		"\u0021\u0021",
+		{"text": "\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "furnace","components": {"item_name": "[{\"text\":\"Slate Ore\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015085,"container": [{"slot": 0,"item": {"id": "minecraft:stone","count": 1,"components": {"minecraft:custom_data": {"smithed": {"block": {"id": "iyc:slate_ore","from": "iyc"}}}}}}]}}},"clickEvent": {"action": "change_page","value": "33"}},
+		"\u0021\u0021",
+		{"text": "\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "furnace","components": {"item_name": "[{\"text\":\"Slate Ore\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015085,"container": [{"slot": 0,"item": {"id": "minecraft:stone","count": 1,"components": {"minecraft:custom_data": {"smithed": {"block": {"id": "iyc:slate_ore","from": "iyc"}}}}}}]}}},"clickEvent": {"action": "change_page","value": "33"}},
+		"\u0021\u0021",
+		{"text": "\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "furnace","components": {"item_name": "[{\"text\":\"Slate Ore\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015085,"container": [{"slot": 0,"item": {"id": "minecraft:stone","count": 1,"components": {"minecraft:custom_data": {"smithed": {"block": {"id": "iyc:slate_ore","from": "iyc"}}}}}}]}}},"clickEvent": {"action": "change_page","value": "33"}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -658,7 +722,15 @@
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
-		{"text": "Hops Seeds\n","font": "minecraft:default","color": "black","underlined": true}
+		{"text": "Hops Seeds\n","font": "minecraft:default","color": "black","underlined": true},
+		"\u0021\u0021\u1044\n\u0021\u0021",
+		{"text": "\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "item_frame","components": {"item_name": "[{\"text\":\"Hops Seeds\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015098}}},"clickEvent": {"action": "change_page","value": "36"}},
+		"\u0021\u0021",
+		{"text": "\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "item_frame","components": {"item_name": "[{\"text\":\"Hops Seeds\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015098}}},"clickEvent": {"action": "change_page","value": "36"}},
+		"\u0021\u0021",
+		{"text": "\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "item_frame","components": {"item_name": "[{\"text\":\"Hops Seeds\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015098}}},"clickEvent": {"action": "change_page","value": "36"}},
+		"\u0021\u0021",
+		{"text": "\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "item_frame","components": {"item_name": "[{\"text\":\"Hops Seeds\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015098}}},"clickEvent": {"action": "change_page","value": "36"}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -687,7 +759,15 @@
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
-		{"text": "Caffeine\n","font": "minecraft:default","color": "black","underlined": true}
+		{"text": "Caffeine\n","font": "minecraft:default","color": "black","underlined": true},
+		"\u0021\u0021\u1046\n\u0021\u0021",
+		{"text": "\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Caffeine\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015114}}},"clickEvent": {"action": "change_page","value": "38"}},
+		"\u0021\u0021",
+		{"text": "\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Caffeine\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015114}}},"clickEvent": {"action": "change_page","value": "38"}},
+		"\u0021\u0021",
+		{"text": "\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Caffeine\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015114}}},"clickEvent": {"action": "change_page","value": "38"}},
+		"\u0021\u0021",
+		{"text": "\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Caffeine\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015114}}},"clickEvent": {"action": "change_page","value": "38"}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -711,7 +791,15 @@
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
-		{"text": "Cola\n","font": "minecraft:default","color": "black","underlined": true}
+		{"text": "Cola\n","font": "minecraft:default","color": "black","underlined": true},
+		"\u0021\u0021\u1048\n\u0021\u0021",
+		{"text": "\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Cola\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015116}}},"clickEvent": {"action": "change_page","value": "40"}},
+		"\u0021\u0021",
+		{"text": "\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Cola\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015116}}},"clickEvent": {"action": "change_page","value": "40"}},
+		"\u0021\u0021",
+		{"text": "\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Cola\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015116}}},"clickEvent": {"action": "change_page","value": "40"}},
+		"\u0021\u0021",
+		{"text": "\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Cola\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015116}}},"clickEvent": {"action": "change_page","value": "40"}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -744,7 +832,15 @@
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
-		{"text": "Hops\n","font": "minecraft:default","color": "black","underlined": true}
+		{"text": "Hops\n","font": "minecraft:default","color": "black","underlined": true},
+		"\u0021\u0021\u104a\n\u0021\u0021",
+		{"text": "\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Hops\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015119}}},"clickEvent": {"action": "change_page","value": "42"}},
+		"\u0021\u0021",
+		{"text": "\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Hops\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015119}}},"clickEvent": {"action": "change_page","value": "42"}},
+		"\u0021\u0021",
+		{"text": "\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Hops\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015119}}},"clickEvent": {"action": "change_page","value": "42"}},
+		"\u0021\u0021",
+		{"text": "\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Hops\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015119}}},"clickEvent": {"action": "change_page","value": "42"}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -776,7 +872,15 @@
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
-		{"text": "Taurine\n","font": "minecraft:default","color": "black","underlined": true}
+		{"text": "Taurine\n","font": "minecraft:default","color": "black","underlined": true},
+		"\u0021\u0021\u104c\n\u0021\u0021",
+		{"text": "\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Taurine\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015121}}},"clickEvent": {"action": "change_page","value": "44"}},
+		"\u0021\u0021",
+		{"text": "\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Taurine\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015121}}},"clickEvent": {"action": "change_page","value": "44"}},
+		"\u0021\u0021",
+		{"text": "\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Taurine\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015121}}},"clickEvent": {"action": "change_page","value": "44"}},
+		"\u0021\u0021",
+		{"text": "\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Taurine\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015121}}},"clickEvent": {"action": "change_page","value": "44"}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -2354,11 +2458,27 @@
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
-		{"text": "Cloud\n","font": "minecraft:default","color": "black","underlined": true}
+		{"text": "Cloud\n","font": "minecraft:default","color": "black","underlined": true},
+		"\u0021\u0021\u1096\n\u0021\u0021",
+		{"text": "\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "item_frame","components": {"item_name": "[{\"text\":\"Cloud\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015095}}},"clickEvent": {"action": "change_page","value": "118"}},
+		"\u0021\u0021",
+		{"text": "\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "item_frame","components": {"item_name": "[{\"text\":\"Cloud\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015095}}},"clickEvent": {"action": "change_page","value": "118"}},
+		"\u0021\u0021",
+		{"text": "\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "item_frame","components": {"item_name": "[{\"text\":\"Cloud\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015095}}},"clickEvent": {"action": "change_page","value": "118"}},
+		"\u0021\u0021",
+		{"text": "\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "item_frame","components": {"item_name": "[{\"text\":\"Cloud\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015095}}},"clickEvent": {"action": "change_page","value": "118"}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
-		{"text": "Flatware\n","font": "minecraft:default","color": "black","underlined": true}
+		{"text": "Flatware\n","font": "minecraft:default","color": "black","underlined": true},
+		"\u0021\u0021\u1097\n\u0021\u0021",
+		{"text": "\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "item_frame","components": {"item_name": "[{\"text\":\"Flatware\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015096}}},"clickEvent": {"action": "change_page","value": "119"}},
+		"\u0021\u0021",
+		{"text": "\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "item_frame","components": {"item_name": "[{\"text\":\"Flatware\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015096}}},"clickEvent": {"action": "change_page","value": "119"}},
+		"\u0021\u0021",
+		{"text": "\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "item_frame","components": {"item_name": "[{\"text\":\"Flatware\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015096}}},"clickEvent": {"action": "change_page","value": "119"}},
+		"\u0021\u0021",
+		{"text": "\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "item_frame","components": {"item_name": "[{\"text\":\"Flatware\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015096}}},"clickEvent": {"action": "change_page","value": "119"}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -2495,15 +2615,39 @@
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
-		{"text": "Black Flower\n","font": "minecraft:default","color": "black","underlined": true}
+		{"text": "Black Flower\n","font": "minecraft:default","color": "black","underlined": true},
+		"\u0021\u0021\u10a0\n\u0021\u0021",
+		{"text": "\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "item_frame","components": {"item_name": "[{\"text\":\"Black Flower\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015110}}},"clickEvent": {"action": "change_page","value": "128"}},
+		"\u0021\u0021",
+		{"text": "\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "item_frame","components": {"item_name": "[{\"text\":\"Black Flower\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015110}}},"clickEvent": {"action": "change_page","value": "128"}},
+		"\u0021\u0021",
+		{"text": "\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "item_frame","components": {"item_name": "[{\"text\":\"Black Flower\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015110}}},"clickEvent": {"action": "change_page","value": "128"}},
+		"\u0021\u0021",
+		{"text": "\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "item_frame","components": {"item_name": "[{\"text\":\"Black Flower\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015110}}},"clickEvent": {"action": "change_page","value": "128"}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
-		{"text": "Blue Flower\n","font": "minecraft:default","color": "black","underlined": true}
+		{"text": "Blue Flower\n","font": "minecraft:default","color": "black","underlined": true},
+		"\u0021\u0021\u10a1\n\u0021\u0021",
+		{"text": "\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "item_frame","components": {"item_name": "[{\"text\":\"Blue Flower\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015111}}},"clickEvent": {"action": "change_page","value": "129"}},
+		"\u0021\u0021",
+		{"text": "\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "item_frame","components": {"item_name": "[{\"text\":\"Blue Flower\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015111}}},"clickEvent": {"action": "change_page","value": "129"}},
+		"\u0021\u0021",
+		{"text": "\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "item_frame","components": {"item_name": "[{\"text\":\"Blue Flower\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015111}}},"clickEvent": {"action": "change_page","value": "129"}},
+		"\u0021\u0021",
+		{"text": "\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "item_frame","components": {"item_name": "[{\"text\":\"Blue Flower\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015111}}},"clickEvent": {"action": "change_page","value": "129"}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
-		{"text": "White Flower\n","font": "minecraft:default","color": "black","underlined": true}
+		{"text": "White Flower\n","font": "minecraft:default","color": "black","underlined": true},
+		"\u0021\u0021\u10a2\n\u0021\u0021",
+		{"text": "\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "item_frame","components": {"item_name": "[{\"text\":\"White Flower\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015112}}},"clickEvent": {"action": "change_page","value": "130"}},
+		"\u0021\u0021",
+		{"text": "\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "item_frame","components": {"item_name": "[{\"text\":\"White Flower\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015112}}},"clickEvent": {"action": "change_page","value": "130"}},
+		"\u0021\u0021",
+		{"text": "\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "item_frame","components": {"item_name": "[{\"text\":\"White Flower\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015112}}},"clickEvent": {"action": "change_page","value": "130"}},
+		"\u0021\u0021",
+		{"text": "\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "item_frame","components": {"item_name": "[{\"text\":\"White Flower\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015112}}},"clickEvent": {"action": "change_page","value": "130"}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -2547,7 +2691,15 @@
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
-		{"text": "Cherry\n","font": "minecraft:default","color": "black","underlined": true}
+		{"text": "Cherry\n","font": "minecraft:default","color": "black","underlined": true},
+		"\u0021\u0021\u10a6\n\u0021\u0021",
+		{"text": "\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"food": {"can_always_eat": true,"nutrition": 2,"saturation": 0.8},"item_name": "[{\"text\":\"Cherry\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015124}}},"clickEvent": {"action": "change_page","value": "134"}},
+		"\u0021\u0021",
+		{"text": "\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"food": {"can_always_eat": true,"nutrition": 2,"saturation": 0.8},"item_name": "[{\"text\":\"Cherry\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015124}}},"clickEvent": {"action": "change_page","value": "134"}},
+		"\u0021\u0021",
+		{"text": "\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"food": {"can_always_eat": true,"nutrition": 2,"saturation": 0.8},"item_name": "[{\"text\":\"Cherry\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015124}}},"clickEvent": {"action": "change_page","value": "134"}},
+		"\u0021\u0021",
+		{"text": "\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"food": {"can_always_eat": true,"nutrition": 2,"saturation": 0.8},"item_name": "[{\"text\":\"Cherry\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015124}}},"clickEvent": {"action": "change_page","value": "134"}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -2679,7 +2831,15 @@
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
-		{"text": "Coin\n","font": "minecraft:default","color": "black","underlined": true}
+		{"text": "Coin\n","font": "minecraft:default","color": "black","underlined": true},
+		"\u0021\u0021\u10ae\n\u0021\u0021",
+		{"text": "\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Coin\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015135}}},"clickEvent": {"action": "change_page","value": "142"}},
+		"\u0021\u0021",
+		{"text": "\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Coin\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015135}}},"clickEvent": {"action": "change_page","value": "142"}},
+		"\u0021\u0021",
+		{"text": "\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Coin\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015135}}},"clickEvent": {"action": "change_page","value": "142"}},
+		"\u0021\u0021",
+		{"text": "\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Coin\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015135}}},"clickEvent": {"action": "change_page","value": "142"}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -2707,14 +2867,38 @@
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
-		{"text": "Quiver\n","font": "minecraft:default","color": "black","underlined": true}
+		{"text": "Quiver\n","font": "minecraft:default","color": "black","underlined": true},
+		"\u0021\u0021\u10b0\n\u0021\u0021",
+		{"text": "\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Quiver\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015137}}},"clickEvent": {"action": "change_page","value": "144"}},
+		"\u0021\u0021",
+		{"text": "\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Quiver\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015137}}},"clickEvent": {"action": "change_page","value": "144"}},
+		"\u0021\u0021",
+		{"text": "\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Quiver\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015137}}},"clickEvent": {"action": "change_page","value": "144"}},
+		"\u0021\u0021",
+		{"text": "\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Quiver\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015137}}},"clickEvent": {"action": "change_page","value": "144"}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
-		{"text": "Rock\n","font": "minecraft:default","color": "black","underlined": true}
+		{"text": "Rock\n","font": "minecraft:default","color": "black","underlined": true},
+		"\u0021\u0021\u10b1\n\u0021\u0021",
+		{"text": "\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "snowball","components": {"max_stack_size": 99,"lore": ["{\"text\":\"Can be thrown\",\"color\":\"gray\",\"italic\":false}","[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"item_name": "[{\"text\":\"Rock\",\"italic\":false,\"color\":\"white\"}]","custom_model_data": 2015138}}},"clickEvent": {"action": "change_page","value": "145"}},
+		"\u0021\u0021",
+		{"text": "\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "snowball","components": {"max_stack_size": 99,"lore": ["{\"text\":\"Can be thrown\",\"color\":\"gray\",\"italic\":false}","[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"item_name": "[{\"text\":\"Rock\",\"italic\":false,\"color\":\"white\"}]","custom_model_data": 2015138}}},"clickEvent": {"action": "change_page","value": "145"}},
+		"\u0021\u0021",
+		{"text": "\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "snowball","components": {"max_stack_size": 99,"lore": ["{\"text\":\"Can be thrown\",\"color\":\"gray\",\"italic\":false}","[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"item_name": "[{\"text\":\"Rock\",\"italic\":false,\"color\":\"white\"}]","custom_model_data": 2015138}}},"clickEvent": {"action": "change_page","value": "145"}},
+		"\u0021\u0021",
+		{"text": "\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "snowball","components": {"max_stack_size": 99,"lore": ["{\"text\":\"Can be thrown\",\"color\":\"gray\",\"italic\":false}","[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"item_name": "[{\"text\":\"Rock\",\"italic\":false,\"color\":\"white\"}]","custom_model_data": 2015138}}},"clickEvent": {"action": "change_page","value": "145"}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
-		{"text": "Screwdriver\n","font": "minecraft:default","color": "black","underlined": true}
+		{"text": "Screwdriver\n","font": "minecraft:default","color": "black","underlined": true},
+		"\u0021\u0021\u10b2\n\u0021\u0021",
+		{"text": "\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Screwdriver\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015139}}},"clickEvent": {"action": "change_page","value": "146"}},
+		"\u0021\u0021",
+		{"text": "\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Screwdriver\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015139}}},"clickEvent": {"action": "change_page","value": "146"}},
+		"\u0021\u0021",
+		{"text": "\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Screwdriver\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015139}}},"clickEvent": {"action": "change_page","value": "146"}},
+		"\u0021\u0021",
+		{"text": "\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Screwdriver\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015139}}},"clickEvent": {"action": "change_page","value": "146"}}
 	]
 ]

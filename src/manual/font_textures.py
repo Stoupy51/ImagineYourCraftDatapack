@@ -10,6 +10,15 @@ import src.manual.opengl as opengl
 from PIL import Image, ImageEnhance, ImageDraw, ImageFont
 import requests
 
+# Constants
+SQUARE_SIZE = 32
+TEMPLATES_PATH = f"{ROOT}/src/manual/assets"
+FONT_FOLDER = f"{MANUAL_PATH}/font"
+BORDER_COLOR = 0xB64E2F
+BORDER_SIZE = 2
+BORDER_COLOR = (BORDER_COLOR >> 16) & 0xFF, (BORDER_COLOR >> 8) & 0xFF, BORDER_COLOR & 0xFF, 255
+
+
 # Utils functions for fonts (item start at 0x0000, pages at 0xa000)
 # Return the character that will be used for font, ex: "\u0002" with i = 2
 def get_font(i: int):
@@ -19,6 +28,55 @@ def get_font(i: int):
 	return f"\\u{i:04x}"
 def get_page_font(i: int) -> str:
 	return get_font(i + 0x1000)
+
+# Generate a border for a given Image
+def add_border(image: Image.Image, border_color: tuple, border_size: int, is_rectangle_shape: bool) -> Image.Image:
+	""" Add a border to every part of the image
+	Args:
+		image				(Image):	The image to add the border
+		border_color		(tuple):	The color of the border
+		border_size			(int):		The size of the border
+		is_rectangle_shape	(bool):		If the shape is a rectangle or not (so we can choose between two algorithms)
+	Returns:
+		Image: The image with the border
+	"""
+	# Convert image to RGBA and load
+	image = image.convert("RGBA")
+	pixels = image.load()
+
+	# Method 1: Image shape is not a rectangle
+	if not is_rectangle_shape:
+		# Get all transparent pixels
+		pixels_to_change = [(x, y) for x in range(image.width) for y in range(image.height) if pixels[x, y][3] == 0]
+
+		# Setup pixel view range (border_size * border_size)
+		r = range(-border_size, border_size + 1)
+
+		# For each pixel in the list, try to place border color
+		for x, y in pixels_to_change:
+			try:
+				# If there is a pixel that is not transparent or equal to the border color in the range, place border_color
+				if any(pixels[x + dx, y + dy][3] != 0 and pixels[x + dx, y + dy] != border_color for dx in r for dy in r):
+					pixels[x, y] = border_color
+			except:
+				pass
+	
+	# Method 2: Image shape is a rectangle
+	else:
+		# Get image real height and width
+		height, width = 8, 8
+		while height < image.height and pixels[8, height][3]!= 0:
+			height += 1
+		while width < image.width and pixels[width, 8][3]!= 0:
+			width += 1
+		
+		# Paste the border color in the image
+		border = Image.new("RGBA", (width + 2, height + 2), border_color)
+		border.paste(image, (0, 0), image)
+		image.paste(border, (0, 0), border)
+	
+	# Return the image
+	return image
 
 # Generate an image showing the result count
 def image_count(count: int) -> Image:
@@ -45,9 +103,6 @@ def image_count(count: int) -> Image:
 
 # Generate page font function (called in utils)
 providers = []
-SQUARE_SIZE = 32
-TEMPLATES_PATH = f"{ROOT}/src/manual/assets"
-FONT_FOLDER = f"{MANUAL_PATH}/font"
 os.makedirs(f"{FONT_FOLDER}/page", exist_ok=True)
 def generate_page_font(name: str, page_font: str, craft: dict|None = None) -> None:
 	""" Generate the page font image with the proper items
@@ -61,15 +116,17 @@ def generate_page_font(name: str, page_font: str, craft: dict|None = None) -> No
 	if not os.path.exists(image_path):
 		error(f"Missing item texture at '{image_path}'")
 	result_texture = Image.open(image_path)
+
+	# Resize the texture and get the mask
+	factor = SQUARE_SIZE / result_texture.size[0]
+	result_texture = result_texture.resize(
+		(int(result_texture.size[0]*factor), int(result_texture.size[1]*factor)),
+		Image.NEAREST
+	)
+	result_mask = result_texture.convert("RGBA").split()[3]
 	
 	# Crafting shaped
 	if craft:
-		factor = SQUARE_SIZE / result_texture.size[0]
-		result_texture = result_texture.resize(
-			(int(result_texture.size[0]*factor), int(result_texture.size[1]*factor)),
-			Image.NEAREST
-		)
-		result_mask = result_texture.convert("RGBA").split()[3]
 
 		if craft["type"] in "crafting_shaped":
 
@@ -154,8 +211,14 @@ def generate_page_font(name: str, page_font: str, craft: dict|None = None) -> No
 	
 	# Else, there is no craft, just put the item in a box
 	else:
-		# TODO
-		pass
+		# Get the image template and append the provider
+		template = Image.open(f"{TEMPLATES_PATH}/simple_case_no_border.png")
+		providers.append({"type":"bitmap","file":f"{NAMESPACE}:font/page/{name}.png", "ascent": 0, "height": 41, "chars": [page_font]})
+
+		# Place the result item
+		template.paste(result_texture, (2, 2), result_mask)
+		template = add_border(template, BORDER_COLOR, BORDER_SIZE, is_rectangle_shape = True)
+		template.save(f"{FONT_FOLDER}/page/{name}.png")
 
 	
 	return

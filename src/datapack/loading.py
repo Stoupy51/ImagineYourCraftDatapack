@@ -85,7 +85,7 @@ for item, data in DATABASE.items():
 	for k, v in data.items():
 		if k not in NOT_COMPONENTS:
 			mc_data["components"][k] = v
-		else:
+		elif k == "id":
 			mc_data[k] = v
 	items_storage += f"data modify storage {NAMESPACE}:items all.{item} set value " + super_json_dump(mc_data, max_level = 0)
 	pass

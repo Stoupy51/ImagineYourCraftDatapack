@@ -13,7 +13,7 @@
 		"id": "minecraft:furnace",
 		"category": "material",
 		"custom_data": {"smithed": {"dict": {"block": {"adamantium": true},"ore": {"adamantium": true}},"ignore": {"functionality": true,"crafting": true}},"iyc": {"adamantium_ore": true}},
-		"wiki": [["Description","Adamantium Ore is a mineable ore found in the overworld caves."],["How to get one?","In the overworld, anywhere below y=40"],["Can be mined with","Any pickaxe"],["Drops","1 Raw Adamantium (fortune enchantment is supported)"],["Silk Touch?","Also supported"]],
+		"wiki": [{"text": "Description: "},{"text": "Adamantium Ore is a mineable ore found in the overworld caves.\n","color": "gray"},{"text": "How to get one? "},{"text": "In the overworld, anywhere below y=40.\n","color": "gray"},{"text": "Can be mined with: "},{"text": "Any pickaxe.\n","color": "gray"},{"text": "Drops: "},{"text": "1 Raw Adamantium (fortune enchantment is supported)\n","color": "gray"},{"text": "Silk Touch? "},{"text": "Also supported","color": "gray"}],
 		"vanilla_block": "minecraft:polished_deepslate",
 		"no_silk_touch_drop": "adamantium_fragment",
 		"item_name": "[{\"text\":\"Adamantium Ore\",\"italic\":false,\"color\":\"white\"}]",

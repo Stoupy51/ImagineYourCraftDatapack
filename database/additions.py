@@ -9,11 +9,11 @@ from database.configurables import *
 database_additions = {
 	"adamantium_ore": {
 		"wiki": [
-			["Description", "Adamantium Ore is a mineable ore found in the overworld caves."],
-			["How to get one?", "In the overworld, anywhere below y=40"],
-			["Can be mined with", "Any pickaxe"],
-			["Drops", "1 Raw Adamantium (fortune enchantment is supported)"],
-			["Silk Touch?", "Also supported"]
+			{"text":"Description: "},		{"text":"Adamantium Ore is a mineable ore found in the overworld caves.\n","color":"gray"},
+			{"text":"How to get one? "},	{"text":"In the overworld, anywhere below y=40.\n","color":"gray"},
+			{"text":"Can be mined with: "},	{"text":"Any pickaxe.\n","color":"gray"},
+			{"text":"Drops: "},				{"text":"1 Raw Adamantium (fortune enchantment is supported)\n","color":"gray"},
+			{"text":"Silk Touch? "},		{"text":"Also supported","color":"gray"},
 		]
 	},
 	"massive_obsidian_block" : {RESULT_OF_CRAFTING:[{"type":"crafting_shapeless","result_count":1,"category":"misc","group":"obsidian","ingredients":[ingr_repr("minecraft:obsidian")] * 9}]},

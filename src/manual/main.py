@@ -148,13 +148,14 @@ else:
 		# Encode items
 		else:
 
-			# If there are crafts
+			# If there are crafts, generate the content for the first craft
 			if raw_data.get(RESULT_OF_CRAFTING):
 				first_craft = raw_data[RESULT_OF_CRAFTING][0]
 				l = generate_craft_content(first_craft, name, page_font)
 				if l:
 					content += l
 			
+			# Else, generate the content for the single item in a big box
 			else:
 				generate_page_font(name, page_font, craft = None)
 				component = get_item_component(name)
@@ -167,7 +168,10 @@ else:
 					content.append(component)
 					content.append("\n")
 
-			# TODO: add wiki icons things
+			# Add wiki information if any
+			content.append("\n")
+			if raw_data.get("wiki"):
+				content.append({"text": VERY_SMALL_NONE_FONT * 2 + WIKI_INFO_FONT + VERY_SMALL_NONE_FONT * 2, "hoverEvent": {"action": "show_text", "contents": raw_data["wiki"]}})
 
 		# Add page to the book
 		book_content.append(content)
@@ -264,9 +268,9 @@ else:
 	providers.append({"type":"bitmap","file":f"{NAMESPACE}:font/none.png", "ascent": 8, "height": 18, "chars": [MEDIUM_NONE_FONT]})
 	providers.append({"type":"bitmap","file":f"{NAMESPACE}:font/none.png", "ascent": 7, "height": 7, "chars": [SMALL_NONE_FONT]})
 	providers.append({"type":"bitmap","file":f"{NAMESPACE}:font/none.png", "ascent": 0, "height": 2, "chars": [VERY_SMALL_NONE_FONT]})
-	providers.append({"type":"bitmap","file":f"{NAMESPACE}:font/wiki_information.png", "ascent": 0, "height": 8, "chars": [WIKI_INFO_FONT]})
-	providers.append({"type":"bitmap","file":f"{NAMESPACE}:font/wiki_result_of_craft.png", "ascent": 0, "height": 8, "chars": [WIKI_RESULT_OF_CRAFT_FONT]})
-	providers.append({"type":"bitmap","file":f"{NAMESPACE}:font/wiki_ingredient_of_craft.png", "ascent": 0, "height": 8, "chars": [WIKI_INGR_OF_CRAFT_FONT]})
+	providers.append({"type":"bitmap","file":f"{NAMESPACE}:font/wiki_information.png", "ascent": 8, "height": 10, "chars": [WIKI_INFO_FONT]})
+	providers.append({"type":"bitmap","file":f"{NAMESPACE}:font/wiki_result_of_craft.png", "ascent": 8, "height": 10, "chars": [WIKI_RESULT_OF_CRAFT_FONT]})
+	providers.append({"type":"bitmap","file":f"{NAMESPACE}:font/wiki_ingredient_of_craft.png", "ascent": 8, "height": 10, "chars": [WIKI_INGR_OF_CRAFT_FONT]})
 	fonts = {"providers": providers}
 	with super_open(f"{MANUAL_PATH}/font/manual.json", "w") as f:
 		f.write(super_json_dump(fonts).replace("\\\\", "\\"))

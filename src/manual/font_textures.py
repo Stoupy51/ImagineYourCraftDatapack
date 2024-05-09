@@ -109,16 +109,18 @@ def image_count(count: int) -> Image:
 # Generate page font function (called in utils)
 providers = []
 os.makedirs(f"{FONT_FOLDER}/page", exist_ok=True)
-def generate_page_font(name: str, page_font: str, craft: dict|None = None, output_filename: str|None = None) -> None:
+def generate_page_font(name: str, page_font: str, craft: dict|None = None, output_name: str = "") -> None:
 	""" Generate the page font image with the proper items
 	Args:
 		name			(str):			Name of the item
 		page_font		(str):			Font string for the page
 		craft			(dict|None):	Crafting recipe dictionary (None if no craft)
-		output_filename (str|None):		The output filename (None if default, used for wiki crafts)
+		output_name		(str|None):		The output name (None if default, used for wiki crafts)
 	"""
-	if not output_filename:
+	if not output_name:
 		output_filename = name
+	else:
+		output_filename = output_name
 
 	# Get result texture (to place later)
 	image_path = f"{MANUAL_PATH}/items/{NAMESPACE}/{name}.png"
@@ -150,7 +152,7 @@ def generate_page_font(name: str, page_font: str, craft: dict|None = None, outpu
 			# Get the image template and append the provider
 			shaped_size = max(2, max(len(craft["shape"]), len(craft["shape"][0])))
 			template = Image.open(f"{TEMPLATES_PATH}/shaped_{shaped_size}x{shaped_size}.png")
-			providers.append({"type":"bitmap","file":f"{NAMESPACE}:font/page/{output_filename}.png", "ascent": 0 if not output_filename else 6, "height": 60, "chars": [page_font]})
+			providers.append({"type":"bitmap","file":f"{NAMESPACE}:font/page/{output_filename}.png", "ascent": 0 if not output_name else 6, "height": 60, "chars": [page_font]})
 
 			# Loop the shape matrix
 			STARTING_PIXEL = (4, 4)
@@ -200,7 +202,7 @@ def generate_page_font(name: str, page_font: str, craft: dict|None = None, outpu
 			
 			# Get the image template and append the provider
 			template = Image.open(f"{TEMPLATES_PATH}/furnace.png")
-			providers.append({"type":"bitmap","file":f"{NAMESPACE}:font/page/{output_filename}.png", "ascent": 0 if not output_filename else 6, "height": 60, "chars": [page_font]})
+			providers.append({"type":"bitmap","file":f"{NAMESPACE}:font/page/{output_filename}.png", "ascent": 0 if not output_name else 6, "height": 60, "chars": [page_font]})
 
 			# Place input item
 			input_item = ingr_to_id(craft["ingredient"])
@@ -231,7 +233,7 @@ def generate_page_font(name: str, page_font: str, craft: dict|None = None, outpu
 	else:
 		# Get the image template and append the provider
 		template = Image.open(f"{TEMPLATES_PATH}/simple_case_no_border.png")
-		providers.append({"type":"bitmap","file":f"{NAMESPACE}:font/page/{output_filename}.png", "ascent": 0 if not output_filename else 6, "height": 40, "chars": [page_font]})
+		providers.append({"type":"bitmap","file":f"{NAMESPACE}:font/page/{output_filename}.png", "ascent": 0 if not output_name else 6, "height": 40, "chars": [page_font]})
 
 		# Place the result item
 		template.paste(result_texture, (2, 2), result_mask)

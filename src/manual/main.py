@@ -182,7 +182,7 @@ else:
 					if craft["type"] == "crafting_shapeless":
 						craft = convert_shapeless_to_shaped(craft)
 					craft_font = get_craft_font()	# Unique used font for the craft
-					generate_page_font(name, craft_font, craft, output_filename = f"{name}_{i+1}")
+					generate_page_font(name, craft_font, craft, output_name = f"{name}_{i+1}")
 					hover_text = [""]
 
 					# Append the craft font and breaklines

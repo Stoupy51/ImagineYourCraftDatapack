@@ -1,0 +1,16 @@
+{
+	"parent": "item/handheld",
+	"textures": {
+		"layer0": "item/diamond_hoe"
+	},
+	"overrides": [
+		{ "predicate": { "custom_model_data": 2015011}, "model": "iyc:item/adamantium_hoe" },
+		{ "predicate": { "custom_model_data": 2015023}, "model": "iyc:item/sapphire_hoe" },
+		{ "predicate": { "custom_model_data": 2015035}, "model": "iyc:item/ruby_hoe" },
+		{ "predicate": { "custom_model_data": 2015047}, "model": "iyc:item/topaz_hoe" },
+		{ "predicate": { "custom_model_data": 2015058}, "model": "iyc:item/obsidian_hoe" },
+		{ "predicate": { "custom_model_data": 2015067}, "model": "iyc:item/emerald_hoe" },
+		{ "predicate": { "custom_model_data": 2015079}, "model": "iyc:item/steel_hoe" }
+	]
+}
+

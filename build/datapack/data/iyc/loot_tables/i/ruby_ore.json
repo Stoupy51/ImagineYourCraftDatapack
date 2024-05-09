@@ -1,0 +1,33 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:furnace",
+					"functions": [
+						{
+							"function": "minecraft:set_components",
+							"components": {
+								"minecraft:custom_data": {
+									"smithed": {"dict": {"block": {"ruby": true},"ore": {"ruby": true}},"ignore": {"functionality": true,"crafting": true}},
+									"iyc": {"ruby_ore": true}
+								},
+								"minecraft:item_name": "[{\"translate\":\"iyc.ruby_ore\",\"italic\":false,\"color\":\"white\"}]",
+								"minecraft:lore": [
+									"[{\"translate\":\"iyc.imagineyourcraft\",\"italic\":true,\"color\":\"blue\"}]"
+								],
+								"minecraft:custom_model_data": 2015025,
+								"minecraft:container": [
+									{"slot": 0,"item": {"id": "minecraft:stone","count": 1,"components": {"minecraft:custom_data": {"smithed": {"block": {"id": "iyc:ruby_ore","from": "iyc"}}}}}}
+								]
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

@@ -1,0 +1,66 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"pattern": [
+		"XXX",
+		"X X",
+		"X X"
+	],
+	"key": {
+		"X": {
+			"item": "minecraft:emerald"
+		}
+	},
+	"result": {
+		"id": "minecraft:leather_leggings",
+		"count": 1,
+		"components": {
+			"minecraft:custom_data": {
+				"smithed": {
+					"dict": {"armor": {"emerald": true,"leggings": true}},
+					"ignore": {"functionality": true,"crafting": true}
+				},
+				"iyc": {
+					"emerald_leggings": true
+				}
+			},
+			"minecraft:dyed_color": {
+				"rgb": 2532680,
+				"show_in_tooltip": false
+			},
+			"minecraft:attribute_modifiers": [
+				{
+					"type": "generic.armor",
+					"uuid": [2,7,8,9],
+					"name": "generic.armor",
+					"amount": 6.0,
+					"operation": "add_value",
+					"slot": "legs"
+				},
+				{
+					"type": "generic.armor_toughness",
+					"uuid": [3,7,8,9],
+					"name": "generic.armor_toughness",
+					"amount": 2,
+					"operation": "add_value",
+					"slot": "legs"
+				},
+				{
+					"type": "generic.luck",
+					"uuid": [5,7,8,9],
+					"name": "generic.luck",
+					"amount": 0.25,
+					"operation": "add_value",
+					"slot": "legs"
+				}
+			],
+			"minecraft:max_damage": 233,
+			"minecraft:item_name": "[{\"translate\":\"iyc.emerald_leggings\",\"italic\":false,\"color\":\"white\"}]",
+			"minecraft:lore": [
+				"[{\"translate\":\"iyc.imagineyourcraft\",\"italic\":true,\"color\":\"blue\"}]"
+			],
+			"minecraft:custom_model_data": 2015061
+		}
+	}
+}
+

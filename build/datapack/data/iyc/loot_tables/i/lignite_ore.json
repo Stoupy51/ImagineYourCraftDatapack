@@ -1,0 +1,33 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:furnace",
+					"functions": [
+						{
+							"function": "minecraft:set_components",
+							"components": {
+								"minecraft:custom_data": {
+									"smithed": {"dict": {"block": {"lignite": true},"ore": {"lignite": true}},"ignore": {"functionality": true,"crafting": true}},
+									"iyc": {"lignite_ore": true}
+								},
+								"minecraft:item_name": "[{\"translate\":\"iyc.lignite_ore\",\"italic\":false,\"color\":\"white\"}]",
+								"minecraft:lore": [
+									"[{\"translate\":\"iyc.imagineyourcraft\",\"italic\":true,\"color\":\"blue\"}]"
+								],
+								"minecraft:custom_model_data": 2015082,
+								"minecraft:container": [
+									{"slot": 0,"item": {"id": "minecraft:stone","count": 1,"components": {"minecraft:custom_data": {"smithed": {"block": {"id": "iyc:lignite_ore","from": "iyc"}}}}}}
+								]
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

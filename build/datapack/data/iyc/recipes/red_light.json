@@ -1,0 +1,38 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"category": "blocks",
+	"ingredients": [
+		{
+			"item": "minecraft:redstone_lamp"
+		},
+		{
+			"item": "minecraft:red_wool"
+		}
+	],
+	"result": {
+		"id": "minecraft:furnace",
+		"count": 1,
+		"components": {
+			"minecraft:custom_data": {
+				"iyc": {
+					"red_light": true
+				},
+				"smithed": {
+					"ignore": {"functionality": true,"crafting": true}
+				}
+			},
+			"minecraft:item_name": "[{\"translate\":\"iyc.red_light\",\"italic\":false,\"color\":\"white\"}]",
+			"minecraft:lore": [
+				"[{\"translate\":\"iyc.imagineyourcraft\",\"italic\":true,\"color\":\"blue\"}]"
+			],
+			"minecraft:custom_model_data": 2015106,
+			"minecraft:container": [
+				{
+					"slot": 0,
+					"item": {"id": "minecraft:stone","count": 1,"components": {"minecraft:custom_data": {"smithed": {"block": {"id": "iyc:red_light","from": "iyc"}}}}}
+				}
+			]
+		}
+	}
+}
+

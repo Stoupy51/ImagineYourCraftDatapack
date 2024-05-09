@@ -1,0 +1,32 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:snowball",
+					"functions": [
+						{
+							"function": "minecraft:set_components",
+							"components": {
+								"minecraft:max_stack_size": 99,
+								"minecraft:lore": [
+									"{\"translate\":\"iyc.can_be_thrown\",\"color\":\"gray\",\"italic\":false}",
+									"[{\"translate\":\"iyc.imagineyourcraft\",\"italic\":true,\"color\":\"blue\"}]"
+								],
+								"minecraft:custom_data": {
+									"iyc": {"rock": true},
+									"smithed": {"ignore": {"functionality": true,"crafting": true}}
+								},
+								"minecraft:item_name": "[{\"translate\":\"iyc.rock\",\"italic\":false,\"color\":\"white\"}]",
+								"minecraft:custom_model_data": 2015138
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

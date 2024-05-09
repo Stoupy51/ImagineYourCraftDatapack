@@ -1,0 +1,40 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:leather_chestplate",
+					"functions": [
+						{
+							"function": "minecraft:set_components",
+							"components": {
+								"minecraft:custom_data": {
+									"smithed": {"dict": {"armor": {"adamantium": true,"chestplate": true}},"ignore": {"functionality": true,"crafting": true}},
+									"iyc": {"adamantium_chestplate": true}
+								},
+								"minecraft:dyed_color": {
+									"rgb": 2511745,
+									"show_in_tooltip": false
+								},
+								"minecraft:attribute_modifiers": [
+									{"type": "generic.armor","uuid": [2,4,5,6],"name": "generic.armor","amount": 8.3,"operation": "add_value","slot": "chest"},
+									{"type": "generic.armor_toughness","uuid": [3,4,5,6],"name": "generic.armor_toughness","amount": 3,"operation": "add_value","slot": "chest"},
+									{"type": "generic.knockback_resistance","uuid": [4,4,5,6],"name": "generic.knockback_resistance","amount": 0.1,"operation": "add_value","slot": "chest"}
+								],
+								"minecraft:max_damage": 545,
+								"minecraft:item_name": "[{\"translate\":\"iyc.adamantium_chestplate\",\"italic\":false,\"color\":\"white\"}]",
+								"minecraft:lore": [
+									"[{\"translate\":\"iyc.imagineyourcraft\",\"italic\":true,\"color\":\"blue\"}]"
+								],
+								"minecraft:custom_model_data": 2015004
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

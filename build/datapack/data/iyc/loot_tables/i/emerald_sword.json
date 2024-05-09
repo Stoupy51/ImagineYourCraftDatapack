@@ -1,0 +1,37 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:diamond_sword",
+					"functions": [
+						{
+							"function": "minecraft:set_components",
+							"components": {
+								"minecraft:custom_data": {
+									"smithed": {"dict": {"tools": {"emerald": true,"sword": true}},"ignore": {"functionality": true,"crafting": true}},
+									"iyc": {"emerald_sword": true}
+								},
+								"minecraft:attribute_modifiers": [
+									{"type": "generic.attack_damage","uuid": [0,13,14,15],"name": "generic.attack_damage","amount": 7.0,"operation": "add_value","slot": "mainhand"},
+									{"type": "generic.attack_speed","uuid": [1,13,14,15],"name": "generic.attack_speed","amount": -2.5,"operation": "add_value","slot": "mainhand"},
+									{"type": "generic.luck","uuid": [5,13,14,15],"name": "generic.luck","amount": 0.25,"operation": "add_value","slot": "mainhand"},
+									{"type": "player.mining_efficiency","uuid": [6,13,14,15],"name": "player.mining_efficiency","amount": 0.0,"operation": "add_value","slot": "mainhand"}
+								],
+								"minecraft:max_damage": 736,
+								"minecraft:item_name": "[{\"translate\":\"iyc.emerald_sword\",\"italic\":false,\"color\":\"white\"}]",
+								"minecraft:lore": [
+									"[{\"translate\":\"iyc.imagineyourcraft\",\"italic\":true,\"color\":\"blue\"}]"
+								],
+								"minecraft:custom_model_data": 2015063
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

@@ -1,0 +1,31 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:command_block",
+					"functions": [
+						{
+							"function": "minecraft:set_components",
+							"components": {
+								"minecraft:lore": [
+									"{\"translate\":\"iyc.uses_steel_nuggets_as_bullets\",\"color\":\"gray\",\"italic\":false}",
+									"[{\"translate\":\"iyc.imagineyourcraft\",\"italic\":true,\"color\":\"blue\"}]"
+								],
+								"minecraft:custom_data": {
+									"iyc": {"sw1911": true},
+									"smithed": {"ignore": {"functionality": true,"crafting": true}}
+								},
+								"minecraft:item_name": "[{\"translate\":\"iyc.sw1911\",\"italic\":false,\"color\":\"white\"}]",
+								"minecraft:custom_model_data": 2015109
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

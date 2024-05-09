@@ -1,0 +1,16 @@
+{
+	"parent": "item/handheld",
+	"textures": {
+		"layer0": "item/diamond_axe"
+	},
+	"overrides": [
+		{ "predicate": { "custom_model_data": 2015009}, "model": "iyc:item/adamantium_axe" },
+		{ "predicate": { "custom_model_data": 2015021}, "model": "iyc:item/sapphire_axe" },
+		{ "predicate": { "custom_model_data": 2015033}, "model": "iyc:item/ruby_axe" },
+		{ "predicate": { "custom_model_data": 2015045}, "model": "iyc:item/topaz_axe" },
+		{ "predicate": { "custom_model_data": 2015056}, "model": "iyc:item/obsidian_axe" },
+		{ "predicate": { "custom_model_data": 2015065}, "model": "iyc:item/emerald_axe" },
+		{ "predicate": { "custom_model_data": 2015077}, "model": "iyc:item/steel_axe" }
+	]
+}
+

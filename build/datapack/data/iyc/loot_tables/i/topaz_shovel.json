@@ -1,0 +1,36 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:diamond_shovel",
+					"functions": [
+						{
+							"function": "minecraft:set_components",
+							"components": {
+								"minecraft:custom_data": {
+									"smithed": {"dict": {"tools": {"topaz": true,"shovel": true}},"ignore": {"functionality": true,"crafting": true}},
+									"iyc": {"topaz_shovel": true}
+								},
+								"minecraft:attribute_modifiers": [
+									{"type": "generic.attack_damage","uuid": [0,22,23,24],"name": "generic.attack_damage","amount": 6.0,"operation": "add_value","slot": "mainhand"},
+									{"type": "generic.attack_speed","uuid": [1,22,23,24],"name": "generic.attack_speed","amount": -3.0,"operation": "add_value","slot": "mainhand"},
+									{"type": "player.mining_efficiency","uuid": [6,22,23,24],"name": "player.mining_efficiency","amount": 0.0,"operation": "add_value","slot": "mainhand"}
+								],
+								"minecraft:max_damage": 1281,
+								"minecraft:item_name": "[{\"translate\":\"iyc.topaz_shovel\",\"italic\":false,\"color\":\"white\"}]",
+								"minecraft:lore": [
+									"[{\"translate\":\"iyc.imagineyourcraft\",\"italic\":true,\"color\":\"blue\"}]"
+								],
+								"minecraft:custom_model_data": 2015046
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

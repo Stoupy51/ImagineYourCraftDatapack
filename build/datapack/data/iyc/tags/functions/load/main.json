@@ -1,0 +1,10 @@
+{
+	"values": [
+		{
+			"id": "#iyc:load/dependencies",
+			"required": false
+		},
+		"iyc:load/main"
+	]
+}
+

@@ -1,0 +1,39 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"category": "blocks",
+	"group": "wood_lantern",
+	"ingredients": [
+		{
+			"item": "minecraft:glowstone"
+		},
+		{
+			"item": "minecraft:oak_wood"
+		}
+	],
+	"result": {
+		"id": "minecraft:furnace",
+		"count": 1,
+		"components": {
+			"minecraft:custom_data": {
+				"iyc": {
+					"oak_wood_lantern": true
+				},
+				"smithed": {
+					"ignore": {"functionality": true,"crafting": true}
+				}
+			},
+			"minecraft:item_name": "[{\"translate\":\"iyc.oak_wood_lantern\",\"italic\":false,\"color\":\"white\"}]",
+			"minecraft:lore": [
+				"[{\"translate\":\"iyc.imagineyourcraft\",\"italic\":true,\"color\":\"blue\"}]"
+			],
+			"minecraft:custom_model_data": 2015103,
+			"minecraft:container": [
+				{
+					"slot": 0,
+					"item": {"id": "minecraft:stone","count": 1,"components": {"minecraft:custom_data": {"smithed": {"block": {"id": "iyc:oak_wood_lantern","from": "iyc"}}}}}
+				}
+			]
+		}
+	}
+}
+

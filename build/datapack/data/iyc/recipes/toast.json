@@ -1,0 +1,32 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"category": "misc",
+	"pattern": [
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "minecraft:bread"
+		}
+	},
+	"result": {
+		"id": "minecraft:command_block",
+		"count": 4,
+		"components": {
+			"minecraft:custom_data": {
+				"iyc": {
+					"toast": true
+				},
+				"smithed": {
+					"ignore": {"functionality": true,"crafting": true}
+				}
+			},
+			"minecraft:item_name": "[{\"translate\":\"iyc.toast\",\"italic\":false,\"color\":\"white\"}]",
+			"minecraft:lore": [
+				"[{\"translate\":\"iyc.imagineyourcraft\",\"italic\":true,\"color\":\"blue\"}]"
+			],
+			"minecraft:custom_model_data": 2015118
+		}
+	}
+}
+

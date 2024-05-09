@@ -1,0 +1,35 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"category": "misc",
+	"group": "beer_mug",
+	"pattern": [
+		"XX ",
+		"X X",
+		"XX "
+	],
+	"key": {
+		"X": {
+			"item": "minecraft:glass"
+		}
+	},
+	"result": {
+		"id": "minecraft:command_block",
+		"count": 4,
+		"components": {
+			"minecraft:custom_data": {
+				"iyc": {
+					"beer_mug": true
+				},
+				"smithed": {
+					"ignore": {"functionality": true,"crafting": true}
+				}
+			},
+			"minecraft:item_name": "[{\"translate\":\"iyc.beer_mug\",\"italic\":false,\"color\":\"white\"}]",
+			"minecraft:lore": [
+				"[{\"translate\":\"iyc.imagineyourcraft\",\"italic\":true,\"color\":\"blue\"}]"
+			],
+			"minecraft:custom_model_data": 2015113
+		}
+	}
+}
+

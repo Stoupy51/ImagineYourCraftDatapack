@@ -1,0 +1,73 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"pattern": [
+		"XX",
+		" S",
+		" S"
+	],
+	"key": {
+		"X": {
+			"item": "minecraft:emerald"
+		},
+		"S": {
+			"item": "minecraft:stick"
+		}
+	},
+	"result": {
+		"id": "minecraft:diamond_hoe",
+		"count": 1,
+		"components": {
+			"minecraft:custom_data": {
+				"smithed": {
+					"dict": {"tools": {"emerald": true,"hoe": true}},
+					"ignore": {"functionality": true,"crafting": true}
+				},
+				"iyc": {
+					"emerald_hoe": true
+				}
+			},
+			"minecraft:attribute_modifiers": [
+				{
+					"type": "generic.attack_damage",
+					"uuid": [0,25,26,27],
+					"name": "generic.attack_damage",
+					"amount": 1.0,
+					"operation": "add_value",
+					"slot": "mainhand"
+				},
+				{
+					"type": "generic.attack_speed",
+					"uuid": [1,25,26,27],
+					"name": "generic.attack_speed",
+					"amount": 0,
+					"operation": "add_value",
+					"slot": "mainhand"
+				},
+				{
+					"type": "generic.luck",
+					"uuid": [5,25,26,27],
+					"name": "generic.luck",
+					"amount": 0.25,
+					"operation": "add_value",
+					"slot": "mainhand"
+				},
+				{
+					"type": "player.mining_efficiency",
+					"uuid": [6,25,26,27],
+					"name": "player.mining_efficiency",
+					"amount": 0.0,
+					"operation": "add_value",
+					"slot": "mainhand"
+				}
+			],
+			"minecraft:max_damage": 736,
+			"minecraft:item_name": "[{\"translate\":\"iyc.emerald_hoe\",\"italic\":false,\"color\":\"white\"}]",
+			"minecraft:lore": [
+				"[{\"translate\":\"iyc.imagineyourcraft\",\"italic\":true,\"color\":\"blue\"}]"
+			],
+			"minecraft:custom_model_data": 2015067
+		}
+	}
+}
+

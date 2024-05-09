@@ -1,0 +1,66 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"pattern": [
+		"X X",
+		"XXX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "minecraft:emerald"
+		}
+	},
+	"result": {
+		"id": "minecraft:leather_chestplate",
+		"count": 1,
+		"components": {
+			"minecraft:custom_data": {
+				"smithed": {
+					"dict": {"armor": {"emerald": true,"chestplate": true}},
+					"ignore": {"functionality": true,"crafting": true}
+				},
+				"iyc": {
+					"emerald_chestplate": true
+				}
+			},
+			"minecraft:dyed_color": {
+				"rgb": 2532680,
+				"show_in_tooltip": false
+			},
+			"minecraft:attribute_modifiers": [
+				{
+					"type": "generic.armor",
+					"uuid": [2,4,5,6],
+					"name": "generic.armor",
+					"amount": 8.0,
+					"operation": "add_value",
+					"slot": "chest"
+				},
+				{
+					"type": "generic.armor_toughness",
+					"uuid": [3,4,5,6],
+					"name": "generic.armor_toughness",
+					"amount": 2,
+					"operation": "add_value",
+					"slot": "chest"
+				},
+				{
+					"type": "generic.luck",
+					"uuid": [5,4,5,6],
+					"name": "generic.luck",
+					"amount": 0.25,
+					"operation": "add_value",
+					"slot": "chest"
+				}
+			],
+			"minecraft:max_damage": 248,
+			"minecraft:item_name": "[{\"translate\":\"iyc.emerald_chestplate\",\"italic\":false,\"color\":\"white\"}]",
+			"minecraft:lore": [
+				"[{\"translate\":\"iyc.imagineyourcraft\",\"italic\":true,\"color\":\"blue\"}]"
+			],
+			"minecraft:custom_model_data": 2015060
+		}
+	}
+}
+

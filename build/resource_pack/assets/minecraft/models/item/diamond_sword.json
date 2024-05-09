@@ -1,0 +1,16 @@
+{
+	"parent": "item/handheld",
+	"textures": {
+		"layer0": "item/diamond_sword"
+	},
+	"overrides": [
+		{ "predicate": { "custom_model_data": 2015007}, "model": "iyc:item/adamantium_sword" },
+		{ "predicate": { "custom_model_data": 2015019}, "model": "iyc:item/sapphire_sword" },
+		{ "predicate": { "custom_model_data": 2015031}, "model": "iyc:item/ruby_sword" },
+		{ "predicate": { "custom_model_data": 2015043}, "model": "iyc:item/topaz_sword" },
+		{ "predicate": { "custom_model_data": 2015054}, "model": "iyc:item/obsidian_sword" },
+		{ "predicate": { "custom_model_data": 2015063}, "model": "iyc:item/emerald_sword" },
+		{ "predicate": { "custom_model_data": 2015075}, "model": "iyc:item/steel_sword" }
+	]
+}
+

@@ -1,0 +1,39 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:leather_chestplate",
+					"functions": [
+						{
+							"function": "minecraft:set_components",
+							"components": {
+								"minecraft:custom_data": {
+									"smithed": {"dict": {"armor": {"topaz": true,"chestplate": true}},"ignore": {"functionality": true,"crafting": true}},
+									"iyc": {"topaz_chestplate": true}
+								},
+								"minecraft:dyed_color": {
+									"rgb": 12153387,
+									"show_in_tooltip": false
+								},
+								"minecraft:attribute_modifiers": [
+									{"type": "generic.armor","uuid": [2,4,5,6],"name": "generic.armor","amount": 9.6,"operation": "add_value","slot": "chest"},
+									{"type": "generic.armor_toughness","uuid": [3,4,5,6],"name": "generic.armor_toughness","amount": 2,"operation": "add_value","slot": "chest"}
+								],
+								"minecraft:max_damage": 433,
+								"minecraft:item_name": "[{\"translate\":\"iyc.topaz_chestplate\",\"italic\":false,\"color\":\"white\"}]",
+								"minecraft:lore": [
+									"[{\"translate\":\"iyc.imagineyourcraft\",\"italic\":true,\"color\":\"blue\"}]"
+								],
+								"minecraft:custom_model_data": 2015040
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

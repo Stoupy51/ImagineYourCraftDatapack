@@ -122,6 +122,7 @@
 		{"type": "bitmap","file": "iyc:font/page/lignite_torch.png","ascent": 0,"height": 60,"chars": ["\u10ad"]},
 		{"type": "bitmap","file": "iyc:font/page/nuclear_bomb.png","ascent": 0,"height": 60,"chars": ["\u10af"]},
 		{"type": "bitmap","file": "iyc:font/category/categories_page.png","ascent": 0,"height": 130,"chars": ["\u1021"]},
+		{"type": "bitmap","file": "iyc:font/page/_logo.png","ascent": 0,"height": 40,"chars": ["\u1020"]},
 		{"type": "bitmap","file": "iyc:font/none.png","ascent": 8,"height": 20,"chars": ["\u0020"]},
 		{"type": "bitmap","file": "iyc:font/none.png","ascent": 8,"height": 18,"chars": ["\u0021"]},
 		{"type": "bitmap","file": "iyc:font/none.png","ascent": 7,"height": 7,"chars": ["\u0022"]},

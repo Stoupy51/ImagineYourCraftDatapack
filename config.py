@@ -32,6 +32,7 @@ VERSION: str = "0.0.1"					# Datapack version in the following mandatory format:
 NAMESPACE: str = "iyc"					# Should be the same you use in the merge folder. Used to namespace functions, tags, etc.
 PACK_FORMAT: int = 41					# Pack format version, see https://minecraft.wiki/w/Pack_format#List_of_data_pack_formats
 RESOURCE_PACK_FORMAT: int = 32			# Resource pack format version, see https://minecraft.wiki/w/Pack_format#List_of_resource_pack_formats
+MANUAL_NAME: str = f"{DATAPACK_NAME} Manual"				# Name of the manual, used for the title of the book and first page
 DESCRIPTION = f"{DATAPACK_NAME} [{VERSION}] by {AUTHOR}"	# Pack description displayed in pack.mcmeta
 DEPENDENCIES: dict[str, dict[str, list[int] | str]] = {
 	# Automagically, the datapack will check for the presence of dependencies and their minimum required versions at runtime
@@ -91,4 +92,8 @@ NOT_COMPONENTS: list[str] = [							# Keys that should not be considered as comp
 	COMMANDS_ON_BREAK]
 DATABASE: dict[str, dict] = {}				# Dictionnary containing all the items, blocks, recipes, etc. used by the program. See format in database/README.md
 EXTERNAL_DATABASE: dict[str, dict] = {}		# Should be filled when you require an item from another datapack for a recipe or anything else
+
+# Text for the first page of the manual
+if HAS_MANUAL:
+	MANUAL_FIRST_PAGE_TEXT: dict = {"text":"This manual is very interactive and will guide you through the different items and blocks available in the datapack!", "color":"#505050"}
 

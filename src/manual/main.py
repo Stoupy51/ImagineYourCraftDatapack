@@ -226,6 +226,29 @@ else:
 	page_image.save(f"{FONT_FOLDER}/category/{file_name}.png")
 	book_content.insert(0, content)
 
+
+	## Append introduction page
+	content = [""]
+	page_font = get_page_font(0)
+	providers.append({"type":"bitmap","file":f"{NAMESPACE}:font/page/_logo.png", "ascent": 0, "height": 40, "chars": [page_font]})
+	content.append({"text": MANUAL_NAME + "\n", "underlined": True})
+	content.append({"text": MEDIUM_NONE_FONT * 2 + page_font, "font": FONT, "color": "white"})
+	
+	# Create the image and load Minecraft font
+	icon_path = f"{ASSETS_FOLDER}/original_icon.png"
+	if not os.path.exists(icon_path):
+		error(f"Missing icon path at '{icon_path}' (needed for the manual)")
+	logo = Image.open(icon_path)
+	logo = logo.resize((256, 256), Image.NEAREST)
+
+	# Write the introduction text
+	content.append("\n" * 6)
+	content.append(MANUAL_FIRST_PAGE_TEXT)
+
+	# Save image and insert in the manual pages
+	logo.save(f"{FONT_FOLDER}/page/_logo.png")
+	book_content.insert(0, content)
+
 	## Optimize the book size
 	book_content = optimize_book(book_content)
 
@@ -255,7 +278,7 @@ manual_database = {"manual":
 	{
 		"id": "minecraft:written_book",
 		"written_book_content": {
-			"title": f"{DATAPACK_NAME} Manual",
+			"title": MANUAL_NAME,
 			"author": AUTHOR,
 			"pages": [str(i).replace("\\\\", "\\") for i in book_content],
 		},

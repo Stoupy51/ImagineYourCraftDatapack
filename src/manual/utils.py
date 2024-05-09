@@ -179,7 +179,7 @@ def generate_craft_content(craft: dict, name: str, page_font: str) -> list:
 					else:
 						content.append(formatted_ingredients[k])
 				content.append("\n")
-		if len(craft["shape"]) == 1:
+		if len(craft["shape"]) == 1 and len(craft["shape"][0]) < 3:
 			content.append("\n\n")
 		
 		# Add the result to the craft
@@ -221,6 +221,12 @@ def generate_craft_content(craft: dict, name: str, page_font: str) -> list:
 				break_line_pos = len(content)
 			content.insert(break_line_pos, NONE_FONT * (offset - 1) + SMALL_NONE_FONT * 2)
 			content.insert(break_line_pos + 1, result_component)
+
+			# Add break lines for the third layer of a 3x3 craft
+			if len(craft["shape"]) < 3 and len(craft["shape"][0]) == 3:
+				content.append("\n\n\n")
+				if len(craft["shape"]) < 2:
+					content.append("\n")
 		
 	
 	# If the type is furnace type,

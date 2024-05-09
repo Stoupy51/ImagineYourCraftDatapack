@@ -14,9 +14,9 @@
 									"smithed": {"dict": {"material": {"topaz": true}},"ignore": {"functionality": true,"crafting": true}},
 									"iyc": {"topaz": true}
 								},
-								"minecraft:item_name": "[{\"translate\":\"iyc.topaz\",\"italic\":false,\"color\":\"white\"}]",
+								"minecraft:item_name": "[{\"text\":\"Topaz\",\"italic\":false,\"color\":\"white\"}]",
 								"minecraft:lore": [
-									"[{\"translate\":\"iyc.imagineyourcraft\",\"italic\":true,\"color\":\"blue\"}]"
+									"[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"
 								],
 								"minecraft:custom_model_data": 2015038
 							}

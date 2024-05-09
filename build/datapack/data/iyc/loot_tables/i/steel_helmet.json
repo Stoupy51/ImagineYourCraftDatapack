@@ -23,9 +23,9 @@
 									{"type": "generic.armor_toughness","uuid": [3,1,2,3],"name": "generic.armor_toughness","amount": 2,"operation": "add_value","slot": "head"}
 								],
 								"minecraft:max_damage": 103,
-								"minecraft:item_name": "[{\"translate\":\"iyc.steel_helmet\",\"italic\":false,\"color\":\"white\"}]",
+								"minecraft:item_name": "[{\"text\":\"Steel Helmet\",\"italic\":false,\"color\":\"white\"}]",
 								"minecraft:lore": [
-									"[{\"translate\":\"iyc.imagineyourcraft\",\"italic\":true,\"color\":\"blue\"}]"
+									"[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"
 								],
 								"minecraft:custom_model_data": 2015071
 							}

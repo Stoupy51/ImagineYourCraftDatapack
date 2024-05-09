@@ -62,9 +62,9 @@
 				}
 			],
 			"minecraft:max_damage": 736,
-			"minecraft:item_name": "[{\"translate\":\"iyc.emerald_pickaxe\",\"italic\":false,\"color\":\"white\"}]",
+			"minecraft:item_name": "[{\"text\":\"Emerald Pickaxe\",\"italic\":false,\"color\":\"white\"}]",
 			"minecraft:lore": [
-				"[{\"translate\":\"iyc.imagineyourcraft\",\"italic\":true,\"color\":\"blue\"}]"
+				"[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"
 			],
 			"minecraft:custom_model_data": 2015064
 		}

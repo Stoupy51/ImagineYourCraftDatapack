@@ -14,9 +14,9 @@
 									"smithed": {"dict": {"block": {"topaz": true},"ore": {"topaz": true}},"ignore": {"functionality": true,"crafting": true}},
 									"iyc": {"topaz_ore": true}
 								},
-								"minecraft:item_name": "[{\"translate\":\"iyc.topaz_ore\",\"italic\":false,\"color\":\"white\"}]",
+								"minecraft:item_name": "[{\"text\":\"Topaz Ore\",\"italic\":false,\"color\":\"white\"}]",
 								"minecraft:lore": [
-									"[{\"translate\":\"iyc.imagineyourcraft\",\"italic\":true,\"color\":\"blue\"}]"
+									"[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"
 								],
 								"minecraft:custom_model_data": 2015037,
 								"minecraft:container": [

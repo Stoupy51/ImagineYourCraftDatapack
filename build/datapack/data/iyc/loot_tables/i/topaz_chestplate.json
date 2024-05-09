@@ -23,9 +23,9 @@
 									{"type": "generic.armor_toughness","uuid": [3,4,5,6],"name": "generic.armor_toughness","amount": 2,"operation": "add_value","slot": "chest"}
 								],
 								"minecraft:max_damage": 433,
-								"minecraft:item_name": "[{\"translate\":\"iyc.topaz_chestplate\",\"italic\":false,\"color\":\"white\"}]",
+								"minecraft:item_name": "[{\"text\":\"Topaz Chestplate\",\"italic\":false,\"color\":\"white\"}]",
 								"minecraft:lore": [
-									"[{\"translate\":\"iyc.imagineyourcraft\",\"italic\":true,\"color\":\"blue\"}]"
+									"[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"
 								],
 								"minecraft:custom_model_data": 2015040
 							}

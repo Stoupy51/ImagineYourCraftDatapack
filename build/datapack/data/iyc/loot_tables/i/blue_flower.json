@@ -14,9 +14,9 @@
 									"iyc": {"blue_flower": true},
 									"smithed": {"ignore": {"functionality": true,"crafting": true}}
 								},
-								"minecraft:item_name": "[{\"translate\":\"iyc.blue_flower\",\"italic\":false,\"color\":\"white\"}]",
+								"minecraft:item_name": "[{\"text\":\"Blue Flower\",\"italic\":false,\"color\":\"white\"}]",
 								"minecraft:lore": [
-									"[{\"translate\":\"iyc.imagineyourcraft\",\"italic\":true,\"color\":\"blue\"}]"
+									"[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"
 								],
 								"minecraft:custom_model_data": 2015111
 							}

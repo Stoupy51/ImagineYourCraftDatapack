@@ -23,9 +23,9 @@
 									{"type": "generic.armor_toughness","uuid": [3,7,8,9],"name": "generic.armor_toughness","amount": 2,"operation": "add_value","slot": "legs"}
 								],
 								"minecraft:max_damage": 140,
-								"minecraft:item_name": "[{\"translate\":\"iyc.steel_leggings\",\"italic\":false,\"color\":\"white\"}]",
+								"minecraft:item_name": "[{\"text\":\"Steel Leggings\",\"italic\":false,\"color\":\"white\"}]",
 								"minecraft:lore": [
-									"[{\"translate\":\"iyc.imagineyourcraft\",\"italic\":true,\"color\":\"blue\"}]"
+									"[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"
 								],
 								"minecraft:custom_model_data": 2015073
 							}

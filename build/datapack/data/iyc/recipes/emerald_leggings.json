@@ -55,9 +55,9 @@
 				}
 			],
 			"minecraft:max_damage": 233,
-			"minecraft:item_name": "[{\"translate\":\"iyc.emerald_leggings\",\"italic\":false,\"color\":\"white\"}]",
+			"minecraft:item_name": "[{\"text\":\"Emerald Leggings\",\"italic\":false,\"color\":\"white\"}]",
 			"minecraft:lore": [
-				"[{\"translate\":\"iyc.imagineyourcraft\",\"italic\":true,\"color\":\"blue\"}]"
+				"[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"
 			],
 			"minecraft:custom_model_data": 2015061
 		}

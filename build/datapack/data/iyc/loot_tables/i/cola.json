@@ -14,9 +14,9 @@
 									"iyc": {"cola": true},
 									"smithed": {"ignore": {"functionality": true,"crafting": true}}
 								},
-								"minecraft:item_name": "[{\"translate\":\"iyc.cola\",\"italic\":false,\"color\":\"white\"}]",
+								"minecraft:item_name": "[{\"text\":\"Cola\",\"italic\":false,\"color\":\"white\"}]",
 								"minecraft:lore": [
-									"[{\"translate\":\"iyc.imagineyourcraft\",\"italic\":true,\"color\":\"blue\"}]"
+									"[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"
 								],
 								"minecraft:custom_model_data": 2015116
 							}

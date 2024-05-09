@@ -14,8 +14,8 @@
 		"count": 1,
 		"components": {
 			"minecraft:lore": [
-				"{\"translate\":\"iyc.x1_5_damage_arrow\",\"color\":\"gray\",\"italic\":false}",
-				"[{\"translate\":\"iyc.imagineyourcraft\",\"italic\":true,\"color\":\"blue\"}]"
+				"{\"text\":\"x1.5 damage arrow\",\"color\":\"gray\",\"italic\":false}",
+				"[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"
 			],
 			"minecraft:custom_data": {
 				"iyc": {
@@ -25,7 +25,7 @@
 					"ignore": {"functionality": true,"crafting": true}
 				}
 			},
-			"minecraft:item_name": "[{\"translate\":\"iyc.bolt\",\"italic\":false,\"color\":\"white\"}]",
+			"minecraft:item_name": "[{\"text\":\"Bolt\",\"italic\":false,\"color\":\"white\"}]",
 			"minecraft:custom_model_data": 2015093
 		}
 	}

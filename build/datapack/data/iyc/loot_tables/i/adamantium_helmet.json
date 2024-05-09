@@ -24,9 +24,9 @@
 									{"type": "generic.knockback_resistance","uuid": [4,1,2,3],"name": "generic.knockback_resistance","amount": 0.1,"operation": "add_value","slot": "head"}
 								],
 								"minecraft:max_damage": 375,
-								"minecraft:item_name": "[{\"translate\":\"iyc.adamantium_helmet\",\"italic\":false,\"color\":\"white\"}]",
+								"minecraft:item_name": "[{\"text\":\"Adamantium Helmet\",\"italic\":false,\"color\":\"white\"}]",
 								"minecraft:lore": [
-									"[{\"translate\":\"iyc.imagineyourcraft\",\"italic\":true,\"color\":\"blue\"}]"
+									"[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"
 								],
 								"minecraft:custom_model_data": 2015003
 							}

@@ -24,9 +24,9 @@
 									{"type": "generic.knockback_resistance","uuid": [4,10,11,12],"name": "generic.knockback_resistance","amount": 0.1,"operation": "add_value","slot": "feet"}
 								],
 								"minecraft:max_damage": 443,
-								"minecraft:item_name": "[{\"translate\":\"iyc.adamantium_boots\",\"italic\":false,\"color\":\"white\"}]",
+								"minecraft:item_name": "[{\"text\":\"Adamantium Boots\",\"italic\":false,\"color\":\"white\"}]",
 								"minecraft:lore": [
-									"[{\"translate\":\"iyc.imagineyourcraft\",\"italic\":true,\"color\":\"blue\"}]"
+									"[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"
 								],
 								"minecraft:custom_model_data": 2015006
 							}

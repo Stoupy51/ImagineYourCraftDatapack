@@ -14,9 +14,9 @@
 									"smithed": {"dict": {"block": {"lignite": true},"ore": {"lignite": true}},"ignore": {"functionality": true,"crafting": true}},
 									"iyc": {"lignite_ore": true}
 								},
-								"minecraft:item_name": "[{\"translate\":\"iyc.lignite_ore\",\"italic\":false,\"color\":\"white\"}]",
+								"minecraft:item_name": "[{\"text\":\"Lignite Ore\",\"italic\":false,\"color\":\"white\"}]",
 								"minecraft:lore": [
-									"[{\"translate\":\"iyc.imagineyourcraft\",\"italic\":true,\"color\":\"blue\"}]"
+									"[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"
 								],
 								"minecraft:custom_model_data": 2015082,
 								"minecraft:container": [

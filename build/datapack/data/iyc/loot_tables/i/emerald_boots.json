@@ -24,9 +24,9 @@
 									{"type": "generic.luck","uuid": [5,10,11,12],"name": "generic.luck","amount": 0.25,"operation": "add_value","slot": "feet"}
 								],
 								"minecraft:max_damage": 202,
-								"minecraft:item_name": "[{\"translate\":\"iyc.emerald_boots\",\"italic\":false,\"color\":\"white\"}]",
+								"minecraft:item_name": "[{\"text\":\"Emerald Boots\",\"italic\":false,\"color\":\"white\"}]",
 								"minecraft:lore": [
-									"[{\"translate\":\"iyc.imagineyourcraft\",\"italic\":true,\"color\":\"blue\"}]"
+									"[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"
 								],
 								"minecraft:custom_model_data": 2015062
 							}

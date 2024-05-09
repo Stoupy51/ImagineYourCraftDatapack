@@ -20,9 +20,9 @@
 									{"type": "player.mining_efficiency","uuid": [6,13,14,15],"name": "player.mining_efficiency","amount": -0.30000000000000004,"operation": "add_value","slot": "mainhand"}
 								],
 								"minecraft:max_damage": 443,
-								"minecraft:item_name": "[{\"translate\":\"iyc.steel_sword\",\"italic\":false,\"color\":\"white\"}]",
+								"minecraft:item_name": "[{\"text\":\"Steel Sword\",\"italic\":false,\"color\":\"white\"}]",
 								"minecraft:lore": [
-									"[{\"translate\":\"iyc.imagineyourcraft\",\"italic\":true,\"color\":\"blue\"}]"
+									"[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"
 								],
 								"minecraft:custom_model_data": 2015075
 							}

@@ -45,7 +45,7 @@ DEPENDENCIES: dict[str, dict[str, list[int] | str]] = {
 
 	"common_signals": {"version":[0, 0, 0], "name":"Common Signals", "url":"https://github.com/Stoupy51/CommonSignals"},
 	"smithed.custom_block": {"version":[0, 3, 0], "name":"Smithed Custom Block Placement", "url":"https://wiki.smithed.dev/libraries/custom-block/"},
-	"smithed.crafter": {"version":[0, 3, 1], "name":"Smithed Crafter", "url":"https://wiki.smithed.dev/libraries/crafter/"},
+	#"smithed.crafter": {"version":[0, 3, 1], "name":"Smithed Crafter", "url":"https://wiki.smithed.dev/libraries/crafter/"},
 	# "smart_ore_generation": {"version":[2, 0, 0], "name":"Stoupy's Smart Ore Generation", "url":"https://github.com/Stoupy51/SmartOreGeneration"},
 	# "energy": {"version":[0, 6, 0], "name":"DatapackEnergy", "url":"https://github.com/ICY105/DatapackEnergy"},
 	# "furnace_nbt_recipes": {"version":[2, 0, 0], "name":"Stoupy's Furnace NBT Recipes", "url":"https://github.com/Stoupy51/FurnaceNbtRecipes"},

@@ -43,14 +43,14 @@ database_additions = {
 	"white_flower": {"id": CUSTOM_BLOCK_ALTERNATIVE, CATEGORY: "building"},
 
 	# Materials for food
-	"beer_mug":			{"id": CUSTOM_ITEM_VANILLA, CATEGORY: "material", RESULT_OF_CRAFTING:[{"type":"crafting_shaped","result_count":4,"category":"misc","group":"beer_mug","shape":["XX ","X X","XX "],"ingredients":{"X":ingr_repr("minecraft:glass")}},{"type":"shaped","result_count":4,"category":"misc","group":"beer_mug","shape":[" XX","X X"," XX"],"ingredients":{"X":ingr_repr("minecraft:glass")}}]},
+	"beer_mug":			{"id": CUSTOM_ITEM_VANILLA, CATEGORY: "material",	RESULT_OF_CRAFTING:[{"type":"crafting_shaped","result_count":4,"category":"misc","group":"beer_mug","shape":["XX ","X X","XX "],"ingredients":{"X":ingr_repr("minecraft:glass")}},{"type":"shaped","result_count":4,"category":"misc","group":"beer_mug","shape":[" XX","X X"," XX"],"ingredients":{"X":ingr_repr("minecraft:glass")}}]},
 	"caffeine":			{"id": CUSTOM_ITEM_VANILLA, CATEGORY: "material"},
-	"can":				{"id": CUSTOM_ITEM_VANILLA, CATEGORY: "material", RESULT_OF_CRAFTING:[{"type":"crafting_shaped","result_count":4,"category":"misc","shape":["XSX"," X "],"ingredients":{"X":ingr_repr("minecraft:iron_ingot"),"S":ingr_repr("steel_ingot")}}]},
+	"can":				{"id": CUSTOM_ITEM_VANILLA, CATEGORY: "material",	RESULT_OF_CRAFTING:[{"type":"crafting_shaped","result_count":4,"category":"misc","shape":["XSX"," X "],"ingredients":{"X":ingr_repr("minecraft:iron_ingot"),"S":ingr_repr("steel_ingot")}}]},
 	"cola":				{"id": CUSTOM_ITEM_VANILLA, CATEGORY: "material"},
-	"empty_glass":		{"id": CUSTOM_ITEM_VANILLA, CATEGORY: "material", RESULT_OF_CRAFTING:[{"type":"crafting_shaped","result_count":4,"category":"misc","shape":["X X","X X"," X "],"ingredients":{"X":ingr_repr("minecraft:glass")}}]},
-	"toast":			{"id": CUSTOM_ITEM_VANILLA, CATEGORY: "material", RESULT_OF_CRAFTING:[{"type":"crafting_shaped","result_count":4,"category":"misc","shape":["XXX"],"ingredients":{"X":ingr_repr("minecraft:bread")}}]},
+	"empty_glass":		{"id": CUSTOM_ITEM_VANILLA, CATEGORY: "material",	RESULT_OF_CRAFTING:[{"type":"crafting_shaped","result_count":4,"category":"misc","shape":["X X","X X"," X "],"ingredients":{"X":ingr_repr("minecraft:glass")}}]},
+	"toast":			{"id": CUSTOM_ITEM_VANILLA, CATEGORY: "food",		RESULT_OF_CRAFTING:[{"type":"crafting_shaped","result_count":4,"category":"misc","shape":["XXX"],"ingredients":{"X":ingr_repr("minecraft:bread")}}]},
 	"hops":				{"id": CUSTOM_ITEM_VANILLA, CATEGORY: "material"},
-	"glass_pot":		{"id": CUSTOM_ITEM_VANILLA, CATEGORY: "material", RESULT_OF_CRAFTING:[{"type":"crafting_shaped","result_count":1,"category":"misc","shape":["X X","X X","XXX"],"ingredients":{"X":ingr_repr("minecraft:glass")}}]},
+	"glass_pot":		{"id": CUSTOM_ITEM_VANILLA, CATEGORY: "material",	RESULT_OF_CRAFTING:[{"type":"crafting_shaped","result_count":1,"category":"misc","shape":["X X","X X","XXX"],"ingredients":{"X":ingr_repr("minecraft:glass")}}]},
 	"taurine":			{"id": CUSTOM_ITEM_VANILLA, CATEGORY: "material"},
 
 	# Foods
@@ -75,10 +75,10 @@ database_additions = {
 	},
 
 	# Miscellaneous
-	"blank": {"id": CUSTOM_ITEM_VANILLA, CATEGORY: MISC},
-	"blob": {"id": CUSTOM_BLOCK_ALTERNATIVE, CATEGORY: MISC},
+	"blank": {"id": CUSTOM_ITEM_VANILLA},
+	"blob": {"id": CUSTOM_BLOCK_ALTERNATIVE},
+	"lignite_torch": {"id": CUSTOM_BLOCK_ALTERNATIVE, CATEGORY: MISC,			RESULT_OF_CRAFTING:[{"type":"crafting_shaped","result_count":4,"category":"blocks","shape":["X","S"],"ingredients":{"S":ingr_repr("minecraft:stick"),"X":ingr_repr("lignite")}}]},
 	"coin": {"id": CUSTOM_ITEM_VANILLA, CATEGORY: MISC},
-	"lignite_torch": {"id": CUSTOM_BLOCK_ALTERNATIVE, CATEGORY: MISC,				RESULT_OF_CRAFTING:[{"type":"crafting_shaped","result_count":4,"category":"blocks","shape":["X","S"],"ingredients":{"S":ingr_repr("minecraft:stick"),"X":ingr_repr("lignite")}}]},
 	"nuclear_bomb": {"id": CUSTOM_BLOCK_VANILLA, CATEGORY: MISC,				"lore": ['{"text":"Power of 5 TNTs","color":"gray","italic":false}'], RESULT_OF_CRAFTING:[{"type":"crafting_shaped","result_count":1,"category":"blocks","shape":[" X ","XTX","XXX"],"ingredients":{"X":ingr_repr("minecraft:tnt"),"T":ingr_repr("topaz")}}]},
 	"quiver": {"id": CUSTOM_ITEM_VANILLA, CATEGORY: MISC},
 	"rock": {"id": "minecraft:snowball", CATEGORY: MISC, "max_stack_size": 99,	"lore": ['{"text":"Can be thrown","color":"gray","italic":false}']},

@@ -32,7 +32,7 @@
 		{ "predicate": { "custom_model_data": 2015130}, "model": "iyc:item/red_bull" },
 		{ "predicate": { "custom_model_data": 2015131}, "model": "iyc:item/chainmail" },
 		{ "predicate": { "custom_model_data": 2015132}, "model": "iyc:item/blank" },
-		{ "predicate": { "custom_model_data": 2015134}, "model": "iyc:item/coin" },
+		{ "predicate": { "custom_model_data": 2015135}, "model": "iyc:item/coin" },
 		{ "predicate": { "custom_model_data": 2015137}, "model": "iyc:item/quiver" },
 		{ "predicate": { "custom_model_data": 2015139}, "model": "iyc:item/screwdriver" },
 		{ "predicate": { "custom_model_data": 2015140}, "model": "iyc:item/old_ruby" }

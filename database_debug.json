@@ -1230,7 +1230,7 @@
 	},
 	"toast": {
 		"id": "minecraft:command_block",
-		"category": "material",
+		"category": "food",
 		"result_of_crafting": [{"type": "crafting_shaped","result_count": 4,"category": "misc","shape": ["XXX"],"ingredients": {"X": {"item": "minecraft:bread"}}}],
 		"custom_data": {"iyc": {"toast": true},"smithed": {"ignore": {"functionality": true,"crafting": true}}},
 		"item_name": "[{\"text\":\"Toast\",\"italic\":false,\"color\":\"white\"}]",
@@ -1363,7 +1363,6 @@
 	},
 	"blank": {
 		"id": "minecraft:command_block",
-		"category": "miscellaneous",
 		"custom_data": {"iyc": {"blank": true},"smithed": {"ignore": {"functionality": true,"crafting": true}}},
 		"item_name": "[{\"text\":\"Blank\",\"italic\":false,\"color\":\"white\"}]",
 		"lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],
@@ -1371,20 +1370,11 @@
 	},
 	"blob": {
 		"id": "minecraft:item_frame",
-		"category": "miscellaneous",
 		"vanilla_block": "minecraft:structure_void",
 		"custom_data": {"iyc": {"blob": true},"smithed": {"ignore": {"functionality": true,"crafting": true}}},
 		"item_name": "[{\"text\":\"Blob\",\"italic\":false,\"color\":\"white\"}]",
 		"lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],
 		"custom_model_data": 2015133
-	},
-	"coin": {
-		"id": "minecraft:command_block",
-		"category": "miscellaneous",
-		"custom_data": {"iyc": {"coin": true},"smithed": {"ignore": {"functionality": true,"crafting": true}}},
-		"item_name": "[{\"text\":\"Coin\",\"italic\":false,\"color\":\"white\"}]",
-		"lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],
-		"custom_model_data": 2015134
 	},
 	"lignite_torch": {
 		"id": "minecraft:item_frame",
@@ -1393,6 +1383,14 @@
 		"vanilla_block": "minecraft:torch",
 		"custom_data": {"iyc": {"lignite_torch": true},"smithed": {"ignore": {"functionality": true,"crafting": true}}},
 		"item_name": "[{\"text\":\"Lignite Torch\",\"italic\":false,\"color\":\"white\"}]",
+		"lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],
+		"custom_model_data": 2015134
+	},
+	"coin": {
+		"id": "minecraft:command_block",
+		"category": "miscellaneous",
+		"custom_data": {"iyc": {"coin": true},"smithed": {"ignore": {"functionality": true,"crafting": true}}},
+		"item_name": "[{\"text\":\"Coin\",\"italic\":false,\"color\":\"white\"}]",
 		"lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],
 		"custom_model_data": 2015135
 	},

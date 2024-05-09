@@ -12,7 +12,7 @@
 		{ "predicate": { "custom_model_data": 2015111}, "model": "iyc:item/blue_flower" },
 		{ "predicate": { "custom_model_data": 2015112}, "model": "iyc:item/white_flower" },
 		{ "predicate": { "custom_model_data": 2015133}, "model": "iyc:item/blob" },
-		{ "predicate": { "custom_model_data": 2015135}, "model": "iyc:item/lignite_torch" }
+		{ "predicate": { "custom_model_data": 2015134}, "model": "iyc:item/lignite_torch" }
 	]
 }
 

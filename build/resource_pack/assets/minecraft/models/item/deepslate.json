@@ -38,7 +38,7 @@
 		{ "predicate": { "custom_model_data": 2015112}, "model": "iyc:block/for_item_display/white_flower" },
 		{ "predicate": { "custom_model_data": 2015125}, "model": "iyc:block/for_item_display/cherry_cake" },
 		{ "predicate": { "custom_model_data": 2015133}, "model": "iyc:block/for_item_display/blob" },
-		{ "predicate": { "custom_model_data": 2015135}, "model": "iyc:block/for_item_display/lignite_torch" },
+		{ "predicate": { "custom_model_data": 2015134}, "model": "iyc:block/for_item_display/lignite_torch" },
 		{ "predicate": { "custom_model_data": 2015136}, "model": "iyc:block/for_item_display/nuclear_bomb" }
 	]
 }

@@ -106,7 +106,6 @@ else:
 
 			# For each item in the category, get its page number and texture, then add it to the image
 			for item in raw_data:
-				item_data = DATABASE[item]
 				texture_path = f"{MANUAL_PATH}/items/{NAMESPACE}/{item}.png"
 				item_image = Image.open(texture_path)
 				factor = 32 / item_image.size[0]
@@ -166,15 +165,68 @@ else:
 		# Add page to the book
 		book_content.append(content)
 
-	# Add categories page
+	## Add categories page
 	content = []
+	file_name = "categories_page"
+	page_font = get_page_font(1)
+	providers.append({"type":"bitmap","file":f"{NAMESPACE}:font/category/{file_name}.png", "ascent": 0, "height": 130, "chars": [page_font]})
 	content.append({"text": "", "font": FONT, "color": "white"})	# Make default font for every next component
+	content.append({"text": "➤ ", "font": "minecraft:default", "color": "black"})
+	content.append({"text": "Category browser\n", "font": "minecraft:default", "color": "black", "underlined": True})
+	content.append(SMALL_NONE_FONT * LEFT_PADDING + page_font + "\n")
+
+	# Prepare image and line list
+	page_image = Image.new("RGBA", (256, 256), (0, 0, 0, 0))
+	x, y = 2, 2	# Prevision for global border and implicit border
+	line = []
+
+	# For each item in the category, get its page number and texture, then add it to the image
 	for page in pages:
 		if page["type"] == CATEGORY:
-			content.append({"text": "➤ ", "font": "minecraft:default", "color": "black"})
-			content.append({"text": page["name"] + "\n", "font": "minecraft:default", "color": "black", "underlined": True})
+			item = page["raw_data"][0]
+			texture_path = f"{MANUAL_PATH}/items/{NAMESPACE}/{item}.png"
+			item_image = Image.open(texture_path)
+			factor = 32 / item_image.size[0]
+			item_image = item_image.resize((32, int(item_image.size[1] * factor)), Image.NEAREST)
 
-	# Optimize the book size
+			# Paste the simple case and the item_image
+			page_image.paste(simple_case, (x, y))
+			mask = item_image.convert("RGBA").split()[3]
+			page_image.paste(item_image, (x + 2, y + 2), mask)
+			x += 36
+
+			# Add the clickEvent part to the line and add the 2 times the line if enough items
+			component = get_item_component(item, ["custom_model_data"])
+			component["hoverEvent"]["contents"]["components"]["item_name"] = str({"text": page["name"], "color": "white"})
+			component["clickEvent"]["value"] = str(page["number"])
+			component["text"] = MEDIUM_NONE_FONT
+			line.append(component)
+			if len(line) == MAX_ITEMS_PER_ROW:
+				line[-1]["text"] += "\n"
+				line[0]["text"] = SMALL_NONE_FONT * LEFT_PADDING + line[0]["text"]
+				content += line * 2
+				line = []
+				x = 2
+				y += 36
+	
+	# If remaining items in the line, add them
+	if len(line) > 0:
+		line[-1]["text"] += "\n"
+		line[0]["text"] = SMALL_NONE_FONT * LEFT_PADDING + line[0]["text"]
+		content += line * 2
+	
+	# Add the 2 pixels border
+	BORDER_COLOR = 0xB64E2F
+	BORDER_SIZE = 2
+	BORDER_COLOR = (BORDER_COLOR >> 16) & 0xFF, (BORDER_COLOR >> 8) & 0xFF, BORDER_COLOR & 0xFF, 255
+	is_rectangle_shape = len(raw_data) % MAX_ITEMS_PER_ROW == 0
+	page_image = add_border(page_image, BORDER_COLOR, BORDER_SIZE, is_rectangle_shape)
+	
+	# Save the image and add the page to the book
+	page_image.save(f"{FONT_FOLDER}/category/{file_name}.png")
+	book_content.insert(0, content)
+
+	## Optimize the book size
 	book_content = optimize_book(book_content)
 
 	# Add fonts

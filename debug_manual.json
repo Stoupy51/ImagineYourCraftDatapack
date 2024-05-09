@@ -365,7 +365,8 @@
 		"\u0022",
 		{"text": "\u0020\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Adamantium Fragment\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015002}}},"clickEvent": {"action": "change_page","value": "13"}},
 		"\u0022",
-		{"text": "\u0020\u0020\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Adamantium Fragment\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015002}}},"clickEvent": {"action": "change_page","value": "13"}}
+		{"text": "\u0020\u0020\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Adamantium Fragment\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015002}}},"clickEvent": {"action": "change_page","value": "13"}},
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u8021\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x9 Adamantium Fragment","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -410,7 +411,8 @@
 		"\u0022",
 		{"text": "\u0020\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Sapphire\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015014}}},"clickEvent": {"action": "change_page","value": "16"}},
 		"\u0022",
-		{"text": "\u0020\u0020\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Sapphire\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015014}}},"clickEvent": {"action": "change_page","value": "16"}}
+		{"text": "\u0020\u0020\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Sapphire\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015014}}},"clickEvent": {"action": "change_page","value": "16"}},
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u8022\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x9 Sapphire","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -435,7 +437,8 @@
 		{"text": "\u0020","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Sapphire\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015014}}}},
 		"\n\u0022\u0020\u0020\u0020",
 		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Sapphire\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015014}}}},
-		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u8021\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x1 Sapphire Ore","color": "gray"}]}}
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u8023\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x1 Sapphire Block","color": "gray"}]}},
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u8024\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x1 Sapphire Ore","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -455,7 +458,8 @@
 		"\u0022",
 		{"text": "\u0020\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Ruby\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015026}}},"clickEvent": {"action": "change_page","value": "19"}},
 		"\u0022",
-		{"text": "\u0020\u0020\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Ruby\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015026}}},"clickEvent": {"action": "change_page","value": "19"}}
+		{"text": "\u0020\u0020\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Ruby\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015026}}},"clickEvent": {"action": "change_page","value": "19"}},
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u8025\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x9 Ruby","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -480,7 +484,8 @@
 		{"text": "\u0020","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Ruby\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015026}}}},
 		"\n\u0022\u0020\u0020\u0020",
 		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Ruby\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015026}}}},
-		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u8022\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x1 Ruby Ore","color": "gray"}]}}
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u8026\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x1 Ruby Block","color": "gray"}]}},
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u8027\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x1 Ruby Ore","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -500,7 +505,8 @@
 		"\u0022",
 		{"text": "\u0020\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Topaz\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015038}}},"clickEvent": {"action": "change_page","value": "22"}},
 		"\u0022",
-		{"text": "\u0020\u0020\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Topaz\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015038}}},"clickEvent": {"action": "change_page","value": "22"}}
+		{"text": "\u0020\u0020\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Topaz\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015038}}},"clickEvent": {"action": "change_page","value": "22"}},
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u8028\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x9 Topaz","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -525,7 +531,8 @@
 		{"text": "\u0020","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Topaz\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015038}}}},
 		"\n\u0022\u0020\u0020\u0020",
 		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Topaz\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015038}}}},
-		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u8023\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x1 Topaz Ore","color": "gray"}]}}
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u8029\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x1 Topaz Block","color": "gray"}]}},
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u802a\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x1 Topaz Ore","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -545,7 +552,8 @@
 		"\u0022",
 		{"text": "\u0020\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:obsidian"}}},
 		"\u0022",
-		{"text": "\u0020\u0020\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:obsidian"}}}
+		{"text": "\u0020\u0020\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:obsidian"}}},
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u802b\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x9 Obsidian","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -578,7 +586,8 @@
 		"\u0022",
 		{"text": "\u0020\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Steel Ingot\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015070}}},"clickEvent": {"action": "change_page","value": "27"}},
 		"\u0022",
-		{"text": "\u0020\u0020\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Steel Ingot\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015070}}},"clickEvent": {"action": "change_page","value": "27"}}
+		{"text": "\u0020\u0020\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Steel Ingot\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015070}}},"clickEvent": {"action": "change_page","value": "27"}},
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u802c\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x9 Steel Ingot","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -603,7 +612,8 @@
 		{"text": "\u0020","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Steel Ingot\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015070}}}},
 		"\n\u0022\u0020\u0020\u0020",
 		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Steel Ingot\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015070}}}},
-		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u8024\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x1 Steel Ore","color": "gray"}]}}
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u802d\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x1 Steel Block","color": "gray"}]}},
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u802e\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x1 Steel Ore","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -619,7 +629,8 @@
 		"\u0020\u0020",
 		{"text": "\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Steel Stick\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015080}}}},
 		"\u0022",
-		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Steel Ingot\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015070}}},"clickEvent": {"action": "change_page","value": "27"}}
+		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Steel Ingot\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015070}}},"clickEvent": {"action": "change_page","value": "27"}},
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u802f\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x2 Steel Ingot","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -639,7 +650,8 @@
 		"\u0022",
 		{"text": "\u0020\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Lignite\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015083}}},"clickEvent": {"action": "change_page","value": "31"}},
 		"\u0022",
-		{"text": "\u0020\u0020\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Lignite\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015083}}},"clickEvent": {"action": "change_page","value": "31"}}
+		{"text": "\u0020\u0020\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Lignite\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015083}}},"clickEvent": {"action": "change_page","value": "31"}},
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u8030\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x9 Lignite","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -664,7 +676,8 @@
 		{"text": "\u0020","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Lignite\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015083}}}},
 		"\n\u0022\u0020\u0020\u0020",
 		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Lignite\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015083}}}},
-		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u8025\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x1 Lignite Ore","color": "gray"}]}}
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u8031\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x1 Lignite Block","color": "gray"}]}},
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u8032\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x1 Lignite Ore","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -684,7 +697,8 @@
 		"\u0022",
 		{"text": "\u0020\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Slate\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015086}}},"clickEvent": {"action": "change_page","value": "34"}},
 		"\u0022",
-		{"text": "\u0020\u0020\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Slate\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015086}}},"clickEvent": {"action": "change_page","value": "34"}}
+		{"text": "\u0020\u0020\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Slate\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015086}}},"clickEvent": {"action": "change_page","value": "34"}},
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u8033\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x9 Slate","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -709,7 +723,8 @@
 		{"text": "\u0020","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Slate\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015086}}}},
 		"\n\u0022\u0020\u0020\u0020",
 		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Slate\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015086}}}},
-		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u8026\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x1 Slate Ore","color": "gray"}]}}
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u8034\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x1 Slate Block","color": "gray"}]}},
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u8035\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x1 Slate Ore","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -725,7 +740,8 @@
 		"\u0020\u0020",
 		{"text": "\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Stone Stick\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015087}}}},
 		"\u0022",
-		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:stone"}}}
+		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:stone"}}},
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u8036\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x2 Stone","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -763,7 +779,8 @@
 		"\u0020\n\u0022",
 		{"text": "\u0020\u0020","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:glass"}}},
 		"\u0020\n\n",
-		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u8027\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x6 Glass","color": "gray"}]}}
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u8037\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x6 Glass","color": "gray"}]}},
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u8038\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x6 Glass","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -795,7 +812,8 @@
 		"\u0022\u0020",
 		{"text": "\u0020","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:iron_ingot"}}},
 		"\u0020\u0022\u0022",
-		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Can\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015115}}}}
+		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Can\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015115}}}},
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u8039\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x3 Iron Ingot","color": "gray"},{"text": "\n- x1 Steel Ingot","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -836,7 +854,8 @@
 		{"text": "\u0020","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:glass"}}},
 		"\u0020\n\u0022\u0020",
 		{"text": "\u0020","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:glass"}}},
-		"\u0020\n\n"
+		"\u0020\n\n",
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u803a\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x5 Glass","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -876,7 +895,8 @@
 		"\u0022",
 		{"text": "\u0020\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:glass"}}},
 		"\u0022",
-		{"text": "\u0020\u0020\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:glass"}}}
+		{"text": "\u0020\u0020\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:glass"}}},
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u803b\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x7 Glass","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -901,10 +921,11 @@
 		{"text": "\u0020","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Chainmail\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015131}}}},
 		"\n\u0022\u0020\u0020\u0020",
 		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Chainmail\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015131}}}},
-		{"text": "\u0023\u0026\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u8028\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x5 Chainmail","color": "gray"}]}},
-		{"text": "\u0023\u0026\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u8029\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x8 Chainmail","color": "gray"}]}},
-		{"text": "\u0023\u0026\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u802a\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x7 Chainmail","color": "gray"}]}},
-		{"text": "\u0023\u0026\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u802b\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x4 Chainmail","color": "gray"}]}}
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u803c\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x2 Chain","color": "gray"}]}},
+		{"text": "\u0023\u0026\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u803d\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x5 Chainmail","color": "gray"}]}},
+		{"text": "\u0023\u0026\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u803e\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x8 Chainmail","color": "gray"}]}},
+		{"text": "\u0023\u0026\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u803f\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x7 Chainmail","color": "gray"}]}},
+		{"text": "\u0023\u0026\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u8040\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x4 Chainmail","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -924,7 +945,8 @@
 		"\u0020",
 		{"text": "\u0020","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Adamantium Fragment\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015002}}},"clickEvent": {"action": "change_page","value": "13"}},
 		"\u0022\u0022",
-		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "leather_helmet","components": {"dyed_color": {"rgb": 2511745,"show_in_tooltip": false},"attribute_modifiers": [{"type": "generic.armor","uuid": [2,1,2,3],"name": "generic.armor","amount": 3.1,"operation": "add_value","slot": "head"},{"type": "generic.armor_toughness","uuid": [3,1,2,3],"name": "generic.armor_toughness","amount": 3,"operation": "add_value","slot": "head"},{"type": "generic.knockback_resistance","uuid": [4,1,2,3],"name": "generic.knockback_resistance","amount": 0.1,"operation": "add_value","slot": "head"}],"max_damage": 375,"item_name": "[{\"text\":\"Adamantium Helmet\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015003}}}}
+		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "leather_helmet","components": {"dyed_color": {"rgb": 2511745,"show_in_tooltip": false},"attribute_modifiers": [{"type": "generic.armor","uuid": [2,1,2,3],"name": "generic.armor","amount": 3.1,"operation": "add_value","slot": "head"},{"type": "generic.armor_toughness","uuid": [3,1,2,3],"name": "generic.armor_toughness","amount": 3,"operation": "add_value","slot": "head"},{"type": "generic.knockback_resistance","uuid": [4,1,2,3],"name": "generic.knockback_resistance","amount": 0.1,"operation": "add_value","slot": "head"}],"max_damage": 375,"item_name": "[{\"text\":\"Adamantium Helmet\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015003}}}},
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u8041\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x5 Adamantium Fragment","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -948,7 +970,8 @@
 		"\u0022",
 		{"text": "\u0020\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Adamantium Fragment\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015002}}},"clickEvent": {"action": "change_page","value": "13"}},
 		"\u0022",
-		{"text": "\u0020\u0020\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Adamantium Fragment\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015002}}},"clickEvent": {"action": "change_page","value": "13"}}
+		{"text": "\u0020\u0020\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Adamantium Fragment\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015002}}},"clickEvent": {"action": "change_page","value": "13"}},
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u8042\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x8 Adamantium Fragment","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -976,7 +999,8 @@
 		"\u0022",
 		{"text": "\u0020","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Adamantium Fragment\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015002}}},"clickEvent": {"action": "change_page","value": "13"}},
 		"\u0020",
-		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Adamantium Fragment\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015002}}},"clickEvent": {"action": "change_page","value": "13"}}
+		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Adamantium Fragment\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015002}}},"clickEvent": {"action": "change_page","value": "13"}},
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u8043\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x7 Adamantium Fragment","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -1000,7 +1024,8 @@
 		"\u0020",
 		{"text": "\u0020","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Adamantium Fragment\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015002}}},"clickEvent": {"action": "change_page","value": "13"}},
 		"\u0022\u0022",
-		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "leather_boots","components": {"dyed_color": {"rgb": 2511745,"show_in_tooltip": false},"attribute_modifiers": [{"type": "generic.armor","uuid": [2,10,11,12],"name": "generic.armor","amount": 3.1,"operation": "add_value","slot": "feet"},{"type": "generic.armor_toughness","uuid": [3,10,11,12],"name": "generic.armor_toughness","amount": 3,"operation": "add_value","slot": "feet"},{"type": "generic.knockback_resistance","uuid": [4,10,11,12],"name": "generic.knockback_resistance","amount": 0.1,"operation": "add_value","slot": "feet"}],"max_damage": 443,"item_name": "[{\"text\":\"Adamantium Boots\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015006}}}}
+		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "leather_boots","components": {"dyed_color": {"rgb": 2511745,"show_in_tooltip": false},"attribute_modifiers": [{"type": "generic.armor","uuid": [2,10,11,12],"name": "generic.armor","amount": 3.1,"operation": "add_value","slot": "feet"},{"type": "generic.armor_toughness","uuid": [3,10,11,12],"name": "generic.armor_toughness","amount": 3,"operation": "add_value","slot": "feet"},{"type": "generic.knockback_resistance","uuid": [4,10,11,12],"name": "generic.knockback_resistance","amount": 0.1,"operation": "add_value","slot": "feet"}],"max_damage": 443,"item_name": "[{\"text\":\"Adamantium Boots\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015006}}}},
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u8044\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x4 Adamantium Fragment","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -1020,7 +1045,8 @@
 		"\u0022",
 		{"text": "\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:stick"}}},
 		"\u0022",
-		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:stick"}}}
+		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:stick"}}},
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u8045\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x2 Adamantium Fragment","color": "gray"},{"text": "\n- x1 Stick","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -1041,7 +1067,8 @@
 		{"text": "\u0020","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:stick"}}},
 		"\u0020\n\u0022\u0020",
 		{"text": "\u0020","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:stick"}}},
-		"\u0020\n\n"
+		"\u0020\n\n",
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u8046\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x3 Adamantium Fragment","color": "gray"},{"text": "\n- x2 Stick","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -1063,7 +1090,8 @@
 		"\u0022\u0020",
 		{"text": "\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:stick"}}},
 		"\u0022\u0020",
-		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:stick"}}}
+		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:stick"}}},
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u8047\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x3 Adamantium Fragment","color": "gray"},{"text": "\n- x2 Stick","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -1083,7 +1111,8 @@
 		"\u0022",
 		{"text": "\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:stick"}}},
 		"\u0022",
-		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:stick"}}}
+		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:stick"}}},
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u8048\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x1 Adamantium Fragment","color": "gray"},{"text": "\n- x2 Stick","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -1103,7 +1132,8 @@
 		"\u0022\u0020",
 		{"text": "\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:stick"}}},
 		"\u0022\u0020",
-		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:stick"}}}
+		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:stick"}}},
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u8049\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x2 Adamantium Fragment","color": "gray"},{"text": "\n- x2 Stick","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -1123,7 +1153,8 @@
 		"\u0020",
 		{"text": "\u0020","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Sapphire\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015014}}},"clickEvent": {"action": "change_page","value": "16"}},
 		"\u0022\u0022",
-		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "leather_helmet","components": {"dyed_color": {"rgb": 2887831,"show_in_tooltip": false},"attribute_modifiers": [{"type": "generic.armor","uuid": [2,1,2,3],"name": "generic.armor","amount": 3.0,"operation": "add_value","slot": "head"},{"type": "generic.armor_toughness","uuid": [3,1,2,3],"name": "generic.armor_toughness","amount": 2,"operation": "add_value","slot": "head"}],"max_damage": 407,"item_name": "[{\"text\":\"Sapphire Helmet\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015015}}}}
+		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "leather_helmet","components": {"dyed_color": {"rgb": 2887831,"show_in_tooltip": false},"attribute_modifiers": [{"type": "generic.armor","uuid": [2,1,2,3],"name": "generic.armor","amount": 3.0,"operation": "add_value","slot": "head"},{"type": "generic.armor_toughness","uuid": [3,1,2,3],"name": "generic.armor_toughness","amount": 2,"operation": "add_value","slot": "head"}],"max_damage": 407,"item_name": "[{\"text\":\"Sapphire Helmet\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015015}}}},
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u804a\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x5 Sapphire","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -1147,7 +1178,8 @@
 		"\u0022",
 		{"text": "\u0020\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Sapphire\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015014}}},"clickEvent": {"action": "change_page","value": "16"}},
 		"\u0022",
-		{"text": "\u0020\u0020\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Sapphire\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015014}}},"clickEvent": {"action": "change_page","value": "16"}}
+		{"text": "\u0020\u0020\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Sapphire\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015014}}},"clickEvent": {"action": "change_page","value": "16"}},
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u804b\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x8 Sapphire","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -1175,7 +1207,8 @@
 		"\u0022",
 		{"text": "\u0020","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Sapphire\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015014}}},"clickEvent": {"action": "change_page","value": "16"}},
 		"\u0020",
-		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Sapphire\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015014}}},"clickEvent": {"action": "change_page","value": "16"}}
+		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Sapphire\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015014}}},"clickEvent": {"action": "change_page","value": "16"}},
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u804c\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x7 Sapphire","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -1199,7 +1232,8 @@
 		"\u0020",
 		{"text": "\u0020","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Sapphire\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015014}}},"clickEvent": {"action": "change_page","value": "16"}},
 		"\u0022\u0022",
-		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "leather_boots","components": {"dyed_color": {"rgb": 2887831,"show_in_tooltip": false},"attribute_modifiers": [{"type": "generic.armor","uuid": [2,10,11,12],"name": "generic.armor","amount": 3.0,"operation": "add_value","slot": "feet"},{"type": "generic.armor_toughness","uuid": [3,10,11,12],"name": "generic.armor_toughness","amount": 2,"operation": "add_value","slot": "feet"}],"max_damage": 481,"item_name": "[{\"text\":\"Sapphire Boots\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015018}}}}
+		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "leather_boots","components": {"dyed_color": {"rgb": 2887831,"show_in_tooltip": false},"attribute_modifiers": [{"type": "generic.armor","uuid": [2,10,11,12],"name": "generic.armor","amount": 3.0,"operation": "add_value","slot": "feet"},{"type": "generic.armor_toughness","uuid": [3,10,11,12],"name": "generic.armor_toughness","amount": 2,"operation": "add_value","slot": "feet"}],"max_damage": 481,"item_name": "[{\"text\":\"Sapphire Boots\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015018}}}},
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u804d\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x4 Sapphire","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -1219,7 +1253,8 @@
 		"\u0022",
 		{"text": "\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:stick"}}},
 		"\u0022",
-		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:stick"}}}
+		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:stick"}}},
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u804e\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x2 Sapphire","color": "gray"},{"text": "\n- x1 Stick","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -1240,7 +1275,8 @@
 		{"text": "\u0020","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:stick"}}},
 		"\u0020\n\u0022\u0020",
 		{"text": "\u0020","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:stick"}}},
-		"\u0020\n\n"
+		"\u0020\n\n",
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u804f\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x3 Sapphire","color": "gray"},{"text": "\n- x2 Stick","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -1262,7 +1298,8 @@
 		"\u0022\u0020",
 		{"text": "\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:stick"}}},
 		"\u0022\u0020",
-		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:stick"}}}
+		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:stick"}}},
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u8050\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x3 Sapphire","color": "gray"},{"text": "\n- x2 Stick","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -1282,7 +1319,8 @@
 		"\u0022",
 		{"text": "\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:stick"}}},
 		"\u0022",
-		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:stick"}}}
+		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:stick"}}},
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u8051\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x1 Sapphire","color": "gray"},{"text": "\n- x2 Stick","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -1302,7 +1340,8 @@
 		"\u0022\u0020",
 		{"text": "\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:stick"}}},
 		"\u0022\u0020",
-		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:stick"}}}
+		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:stick"}}},
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u8052\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x2 Sapphire","color": "gray"},{"text": "\n- x2 Stick","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -1322,7 +1361,8 @@
 		"\u0020",
 		{"text": "\u0020","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Ruby\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015026}}},"clickEvent": {"action": "change_page","value": "19"}},
 		"\u0022\u0022",
-		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "leather_helmet","components": {"dyed_color": {"rgb": 9571615,"show_in_tooltip": false},"attribute_modifiers": [{"type": "generic.armor","uuid": [2,1,2,3],"name": "generic.armor","amount": 3.3,"operation": "add_value","slot": "head"},{"type": "generic.armor_toughness","uuid": [3,1,2,3],"name": "generic.armor_toughness","amount": 2,"operation": "add_value","slot": "head"}],"max_damage": 382,"item_name": "[{\"text\":\"Ruby Helmet\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015027}}}}
+		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "leather_helmet","components": {"dyed_color": {"rgb": 9571615,"show_in_tooltip": false},"attribute_modifiers": [{"type": "generic.armor","uuid": [2,1,2,3],"name": "generic.armor","amount": 3.3,"operation": "add_value","slot": "head"},{"type": "generic.armor_toughness","uuid": [3,1,2,3],"name": "generic.armor_toughness","amount": 2,"operation": "add_value","slot": "head"}],"max_damage": 382,"item_name": "[{\"text\":\"Ruby Helmet\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015027}}}},
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u8053\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x5 Ruby","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -1346,7 +1386,8 @@
 		"\u0022",
 		{"text": "\u0020\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Ruby\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015026}}},"clickEvent": {"action": "change_page","value": "19"}},
 		"\u0022",
-		{"text": "\u0020\u0020\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Ruby\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015026}}},"clickEvent": {"action": "change_page","value": "19"}}
+		{"text": "\u0020\u0020\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Ruby\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015026}}},"clickEvent": {"action": "change_page","value": "19"}},
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u8054\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x8 Ruby","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -1374,7 +1415,8 @@
 		"\u0022",
 		{"text": "\u0020","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Ruby\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015026}}},"clickEvent": {"action": "change_page","value": "19"}},
 		"\u0020",
-		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Ruby\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015026}}},"clickEvent": {"action": "change_page","value": "19"}}
+		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Ruby\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015026}}},"clickEvent": {"action": "change_page","value": "19"}},
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u8055\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x7 Ruby","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -1398,7 +1440,8 @@
 		"\u0020",
 		{"text": "\u0020","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Ruby\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015026}}},"clickEvent": {"action": "change_page","value": "19"}},
 		"\u0022\u0022",
-		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "leather_boots","components": {"dyed_color": {"rgb": 9571615,"show_in_tooltip": false},"attribute_modifiers": [{"type": "generic.armor","uuid": [2,10,11,12],"name": "generic.armor","amount": 3.3,"operation": "add_value","slot": "feet"},{"type": "generic.armor_toughness","uuid": [3,10,11,12],"name": "generic.armor_toughness","amount": 2,"operation": "add_value","slot": "feet"}],"max_damage": 452,"item_name": "[{\"text\":\"Ruby Boots\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015030}}}}
+		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "leather_boots","components": {"dyed_color": {"rgb": 9571615,"show_in_tooltip": false},"attribute_modifiers": [{"type": "generic.armor","uuid": [2,10,11,12],"name": "generic.armor","amount": 3.3,"operation": "add_value","slot": "feet"},{"type": "generic.armor_toughness","uuid": [3,10,11,12],"name": "generic.armor_toughness","amount": 2,"operation": "add_value","slot": "feet"}],"max_damage": 452,"item_name": "[{\"text\":\"Ruby Boots\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015030}}}},
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u8056\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x4 Ruby","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -1418,7 +1461,8 @@
 		"\u0022",
 		{"text": "\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:stick"}}},
 		"\u0022",
-		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:stick"}}}
+		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:stick"}}},
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u8057\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x2 Ruby","color": "gray"},{"text": "\n- x1 Stick","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -1439,7 +1483,8 @@
 		{"text": "\u0020","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:stick"}}},
 		"\u0020\n\u0022\u0020",
 		{"text": "\u0020","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:stick"}}},
-		"\u0020\n\n"
+		"\u0020\n\n",
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u8058\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x3 Ruby","color": "gray"},{"text": "\n- x2 Stick","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -1461,7 +1506,8 @@
 		"\u0022\u0020",
 		{"text": "\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:stick"}}},
 		"\u0022\u0020",
-		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:stick"}}}
+		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:stick"}}},
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u8059\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x3 Ruby","color": "gray"},{"text": "\n- x2 Stick","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -1481,7 +1527,8 @@
 		"\u0022",
 		{"text": "\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:stick"}}},
 		"\u0022",
-		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:stick"}}}
+		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:stick"}}},
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u805a\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x1 Ruby","color": "gray"},{"text": "\n- x2 Stick","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -1501,7 +1548,8 @@
 		"\u0022\u0020",
 		{"text": "\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:stick"}}},
 		"\u0022\u0020",
-		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:stick"}}}
+		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:stick"}}},
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u805b\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x2 Ruby","color": "gray"},{"text": "\n- x2 Stick","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -1521,7 +1569,8 @@
 		"\u0020",
 		{"text": "\u0020","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Topaz\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015038}}},"clickEvent": {"action": "change_page","value": "22"}},
 		"\u0022\u0022",
-		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "leather_helmet","components": {"dyed_color": {"rgb": 12153387,"show_in_tooltip": false},"attribute_modifiers": [{"type": "generic.armor","uuid": [2,1,2,3],"name": "generic.armor","amount": 3.6,"operation": "add_value","slot": "head"},{"type": "generic.armor_toughness","uuid": [3,1,2,3],"name": "generic.armor_toughness","amount": 2,"operation": "add_value","slot": "head"}],"max_damage": 297,"item_name": "[{\"text\":\"Topaz Helmet\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015039}}}}
+		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "leather_helmet","components": {"dyed_color": {"rgb": 12153387,"show_in_tooltip": false},"attribute_modifiers": [{"type": "generic.armor","uuid": [2,1,2,3],"name": "generic.armor","amount": 3.6,"operation": "add_value","slot": "head"},{"type": "generic.armor_toughness","uuid": [3,1,2,3],"name": "generic.armor_toughness","amount": 2,"operation": "add_value","slot": "head"}],"max_damage": 297,"item_name": "[{\"text\":\"Topaz Helmet\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015039}}}},
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u805c\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x5 Topaz","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -1545,7 +1594,8 @@
 		"\u0022",
 		{"text": "\u0020\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Topaz\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015038}}},"clickEvent": {"action": "change_page","value": "22"}},
 		"\u0022",
-		{"text": "\u0020\u0020\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Topaz\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015038}}},"clickEvent": {"action": "change_page","value": "22"}}
+		{"text": "\u0020\u0020\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Topaz\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015038}}},"clickEvent": {"action": "change_page","value": "22"}},
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u805d\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x8 Topaz","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -1573,7 +1623,8 @@
 		"\u0022",
 		{"text": "\u0020","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Topaz\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015038}}},"clickEvent": {"action": "change_page","value": "22"}},
 		"\u0020",
-		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Topaz\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015038}}},"clickEvent": {"action": "change_page","value": "22"}}
+		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Topaz\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015038}}},"clickEvent": {"action": "change_page","value": "22"}},
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u805e\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x7 Topaz","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -1597,7 +1648,8 @@
 		"\u0020",
 		{"text": "\u0020","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Topaz\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015038}}},"clickEvent": {"action": "change_page","value": "22"}},
 		"\u0022\u0022",
-		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "leather_boots","components": {"dyed_color": {"rgb": 12153387,"show_in_tooltip": false},"attribute_modifiers": [{"type": "generic.armor","uuid": [2,10,11,12],"name": "generic.armor","amount": 3.6,"operation": "add_value","slot": "feet"},{"type": "generic.armor_toughness","uuid": [3,10,11,12],"name": "generic.armor_toughness","amount": 2,"operation": "add_value","slot": "feet"}],"max_damage": 352,"item_name": "[{\"text\":\"Topaz Boots\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015042}}}}
+		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "leather_boots","components": {"dyed_color": {"rgb": 12153387,"show_in_tooltip": false},"attribute_modifiers": [{"type": "generic.armor","uuid": [2,10,11,12],"name": "generic.armor","amount": 3.6,"operation": "add_value","slot": "feet"},{"type": "generic.armor_toughness","uuid": [3,10,11,12],"name": "generic.armor_toughness","amount": 2,"operation": "add_value","slot": "feet"}],"max_damage": 352,"item_name": "[{\"text\":\"Topaz Boots\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015042}}}},
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u805f\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x4 Topaz","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -1617,7 +1669,8 @@
 		"\u0022",
 		{"text": "\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:stick"}}},
 		"\u0022",
-		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:stick"}}}
+		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:stick"}}},
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u8060\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x2 Topaz","color": "gray"},{"text": "\n- x1 Stick","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -1638,7 +1691,8 @@
 		{"text": "\u0020","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:stick"}}},
 		"\u0020\n\u0022\u0020",
 		{"text": "\u0020","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:stick"}}},
-		"\u0020\n\n"
+		"\u0020\n\n",
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u8061\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x3 Topaz","color": "gray"},{"text": "\n- x2 Stick","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -1660,7 +1714,8 @@
 		"\u0022\u0020",
 		{"text": "\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:stick"}}},
 		"\u0022\u0020",
-		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:stick"}}}
+		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:stick"}}},
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u8062\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x3 Topaz","color": "gray"},{"text": "\n- x2 Stick","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -1680,7 +1735,8 @@
 		"\u0022",
 		{"text": "\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:stick"}}},
 		"\u0022",
-		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:stick"}}}
+		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:stick"}}},
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u8063\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x1 Topaz","color": "gray"},{"text": "\n- x2 Stick","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -1700,7 +1756,8 @@
 		"\u0022\u0020",
 		{"text": "\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:stick"}}},
 		"\u0022\u0020",
-		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:stick"}}}
+		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:stick"}}},
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u8064\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x2 Topaz","color": "gray"},{"text": "\n- x2 Stick","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -1720,7 +1777,8 @@
 		"\u0020",
 		{"text": "\u0020","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Obsidian Ingot\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015049}}},"clickEvent": {"action": "change_page","value": "24"}},
 		"\u0022\u0022",
-		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "leather_helmet","components": {"dyed_color": {"rgb": 2168364,"show_in_tooltip": false},"attribute_modifiers": [{"type": "generic.armor","uuid": [2,1,2,3],"name": "generic.armor","amount": 2.9,"operation": "add_value","slot": "head"},{"type": "generic.armor_toughness","uuid": [3,1,2,3],"name": "generic.armor_toughness","amount": 2,"operation": "add_value","slot": "head"}],"max_damage": 907,"item_name": "[{\"text\":\"Obsidian Helmet\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015050}}}}
+		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "leather_helmet","components": {"dyed_color": {"rgb": 2168364,"show_in_tooltip": false},"attribute_modifiers": [{"type": "generic.armor","uuid": [2,1,2,3],"name": "generic.armor","amount": 2.9,"operation": "add_value","slot": "head"},{"type": "generic.armor_toughness","uuid": [3,1,2,3],"name": "generic.armor_toughness","amount": 2,"operation": "add_value","slot": "head"}],"max_damage": 907,"item_name": "[{\"text\":\"Obsidian Helmet\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015050}}}},
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u8065\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x5 Obsidian Ingot","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -1744,7 +1802,8 @@
 		"\u0022",
 		{"text": "\u0020\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Obsidian Ingot\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015049}}},"clickEvent": {"action": "change_page","value": "24"}},
 		"\u0022",
-		{"text": "\u0020\u0020\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Obsidian Ingot\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015049}}},"clickEvent": {"action": "change_page","value": "24"}}
+		{"text": "\u0020\u0020\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Obsidian Ingot\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015049}}},"clickEvent": {"action": "change_page","value": "24"}},
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u8066\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x8 Obsidian Ingot","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -1772,7 +1831,8 @@
 		"\u0022",
 		{"text": "\u0020","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Obsidian Ingot\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015049}}},"clickEvent": {"action": "change_page","value": "24"}},
 		"\u0020",
-		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Obsidian Ingot\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015049}}},"clickEvent": {"action": "change_page","value": "24"}}
+		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Obsidian Ingot\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015049}}},"clickEvent": {"action": "change_page","value": "24"}},
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u8067\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x7 Obsidian Ingot","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -1796,7 +1856,8 @@
 		"\u0020",
 		{"text": "\u0020","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Obsidian Ingot\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015049}}},"clickEvent": {"action": "change_page","value": "24"}},
 		"\u0022\u0022",
-		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "leather_boots","components": {"dyed_color": {"rgb": 2168364,"show_in_tooltip": false},"attribute_modifiers": [{"type": "generic.armor","uuid": [2,10,11,12],"name": "generic.armor","amount": 2.9,"operation": "add_value","slot": "feet"},{"type": "generic.armor_toughness","uuid": [3,10,11,12],"name": "generic.armor_toughness","amount": 2,"operation": "add_value","slot": "feet"}],"max_damage": 1072,"item_name": "[{\"text\":\"Obsidian Boots\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015053}}}}
+		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "leather_boots","components": {"dyed_color": {"rgb": 2168364,"show_in_tooltip": false},"attribute_modifiers": [{"type": "generic.armor","uuid": [2,10,11,12],"name": "generic.armor","amount": 2.9,"operation": "add_value","slot": "feet"},{"type": "generic.armor_toughness","uuid": [3,10,11,12],"name": "generic.armor_toughness","amount": 2,"operation": "add_value","slot": "feet"}],"max_damage": 1072,"item_name": "[{\"text\":\"Obsidian Boots\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015053}}}},
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u8068\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x4 Obsidian Ingot","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -1816,7 +1877,8 @@
 		"\u0022",
 		{"text": "\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:stick"}}},
 		"\u0022",
-		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:stick"}}}
+		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:stick"}}},
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u8069\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x2 Obsidian Ingot","color": "gray"},{"text": "\n- x1 Stick","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -1837,7 +1899,8 @@
 		{"text": "\u0020","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:stick"}}},
 		"\u0020\n\u0022\u0020",
 		{"text": "\u0020","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:stick"}}},
-		"\u0020\n\n"
+		"\u0020\n\n",
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u806a\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x3 Obsidian Ingot","color": "gray"},{"text": "\n- x2 Stick","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -1859,7 +1922,8 @@
 		"\u0022\u0020",
 		{"text": "\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:stick"}}},
 		"\u0022\u0020",
-		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:stick"}}}
+		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:stick"}}},
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u806b\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x3 Obsidian Ingot","color": "gray"},{"text": "\n- x2 Stick","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -1879,7 +1943,8 @@
 		"\u0022",
 		{"text": "\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:stick"}}},
 		"\u0022",
-		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:stick"}}}
+		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:stick"}}},
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u806c\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x1 Obsidian Ingot","color": "gray"},{"text": "\n- x2 Stick","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -1899,7 +1964,8 @@
 		"\u0022\u0020",
 		{"text": "\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:stick"}}},
 		"\u0022\u0020",
-		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:stick"}}}
+		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:stick"}}},
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u806d\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x2 Obsidian Ingot","color": "gray"},{"text": "\n- x2 Stick","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -1919,7 +1985,8 @@
 		"\u0020",
 		{"text": "\u0020","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:emerald"}}},
 		"\u0022\u0022",
-		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "leather_helmet","components": {"dyed_color": {"rgb": 2532680,"show_in_tooltip": false},"attribute_modifiers": [{"type": "generic.armor","uuid": [2,1,2,3],"name": "generic.armor","amount": 3.0,"operation": "add_value","slot": "head"},{"type": "generic.armor_toughness","uuid": [3,1,2,3],"name": "generic.armor_toughness","amount": 2,"operation": "add_value","slot": "head"},{"type": "generic.luck","uuid": [5,1,2,3],"name": "generic.luck","amount": 0.25,"operation": "add_value","slot": "head"}],"max_damage": 171,"item_name": "[{\"text\":\"Emerald Helmet\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015059}}}}
+		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "leather_helmet","components": {"dyed_color": {"rgb": 2532680,"show_in_tooltip": false},"attribute_modifiers": [{"type": "generic.armor","uuid": [2,1,2,3],"name": "generic.armor","amount": 3.0,"operation": "add_value","slot": "head"},{"type": "generic.armor_toughness","uuid": [3,1,2,3],"name": "generic.armor_toughness","amount": 2,"operation": "add_value","slot": "head"},{"type": "generic.luck","uuid": [5,1,2,3],"name": "generic.luck","amount": 0.25,"operation": "add_value","slot": "head"}],"max_damage": 171,"item_name": "[{\"text\":\"Emerald Helmet\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015059}}}},
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u806e\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x5 Emerald","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -1943,7 +2010,8 @@
 		"\u0022",
 		{"text": "\u0020\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:emerald"}}},
 		"\u0022",
-		{"text": "\u0020\u0020\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:emerald"}}}
+		{"text": "\u0020\u0020\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:emerald"}}},
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u806f\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x8 Emerald","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -1971,7 +2039,8 @@
 		"\u0022",
 		{"text": "\u0020","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:emerald"}}},
 		"\u0020",
-		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:emerald"}}}
+		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:emerald"}}},
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u8070\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x7 Emerald","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -1995,7 +2064,8 @@
 		"\u0020",
 		{"text": "\u0020","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:emerald"}}},
 		"\u0022\u0022",
-		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "leather_boots","components": {"dyed_color": {"rgb": 2532680,"show_in_tooltip": false},"attribute_modifiers": [{"type": "generic.armor","uuid": [2,10,11,12],"name": "generic.armor","amount": 3.0,"operation": "add_value","slot": "feet"},{"type": "generic.armor_toughness","uuid": [3,10,11,12],"name": "generic.armor_toughness","amount": 2,"operation": "add_value","slot": "feet"},{"type": "generic.luck","uuid": [5,10,11,12],"name": "generic.luck","amount": 0.25,"operation": "add_value","slot": "feet"}],"max_damage": 202,"item_name": "[{\"text\":\"Emerald Boots\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015062}}}}
+		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "leather_boots","components": {"dyed_color": {"rgb": 2532680,"show_in_tooltip": false},"attribute_modifiers": [{"type": "generic.armor","uuid": [2,10,11,12],"name": "generic.armor","amount": 3.0,"operation": "add_value","slot": "feet"},{"type": "generic.armor_toughness","uuid": [3,10,11,12],"name": "generic.armor_toughness","amount": 2,"operation": "add_value","slot": "feet"},{"type": "generic.luck","uuid": [5,10,11,12],"name": "generic.luck","amount": 0.25,"operation": "add_value","slot": "feet"}],"max_damage": 202,"item_name": "[{\"text\":\"Emerald Boots\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015062}}}},
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u8071\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x4 Emerald","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -2015,7 +2085,8 @@
 		"\u0022",
 		{"text": "\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:stick"}}},
 		"\u0022",
-		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:stick"}}}
+		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:stick"}}},
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u8072\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x2 Emerald","color": "gray"},{"text": "\n- x1 Stick","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -2036,7 +2107,8 @@
 		{"text": "\u0020","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:stick"}}},
 		"\u0020\n\u0022\u0020",
 		{"text": "\u0020","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:stick"}}},
-		"\u0020\n\n"
+		"\u0020\n\n",
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u8073\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x3 Emerald","color": "gray"},{"text": "\n- x2 Stick","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -2058,7 +2130,8 @@
 		"\u0022\u0020",
 		{"text": "\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:stick"}}},
 		"\u0022\u0020",
-		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:stick"}}}
+		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:stick"}}},
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u8074\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x3 Emerald","color": "gray"},{"text": "\n- x2 Stick","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -2078,7 +2151,8 @@
 		"\u0022",
 		{"text": "\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:stick"}}},
 		"\u0022",
-		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:stick"}}}
+		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:stick"}}},
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u8075\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x1 Emerald","color": "gray"},{"text": "\n- x2 Stick","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -2098,7 +2172,8 @@
 		"\u0022\u0020",
 		{"text": "\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:stick"}}},
 		"\u0022\u0020",
-		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:stick"}}}
+		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:stick"}}},
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u8076\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x2 Emerald","color": "gray"},{"text": "\n- x2 Stick","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -2118,7 +2193,8 @@
 		"\u0020",
 		{"text": "\u0020","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Steel Ingot\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015070}}},"clickEvent": {"action": "change_page","value": "27"}},
 		"\u0022\u0022",
-		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "leather_helmet","components": {"dyed_color": {"rgb": 5460819,"show_in_tooltip": false},"attribute_modifiers": [{"type": "generic.armor","uuid": [2,1,2,3],"name": "generic.armor","amount": 2.4,"operation": "add_value","slot": "head"},{"type": "generic.armor_toughness","uuid": [3,1,2,3],"name": "generic.armor_toughness","amount": 2,"operation": "add_value","slot": "head"}],"max_damage": 103,"item_name": "[{\"text\":\"Steel Helmet\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015071}}}}
+		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "leather_helmet","components": {"dyed_color": {"rgb": 5460819,"show_in_tooltip": false},"attribute_modifiers": [{"type": "generic.armor","uuid": [2,1,2,3],"name": "generic.armor","amount": 2.4,"operation": "add_value","slot": "head"},{"type": "generic.armor_toughness","uuid": [3,1,2,3],"name": "generic.armor_toughness","amount": 2,"operation": "add_value","slot": "head"}],"max_damage": 103,"item_name": "[{\"text\":\"Steel Helmet\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015071}}}},
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u8077\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x5 Steel Ingot","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -2142,7 +2218,8 @@
 		"\u0022",
 		{"text": "\u0020\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Steel Ingot\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015070}}},"clickEvent": {"action": "change_page","value": "27"}},
 		"\u0022",
-		{"text": "\u0020\u0020\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Steel Ingot\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015070}}},"clickEvent": {"action": "change_page","value": "27"}}
+		{"text": "\u0020\u0020\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Steel Ingot\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015070}}},"clickEvent": {"action": "change_page","value": "27"}},
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u8078\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x8 Steel Ingot","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -2170,7 +2247,8 @@
 		"\u0022",
 		{"text": "\u0020","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Steel Ingot\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015070}}},"clickEvent": {"action": "change_page","value": "27"}},
 		"\u0020",
-		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Steel Ingot\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015070}}},"clickEvent": {"action": "change_page","value": "27"}}
+		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Steel Ingot\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015070}}},"clickEvent": {"action": "change_page","value": "27"}},
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u8079\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x7 Steel Ingot","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -2194,7 +2272,8 @@
 		"\u0020",
 		{"text": "\u0020","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Steel Ingot\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015070}}},"clickEvent": {"action": "change_page","value": "27"}},
 		"\u0022\u0022",
-		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "leather_boots","components": {"dyed_color": {"rgb": 5460819,"show_in_tooltip": false},"attribute_modifiers": [{"type": "generic.armor","uuid": [2,10,11,12],"name": "generic.armor","amount": 2.4,"operation": "add_value","slot": "feet"},{"type": "generic.armor_toughness","uuid": [3,10,11,12],"name": "generic.armor_toughness","amount": 2,"operation": "add_value","slot": "feet"}],"max_damage": 122,"item_name": "[{\"text\":\"Steel Boots\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015074}}}}
+		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "leather_boots","components": {"dyed_color": {"rgb": 5460819,"show_in_tooltip": false},"attribute_modifiers": [{"type": "generic.armor","uuid": [2,10,11,12],"name": "generic.armor","amount": 2.4,"operation": "add_value","slot": "feet"},{"type": "generic.armor_toughness","uuid": [3,10,11,12],"name": "generic.armor_toughness","amount": 2,"operation": "add_value","slot": "feet"}],"max_damage": 122,"item_name": "[{\"text\":\"Steel Boots\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015074}}}},
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u807a\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x4 Steel Ingot","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -2214,7 +2293,8 @@
 		"\u0022",
 		{"text": "\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:stick"}}},
 		"\u0022",
-		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:stick"}}}
+		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:stick"}}},
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u807b\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x2 Steel Ingot","color": "gray"},{"text": "\n- x1 Stick","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -2235,7 +2315,8 @@
 		{"text": "\u0020","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:stick"}}},
 		"\u0020\n\u0022\u0020",
 		{"text": "\u0020","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:stick"}}},
-		"\u0020\n\n"
+		"\u0020\n\n",
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u807c\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x3 Steel Ingot","color": "gray"},{"text": "\n- x2 Stick","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -2257,7 +2338,8 @@
 		"\u0022\u0020",
 		{"text": "\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:stick"}}},
 		"\u0022\u0020",
-		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:stick"}}}
+		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:stick"}}},
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u807d\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x3 Steel Ingot","color": "gray"},{"text": "\n- x2 Stick","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -2277,7 +2359,8 @@
 		"\u0022",
 		{"text": "\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:stick"}}},
 		"\u0022",
-		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:stick"}}}
+		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:stick"}}},
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u807e\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x1 Steel Ingot","color": "gray"},{"text": "\n- x2 Stick","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -2297,7 +2380,8 @@
 		"\u0022\u0020",
 		{"text": "\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:stick"}}},
 		"\u0022\u0020",
-		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:stick"}}}
+		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:stick"}}},
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u807f\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x2 Steel Ingot","color": "gray"},{"text": "\n- x2 Stick","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -2311,7 +2395,8 @@
 		"\u0020",
 		{"text": "\u0020","hoverEvent": {"action": "show_item","contents": {"id": "arrow","components": {"lore": ["{\"text\":\"x1.5 damage arrow\",\"color\":\"gray\",\"italic\":false}","[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"item_name": "[{\"text\":\"Bolt\",\"italic\":false,\"color\":\"white\"}]","custom_model_data": 2015093}}}},
 		"\n\u0022\u0020\u0020\u0020",
-		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "arrow","components": {"lore": ["{\"text\":\"x1.5 damage arrow\",\"color\":\"gray\",\"italic\":false}","[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"item_name": "[{\"text\":\"Bolt\",\"italic\":false,\"color\":\"white\"}]","custom_model_data": 2015093}}}}
+		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "arrow","components": {"lore": ["{\"text\":\"x1.5 damage arrow\",\"color\":\"gray\",\"italic\":false}","[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"item_name": "[{\"text\":\"Bolt\",\"italic\":false,\"color\":\"white\"}]","custom_model_data": 2015093}}}},
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u8080\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x1 Iron Ingot","color": "gray"},{"text": "\n- x1 Arrow","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -2325,7 +2410,8 @@
 		"\u0020",
 		{"text": "\u0020","hoverEvent": {"action": "show_item","contents": {"id": "leather_helmet","components": {"lore": ["{\"text\":\"A hat that makes you fly\",\"color\":\"gray\",\"italic\":false}","[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"attribute_modifiers": [{"type": "generic.gravity","uuid": [7,1,2,3],"name": "generic.gravity","amount": -0.09,"operation": "add_value","slot": "head"}],"item_name": "[{\"text\":\"Helice Hat\",\"italic\":false,\"color\":\"white\"}]","custom_model_data": 2015097}}}},
 		"\n\u0022\u0020\u0020\u0020",
-		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "leather_helmet","components": {"lore": ["{\"text\":\"A hat that makes you fly\",\"color\":\"gray\",\"italic\":false}","[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"attribute_modifiers": [{"type": "generic.gravity","uuid": [7,1,2,3],"name": "generic.gravity","amount": -0.09,"operation": "add_value","slot": "head"}],"item_name": "[{\"text\":\"Helice Hat\",\"italic\":false,\"color\":\"white\"}]","custom_model_data": 2015097}}}}
+		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "leather_helmet","components": {"lore": ["{\"text\":\"A hat that makes you fly\",\"color\":\"gray\",\"italic\":false}","[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"attribute_modifiers": [{"type": "generic.gravity","uuid": [7,1,2,3],"name": "generic.gravity","amount": -0.09,"operation": "add_value","slot": "head"}],"item_name": "[{\"text\":\"Helice Hat\",\"italic\":false,\"color\":\"white\"}]","custom_model_data": 2015097}}}},
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u8081\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x1 Iron Ingot","color": "gray"},{"text": "\n- x1 Elytra","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -2347,7 +2433,8 @@
 		{"text": "\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Slate\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015086}}},"clickEvent": {"action": "change_page","value": "34"}},
 		"\u0022\u0020",
 		{"text": "\u0020","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Steel Ingot\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015070}}},"clickEvent": {"action": "change_page","value": "27"}},
-		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Slate\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015086}}},"clickEvent": {"action": "change_page","value": "34"}}
+		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Slate\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015086}}},"clickEvent": {"action": "change_page","value": "34"}},
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u8082\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x4 Steel Ingot","color": "gray"},{"text": "\n- x1 Slate","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -2370,7 +2457,8 @@
 		{"text": "\u0020","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Steel Ingot\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015070}}},"clickEvent": {"action": "change_page","value": "27"}},
 		"\u0020\n\u0022\u0020",
 		{"text": "\u0020","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Steel Ingot\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015070}}},"clickEvent": {"action": "change_page","value": "27"}},
-		"\u0020\n\n"
+		"\u0020\n\n",
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u8083\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x3 Steel Ingot","color": "gray"},{"text": "\n- x1 Slate","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -2394,7 +2482,8 @@
 		"\u0022",
 		{"text": "\u0020\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:iron_ingot"}}},
 		"\u0022",
-		{"text": "\u0020\u0020\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:iron_ingot"}}}
+		{"text": "\u0020\u0020\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:iron_ingot"}}},
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u8084\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x8 Iron Ingot","color": "gray"},{"text": "\n- x1 Furnace","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -2408,7 +2497,8 @@
 		"\u0020",
 		{"text": "\u0020","hoverEvent": {"action": "show_item","contents": {"id": "furnace","components": {"item_name": "[{\"text\":\"Box Jump\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015090,"container": [{"slot": 0,"item": {"id": "minecraft:stone","count": 1,"components": {"minecraft:custom_data": {"smithed": {"block": {"id": "iyc:box_jump","from": "iyc"}}}}}}]}}}},
 		"\n\u0022\u0020\u0020\u0020",
-		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "furnace","components": {"item_name": "[{\"text\":\"Box Jump\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015090,"container": [{"slot": 0,"item": {"id": "minecraft:stone","count": 1,"components": {"minecraft:custom_data": {"smithed": {"block": {"id": "iyc:box_jump","from": "iyc"}}}}}}]}}}}
+		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "furnace","components": {"item_name": "[{\"text\":\"Box Jump\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015090,"container": [{"slot": 0,"item": {"id": "minecraft:stone","count": 1,"components": {"minecraft:custom_data": {"smithed": {"block": {"id": "iyc:box_jump","from": "iyc"}}}}}}]}}}},
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u8085\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x1 Oak Planks","color": "gray"},{"text": "\n- x1 Ruby","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -2422,7 +2512,8 @@
 		"\u0020",
 		{"text": "\u0020","hoverEvent": {"action": "show_item","contents": {"id": "furnace","components": {"item_name": "[{\"text\":\"Box Speed\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015091,"container": [{"slot": 0,"item": {"id": "minecraft:stone","count": 1,"components": {"minecraft:custom_data": {"smithed": {"block": {"id": "iyc:box_speed","from": "iyc"}}}}}}]}}}},
 		"\n\u0022\u0020\u0020\u0020",
-		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "furnace","components": {"item_name": "[{\"text\":\"Box Speed\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015091,"container": [{"slot": 0,"item": {"id": "minecraft:stone","count": 1,"components": {"minecraft:custom_data": {"smithed": {"block": {"id": "iyc:box_speed","from": "iyc"}}}}}}]}}}}
+		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "furnace","components": {"item_name": "[{\"text\":\"Box Speed\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015091,"container": [{"slot": 0,"item": {"id": "minecraft:stone","count": 1,"components": {"minecraft:custom_data": {"smithed": {"block": {"id": "iyc:box_speed","from": "iyc"}}}}}}]}}}},
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u8086\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x1 Oak Planks","color": "gray"},{"text": "\n- x1 Sapphire","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -2446,7 +2537,8 @@
 		"\u0022",
 		{"text": "\u0020\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:blue_wool"}}},
 		"\u0022",
-		{"text": "\u0020\u0020\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:blue_wool"}}}
+		{"text": "\u0020\u0020\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:blue_wool"}}},
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u8087\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x8 Blue Wool","color": "gray"},{"text": "\n- x1 Glass","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -2466,7 +2558,8 @@
 		"\u0022",
 		{"text": "\u0020\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:glass"}}},
 		"\u0022",
-		{"text": "\u0020\u0020\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:glass"}}}
+		{"text": "\u0020\u0020\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:glass"}}},
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u8088\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x9 Glass","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -2518,7 +2611,8 @@
 		"\u0022",
 		{"text": "\u0020","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:iron_ingot"}}},
 		"\u0020",
-		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:iron_ingot"}}}
+		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:iron_ingot"}}},
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u8089\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x7 Iron Ingot","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -2532,7 +2626,8 @@
 		"\u0020",
 		{"text": "\u0020","hoverEvent": {"action": "show_item","contents": {"id": "furnace","components": {"item_name": "[{\"text\":\"Birch Wood Lantern\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015101,"container": [{"slot": 0,"item": {"id": "minecraft:stone","count": 1,"components": {"minecraft:custom_data": {"smithed": {"block": {"id": "iyc:birch_wood_lantern","from": "iyc"}}}}}}]}}}},
 		"\n\u0022\u0020\u0020\u0020",
-		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "furnace","components": {"item_name": "[{\"text\":\"Birch Wood Lantern\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015101,"container": [{"slot": 0,"item": {"id": "minecraft:stone","count": 1,"components": {"minecraft:custom_data": {"smithed": {"block": {"id": "iyc:birch_wood_lantern","from": "iyc"}}}}}}]}}}}
+		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "furnace","components": {"item_name": "[{\"text\":\"Birch Wood Lantern\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015101,"container": [{"slot": 0,"item": {"id": "minecraft:stone","count": 1,"components": {"minecraft:custom_data": {"smithed": {"block": {"id": "iyc:birch_wood_lantern","from": "iyc"}}}}}}]}}}},
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u808a\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x1 Glowstone","color": "gray"},{"text": "\n- x1 Birch Wood","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -2546,7 +2641,8 @@
 		"\u0020",
 		{"text": "\u0020","hoverEvent": {"action": "show_item","contents": {"id": "furnace","components": {"item_name": "[{\"text\":\"Jungle Wood Lantern\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015102,"container": [{"slot": 0,"item": {"id": "minecraft:stone","count": 1,"components": {"minecraft:custom_data": {"smithed": {"block": {"id": "iyc:jungle_wood_lantern","from": "iyc"}}}}}}]}}}},
 		"\n\u0022\u0020\u0020\u0020",
-		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "furnace","components": {"item_name": "[{\"text\":\"Jungle Wood Lantern\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015102,"container": [{"slot": 0,"item": {"id": "minecraft:stone","count": 1,"components": {"minecraft:custom_data": {"smithed": {"block": {"id": "iyc:jungle_wood_lantern","from": "iyc"}}}}}}]}}}}
+		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "furnace","components": {"item_name": "[{\"text\":\"Jungle Wood Lantern\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015102,"container": [{"slot": 0,"item": {"id": "minecraft:stone","count": 1,"components": {"minecraft:custom_data": {"smithed": {"block": {"id": "iyc:jungle_wood_lantern","from": "iyc"}}}}}}]}}}},
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u808b\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x1 Glowstone","color": "gray"},{"text": "\n- x1 Jungle Wood","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -2560,7 +2656,8 @@
 		"\u0020",
 		{"text": "\u0020","hoverEvent": {"action": "show_item","contents": {"id": "furnace","components": {"item_name": "[{\"text\":\"Oak Wood Lantern\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015103,"container": [{"slot": 0,"item": {"id": "minecraft:stone","count": 1,"components": {"minecraft:custom_data": {"smithed": {"block": {"id": "iyc:oak_wood_lantern","from": "iyc"}}}}}}]}}}},
 		"\n\u0022\u0020\u0020\u0020",
-		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "furnace","components": {"item_name": "[{\"text\":\"Oak Wood Lantern\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015103,"container": [{"slot": 0,"item": {"id": "minecraft:stone","count": 1,"components": {"minecraft:custom_data": {"smithed": {"block": {"id": "iyc:oak_wood_lantern","from": "iyc"}}}}}}]}}}}
+		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "furnace","components": {"item_name": "[{\"text\":\"Oak Wood Lantern\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015103,"container": [{"slot": 0,"item": {"id": "minecraft:stone","count": 1,"components": {"minecraft:custom_data": {"smithed": {"block": {"id": "iyc:oak_wood_lantern","from": "iyc"}}}}}}]}}}},
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u808c\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x1 Glowstone","color": "gray"},{"text": "\n- x1 Oak Wood","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -2574,7 +2671,8 @@
 		"\u0020",
 		{"text": "\u0020","hoverEvent": {"action": "show_item","contents": {"id": "furnace","components": {"item_name": "[{\"text\":\"Spruce Wood Lantern\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015104,"container": [{"slot": 0,"item": {"id": "minecraft:stone","count": 1,"components": {"minecraft:custom_data": {"smithed": {"block": {"id": "iyc:spruce_wood_lantern","from": "iyc"}}}}}}]}}}},
 		"\n\u0022\u0020\u0020\u0020",
-		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "furnace","components": {"item_name": "[{\"text\":\"Spruce Wood Lantern\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015104,"container": [{"slot": 0,"item": {"id": "minecraft:stone","count": 1,"components": {"minecraft:custom_data": {"smithed": {"block": {"id": "iyc:spruce_wood_lantern","from": "iyc"}}}}}}]}}}}
+		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "furnace","components": {"item_name": "[{\"text\":\"Spruce Wood Lantern\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015104,"container": [{"slot": 0,"item": {"id": "minecraft:stone","count": 1,"components": {"minecraft:custom_data": {"smithed": {"block": {"id": "iyc:spruce_wood_lantern","from": "iyc"}}}}}}]}}}},
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u808d\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x1 Glowstone","color": "gray"},{"text": "\n- x1 Spruce Wood","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -2588,7 +2686,8 @@
 		"\u0020",
 		{"text": "\u0020","hoverEvent": {"action": "show_item","contents": {"id": "furnace","components": {"item_name": "[{\"text\":\"Iron Lantern\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015105,"container": [{"slot": 0,"item": {"id": "minecraft:stone","count": 1,"components": {"minecraft:custom_data": {"smithed": {"block": {"id": "iyc:iron_lantern","from": "iyc"}}}}}}]}}}},
 		"\n\u0022\u0020\u0020\u0020",
-		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "furnace","components": {"item_name": "[{\"text\":\"Iron Lantern\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015105,"container": [{"slot": 0,"item": {"id": "minecraft:stone","count": 1,"components": {"minecraft:custom_data": {"smithed": {"block": {"id": "iyc:iron_lantern","from": "iyc"}}}}}}]}}}}
+		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "furnace","components": {"item_name": "[{\"text\":\"Iron Lantern\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015105,"container": [{"slot": 0,"item": {"id": "minecraft:stone","count": 1,"components": {"minecraft:custom_data": {"smithed": {"block": {"id": "iyc:iron_lantern","from": "iyc"}}}}}}]}}}},
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u808e\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x1 Glowstone","color": "gray"},{"text": "\n- x1 Iron Block","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -2602,7 +2701,8 @@
 		"\u0020",
 		{"text": "\u0020","hoverEvent": {"action": "show_item","contents": {"id": "furnace","components": {"item_name": "[{\"text\":\"Red Light\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015106,"container": [{"slot": 0,"item": {"id": "minecraft:stone","count": 1,"components": {"minecraft:custom_data": {"smithed": {"block": {"id": "iyc:red_light","from": "iyc"}}}}}}]}}}},
 		"\n\u0022\u0020\u0020\u0020",
-		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "furnace","components": {"item_name": "[{\"text\":\"Red Light\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015106,"container": [{"slot": 0,"item": {"id": "minecraft:stone","count": 1,"components": {"minecraft:custom_data": {"smithed": {"block": {"id": "iyc:red_light","from": "iyc"}}}}}}]}}}}
+		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "furnace","components": {"item_name": "[{\"text\":\"Red Light\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015106,"container": [{"slot": 0,"item": {"id": "minecraft:stone","count": 1,"components": {"minecraft:custom_data": {"smithed": {"block": {"id": "iyc:red_light","from": "iyc"}}}}}}]}}}},
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u808f\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x1 Redstone Lamp","color": "gray"},{"text": "\n- x1 Red Wool","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -2623,7 +2723,8 @@
 		{"text": "\u0020","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:oak_planks"}}},
 		"\u0020\n\u0022",
 		{"text": "\u0020","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:oak_planks"}}},
-		"\u0020\n\n"
+		"\u0020\n\n",
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u8090\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x4 Oak Planks","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -2671,7 +2772,8 @@
 		"\u0022\u0020\u0020\u0020\u0022\u0022",
 		{"text": "\u0020","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Toast\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015118}}}},
 		"\n\u0022\u0020\u0020\u0020\u0022\u0022",
-		{"text": "\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Toast\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015118}}}}
+		{"text": "\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Toast\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015118}}}},
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u8091\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x3 Bread","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -2685,7 +2787,8 @@
 		"\u0020",
 		{"text": "\u0020","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"food": {"can_always_eat": true,"nutrition": 2,"saturation": 0.6,"effects": [{"effect": {"id": "minecraft:jump_boost","duration": 600,"amplifier": 0},"probability": 1.0}]},"item_name": "[{\"text\":\"Apple Juice\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015122}}}},
 		"\n\u0022\u0020\u0020\u0020",
-		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"food": {"can_always_eat": true,"nutrition": 2,"saturation": 0.6,"effects": [{"effect": {"id": "minecraft:jump_boost","duration": 600,"amplifier": 0},"probability": 1.0}]},"item_name": "[{\"text\":\"Apple Juice\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015122}}}}
+		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"food": {"can_always_eat": true,"nutrition": 2,"saturation": 0.6,"effects": [{"effect": {"id": "minecraft:jump_boost","duration": 600,"amplifier": 0},"probability": 1.0}]},"item_name": "[{\"text\":\"Apple Juice\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015122}}}},
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u8092\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x1 Apple","color": "gray"},{"text": "\n- x1 Empty Glass","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -2699,7 +2802,8 @@
 		"\u0020",
 		{"text": "\u0020","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"food": {"can_always_eat": true,"nutrition": 2,"saturation": 0.6,"effects": [{"effect": {"id": "minecraft:nausea","duration": 600,"amplifier": 0},"probability": 1.0}]},"item_name": "[{\"text\":\"Beer\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015123}}}},
 		"\n\u0022\u0020\u0020\u0020",
-		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"food": {"can_always_eat": true,"nutrition": 2,"saturation": 0.6,"effects": [{"effect": {"id": "minecraft:nausea","duration": 600,"amplifier": 0},"probability": 1.0}]},"item_name": "[{\"text\":\"Beer\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015123}}}}
+		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"food": {"can_always_eat": true,"nutrition": 2,"saturation": 0.6,"effects": [{"effect": {"id": "minecraft:nausea","duration": 600,"amplifier": 0},"probability": 1.0}]},"item_name": "[{\"text\":\"Beer\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015123}}}},
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u8093\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x1 Beer Mug","color": "gray"},{"text": "\n- x1 Hops","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -2725,7 +2829,8 @@
 		"\u0020",
 		{"text": "\u0020","hoverEvent": {"action": "show_item","contents": {"id": "furnace","components": {"item_name": "[{\"text\":\"Cherry Cake\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015125,"container": [{"slot": 0,"item": {"id": "minecraft:stone","count": 1,"components": {"minecraft:custom_data": {"smithed": {"block": {"id": "iyc:cherry_cake","from": "iyc"}}}}}}]}}}},
 		"\n\u0022\u0020\u0020\u0020",
-		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "furnace","components": {"item_name": "[{\"text\":\"Cherry Cake\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015125,"container": [{"slot": 0,"item": {"id": "minecraft:stone","count": 1,"components": {"minecraft:custom_data": {"smithed": {"block": {"id": "iyc:cherry_cake","from": "iyc"}}}}}}]}}}}
+		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "furnace","components": {"item_name": "[{\"text\":\"Cherry Cake\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015125,"container": [{"slot": 0,"item": {"id": "minecraft:stone","count": 1,"components": {"minecraft:custom_data": {"smithed": {"block": {"id": "iyc:cherry_cake","from": "iyc"}}}}}}]}}}},
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u8094\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x1 Cherry","color": "gray"},{"text": "\n- x1 Cake","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -2745,7 +2850,8 @@
 		{"text": "\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"food": {"can_always_eat": true,"nutrition": 2,"saturation": 0.6,"effects": [{"effect": {"id": "minecraft:haste","duration": 600,"amplifier": 0},"probability": 1.0}]},"item_name": "[{\"text\":\"Coca\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015126}}}},
 		"\u0022",
 		{"text": "\u0020","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:sugar"}}},
-		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Caffeine\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015114}}},"clickEvent": {"action": "change_page","value": "38"}}
+		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Caffeine\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015114}}},"clickEvent": {"action": "change_page","value": "38"}},
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u8095\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x1 Can","color": "gray"},{"text": "\n- x1 Cola","color": "gray"},{"text": "\n- x1 Sugar","color": "gray"},{"text": "\n- x1 Caffeine","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -2763,7 +2869,8 @@
 		"\u0020\u0020",
 		{"text": "\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"food": {"can_always_eat": true,"nutrition": 3,"saturation": 0.8,"effects": [{"effect": {"id": "minecraft:speed","duration": 600,"amplifier": 0},"probability": 1.0}]},"item_name": "[{\"text\":\"Hot Chocolate\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015127}}}},
 		"\u0022",
-		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:milk_bucket"}}}
+		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:milk_bucket"}}},
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u8096\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x1 Cocoa Beans","color": "gray"},{"text": "\n- x1 Bowl","color": "gray"},{"text": "\n- x1 Milk Bucket","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -2785,7 +2892,8 @@
 		"\u0022",
 		{"text": "\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Glass Pot\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015120}}},"clickEvent": {"action": "change_page","value": "43"}},
 		"\u0022",
-		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Glass Pot\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015120}}},"clickEvent": {"action": "change_page","value": "43"}}
+		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Glass Pot\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015120}}},"clickEvent": {"action": "change_page","value": "43"}},
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u8097\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x3 Cocoa Beans","color": "gray"},{"text": "\n- x2 Sugar","color": "gray"},{"text": "\n- x1 Milk Bucket","color": "gray"},{"text": "\n- x1 Glass Pot","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -2803,7 +2911,8 @@
 		"\u0022",
 		{"text": "\u0020\u0020","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Toast\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015118}}},"clickEvent": {"action": "change_page","value": "131"}},
 		"\u0020\u0022\u0022",
-		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"food": {"can_always_eat": false,"nutrition": 12,"saturation": 0.6},"item_name": "[{\"text\":\"Nutella Toast\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015129}}}}
+		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"food": {"can_always_eat": false,"nutrition": 12,"saturation": 0.6},"item_name": "[{\"text\":\"Nutella Toast\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015129}}}},
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u8098\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x1 Nutella","color": "gray"},{"text": "\n- x4 Toast","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -2823,7 +2932,8 @@
 		{"text": "\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"food": {"can_always_eat": true,"nutrition": 2,"saturation": 0.6,"effects": [{"effect": {"id": "minecraft:regeneration","duration": 600,"amplifier": 0},"probability": 1.0}]},"item_name": "[{\"text\":\"Red Bull\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015130}}}},
 		"\u0022",
 		{"text": "\u0020","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:sugar"}}},
-		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Caffeine\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015114}}},"clickEvent": {"action": "change_page","value": "38"}}
+		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Caffeine\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015114}}},"clickEvent": {"action": "change_page","value": "38"}},
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u8099\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x1 Can","color": "gray"},{"text": "\n- x1 Taurine","color": "gray"},{"text": "\n- x1 Sugar","color": "gray"},{"text": "\n- x1 Caffeine","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -2839,7 +2949,8 @@
 		"\u0020\u0020",
 		{"text": "\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "item_frame","components": {"item_name": "[{\"text\":\"Lignite Torch\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015134}}}},
 		"\u0022",
-		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:stick"}}}
+		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:stick"}}},
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u809a\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x1 Stick","color": "gray"},{"text": "\n- x1 Lignite","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -2875,7 +2986,8 @@
 		"\u0022",
 		{"text": "\u0020\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:tnt"}}},
 		"\u0022",
-		{"text": "\u0020\u0020\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:tnt"}}}
+		{"text": "\u0020\u0020\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:tnt"}}},
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u809b\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x6 Tnt","color": "gray"},{"text": "\n- x1 Topaz","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},

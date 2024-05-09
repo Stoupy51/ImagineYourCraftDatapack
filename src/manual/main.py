@@ -173,9 +173,9 @@ else:
 			if raw_data.get("wiki"):
 				content.append({"text": VERY_SMALL_NONE_FONT + WIKI_INFO_FONT + VERY_SMALL_NONE_FONT, "hoverEvent": {"action": "show_text", "contents": raw_data["wiki"]}})
 			
-			# For each craft (except the first one and smelting dupes),
+			# For each craft (except smelting dupes),
 			if raw_data.get(RESULT_OF_CRAFTING):
-				crafts = raw_data[RESULT_OF_CRAFTING][1:]
+				crafts = raw_data[RESULT_OF_CRAFTING]
 				crafts = [craft for craft in crafts if craft["type"] not in ["blasting", "smoking", "campfire_cooking"]]	# Remove smelting dupes
 
 				for i, craft in enumerate(crafts):

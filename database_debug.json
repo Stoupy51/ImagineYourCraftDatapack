@@ -24,6 +24,7 @@
 		"id": "minecraft:command_block",
 		"category": "material",
 		"custom_data": {"smithed": {"dict": {"fragment": {"adamantium": true}},"ignore": {"functionality": true,"crafting": true}},"iyc": {"adamantium_fragment": true}},
+		"result_of_crafting": [{"type": "crafting_shapeless","result_count": 9,"category": "misc","group": "adamantium","ingredients": [{"components": {"custom_data": {"iyc": {"adamantium_block": true}}}}]},{"type": "smelting","result_count": 1,"category": "misc","group": "adamantium","experience": 0.8,"cookingtime": 200,"ingredient": {"components": {"custom_data": {"iyc": {"adamantium_ore": true}}}}},{"type": "blasting","result_count": 1,"category": "misc","group": "adamantium","experience": 0.8,"cookingtime": 100,"ingredient": {"components": {"custom_data": {"iyc": {"adamantium_ore": true}}}}}],
 		"item_name": "[{\"text\":\"Adamantium Fragment\",\"italic\":false,\"color\":\"white\"}]",
 		"lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],
 		"custom_model_data": 2015002

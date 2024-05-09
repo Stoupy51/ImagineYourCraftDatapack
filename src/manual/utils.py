@@ -14,6 +14,8 @@ def convert_shapeless_to_shaped(craft: dict) -> dict:
 		dict: The craft converted
 	"""
 	new_craft = {"type": "crafting_shaped", "result_count": craft["result_count"], "ingredients": {}}
+	if craft.get("result"):
+		new_craft["result"] = craft["result"]
 
 	# Get all ingredients to the dictionary
 	next_key = "A"
@@ -177,6 +179,8 @@ def generate_craft_content(craft: dict, name: str, page_font: str) -> list:
 					else:
 						content.append(formatted_ingredients[k])
 				content.append("\n")
+		if len(craft["shape"]) == 1:
+			content.append("\n\n")
 		
 		# Add the result to the craft
 		if len(craft["shape"]) <= 2 and len(craft["shape"][0]) <= 2:
@@ -239,4 +243,44 @@ def generate_craft_content(craft: dict, name: str, page_font: str) -> list:
 		content.append("\n\n\n")
 
 	return content
+
+# Extract unique crafts from a craft list
+def unique_crafts(crafts: list[dict]) -> list[dict]:
+	""" Get unique crafts from a list of crafts
+	Args:
+		list (list[dict]): The list of crafts
+	Returns:
+		list[dict]: The unique crafts
+	"""
+	unique = []
+	strings = []
+	for craft in crafts:
+		if str(craft) not in strings:
+			unique.append(craft)
+			strings.append(str(craft))
+	return unique
+
+# Generate USED_FOR_CRAFTING key like
+def generate_otherside_crafts(item: str) -> list[dict]:
+	""" Generate the USED_FOR_CRAFTING key like
+	Args:
+		item (str): The item to generate the key for
+	Returns:
+		list[dict]: ex: [{"type": "crafting_shaped","result_count": 1,"category": "equipment","shape": ["XXX","X X"],"ingredients": {"X": {"components": {"custom_data": {"iyc": {"chainmail": true}}}}},"result": {"item": "minecraft:chainmail_helmet","count": 1}}, ...]
+	"""
+	# Get all crafts that use the item
+	crafts = []
+	for key, value in DATABASE.items():
+		if key != item and value.get(RESULT_OF_CRAFTING):
+			for craft in value[RESULT_OF_CRAFTING]:
+				if ("ingredient" in craft and craft["ingredient"] == item) or \
+					("ingredients" in craft and isinstance(craft["ingredients"], dict) and item in [ingr_to_id(x, False) for x in craft["ingredients"].values()]) or \
+					("ingredients" in craft and isinstance(craft["ingredients"], list) and item in [ingr_to_id(x, False) for x in craft["ingredients"]]):
+					# Convert craft, ex:
+					# before:	chainmail_helmet	{"type": "crafting_shaped","result_count": 1,"category": "equipment","shape": ["XXX","X X"],"ingredients": {"X": {"components": {"custom_data": {"iyc": {"chainmail": true}}}}}}}
+					# after:	chainmail			{"type": "crafting_shaped","result_count": 1,"category": "equipment","shape": ["XXX","X X"],"ingredients": {"X": {"components": {"custom_data": {"iyc": {"chainmail": true}}}}},"result": {"item": "minecraft:chainmail_helmet","count": 1}}
+					craft_copy = craft.copy()
+					craft_copy["result"] = ingr_repr(key, craft["result_count"])
+					crafts.append(craft_copy)
+	return crafts
 

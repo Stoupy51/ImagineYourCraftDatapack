@@ -171,12 +171,18 @@ else:
 			# Add wiki information if any
 			content.append("\n")
 			if raw_data.get("wiki"):
-				content.append({"text": VERY_SMALL_NONE_FONT + WIKI_INFO_FONT + VERY_SMALL_NONE_FONT, "hoverEvent": {"action": "show_text", "contents": raw_data["wiki"]}})
+				content.append({"text": WIKI_INFO_FONT, "hoverEvent": {"action": "show_text", "contents": raw_data["wiki"]}})
 			
 			# For each craft (except smelting dupes),
-			if raw_data.get(RESULT_OF_CRAFTING):
-				crafts = raw_data[RESULT_OF_CRAFTING]
+			if raw_data.get(RESULT_OF_CRAFTING) or raw_data.get(USED_FOR_CRAFTING):
+				crafts = []
+				if raw_data.get(RESULT_OF_CRAFTING):
+					crafts += raw_data[RESULT_OF_CRAFTING]
+				if raw_data.get(USED_FOR_CRAFTING):
+					crafts += raw_data[USED_FOR_CRAFTING]
+				crafts += generate_otherside_crafts(name)
 				crafts = [craft for craft in crafts if craft["type"] not in ["blasting", "smoking", "campfire_cooking"]]	# Remove smelting dupes
+				crafts = unique_crafts(crafts)
 
 				for i, craft in enumerate(crafts):
 					if craft["type"] == "crafting_shapeless":
@@ -186,7 +192,7 @@ else:
 					hover_text = [""]
 
 					# Append the craft font and breaklines
-					breaklines = max(len(craft["shape"]), len(craft["shape"][0])) if "shape" in craft else 3
+					breaklines = max(2, max(len(craft["shape"]), len(craft["shape"][0]))) if "shape" in craft else 3
 					hover_text.append({"text": craft_font + "\n\n" * breaklines, "font": FONT, "color": "white"})
 
 					# Append ingredients
@@ -215,7 +221,7 @@ else:
 
 					# Add the craft to the content
 					result_or_ingredient = WIKI_RESULT_OF_CRAFT_FONT if "result" not in craft else WIKI_INGR_OF_CRAFT_FONT
-					content.append({"text": VERY_SMALL_NONE_FONT + result_or_ingredient + VERY_SMALL_NONE_FONT, "hoverEvent": {"action": "show_text", "contents": hover_text}})
+					content.append({"text": result_or_ingredient, "hoverEvent": {"action": "show_text", "contents": hover_text}})
 
 		# Add page to the book
 		book_content.append(content)

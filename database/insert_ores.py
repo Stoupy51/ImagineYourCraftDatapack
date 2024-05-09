@@ -70,7 +70,7 @@ for ore in ORES:
 
 		# Recipes
 		DATABASE[item][RESULT_OF_CRAFTING] = []
-		if ingredient == "ingot" or ingredient == "":
+		if ingredient in ["ingot", "fragment", ""]:
 			if f"{ore}_block.png" in textures_filenames:
 				DATABASE[item][RESULT_OF_CRAFTING].append({"type":"crafting_shapeless","result_count":9,"category":"misc","group":material,"ingredients":[ingr_repr(f"{ore}_block")]})
 			if f"{ore}_nugget.png" in textures_filenames:

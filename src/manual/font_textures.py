@@ -129,7 +129,7 @@ def generate_page_font(name: str, page_font: str, craft: dict|None = None, outpu
 	result_texture = Image.open(image_path)
 
 	# If recipe result is specified, take the right texture
-	if craft and "result" in craft:
+	if craft and craft.get("result"):
 		result_id = ingr_to_id(craft["result"])
 		result_id = result_id.replace(":", "/")
 		image_path = f"{MANUAL_PATH}/items/{result_id}.png"

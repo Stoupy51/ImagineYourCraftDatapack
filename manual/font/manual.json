@@ -149,7 +149,6 @@
 		{"type": "bitmap","file": "iyc:font/page/nutella.png","ascent": 6,"height": 60,"chars": ["\u10aa"]},
 		{"type": "bitmap","file": "iyc:font/page/nutella_toast.png","ascent": 6,"height": 60,"chars": ["\u10ab"]},
 		{"type": "bitmap","file": "iyc:font/page/red_bull.png","ascent": 6,"height": 60,"chars": ["\u10ac"]},
-		{"type": "bitmap","file": "iyc:font/page/red_bull_1.png","ascent": 6,"height": 60,"chars": ["\u802c"]},
 		{"type": "bitmap","file": "iyc:font/page/lignite_torch.png","ascent": 6,"height": 60,"chars": ["\u10ad"]},
 		{"type": "bitmap","file": "iyc:font/page/coin.png","ascent": 6,"height": 40,"chars": ["\u10ae"]},
 		{"type": "bitmap","file": "iyc:font/page/nuclear_bomb.png","ascent": 6,"height": 60,"chars": ["\u10af"]},

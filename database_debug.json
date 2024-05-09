@@ -1345,7 +1345,7 @@
 		"id": "minecraft:command_block",
 		"category": "food",
 		"food": {"can_always_eat": true,"nutrition": 2,"saturation": 0.6,"effects": [{"effect": {"id": "minecraft:regeneration","duration": 600,"amplifier": 0},"probability": 1.0}]},
-		"result_of_crafting": [{"type": "crafting_shapeless","result_count": 1,"category": "food","ingredients": [{"components": {"custom_data": {"iyc": {"can": true}}}},{"components": {"custom_data": {"iyc": {"taurine": true}}}},{"item": "minecraft:sugar"},{"components": {"custom_data": {"iyc": {"caffeine": true}}}}]},{"type": "crafting_shapeless","result_count": 1,"category": "food","ingredients": [{"components": {"custom_data": {"iyc": {"can": true}}}},{"item": "minecraft:sugar"},{"item": "minecraft:sugar"},{"components": {"custom_data": {"iyc": {"caffeine": true}}}}]}],
+		"result_of_crafting": [{"type": "crafting_shapeless","result_count": 1,"category": "food","ingredients": [{"components": {"custom_data": {"iyc": {"can": true}}}},{"components": {"custom_data": {"iyc": {"taurine": true}}}},{"item": "minecraft:sugar"},{"components": {"custom_data": {"iyc": {"caffeine": true}}}}]}],
 		"custom_data": {"iyc": {"red_bull": true},"smithed": {"ignore": {"functionality": true,"crafting": true}}},
 		"item_name": "[{\"text\":\"Red Bull\",\"italic\":false,\"color\":\"white\"}]",
 		"lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],

@@ -2823,8 +2823,7 @@
 		{"text": "\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"food": {"can_always_eat": true,"nutrition": 2,"saturation": 0.6,"effects": [{"effect": {"id": "minecraft:regeneration","duration": 600,"amplifier": 0},"probability": 1.0}]},"item_name": "[{\"text\":\"Red Bull\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015130}}}},
 		"\u0022",
 		{"text": "\u0020","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:sugar"}}},
-		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Caffeine\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015114}}},"clickEvent": {"action": "change_page","value": "38"}},
-		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u802c\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x1 Can","color": "gray"},{"text": "\n- x2 Sugar","color": "gray"},{"text": "\n- x1 Caffeine","color": "gray"}]}}
+		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Caffeine\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015114}}},"clickEvent": {"action": "change_page","value": "38"}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},

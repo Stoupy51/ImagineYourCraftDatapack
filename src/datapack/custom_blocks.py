@@ -98,6 +98,8 @@ for item, data in DATABASE.items():
 content += f"tag @s remove {NAMESPACE}.placer\n"
 write_to_file(f"{DATAPACK_FUNCTIONS}/custom_blocks/place.mcfunction", content)
 
+# Sort unique blocks
+unique_blocks = sorted(list(unique_blocks))
 
 ## Destroy functions
 # For each unique block, if the vanilla block is missing, call the destroy function for the group

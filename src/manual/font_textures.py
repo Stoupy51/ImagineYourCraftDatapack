@@ -213,7 +213,7 @@ def generate_page_font(name: str, page_font: str, craft: dict|None = None) -> No
 	else:
 		# Get the image template and append the provider
 		template = Image.open(f"{TEMPLATES_PATH}/simple_case_no_border.png")
-		providers.append({"type":"bitmap","file":f"{NAMESPACE}:font/page/{name}.png", "ascent": 0, "height": 41, "chars": [page_font]})
+		providers.append({"type":"bitmap","file":f"{NAMESPACE}:font/page/{name}.png", "ascent": 0, "height": 40, "chars": [page_font]})
 
 		# Place the result item
 		template.paste(result_texture, (2, 2), result_mask)

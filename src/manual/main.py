@@ -18,6 +18,9 @@ if not DEBUG_MODE:
 	super_copy(f"{ASSETS_PATH}/none_release.png", f"{BUILD_RESOURCE_PACK}/assets/{NAMESPACE}/textures/font/none.png")
 else:
 	super_copy(f"{ASSETS_PATH}/none.png", f"{BUILD_RESOURCE_PACK}/assets/{NAMESPACE}/textures/font/none.png")
+super_copy(f"{ASSETS_PATH}/wiki_information.png", f"{BUILD_RESOURCE_PACK}/assets/{NAMESPACE}/textures/font/wiki_information.png")
+super_copy(f"{ASSETS_PATH}/wiki_result_of_craft.png", f"{BUILD_RESOURCE_PACK}/assets/{NAMESPACE}/textures/font/wiki_result_of_craft.png")
+super_copy(f"{ASSETS_PATH}/wiki_ingredient_of_craft.png", f"{BUILD_RESOURCE_PACK}/assets/{NAMESPACE}/textures/font/wiki_ingredient_of_craft.png")
 
 
 # If the manual cache is enabled and we have a cache file, load it
@@ -261,6 +264,9 @@ else:
 	providers.append({"type":"bitmap","file":f"{NAMESPACE}:font/none.png", "ascent": 8, "height": 18, "chars": [MEDIUM_NONE_FONT]})
 	providers.append({"type":"bitmap","file":f"{NAMESPACE}:font/none.png", "ascent": 7, "height": 7, "chars": [SMALL_NONE_FONT]})
 	providers.append({"type":"bitmap","file":f"{NAMESPACE}:font/none.png", "ascent": 0, "height": 2, "chars": [VERY_SMALL_NONE_FONT]})
+	providers.append({"type":"bitmap","file":f"{NAMESPACE}:font/wiki_information.png", "ascent": 0, "height": 8, "chars": [WIKI_INFO_FONT]})
+	providers.append({"type":"bitmap","file":f"{NAMESPACE}:font/wiki_result_of_craft.png", "ascent": 0, "height": 8, "chars": [WIKI_RESULT_OF_CRAFT_FONT]})
+	providers.append({"type":"bitmap","file":f"{NAMESPACE}:font/wiki_ingredient_of_craft.png", "ascent": 0, "height": 8, "chars": [WIKI_INGR_OF_CRAFT_FONT]})
 	fonts = {"providers": providers}
 	with super_open(f"{MANUAL_PATH}/font/manual.json", "w") as f:
 		f.write(super_json_dump(fonts).replace("\\\\", "\\"))

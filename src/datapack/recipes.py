@@ -3,8 +3,10 @@
 from config import *
 from src.utils.io import *
 from src.utils.print import *
+from src.utils.cache import simple_cache
 
 # Functions for recipes
+@simple_cache
 def shapeless_recipe(recipe: dict, item: str) -> dict:
 	""" Generate the dictionnary for the recipe json file
 	Args:
@@ -40,6 +42,7 @@ def shapeless_recipe(recipe: dict, item: str) -> dict:
 		to_return["result"] = result
 	return to_return
 
+@simple_cache
 def shaped_recipe(recipe: dict, item: str) -> dict:
 	try:
 		data = DATABASE[item]

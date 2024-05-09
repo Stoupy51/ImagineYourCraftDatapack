@@ -3,10 +3,12 @@
 from config import *
 from src.utils.io import *
 from src.utils.print import *
+from src.utils.cache import simple_cache
 import json
 
 # Prepare lang dictionnary and lang_format function
 lang = {}
+@simple_cache
 def lang_format(text: str):
 	""" Get alphanumeric characters from a string and return it.
 	Args:

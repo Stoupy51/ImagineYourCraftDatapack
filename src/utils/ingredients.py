@@ -1,11 +1,14 @@
 
+# Imports
 from config import NAMESPACE
+from src.utils.cache import simple_cache
 
 # Recipes constants
 FURNACES_RECIPES_TYPES = ("smelting", "blasting", "smoking", "campfire_cooking")
 CRAFTING_RECIPES_TYPES = ("crafting_shaped", "crafting_shapeless")
 
 # Function mainly used for database generation
+@simple_cache
 def ingr_repr(id: str, count: int|None = None) -> dict:
 	""" Get the identity of the ingredient from its id for custom crafts
 	Args:
@@ -24,6 +27,7 @@ def ingr_repr(id: str, count: int|None = None) -> dict:
 	return to_return
 
 # Mainly used for manual
+@simple_cache
 def ingr_to_id(ingredient: dict, add_namespace: bool = True) -> str:
 	""" Get the id from an ingredient dict
 	Args:

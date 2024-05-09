@@ -2,8 +2,10 @@
 # Import config & font textures
 from config import *
 from src.manual.font_textures import *
+from src.utils.cache import simple_cache
 
 # Convert craft function
+@simple_cache
 def convert_shapeless_to_shaped(craft: dict) -> dict:
 	""" Convert a shapeless craft to a shaped craft
 	Args:
@@ -51,6 +53,7 @@ def convert_shapeless_to_shaped(craft: dict) -> dict:
 
 # Get page number
 pages = []	# Filled in src/manual/main.py
+@simple_cache
 def get_page_number(item_id: str) -> int:
 	for p in pages:
 		if p["name"] == item_id:
@@ -59,6 +62,7 @@ def get_page_number(item_id: str) -> int:
 
 # Convert ingredient to formatted JSON for book
 COMPONENTS_TO_IGNORE = NOT_COMPONENTS + ["custom_data", "count"]
+@simple_cache
 def get_item_component(ingredient: dict|str, only_those_components: list[str] = None) -> dict:
 	""" Generate item hover text for a craft ingredient
 	Args:

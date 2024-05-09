@@ -378,7 +378,7 @@
 		{"text": "\u0020\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "furnace","components": {"item_name": "[{\"text\":\"Adamantium Ore\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015001,"container": [{"slot": 0,"item": {"id": "minecraft:stone","count": 1,"components": {"minecraft:custom_data": {"smithed": {"block": {"id": "iyc:adamantium_ore","from": "iyc"}}}}}}]}}},"clickEvent": {"action": "change_page","value": "12"}},
 		"\u0021\u0021",
 		{"text": "\u0020\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "furnace","components": {"item_name": "[{\"text\":\"Adamantium Ore\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015001,"container": [{"slot": 0,"item": {"id": "minecraft:stone","count": 1,"components": {"minecraft:custom_data": {"smithed": {"block": {"id": "iyc:adamantium_ore","from": "iyc"}}}}}}]}}},"clickEvent": {"action": "change_page","value": "12"}},
-		{"text": "\u0023\u0023\u0024\u0023\u0023","hoverEvent": {"action": "show_text","contents": [{"text": "Description: "},{"text": "Adamantium Ore is a mineable ore found in the overworld caves.\n","color": "gray"},{"text": "How to get one? "},{"text": "In the overworld, anywhere below y=40.\n","color": "gray"},{"text": "Can be mined with: "},{"text": "Any pickaxe.\n","color": "gray"},{"text": "Drops: "},{"text": "1 Raw Adamantium (fortune enchantment is supported)\n","color": "gray"},{"text": "Silk Touch? "},{"text": "Also supported","color": "gray"}]}}
+		{"text": "\u0023\u0024\u0023","hoverEvent": {"action": "show_text","contents": [{"text": "Description: "},{"text": "Adamantium Ore is a mineable ore found in the overworld caves.\n","color": "gray"},{"text": "How to get one? "},{"text": "In the overworld, anywhere below y=40.\n","color": "gray"},{"text": "Can be mined with: "},{"text": "Any pickaxe.\n","color": "gray"},{"text": "Drops: "},{"text": "1 Raw Adamantium (fortune enchantment is supported)\n","color": "gray"},{"text": "Silk Touch? "},{"text": "Also supported","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -434,7 +434,8 @@
 		"\u0020\u0020",
 		{"text": "\u0020","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Sapphire\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015014}}}},
 		"\n\u0022\u0020\u0020\u0020",
-		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Sapphire\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015014}}}}
+		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Sapphire\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015014}}}},
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u8021\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x1 Sapphire Ore","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -478,7 +479,8 @@
 		"\u0020\u0020",
 		{"text": "\u0020","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Ruby\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015026}}}},
 		"\n\u0022\u0020\u0020\u0020",
-		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Ruby\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015026}}}}
+		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Ruby\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015026}}}},
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u8022\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x1 Ruby Ore","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -522,7 +524,8 @@
 		"\u0020\u0020",
 		{"text": "\u0020","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Topaz\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015038}}}},
 		"\n\u0022\u0020\u0020\u0020",
-		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Topaz\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015038}}}}
+		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Topaz\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015038}}}},
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u8023\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x1 Topaz Ore","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -599,7 +602,8 @@
 		"\u0020\u0020",
 		{"text": "\u0020","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Steel Ingot\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015070}}}},
 		"\n\u0022\u0020\u0020\u0020",
-		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Steel Ingot\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015070}}}}
+		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Steel Ingot\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015070}}}},
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u8024\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x1 Steel Ore","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -659,7 +663,8 @@
 		"\u0020\u0020",
 		{"text": "\u0020","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Lignite\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015083}}}},
 		"\n\u0022\u0020\u0020\u0020",
-		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Lignite\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015083}}}}
+		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Lignite\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015083}}}},
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u8025\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x1 Lignite Ore","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -703,7 +708,8 @@
 		"\u0020\u0020",
 		{"text": "\u0020","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Slate\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015086}}}},
 		"\n\u0022\u0020\u0020\u0020",
-		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Slate\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015086}}}}
+		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Slate\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015086}}}},
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u8026\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x1 Slate Ore","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -756,7 +762,8 @@
 		{"text": "\u0020\u0020","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:glass"}}},
 		"\u0020\n\u0022",
 		{"text": "\u0020\u0020","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:glass"}}},
-		"\u0020\n\n"
+		"\u0020\n\n",
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u8027\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x6 Glass","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -893,7 +900,11 @@
 		"\u0020",
 		{"text": "\u0020","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Chainmail\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015131}}}},
 		"\n\u0022\u0020\u0020\u0020",
-		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Chainmail\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015131}}}}
+		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Chainmail\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015131}}}},
+		{"text": "\u0023\u0026\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u8028\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x5 Chainmail","color": "gray"}]}},
+		{"text": "\u0023\u0026\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u8029\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x8 Chainmail","color": "gray"}]}},
+		{"text": "\u0023\u0026\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u802a\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x7 Chainmail","color": "gray"}]}},
+		{"text": "\u0023\u0026\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u802b\n\n\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x4 Chainmail","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},
@@ -2812,7 +2823,8 @@
 		{"text": "\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"food": {"can_always_eat": true,"nutrition": 2,"saturation": 0.6,"effects": [{"effect": {"id": "minecraft:regeneration","duration": 600,"amplifier": 0},"probability": 1.0}]},"item_name": "[{\"text\":\"Red Bull\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015130}}}},
 		"\u0022",
 		{"text": "\u0020","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:sugar"}}},
-		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Caffeine\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015114}}},"clickEvent": {"action": "change_page","value": "38"}}
+		{"text": "\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"item_name": "[{\"text\":\"Caffeine\",\"italic\":false,\"color\":\"white\"}]","lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],"custom_model_data": 2015114}}},"clickEvent": {"action": "change_page","value": "38"}},
+		{"text": "\u0023\u0025\u0023","hoverEvent": {"action": "show_text","contents": ["",{"text": "\u802c\n\n\n\n","font": "iyc:manual","color": "white"},{"text": "\n- x1 Can","color": "gray"},{"text": "\n- x2 Sugar","color": "gray"},{"text": "\n- x1 Caffeine","color": "gray"}]}}
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},

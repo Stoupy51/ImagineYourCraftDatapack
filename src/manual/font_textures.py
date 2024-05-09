@@ -28,6 +28,11 @@ def get_font(i: int):
 	return f"\\u{i:04x}"
 def get_page_font(i: int) -> str:
 	return get_font(i + 0x1000)
+next_craft_font = 0x8000
+def get_craft_font() -> str:	# Returns an incrementing value for each craft
+	global next_craft_font
+	next_craft_font += 1
+	return get_font(next_craft_font)
 
 # Generate a border for a given Image
 def add_border(image: Image.Image, border_color: tuple, border_size: int, is_rectangle_shape: bool) -> Image.Image:
@@ -104,18 +109,29 @@ def image_count(count: int) -> Image:
 # Generate page font function (called in utils)
 providers = []
 os.makedirs(f"{FONT_FOLDER}/page", exist_ok=True)
-def generate_page_font(name: str, page_font: str, craft: dict|None = None) -> None:
+def generate_page_font(name: str, page_font: str, craft: dict|None = None, output_filename: str|None = None) -> None:
 	""" Generate the page font image with the proper items
 	Args:
-		name (str): Name of the item
-		page_font (str): Font string for the page
-		craft (dict): Crafting recipe dictionary
+		name			(str):			Name of the item
+		page_font		(str):			Font string for the page
+		craft			(dict|None):	Crafting recipe dictionary (None if no craft)
+		output_filename (str|None):		The output filename (None if default, used for wiki crafts)
 	"""
+	if not output_filename:
+		output_filename = name
+
 	# Get result texture (to place later)
 	image_path = f"{MANUAL_PATH}/items/{NAMESPACE}/{name}.png"
 	if not os.path.exists(image_path):
 		error(f"Missing item texture at '{image_path}'")
 	result_texture = Image.open(image_path)
+
+	# If recipe result is specified, take the right texture
+	if craft and "result" in craft:
+		result_id = ingr_to_id(craft["result"])
+		result_id = result_id.replace(":", "/")
+		image_path = f"{MANUAL_PATH}/items/{result_id}.png"
+		result_texture = Image.open(image_path)
 
 	# Resize the texture and get the mask
 	factor = SQUARE_SIZE / result_texture.size[0]
@@ -125,15 +141,16 @@ def generate_page_font(name: str, page_font: str, craft: dict|None = None) -> No
 	)
 	result_mask = result_texture.convert("RGBA").split()[3]
 	
-	# Crafting shaped
+	# Check if there is a craft
 	if craft:
 
+		# Shaped craft
 		if craft["type"] in "crafting_shaped":
 
 			# Get the image template and append the provider
 			shaped_size = max(2, max(len(craft["shape"]), len(craft["shape"][0])))
 			template = Image.open(f"{TEMPLATES_PATH}/shaped_{shaped_size}x{shaped_size}.png")
-			providers.append({"type":"bitmap","file":f"{NAMESPACE}:font/page/{name}.png", "ascent": 0, "height": 60, "chars": [page_font]})
+			providers.append({"type":"bitmap","file":f"{NAMESPACE}:font/page/{output_filename}.png", "ascent": 0 if not output_filename else 6, "height": 60, "chars": [page_font]})
 
 			# Loop the shape matrix
 			STARTING_PIXEL = (4, 4)
@@ -143,7 +160,7 @@ def generate_page_font(name: str, page_font: str, craft: dict|None = None) -> No
 					if symbol != " ":
 						ingredient = craft["ingredients"][symbol]
 						if ingredient.get("components"):
-							# get "steel_ingot" in {'components': {'custom_data': {'iyc': {'steel_ingot': True}}}}
+							# get "iyc:steel_ingot" in {'components': {'custom_data': {'iyc': {'steel_ingot': True}}}}
 							item = ingr_to_id(ingredient)
 						else:
 							item = ingredient["item"]	# Vanilla item, ex: "minecraft:glowstone"
@@ -176,13 +193,14 @@ def generate_page_font(name: str, page_font: str, craft: dict|None = None) -> No
 				template.paste(count_img, [x + 2 for x in coords], count_img)
 
 			# Save the image
-			template.save(f"{FONT_FOLDER}/page/{name}.png")
-	
+			template.save(f"{FONT_FOLDER}/page/{output_filename}.png")
+
+		# Smelting craft
 		elif craft["type"] in FURNACES_RECIPES_TYPES:
 			
 			# Get the image template and append the provider
 			template = Image.open(f"{TEMPLATES_PATH}/furnace.png")
-			providers.append({"type":"bitmap","file":f"{NAMESPACE}:font/page/{name}.png", "ascent": 0, "height": 60, "chars": [page_font]})
+			providers.append({"type":"bitmap","file":f"{NAMESPACE}:font/page/{output_filename}.png", "ascent": 0 if not output_filename else 6, "height": 60, "chars": [page_font]})
 
 			# Place input item
 			input_item = ingr_to_id(craft["ingredient"])
@@ -207,20 +225,18 @@ def generate_page_font(name: str, page_font: str, craft: dict|None = None) -> No
 				template.paste(count_img, [x + 2 for x in coords], count_img)
 			
 			# Save the image
-			template.save(f"{FONT_FOLDER}/page/{name}.png")
+			template.save(f"{FONT_FOLDER}/page/{output_filename}.png")
 	
 	# Else, there is no craft, just put the item in a box
 	else:
 		# Get the image template and append the provider
 		template = Image.open(f"{TEMPLATES_PATH}/simple_case_no_border.png")
-		providers.append({"type":"bitmap","file":f"{NAMESPACE}:font/page/{name}.png", "ascent": 0, "height": 40, "chars": [page_font]})
+		providers.append({"type":"bitmap","file":f"{NAMESPACE}:font/page/{output_filename}.png", "ascent": 0 if not output_filename else 6, "height": 40, "chars": [page_font]})
 
 		# Place the result item
 		template.paste(result_texture, (2, 2), result_mask)
 		template = add_border(template, BORDER_COLOR, BORDER_SIZE, is_rectangle_shape = True)
-		template.save(f"{FONT_FOLDER}/page/{name}.png")
-
-	
+		template.save(f"{FONT_FOLDER}/page/{output_filename}.png")
 	return
 
 
@@ -284,18 +300,24 @@ opengl.stop_opengl()
 # Get every used vanilla items
 used_vanilla_items = set()
 for item, data in DATABASE.items():
+	all_crafts = []
 	if data.get(RESULT_OF_CRAFTING):
-		for recipe in data[RESULT_OF_CRAFTING]:
-			ingredients = []
-			if "ingredients" in recipe:
-				ingredients = recipe["ingredients"]
-				if isinstance(ingredients, dict):
-					ingredients = ingredients.values()
-			elif "ingredient" in recipe:
-				ingredients = [recipe["ingredient"]]
-			for ingredient in ingredients:
-				if "item" in ingredient:
-					used_vanilla_items.add(ingredient["item"].split(":")[1])
+		all_crafts += data[RESULT_OF_CRAFTING]
+	if data.get(USED_FOR_CRAFTING):
+		all_crafts += data[USED_FOR_CRAFTING]
+	for recipe in all_crafts:
+		ingredients = []
+		if "ingredients" in recipe:
+			ingredients = recipe["ingredients"]
+			if isinstance(ingredients, dict):
+				ingredients = ingredients.values()
+		elif "ingredient" in recipe:
+			ingredients = [recipe["ingredient"]]
+		for ingredient in ingredients:
+			if "item" in ingredient:
+				used_vanilla_items.add(ingredient["item"].split(":")[1])
+		if "result" in recipe and "item" in recipe["result"]:
+			used_vanilla_items.add(recipe["result"]["item"].split(":")[1])
 	pass
 
 # Download all the vanilla textures from the wiki

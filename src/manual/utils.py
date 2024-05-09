@@ -135,6 +135,8 @@ def generate_craft_content(craft: dict, name: str, page_font: str) -> list:
 		craft		(dict):	The craft dictionary, ex: {"type": "crafting_shaped","result_count": 1,"category": "equipment","shape": ["XXX","X X"],"ingredients": {"X": {"components": {"custom_data": {"iyc": {"adamantium": true}}}}}}
 		name		(str):	The name of the item, ex: "adamantium_pickaxe"
 		page_font	(str):	The font for the page, ex: "\u0002"
+	Returns:
+		list:	The content of the craft, ex: [{"text": ...}]
 	"""
 	craft_type = craft["type"]
 	content = [{"text": "", "font": FONT, "color": "white"}]	# Make default font for every next component

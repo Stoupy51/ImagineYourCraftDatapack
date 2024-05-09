@@ -168,10 +168,10 @@ else:
 					content.append(component)
 					content.append("\n")
 
-			# Add wiki information if any
-			content.append("\n")
+			## Add wiki information if any
+			wiki_buttons = []
 			if raw_data.get("wiki"):
-				content.append({"text": WIKI_INFO_FONT, "hoverEvent": {"action": "show_text", "contents": raw_data["wiki"]}})
+				wiki_buttons.append({"text": WIKI_INFO_FONT + VERY_SMALL_NONE_FONT * 2, "hoverEvent": {"action": "show_text", "contents": raw_data["wiki"]}})
 			
 			# For each craft (except smelting dupes),
 			if raw_data.get(RESULT_OF_CRAFTING) or raw_data.get(USED_FOR_CRAFTING):
@@ -192,7 +192,9 @@ else:
 					hover_text = [""]
 
 					# Append the craft font and breaklines
-					breaklines = max(2, max(len(craft["shape"]), len(craft["shape"][0]))) if "shape" in craft else 3
+					breaklines = 3
+					if "shape" in craft:
+						breaklines = max(2, max(len(craft["shape"]), len(craft["shape"][0])))
 					hover_text.append({"text": craft_font + "\n\n" * breaklines, "font": FONT, "color": "white"})
 
 					# Append ingredients
@@ -221,7 +223,39 @@ else:
 
 					# Add the craft to the content
 					result_or_ingredient = WIKI_RESULT_OF_CRAFT_FONT if "result" not in craft else WIKI_INGR_OF_CRAFT_FONT
-					content.append({"text": result_or_ingredient, "hoverEvent": {"action": "show_text", "contents": hover_text}})
+					wiki_buttons.append({"text": result_or_ingredient + VERY_SMALL_NONE_FONT * 2, "hoverEvent": {"action": "show_text", "contents": hover_text}})
+			
+			# Add wiki buttons 5 by 5
+			if wiki_buttons:
+
+				# Add a breakline only if there aren't too many breaklines already
+				if content[-1] not in ["\n\n", "\n\n\n"]:
+					content.append("\n")
+
+				last_i = 0
+				for i, button in enumerate(wiki_buttons):
+					last_i = i
+					# Duplicate line and add breakline
+					if i % 5 == 0 and i != 0:
+						# Remove VERY_SMALL_NONE_FONT from last button to prevent automatic break line
+						content[-1]["text"] = content[-1]["text"].replace(VERY_SMALL_NONE_FONT, "")
+
+						# Re-add last 5 buttons (for good hoverEvent) but we replace the wiki font by the small font
+						content += [x.copy() for x in content[-5:]]
+						for j in range(5):
+							for to_replace in [WIKI_INFO_FONT, WIKI_RESULT_OF_CRAFT_FONT, WIKI_INGR_OF_CRAFT_FONT]:
+								content[-5 + j]["text"] = content[-5 + j]["text"].replace(to_replace, SMALL_NONE_FONT * 2)
+
+						content.append("\n")
+					content.append(button)
+				
+				# Duplicate the last line if not done yet
+				if last_i % 5 != 0:
+					last_i = last_i % 5 + 1
+					content += ["\n"] + [x.copy() for x in content[-last_i:]]
+					for j in range(last_i):
+						for to_replace in [WIKI_INFO_FONT, WIKI_RESULT_OF_CRAFT_FONT, WIKI_INGR_OF_CRAFT_FONT]:
+							content[-last_i + j]["text"] = content[-last_i + j]["text"].replace(to_replace, SMALL_NONE_FONT * 2)
 
 		# Add page to the book
 		book_content.append(content)
@@ -318,9 +352,9 @@ else:
 	providers.append({"type":"bitmap","file":f"{NAMESPACE}:font/none.png", "ascent": 8, "height": 18, "chars": [MEDIUM_NONE_FONT]})
 	providers.append({"type":"bitmap","file":f"{NAMESPACE}:font/none.png", "ascent": 7, "height": 7, "chars": [SMALL_NONE_FONT]})
 	providers.append({"type":"bitmap","file":f"{NAMESPACE}:font/none.png", "ascent": 0, "height": 2, "chars": [VERY_SMALL_NONE_FONT]})
-	providers.append({"type":"bitmap","file":f"{NAMESPACE}:font/wiki_information.png", "ascent": 8, "height": 10, "chars": [WIKI_INFO_FONT]})
-	providers.append({"type":"bitmap","file":f"{NAMESPACE}:font/wiki_result_of_craft.png", "ascent": 8, "height": 10, "chars": [WIKI_RESULT_OF_CRAFT_FONT]})
-	providers.append({"type":"bitmap","file":f"{NAMESPACE}:font/wiki_ingredient_of_craft.png", "ascent": 8, "height": 10, "chars": [WIKI_INGR_OF_CRAFT_FONT]})
+	providers.append({"type":"bitmap","file":f"{NAMESPACE}:font/wiki_information.png", "ascent": 8, "height": 16, "chars": [WIKI_INFO_FONT]})
+	providers.append({"type":"bitmap","file":f"{NAMESPACE}:font/wiki_result_of_craft.png", "ascent": 8, "height": 16, "chars": [WIKI_RESULT_OF_CRAFT_FONT]})
+	providers.append({"type":"bitmap","file":f"{NAMESPACE}:font/wiki_ingredient_of_craft.png", "ascent": 8, "height": 16, "chars": [WIKI_INGR_OF_CRAFT_FONT]})
 	fonts = {"providers": providers}
 	with super_open(f"{MANUAL_PATH}/font/manual.json", "w") as f:
 		f.write(super_json_dump(fonts).replace("\\\\", "\\"))

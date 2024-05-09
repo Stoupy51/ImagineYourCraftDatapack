@@ -138,7 +138,8 @@ else:
 			BORDER_COLOR = 0xB64E2F
 			BORDER_SIZE = 2
 			BORDER_COLOR = (BORDER_COLOR >> 16) & 0xFF, (BORDER_COLOR >> 8) & 0xFF, BORDER_COLOR & 0xFF, 255
-			page_image = add_border(page_image, BORDER_COLOR, BORDER_SIZE)
+			is_rectangle_shape = len(raw_data) % MAX_ITEMS_PER_ROW == 0
+			page_image = add_border(page_image, BORDER_COLOR, BORDER_SIZE, is_rectangle_shape)
 			
 			# Save the image
 			page_image.save(f"{FONT_FOLDER}/category/{file_name}.png")

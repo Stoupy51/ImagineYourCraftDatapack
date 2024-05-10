@@ -174,56 +174,55 @@ else:
 				wiki_buttons.append({"text": WIKI_INFO_FONT + VERY_SMALL_NONE_FONT * 2, "hoverEvent": {"action": "show_text", "contents": raw_data["wiki"]}})
 			
 			# For each craft (except smelting dupes),
-			if raw_data.get(RESULT_OF_CRAFTING) or raw_data.get(USED_FOR_CRAFTING):
-				crafts = []
-				if raw_data.get(RESULT_OF_CRAFTING):
-					crafts += raw_data[RESULT_OF_CRAFTING]
-				if raw_data.get(USED_FOR_CRAFTING):
-					crafts += raw_data[USED_FOR_CRAFTING]
-				crafts += generate_otherside_crafts(name)
-				crafts = [craft for craft in crafts if craft["type"] not in ["blasting", "smoking", "campfire_cooking"]]	# Remove smelting dupes
-				crafts = unique_crafts(crafts)
+			crafts = []
+			if raw_data.get(RESULT_OF_CRAFTING):
+				crafts += raw_data[RESULT_OF_CRAFTING]
+			if raw_data.get(USED_FOR_CRAFTING):
+				crafts += raw_data[USED_FOR_CRAFTING]
+			crafts += generate_otherside_crafts(name)
+			crafts = [craft for craft in crafts if craft["type"] not in ["blasting", "smoking", "campfire_cooking"]]	# Remove smelting dupes
+			crafts = unique_crafts(crafts)
 
-				for i, craft in enumerate(crafts):
-					if craft["type"] == "crafting_shapeless":
-						craft = convert_shapeless_to_shaped(craft)
-					craft_font = get_craft_font()	# Unique used font for the craft
-					generate_page_font(name, craft_font, craft, output_name = f"{name}_{i+1}")
-					hover_text = [""]
+			for i, craft in enumerate(crafts):
+				if craft["type"] == "crafting_shapeless":
+					craft = convert_shapeless_to_shaped(craft)
+				craft_font = get_craft_font()	# Unique used font for the craft
+				generate_page_font(name, craft_font, craft, output_name = f"{name}_{i+1}")
+				hover_text = [""]
 
-					# Append the craft font and breaklines
-					breaklines = 3
-					if "shape" in craft:
-						breaklines = max(2, max(len(craft["shape"]), len(craft["shape"][0])))
-					hover_text.append({"text": craft_font + "\n\n" * breaklines, "font": FONT, "color": "white"})
+				# Append the craft font and breaklines
+				breaklines = 3
+				if "shape" in craft:
+					breaklines = max(2, max(len(craft["shape"]), len(craft["shape"][0])))
+				hover_text.append({"text": craft_font + "\n\n" * breaklines, "font": FONT, "color": "white"})
 
-					# Append ingredients
-					if craft.get("ingredient"):
-						id = ingr_to_id(craft["ingredient"], False).replace("_", " ").title()
-						hover_text.append({"text": f"\n- x1 {id}", "color": "gray"})
-					elif craft.get("ingredients"):
+				# Append ingredients
+				if craft.get("ingredient"):
+					id = ingr_to_id(craft["ingredient"], False).replace("_", " ").title()
+					hover_text.append({"text": f"\n- x1 {id}", "color": "gray"})
+				elif craft.get("ingredients"):
 
-						# If it's a shaped crafting
-						if isinstance(craft["ingredients"], dict):
-							for k, v in craft["ingredients"].items():
-								id = ingr_to_id(v, False).replace("_", " ").title()
-								count = sum([line.count(k) for line in craft["shape"]])
-								hover_text.append({"text": f"\n- x{count} {id}", "color": "gray"})
-						
-						# If it's shapeless
-						elif isinstance(craft["ingredients"], list):
-							ids = {}	# {id: count}
-							for ingr in craft["ingredients"]:
-								id = ingr_to_id(ingr, False).replace("_", " ").title()
-								if id not in ids:
-									ids[id] = 0
-								ids[id] += 1
-							for id, count in ids.items():
-								hover_text.append({"text": f"\n- x{count} {id}", "color": "gray"})
+					# If it's a shaped crafting
+					if isinstance(craft["ingredients"], dict):
+						for k, v in craft["ingredients"].items():
+							id = ingr_to_id(v, False).replace("_", " ").title()
+							count = sum([line.count(k) for line in craft["shape"]])
+							hover_text.append({"text": f"\n- x{count} {id}", "color": "gray"})
+					
+					# If it's shapeless
+					elif isinstance(craft["ingredients"], list):
+						ids = {}	# {id: count}
+						for ingr in craft["ingredients"]:
+							id = ingr_to_id(ingr, False).replace("_", " ").title()
+							if id not in ids:
+								ids[id] = 0
+							ids[id] += 1
+						for id, count in ids.items():
+							hover_text.append({"text": f"\n- x{count} {id}", "color": "gray"})
 
-					# Add the craft to the content
-					result_or_ingredient = WIKI_RESULT_OF_CRAFT_FONT if "result" not in craft else WIKI_INGR_OF_CRAFT_FONT
-					wiki_buttons.append({"text": result_or_ingredient + VERY_SMALL_NONE_FONT * 2, "hoverEvent": {"action": "show_text", "contents": hover_text}})
+				# Add the craft to the content
+				result_or_ingredient = WIKI_RESULT_OF_CRAFT_FONT if "result" not in craft else WIKI_INGR_OF_CRAFT_FONT
+				wiki_buttons.append({"text": result_or_ingredient + VERY_SMALL_NONE_FONT * 2, "hoverEvent": {"action": "show_text", "contents": hover_text}})
 			
 			# Add wiki buttons 5 by 5
 			if wiki_buttons:

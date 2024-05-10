@@ -14,7 +14,7 @@ BUILD_COPY_DESTINATIONS: tuple[str, str] = ("D:/latest_snapshot/world/datapacks"
 
 # Dev constants
 HAS_MANUAL: bool = True								# Do the program generate a manual/guide?
-DEBUG_MODE: bool = True								# Shows up grids in manual,
+DEBUG_MODE: bool = False								# Shows up grids in manual,
 DATABASE_DEBUG: str = f"{ROOT}/database_debug.json"	# Dump of the database for debugging purposes
 CACHE_MANUAL_ASSETS: bool = True					# Caches the MC assets and the items renders for the manual (manual/items/*.png)
 CACHE_MANUAL_PAGES: bool = False					# Caches the content of the manual and the images (manual/pages/*.png)

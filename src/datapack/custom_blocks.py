@@ -196,7 +196,7 @@ execute store result entity @s Item.count byte 1 run scoreboard players get #ite
 
 # Write the used_vanilla_blocks tag, the predicate to check the blocks with the tag and an advanced one
 VANILLA_BLOCKS_TAG = "used_vanilla_blocks"
-write_to_file(f"{BUILD_DATAPACK}/data/{NAMESPACE}/tags/blocks/{VANILLA_BLOCKS_TAG}.json", super_json_dump({"values": list(unique_blocks)}))
+write_to_file(f"{BUILD_DATAPACK}/data/{NAMESPACE}/tags/block/{VANILLA_BLOCKS_TAG}.json", super_json_dump({"values": list(unique_blocks)}))
 predicate = {"condition": "minecraft:location_check", "predicate": {"block": {"blocks": f"#{NAMESPACE}:{VANILLA_BLOCKS_TAG}"}}}
 write_to_file(f"{BUILD_DATAPACK}/data/{NAMESPACE}/predicates/check_vanilla_blocks.json", super_json_dump(predicate))
 advanced_predicate = {"condition": "minecraft:any_of", "terms": []}

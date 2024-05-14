@@ -281,7 +281,7 @@ def generate_otherside_crafts(item: str) -> list[dict]:
 	for key, value in DATABASE.items():
 		if key != item and value.get(RESULT_OF_CRAFTING):
 			for craft in value[RESULT_OF_CRAFTING]:
-				if ("ingredient" in craft and craft["ingredient"] == item) or \
+				if ("ingredient" in craft and item == ingr_to_id(craft["ingredient"], False)) or \
 					("ingredients" in craft and isinstance(craft["ingredients"], dict) and item in [ingr_to_id(x, False) for x in craft["ingredients"].values()]) or \
 					("ingredients" in craft and isinstance(craft["ingredients"], list) and item in [ingr_to_id(x, False) for x in craft["ingredients"]]):
 					# Convert craft, ex:

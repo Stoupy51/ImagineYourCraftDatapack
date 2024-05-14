@@ -247,7 +247,7 @@ else:
 						content += ["\n"] + [x.copy() for x in content[-5:]]
 						for j in range(5):
 							for to_replace in [WIKI_INFO_FONT, WIKI_RESULT_OF_CRAFT_FONT, WIKI_INGR_OF_CRAFT_FONT]:
-								content[-5 + j]["text"] = content[-5 + j]["text"] = SMALL_NONE_FONT * 2 + VERY_SMALL_NONE_FONT * (2 - 1 if j == 4 else 0)
+								content[-5 + j]["text"] = SMALL_NONE_FONT * 2 + VERY_SMALL_NONE_FONT * (2 if j != 4 else 0)
 						content.append("\n")
 					content.append(button)
 				
@@ -257,7 +257,7 @@ else:
 					content += ["\n"] + [x.copy() for x in content[-last_i:]]
 					for j in range(last_i):
 						for to_replace in [WIKI_INFO_FONT, WIKI_RESULT_OF_CRAFT_FONT, WIKI_INGR_OF_CRAFT_FONT]:
-							content[-last_i + j]["text"] = content[-last_i + j]["text"] = SMALL_NONE_FONT * 2 + VERY_SMALL_NONE_FONT * (2 - 1 if j == 4 else 0)
+							content[-last_i + j]["text"] = SMALL_NONE_FONT * 2 + VERY_SMALL_NONE_FONT * (2 if j != 4 else 0)
 
 		# Add page to the book
 		book_content.append(content)

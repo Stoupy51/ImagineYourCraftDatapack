@@ -542,7 +542,7 @@
 		"id": "minecraft:command_block",
 		"category": "material",
 		"custom_data": {"smithed": {"dict": {"ingot": {"obsidian": true}},"ignore": {"functionality": true,"crafting": true}},"iyc": {"obsidian_ingot": true}},
-		"result_of_crafting": [{"type": "blasting","result_count": 1,"category": "misc","group": "obsidian","experience": 0.2,"cookingtime": 400,"ingredient": {"components": {"custom_data": {"iyc": {"massive_obsidian_block": true}}}}}],
+		"result_of_crafting": [{"type": "smelting","result_count": 1,"category": "misc","group": "obsidian","experience": 0.2,"cookingtime": 800,"ingredient": {"components": {"custom_data": {"iyc": {"massive_obsidian_block": true}}}}},{"type": "blasting","result_count": 1,"category": "misc","group": "obsidian","experience": 0.2,"cookingtime": 400,"ingredient": {"components": {"custom_data": {"iyc": {"massive_obsidian_block": true}}}}}],
 		"item_name": "[{\"text\":\"Obsidian Ingot\",\"italic\":false,\"color\":\"white\"}]",
 		"lore": ["[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"],
 		"custom_model_data": 2015049

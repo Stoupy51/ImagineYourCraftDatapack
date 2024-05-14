@@ -181,7 +181,8 @@ def generate_craft_content(craft: dict, name: str, page_font: str) -> list:
 						content.append(formatted_ingredients[k])
 				content.append("\n")
 		if len(craft["shape"]) == 1 and len(craft["shape"][0]) < 3:
-			content.append("\n\n")
+			content.append("\n")
+			pass
 		
 		# Add the result to the craft
 		if len(craft["shape"]) <= 2 and len(craft["shape"][0]) <= 2:
@@ -225,7 +226,7 @@ def generate_craft_content(craft: dict, name: str, page_font: str) -> list:
 
 			# Add break lines for the third layer of a 3x3 craft
 			if len(craft["shape"]) < 3 and len(craft["shape"][0]) == 3:
-				content.append("\n\n\n")
+				content.append("\n\n")
 				if len(craft["shape"]) < 2:
 					content.append("\n")
 		
@@ -247,7 +248,7 @@ def generate_craft_content(craft: dict, name: str, page_font: str) -> list:
 			content.append(SMALL_NONE_FONT * 4 + NONE_FONT * 2)
 			content.append(result_component)
 			content.append("\n")
-		content.append("\n\n\n")
+		content.append("\n\n")
 
 	return content
 

@@ -3,6 +3,7 @@
 from config import *
 from src.manual.font_textures import *
 from src.utils.cache import simple_cache
+MANUAL_ASSETS_PATH = f"{ROOT}/src/manual/assets/"
 
 # Convert craft function
 @simple_cache
@@ -289,4 +290,55 @@ def generate_otherside_crafts(item: str) -> list[dict]:
 					craft_copy["result"] = ingr_repr(key, craft["result_count"])
 					crafts.append(craft_copy)
 	return crafts
+
+
+# Generate small craft icon
+os.makedirs(f"{MANUAL_PATH}/font/wiki_icons", exist_ok = True)
+@simple_cache
+def generate_wiki_font_for_ingr(name: str, craft: dict) -> str:
+	""" Generate the wiki icon font to display in the manual for wiki buttons showing the result of the craft
+	If no texture found for the resulting item, return the default wiki font
+	Args:
+		name	(str):	The name of the item, ex: "adamantium_fragment"
+		craft	(dict):	The associed craft, ex: {"type": "crafting_shaped","result_count": 1,"category": "equipment","shape": ["XXX","X X"],"ingredients": {"X": {"components": {"custom_data": {"iyc": {"adamantium_fragment": true}}}}},"result": {"components": {"custom_data": {"iyc": {"adamantium_helmet": true}}},"count": 1}}
+	Returns:
+		str: The craft icon
+	"""
+	# Default wiki font
+	font = WIKI_INGR_OF_CRAFT_FONT
+
+	# If no result found, return the default font
+	if not craft.get("result"):
+		return font
+	
+	# Get result item texture and paste it on the wiki_ingredient_of_craft_template
+	try:
+		result_item = ingr_to_id(craft["result"]).replace(":", "/")
+		texture_path = f"{MANUAL_PATH}/items/{result_item}.png"
+		result_item = result_item.replace("/", "_")
+		dest_path = f"{MANUAL_PATH}/font/wiki_icons/{result_item}.png"
+		if not os.path.exists(dest_path):
+
+			# Load texture and resize it
+			item_texture = Image.open(texture_path)
+			item_texture = item_texture.resize((42, 42), Image.NEAREST)
+			item_texture = item_texture.convert("RGBA")
+
+			# Load the template and paste the texture on it
+			template = Image.open(f"{MANUAL_ASSETS_PATH}/wiki_ingredient_of_craft_template.png")
+			template.paste(item_texture, (11, 11), item_texture)
+			
+			# Save the result
+			template.save(dest_path)
+
+		# Prepare provider
+		font = get_next_font()
+		providers.append({"type":"bitmap","file":f"{NAMESPACE}:font/wiki_icons/{result_item}.png", "ascent": 8, "height": 16, "chars": [font]})
+
+	except Exception as e:
+		warning(f"Failed to generate craft icon for {name}: {e}\nreturning default font...")
+		pass
+
+	# Return the font
+	return font
 

@@ -29,7 +29,7 @@ def get_font(i: int):
 def get_page_font(i: int) -> str:
 	return get_font(i + 0x1000)
 next_craft_font = 0x8000
-def get_craft_font() -> str:	# Returns an incrementing value for each craft
+def get_next_font() -> str:	# Returns an incrementing value for each craft
 	global next_craft_font
 	next_craft_font += 1
 	return get_font(next_craft_font)

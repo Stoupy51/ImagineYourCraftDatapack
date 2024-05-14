@@ -13,14 +13,13 @@ MAX_ITEMS_PER_PAGE = MAX_ITEMS_PER_ROW * MAX_ROWS_PER_PAGE # (for showing up all
 LEFT_PADDING = 6 - MAX_ITEMS_PER_ROW
 
 # Copy assets in the resource pack
-ASSETS_PATH = f"{ROOT}/src/manual/assets/"
 if not DEBUG_MODE:
-	super_copy(f"{ASSETS_PATH}/none_release.png", f"{BUILD_RESOURCE_PACK}/assets/{NAMESPACE}/textures/font/none.png")
+	super_copy(f"{MANUAL_ASSETS_PATH}/none_release.png", f"{BUILD_RESOURCE_PACK}/assets/{NAMESPACE}/textures/font/none.png")
 else:
-	super_copy(f"{ASSETS_PATH}/none.png", f"{BUILD_RESOURCE_PACK}/assets/{NAMESPACE}/textures/font/none.png")
-super_copy(f"{ASSETS_PATH}/wiki_information.png", f"{BUILD_RESOURCE_PACK}/assets/{NAMESPACE}/textures/font/wiki_information.png")
-super_copy(f"{ASSETS_PATH}/wiki_result_of_craft.png", f"{BUILD_RESOURCE_PACK}/assets/{NAMESPACE}/textures/font/wiki_result_of_craft.png")
-super_copy(f"{ASSETS_PATH}/wiki_ingredient_of_craft.png", f"{BUILD_RESOURCE_PACK}/assets/{NAMESPACE}/textures/font/wiki_ingredient_of_craft.png")
+	super_copy(f"{MANUAL_ASSETS_PATH}/none.png", f"{BUILD_RESOURCE_PACK}/assets/{NAMESPACE}/textures/font/none.png")
+super_copy(f"{MANUAL_ASSETS_PATH}/wiki_information.png", f"{BUILD_RESOURCE_PACK}/assets/{NAMESPACE}/textures/font/wiki_information.png")
+super_copy(f"{MANUAL_ASSETS_PATH}/wiki_result_of_craft.png", f"{BUILD_RESOURCE_PACK}/assets/{NAMESPACE}/textures/font/wiki_result_of_craft.png")
+super_copy(f"{MANUAL_ASSETS_PATH}/wiki_ingredient_of_craft.png", f"{BUILD_RESOURCE_PACK}/assets/{NAMESPACE}/textures/font/wiki_ingredient_of_craft.png")
 
 
 # If the manual cache is enabled and we have a cache file, load it
@@ -84,7 +83,7 @@ else:
 	# Encode pages
 	book_content = []
 	os.makedirs(f"{FONT_FOLDER}/category", exist_ok=True)
-	simple_case = Image.open(f"{ASSETS_PATH}/simple_case_no_border.png")	# Load the simple case image for later use in categories pages
+	simple_case = Image.open(f"{MANUAL_ASSETS_PATH}/simple_case_no_border.png")	# Load the simple case image for later use in categories pages
 	for page in pages:
 		content = []
 		number = page["number"]
@@ -186,7 +185,7 @@ else:
 			for i, craft in enumerate(crafts):
 				if craft["type"] == "crafting_shapeless":
 					craft = convert_shapeless_to_shaped(craft)
-				craft_font = get_craft_font()	# Unique used font for the craft
+				craft_font = get_next_font()	# Unique used font for the craft
 				generate_page_font(name, craft_font, craft, output_name = f"{name}_{i+1}")
 				hover_text = [""]
 
@@ -221,7 +220,7 @@ else:
 							hover_text.append({"text": f"\n- x{count} {id}", "color": "gray"})
 
 				# Add the craft to the content
-				result_or_ingredient = WIKI_RESULT_OF_CRAFT_FONT if "result" not in craft else WIKI_INGR_OF_CRAFT_FONT
+				result_or_ingredient = WIKI_RESULT_OF_CRAFT_FONT if "result" not in craft else generate_wiki_font_for_ingr(name, craft)
 				wiki_buttons.append({"text": result_or_ingredient + VERY_SMALL_NONE_FONT * 2, "hoverEvent": {"action": "show_text", "contents": hover_text}})
 			
 			# Add wiki buttons 5 by 5
@@ -243,7 +242,7 @@ else:
 						content += [x.copy() for x in content[-5:]]
 						for j in range(5):
 							for to_replace in [WIKI_INFO_FONT, WIKI_RESULT_OF_CRAFT_FONT, WIKI_INGR_OF_CRAFT_FONT]:
-								content[-5 + j]["text"] = content[-5 + j]["text"].replace(to_replace, SMALL_NONE_FONT * 2)
+								content[-5 + j]["text"] = content[-5 + j]["text"] = SMALL_NONE_FONT * 2 + VERY_SMALL_NONE_FONT * 2
 
 						content.append("\n")
 					content.append(button)
@@ -254,7 +253,7 @@ else:
 					content += ["\n"] + [x.copy() for x in content[-last_i:]]
 					for j in range(last_i):
 						for to_replace in [WIKI_INFO_FONT, WIKI_RESULT_OF_CRAFT_FONT, WIKI_INGR_OF_CRAFT_FONT]:
-							content[-last_i + j]["text"] = content[-last_i + j]["text"].replace(to_replace, SMALL_NONE_FONT * 2)
+							content[-last_i + j]["text"] = content[-last_i + j]["text"] = SMALL_NONE_FONT * 2 + VERY_SMALL_NONE_FONT * 2
 
 		# Add page to the book
 		book_content.append(content)
@@ -364,10 +363,11 @@ else:
 		debug(f"Debug book_content at '{MANUAL_DEBUG}'")
 
 
-# Copy the generated assets to the resource pack
+# Copy the font provider and the generated textures to the resource pack
 super_copy(f"{MANUAL_PATH}/font/manual.json", f"{BUILD_RESOURCE_PACK}/assets/{NAMESPACE}/font/manual.json")
 super_copy(f"{MANUAL_PATH}/font/category/", f"{BUILD_RESOURCE_PACK}/assets/{NAMESPACE}/textures/font/category/")
 super_copy(f"{MANUAL_PATH}/font/page/", f"{BUILD_RESOURCE_PACK}/assets/{NAMESPACE}/textures/font/page/")
+super_copy(f"{MANUAL_PATH}/font/wiki_icons/", f"{BUILD_RESOURCE_PACK}/assets/{NAMESPACE}/textures/font/wiki_icons/")
 
 
 # Finally, prepend the manual to the database

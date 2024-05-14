@@ -244,11 +244,10 @@ else:
 						content[-1]["text"] = content[-1]["text"].replace(VERY_SMALL_NONE_FONT, "")
 
 						# Re-add last 5 buttons (for good hoverEvent) but we replace the wiki font by the small font
-						content += [x.copy() for x in content[-5:]]
+						content += ["\n"] + [x.copy() for x in content[-5:]]
 						for j in range(5):
 							for to_replace in [WIKI_INFO_FONT, WIKI_RESULT_OF_CRAFT_FONT, WIKI_INGR_OF_CRAFT_FONT]:
 								content[-5 + j]["text"] = content[-5 + j]["text"] = SMALL_NONE_FONT * 2 + VERY_SMALL_NONE_FONT * (2 - 1 if j == 4 else 0)
-
 						content.append("\n")
 					content.append(button)
 				

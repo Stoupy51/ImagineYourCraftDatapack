@@ -222,6 +222,12 @@ else:
 				# Add the craft to the content
 				result_or_ingredient = WIKI_RESULT_OF_CRAFT_FONT if "result" not in craft else generate_wiki_font_for_ingr(name, craft)
 				wiki_buttons.append({"text": result_or_ingredient + VERY_SMALL_NONE_FONT * 2, "hoverEvent": {"action": "show_text", "contents": hover_text}})
+
+				# If there is a result to the craft, try to add the clickEvent that change to that page
+				if "result" in craft:
+					result_item = ingr_to_id(craft["result"], False)
+					if result_item in DATABASE:
+						wiki_buttons[-1]["clickEvent"] = {"action": "change_page", "value": str(get_page_number(result_item))}
 			
 			# Add wiki buttons 5 by 5
 			if wiki_buttons:

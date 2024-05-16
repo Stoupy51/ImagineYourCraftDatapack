@@ -11,6 +11,8 @@ ASSETS_FOLDER: str = f"{ROOT}/assets"				# Folder containing the all assets (tex
 LIBS_FOLDER: str = f"{ROOT}/libs"					# The libraries are copied to the build destination, and merged with the datapack using Weld
 BUILD_COPY_DESTINATIONS: tuple[str, str] = ("D:/latest_snapshot/world/datapacks", "D:/minecraft/snapshot/resourcepacks")	# Can be an empty list if you don't want to copy the generated files
 
+# Assets files
+ASSETS_FILES: list[str] = [f for f in os.listdir(ASSETS_FOLDER) if os.path.isfile(os.path.join(ASSETS_FOLDER, f))]
 
 # Dev constants
 HAS_MANUAL: bool = True								# Do the program generate a manual/guide?

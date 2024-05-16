@@ -1,7 +1,6 @@
 
 # Import config
 from config import *
-from database.configurables import STARTING_CMD
 from src.utils.print import *
 from src.utils.io import *
 

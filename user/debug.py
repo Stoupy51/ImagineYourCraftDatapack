@@ -1,7 +1,7 @@
 
 # Imports
 from config import *
-from database.configurables import *
+from user.configurables import *
 from src.utils.print import *
 from src.utils.io import *
 import random

@@ -1,7 +1,7 @@
 
 # Imports
 from config import *
-from database.configurables import *
+from user.configurables import *
 from src.utils.print import *
 
 # For each ore, apply new properties

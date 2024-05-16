@@ -92,7 +92,7 @@ NOT_COMPONENTS: list[str] = [							# Keys that should not be considered as comp
 	USED_FOR_CRAFTING, VANILLA_BLOCK,
 	NO_SILK_TOUCH_DROP, COMMANDS_ON_PLACEMENT,
 	COMMANDS_ON_BREAK]
-DATABASE: dict[str, dict] = {}				# Dictionnary containing all the items, blocks, recipes, etc. used by the program. See format in database/README.md
+DATABASE: dict[str, dict] = {}				# Dictionnary containing all the items, blocks, recipes, etc. used by the program. See format in user/README.md
 EXTERNAL_DATABASE: dict[str, dict] = {}		# Should be filled when you require an item from another datapack for a recipe or anything else
 
 # Text for the first page of the manual

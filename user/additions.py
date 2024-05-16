@@ -3,7 +3,7 @@
 from config import *
 from src.utils.ingredients import *
 from src.utils.print import *
-from database.configurables import *
+from user.configurables import *
 
 # Give Additional data for every item
 database_additions = {

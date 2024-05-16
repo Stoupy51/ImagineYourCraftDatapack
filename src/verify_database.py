@@ -1,5 +1,5 @@
 
-## TODO: verify database and dump it before hand
+# Verify database
 from config import *
 from src.utils.ingredients import *
 from src.utils.print import *

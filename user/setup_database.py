@@ -10,6 +10,8 @@ ores = {
 	"obsidian_ingot":		EquipmentsConfig(DEFAULT_ORE.DIAMOND, 3902, {"generic.attack_damage": -0.2, "player.mining_efficiency": -0.2}),
 	"minecraft:emerald":	EquipmentsConfig(DEFAULT_ORE.DIAMOND, 736, {"generic.luck": 0.25}),
 	"steel_ingot":			EquipmentsConfig(DEFAULT_ORE.IRON, 444, {"player.mining_efficiency": 0.1}),
+	"lignite":				None,
+	"slate":				None,
 }
 for ore, conf in ores.items():
 	generate_everything_about_this_ore(DATABASE, ore, conf)

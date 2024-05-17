@@ -8,15 +8,17 @@ MERGE_FOLDER: str = f"{ROOT}/merge"					# If a file exists in both merge and bui
 MANUAL_PATH: str = f"{ROOT}/manual"					# Cached manual assets
 BUILD_FOLDER: str = f"{ROOT}/build"					# Folder where the final datapack and resource pack are built
 ASSETS_FOLDER: str = f"{ROOT}/assets"				# Folder containing the all assets (textures, sounds, ...) for the datapack
+TEXTURES_FOLDER: str = f"{ASSETS_FOLDER}/textures"	# Folder containing the textures for the datapack
 LIBS_FOLDER: str = f"{ROOT}/libs"					# The libraries are copied to the build destination, and merged with the datapack using Weld
 BUILD_COPY_DESTINATIONS: tuple[str, str] = ("D:/latest_snapshot/world/datapacks", "D:/minecraft/snapshot/resourcepacks")	# Can be an empty list if you don't want to copy the generated files
 
 # Assets files
-ASSETS_FILES: list[str] = [f for f in os.listdir(ASSETS_FOLDER) if os.path.isfile(os.path.join(ASSETS_FOLDER, f))]
+ASSETS_FILES: list[str] = [f"{root}/{f}".replace("\\","/") for root, _, files in os.walk(ASSETS_FOLDER) for f in files]
+TEXTURES_FILES: list[str] = [path.split(f"{TEXTURES_FOLDER}/")[1] for path in ASSETS_FILES if path.startswith(TEXTURES_FOLDER)]
 
 # Dev constants
-HAS_MANUAL: bool = True								# Do the program generate a manual/guide?
-DEBUG_MODE: bool = False								# Shows up grids in manual,
+HAS_MANUAL: bool = False							# Do the program generate a manual/guide?
+DEBUG_MODE: bool = True								# Shows up grids in manual,
 DATABASE_DEBUG: str = f"{ROOT}/database_debug.json"	# Dump of the database for debugging purposes
 CACHE_MANUAL_ASSETS: bool = True					# Caches the MC assets and the items renders for the manual (manual/items/*.png)
 CACHE_MANUAL_PAGES: bool = False					# Caches the content of the manual and the images (manual/pages/*.png)

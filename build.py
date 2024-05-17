@@ -23,7 +23,7 @@ if __name__ == "__main__":
 	from src.initialize import *
 
 	# Generate items/blocks database and verify the format
-	from user.database import *
+	from user.setup_database import *
 	from src.verify_database import *
 
 	# Generate manual

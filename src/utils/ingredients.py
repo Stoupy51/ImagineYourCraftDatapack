@@ -12,10 +12,10 @@ CRAFTING_RECIPES_TYPES = ("crafting_shaped", "crafting_shapeless")
 def ingr_repr(id: str, count: int|None = None) -> dict:
 	""" Get the identity of the ingredient from its id for custom crafts
 	Args:
-		id	(str): The id of the ingredient, ex: adamantium_ingot
+		id	(str): The id of the ingredient, ex: adamantium_fragment
 	Returns:
 		str: The identity of the ingredient for custom crafts,
-			ex: {"components":{"custom_data":{iyc:{adamantium_ingot=True}}}}
+			ex: {"components":{"custom_data":{"iyc":{"adamantium_fragment":True}}}}
 			ex: {"item": "minecraft:stick"}
 	"""
 	if ":" in id:

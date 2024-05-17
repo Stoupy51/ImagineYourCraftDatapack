@@ -18,12 +18,12 @@
 									"rgb": 2511745,
 									"show_in_tooltip": false
 								},
+								"minecraft:max_damage": 375,
 								"minecraft:attribute_modifiers": [
 									{"type": "generic.armor","uuid": [2,1,2,3],"name": "generic.armor","amount": 3.1,"operation": "add_value","slot": "head"},
 									{"type": "generic.armor_toughness","uuid": [3,1,2,3],"name": "generic.armor_toughness","amount": 3,"operation": "add_value","slot": "head"},
 									{"type": "generic.knockback_resistance","uuid": [4,1,2,3],"name": "generic.knockback_resistance","amount": 0.1,"operation": "add_value","slot": "head"}
 								],
-								"minecraft:max_damage": 375,
 								"minecraft:item_name": "[{\"text\":\"Adamantium Helmet\",\"italic\":false,\"color\":\"white\"}]",
 								"minecraft:lore": [
 									"[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"

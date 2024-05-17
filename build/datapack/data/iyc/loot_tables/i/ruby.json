@@ -11,7 +11,7 @@
 							"function": "minecraft:set_components",
 							"components": {
 								"minecraft:custom_data": {
-									"smithed": {"dict": {"material": {"ruby": true}},"ignore": {"functionality": true,"crafting": true}},
+									"smithed": {"dict": {"ruby": {"ruby": true}},"ignore": {"functionality": true,"crafting": true}},
 									"iyc": {"ruby": true}
 								},
 								"minecraft:item_name": "[{\"text\":\"Ruby\",\"italic\":false,\"color\":\"white\"}]",

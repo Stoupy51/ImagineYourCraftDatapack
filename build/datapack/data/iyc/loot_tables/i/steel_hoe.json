@@ -5,7 +5,7 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "minecraft:diamond_hoe",
+					"name": "minecraft:iron_hoe",
 					"functions": [
 						{
 							"function": "minecraft:set_components",
@@ -14,12 +14,12 @@
 									"smithed": {"dict": {"tools": {"steel": true,"hoe": true}},"ignore": {"functionality": true,"crafting": true}},
 									"iyc": {"steel_hoe": true}
 								},
+								"minecraft:max_damage": 443,
 								"minecraft:attribute_modifiers": [
 									{"type": "generic.attack_damage","uuid": [0,25,26,27],"name": "generic.attack_damage","amount": 0.8,"operation": "add_value","slot": "mainhand"},
 									{"type": "generic.attack_speed","uuid": [1,25,26,27],"name": "generic.attack_speed","amount": 0,"operation": "add_value","slot": "mainhand"},
 									{"type": "player.mining_efficiency","uuid": [6,25,26,27],"name": "player.mining_efficiency","amount": -0.30000000000000004,"operation": "add_value","slot": "mainhand"}
 								],
-								"minecraft:max_damage": 443,
 								"minecraft:item_name": "[{\"text\":\"Steel Hoe\",\"italic\":false,\"color\":\"white\"}]",
 								"minecraft:lore": [
 									"[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"

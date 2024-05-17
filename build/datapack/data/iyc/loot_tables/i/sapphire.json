@@ -11,7 +11,7 @@
 							"function": "minecraft:set_components",
 							"components": {
 								"minecraft:custom_data": {
-									"smithed": {"dict": {"material": {"sapphire": true}},"ignore": {"functionality": true,"crafting": true}},
+									"smithed": {"dict": {"sapphire": {"sapphire": true}},"ignore": {"functionality": true,"crafting": true}},
 									"iyc": {"sapphire": true}
 								},
 								"minecraft:item_name": "[{\"text\":\"Sapphire\",\"italic\":false,\"color\":\"white\"}]",

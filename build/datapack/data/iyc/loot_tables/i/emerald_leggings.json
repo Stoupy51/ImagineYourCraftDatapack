@@ -18,12 +18,12 @@
 									"rgb": 2532680,
 									"show_in_tooltip": false
 								},
+								"minecraft:max_damage": 233,
 								"minecraft:attribute_modifiers": [
 									{"type": "generic.armor","uuid": [2,7,8,9],"name": "generic.armor","amount": 6.0,"operation": "add_value","slot": "legs"},
 									{"type": "generic.armor_toughness","uuid": [3,7,8,9],"name": "generic.armor_toughness","amount": 2,"operation": "add_value","slot": "legs"},
 									{"type": "generic.luck","uuid": [5,7,8,9],"name": "generic.luck","amount": 0.25,"operation": "add_value","slot": "legs"}
 								],
-								"minecraft:max_damage": 233,
 								"minecraft:item_name": "[{\"text\":\"Emerald Leggings\",\"italic\":false,\"color\":\"white\"}]",
 								"minecraft:lore": [
 									"[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"

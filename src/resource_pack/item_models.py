@@ -13,25 +13,25 @@ tools = ["sword", "pickaxe", "axe", "shovel", "hoe"]
 # For each item,
 used_textures = set()
 for item, data in DATABASE.items():
-	block_or_item = "block" if data["id"] == CUSTOM_BLOCK_VANILLA else "item"
+	block_or_item = "block" if data.get("id") == CUSTOM_BLOCK_VANILLA else "item"
 	dest_base_textu = f"{BUILD_RESOURCE_PACK}/assets/{NAMESPACE}/textures/{block_or_item}"
 
 	# Copy textures to the resource pack
-	source = f"{ASSETS_FOLDER}/{item}.png"
+	source = f"{TEXTURES_FOLDER}/{item}.png"
 	if os.path.exists(source):
 		destination = f"{dest_base_textu}/{item}.png"
 		super_copy(source, destination)
 
 	# Get all textures for the block
 	additional_textures = []
-	for root, dirs, files in os.walk(f"{ASSETS_FOLDER}/"):
+	for root, dirs, files in os.walk(f"{TEXTURES_FOLDER}/"):
 		for file in files:
 			if file.startswith(item):
 				if any(x in file.replace(item, "") for x in variants):
 					additional_textures.append(file.replace(".png", ""))	# Only keep the textures for SIDES/FACES
 
 				# Copy textures to the resource pack
-				source = f"{ASSETS_FOLDER}/{file}"
+				source = f"{TEXTURES_FOLDER}/{file}"
 				destination = f"{dest_base_textu}/{file}"
 				super_copy(source, destination)
 		pass
@@ -109,7 +109,7 @@ for item, data in DATABASE.items():
 # Make warning for missing textures
 warns = []
 for texture in used_textures:
-	path = ASSETS_FOLDER + "/" + texture.split("/")[-1] + ".png"
+	path = TEXTURES_FOLDER + "/" + texture.split("/")[-1] + ".png"
 	if not os.path.exists(path):
 		warns.append(f"Texture '{path}' not found")
 if warns:

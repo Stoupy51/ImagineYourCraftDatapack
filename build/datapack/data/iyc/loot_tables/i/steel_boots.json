@@ -18,11 +18,11 @@
 									"rgb": 5460819,
 									"show_in_tooltip": false
 								},
+								"minecraft:max_damage": 122,
 								"minecraft:attribute_modifiers": [
 									{"type": "generic.armor","uuid": [2,10,11,12],"name": "generic.armor","amount": 2.4,"operation": "add_value","slot": "feet"},
 									{"type": "generic.armor_toughness","uuid": [3,10,11,12],"name": "generic.armor_toughness","amount": 2,"operation": "add_value","slot": "feet"}
 								],
-								"minecraft:max_damage": 122,
 								"minecraft:item_name": "[{\"text\":\"Steel Boots\",\"italic\":false,\"color\":\"white\"}]",
 								"minecraft:lore": [
 									"[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"

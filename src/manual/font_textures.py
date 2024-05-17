@@ -252,7 +252,8 @@ for item, data in DATABASE.items():
 	try:
 		if data["id"] == CUSTOM_BLOCK_VANILLA:
 			raise Exception()
-		super_copy(f"{ASSETS_FOLDER}/{item}.png", f"{path}/{NAMESPACE}/{item}.png")
+		if not os.path.exists(f"{path}/{NAMESPACE}/{item}.png") or not CACHE_MANUAL_ASSETS:
+			super_copy(f"{TEXTURES_FOLDER}/{item}.png", f"{path}/{NAMESPACE}/{item}.png")
 	except:
 		# Else, render all the block textures and faces
 		try:
@@ -262,7 +263,7 @@ for item, data in DATABASE.items():
 
 			# Load front texture
 			sides = ("_front", "_side", "_top", "_bottom", "")
-			front_path = f"{ASSETS_FOLDER}/{item}"
+			front_path = f"{TEXTURES_FOLDER}/{item}"
 			for side in sides:
 				if os.path.exists(f"{front_path}{side}.png"):
 					front_path += side
@@ -272,12 +273,12 @@ for item, data in DATABASE.items():
 			top_texture = front_texture
 
 			# Try to load side
-			side_path = f"{ASSETS_FOLDER}/{item}_side.png"
+			side_path = f"{TEXTURES_FOLDER}/{item}_side.png"
 			if os.path.exists(side_path):
 				side_texture = Image.open(side_path)
 			
 			# Try to load top texture
-			top_path = f"{ASSETS_FOLDER}/{item}_top.png"
+			top_path = f"{TEXTURES_FOLDER}/{item}_top.png"
 			if os.path.exists(top_path):
 				top_texture = Image.open(top_path)
 			
@@ -291,11 +292,11 @@ for item, data in DATABASE.items():
 
 		except:
 			try:
-				super_copy(f"{ASSETS_FOLDER}/{item}.png", f"{path}/{NAMESPACE}/{item}.png")
+				super_copy(f"{TEXTURES_FOLDER}/{item}.png", f"{path}/{NAMESPACE}/{item}.png")
 			except:
 				error(f"Failed to render iso for item '{item}', please add it manually to '{path}/{NAMESPACE}/{item}.png'")
 opengl.stop_opengl()
-
+debug("Generated iso renders for all items, or used cached renders")
 
 
 ## Copy every used vanilla items
@@ -323,21 +324,18 @@ for item, data in DATABASE.items():
 	pass
 
 # Download all the vanilla textures from the wiki
-wiki_link = "https://minecraft.wiki/images/Invicon_ITEM.png"
+download_link = "https://raw.githubusercontent.com/edayot/renders/renders/resourcepack/assets/minecraft/textures/render/"
 for item in used_vanilla_items:
 	destination = f"{path}/minecraft/{item}.png"
-	if not (os.path.exists(destination) and CACHE_MANUAL_ASSETS):
-		response = requests.get(wiki_link.replace("ITEM", item.title()))
-		if response.status_code != 200:
-			# If the item is type of "X_block", try to get "block_of_X" texture instead
-			if item.endswith("_block"):
-				x = "_".join(item.split("_")[:-1])
-				get = f"block_of_{x}".title().replace("_Of_","_of_")
-				response = requests.get(wiki_link.replace("ITEM", get))
-			if response.status_code != 200:
-				warning(f"Failed to download texture for item '{item}', please add it manually in '{path}/minecraft' if not done yet")
-				continue
-		with super_open(destination, "wb") as file:
-			file.write(response.content)
+	warning(f"Downloading texture for item '{item}'")
+	if not (os.path.exists(destination) and CACHE_MANUAL_ASSETS):	# If not downloaded yet or not using cache
+		response = requests.get(f"{download_link}item/{item}.png")
+		if response.status_code == 200:
+			with super_open(destination, "wb") as file:
+				file.write(response.content)
+		else:
+			warning(f"Failed to download texture for item '{item}', please add it manually to '{destination}'")
+			warning(f"Suggestion link: '{download_link}'")
 	pass
+debug("Downloaded all the vanilla textures, or using cached ones")
 

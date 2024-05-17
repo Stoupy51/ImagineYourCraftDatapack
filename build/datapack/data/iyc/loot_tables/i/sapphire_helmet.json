@@ -18,11 +18,11 @@
 									"rgb": 2887831,
 									"show_in_tooltip": false
 								},
+								"minecraft:max_damage": 407,
 								"minecraft:attribute_modifiers": [
 									{"type": "generic.armor","uuid": [2,1,2,3],"name": "generic.armor","amount": 3.0,"operation": "add_value","slot": "head"},
 									{"type": "generic.armor_toughness","uuid": [3,1,2,3],"name": "generic.armor_toughness","amount": 2,"operation": "add_value","slot": "head"}
 								],
-								"minecraft:max_damage": 407,
 								"minecraft:item_name": "[{\"text\":\"Sapphire Helmet\",\"italic\":false,\"color\":\"white\"}]",
 								"minecraft:lore": [
 									"[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"

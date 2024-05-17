@@ -14,12 +14,12 @@
 									"smithed": {"dict": {"tools": {"topaz": true,"pickaxe": true}},"ignore": {"functionality": true,"crafting": true}},
 									"iyc": {"topaz_pickaxe": true}
 								},
+								"minecraft:max_damage": 1281,
 								"minecraft:attribute_modifiers": [
 									{"type": "generic.attack_damage","uuid": [0,16,17,18],"name": "generic.attack_damage","amount": 6.0,"operation": "add_value","slot": "mainhand"},
 									{"type": "generic.attack_speed","uuid": [1,16,17,18],"name": "generic.attack_speed","amount": -2.75,"operation": "add_value","slot": "mainhand"},
 									{"type": "player.mining_efficiency","uuid": [6,16,17,18],"name": "player.mining_efficiency","amount": 0.0,"operation": "add_value","slot": "mainhand"}
 								],
-								"minecraft:max_damage": 1281,
 								"minecraft:item_name": "[{\"text\":\"Topaz Pickaxe\",\"italic\":false,\"color\":\"white\"}]",
 								"minecraft:lore": [
 									"[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"

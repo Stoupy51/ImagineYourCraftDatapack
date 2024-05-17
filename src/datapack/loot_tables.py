@@ -6,7 +6,7 @@ from src.utils.print import *
 
 # For each item in the database, create a loot table
 for item, data in DATABASE.items():
-	loot_table = {"pools":[{"rolls":1,"entries":[{"type":"minecraft:item", "name": data["id"]}]}]}
+	loot_table = {"pools":[{"rolls":1,"entries":[{"type":"minecraft:item", "name": data.get("id")}]}]}
 
 	# Set components
 	set_components = {"function":"minecraft:set_components","components":{}}
@@ -55,7 +55,7 @@ for i in range(total_chests):
 			break
 		item, data = database_copy.popitem()
 		data = data.copy()
-		id = data["id"]
+		id = data.get("id")
 		for k in NOT_COMPONENTS:	# Remove non-component data
 			if data.get(k):
 				del data[k]

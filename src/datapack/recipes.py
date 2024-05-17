@@ -24,7 +24,7 @@ def shapeless_recipe(recipe: dict, item: str) -> dict:
 		"category": recipe[CATEGORY],
 		"group": recipe["group"] if recipe.get("group") else None,
 		"ingredients": recipe["ingredients"],
-		"result": {"id": data["id"], "count": recipe["result_count"]} if not recipe.get("result") else recipe["result"]
+		"result": {"id": data.get("id"), "count": recipe["result_count"]} if not recipe.get("result") else recipe["result"]
 	}
 	if not to_return["group"]:
 		del to_return["group"]

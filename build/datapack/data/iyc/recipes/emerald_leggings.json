@@ -28,6 +28,7 @@
 				"rgb": 2532680,
 				"show_in_tooltip": false
 			},
+			"minecraft:max_damage": 233,
 			"minecraft:attribute_modifiers": [
 				{
 					"type": "generic.armor",
@@ -54,7 +55,6 @@
 					"slot": "legs"
 				}
 			],
-			"minecraft:max_damage": 233,
 			"minecraft:item_name": "[{\"text\":\"Emerald Leggings\",\"italic\":false,\"color\":\"white\"}]",
 			"minecraft:lore": [
 				"[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"

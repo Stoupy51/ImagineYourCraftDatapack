@@ -27,6 +27,7 @@
 					"emerald_pickaxe": true
 				}
 			},
+			"minecraft:max_damage": 736,
 			"minecraft:attribute_modifiers": [
 				{
 					"type": "generic.attack_damage",
@@ -61,7 +62,6 @@
 					"slot": "mainhand"
 				}
 			],
-			"minecraft:max_damage": 736,
 			"minecraft:item_name": "[{\"text\":\"Emerald Pickaxe\",\"italic\":false,\"color\":\"white\"}]",
 			"minecraft:lore": [
 				"[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"

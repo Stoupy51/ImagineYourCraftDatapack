@@ -11,7 +11,7 @@
 							"function": "minecraft:set_components",
 							"components": {
 								"minecraft:custom_data": {
-									"smithed": {"dict": {"material": {"lignite": true}},"ignore": {"functionality": true,"crafting": true}},
+									"smithed": {"dict": {"lignite": {"lignite": true}},"ignore": {"functionality": true,"crafting": true}},
 									"iyc": {"lignite": true}
 								},
 								"minecraft:item_name": "[{\"text\":\"Lignite\",\"italic\":false,\"color\":\"white\"}]",

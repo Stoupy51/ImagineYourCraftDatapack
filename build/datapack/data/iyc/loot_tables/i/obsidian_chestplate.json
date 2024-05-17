@@ -18,11 +18,11 @@
 									"rgb": 2168364,
 									"show_in_tooltip": false
 								},
+								"minecraft:max_damage": 1319,
 								"minecraft:attribute_modifiers": [
 									{"type": "generic.armor","uuid": [2,4,5,6],"name": "generic.armor","amount": 7.7,"operation": "add_value","slot": "chest"},
 									{"type": "generic.armor_toughness","uuid": [3,4,5,6],"name": "generic.armor_toughness","amount": 2,"operation": "add_value","slot": "chest"}
 								],
-								"minecraft:max_damage": 1319,
 								"minecraft:item_name": "[{\"text\":\"Obsidian Chestplate\",\"italic\":false,\"color\":\"white\"}]",
 								"minecraft:lore": [
 									"[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"

@@ -11,7 +11,7 @@
 							"function": "minecraft:set_components",
 							"components": {
 								"minecraft:custom_data": {
-									"smithed": {"dict": {"material": {"topaz": true}},"ignore": {"functionality": true,"crafting": true}},
+									"smithed": {"dict": {"topaz": {"topaz": true}},"ignore": {"functionality": true,"crafting": true}},
 									"iyc": {"topaz": true}
 								},
 								"minecraft:item_name": "[{\"text\":\"Topaz\",\"italic\":false,\"color\":\"white\"}]",

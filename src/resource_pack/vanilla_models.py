@@ -7,7 +7,7 @@ from src.utils.io import *
 # Get every vanilla IDs
 vanilla_ids = set()
 for v in DATABASE.values():
-	vanilla_ids.add(v["id"].replace("minecraft:", ""))
+	vanilla_ids.add(v.get("id", "").replace("minecraft:", ""))
 
 # For each vanilla ID, create the json model file
 blocks = [CUSTOM_BLOCK_VANILLA, CUSTOM_ITEM_VANILLA]
@@ -28,7 +28,7 @@ for id in vanilla_ids:
 	# Get overrides
 	content["overrides"] = []
 	for item, data in DATABASE.items():
-		if data["id"].replace("minecraft:","") == id:
+		if data.get("id", "").replace("minecraft:","") == id:
 			content["overrides"].append({"predicate": { "custom_model_data": data["custom_model_data"]}, "model": f"{NAMESPACE}:{block_or_item}/{item}" })
 
 			# Additionally, add a "_on" model if there is
@@ -47,7 +47,7 @@ for id in vanilla_ids:
 content = {"parent": "block/deepslate"}
 content["overrides"] = []
 for item, data in DATABASE.items():
-	if data["id"] in (CUSTOM_BLOCK_VANILLA, CUSTOM_BLOCK_ALTERNATIVE):
+	if data.get("id") in (CUSTOM_BLOCK_VANILLA, CUSTOM_BLOCK_ALTERNATIVE):
 		content["overrides"].append({"predicate": { "custom_model_data": data["custom_model_data"]}, "model": f"{NAMESPACE}:block/for_item_display/{item}" })
 content["overrides"].append({"predicate": { "custom_model_data": 2010000}, "model": f"minecraft:item/none"})
 content["overrides"].sort(key=lambda x: x["predicate"]["custom_model_data"])

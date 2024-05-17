@@ -8,6 +8,7 @@ from PIL import Image
 
 # Constants
 SLOTS = {"helmet": "head", "chestplate": "chest", "leggings": "legs", "boots": "feet", "sword": "mainhand", "pickaxe": "mainhand", "axe": "mainhand", "shovel": "mainhand", "hoe": "mainhand"}
+
 class DEFAULT_ORE(Enum):
 	NETHERITE = "netherite"
 	DIAMOND = "diamond"
@@ -17,68 +18,68 @@ class DEFAULT_ORE(Enum):
 	LEATHER = "leather_and_wood"		# wood tools
 class VanillaEquipments(Enum):
 	""" Default vanilla equipments values (durability, armor, armor_toughness, knockback_resistance, attack_damage, attack_speed) """
-	HELMET			= {	DEFAULT_ORE.LEATHER:	{"durability": 55,		"armor": 1},
-						DEFAULT_ORE.CHAINMAIL:	{"durability": 165,		"armor": 2},
-						DEFAULT_ORE.IRON:		{"durability": 165,		"armor": 2},
-						DEFAULT_ORE.GOLD:		{"durability": 77,		"armor": 2},
-						DEFAULT_ORE.DIAMOND:	{"durability": 363,		"armor": 3,	"armor_toughness": 2},
-			 			DEFAULT_ORE.NETHERITE:	{"durability": 407,		"armor": 3,	"armor_toughness": 3,	"knockback_resistance": 0.1}
+	HELMET			= {	DEFAULT_ORE.LEATHER:	{"durability": 55,		"generic.armor": 1},
+						DEFAULT_ORE.CHAINMAIL:	{"durability": 165,		"generic.armor": 2},
+						DEFAULT_ORE.IRON:		{"durability": 165,		"generic.armor": 2},
+						DEFAULT_ORE.GOLD:		{"durability": 77,		"generic.armor": 2},
+						DEFAULT_ORE.DIAMOND:	{"durability": 363,		"generic.armor": 3,	"generic.armor_toughness": 2},
+			 			DEFAULT_ORE.NETHERITE:	{"durability": 407,		"generic.armor": 3,	"generic.armor_toughness": 3,	"generic.knockback_resistance": 0.1}
 					}
-	CHESTPLATE		= {	DEFAULT_ORE.LEATHER:	{"durability": 80,		"armor": 3},
-						DEFAULT_ORE.CHAINMAIL:	{"durability": 240,		"armor": 5},
-						DEFAULT_ORE.IRON:		{"durability": 240,		"armor": 6},
-						DEFAULT_ORE.GOLD:		{"durability": 112,		"armor": 5},
-						DEFAULT_ORE.DIAMOND: 	{"durability": 528,		"armor": 8,	"armor_toughness": 2},
-						DEFAULT_ORE.NETHERITE:	{"durability": 592,		"armor": 8,	"armor_toughness": 3,	"knockback_resistance": 0.1}
+	CHESTPLATE		= {	DEFAULT_ORE.LEATHER:	{"durability": 80,		"generic.armor": 3},
+						DEFAULT_ORE.CHAINMAIL:	{"durability": 240,		"generic.armor": 5},
+						DEFAULT_ORE.IRON:		{"durability": 240,		"generic.armor": 6},
+						DEFAULT_ORE.GOLD:		{"durability": 112,		"generic.armor": 5},
+						DEFAULT_ORE.DIAMOND: 	{"durability": 528,		"generic.armor": 8,	"generic.armor_toughness": 2},
+						DEFAULT_ORE.NETHERITE:	{"durability": 592,		"generic.armor": 8,	"generic.armor_toughness": 3,	"generic.knockback_resistance": 0.1}
 					}
-	LEGGINGS		= {	DEFAULT_ORE.LEATHER:	{"durability": 75,		"armor": 2},
-  						DEFAULT_ORE.CHAINMAIL:	{"durability": 225,		"armor": 4},
-						DEFAULT_ORE.IRON:		{"durability": 225,		"armor": 5},
-						DEFAULT_ORE.GOLD:		{"durability": 105,		"armor": 3},
-						DEFAULT_ORE.DIAMOND:	{"durability": 495,		"armor": 6,	"armor_toughness": 2},
-						DEFAULT_ORE.NETHERITE:	{"durability": 555,		"armor": 6,	"armor_toughness": 3,	"knockback_resistance": 0.1}
+	LEGGINGS		= {	DEFAULT_ORE.LEATHER:	{"durability": 75,		"generic.armor": 2},
+  						DEFAULT_ORE.CHAINMAIL:	{"durability": 225,		"generic.armor": 4},
+						DEFAULT_ORE.IRON:		{"durability": 225,		"generic.armor": 5},
+						DEFAULT_ORE.GOLD:		{"durability": 105,		"generic.armor": 3},
+						DEFAULT_ORE.DIAMOND:	{"durability": 495,		"generic.armor": 6,	"generic.armor_toughness": 2},
+						DEFAULT_ORE.NETHERITE:	{"durability": 555,		"generic.armor": 6,	"generic.armor_toughness": 3,	"generic.knockback_resistance": 0.1}
 					}
-	BOOTS			= {	DEFAULT_ORE.LEATHER:	{"durability": 65,		"armor": 1},
-						DEFAULT_ORE.CHAINMAIL:	{"durability": 195,		"armor": 1},
-						DEFAULT_ORE.IRON:		{"durability": 195,		"armor": 2},
-						DEFAULT_ORE.GOLD:		{"durability": 95,		"armor": 1},
-						DEFAULT_ORE.DIAMOND:	{"durability": 429,		"armor": 3,	"armor_toughness": 2},
-						DEFAULT_ORE.NETHERITE:	{"durability": 481,		"armor": 3,	"armor_toughness": 3,	"knockback_resistance": 0.1}
+	BOOTS			= {	DEFAULT_ORE.LEATHER:	{"durability": 65,		"generic.armor": 1},
+						DEFAULT_ORE.CHAINMAIL:	{"durability": 195,		"generic.armor": 1},
+						DEFAULT_ORE.IRON:		{"durability": 195,		"generic.armor": 2},
+						DEFAULT_ORE.GOLD:		{"durability": 95,		"generic.armor": 1},
+						DEFAULT_ORE.DIAMOND:	{"durability": 429,		"generic.armor": 3,	"generic.armor_toughness": 2},
+						DEFAULT_ORE.NETHERITE:	{"durability": 481,		"generic.armor": 3,	"generic.armor_toughness": 3,	"generic.knockback_resistance": 0.1}
 					}
-	SWORD			= {	DEFAULT_ORE.LEATHER:	{"durability": 59,		"attack_damage": 4,		"attack_speed": -2.50},
-						DEFAULT_ORE.CHAINMAIL:	{"durability": 131,		"attack_damage": 5,		"attack_speed": -2.50},
-						DEFAULT_ORE.IRON:		{"durability": 250,		"attack_damage": 6,		"attack_speed": -2.50},
-						DEFAULT_ORE.GOLD:		{"durability": 32,		"attack_damage": 4,		"attack_speed": -2.50},
-						DEFAULT_ORE.DIAMOND:	{"durability": 1561,	"attack_damage": 7,		"attack_speed": -2.50},
-						DEFAULT_ORE.NETHERITE:	{"durability": 2031,	"attack_damage": 8,		"attack_speed": -2.50}
+	SWORD			= {	DEFAULT_ORE.LEATHER:	{"durability": 59,		"generic.attack_damage": 4,		"generic.attack_speed": -2.50},
+						DEFAULT_ORE.CHAINMAIL:	{"durability": 131,		"generic.attack_damage": 5,		"generic.attack_speed": -2.50},
+						DEFAULT_ORE.IRON:		{"durability": 250,		"generic.attack_damage": 6,		"generic.attack_speed": -2.50},
+						DEFAULT_ORE.GOLD:		{"durability": 32,		"generic.attack_damage": 4,		"generic.attack_speed": -2.50},
+						DEFAULT_ORE.DIAMOND:	{"durability": 1561,	"generic.attack_damage": 7,		"generic.attack_speed": -2.50},
+						DEFAULT_ORE.NETHERITE:	{"durability": 2031,	"generic.attack_damage": 8,		"generic.attack_speed": -2.50}
 					}
-	PICKAXE			= {	DEFAULT_ORE.LEATHER:	{"durability": 59,		"attack_damage": 2,		"attack_speed": -2.75},
-						DEFAULT_ORE.CHAINMAIL:	{"durability": 131,		"attack_damage": 3,		"attack_speed": -2.75},
-						DEFAULT_ORE.IRON:		{"durability": 250,		"attack_damage": 4,		"attack_speed": -2.75},
-						DEFAULT_ORE.GOLD:		{"durability": 32,		"attack_damage": 2,		"attack_speed": -2.75},
-						DEFAULT_ORE.DIAMOND:	{"durability": 1561,	"attack_damage": 5,		"attack_speed": -2.75},
-						DEFAULT_ORE.NETHERITE:	{"durability": 2031,	"attack_damage": 6,		"attack_speed": -2.75}
+	PICKAXE			= {	DEFAULT_ORE.LEATHER:	{"durability": 59,		"generic.attack_damage": 2,		"generic.attack_speed": -2.75},
+						DEFAULT_ORE.CHAINMAIL:	{"durability": 131,		"generic.attack_damage": 3,		"generic.attack_speed": -2.75},
+						DEFAULT_ORE.IRON:		{"durability": 250,		"generic.attack_damage": 4,		"generic.attack_speed": -2.75},
+						DEFAULT_ORE.GOLD:		{"durability": 32,		"generic.attack_damage": 2,		"generic.attack_speed": -2.75},
+						DEFAULT_ORE.DIAMOND:	{"durability": 1561,	"generic.attack_damage": 5,		"generic.attack_speed": -2.75},
+						DEFAULT_ORE.NETHERITE:	{"durability": 2031,	"generic.attack_damage": 6,		"generic.attack_speed": -2.75}
 					}
-	AXE				= {	DEFAULT_ORE.LEATHER:	{"durability": 59,		"attack_damage": 7,		"attack_speed": -3.20},
-						DEFAULT_ORE.CHAINMAIL:	{"durability": 131,		"attack_damage": 9,		"attack_speed": -3.20},
-						DEFAULT_ORE.IRON:		{"durability": 250,		"attack_damage": 9,		"attack_speed": -3.10},
-						DEFAULT_ORE.GOLD:		{"durability": 32,		"attack_damage": 7,		"attack_speed": -3.00},
-						DEFAULT_ORE.DIAMOND:	{"durability": 1561,	"attack_damage": 9,		"attack_speed": -3.00},
-						DEFAULT_ORE.NETHERITE:	{"durability": 2031,	"attack_damage": 10,	"attack_speed": -3.00}
+	AXE				= {	DEFAULT_ORE.LEATHER:	{"durability": 59,		"generic.attack_damage": 7,		"generic.attack_speed": -3.20},
+						DEFAULT_ORE.CHAINMAIL:	{"durability": 131,		"generic.attack_damage": 9,		"generic.attack_speed": -3.20},
+						DEFAULT_ORE.IRON:		{"durability": 250,		"generic.attack_damage": 9,		"generic.attack_speed": -3.10},
+						DEFAULT_ORE.GOLD:		{"durability": 32,		"generic.attack_damage": 7,		"generic.attack_speed": -3.00},
+						DEFAULT_ORE.DIAMOND:	{"durability": 1561,	"generic.attack_damage": 9,		"generic.attack_speed": -3.00},
+						DEFAULT_ORE.NETHERITE:	{"durability": 2031,	"generic.attack_damage": 10,	"generic.attack_speed": -3.00}
 					}
-	SHOVEL			= {	DEFAULT_ORE.LEATHER:	{"durability": 59,		"attack_damage": 2.5,	"attack_speed": -3.20},
-						DEFAULT_ORE.CHAINMAIL:	{"durability": 131,		"attack_damage": 3.5,	"attack_speed": -3.20},
-						DEFAULT_ORE.IRON:		{"durability": 250,		"attack_damage": 4.5,	"attack_speed": -3.10},
-						DEFAULT_ORE.GOLD:		{"durability": 32,		"attack_damage": 2.5,	"attack_speed": -3.00},
-						DEFAULT_ORE.DIAMOND:	{"durability": 1561,	"attack_damage": 5.5,	"attack_speed": -3.00},
-			 			DEFAULT_ORE.NETHERITE:	{"durability": 2031,	"attack_damage": 6.5,	"attack_speed": -3.00}
+	SHOVEL			= {	DEFAULT_ORE.LEATHER:	{"durability": 59,		"generic.attack_damage": 2.5,	"generic.attack_speed": -3.20},
+						DEFAULT_ORE.CHAINMAIL:	{"durability": 131,		"generic.attack_damage": 3.5,	"generic.attack_speed": -3.20},
+						DEFAULT_ORE.IRON:		{"durability": 250,		"generic.attack_damage": 4.5,	"generic.attack_speed": -3.10},
+						DEFAULT_ORE.GOLD:		{"durability": 32,		"generic.attack_damage": 2.5,	"generic.attack_speed": -3.00},
+						DEFAULT_ORE.DIAMOND:	{"durability": 1561,	"generic.attack_damage": 5.5,	"generic.attack_speed": -3.00},
+			 			DEFAULT_ORE.NETHERITE:	{"durability": 2031,	"generic.attack_damage": 6.5,	"generic.attack_speed": -3.00}
 					}
-	HOE				= {	DEFAULT_ORE.LEATHER:	{"durability": 59,		"attack_damage": 1,		"attack_speed": -3.00},
-						DEFAULT_ORE.CHAINMAIL:	{"durability": 131,		"attack_damage": 1,		"attack_speed": -2.00},
-						DEFAULT_ORE.IRON:		{"durability": 250,		"attack_damage": 1,		"attack_speed": -1.00},
-						DEFAULT_ORE.GOLD:		{"durability": 32,		"attack_damage": 1,		"attack_speed": -3.00},
-						DEFAULT_ORE.DIAMOND:	{"durability": 1561,	"attack_damage": 1,		"attack_speed": 0},
-						DEFAULT_ORE.NETHERITE:	{"durability": 2031,	"attack_damage": 1,		"attack_speed": 0}
+	HOE				= {	DEFAULT_ORE.LEATHER:	{"durability": 59,		"generic.attack_damage": 1,		"generic.attack_speed": -3.00},
+						DEFAULT_ORE.CHAINMAIL:	{"durability": 131,		"generic.attack_damage": 1,		"generic.attack_speed": -2.00},
+						DEFAULT_ORE.IRON:		{"durability": 250,		"generic.attack_damage": 1,		"generic.attack_speed": -1.00},
+						DEFAULT_ORE.GOLD:		{"durability": 32,		"generic.attack_damage": 1,		"generic.attack_speed": -3.00},
+						DEFAULT_ORE.DIAMOND:	{"durability": 1561,	"generic.attack_damage": 1,		"generic.attack_speed": 0},
+						DEFAULT_ORE.NETHERITE:	{"durability": 2031,	"generic.attack_damage": 1,		"generic.attack_speed": 0}
 					}
 class EquipmentsConfig():
 	def __init__(self, equivalent_to: DEFAULT_ORE = DEFAULT_ORE.DIAMOND, pickaxe_durability: int = 1561, attributes: dict[str, float] = {}):
@@ -103,6 +104,50 @@ class EquipmentsConfig():
 	def get_armor_attributes(self) -> dict[str, float]:
 		NOT_ON_ARMOR = ["generic.attack_damage", "player.mining_efficiency"]
 		return {key: value for key, value in self.attributes.items() if key not in NOT_ON_ARMOR}
+
+# UUIDs utils
+UUIDS = {}
+def get_uuid(attribute_name: str, slot: str) -> list[int]:
+	""" Function to get a non-random fixed UUID for an attribute name and a slot
+	Args:
+		attribute_name	(str):	The attribute name (ex: "generic.attack_damage")
+		slot			(str):	The slot where the attribute will be applied (ex: "head")
+	Returns:
+		list[int]:	The list of 4 integers that represent the UUID
+	"""
+
+	# If UUID is not in the list, add it
+	if attribute_name not in UUIDS:
+		i = len(UUIDS) + 1
+		j = 1
+		UUIDS[attribute_name] = {}
+		for slot in set(SLOTS.values()):
+			UUIDS[attribute_name][slot] = [i, j, j+1, j+2]
+			j += 3
+	
+	# Return the UUID
+	return UUIDS[attribute_name][slot]
+def format_attributes(attributes: str, slot: str, config: dict = {}) -> list[dict]:
+	""" Returns generated attribute_modifiers key for an item (adds up attributes and config) """
+	# Get attributes from config
+	attribute_modifiers = []
+	for attribute_name, value in config.items():
+		if attribute_name != "durability":
+			attribute_modifiers.append({"type": attribute_name, "name": attribute_name, "amount": value, "operation": "add_value", "slot": slot, "uuid": get_uuid(attribute_name, slot)})
+
+	# For each attribute, add it to the list if not in, else add the value
+	for attribute_name, value in attributes.items():
+		found = False
+		for attribute in attribute_modifiers:
+			if attribute["type"] == attribute_name:
+				attribute["amount"] += value
+				found = True
+				break
+		if not found:
+			attribute_modifiers.append({"type": attribute_name, "name": attribute_name, "amount": value, "operation": "add_value", "slot": slot, "uuid": get_uuid(attribute_name, slot)})
+
+	# Return the list of attributes
+	return attribute_modifiers
 
 # Generate everything related to the ore
 def generate_everything_about_this_ore(database: dict[str, dict], material: str = "adamantium_fragment", equipments_config: EquipmentsConfig|None = EquipmentsConfig(DEFAULT_ORE.NETHERITE, 1873, {"attack_damage": 1.2, "player.mining_efficiency": 0.2})):
@@ -188,6 +233,10 @@ def generate_everything_about_this_ore(database: dict[str, dict], material: str 
 			if f"{material_base}_ore.png" in TEXTURES_FILES:
 				database[item][RESULT_OF_CRAFTING].append({"type":"smelting","result_count":1,"category":"misc","group":material_base,"experience":0.8,"cookingtime":200,"ingredient":ingr_repr(f"{material_base}_ore")})
 				database[item][RESULT_OF_CRAFTING].append({"type":"blasting","result_count":1,"category":"misc","group":material_base,"experience":0.8,"cookingtime":100,"ingredient":ingr_repr(f"{material_base}_ore")})
+		if item.endswith("nugget"):
+			for gear in SLOTS.keys():
+				if f"{material_base}_{gear}.png" in TEXTURES_FILES:
+					database[item][RESULT_OF_CRAFTING].append({"type":"smelting","result_count":1,"category":"equipment","ingredient":ingr_repr(f"{material_base}_{gear}")})
 		if item.endswith("stick"):
 			database[item][RESULT_OF_CRAFTING].append({"type":"crafting_shaped","result_count":4,"category":"misc","shape":["X","X"],"ingredients":{"X":main_ingredient}})
 		if item.endswith("rod"):
@@ -196,14 +245,38 @@ def generate_everything_about_this_ore(database: dict[str, dict], material: str 
 
 	# Armor (helmet, chestplate, leggings, boots)
 	armor_attributes = equipments_config.get_armor_attributes()
-	for armor in ["helmet", "chestplate", "leggings", "boots"]:
-		armor = material_base + "_" + armor
+	durability_factor = pickaxe_durability / VanillaEquipments.PICKAXE.value[equivalent_to]["durability"]
+	for gear in ["helmet", "chestplate", "leggings", "boots"]:
+		armor = material_base + "_" + gear
 		if armor + ".png" not in TEXTURES_FILES:
 			continue
 		if armor not in database:
 			database[armor] = {}
 		warning(armor)
-
+		database[armor]["id"] = f"minecraft:leather_{gear}"		# Leather armor to dye
+		database[armor][CATEGORY] = "equipment"					# Category
+		database[armor]["custom_data"] = {"smithed":{}}			# Smithed convention
+		database[armor]["custom_data"]["smithed"]["dict"] = {"armor": {material: True, gear: True}}
+		database[armor]["dyed_color"] = {"rgb": color, "show_in_tooltip": False}	# Apply dye to leather armor
+		gear_config = {}
+		if gear == "helmet":
+			database[armor][RESULT_OF_CRAFTING] = [{"type":"crafting_shaped","result_count":1,"category":"equipment","shape":["XXX","X X"],"ingredients":{"X": main_ingredient}}]
+			gear_config = VanillaEquipments.HELMET.value[equivalent_to]
+			database[armor]["max_damage"] = int(gear_config["durability"] * durability_factor)
+		elif gear == "chestplate":
+			database[armor][RESULT_OF_CRAFTING] = [{"type":"crafting_shaped","result_count":1,"category":"equipment","shape":["X X","XXX","XXX"],"ingredients":{"X": main_ingredient}}]
+			gear_config = VanillaEquipments.CHESTPLATE.value[equivalent_to]
+			database[armor]["max_damage"] = int(gear_config["durability"] * durability_factor)
+		elif gear == "leggings":
+			database[armor][RESULT_OF_CRAFTING] = [{"type":"crafting_shaped","result_count":1,"category":"equipment","shape":["XXX","X X","X X"],"ingredients":{"X": main_ingredient}}]
+			gear_config = VanillaEquipments.LEGGINGS.value[equivalent_to]
+			database[armor]["max_damage"] = int(gear_config["durability"] * durability_factor)
+		elif gear == "boots":
+			database[armor][RESULT_OF_CRAFTING] = [{"type":"crafting_shaped","result_count":1,"category":"equipment","shape":["X X","X X"],"ingredients":{"X": main_ingredient}}]
+			gear_config = VanillaEquipments.BOOTS.value[equivalent_to]
+			database[armor]["max_damage"] = int(gear_config["durability"] * durability_factor)
+		database[armor]["attribute_modifiers"] = format_attributes(armor_attributes, SLOTS[gear], gear_config)
+			
 
 
 

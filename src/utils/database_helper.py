@@ -13,9 +13,10 @@ class DEFAULT_ORE(Enum):
 	NETHERITE = "netherite"
 	DIAMOND = "diamond"
 	IRON = "iron"
-	GOLD = "gold"
-	CHAINMAIL = "chainmail_and_stone"	# stone tools
-	LEATHER = "leather_and_wood"		# wood tools
+	GOLD = "golden"
+	CHAINMAIL = "stone"		# stone tools
+	LEATHER = "wooden"		# wood tools
+
 class VanillaEquipments(Enum):
 	""" Default vanilla equipments values (durability, armor, armor_toughness, knockback_resistance, attack_damage, attack_speed) """
 	HELMET			= {	DEFAULT_ORE.LEATHER:	{"durability": 55,		"generic.armor": 1},
@@ -81,6 +82,7 @@ class VanillaEquipments(Enum):
 						DEFAULT_ORE.DIAMOND:	{"durability": 1561,	"generic.attack_damage": 1,		"generic.attack_speed": 0},
 						DEFAULT_ORE.NETHERITE:	{"durability": 2031,	"generic.attack_damage": 1,		"generic.attack_speed": 0}
 					}
+
 class EquipmentsConfig():
 	def __init__(self, equivalent_to: DEFAULT_ORE = DEFAULT_ORE.DIAMOND, pickaxe_durability: int = 1561, attributes: dict[str, float] = {}):
 		""" Creates a configuration for equipments (based on the pickaxe)
@@ -163,34 +165,28 @@ def generate_everything_about_this_ore(database: dict[str, dict], material: str 
 	"""
 	# Constants
 	material_base = material.split(":")[-1].split("_")[0]	# Get the base material name (ex: "adamantium" from "adamantium_fragment")
-	is_vanilla_material = ':' in material					# Check if the material is a vanilla material (ex: "minecraft:..." is a vanilla material)
-	equivalent_to, pickaxe_durability, attributes = equipments_config.getter()	# Get the equivalent material, pickaxe durability, and attributes
 	main_ingredient = ingr_repr(material)					# Get the main ingredient for recipes
+	if equipments_config:
+		equivalent_to = equipments_config.equivalent_to
+		durability_factor = equipments_config.pickaxe_durability / VanillaEquipments.PICKAXE.value[equivalent_to]["durability"]
+		armor_attributes = equipments_config.get_armor_attributes()
+		tools_attributes = equipments_config.get_tools_attributes()
 
 	# Get ore color (for armor dye and other stuff)
 	color = None
-	if f"{material}_chestplate.png" in TEXTURES_FILES:
-		color = Image.open(f"{ASSETS_FOLDER}/{material}_chestplate.png")
+	if f"{material_base}_chestplate.png" in TEXTURES_FILES:
+		color = Image.open(f"{TEXTURES_FOLDER}/{material_base}_chestplate.png")
 		color = list(color.getdata())										# Get image (1D Array)
 		color = [(r,g,b) for (r,g,b,a) in color if a > 0]					# Get all colors that are not transparent
 		color = [sum(x) / len(color) for x in zip(*color)]					# Get the average color
 		color = int(color[0]) << 16 | int(color[1]) << 8 | int(color[2])	# Convert to int (Minecraft format: Red<<16 + Green<<8 + Blue)
 
-	warning(f"material: {material}")
-	warning(f"material_base: {material_base}")
-	warning(f"is_vanilla_material: {is_vanilla_material}")
-	warning(f"equipments_config.equivalent_to: {equivalent_to}")
-	warning(f"equipments_config.pickaxe_durability: {pickaxe_durability}")
-	warning(f"equipments_config.attributes: {attributes}")
-	warning(f"main_ingredient: {main_ingredient}")
-
 	# Placeables (ore, block, raw_block)
-	for block in [f"{material_base}_ore", f"{material_base}_block", f"raw_{material_base}_block"]:
+	for block in [f"{material_base}_block", f"{material_base}_ore", f"raw_{material_base}_block"]:
 		if block + ".png" not in TEXTURES_FILES:
 			continue
 		if block not in database:
 			database[block] = {}
-		warning(block)
 		database[block]["id"] = CUSTOM_BLOCK_VANILLA	# Item for placing custom block
 		database[block][CATEGORY] = "material"			# Category
 		database[block]["custom_data"] = {"smithed":{}}	# Smithed convention
@@ -210,7 +206,6 @@ def generate_everything_about_this_ore(database: dict[str, dict], material: str 
 			continue
 		if item not in database:
 			database[item] = {}
-		warning(item)
 		item_type = item.replace(f"{material_base}_", "").replace(f"_{material_base}", "")
 		database[item]["id"] = CUSTOM_ITEM_VANILLA		# Custom item
 		database[item][CATEGORY] = "material"			# Category
@@ -244,19 +239,16 @@ def generate_everything_about_this_ore(database: dict[str, dict], material: str 
 		pass
 
 	# Armor (helmet, chestplate, leggings, boots)
-	armor_attributes = equipments_config.get_armor_attributes()
-	durability_factor = pickaxe_durability / VanillaEquipments.PICKAXE.value[equivalent_to]["durability"]
 	for gear in ["helmet", "chestplate", "leggings", "boots"]:
 		armor = material_base + "_" + gear
 		if armor + ".png" not in TEXTURES_FILES:
 			continue
 		if armor not in database:
 			database[armor] = {}
-		warning(armor)
 		database[armor]["id"] = f"minecraft:leather_{gear}"		# Leather armor to dye
 		database[armor][CATEGORY] = "equipment"					# Category
 		database[armor]["custom_data"] = {"smithed":{}}			# Smithed convention
-		database[armor]["custom_data"]["smithed"]["dict"] = {"armor": {material: True, gear: True}}
+		database[armor]["custom_data"]["smithed"]["dict"] = {"armor": {material_base: True, gear: True}}
 		database[armor]["dyed_color"] = {"rgb": color, "show_in_tooltip": False}	# Apply dye to leather armor
 		gear_config = {}
 		if gear == "helmet":
@@ -276,10 +268,40 @@ def generate_everything_about_this_ore(database: dict[str, dict], material: str 
 			gear_config = VanillaEquipments.BOOTS.value[equivalent_to]
 			database[armor]["max_damage"] = int(gear_config["durability"] * durability_factor)
 		database[armor]["attribute_modifiers"] = format_attributes(armor_attributes, SLOTS[gear], gear_config)
-			
-
-
-
-	error()
+	
+	# Tools (sword, pickaxe, axe, shovel, hoe)
+	for gear in ["sword", "pickaxe", "axe", "shovel", "hoe"]:
+		tool = material_base + "_" + gear
+		if tool + ".png" not in TEXTURES_FILES:
+			continue
+		if tool not in database:
+			database[tool] = {}
+		database[tool]["id"] = f"minecraft:{equivalent_to.value}_{gear}"		# Vanilla tool, ex: iron_sword, wooden_hoe
+		database[tool][CATEGORY] = "equipment"
+		database[tool]["custom_data"] = {"smithed":{}}
+		database[tool]["custom_data"]["smithed"]["dict"] = {"tools": {material_base: True, gear: True}}
+		tools_ingr = {"X": main_ingredient, "S": ingr_repr("minecraft:stick")}
+		gear_config = {}
+		if gear == "sword":
+			gear_config = VanillaEquipments.SWORD.value[equivalent_to]
+			database[tool]["max_damage"] = int(gear_config["durability"] * durability_factor)
+			database[tool][RESULT_OF_CRAFTING] = [{"type":"crafting_shaped","result_count":1,"category":"equipment","shape":["X","X","S"],"ingredients": tools_ingr}]
+		elif gear == "pickaxe":
+			gear_config = VanillaEquipments.PICKAXE.value[equivalent_to]
+			database[tool]["max_damage"] = int(gear_config["durability"] * durability_factor)
+			database[tool][RESULT_OF_CRAFTING] = [{"type":"crafting_shaped","result_count":1,"category":"equipment","shape":["XXX"," S "," S "],"ingredients": tools_ingr}]
+		elif gear == "axe":
+			gear_config = VanillaEquipments.AXE.value[equivalent_to]
+			database[tool]["max_damage"] = int(gear_config["durability"] * durability_factor)
+			database[tool][RESULT_OF_CRAFTING] = [{"type":"crafting_shaped","result_count":1,"category":"equipment","shape":["XX","XS"," S"],"ingredients": tools_ingr}]
+		elif gear == "shovel":
+			gear_config = VanillaEquipments.SHOVEL.value[equivalent_to]
+			database[tool]["max_damage"] = int(gear_config["durability"] * durability_factor)
+			database[tool][RESULT_OF_CRAFTING] = [{"type":"crafting_shaped","result_count":1,"category":"equipment","shape":["X","S","S"],"ingredients": tools_ingr}]
+		elif gear == "hoe":
+			gear_config = VanillaEquipments.HOE.value[equivalent_to]
+			database[tool]["max_damage"] = int(gear_config["durability"] * durability_factor)
+			database[tool][RESULT_OF_CRAFTING] = [{"type":"crafting_shaped","result_count":1,"category":"equipment","shape":["XX"," S"," S"],"ingredients": tools_ingr}]
+		database[tool]["attribute_modifiers"] = format_attributes(tools_attributes, SLOTS[gear], gear_config)
 	pass
 

@@ -10,6 +10,10 @@ import json
 
 # Constants
 SLOTS = {"helmet": "head", "chestplate": "chest", "leggings": "legs", "boots": "feet", "sword": "mainhand", "pickaxe": "mainhand", "axe": "mainhand", "shovel": "mainhand", "hoe": "mainhand"}
+UNIQUE_SLOTS_VALUES = []
+for slot in SLOTS.values():
+	if slot not in UNIQUE_SLOTS_VALUES:
+		UNIQUE_SLOTS_VALUES.append(slot)
 
 class DEFAULT_ORE(Enum):
 	NETHERITE = "netherite"
@@ -125,7 +129,7 @@ def get_uuid(attribute_name: str, slot: str) -> list[int]:
 		i = len(UUIDS) + 1
 		j = 1
 		UUIDS[attribute_name] = {}
-		for slot in set(SLOTS.values()):
+		for slot in UNIQUE_SLOTS_VALUES:
 			UUIDS[attribute_name][slot] = [i, j, j+1, j+2]
 			j += 3
 	

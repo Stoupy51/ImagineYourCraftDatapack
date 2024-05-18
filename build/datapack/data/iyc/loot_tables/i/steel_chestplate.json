@@ -20,7 +20,7 @@
 								},
 								"minecraft:max_damage":426,
 								"minecraft:attribute_modifiers":[
-									{"type":"generic.armor","name":"generic.armor","amount":6,"operation":"add_value","slot":"chest","uuid":[1,10,11,12]}
+									{"type":"generic.armor","name":"generic.armor","amount":6,"operation":"add_value","slot":"chest","uuid":[1,4,5,6]}
 								],
 								"minecraft:custom_model_data":2015072,
 								"minecraft:item_name":"{'translate':'iyc.steel_chestplate', 'italic':false, 'color':'white'}",

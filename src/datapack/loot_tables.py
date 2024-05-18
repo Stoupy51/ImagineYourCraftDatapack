@@ -44,6 +44,7 @@ if "manual" in DATABASE:
 # Make a give all command that gives chests with all the items
 CHEST_SIZE = 27
 total_chests = (len(DATABASE) + CHEST_SIZE - 1) // CHEST_SIZE
+lore = json.dumps(SOURCE_LORE).replace('"', "'")
 chests = []
 database_copy = DATABASE.copy()
 for i in range(total_chests):
@@ -62,7 +63,7 @@ for i in range(total_chests):
 		json_content = super_json_dump(data, max_level = 0).replace("\n","")
 		chest_contents.append(f'{{slot:{j},item:{{count:1,id:"{id}",components:{json_content}}}}}')
 	joined_content = ",".join(chest_contents)
-	chests.append(f'give @s chest[container=[{joined_content}],custom_name=\'{{"text":"Chest [{i+1}/{total_chests}]","color":"yellow"}}\',lore=[\'{SOURCE_LORE}\']]')
+	chests.append(f'give @s chest[container=[{joined_content}],custom_name=\'{{"text":"Chest [{i+1}/{total_chests}]","color":"yellow"}}\',lore=["{lore}"]]')
 write_to_file(f"{DATAPACK_FUNCTIONS}/_give_all.mcfunction", "\n" + "\n\n".join(chests) + "\n\n")
 info("Give all function successfully made")
 

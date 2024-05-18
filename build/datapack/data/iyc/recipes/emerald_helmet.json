@@ -35,7 +35,7 @@
 					"amount":3,
 					"operation":"add_value",
 					"slot":"head",
-					"uuid":[1,13,14,15]
+					"uuid":[1,1,2,3]
 				},
 				{
 					"type":"generic.armor_toughness",
@@ -43,7 +43,7 @@
 					"amount":2,
 					"operation":"add_value",
 					"slot":"head",
-					"uuid":[2,13,14,15]
+					"uuid":[2,1,2,3]
 				},
 				{
 					"type":"generic.luck",

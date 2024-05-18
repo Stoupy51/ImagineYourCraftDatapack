@@ -11,7 +11,7 @@
 							"function":"minecraft:set_components",
 							"components":{
 								"minecraft:lore":[
-									"{\"translate\":\"iyc.power_of_5_tnts\",\"color\":\"gray\",\"italic\":false}",
+									"{'translate':'iyc.power_of_5_tnts','color':'gray','italic':false}",
 									"{'translate':'iyc.imagineyourcraft', 'italic':true, 'color':'blue'}"
 								],
 								"minecraft:custom_model_data":2015135,

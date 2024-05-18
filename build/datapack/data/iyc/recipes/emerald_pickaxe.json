@@ -35,7 +35,7 @@
 					"amount":5,
 					"operation":"add_value",
 					"slot":"mainhand",
-					"uuid":[4,1,2,3]
+					"uuid":[4,13,14,15]
 				},
 				{
 					"type":"generic.attack_speed",
@@ -43,7 +43,7 @@
 					"amount":-2.75,
 					"operation":"add_value",
 					"slot":"mainhand",
-					"uuid":[5,1,2,3]
+					"uuid":[5,13,14,15]
 				},
 				{
 					"type":"generic.luck",
@@ -51,7 +51,7 @@
 					"amount":0.25,
 					"operation":"add_value",
 					"slot":"mainhand",
-					"uuid":[7,1,2,3]
+					"uuid":[7,13,14,15]
 				}
 			],
 			"minecraft:custom_model_data":2015063,

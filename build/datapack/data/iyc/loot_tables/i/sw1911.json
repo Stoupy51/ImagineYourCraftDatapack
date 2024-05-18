@@ -11,7 +11,7 @@
 							"function":"minecraft:set_components",
 							"components":{
 								"minecraft:lore":[
-									"{\"translate\":\"iyc.uses_steel_nuggets_as_bullets\",\"color\":\"gray\",\"italic\":false}",
+									"{'translate':'iyc.uses_steel_nuggets_as_bullets','color':'gray','italic':false}",
 									"{'translate':'iyc.imagineyourcraft', 'italic':true, 'color':'blue'}"
 								],
 								"minecraft:custom_model_data":2015108,

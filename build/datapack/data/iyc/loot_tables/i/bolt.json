@@ -11,7 +11,7 @@
 							"function":"minecraft:set_components",
 							"components":{
 								"minecraft:lore":[
-									"{\"translate\":\"iyc.x1_5_damage_arrow\",\"color\":\"gray\",\"italic\":false}",
+									"{'translate':'iyc.x1_5_damage_arrow','color':'gray','italic':false}",
 									"{'translate':'iyc.imagineyourcraft', 'italic':true, 'color':'blue'}"
 								],
 								"minecraft:custom_model_data":2015092,

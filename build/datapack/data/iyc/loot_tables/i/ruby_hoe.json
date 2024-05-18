@@ -16,9 +16,9 @@
 								},
 								"minecraft:max_damage":1647,
 								"minecraft:attribute_modifiers":[
-									{"type":"generic.attack_damage","name":"generic.attack_damage","amount":1.5,"operation":"add_value","slot":"mainhand","uuid":[4,1,2,3]},
-									{"type":"generic.attack_speed","name":"generic.attack_speed","amount":0,"operation":"add_value","slot":"mainhand","uuid":[5,1,2,3]},
-									{"type":"player.mining_efficiency","name":"player.mining_efficiency","amount":0.1,"operation":"add_value","slot":"mainhand","uuid":[6,1,2,3]}
+									{"type":"generic.attack_damage","name":"generic.attack_damage","amount":1.5,"operation":"add_value","slot":"mainhand","uuid":[4,13,14,15]},
+									{"type":"generic.attack_speed","name":"generic.attack_speed","amount":0,"operation":"add_value","slot":"mainhand","uuid":[5,13,14,15]},
+									{"type":"player.mining_efficiency","name":"player.mining_efficiency","amount":0.1,"operation":"add_value","slot":"mainhand","uuid":[6,13,14,15]}
 								],
 								"minecraft:custom_model_data":2015035,
 								"minecraft:item_name":"{'translate':'iyc.ruby_hoe', 'italic':false, 'color':'white'}",

@@ -20,9 +20,9 @@
 								},
 								"minecraft:max_damage":233,
 								"minecraft:attribute_modifiers":[
-									{"type":"generic.armor","name":"generic.armor","amount":6,"operation":"add_value","slot":"legs","uuid":[1,4,5,6]},
-									{"type":"generic.armor_toughness","name":"generic.armor_toughness","amount":2,"operation":"add_value","slot":"legs","uuid":[2,4,5,6]},
-									{"type":"generic.luck","name":"generic.luck","amount":0.25,"operation":"add_value","slot":"legs","uuid":[7,4,5,6]}
+									{"type":"generic.armor","name":"generic.armor","amount":6,"operation":"add_value","slot":"legs","uuid":[1,7,8,9]},
+									{"type":"generic.armor_toughness","name":"generic.armor_toughness","amount":2,"operation":"add_value","slot":"legs","uuid":[2,7,8,9]},
+									{"type":"generic.luck","name":"generic.luck","amount":0.25,"operation":"add_value","slot":"legs","uuid":[7,7,8,9]}
 								],
 								"minecraft:custom_model_data":2015060,
 								"minecraft:item_name":"{'translate':'iyc.emerald_leggings', 'italic':false, 'color':'white'}",

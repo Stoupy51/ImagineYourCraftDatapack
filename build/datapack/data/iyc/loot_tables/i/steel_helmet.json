@@ -20,7 +20,7 @@
 								},
 								"minecraft:max_damage":293,
 								"minecraft:attribute_modifiers":[
-									{"type":"generic.armor","name":"generic.armor","amount":2,"operation":"add_value","slot":"head","uuid":[1,13,14,15]}
+									{"type":"generic.armor","name":"generic.armor","amount":2,"operation":"add_value","slot":"head","uuid":[1,1,2,3]}
 								],
 								"minecraft:custom_model_data":2015071,
 								"minecraft:item_name":"{'translate':'iyc.steel_helmet', 'italic':false, 'color':'white'}",

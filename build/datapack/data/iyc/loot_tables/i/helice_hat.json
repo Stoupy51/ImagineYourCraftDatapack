@@ -11,7 +11,7 @@
 							"function":"minecraft:set_components",
 							"components":{
 								"minecraft:lore":[
-									"{\"translate\":\"iyc.a_hat_that_makes_you_fly\",\"color\":\"gray\",\"italic\":false}",
+									"{'translate':'iyc.a_hat_that_makes_you_fly','color':'gray','italic':false}",
 									"{'translate':'iyc.imagineyourcraft', 'italic':true, 'color':'blue'}"
 								],
 								"minecraft:attribute_modifiers":[

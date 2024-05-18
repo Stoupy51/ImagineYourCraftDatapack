@@ -20,8 +20,8 @@
 								},
 								"minecraft:max_damage":1319,
 								"minecraft:attribute_modifiers":[
-									{"type":"generic.armor","name":"generic.armor","amount":8,"operation":"add_value","slot":"chest","uuid":[1,10,11,12]},
-									{"type":"generic.armor_toughness","name":"generic.armor_toughness","amount":2,"operation":"add_value","slot":"chest","uuid":[2,10,11,12]}
+									{"type":"generic.armor","name":"generic.armor","amount":8,"operation":"add_value","slot":"chest","uuid":[1,4,5,6]},
+									{"type":"generic.armor_toughness","name":"generic.armor_toughness","amount":2,"operation":"add_value","slot":"chest","uuid":[2,4,5,6]}
 								],
 								"minecraft:custom_model_data":2015050,
 								"minecraft:item_name":"{'translate':'iyc.obsidian_chestplate', 'italic':false, 'color':'white'}",

@@ -20,9 +20,9 @@
 								},
 								"minecraft:max_damage":511,
 								"minecraft:attribute_modifiers":[
-									{"type":"generic.armor","name":"generic.armor","amount":6.2,"operation":"add_value","slot":"legs","uuid":[1,4,5,6]},
-									{"type":"generic.armor_toughness","name":"generic.armor_toughness","amount":3,"operation":"add_value","slot":"legs","uuid":[2,4,5,6]},
-									{"type":"generic.knockback_resistance","name":"generic.knockback_resistance","amount":0.1,"operation":"add_value","slot":"legs","uuid":[3,4,5,6]}
+									{"type":"generic.armor","name":"generic.armor","amount":6.2,"operation":"add_value","slot":"legs","uuid":[1,7,8,9]},
+									{"type":"generic.armor_toughness","name":"generic.armor_toughness","amount":3,"operation":"add_value","slot":"legs","uuid":[2,7,8,9]},
+									{"type":"generic.knockback_resistance","name":"generic.knockback_resistance","amount":0.1,"operation":"add_value","slot":"legs","uuid":[3,7,8,9]}
 								],
 								"minecraft:custom_model_data":2015005,
 								"minecraft:item_name":"{'translate':'iyc.adamantium_leggings', 'italic':false, 'color':'white'}",

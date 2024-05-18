@@ -20,9 +20,9 @@
 								},
 								"minecraft:max_damage":202,
 								"minecraft:attribute_modifiers":[
-									{"type":"generic.armor","name":"generic.armor","amount":3,"operation":"add_value","slot":"feet","uuid":[1,7,8,9]},
-									{"type":"generic.armor_toughness","name":"generic.armor_toughness","amount":2,"operation":"add_value","slot":"feet","uuid":[2,7,8,9]},
-									{"type":"generic.luck","name":"generic.luck","amount":0.25,"operation":"add_value","slot":"feet","uuid":[7,7,8,9]}
+									{"type":"generic.armor","name":"generic.armor","amount":3,"operation":"add_value","slot":"feet","uuid":[1,10,11,12]},
+									{"type":"generic.armor_toughness","name":"generic.armor_toughness","amount":2,"operation":"add_value","slot":"feet","uuid":[2,10,11,12]},
+									{"type":"generic.luck","name":"generic.luck","amount":0.25,"operation":"add_value","slot":"feet","uuid":[7,10,11,12]}
 								],
 								"minecraft:custom_model_data":2015061,
 								"minecraft:item_name":"{'translate':'iyc.emerald_boots', 'italic':false, 'color':'white'}",

@@ -4,15 +4,15 @@
 		"layer0": "item/item_frame"
 	},
 	"overrides": [
-		{ "predicate": { "custom_model_data": 2015095}, "model": "iyc:item/cloud" },
-		{ "predicate": { "custom_model_data": 2015096}, "model": "iyc:item/flatware" },
-		{ "predicate": { "custom_model_data": 2015098}, "model": "iyc:item/hops_seeds" },
-		{ "predicate": { "custom_model_data": 2015099}, "model": "iyc:item/iron_ladder" },
-		{ "predicate": { "custom_model_data": 2015110}, "model": "iyc:item/black_flower" },
-		{ "predicate": { "custom_model_data": 2015111}, "model": "iyc:item/blue_flower" },
-		{ "predicate": { "custom_model_data": 2015112}, "model": "iyc:item/white_flower" },
-		{ "predicate": { "custom_model_data": 2015133}, "model": "iyc:item/blob" },
-		{ "predicate": { "custom_model_data": 2015134}, "model": "iyc:item/lignite_torch" }
+		{ "predicate": { "custom_model_data": 2015094}, "model": "iyc:item/cloud" },
+		{ "predicate": { "custom_model_data": 2015095}, "model": "iyc:item/flatware" },
+		{ "predicate": { "custom_model_data": 2015097}, "model": "iyc:item/hops_seeds" },
+		{ "predicate": { "custom_model_data": 2015098}, "model": "iyc:item/iron_ladder" },
+		{ "predicate": { "custom_model_data": 2015109}, "model": "iyc:item/black_flower" },
+		{ "predicate": { "custom_model_data": 2015110}, "model": "iyc:item/blue_flower" },
+		{ "predicate": { "custom_model_data": 2015111}, "model": "iyc:item/white_flower" },
+		{ "predicate": { "custom_model_data": 2015132}, "model": "iyc:item/blob" },
+		{ "predicate": { "custom_model_data": 2015133}, "model": "iyc:item/lignite_torch" }
 	]
 }
 

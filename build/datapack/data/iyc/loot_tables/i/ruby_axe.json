@@ -16,15 +16,15 @@
 								},
 								"minecraft:max_damage": 1647,
 								"minecraft:attribute_modifiers": [
-									{"type": "generic.attack_damage","uuid": [0,19,20,21],"name": "generic.attack_damage","amount": 9.9,"operation": "add_value","slot": "mainhand"},
-									{"type": "generic.attack_speed","uuid": [1,19,20,21],"name": "generic.attack_speed","amount": -3.0,"operation": "add_value","slot": "mainhand"},
-									{"type": "player.mining_efficiency","uuid": [6,19,20,21],"name": "player.mining_efficiency","amount": 0.10000000000000009,"operation": "add_value","slot": "mainhand"}
+									{"type": "generic.attack_damage","name": "generic.attack_damage","amount": 9.5,"operation": "add_value","slot": "mainhand","uuid": [4,7,8,9]},
+									{"type": "generic.attack_speed","name": "generic.attack_speed","amount": -3.0,"operation": "add_value","slot": "mainhand","uuid": [5,7,8,9]},
+									{"type": "player.mining_efficiency","name": "player.mining_efficiency","amount": 0.1,"operation": "add_value","slot": "mainhand","uuid": [6,7,8,9]}
 								],
-								"minecraft:item_name": "[{\"text\":\"Ruby Axe\",\"italic\":false,\"color\":\"white\"}]",
+								"minecraft:custom_model_data": 2015033,
+								"minecraft:item_name": "{'text': 'Ruby Axe', 'italic': False, 'color': 'white'}",
 								"minecraft:lore": [
-									"[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"
-								],
-								"minecraft:custom_model_data": 2015033
+									"{'text': 'ImagineYourCraft', 'italic': True, 'color': 'blue'}"
+								]
 							}
 						}
 					]

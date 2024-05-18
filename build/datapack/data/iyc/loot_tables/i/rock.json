@@ -13,14 +13,14 @@
 								"minecraft:max_stack_size": 99,
 								"minecraft:lore": [
 									"{\"text\":\"Can be thrown\",\"color\":\"gray\",\"italic\":false}",
-									"[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"
+									"{'text': 'ImagineYourCraft', 'italic': True, 'color': 'blue'}"
 								],
+								"minecraft:custom_model_data": 2015137,
+								"minecraft:item_name": "{'text': 'Rock', 'italic': False, 'color': 'white'}",
 								"minecraft:custom_data": {
 									"iyc": {"rock": true},
 									"smithed": {"ignore": {"functionality": true,"crafting": true}}
-								},
-								"minecraft:item_name": "[{\"text\":\"Rock\",\"italic\":false,\"color\":\"white\"}]",
-								"minecraft:custom_model_data": 2015138
+								}
 							}
 						}
 					]

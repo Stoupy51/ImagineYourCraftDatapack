@@ -31,42 +31,34 @@
 			"minecraft:attribute_modifiers": [
 				{
 					"type": "generic.attack_damage",
-					"uuid": [0,25,26,27],
 					"name": "generic.attack_damage",
-					"amount": 1.0,
+					"amount": 1,
 					"operation": "add_value",
-					"slot": "mainhand"
+					"slot": "mainhand",
+					"uuid": [4,7,8,9]
 				},
 				{
 					"type": "generic.attack_speed",
-					"uuid": [1,25,26,27],
 					"name": "generic.attack_speed",
 					"amount": 0,
 					"operation": "add_value",
-					"slot": "mainhand"
+					"slot": "mainhand",
+					"uuid": [5,7,8,9]
 				},
 				{
 					"type": "generic.luck",
-					"uuid": [5,25,26,27],
 					"name": "generic.luck",
 					"amount": 0.25,
 					"operation": "add_value",
-					"slot": "mainhand"
-				},
-				{
-					"type": "player.mining_efficiency",
-					"uuid": [6,25,26,27],
-					"name": "player.mining_efficiency",
-					"amount": 0.0,
-					"operation": "add_value",
-					"slot": "mainhand"
+					"slot": "mainhand",
+					"uuid": [7,7,8,9]
 				}
 			],
-			"minecraft:item_name": "[{\"text\":\"Emerald Hoe\",\"italic\":false,\"color\":\"white\"}]",
+			"minecraft:custom_model_data": 2015066,
+			"minecraft:item_name": "{'text': 'Emerald Hoe', 'italic': False, 'color': 'white'}",
 			"minecraft:lore": [
-				"[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"
-			],
-			"minecraft:custom_model_data": 2015067
+				"{'text': 'ImagineYourCraft', 'italic': True, 'color': 'blue'}"
+			]
 		}
 	}
 }

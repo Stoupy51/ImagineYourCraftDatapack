@@ -20,14 +20,14 @@
 								},
 								"minecraft:max_damage": 907,
 								"minecraft:attribute_modifiers": [
-									{"type": "generic.armor","uuid": [2,1,2,3],"name": "generic.armor","amount": 2.9,"operation": "add_value","slot": "head"},
-									{"type": "generic.armor_toughness","uuid": [3,1,2,3],"name": "generic.armor_toughness","amount": 2,"operation": "add_value","slot": "head"}
+									{"type": "generic.armor","name": "generic.armor","amount": 3,"operation": "add_value","slot": "head","uuid": [1,1,2,3]},
+									{"type": "generic.armor_toughness","name": "generic.armor_toughness","amount": 2,"operation": "add_value","slot": "head","uuid": [2,1,2,3]}
 								],
-								"minecraft:item_name": "[{\"text\":\"Obsidian Helmet\",\"italic\":false,\"color\":\"white\"}]",
+								"minecraft:custom_model_data": 2015049,
+								"minecraft:item_name": "{'text': 'Obsidian Helmet', 'italic': False, 'color': 'white'}",
 								"minecraft:lore": [
-									"[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"
-								],
-								"minecraft:custom_model_data": 2015050
+									"{'text': 'ImagineYourCraft', 'italic': True, 'color': 'blue'}"
+								]
 							}
 						}
 					]

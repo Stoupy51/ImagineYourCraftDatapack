@@ -10,15 +10,15 @@
 						{
 							"function": "minecraft:set_components",
 							"components": {
+								"minecraft:custom_model_data": 2015091,
+								"minecraft:item_name": "{'text': 'Blue Block Ctf', 'italic': False, 'color': 'white'}",
+								"minecraft:lore": [
+									"{'text': 'ImagineYourCraft', 'italic': True, 'color': 'blue'}"
+								],
 								"minecraft:custom_data": {
 									"iyc": {"blue_block_ctf": true},
 									"smithed": {"ignore": {"functionality": true,"crafting": true}}
 								},
-								"minecraft:item_name": "[{\"text\":\"Blue Block Ctf\",\"italic\":false,\"color\":\"white\"}]",
-								"minecraft:lore": [
-									"[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"
-								],
-								"minecraft:custom_model_data": 2015092,
 								"minecraft:container": [
 									{"slot": 0,"item": {"id": "minecraft:stone","count": 1,"components": {"minecraft:custom_data": {"smithed": {"block": {"id": "iyc:blue_block_ctf","from": "iyc"}}}}}}
 								]

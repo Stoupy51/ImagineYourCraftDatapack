@@ -18,6 +18,11 @@
 		"id": "minecraft:furnace",
 		"count": 1,
 		"components": {
+			"minecraft:custom_model_data": 2015087,
+			"minecraft:item_name": "{'text': 'Iron Furnace', 'italic': False, 'color': 'white'}",
+			"minecraft:lore": [
+				"{'text': 'ImagineYourCraft', 'italic': True, 'color': 'blue'}"
+			],
 			"minecraft:custom_data": {
 				"iyc": {
 					"iron_furnace": true
@@ -26,11 +31,6 @@
 					"ignore": {"functionality": true,"crafting": true}
 				}
 			},
-			"minecraft:item_name": "[{\"text\":\"Iron Furnace\",\"italic\":false,\"color\":\"white\"}]",
-			"minecraft:lore": [
-				"[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"
-			],
-			"minecraft:custom_model_data": 2015088,
 			"minecraft:container": [
 				{
 					"slot": 0,

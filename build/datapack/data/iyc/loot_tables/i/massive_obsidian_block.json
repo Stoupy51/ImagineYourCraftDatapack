@@ -10,15 +10,15 @@
 						{
 							"function": "minecraft:set_components",
 							"components": {
-								"minecraft:custom_data": {
-									"smithed": {"dict": {"block": {"obsidian": true}},"ignore": {"functionality": true,"crafting": true}},
-									"iyc": {"massive_obsidian_block": true}
-								},
-								"minecraft:item_name": "[{\"text\":\"Massive Obsidian Block\",\"italic\":false,\"color\":\"white\"}]",
+								"minecraft:custom_model_data": 2015086,
+								"minecraft:item_name": "{'text': 'Massive Obsidian Block', 'italic': False, 'color': 'white'}",
 								"minecraft:lore": [
-									"[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"
+									"{'text': 'ImagineYourCraft', 'italic': True, 'color': 'blue'}"
 								],
-								"minecraft:custom_model_data": 2015048,
+								"minecraft:custom_data": {
+									"iyc": {"massive_obsidian_block": true},
+									"smithed": {"ignore": {"functionality": true,"crafting": true}}
+								},
 								"minecraft:container": [
 									{"slot": 0,"item": {"id": "minecraft:stone","count": 1,"components": {"minecraft:custom_data": {"smithed": {"block": {"id": "iyc:massive_obsidian_block","from": "iyc"}}}}}}
 								]

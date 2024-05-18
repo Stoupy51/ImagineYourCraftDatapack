@@ -32,34 +32,34 @@
 			"minecraft:attribute_modifiers": [
 				{
 					"type": "generic.armor",
-					"uuid": [2,7,8,9],
 					"name": "generic.armor",
-					"amount": 6.0,
+					"amount": 6,
 					"operation": "add_value",
-					"slot": "legs"
+					"slot": "legs",
+					"uuid": [1,10,11,12]
 				},
 				{
 					"type": "generic.armor_toughness",
-					"uuid": [3,7,8,9],
 					"name": "generic.armor_toughness",
 					"amount": 2,
 					"operation": "add_value",
-					"slot": "legs"
+					"slot": "legs",
+					"uuid": [2,10,11,12]
 				},
 				{
 					"type": "generic.luck",
-					"uuid": [5,7,8,9],
 					"name": "generic.luck",
 					"amount": 0.25,
 					"operation": "add_value",
-					"slot": "legs"
+					"slot": "legs",
+					"uuid": [7,10,11,12]
 				}
 			],
-			"minecraft:item_name": "[{\"text\":\"Emerald Leggings\",\"italic\":false,\"color\":\"white\"}]",
+			"minecraft:custom_model_data": 2015060,
+			"minecraft:item_name": "{'text': 'Emerald Leggings', 'italic': False, 'color': 'white'}",
 			"minecraft:lore": [
-				"[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"
-			],
-			"minecraft:custom_model_data": 2015061
+				"{'text': 'ImagineYourCraft', 'italic': True, 'color': 'blue'}"
+			]
 		}
 	}
 }

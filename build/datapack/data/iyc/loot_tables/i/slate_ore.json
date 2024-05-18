@@ -14,11 +14,11 @@
 									"smithed": {"dict": {"block": {"slate": true},"ore": {"slate": true}},"ignore": {"functionality": true,"crafting": true}},
 									"iyc": {"slate_ore": true}
 								},
-								"minecraft:item_name": "[{\"text\":\"Slate Ore\",\"italic\":false,\"color\":\"white\"}]",
+								"minecraft:custom_model_data": 2015084,
+								"minecraft:item_name": "{'text': 'Slate Ore', 'italic': False, 'color': 'white'}",
 								"minecraft:lore": [
-									"[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"
+									"{'text': 'ImagineYourCraft', 'italic': True, 'color': 'blue'}"
 								],
-								"minecraft:custom_model_data": 2015085,
 								"minecraft:container": [
 									{"slot": 0,"item": {"id": "minecraft:stone","count": 1,"components": {"minecraft:custom_data": {"smithed": {"block": {"id": "iyc:slate_ore","from": "iyc"}}}}}}
 								]

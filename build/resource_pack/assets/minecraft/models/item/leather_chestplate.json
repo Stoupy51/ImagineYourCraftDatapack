@@ -9,8 +9,8 @@
 		{ "predicate": { "custom_model_data": 2015016}, "model": "iyc:item/sapphire_chestplate" },
 		{ "predicate": { "custom_model_data": 2015028}, "model": "iyc:item/ruby_chestplate" },
 		{ "predicate": { "custom_model_data": 2015040}, "model": "iyc:item/topaz_chestplate" },
-		{ "predicate": { "custom_model_data": 2015051}, "model": "iyc:item/obsidian_chestplate" },
-		{ "predicate": { "custom_model_data": 2015060}, "model": "iyc:item/emerald_chestplate" },
+		{ "predicate": { "custom_model_data": 2015050}, "model": "iyc:item/obsidian_chestplate" },
+		{ "predicate": { "custom_model_data": 2015059}, "model": "iyc:item/emerald_chestplate" },
 		{ "predicate": { "custom_model_data": 2015072}, "model": "iyc:item/steel_chestplate" }
 	]
 }

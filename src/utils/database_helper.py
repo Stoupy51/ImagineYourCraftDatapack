@@ -3,8 +3,10 @@
 from config import *
 from src.utils.ingredients import *
 from src.utils.print import *
+from src.utils.io import *
 from enum import Enum
 from PIL import Image
+import json
 
 # Constants
 SLOTS = {"helmet": "head", "chestplate": "chest", "leggings": "legs", "boots": "feet", "sword": "mainhand", "pickaxe": "mainhand", "axe": "mainhand", "shovel": "mainhand", "hoe": "mainhand"}
@@ -152,7 +154,7 @@ def format_attributes(attributes: str, slot: str, config: dict = {}) -> list[dic
 	return attribute_modifiers
 
 # Generate everything related to the ore
-def generate_everything_about_this_ore(database: dict[str, dict], material: str = "adamantium_fragment", equipments_config: EquipmentsConfig|None = EquipmentsConfig(DEFAULT_ORE.NETHERITE, 1873, {"attack_damage": 1.2, "player.mining_efficiency": 0.2})):
+def generate_everything_about_this_ore(database: dict[str, dict], material: str = "adamantium_fragment", equipments_config: EquipmentsConfig|None = EquipmentsConfig(DEFAULT_ORE.NETHERITE, 1873, {"attack_damage": 1.2, "player.mining_efficiency": 0.2})) -> list[str]:
 	""" Generate everything related to the ore (armor, tools, weapons, ore, and ingredients (raw, nuggets, blocks)).
 		The function will try to find textures in the assets folder to each item
 		And return a list of generated items if you want to do something with it.
@@ -304,4 +306,125 @@ def generate_everything_about_this_ore(database: dict[str, dict], material: str 
 			database[tool][RESULT_OF_CRAFTING] = [{"type":"crafting_shaped","result_count":1,"category":"equipment","shape":["XX"," S"," S"],"ingredients": tools_ingr}]
 		database[tool]["attribute_modifiers"] = format_attributes(tools_attributes, SLOTS[gear], gear_config)
 	pass
+
+# Generate everything about these ores
+def generate_everything_about_these_ores(database: dict[str, dict], ores: dict[str, EquipmentsConfig|None]) -> dict[str, list[str]]:
+	""" Uses function 'generate_everything_about_this_ore' for each ore in the ores dictionary.
+	Args:
+		database	(dict[str, dict]):	The database to apply the ores to.
+		ores		(dict[str, EquipmentsConfig|None]):	The ores to apply.
+	Returns:
+		dict[str, list[str]]:	The list of generated items for each ore.
+	"""
+	generated_items = {}
+	for material, config in ores.items():
+		generated_items[material] = generate_everything_about_this_ore(database, material, config)
+	return generated_items
+
+# Deterministic custom model data
+def deterministic_custom_model_data(database: dict[str, dict], starting_cmd: int, cache_path: str = CMD_CACHE) -> None:
+	""" Apply custom model data to all items using a cache method.
+	Args:
+		database		(dict[str, dict]):	The database to apply custom model data to.
+		starting_cmd	(int):				The starting custom model data.
+		cache_path		(str):				The path to the cache file, default to constant CMD_CACHE (defined in config.py)
+	"""
+	# Load cached custom model data
+	cached_custom_model_data = {}
+	if os.path.exists(cache_path):
+		with open(cache_path, "r") as f:
+			cached_custom_model_data = json.load(f)
+	
+	# For each item in the database, apply its cached custom model data if it exists
+	for item, data in database.items():
+		if item in cached_custom_model_data:
+			data["custom_model_data"] = cached_custom_model_data[item]
+
+	# Get maximum custom model data
+	max_cmd = starting_cmd - 1
+	for item, data in database.items():
+		if data.get("custom_model_data") and isinstance(data["custom_model_data"], int):
+			max_cmd = max(max_cmd, int(data["custom_model_data"]))
+	
+	# For each item in the database, apply its new custom model data if it doesn't exist
+	for item, data in database.items():
+		if not data.get("custom_model_data") or not isinstance(data["custom_model_data"], int):
+			data["custom_model_data"] = max_cmd + 1
+
+			# Add two custom model data if the item has an on/off texture
+			if any(item in texture and "_on" in texture for texture in TEXTURES_FILES):
+				max_cmd += 2
+			else:
+				max_cmd += 1
+	
+	# Update cache
+	for item, data in database.items():
+		cached_custom_model_data[item] = data["custom_model_data"]
+	with open(cache_path, "w") as f:
+		super_json_dump(cached_custom_model_data, f)
+	return
+
+# Clean up empty recipes
+def clean_up_empty_recipes(database: dict[str, dict]) -> None:
+	""" Remove empty recipes from the database.
+	Args:
+		database	(dict[str, dict]):	The database to clean up.
+	"""
+	for data in database.values():
+		if data.get(RESULT_OF_CRAFTING) == []:
+			data.pop(RESULT_OF_CRAFTING)
+	return
+
+# Add item name and lore
+def add_item_name_and_lore_if_missing(database: dict[str, dict]) -> None:
+	""" Add item name and lore to all items in the database if they are missing.
+	Args:
+		database	(dict[str, dict]):	The database to add item name and lore to.
+	"""
+	lore = str(SOURCE_LORE) if len(SOURCE_LORE) > 1 else str(SOURCE_LORE[0])
+	for item, data in database.items():
+
+		# Add item name if none
+		if not data.get("item_name"):
+			item_str = item.replace("_"," ").title()
+			data["item_name"] = str( {"text": item_str,"italic":False,"color":"white"} )
+
+		# Apply namespaced lore if none
+		if not data.get("lore"):
+			data["lore"] = [lore]
+		if data["lore"][-1] != lore:
+			data["lore"].append(lore)
+	return
+
+# Add private custom data for namespace ( namespace:{item:true} )
+def add_private_custom_data_for_namespace(database: dict[str, dict]) -> None:
+	""" Add private custom data for namespace to all items in the database if they are missing.
+	Args:
+		database	(dict[str, dict]):	The database to add private custom data for namespace to.
+	"""
+	for item, data in database.items():
+		if not data.get("custom_data"):
+			data["custom_data"] = {}
+		data["custom_data"][NAMESPACE] = {item: True}
+	return
+
+# Smithed ignore convention
+def add_smithed_ignore_vanilla_behaviours_convention(database: dict[str, dict]) -> None:
+	""" Add smithed convention to all items in the database if they are missing.
+		Refer to https://wiki.smithed.dev/conventions/tag-specification/#custom-items for more information.
+	Args:
+		database	(dict[str, dict]):	The database to add smithed convention to.
+	"""
+	for data in database.values():
+		if not data.get("custom_data"):
+			data["custom_data"] = {}
+		if not data["custom_data"].get("smithed"):
+			data["custom_data"]["smithed"] = {}
+		if not data["custom_data"]["smithed"].get("ignore"):
+			data["custom_data"]["smithed"]["ignore"] = {}
+		if not data["custom_data"]["smithed"]["ignore"].get("functionality"):
+			data["custom_data"]["smithed"]["ignore"]["functionality"] = True
+		if not data["custom_data"]["smithed"]["ignore"].get("crafting"):
+			data["custom_data"]["smithed"]["ignore"]["crafting"] = True
+	return
 

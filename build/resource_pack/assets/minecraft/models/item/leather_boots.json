@@ -9,8 +9,8 @@
 		{ "predicate": { "custom_model_data": 2015018}, "model": "iyc:item/sapphire_boots" },
 		{ "predicate": { "custom_model_data": 2015030}, "model": "iyc:item/ruby_boots" },
 		{ "predicate": { "custom_model_data": 2015042}, "model": "iyc:item/topaz_boots" },
-		{ "predicate": { "custom_model_data": 2015053}, "model": "iyc:item/obsidian_boots" },
-		{ "predicate": { "custom_model_data": 2015062}, "model": "iyc:item/emerald_boots" },
+		{ "predicate": { "custom_model_data": 2015052}, "model": "iyc:item/obsidian_boots" },
+		{ "predicate": { "custom_model_data": 2015061}, "model": "iyc:item/emerald_boots" },
 		{ "predicate": { "custom_model_data": 2015074}, "model": "iyc:item/steel_boots" }
 	]
 }

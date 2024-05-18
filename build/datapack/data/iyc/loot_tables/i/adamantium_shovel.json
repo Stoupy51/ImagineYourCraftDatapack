@@ -16,15 +16,15 @@
 								},
 								"minecraft:max_damage": 1873,
 								"minecraft:attribute_modifiers": [
-									{"type": "generic.attack_damage","uuid": [0,22,23,24],"name": "generic.attack_damage","amount": 6.2,"operation": "add_value","slot": "mainhand"},
-									{"type": "generic.attack_speed","uuid": [1,22,23,24],"name": "generic.attack_speed","amount": -3.0,"operation": "add_value","slot": "mainhand"},
-									{"type": "player.mining_efficiency","uuid": [6,22,23,24],"name": "player.mining_efficiency","amount": 0.19999999999999996,"operation": "add_value","slot": "mainhand"}
+									{"type": "generic.attack_damage","name": "generic.attack_damage","amount": 6.7,"operation": "add_value","slot": "mainhand","uuid": [4,7,8,9]},
+									{"type": "generic.attack_speed","name": "generic.attack_speed","amount": -3.0,"operation": "add_value","slot": "mainhand","uuid": [5,7,8,9]},
+									{"type": "player.mining_efficiency","name": "player.mining_efficiency","amount": 0.2,"operation": "add_value","slot": "mainhand","uuid": [6,7,8,9]}
 								],
-								"minecraft:item_name": "[{\"text\":\"Adamantium Shovel\",\"italic\":false,\"color\":\"white\"}]",
+								"minecraft:custom_model_data": 2015010,
+								"minecraft:item_name": "{'text': 'Adamantium Shovel', 'italic': False, 'color': 'white'}",
 								"minecraft:lore": [
-									"[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"
-								],
-								"minecraft:custom_model_data": 2015010
+									"{'text': 'ImagineYourCraft', 'italic': True, 'color': 'blue'}"
+								]
 							}
 						}
 					]

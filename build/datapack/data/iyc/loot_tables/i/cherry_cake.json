@@ -10,15 +10,15 @@
 						{
 							"function": "minecraft:set_components",
 							"components": {
+								"minecraft:custom_model_data": 2015124,
+								"minecraft:item_name": "{'text': 'Cherry Cake', 'italic': False, 'color': 'white'}",
+								"minecraft:lore": [
+									"{'text': 'ImagineYourCraft', 'italic': True, 'color': 'blue'}"
+								],
 								"minecraft:custom_data": {
 									"iyc": {"cherry_cake": true},
 									"smithed": {"ignore": {"functionality": true,"crafting": true}}
 								},
-								"minecraft:item_name": "[{\"text\":\"Cherry Cake\",\"italic\":false,\"color\":\"white\"}]",
-								"minecraft:lore": [
-									"[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"
-								],
-								"minecraft:custom_model_data": 2015125,
 								"minecraft:container": [
 									{"slot": 0,"item": {"id": "minecraft:stone","count": 1,"components": {"minecraft:custom_data": {"smithed": {"block": {"id": "iyc:cherry_cake","from": "iyc"}}}}}}
 								]

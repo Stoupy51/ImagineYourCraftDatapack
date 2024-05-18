@@ -20,15 +20,15 @@
 								},
 								"minecraft:max_damage": 171,
 								"minecraft:attribute_modifiers": [
-									{"type": "generic.armor","uuid": [2,1,2,3],"name": "generic.armor","amount": 3.0,"operation": "add_value","slot": "head"},
-									{"type": "generic.armor_toughness","uuid": [3,1,2,3],"name": "generic.armor_toughness","amount": 2,"operation": "add_value","slot": "head"},
-									{"type": "generic.luck","uuid": [5,1,2,3],"name": "generic.luck","amount": 0.25,"operation": "add_value","slot": "head"}
+									{"type": "generic.armor","name": "generic.armor","amount": 3,"operation": "add_value","slot": "head","uuid": [1,1,2,3]},
+									{"type": "generic.armor_toughness","name": "generic.armor_toughness","amount": 2,"operation": "add_value","slot": "head","uuid": [2,1,2,3]},
+									{"type": "generic.luck","name": "generic.luck","amount": 0.25,"operation": "add_value","slot": "head","uuid": [7,13,14,15]}
 								],
-								"minecraft:item_name": "[{\"text\":\"Emerald Helmet\",\"italic\":false,\"color\":\"white\"}]",
+								"minecraft:custom_model_data": 2015058,
+								"minecraft:item_name": "{'text': 'Emerald Helmet', 'italic': False, 'color': 'white'}",
 								"minecraft:lore": [
-									"[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"
-								],
-								"minecraft:custom_model_data": 2015059
+									"{'text': 'ImagineYourCraft', 'italic': True, 'color': 'blue'}"
+								]
 							}
 						}
 					]

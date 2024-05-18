@@ -14,17 +14,17 @@
 									"smithed": {"dict": {"tools": {"steel": true,"shovel": true}},"ignore": {"functionality": true,"crafting": true}},
 									"iyc": {"steel_shovel": true}
 								},
-								"minecraft:max_damage": 443,
+								"minecraft:max_damage": 444,
 								"minecraft:attribute_modifiers": [
-									{"type": "generic.attack_damage","uuid": [0,22,23,24],"name": "generic.attack_damage","amount": 4.0,"operation": "add_value","slot": "mainhand"},
-									{"type": "generic.attack_speed","uuid": [1,22,23,24],"name": "generic.attack_speed","amount": -3.0,"operation": "add_value","slot": "mainhand"},
-									{"type": "player.mining_efficiency","uuid": [6,22,23,24],"name": "player.mining_efficiency","amount": -0.30000000000000004,"operation": "add_value","slot": "mainhand"}
+									{"type": "generic.attack_damage","name": "generic.attack_damage","amount": 4.5,"operation": "add_value","slot": "mainhand","uuid": [4,7,8,9]},
+									{"type": "generic.attack_speed","name": "generic.attack_speed","amount": -3.1,"operation": "add_value","slot": "mainhand","uuid": [5,7,8,9]},
+									{"type": "player.mining_efficiency","name": "player.mining_efficiency","amount": 0.1,"operation": "add_value","slot": "mainhand","uuid": [6,7,8,9]}
 								],
-								"minecraft:item_name": "[{\"text\":\"Steel Shovel\",\"italic\":false,\"color\":\"white\"}]",
+								"minecraft:custom_model_data": 2015078,
+								"minecraft:item_name": "{'text': 'Steel Shovel', 'italic': False, 'color': 'white'}",
 								"minecraft:lore": [
-									"[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"
-								],
-								"minecraft:custom_model_data": 2015078
+									"{'text': 'ImagineYourCraft', 'italic': True, 'color': 'blue'}"
+								]
 							}
 						}
 					]

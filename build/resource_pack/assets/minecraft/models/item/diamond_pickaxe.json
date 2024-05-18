@@ -7,8 +7,8 @@
 		{ "predicate": { "custom_model_data": 2015020}, "model": "iyc:item/sapphire_pickaxe" },
 		{ "predicate": { "custom_model_data": 2015032}, "model": "iyc:item/ruby_pickaxe" },
 		{ "predicate": { "custom_model_data": 2015044}, "model": "iyc:item/topaz_pickaxe" },
-		{ "predicate": { "custom_model_data": 2015055}, "model": "iyc:item/obsidian_pickaxe" },
-		{ "predicate": { "custom_model_data": 2015064}, "model": "iyc:item/emerald_pickaxe" }
+		{ "predicate": { "custom_model_data": 2015054}, "model": "iyc:item/obsidian_pickaxe" },
+		{ "predicate": { "custom_model_data": 2015063}, "model": "iyc:item/emerald_pickaxe" }
 	]
 }
 

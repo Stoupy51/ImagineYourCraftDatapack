@@ -14,11 +14,11 @@
 									"smithed": {"dict": {"block": {"ruby": true},"ore": {"ruby": true}},"ignore": {"functionality": true,"crafting": true}},
 									"iyc": {"ruby_ore": true}
 								},
-								"minecraft:item_name": "[{\"text\":\"Ruby Ore\",\"italic\":false,\"color\":\"white\"}]",
-								"minecraft:lore": [
-									"[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"
-								],
 								"minecraft:custom_model_data": 2015025,
+								"minecraft:item_name": "{'text': 'Ruby Ore', 'italic': False, 'color': 'white'}",
+								"minecraft:lore": [
+									"{'text': 'ImagineYourCraft', 'italic': True, 'color': 'blue'}"
+								],
 								"minecraft:container": [
 									{"slot": 0,"item": {"id": "minecraft:stone","count": 1,"components": {"minecraft:custom_data": {"smithed": {"block": {"id": "iyc:ruby_ore","from": "iyc"}}}}}}
 								]

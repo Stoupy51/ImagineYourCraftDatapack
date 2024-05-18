@@ -14,6 +14,11 @@
 		"id": "minecraft:furnace",
 		"count": 1,
 		"components": {
+			"minecraft:custom_model_data": 2015101,
+			"minecraft:item_name": "{'text': 'Jungle Wood Lantern', 'italic': False, 'color': 'white'}",
+			"minecraft:lore": [
+				"{'text': 'ImagineYourCraft', 'italic': True, 'color': 'blue'}"
+			],
 			"minecraft:custom_data": {
 				"iyc": {
 					"jungle_wood_lantern": true
@@ -22,11 +27,6 @@
 					"ignore": {"functionality": true,"crafting": true}
 				}
 			},
-			"minecraft:item_name": "[{\"text\":\"Jungle Wood Lantern\",\"italic\":false,\"color\":\"white\"}]",
-			"minecraft:lore": [
-				"[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"
-			],
-			"minecraft:custom_model_data": 2015102,
 			"minecraft:container": [
 				{
 					"slot": 0,

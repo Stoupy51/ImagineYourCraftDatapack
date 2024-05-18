@@ -16,15 +16,15 @@
 									"saturation": 0.6,
 									"effects": [{"effect": {"id": "minecraft:haste","duration": 600,"amplifier": 0},"probability": 1.0}]
 								},
+								"minecraft:custom_model_data": 2015125,
+								"minecraft:item_name": "{'text': 'Coca', 'italic': False, 'color': 'white'}",
+								"minecraft:lore": [
+									"{'text': 'ImagineYourCraft', 'italic': True, 'color': 'blue'}"
+								],
 								"minecraft:custom_data": {
 									"iyc": {"coca": true},
 									"smithed": {"ignore": {"functionality": true,"crafting": true}}
-								},
-								"minecraft:item_name": "[{\"text\":\"Coca\",\"italic\":false,\"color\":\"white\"}]",
-								"minecraft:lore": [
-									"[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"
-								],
-								"minecraft:custom_model_data": 2015126
+								}
 							}
 						}
 					]

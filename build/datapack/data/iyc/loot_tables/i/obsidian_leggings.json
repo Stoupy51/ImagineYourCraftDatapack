@@ -20,14 +20,14 @@
 								},
 								"minecraft:max_damage": 1237,
 								"minecraft:attribute_modifiers": [
-									{"type": "generic.armor","uuid": [2,7,8,9],"name": "generic.armor","amount": 5.8,"operation": "add_value","slot": "legs"},
-									{"type": "generic.armor_toughness","uuid": [3,7,8,9],"name": "generic.armor_toughness","amount": 2,"operation": "add_value","slot": "legs"}
+									{"type": "generic.armor","name": "generic.armor","amount": 6,"operation": "add_value","slot": "legs","uuid": [1,10,11,12]},
+									{"type": "generic.armor_toughness","name": "generic.armor_toughness","amount": 2,"operation": "add_value","slot": "legs","uuid": [2,10,11,12]}
 								],
-								"minecraft:item_name": "[{\"text\":\"Obsidian Leggings\",\"italic\":false,\"color\":\"white\"}]",
+								"minecraft:custom_model_data": 2015051,
+								"minecraft:item_name": "{'text': 'Obsidian Leggings', 'italic': False, 'color': 'white'}",
 								"minecraft:lore": [
-									"[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"
-								],
-								"minecraft:custom_model_data": 2015052
+									"{'text': 'ImagineYourCraft', 'italic': True, 'color': 'blue'}"
+								]
 							}
 						}
 					]

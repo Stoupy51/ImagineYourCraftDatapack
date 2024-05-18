@@ -15,15 +15,15 @@
 									"nutrition": 12,
 									"saturation": 0.6
 								},
+								"minecraft:custom_model_data": 2015128,
+								"minecraft:item_name": "{'text': 'Nutella Toast', 'italic': False, 'color': 'white'}",
+								"minecraft:lore": [
+									"{'text': 'ImagineYourCraft', 'italic': True, 'color': 'blue'}"
+								],
 								"minecraft:custom_data": {
 									"iyc": {"nutella_toast": true},
 									"smithed": {"ignore": {"functionality": true,"crafting": true}}
-								},
-								"minecraft:item_name": "[{\"text\":\"Nutella Toast\",\"italic\":false,\"color\":\"white\"}]",
-								"minecraft:lore": [
-									"[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"
-								],
-								"minecraft:custom_model_data": 2015129
+								}
 							}
 						}
 					]

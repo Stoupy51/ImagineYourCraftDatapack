@@ -14,11 +14,11 @@
 									"smithed": {"dict": {"stick": {"steel": true}},"ignore": {"functionality": true,"crafting": true}},
 									"iyc": {"steel_stick": true}
 								},
-								"minecraft:item_name": "[{\"text\":\"Steel Stick\",\"italic\":false,\"color\":\"white\"}]",
+								"minecraft:custom_model_data": 2015070,
+								"minecraft:item_name": "{'text': 'Steel Stick', 'italic': False, 'color': 'white'}",
 								"minecraft:lore": [
-									"[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"
-								],
-								"minecraft:custom_model_data": 2015080
+									"{'text': 'ImagineYourCraft', 'italic': True, 'color': 'blue'}"
+								]
 							}
 						}
 					]

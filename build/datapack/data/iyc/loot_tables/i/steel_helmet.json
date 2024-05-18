@@ -18,16 +18,15 @@
 									"rgb": 5460819,
 									"show_in_tooltip": false
 								},
-								"minecraft:max_damage": 103,
+								"minecraft:max_damage": 293,
 								"minecraft:attribute_modifiers": [
-									{"type": "generic.armor","uuid": [2,1,2,3],"name": "generic.armor","amount": 2.4,"operation": "add_value","slot": "head"},
-									{"type": "generic.armor_toughness","uuid": [3,1,2,3],"name": "generic.armor_toughness","amount": 2,"operation": "add_value","slot": "head"}
+									{"type": "generic.armor","name": "generic.armor","amount": 2,"operation": "add_value","slot": "head","uuid": [1,1,2,3]}
 								],
-								"minecraft:item_name": "[{\"text\":\"Steel Helmet\",\"italic\":false,\"color\":\"white\"}]",
+								"minecraft:custom_model_data": 2015071,
+								"minecraft:item_name": "{'text': 'Steel Helmet', 'italic': False, 'color': 'white'}",
 								"minecraft:lore": [
-									"[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"
-								],
-								"minecraft:custom_model_data": 2015071
+									"{'text': 'ImagineYourCraft', 'italic': True, 'color': 'blue'}"
+								]
 							}
 						}
 					]

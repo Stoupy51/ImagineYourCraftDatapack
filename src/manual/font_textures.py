@@ -327,12 +327,13 @@ for item, data in DATABASE.items():
 download_link = "https://raw.githubusercontent.com/edayot/renders/renders/resourcepack/assets/minecraft/textures/render/"
 for item in used_vanilla_items:
 	destination = f"{path}/minecraft/{item}.png"
-	warning(f"Downloading texture for item '{item}'")
 	if not (os.path.exists(destination) and CACHE_MANUAL_ASSETS):	# If not downloaded yet or not using cache
+		debug(f"Downloading texture for item '{item}'...")
 		response = requests.get(f"{download_link}item/{item}.png")
 		if response.status_code == 200:
 			with super_open(destination, "wb") as file:
 				file.write(response.content)
+			debug(f"Downloaded texture for item '{item}'!")
 		else:
 			warning(f"Failed to download texture for item '{item}', please add it manually to '{destination}'")
 			warning(f"Suggestion link: '{download_link}'")

@@ -15,6 +15,11 @@
 		"id": "minecraft:command_block",
 		"count": 1,
 		"components": {
+			"minecraft:custom_model_data": 2015119,
+			"minecraft:item_name": "{'text': 'Glass Pot', 'italic': False, 'color': 'white'}",
+			"minecraft:lore": [
+				"{'text': 'ImagineYourCraft', 'italic': True, 'color': 'blue'}"
+			],
 			"minecraft:custom_data": {
 				"iyc": {
 					"glass_pot": true
@@ -22,12 +27,7 @@
 				"smithed": {
 					"ignore": {"functionality": true,"crafting": true}
 				}
-			},
-			"minecraft:item_name": "[{\"text\":\"Glass Pot\",\"italic\":false,\"color\":\"white\"}]",
-			"minecraft:lore": [
-				"[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"
-			],
-			"minecraft:custom_model_data": 2015120
+			}
 		}
 	}
 }

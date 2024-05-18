@@ -18,16 +18,15 @@
 									"rgb": 5460819,
 									"show_in_tooltip": false
 								},
-								"minecraft:max_damage": 140,
+								"minecraft:max_damage": 399,
 								"minecraft:attribute_modifiers": [
-									{"type": "generic.armor","uuid": [2,7,8,9],"name": "generic.armor","amount": 4.8,"operation": "add_value","slot": "legs"},
-									{"type": "generic.armor_toughness","uuid": [3,7,8,9],"name": "generic.armor_toughness","amount": 2,"operation": "add_value","slot": "legs"}
+									{"type": "generic.armor","name": "generic.armor","amount": 5,"operation": "add_value","slot": "legs","uuid": [1,10,11,12]}
 								],
-								"minecraft:item_name": "[{\"text\":\"Steel Leggings\",\"italic\":false,\"color\":\"white\"}]",
+								"minecraft:custom_model_data": 2015073,
+								"minecraft:item_name": "{'text': 'Steel Leggings', 'italic': False, 'color': 'white'}",
 								"minecraft:lore": [
-									"[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"
-								],
-								"minecraft:custom_model_data": 2015073
+									"{'text': 'ImagineYourCraft', 'italic': True, 'color': 'blue'}"
+								]
 							}
 						}
 					]

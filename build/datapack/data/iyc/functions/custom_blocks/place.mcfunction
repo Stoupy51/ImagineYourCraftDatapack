@@ -13,13 +13,13 @@ execute if data storage smithed.custom_block:main blockApi{id:"iyc:ruby_block"} 
 execute if data storage smithed.custom_block:main blockApi{id:"iyc:ruby_ore"} run function iyc:custom_blocks/ruby_ore/place_main
 execute if data storage smithed.custom_block:main blockApi{id:"iyc:topaz_block"} run function iyc:custom_blocks/topaz_block/place_main
 execute if data storage smithed.custom_block:main blockApi{id:"iyc:topaz_ore"} run function iyc:custom_blocks/topaz_ore/place_main
-execute if data storage smithed.custom_block:main blockApi{id:"iyc:massive_obsidian_block"} run function iyc:custom_blocks/massive_obsidian_block/place_main
 execute if data storage smithed.custom_block:main blockApi{id:"iyc:steel_block"} run function iyc:custom_blocks/steel_block/place_main
 execute if data storage smithed.custom_block:main blockApi{id:"iyc:steel_ore"} run function iyc:custom_blocks/steel_ore/place_main
 execute if data storage smithed.custom_block:main blockApi{id:"iyc:lignite_block"} run function iyc:custom_blocks/lignite_block/place_main
 execute if data storage smithed.custom_block:main blockApi{id:"iyc:lignite_ore"} run function iyc:custom_blocks/lignite_ore/place_main
 execute if data storage smithed.custom_block:main blockApi{id:"iyc:slate_block"} run function iyc:custom_blocks/slate_block/place_main
 execute if data storage smithed.custom_block:main blockApi{id:"iyc:slate_ore"} run function iyc:custom_blocks/slate_ore/place_main
+execute if data storage smithed.custom_block:main blockApi{id:"iyc:massive_obsidian_block"} run function iyc:custom_blocks/massive_obsidian_block/place_main
 execute if data storage smithed.custom_block:main blockApi{id:"iyc:iron_furnace"} run function iyc:custom_blocks/iron_furnace/place_main
 execute if data storage smithed.custom_block:main blockApi{id:"iyc:box_jump"} run function iyc:custom_blocks/box_jump/place_main
 execute if data storage smithed.custom_block:main blockApi{id:"iyc:box_speed"} run function iyc:custom_blocks/box_speed/place_main

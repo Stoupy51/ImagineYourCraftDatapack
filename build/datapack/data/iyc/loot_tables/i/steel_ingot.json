@@ -14,11 +14,11 @@
 									"smithed": {"dict": {"ingot": {"steel": true}},"ignore": {"functionality": true,"crafting": true}},
 									"iyc": {"steel_ingot": true}
 								},
-								"minecraft:item_name": "[{\"text\":\"Steel Ingot\",\"italic\":false,\"color\":\"white\"}]",
+								"minecraft:custom_model_data": 2015069,
+								"minecraft:item_name": "{'text': 'Steel Ingot', 'italic': False, 'color': 'white'}",
 								"minecraft:lore": [
-									"[{\"text\":\"ImagineYourCraft\",\"italic\":true,\"color\":\"blue\"}]"
-								],
-								"minecraft:custom_model_data": 2015070
+									"{'text': 'ImagineYourCraft', 'italic': True, 'color': 'blue'}"
+								]
 							}
 						}
 					]

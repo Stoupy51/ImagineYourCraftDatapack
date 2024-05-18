@@ -14,7 +14,7 @@ BUILD_COPY_DESTINATIONS: tuple[str, str] = ("D:/latest_snapshot/world/datapacks"
 
 # Assets files
 ASSETS_FILES: list[str] = [f"{root}/{f}".replace("\\","/") for root, _, files in os.walk(ASSETS_FOLDER) for f in files]
-TEXTURES_FILES: list[str] = [path.split(f"{TEXTURES_FOLDER}/")[1] for path in ASSETS_FILES if path.startswith(TEXTURES_FOLDER)]
+TEXTURES_FILES: list[str] = [path.split(f"{TEXTURES_FOLDER}/")[1] for path in ASSETS_FILES if path.startswith(TEXTURES_FOLDER) and path.endswith(".png")]
 
 # Dev constants
 HAS_MANUAL: bool = True								# Do the program generate a manual/guide?

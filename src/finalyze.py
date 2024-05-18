@@ -50,6 +50,9 @@ import src.datapack.headers
 write_all_files()
 debug("All pending files written")
 
+# Check not used textures
+import src.resource_pack.check_unused_textures
+
 
 # Generate zip files
 processes = [

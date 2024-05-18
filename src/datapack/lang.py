@@ -71,27 +71,28 @@ for file, content in FILES_TO_WRITE.items():
 				text_position = line.find(text, line_progress)
 				line_progress = text_position + 1	# Prevent checking all the way before
 				text = text[:text_end]	# Get the text without the ending " (and the rest of the line)
-				text_breaklines_replaced = text.replace("\\n", "\n")	# Replace \n by a real new line
+				text_breaklines_replaced = text.replace("\\n", "\n").replace("\\","")	# Replace \n by a real new line
 				if not any(char.isalnum() for char in text_breaklines_replaced):	# Skip if no alphanumeric character
 					continue
 
 				# If key for lang is too short or not alphanumeric, skip
 				key_for_lang = lang_format(text_breaklines_replaced)
 				verif = key_for_lang.replace(NAMESPACE, "").replace(".", "").replace("_","")
-				if len(verif) < 2 or not verif.isalnum():
+				if len(verif) < 3 or not verif.isalnum() or "\\u" in text:
 					continue
 
 				# Get the lang format and add the key value to the dictionnary
 				if key_for_lang not in lang.keys():
 					lang[key_for_lang] = text_breaklines_replaced
 				elif lang[key_for_lang] != text_breaklines_replaced:
-					warning(f"The text '{text}' is already used by '{lang[key_for_lang]}' for key '{key_for_lang}' with a different value.")
+					continue	# Skip if the key is already used for another text
 
 				# Replace the text in the line by the lang format
 				line = line[:text_position] + key_for_lang + line[text_position + len(text):]
 
 				# Replace "text" by "translate"
-				line = line.replace(possible_text, possible_text.replace("text", "translate"), 1)
+				text_position -= len(possible_text)
+				line = line[:text_position] + line[text_position:].replace("text", "translate", 1)
 		new_content.append(line)
 	
 	# Write the new content to the file

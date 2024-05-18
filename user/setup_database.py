@@ -15,6 +15,7 @@ ores_configs = {
 	"steel_ingot":			EquipmentsConfig(DEFAULT_ORE.IRON, 444, {"player.mining_efficiency": 0.1}),
 	"lignite":				None,
 	"slate":				None,
+	"minecraft:stone":		None,
 }
 generate_everything_about_these_ores(DATABASE, ores_configs)
 

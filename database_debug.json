@@ -942,6 +942,15 @@
 		"item_name": "{'text': 'Slate', 'italic': false, 'color': 'white'}",
 		"lore": ["{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"]
 	},
+	"stone_stick": {
+		"id": "minecraft:command_block",
+		"category": "material",
+		"custom_data": {"smithed": {"dict": {"stick": {"stone": true}},"ignore": {"functionality": true,"crafting": true}},"iyc": {"stone_stick": true}},
+		"result_of_crafting": [{"type": "crafting_shaped","result_count": 4,"category": "misc","shape": ["X","X"],"ingredients": {"X": {"item": "minecraft:stone"}}}],
+		"custom_model_data": 2015140,
+		"item_name": "{'text': 'Stone Stick', 'italic': false, 'color': 'white'}",
+		"lore": ["{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"]
+	},
 	"massive_obsidian_block": {
 		"id": "minecraft:furnace",
 		"result_of_crafting": [{"type": "crafting_shapeless","result_count": 1,"category": "misc","group": "obsidian","ingredients": [{"item": "minecraft:obsidian"},{"item": "minecraft:obsidian"},{"item": "minecraft:obsidian"},{"item": "minecraft:obsidian"},{"item": "minecraft:obsidian"},{"item": "minecraft:obsidian"},{"item": "minecraft:obsidian"},{"item": "minecraft:obsidian"},{"item": "minecraft:obsidian"}]}],

@@ -14,6 +14,7 @@ recipe give @s iyc:emerald_pickaxe
 recipe give @s iyc:emerald_axe
 recipe give @s iyc:emerald_shovel
 recipe give @s iyc:emerald_hoe
+recipe give @s iyc:stone_stick
 recipe give @s iyc:massive_obsidian_block
 recipe give @s iyc:iron_furnace
 recipe give @s iyc:blue_block_ctf

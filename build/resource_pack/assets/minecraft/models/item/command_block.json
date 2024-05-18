@@ -34,7 +34,8 @@
 		{ "predicate":{ "custom_model_data":2015134}, "model":"iyc:item/coin" },
 		{ "predicate":{ "custom_model_data":2015136}, "model":"iyc:item/quiver" },
 		{ "predicate":{ "custom_model_data":2015138}, "model":"iyc:item/screwdriver" },
-		{ "predicate":{ "custom_model_data":2015139}, "model":"iyc:item/old_ruby" }
+		{ "predicate":{ "custom_model_data":2015139}, "model":"iyc:item/old_ruby" },
+		{ "predicate":{ "custom_model_data":2015140}, "model":"iyc:item/stone_stick" }
 	]
 }
 

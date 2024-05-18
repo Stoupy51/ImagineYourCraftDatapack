@@ -1,57 +1,57 @@
 {
-	"type": "minecraft:crafting_shapeless",
-	"category": "misc",
-	"group": "obsidian",
-	"ingredients": [
+	"type":"minecraft:crafting_shapeless",
+	"category":"misc",
+	"group":"obsidian",
+	"ingredients":[
 		{
-			"item": "minecraft:obsidian"
+			"item":"minecraft:obsidian"
 		},
 		{
-			"item": "minecraft:obsidian"
+			"item":"minecraft:obsidian"
 		},
 		{
-			"item": "minecraft:obsidian"
+			"item":"minecraft:obsidian"
 		},
 		{
-			"item": "minecraft:obsidian"
+			"item":"minecraft:obsidian"
 		},
 		{
-			"item": "minecraft:obsidian"
+			"item":"minecraft:obsidian"
 		},
 		{
-			"item": "minecraft:obsidian"
+			"item":"minecraft:obsidian"
 		},
 		{
-			"item": "minecraft:obsidian"
+			"item":"minecraft:obsidian"
 		},
 		{
-			"item": "minecraft:obsidian"
+			"item":"minecraft:obsidian"
 		},
 		{
-			"item": "minecraft:obsidian"
+			"item":"minecraft:obsidian"
 		}
 	],
-	"result": {
-		"id": "minecraft:furnace",
-		"count": 1,
-		"components": {
-			"minecraft:custom_model_data": 2015086,
-			"minecraft:item_name": "{'text': 'Massive Obsidian Block', 'italic': False, 'color': 'white'}",
-			"minecraft:lore": [
-				"{'text': 'ImagineYourCraft', 'italic': True, 'color': 'blue'}"
+	"result":{
+		"id":"minecraft:furnace",
+		"count":1,
+		"components":{
+			"minecraft:custom_model_data":2015086,
+			"minecraft:item_name":"{'translate':'iyc.massive_obsidian_block', 'italic':false, 'color':'white'}",
+			"minecraft:lore":[
+				"{'translate':'iyc.imagineyourcraft', 'italic':true, 'color':'blue'}"
 			],
-			"minecraft:custom_data": {
-				"iyc": {
-					"massive_obsidian_block": true
+			"minecraft:custom_data":{
+				"iyc":{
+					"massive_obsidian_block":true
 				},
-				"smithed": {
-					"ignore": {"functionality": true,"crafting": true}
+				"smithed":{
+					"ignore":{"functionality":true,"crafting":true}
 				}
 			},
-			"minecraft:container": [
+			"minecraft:container":[
 				{
-					"slot": 0,
-					"item": {"id": "minecraft:stone","count": 1,"components": {"minecraft:custom_data": {"smithed": {"block": {"id": "iyc:massive_obsidian_block","from": "iyc"}}}}}
+					"slot":0,
+					"item":{"id":"minecraft:stone","count":1,"components":{"minecraft:custom_data":{"smithed":{"block":{"id":"iyc:massive_obsidian_block","from":"iyc"}}}}}
 				}
 			]
 		}

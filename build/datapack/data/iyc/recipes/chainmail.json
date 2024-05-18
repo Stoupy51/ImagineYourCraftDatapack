@@ -1,29 +1,29 @@
 {
-	"type": "minecraft:crafting_shapeless",
-	"category": "misc",
-	"ingredients": [
+	"type":"minecraft:crafting_shapeless",
+	"category":"misc",
+	"ingredients":[
 		{
-			"item": "minecraft:chain"
+			"item":"minecraft:chain"
 		},
 		{
-			"item": "minecraft:chain"
+			"item":"minecraft:chain"
 		}
 	],
-	"result": {
-		"id": "minecraft:command_block",
-		"count": 4,
-		"components": {
-			"minecraft:custom_model_data": 2015130,
-			"minecraft:item_name": "{'text': 'Chainmail', 'italic': False, 'color': 'white'}",
-			"minecraft:lore": [
-				"{'text': 'ImagineYourCraft', 'italic': True, 'color': 'blue'}"
+	"result":{
+		"id":"minecraft:command_block",
+		"count":4,
+		"components":{
+			"minecraft:custom_model_data":2015130,
+			"minecraft:item_name":"{'translate':'iyc.chainmail', 'italic':false, 'color':'white'}",
+			"minecraft:lore":[
+				"{'translate':'iyc.imagineyourcraft', 'italic':true, 'color':'blue'}"
 			],
-			"minecraft:custom_data": {
-				"iyc": {
-					"chainmail": true
+			"minecraft:custom_data":{
+				"iyc":{
+					"chainmail":true
 				},
-				"smithed": {
-					"ignore": {"functionality": true,"crafting": true}
+				"smithed":{
+					"ignore":{"functionality":true,"crafting":true}
 				}
 			}
 		}

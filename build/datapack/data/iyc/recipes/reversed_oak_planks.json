@@ -1,37 +1,37 @@
 {
-	"type": "minecraft:crafting_shaped",
-	"category": "blocks",
-	"pattern": [
+	"type":"minecraft:crafting_shaped",
+	"category":"blocks",
+	"pattern":[
 		" X",
 		"XX",
 		"X "
 	],
-	"key": {
-		"X": {
-			"item": "minecraft:oak_planks"
+	"key":{
+		"X":{
+			"item":"minecraft:oak_planks"
 		}
 	},
-	"result": {
-		"id": "minecraft:furnace",
-		"count": 4,
-		"components": {
-			"minecraft:custom_model_data": 2015107,
-			"minecraft:item_name": "{'text': 'Reversed Oak Planks', 'italic': False, 'color': 'white'}",
-			"minecraft:lore": [
-				"{'text': 'ImagineYourCraft', 'italic': True, 'color': 'blue'}"
+	"result":{
+		"id":"minecraft:furnace",
+		"count":4,
+		"components":{
+			"minecraft:custom_model_data":2015107,
+			"minecraft:item_name":"{'translate':'iyc.reversed_oak_planks', 'italic':false, 'color':'white'}",
+			"minecraft:lore":[
+				"{'translate':'iyc.imagineyourcraft', 'italic':true, 'color':'blue'}"
 			],
-			"minecraft:custom_data": {
-				"iyc": {
-					"reversed_oak_planks": true
+			"minecraft:custom_data":{
+				"iyc":{
+					"reversed_oak_planks":true
 				},
-				"smithed": {
-					"ignore": {"functionality": true,"crafting": true}
+				"smithed":{
+					"ignore":{"functionality":true,"crafting":true}
 				}
 			},
-			"minecraft:container": [
+			"minecraft:container":[
 				{
-					"slot": 0,
-					"item": {"id": "minecraft:stone","count": 1,"components": {"minecraft:custom_data": {"smithed": {"block": {"id": "iyc:reversed_oak_planks","from": "iyc"}}}}}
+					"slot":0,
+					"item":{"id":"minecraft:stone","count":1,"components":{"minecraft:custom_data":{"smithed":{"block":{"id":"iyc:reversed_oak_planks","from":"iyc"}}}}}
 				}
 			]
 		}

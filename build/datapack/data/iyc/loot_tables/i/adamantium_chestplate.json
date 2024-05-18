@@ -1,33 +1,33 @@
 {
-	"pools": [
+	"pools":[
 		{
-			"rolls": 1,
-			"entries": [
+			"rolls":1,
+			"entries":[
 				{
-					"type": "minecraft:item",
-					"name": "minecraft:leather_chestplate",
-					"functions": [
+					"type":"minecraft:item",
+					"name":"minecraft:leather_chestplate",
+					"functions":[
 						{
-							"function": "minecraft:set_components",
-							"components": {
-								"minecraft:custom_data": {
-									"smithed": {"dict": {"armor": {"adamantium": true,"chestplate": true}},"ignore": {"functionality": true,"crafting": true}},
-									"iyc": {"adamantium_chestplate": true}
+							"function":"minecraft:set_components",
+							"components":{
+								"minecraft:custom_data":{
+									"smithed":{"dict":{"armor":{"adamantium":true,"chestplate":true}},"ignore":{"functionality":true,"crafting":true}},
+									"iyc":{"adamantium_chestplate":true}
 								},
-								"minecraft:dyed_color": {
-									"rgb": 2511745,
-									"show_in_tooltip": false
+								"minecraft:dyed_color":{
+									"rgb":2511745,
+									"show_in_tooltip":false
 								},
-								"minecraft:max_damage": 545,
-								"minecraft:attribute_modifiers": [
-									{"type": "generic.armor","name": "generic.armor","amount": 8.2,"operation": "add_value","slot": "chest","uuid": [1,4,5,6]},
-									{"type": "generic.armor_toughness","name": "generic.armor_toughness","amount": 3,"operation": "add_value","slot": "chest","uuid": [2,4,5,6]},
-									{"type": "generic.knockback_resistance","name": "generic.knockback_resistance","amount": 0.1,"operation": "add_value","slot": "chest","uuid": [3,4,5,6]}
+								"minecraft:max_damage":545,
+								"minecraft:attribute_modifiers":[
+									{"type":"generic.armor","name":"generic.armor","amount":8.2,"operation":"add_value","slot":"chest","uuid":[1,10,11,12]},
+									{"type":"generic.armor_toughness","name":"generic.armor_toughness","amount":3,"operation":"add_value","slot":"chest","uuid":[2,10,11,12]},
+									{"type":"generic.knockback_resistance","name":"generic.knockback_resistance","amount":0.1,"operation":"add_value","slot":"chest","uuid":[3,10,11,12]}
 								],
-								"minecraft:custom_model_data": 2015004,
-								"minecraft:item_name": "{'text': 'Adamantium Chestplate', 'italic': False, 'color': 'white'}",
-								"minecraft:lore": [
-									"{'text': 'ImagineYourCraft', 'italic': True, 'color': 'blue'}"
+								"minecraft:custom_model_data":2015004,
+								"minecraft:item_name":"{'translate':'iyc.adamantium_chestplate', 'italic':false, 'color':'white'}",
+								"minecraft:lore":[
+									"{'translate':'iyc.imagineyourcraft', 'italic':true, 'color':'blue'}"
 								]
 							}
 						}

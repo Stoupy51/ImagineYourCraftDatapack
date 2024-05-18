@@ -1,40 +1,40 @@
 {
-	"type": "minecraft:crafting_shapeless",
-	"category": "food",
-	"ingredients": [
+	"type":"minecraft:crafting_shapeless",
+	"category":"food",
+	"ingredients":[
 		{
-			"item": "minecraft:cocoa_beans"
+			"item":"minecraft:cocoa_beans"
 		},
 		{
-			"item": "minecraft:bowl"
+			"item":"minecraft:bowl"
 		},
 		{
-			"item": "minecraft:milk_bucket"
+			"item":"minecraft:milk_bucket"
 		}
 	],
-	"result": {
-		"id": "minecraft:command_block",
-		"count": 1,
-		"components": {
-			"minecraft:food": {
-				"can_always_eat": true,
-				"nutrition": 3,
-				"saturation": 0.8,
-				"effects": [
-					{"effect": {"id": "minecraft:speed","duration": 600,"amplifier": 0},"probability": 1.0}
+	"result":{
+		"id":"minecraft:command_block",
+		"count":1,
+		"components":{
+			"minecraft:food":{
+				"can_always_eat":true,
+				"nutrition":3,
+				"saturation":0.8,
+				"effects":[
+					{"effect":{"id":"minecraft:speed","duration":600,"amplifier":0},"probability":1.0}
 				]
 			},
-			"minecraft:custom_model_data": 2015126,
-			"minecraft:item_name": "{'text': 'Hot Chocolate', 'italic': False, 'color': 'white'}",
-			"minecraft:lore": [
-				"{'text': 'ImagineYourCraft', 'italic': True, 'color': 'blue'}"
+			"minecraft:custom_model_data":2015126,
+			"minecraft:item_name":"{'translate':'iyc.hot_chocolate', 'italic':false, 'color':'white'}",
+			"minecraft:lore":[
+				"{'translate':'iyc.imagineyourcraft', 'italic':true, 'color':'blue'}"
 			],
-			"minecraft:custom_data": {
-				"iyc": {
-					"hot_chocolate": true
+			"minecraft:custom_data":{
+				"iyc":{
+					"hot_chocolate":true
 				},
-				"smithed": {
-					"ignore": {"functionality": true,"crafting": true}
+				"smithed":{
+					"ignore":{"functionality":true,"crafting":true}
 				}
 			}
 		}

@@ -1,7 +1,7 @@
 {
-	"parent": "block/cube_all",
-	"textures": {
-		"all": "iyc:block/blue_block_ctf"
+	"parent":"block/cube_all",
+	"textures":{
+		"all":"iyc:block/blue_block_ctf"
 	}
 }
 

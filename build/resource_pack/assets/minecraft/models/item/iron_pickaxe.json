@@ -1,10 +1,10 @@
 {
-	"parent": "item/handheld",
-	"textures": {
-		"layer0": "item/iron_pickaxe"
+	"parent":"item/handheld",
+	"textures":{
+		"layer0":"item/iron_pickaxe"
 	},
-	"overrides": [
-		{ "predicate": { "custom_model_data": 2015076}, "model": "iyc:item/steel_pickaxe" }
+	"overrides":[
+		{ "predicate":{ "custom_model_data":2015076}, "model":"iyc:item/steel_pickaxe" }
 	]
 }
 

@@ -1,26 +1,26 @@
 {
-	"pools": [
+	"pools":[
 		{
-			"rolls": 1,
-			"entries": [
+			"rolls":1,
+			"entries":[
 				{
-					"type": "minecraft:item",
-					"name": "minecraft:furnace",
-					"functions": [
+					"type":"minecraft:item",
+					"name":"minecraft:furnace",
+					"functions":[
 						{
-							"function": "minecraft:set_components",
-							"components": {
-								"minecraft:custom_model_data": 2015093,
-								"minecraft:item_name": "{'text': 'Clear Glass', 'italic': False, 'color': 'white'}",
-								"minecraft:lore": [
-									"{'text': 'ImagineYourCraft', 'italic': True, 'color': 'blue'}"
+							"function":"minecraft:set_components",
+							"components":{
+								"minecraft:custom_model_data":2015093,
+								"minecraft:item_name":"{'translate':'iyc.clear_glass', 'italic':false, 'color':'white'}",
+								"minecraft:lore":[
+									"{'translate':'iyc.imagineyourcraft', 'italic':true, 'color':'blue'}"
 								],
-								"minecraft:custom_data": {
-									"iyc": {"clear_glass": true},
-									"smithed": {"ignore": {"functionality": true,"crafting": true}}
+								"minecraft:custom_data":{
+									"iyc":{"clear_glass":true},
+									"smithed":{"ignore":{"functionality":true,"crafting":true}}
 								},
-								"minecraft:container": [
-									{"slot": 0,"item": {"id": "minecraft:stone","count": 1,"components": {"minecraft:custom_data": {"smithed": {"block": {"id": "iyc:clear_glass","from": "iyc"}}}}}}
+								"minecraft:container":[
+									{"slot":0,"item":{"id":"minecraft:stone","count":1,"components":{"minecraft:custom_data":{"smithed":{"block":{"id":"iyc:clear_glass","from":"iyc"}}}}}}
 								]
 							}
 						}

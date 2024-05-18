@@ -1,7 +1,7 @@
 {
-	"parent": "block/cube_all",
-	"textures": {
-		"all": "iyc:block/slate_ore"
+	"parent":"block/cube_all",
+	"textures":{
+		"all":"iyc:block/slate_ore"
 	}
 }
 

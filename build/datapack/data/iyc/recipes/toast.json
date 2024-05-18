@@ -1,29 +1,29 @@
 {
-	"type": "minecraft:crafting_shaped",
-	"category": "misc",
-	"pattern": [
+	"type":"minecraft:crafting_shaped",
+	"category":"misc",
+	"pattern":[
 		"XXX"
 	],
-	"key": {
-		"X": {
-			"item": "minecraft:bread"
+	"key":{
+		"X":{
+			"item":"minecraft:bread"
 		}
 	},
-	"result": {
-		"id": "minecraft:command_block",
-		"count": 4,
-		"components": {
-			"minecraft:custom_model_data": 2015117,
-			"minecraft:item_name": "{'text': 'Toast', 'italic': False, 'color': 'white'}",
-			"minecraft:lore": [
-				"{'text': 'ImagineYourCraft', 'italic': True, 'color': 'blue'}"
+	"result":{
+		"id":"minecraft:command_block",
+		"count":4,
+		"components":{
+			"minecraft:custom_model_data":2015117,
+			"minecraft:item_name":"{'translate':'iyc.toast', 'italic':false, 'color':'white'}",
+			"minecraft:lore":[
+				"{'translate':'iyc.imagineyourcraft', 'italic':true, 'color':'blue'}"
 			],
-			"minecraft:custom_data": {
-				"iyc": {
-					"toast": true
+			"minecraft:custom_data":{
+				"iyc":{
+					"toast":true
 				},
-				"smithed": {
-					"ignore": {"functionality": true,"crafting": true}
+				"smithed":{
+					"ignore":{"functionality":true,"crafting":true}
 				}
 			}
 		}

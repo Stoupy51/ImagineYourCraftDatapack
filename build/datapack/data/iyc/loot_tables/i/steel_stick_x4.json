@@ -1,15 +1,15 @@
 {
-	"pools": [
+	"pools":[
 		{
-			"rolls": 1,
-			"entries": [
+			"rolls":1,
+			"entries":[
 				{
-					"type": "minecraft:loot_table",
-					"value": "iyc:i/steel_stick",
-					"functions": [
+					"type":"minecraft:loot_table",
+					"value":"iyc:i/steel_stick",
+					"functions":[
 						{
-							"function": "minecraft:set_count",
-							"count": 4
+							"function":"minecraft:set_count",
+							"count":4
 						}
 					]
 				}

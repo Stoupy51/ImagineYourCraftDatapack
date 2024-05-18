@@ -1,7 +1,7 @@
 {
-	"parent": "item/handheld",
-	"textures": {
-		"layer0": "iyc:item/obsidian_pickaxe"
+	"parent":"item/handheld",
+	"textures":{
+		"layer0":"iyc:item/obsidian_pickaxe"
 	}
 }
 

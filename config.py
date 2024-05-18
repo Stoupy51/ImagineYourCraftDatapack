@@ -24,7 +24,7 @@ CMD_CACHE: str = f"{ROOT}/cmd_cache.json"			# Cache of all items Custom Model Da
 CACHE_MANUAL_ASSETS: bool = True					# Caches the MC assets and the items renders for the manual (manual/items/*.png)
 CACHE_MANUAL_PAGES: bool = True					# Caches the content of the manual and the images (manual/pages/*.png)
 MANUAL_DEBUG: str = f"{ROOT}/debug_manual.json"		# Dump of the manual for debugging purposes
-ENABLE_TRANSLATIONS: bool = False					# Will convert all the text components to translate and generate a lang file (WARNING: The algorithm is pretty slow, so it's recommended to disable it when not needed)
+ENABLE_TRANSLATIONS: bool = True					# Will convert all the text components to translate and generate a lang file (WARNING: The algorithm is pretty slow, so it's recommended to disable it when not needed)
 LANG_FILE_DEBUG: str = f"{ROOT}/debug_lang.json"	# Dump of the lang file for debugging purposes
 MERGE_LIBS: bool = False							# Make new zip of merged libraries with the datapack and resource pack using Smithed Weld
 

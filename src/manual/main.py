@@ -383,7 +383,7 @@ manual_database = {"manual":
 			"author": AUTHOR,
 			"pages": [str(i).replace("\\\\", "\\") for i in book_content],
 		},
-		"lore": [SOURCE_LORE],
+		"lore": [json.dumps(SOURCE_LORE).replace('"', "'")],
 		"custom_model_data": min(x["custom_model_data"] for x in DATABASE.values()) - 1,	# First custom_model_data minus 1
 		"enchantment_glint_override": False,
 	}

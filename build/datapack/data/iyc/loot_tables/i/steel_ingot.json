@@ -1,23 +1,23 @@
 {
-	"pools": [
+	"pools":[
 		{
-			"rolls": 1,
-			"entries": [
+			"rolls":1,
+			"entries":[
 				{
-					"type": "minecraft:item",
-					"name": "minecraft:command_block",
-					"functions": [
+					"type":"minecraft:item",
+					"name":"minecraft:command_block",
+					"functions":[
 						{
-							"function": "minecraft:set_components",
-							"components": {
-								"minecraft:custom_data": {
-									"smithed": {"dict": {"ingot": {"steel": true}},"ignore": {"functionality": true,"crafting": true}},
-									"iyc": {"steel_ingot": true}
+							"function":"minecraft:set_components",
+							"components":{
+								"minecraft:custom_data":{
+									"smithed":{"dict":{"ingot":{"steel":true}},"ignore":{"functionality":true,"crafting":true}},
+									"iyc":{"steel_ingot":true}
 								},
-								"minecraft:custom_model_data": 2015069,
-								"minecraft:item_name": "{'text': 'Steel Ingot', 'italic': False, 'color': 'white'}",
-								"minecraft:lore": [
-									"{'text': 'ImagineYourCraft', 'italic': True, 'color': 'blue'}"
+								"minecraft:custom_model_data":2015069,
+								"minecraft:item_name":"{'translate':'iyc.steel_ingot', 'italic':false, 'color':'white'}",
+								"minecraft:lore":[
+									"{'translate':'iyc.imagineyourcraft', 'italic':true, 'color':'blue'}"
 								]
 							}
 						}

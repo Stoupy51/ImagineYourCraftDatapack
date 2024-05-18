@@ -1,32 +1,32 @@
 {
-	"parent": "block/cube_all",
-	"textures": {
-		"down": "iyc:block/iron_furnace_top",
-		"up": "iyc:block/iron_furnace_top",
-		"north": "iyc:block/iron_furnace_front",
-		"south": "iyc:block/iron_furnace_side",
-		"west": "iyc:block/iron_furnace_side",
-		"east": "iyc:block/iron_furnace_side"
+	"parent":"block/cube_all",
+	"textures":{
+		"down":"iyc:block/iron_furnace_top",
+		"up":"iyc:block/iron_furnace_top",
+		"north":"iyc:block/iron_furnace_front",
+		"south":"iyc:block/iron_furnace_side",
+		"west":"iyc:block/iron_furnace_side",
+		"east":"iyc:block/iron_furnace_side"
 	},
-	"elements": [
+	"elements":[
 		{
-			"from": [
+			"from":[
 				0,
 				0,
 				0
 			],
-			"to": [
+			"to":[
 				16,
 				16,
 				16
 			],
-			"faces": {
-				"down": {"texture": "#down","cullface": "down"},
-				"up": {"texture": "#up","cullface": "up"},
-				"north": {"texture": "#north","cullface": "north"},
-				"south": {"texture": "#south","cullface": "south"},
-				"west": {"texture": "#west","cullface": "west"},
-				"east": {"texture": "#east","cullface": "east"}
+			"faces":{
+				"down":{"texture":"#down","cullface":"down"},
+				"up":{"texture":"#up","cullface":"up"},
+				"north":{"texture":"#north","cullface":"north"},
+				"south":{"texture":"#south","cullface":"south"},
+				"west":{"texture":"#west","cullface":"west"},
+				"east":{"texture":"#east","cullface":"east"}
 			}
 		}
 	]

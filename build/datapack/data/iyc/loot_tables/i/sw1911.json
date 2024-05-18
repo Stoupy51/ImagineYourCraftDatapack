@@ -1,24 +1,24 @@
 {
-	"pools": [
+	"pools":[
 		{
-			"rolls": 1,
-			"entries": [
+			"rolls":1,
+			"entries":[
 				{
-					"type": "minecraft:item",
-					"name": "minecraft:command_block",
-					"functions": [
+					"type":"minecraft:item",
+					"name":"minecraft:command_block",
+					"functions":[
 						{
-							"function": "minecraft:set_components",
-							"components": {
-								"minecraft:lore": [
-									"{\"text\":\"Uses steel nuggets as bullets\",\"color\":\"gray\",\"italic\":false}",
-									"{'text': 'ImagineYourCraft', 'italic': True, 'color': 'blue'}"
+							"function":"minecraft:set_components",
+							"components":{
+								"minecraft:lore":[
+									"{\"translate\":\"iyc.uses_steel_nuggets_as_bullets\",\"color\":\"gray\",\"italic\":false}",
+									"{'translate':'iyc.imagineyourcraft', 'italic':true, 'color':'blue'}"
 								],
-								"minecraft:custom_model_data": 2015108,
-								"minecraft:item_name": "{'text': 'Sw1911', 'italic': False, 'color': 'white'}",
-								"minecraft:custom_data": {
-									"iyc": {"sw1911": true},
-									"smithed": {"ignore": {"functionality": true,"crafting": true}}
+								"minecraft:custom_model_data":2015108,
+								"minecraft:item_name":"{'translate':'iyc.sw1911', 'italic':false, 'color':'white'}",
+								"minecraft:custom_data":{
+									"iyc":{"sw1911":true},
+									"smithed":{"ignore":{"functionality":true,"crafting":true}}
 								}
 							}
 						}

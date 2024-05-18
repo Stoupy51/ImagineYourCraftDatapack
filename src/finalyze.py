@@ -40,7 +40,8 @@ for root, _, files in os.walk(MERGE_FOLDER):
 info(f"All content in the '{MERGE_FOLDER.replace(ROOT, '')}' folder copied to '{BUILD_FOLDER.replace(ROOT, '')}'")
 
 # Generate lang file
-import src.datapack.lang
+if ENABLE_TRANSLATIONS:
+	import src.datapack.lang
 
 # Add a small header for each .mcfunction file
 import src.datapack.headers

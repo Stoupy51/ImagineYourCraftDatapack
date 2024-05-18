@@ -1,10 +1,10 @@
 {
-	"parent": "item/handheld",
-	"textures": {
-		"layer0": "item/arrow"
+	"parent":"item/handheld",
+	"textures":{
+		"layer0":"item/arrow"
 	},
-	"overrides": [
-		{ "predicate": { "custom_model_data": 2015092}, "model": "iyc:item/bolt" }
+	"overrides":[
+		{ "predicate":{ "custom_model_data":2015092}, "model":"iyc:item/bolt" }
 	]
 }
 

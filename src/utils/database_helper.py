@@ -381,13 +381,14 @@ def add_item_name_and_lore_if_missing(database: dict[str, dict]) -> None:
 	Args:
 		database	(dict[str, dict]):	The database to add item name and lore to.
 	"""
-	lore = str(SOURCE_LORE) if len(SOURCE_LORE) > 1 else str(SOURCE_LORE[0])
+	lore = json.dumps(SOURCE_LORE) if len(SOURCE_LORE) > 1 else json.dumps(SOURCE_LORE[0])
+	lore = lore.replace('"', "'")
 	for item, data in database.items():
 
 		# Add item name if none
 		if not data.get("item_name"):
 			item_str = item.replace("_"," ").title()
-			data["item_name"] = str( {"text": item_str,"italic":False,"color":"white"} )
+			data["item_name"] = json.dumps( {"text": item_str, "italic": False, "color":"white"} ).replace('"', "'")
 
 		# Apply namespaced lore if none
 		if not data.get("lore"):

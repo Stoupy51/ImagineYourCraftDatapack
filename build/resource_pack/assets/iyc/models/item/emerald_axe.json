@@ -1,7 +1,7 @@
 {
-	"parent": "item/handheld",
-	"textures": {
-		"layer0": "iyc:item/emerald_axe"
+	"parent":"item/handheld",
+	"textures":{
+		"layer0":"iyc:item/emerald_axe"
 	}
 }
 

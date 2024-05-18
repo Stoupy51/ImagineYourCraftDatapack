@@ -1,7 +1,7 @@
 {
-	"parent": "item/handheld",
-	"textures": {
-		"layer0": "iyc:item/ruby_shovel"
+	"parent":"item/handheld",
+	"textures":{
+		"layer0":"iyc:item/ruby_shovel"
 	}
 }
 

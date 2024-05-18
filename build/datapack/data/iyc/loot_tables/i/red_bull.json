@@ -1,29 +1,29 @@
 {
-	"pools": [
+	"pools":[
 		{
-			"rolls": 1,
-			"entries": [
+			"rolls":1,
+			"entries":[
 				{
-					"type": "minecraft:item",
-					"name": "minecraft:command_block",
-					"functions": [
+					"type":"minecraft:item",
+					"name":"minecraft:command_block",
+					"functions":[
 						{
-							"function": "minecraft:set_components",
-							"components": {
-								"minecraft:food": {
-									"can_always_eat": true,
-									"nutrition": 2,
-									"saturation": 0.6,
-									"effects": [{"effect": {"id": "minecraft:regeneration","duration": 600,"amplifier": 0},"probability": 1.0}]
+							"function":"minecraft:set_components",
+							"components":{
+								"minecraft:food":{
+									"can_always_eat":true,
+									"nutrition":2,
+									"saturation":0.6,
+									"effects":[{"effect":{"id":"minecraft:regeneration","duration":600,"amplifier":0},"probability":1.0}]
 								},
-								"minecraft:custom_model_data": 2015129,
-								"minecraft:item_name": "{'text': 'Red Bull', 'italic': False, 'color': 'white'}",
-								"minecraft:lore": [
-									"{'text': 'ImagineYourCraft', 'italic': True, 'color': 'blue'}"
+								"minecraft:custom_model_data":2015129,
+								"minecraft:item_name":"{'translate':'iyc.red_bull', 'italic':false, 'color':'white'}",
+								"minecraft:lore":[
+									"{'translate':'iyc.imagineyourcraft', 'italic':true, 'color':'blue'}"
 								],
-								"minecraft:custom_data": {
-									"iyc": {"red_bull": true},
-									"smithed": {"ignore": {"functionality": true,"crafting": true}}
+								"minecraft:custom_data":{
+									"iyc":{"red_bull":true},
+									"smithed":{"ignore":{"functionality":true,"crafting":true}}
 								}
 							}
 						}

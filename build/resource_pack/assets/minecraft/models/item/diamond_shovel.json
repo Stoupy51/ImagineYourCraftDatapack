@@ -1,14 +1,14 @@
 {
-	"parent": "item/handheld",
-	"textures": {
-		"layer0": "item/diamond_shovel"
+	"parent":"item/handheld",
+	"textures":{
+		"layer0":"item/diamond_shovel"
 	},
-	"overrides": [
-		{ "predicate": { "custom_model_data": 2015022}, "model": "iyc:item/sapphire_shovel" },
-		{ "predicate": { "custom_model_data": 2015034}, "model": "iyc:item/ruby_shovel" },
-		{ "predicate": { "custom_model_data": 2015046}, "model": "iyc:item/topaz_shovel" },
-		{ "predicate": { "custom_model_data": 2015056}, "model": "iyc:item/obsidian_shovel" },
-		{ "predicate": { "custom_model_data": 2015065}, "model": "iyc:item/emerald_shovel" }
+	"overrides":[
+		{ "predicate":{ "custom_model_data":2015022}, "model":"iyc:item/sapphire_shovel" },
+		{ "predicate":{ "custom_model_data":2015034}, "model":"iyc:item/ruby_shovel" },
+		{ "predicate":{ "custom_model_data":2015046}, "model":"iyc:item/topaz_shovel" },
+		{ "predicate":{ "custom_model_data":2015056}, "model":"iyc:item/obsidian_shovel" },
+		{ "predicate":{ "custom_model_data":2015065}, "model":"iyc:item/emerald_shovel" }
 	]
 }
 

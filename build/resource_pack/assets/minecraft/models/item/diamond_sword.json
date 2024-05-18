@@ -1,14 +1,14 @@
 {
-	"parent": "item/handheld",
-	"textures": {
-		"layer0": "item/diamond_sword"
+	"parent":"item/handheld",
+	"textures":{
+		"layer0":"item/diamond_sword"
 	},
-	"overrides": [
-		{ "predicate": { "custom_model_data": 2015019}, "model": "iyc:item/sapphire_sword" },
-		{ "predicate": { "custom_model_data": 2015031}, "model": "iyc:item/ruby_sword" },
-		{ "predicate": { "custom_model_data": 2015043}, "model": "iyc:item/topaz_sword" },
-		{ "predicate": { "custom_model_data": 2015053}, "model": "iyc:item/obsidian_sword" },
-		{ "predicate": { "custom_model_data": 2015062}, "model": "iyc:item/emerald_sword" }
+	"overrides":[
+		{ "predicate":{ "custom_model_data":2015019}, "model":"iyc:item/sapphire_sword" },
+		{ "predicate":{ "custom_model_data":2015031}, "model":"iyc:item/ruby_sword" },
+		{ "predicate":{ "custom_model_data":2015043}, "model":"iyc:item/topaz_sword" },
+		{ "predicate":{ "custom_model_data":2015053}, "model":"iyc:item/obsidian_sword" },
+		{ "predicate":{ "custom_model_data":2015062}, "model":"iyc:item/emerald_sword" }
 	]
 }
 

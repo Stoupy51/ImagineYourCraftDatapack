@@ -1,40 +1,40 @@
 {
-	"type": "minecraft:crafting_shaped",
-	"category": "misc",
-	"pattern": [
+	"type":"minecraft:crafting_shaped",
+	"category":"misc",
+	"pattern":[
 		"XXX",
 		"XGX",
 		"XXX"
 	],
-	"key": {
-		"X": {
-			"item": "minecraft:blue_wool"
+	"key":{
+		"X":{
+			"item":"minecraft:blue_wool"
 		},
-		"G": {
-			"item": "minecraft:glass"
+		"G":{
+			"item":"minecraft:glass"
 		}
 	},
-	"result": {
-		"id": "minecraft:furnace",
-		"count": 8,
-		"components": {
-			"minecraft:custom_model_data": 2015091,
-			"minecraft:item_name": "{'text': 'Blue Block Ctf', 'italic': False, 'color': 'white'}",
-			"minecraft:lore": [
-				"{'text': 'ImagineYourCraft', 'italic': True, 'color': 'blue'}"
+	"result":{
+		"id":"minecraft:furnace",
+		"count":8,
+		"components":{
+			"minecraft:custom_model_data":2015091,
+			"minecraft:item_name":"{'translate':'iyc.blue_block_ctf', 'italic':false, 'color':'white'}",
+			"minecraft:lore":[
+				"{'translate':'iyc.imagineyourcraft', 'italic':true, 'color':'blue'}"
 			],
-			"minecraft:custom_data": {
-				"iyc": {
-					"blue_block_ctf": true
+			"minecraft:custom_data":{
+				"iyc":{
+					"blue_block_ctf":true
 				},
-				"smithed": {
-					"ignore": {"functionality": true,"crafting": true}
+				"smithed":{
+					"ignore":{"functionality":true,"crafting":true}
 				}
 			},
-			"minecraft:container": [
+			"minecraft:container":[
 				{
-					"slot": 0,
-					"item": {"id": "minecraft:stone","count": 1,"components": {"minecraft:custom_data": {"smithed": {"block": {"id": "iyc:blue_block_ctf","from": "iyc"}}}}}
+					"slot":0,
+					"item":{"id":"minecraft:stone","count":1,"components":{"minecraft:custom_data":{"smithed":{"block":{"id":"iyc:blue_block_ctf","from":"iyc"}}}}}
 				}
 			]
 		}

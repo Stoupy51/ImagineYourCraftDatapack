@@ -1,40 +1,40 @@
 {
-	"type":"minecraft:crafting_shapeless",
-	"category":"equipment",
-	"ingredients":[
+	"type": "minecraft:crafting_shapeless",
+	"category": "equipment",
+	"ingredients": [
 		{
-			"item":"minecraft:iron_ingot"
+			"item": "minecraft:iron_ingot"
 		},
 		{
-			"item":"minecraft:elytra"
+			"item": "minecraft:elytra"
 		}
 	],
-	"result":{
-		"id":"minecraft:leather_helmet",
-		"count":1,
-		"components":{
-			"minecraft:lore":[
-				"{'translate':'iyc.a_hat_that_makes_you_fly','color':'gray','italic':false}",
-				"{'translate':'iyc.imagineyourcraft', 'italic':true, 'color':'blue'}"
+	"result": {
+		"id": "minecraft:leather_helmet",
+		"count": 1,
+		"components": {
+			"minecraft:lore": [
+				"{'text':'A hat that makes you fly','color':'gray','italic':false}",
+				"{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"
 			],
-			"minecraft:attribute_modifiers":[
+			"minecraft:attribute_modifiers": [
 				{
-					"type":"generic.gravity",
-					"uuid":[16052024,1,1,1],
-					"name":"generic.gravity",
-					"amount":-0.09,
-					"operation":"add_value",
-					"slot":"head"
+					"type": "generic.gravity",
+					"uuid": [16052024,1,1,1],
+					"name": "generic.gravity",
+					"amount": -0.09,
+					"operation": "add_value",
+					"slot": "head"
 				}
 			],
-			"minecraft:custom_model_data":2015096,
-			"minecraft:item_name":"{'translate':'iyc.helice_hat', 'italic':false, 'color':'white'}",
-			"minecraft:custom_data":{
-				"iyc":{
-					"helice_hat":true
+			"minecraft:custom_model_data": 2015096,
+			"minecraft:item_name": "{'text': 'Helice Hat', 'italic': false, 'color': 'white'}",
+			"minecraft:custom_data": {
+				"iyc": {
+					"helice_hat": true
 				},
-				"smithed":{
-					"ignore":{"functionality":true,"crafting":true}
+				"smithed": {
+					"ignore": {"functionality": true,"crafting": true}
 				}
 			}
 		}

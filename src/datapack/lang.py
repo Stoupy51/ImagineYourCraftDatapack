@@ -38,8 +38,8 @@ for file, content in FILES_TO_WRITE.items():
 	# For each line while "text" is in line
 	new_content = []
 	for line in content.split("\n"):
-		line = line.replace('": ', '":')	# Remove space after "text":
-		line = line.replace("': ", "':")	# Remove space after 'text':
+		for p in possibles_texts:
+			line = line.replace(p + " ", p)	# Remove space after "text":
 		new_possibles_texts = [p for p in possibles_texts if p in line]
 		line_progress = 0
 		while any(possible_text in line[line_progress:] for possible_text in new_possibles_texts):

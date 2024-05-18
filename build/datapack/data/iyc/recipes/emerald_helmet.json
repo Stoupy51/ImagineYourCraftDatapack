@@ -1,63 +1,63 @@
 {
-	"type":"minecraft:crafting_shaped",
-	"category":"equipment",
-	"pattern":[
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"pattern": [
 		"XXX",
 		"X X"
 	],
-	"key":{
-		"X":{
-			"item":"minecraft:emerald"
+	"key": {
+		"X": {
+			"item": "minecraft:emerald"
 		}
 	},
-	"result":{
-		"id":"minecraft:leather_helmet",
-		"count":1,
-		"components":{
-			"minecraft:custom_data":{
-				"smithed":{
-					"dict":{"armor":{"emerald":true,"helmet":true}},
-					"ignore":{"functionality":true,"crafting":true}
+	"result": {
+		"id": "minecraft:leather_helmet",
+		"count": 1,
+		"components": {
+			"minecraft:custom_data": {
+				"smithed": {
+					"dict": {"armor": {"emerald": true,"helmet": true}},
+					"ignore": {"functionality": true,"crafting": true}
 				},
-				"iyc":{
-					"emerald_helmet":true
+				"iyc": {
+					"emerald_helmet": true
 				}
 			},
-			"minecraft:dyed_color":{
-				"rgb":2532680,
-				"show_in_tooltip":false
+			"minecraft:dyed_color": {
+				"rgb": 2532680,
+				"show_in_tooltip": false
 			},
-			"minecraft:max_damage":171,
-			"minecraft:attribute_modifiers":[
+			"minecraft:max_damage": 171,
+			"minecraft:attribute_modifiers": [
 				{
-					"type":"generic.armor",
-					"name":"generic.armor",
-					"amount":3,
-					"operation":"add_value",
-					"slot":"head",
-					"uuid":[1,1,2,3]
+					"type": "generic.armor",
+					"name": "generic.armor",
+					"amount": 3,
+					"operation": "add_value",
+					"slot": "head",
+					"uuid": [1,1,2,3]
 				},
 				{
-					"type":"generic.armor_toughness",
-					"name":"generic.armor_toughness",
-					"amount":2,
-					"operation":"add_value",
-					"slot":"head",
-					"uuid":[2,1,2,3]
+					"type": "generic.armor_toughness",
+					"name": "generic.armor_toughness",
+					"amount": 2,
+					"operation": "add_value",
+					"slot": "head",
+					"uuid": [2,1,2,3]
 				},
 				{
-					"type":"generic.luck",
-					"name":"generic.luck",
-					"amount":0.25,
-					"operation":"add_value",
-					"slot":"head",
-					"uuid":[7,13,14,15]
+					"type": "generic.luck",
+					"name": "generic.luck",
+					"amount": 0.25,
+					"operation": "add_value",
+					"slot": "head",
+					"uuid": [7,13,14,15]
 				}
 			],
-			"minecraft:custom_model_data":2015058,
-			"minecraft:item_name":"{'translate':'iyc.emerald_helmet', 'italic':false, 'color':'white'}",
-			"minecraft:lore":[
-				"{'translate':'iyc.imagineyourcraft', 'italic':true, 'color':'blue'}"
+			"minecraft:custom_model_data": 2015058,
+			"minecraft:item_name": "{'text': 'Emerald Helmet', 'italic': false, 'color': 'white'}",
+			"minecraft:lore": [
+				"{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"
 			]
 		}
 	}

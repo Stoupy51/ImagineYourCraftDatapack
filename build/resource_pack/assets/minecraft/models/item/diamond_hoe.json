@@ -1,14 +1,14 @@
 {
-	"parent":"item/handheld",
-	"textures":{
-		"layer0":"item/diamond_hoe"
+	"parent": "item/handheld",
+	"textures": {
+		"layer0": "item/diamond_hoe"
 	},
-	"overrides":[
-		{ "predicate":{ "custom_model_data":2015023}, "model":"iyc:item/sapphire_hoe" },
-		{ "predicate":{ "custom_model_data":2015035}, "model":"iyc:item/ruby_hoe" },
-		{ "predicate":{ "custom_model_data":2015047}, "model":"iyc:item/topaz_hoe" },
-		{ "predicate":{ "custom_model_data":2015057}, "model":"iyc:item/obsidian_hoe" },
-		{ "predicate":{ "custom_model_data":2015066}, "model":"iyc:item/emerald_hoe" }
+	"overrides": [
+		{ "predicate": { "custom_model_data": 2015023}, "model": "iyc:item/sapphire_hoe" },
+		{ "predicate": { "custom_model_data": 2015035}, "model": "iyc:item/ruby_hoe" },
+		{ "predicate": { "custom_model_data": 2015047}, "model": "iyc:item/topaz_hoe" },
+		{ "predicate": { "custom_model_data": 2015057}, "model": "iyc:item/obsidian_hoe" },
+		{ "predicate": { "custom_model_data": 2015066}, "model": "iyc:item/emerald_hoe" }
 	]
 }
 

@@ -1,29 +1,29 @@
 {
-	"pools":[
+	"pools": [
 		{
-			"rolls":1,
-			"entries":[
+			"rolls": 1,
+			"entries": [
 				{
-					"type":"minecraft:item",
-					"name":"minecraft:diamond_hoe",
-					"functions":[
+					"type": "minecraft:item",
+					"name": "minecraft:diamond_hoe",
+					"functions": [
 						{
-							"function":"minecraft:set_components",
-							"components":{
-								"minecraft:custom_data":{
-									"smithed":{"dict":{"tools":{"emerald":true,"hoe":true}},"ignore":{"functionality":true,"crafting":true}},
-									"iyc":{"emerald_hoe":true}
+							"function": "minecraft:set_components",
+							"components": {
+								"minecraft:custom_data": {
+									"smithed": {"dict": {"tools": {"emerald": true,"hoe": true}},"ignore": {"functionality": true,"crafting": true}},
+									"iyc": {"emerald_hoe": true}
 								},
-								"minecraft:max_damage":736,
-								"minecraft:attribute_modifiers":[
-									{"type":"generic.attack_damage","name":"generic.attack_damage","amount":1,"operation":"add_value","slot":"mainhand","uuid":[4,13,14,15]},
-									{"type":"generic.attack_speed","name":"generic.attack_speed","amount":0,"operation":"add_value","slot":"mainhand","uuid":[5,13,14,15]},
-									{"type":"generic.luck","name":"generic.luck","amount":0.25,"operation":"add_value","slot":"mainhand","uuid":[7,13,14,15]}
+								"minecraft:max_damage": 736,
+								"minecraft:attribute_modifiers": [
+									{"type": "generic.attack_damage","name": "generic.attack_damage","amount": 1,"operation": "add_value","slot": "mainhand","uuid": [4,13,14,15]},
+									{"type": "generic.attack_speed","name": "generic.attack_speed","amount": 0,"operation": "add_value","slot": "mainhand","uuid": [5,13,14,15]},
+									{"type": "generic.luck","name": "generic.luck","amount": 0.25,"operation": "add_value","slot": "mainhand","uuid": [7,13,14,15]}
 								],
-								"minecraft:custom_model_data":2015066,
-								"minecraft:item_name":"{'translate':'iyc.emerald_hoe', 'italic':false, 'color':'white'}",
-								"minecraft:lore":[
-									"{'translate':'iyc.imagineyourcraft', 'italic':true, 'color':'blue'}"
+								"minecraft:custom_model_data": 2015066,
+								"minecraft:item_name": "{'text': 'Emerald Hoe', 'italic': false, 'color': 'white'}",
+								"minecraft:lore": [
+									"{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"
 								]
 							}
 						}

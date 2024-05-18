@@ -1,24 +1,24 @@
 {
-	"pools":[
+	"pools": [
 		{
-			"rolls":1,
-			"entries":[
+			"rolls": 1,
+			"entries": [
 				{
-					"type":"minecraft:item",
-					"name":"minecraft:command_block",
-					"functions":[
+					"type": "minecraft:item",
+					"name": "minecraft:command_block",
+					"functions": [
 						{
-							"function":"minecraft:set_components",
-							"components":{
-								"minecraft:lore":[
-									"{'translate':'iyc.uses_steel_nuggets_as_bullets','color':'gray','italic':false}",
-									"{'translate':'iyc.imagineyourcraft', 'italic':true, 'color':'blue'}"
+							"function": "minecraft:set_components",
+							"components": {
+								"minecraft:lore": [
+									"{'text':'Uses steel nuggets as bullets','color':'gray','italic':false}",
+									"{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"
 								],
-								"minecraft:custom_model_data":2015099,
-								"minecraft:item_name":"{'translate':'iyc.l118a', 'italic':false, 'color':'white'}",
-								"minecraft:custom_data":{
-									"iyc":{"l118a":true},
-									"smithed":{"ignore":{"functionality":true,"crafting":true}}
+								"minecraft:custom_model_data": 2015099,
+								"minecraft:item_name": "{'text': 'L118A', 'italic': false, 'color': 'white'}",
+								"minecraft:custom_data": {
+									"iyc": {"l118a": true},
+									"smithed": {"ignore": {"functionality": true,"crafting": true}}
 								}
 							}
 						}

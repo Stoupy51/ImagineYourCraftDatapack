@@ -1,29 +1,29 @@
 {
-	"pools":[
+	"pools": [
 		{
-			"rolls":1,
-			"entries":[
+			"rolls": 1,
+			"entries": [
 				{
-					"type":"minecraft:item",
-					"name":"minecraft:diamond_sword",
-					"functions":[
+					"type": "minecraft:item",
+					"name": "minecraft:diamond_sword",
+					"functions": [
 						{
-							"function":"minecraft:set_components",
-							"components":{
-								"minecraft:custom_data":{
-									"smithed":{"dict":{"tools":{"sapphire":true,"sword":true}},"ignore":{"functionality":true,"crafting":true}},
-									"iyc":{"sapphire_sword":true}
+							"function": "minecraft:set_components",
+							"components": {
+								"minecraft:custom_data": {
+									"smithed": {"dict": {"tools": {"sapphire": true,"sword": true}},"ignore": {"functionality": true,"crafting": true}},
+									"iyc": {"sapphire_sword": true}
 								},
-								"minecraft:max_damage":1752,
-								"minecraft:attribute_modifiers":[
-									{"type":"generic.attack_damage","name":"generic.attack_damage","amount":7,"operation":"add_value","slot":"mainhand","uuid":[4,13,14,15]},
-									{"type":"generic.attack_speed","name":"generic.attack_speed","amount":-2.5,"operation":"add_value","slot":"mainhand","uuid":[5,13,14,15]},
-									{"type":"player.mining_efficiency","name":"player.mining_efficiency","amount":0.2,"operation":"add_value","slot":"mainhand","uuid":[6,13,14,15]}
+								"minecraft:max_damage": 1752,
+								"minecraft:attribute_modifiers": [
+									{"type": "generic.attack_damage","name": "generic.attack_damage","amount": 7,"operation": "add_value","slot": "mainhand","uuid": [4,13,14,15]},
+									{"type": "generic.attack_speed","name": "generic.attack_speed","amount": -2.5,"operation": "add_value","slot": "mainhand","uuid": [5,13,14,15]},
+									{"type": "player.mining_efficiency","name": "player.mining_efficiency","amount": 0.2,"operation": "add_value","slot": "mainhand","uuid": [6,13,14,15]}
 								],
-								"minecraft:custom_model_data":2015019,
-								"minecraft:item_name":"{'translate':'iyc.sapphire_sword', 'italic':false, 'color':'white'}",
-								"minecraft:lore":[
-									"{'translate':'iyc.imagineyourcraft', 'italic':true, 'color':'blue'}"
+								"minecraft:custom_model_data": 2015019,
+								"minecraft:item_name": "{'text': 'Sapphire Sword', 'italic': false, 'color': 'white'}",
+								"minecraft:lore": [
+									"{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"
 								]
 							}
 						}

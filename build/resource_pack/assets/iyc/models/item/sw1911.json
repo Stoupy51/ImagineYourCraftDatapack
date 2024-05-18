@@ -1,7 +1,7 @@
 {
-	"parent":"item/generated",
-	"textures":{
-		"layer0":"iyc:item/sw1911"
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "iyc:item/sw1911"
 	}
 }
 

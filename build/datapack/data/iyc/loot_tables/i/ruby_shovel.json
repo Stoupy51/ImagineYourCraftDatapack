@@ -1,29 +1,29 @@
 {
-	"pools":[
+	"pools": [
 		{
-			"rolls":1,
-			"entries":[
+			"rolls": 1,
+			"entries": [
 				{
-					"type":"minecraft:item",
-					"name":"minecraft:diamond_shovel",
-					"functions":[
+					"type": "minecraft:item",
+					"name": "minecraft:diamond_shovel",
+					"functions": [
 						{
-							"function":"minecraft:set_components",
-							"components":{
-								"minecraft:custom_data":{
-									"smithed":{"dict":{"tools":{"ruby":true,"shovel":true}},"ignore":{"functionality":true,"crafting":true}},
-									"iyc":{"ruby_shovel":true}
+							"function": "minecraft:set_components",
+							"components": {
+								"minecraft:custom_data": {
+									"smithed": {"dict": {"tools": {"ruby": true,"shovel": true}},"ignore": {"functionality": true,"crafting": true}},
+									"iyc": {"ruby_shovel": true}
 								},
-								"minecraft:max_damage":1647,
-								"minecraft:attribute_modifiers":[
-									{"type":"generic.attack_damage","name":"generic.attack_damage","amount":6.0,"operation":"add_value","slot":"mainhand","uuid":[4,13,14,15]},
-									{"type":"generic.attack_speed","name":"generic.attack_speed","amount":-3.0,"operation":"add_value","slot":"mainhand","uuid":[5,13,14,15]},
-									{"type":"player.mining_efficiency","name":"player.mining_efficiency","amount":0.1,"operation":"add_value","slot":"mainhand","uuid":[6,13,14,15]}
+								"minecraft:max_damage": 1647,
+								"minecraft:attribute_modifiers": [
+									{"type": "generic.attack_damage","name": "generic.attack_damage","amount": 6.0,"operation": "add_value","slot": "mainhand","uuid": [4,13,14,15]},
+									{"type": "generic.attack_speed","name": "generic.attack_speed","amount": -3.0,"operation": "add_value","slot": "mainhand","uuid": [5,13,14,15]},
+									{"type": "player.mining_efficiency","name": "player.mining_efficiency","amount": 0.1,"operation": "add_value","slot": "mainhand","uuid": [6,13,14,15]}
 								],
-								"minecraft:custom_model_data":2015034,
-								"minecraft:item_name":"{'translate':'iyc.ruby_shovel', 'italic':false, 'color':'white'}",
-								"minecraft:lore":[
-									"{'translate':'iyc.imagineyourcraft', 'italic':true, 'color':'blue'}"
+								"minecraft:custom_model_data": 2015034,
+								"minecraft:item_name": "{'text': 'Ruby Shovel', 'italic': false, 'color': 'white'}",
+								"minecraft:lore": [
+									"{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"
 								]
 							}
 						}

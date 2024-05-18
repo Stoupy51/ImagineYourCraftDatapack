@@ -1,7 +1,7 @@
 {
-	"condition":"minecraft:location_check",
-	"predicate":{
-		"block":{"blocks":"#iyc:used_vanilla_blocks"}
+	"condition": "minecraft:location_check",
+	"predicate": {
+		"block": {"blocks": "#iyc:used_vanilla_blocks"}
 	}
 }
 

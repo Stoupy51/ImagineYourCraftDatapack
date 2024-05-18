@@ -1,11 +1,11 @@
 {
-	"pools":[
+	"pools": [
 		{
-			"rolls":1,
-			"entries":[
+			"rolls": 1,
+			"entries": [
 				{
-					"type":"minecraft:loot_table",
-					"value":"iyc:i/manual"
+					"type": "minecraft:loot_table",
+					"value": "iyc:i/manual"
 				}
 			]
 		}

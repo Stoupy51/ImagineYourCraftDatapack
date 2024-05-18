@@ -1,17 +1,17 @@
 {
-	"parent":"item/handheld",
-	"textures":{
-		"layer0":"item/leather_leggings",
-		"layer1":"item/leather_leggings_overlay"
+	"parent": "item/handheld",
+	"textures": {
+		"layer0": "item/leather_leggings",
+		"layer1": "item/leather_leggings_overlay"
 	},
-	"overrides":[
-		{ "predicate":{ "custom_model_data":2015005}, "model":"iyc:item/adamantium_leggings" },
-		{ "predicate":{ "custom_model_data":2015017}, "model":"iyc:item/sapphire_leggings" },
-		{ "predicate":{ "custom_model_data":2015029}, "model":"iyc:item/ruby_leggings" },
-		{ "predicate":{ "custom_model_data":2015041}, "model":"iyc:item/topaz_leggings" },
-		{ "predicate":{ "custom_model_data":2015051}, "model":"iyc:item/obsidian_leggings" },
-		{ "predicate":{ "custom_model_data":2015060}, "model":"iyc:item/emerald_leggings" },
-		{ "predicate":{ "custom_model_data":2015073}, "model":"iyc:item/steel_leggings" }
+	"overrides": [
+		{ "predicate": { "custom_model_data": 2015005}, "model": "iyc:item/adamantium_leggings" },
+		{ "predicate": { "custom_model_data": 2015017}, "model": "iyc:item/sapphire_leggings" },
+		{ "predicate": { "custom_model_data": 2015029}, "model": "iyc:item/ruby_leggings" },
+		{ "predicate": { "custom_model_data": 2015041}, "model": "iyc:item/topaz_leggings" },
+		{ "predicate": { "custom_model_data": 2015051}, "model": "iyc:item/obsidian_leggings" },
+		{ "predicate": { "custom_model_data": 2015060}, "model": "iyc:item/emerald_leggings" },
+		{ "predicate": { "custom_model_data": 2015073}, "model": "iyc:item/steel_leggings" }
 	]
 }
 

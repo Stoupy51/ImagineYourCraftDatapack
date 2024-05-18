@@ -1,8 +1,8 @@
 {
-	"values":[
+	"values": [
 		{
-			"id":"#iyc:load/dependencies",
-			"required":false
+			"id": "#iyc:load/dependencies",
+			"required": false
 		},
 		"iyc:load/main"
 	]

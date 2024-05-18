@@ -1,8 +1,8 @@
 {
-	"parent":"item/generated",
-	"textures":{
-		"layer0":"iyc:item/obsidian_boots",
-		"layer1":"iyc:item/obsidian_boots"
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "iyc:item/obsidian_boots",
+		"layer1": "iyc:item/obsidian_boots"
 	}
 }
 

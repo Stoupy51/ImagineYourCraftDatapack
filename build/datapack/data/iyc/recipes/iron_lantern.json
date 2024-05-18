@@ -1,35 +1,35 @@
 {
-	"type":"minecraft:crafting_shapeless",
-	"category":"blocks",
-	"ingredients":[
+	"type": "minecraft:crafting_shapeless",
+	"category": "blocks",
+	"ingredients": [
 		{
-			"item":"minecraft:glowstone"
+			"item": "minecraft:glowstone"
 		},
 		{
-			"item":"minecraft:iron_block"
+			"item": "minecraft:iron_block"
 		}
 	],
-	"result":{
-		"id":"minecraft:furnace",
-		"count":1,
-		"components":{
-			"minecraft:custom_model_data":2015104,
-			"minecraft:item_name":"{'translate':'iyc.iron_lantern', 'italic':false, 'color':'white'}",
-			"minecraft:lore":[
-				"{'translate':'iyc.imagineyourcraft', 'italic':true, 'color':'blue'}"
+	"result": {
+		"id": "minecraft:furnace",
+		"count": 1,
+		"components": {
+			"minecraft:custom_model_data": 2015104,
+			"minecraft:item_name": "{'text': 'Iron Lantern', 'italic': false, 'color': 'white'}",
+			"minecraft:lore": [
+				"{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"
 			],
-			"minecraft:custom_data":{
-				"iyc":{
-					"iron_lantern":true
+			"minecraft:custom_data": {
+				"iyc": {
+					"iron_lantern": true
 				},
-				"smithed":{
-					"ignore":{"functionality":true,"crafting":true}
+				"smithed": {
+					"ignore": {"functionality": true,"crafting": true}
 				}
 			},
-			"minecraft:container":[
+			"minecraft:container": [
 				{
-					"slot":0,
-					"item":{"id":"minecraft:stone","count":1,"components":{"minecraft:custom_data":{"smithed":{"block":{"id":"iyc:iron_lantern","from":"iyc"}}}}}
+					"slot": 0,
+					"item": {"id": "minecraft:stone","count": 1,"components": {"minecraft:custom_data": {"smithed": {"block": {"id": "iyc:iron_lantern","from": "iyc"}}}}}
 				}
 			]
 		}

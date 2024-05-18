@@ -1,10 +1,10 @@
 {
-	"parent":"item/handheld",
-	"textures":{
-		"layer0":"item/netherite_axe"
+	"parent": "item/handheld",
+	"textures": {
+		"layer0": "item/netherite_axe"
 	},
-	"overrides":[
-		{ "predicate":{ "custom_model_data":2015009}, "model":"iyc:item/adamantium_axe" }
+	"overrides": [
+		{ "predicate": { "custom_model_data": 2015009}, "model": "iyc:item/adamantium_axe" }
 	]
 }
 

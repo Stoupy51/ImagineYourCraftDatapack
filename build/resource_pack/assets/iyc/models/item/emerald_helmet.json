@@ -1,8 +1,8 @@
 {
-	"parent":"item/generated",
-	"textures":{
-		"layer0":"iyc:item/emerald_helmet",
-		"layer1":"iyc:item/emerald_helmet"
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "iyc:item/emerald_helmet",
+		"layer1": "iyc:item/emerald_helmet"
 	}
 }
 

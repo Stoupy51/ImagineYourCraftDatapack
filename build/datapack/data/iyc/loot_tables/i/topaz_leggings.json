@@ -1,32 +1,32 @@
 {
-	"pools":[
+	"pools": [
 		{
-			"rolls":1,
-			"entries":[
+			"rolls": 1,
+			"entries": [
 				{
-					"type":"minecraft:item",
-					"name":"minecraft:leather_leggings",
-					"functions":[
+					"type": "minecraft:item",
+					"name": "minecraft:leather_leggings",
+					"functions": [
 						{
-							"function":"minecraft:set_components",
-							"components":{
-								"minecraft:custom_data":{
-									"smithed":{"dict":{"armor":{"topaz":true,"leggings":true}},"ignore":{"functionality":true,"crafting":true}},
-									"iyc":{"topaz_leggings":true}
+							"function": "minecraft:set_components",
+							"components": {
+								"minecraft:custom_data": {
+									"smithed": {"dict": {"armor": {"topaz": true,"leggings": true}},"ignore": {"functionality": true,"crafting": true}},
+									"iyc": {"topaz_leggings": true}
 								},
-								"minecraft:dyed_color":{
-									"rgb":12153387,
-									"show_in_tooltip":false
+								"minecraft:dyed_color": {
+									"rgb": 12153387,
+									"show_in_tooltip": false
 								},
-								"minecraft:max_damage":406,
-								"minecraft:attribute_modifiers":[
-									{"type":"generic.armor","name":"generic.armor","amount":7.0,"operation":"add_value","slot":"legs","uuid":[1,7,8,9]},
-									{"type":"generic.armor_toughness","name":"generic.armor_toughness","amount":2,"operation":"add_value","slot":"legs","uuid":[2,7,8,9]}
+								"minecraft:max_damage": 406,
+								"minecraft:attribute_modifiers": [
+									{"type": "generic.armor","name": "generic.armor","amount": 7.0,"operation": "add_value","slot": "legs","uuid": [1,7,8,9]},
+									{"type": "generic.armor_toughness","name": "generic.armor_toughness","amount": 2,"operation": "add_value","slot": "legs","uuid": [2,7,8,9]}
 								],
-								"minecraft:custom_model_data":2015041,
-								"minecraft:item_name":"{'translate':'iyc.topaz_leggings', 'italic':false, 'color':'white'}",
-								"minecraft:lore":[
-									"{'translate':'iyc.imagineyourcraft', 'italic':true, 'color':'blue'}"
+								"minecraft:custom_model_data": 2015041,
+								"minecraft:item_name": "{'text': 'Topaz Leggings', 'italic': false, 'color': 'white'}",
+								"minecraft:lore": [
+									"{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"
 								]
 							}
 						}

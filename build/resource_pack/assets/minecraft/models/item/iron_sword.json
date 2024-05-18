@@ -1,10 +1,10 @@
 {
-	"parent":"item/handheld",
-	"textures":{
-		"layer0":"item/iron_sword"
+	"parent": "item/handheld",
+	"textures": {
+		"layer0": "item/iron_sword"
 	},
-	"overrides":[
-		{ "predicate":{ "custom_model_data":2015075}, "model":"iyc:item/steel_sword" }
+	"overrides": [
+		{ "predicate": { "custom_model_data": 2015075}, "model": "iyc:item/steel_sword" }
 	]
 }
 

@@ -1,36 +1,36 @@
 {
-	"type":"minecraft:crafting_shapeless",
-	"category":"blocks",
-	"group":"wood_lantern",
-	"ingredients":[
+	"type": "minecraft:crafting_shapeless",
+	"category": "blocks",
+	"group": "wood_lantern",
+	"ingredients": [
 		{
-			"item":"minecraft:glowstone"
+			"item": "minecraft:glowstone"
 		},
 		{
-			"item":"minecraft:jungle_wood"
+			"item": "minecraft:jungle_wood"
 		}
 	],
-	"result":{
-		"id":"minecraft:furnace",
-		"count":1,
-		"components":{
-			"minecraft:custom_model_data":2015101,
-			"minecraft:item_name":"{'translate':'iyc.jungle_wood_lantern', 'italic':false, 'color':'white'}",
-			"minecraft:lore":[
-				"{'translate':'iyc.imagineyourcraft', 'italic':true, 'color':'blue'}"
+	"result": {
+		"id": "minecraft:furnace",
+		"count": 1,
+		"components": {
+			"minecraft:custom_model_data": 2015101,
+			"minecraft:item_name": "{'text': 'Jungle Wood Lantern', 'italic': false, 'color': 'white'}",
+			"minecraft:lore": [
+				"{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"
 			],
-			"minecraft:custom_data":{
-				"iyc":{
-					"jungle_wood_lantern":true
+			"minecraft:custom_data": {
+				"iyc": {
+					"jungle_wood_lantern": true
 				},
-				"smithed":{
-					"ignore":{"functionality":true,"crafting":true}
+				"smithed": {
+					"ignore": {"functionality": true,"crafting": true}
 				}
 			},
-			"minecraft:container":[
+			"minecraft:container": [
 				{
-					"slot":0,
-					"item":{"id":"minecraft:stone","count":1,"components":{"minecraft:custom_data":{"smithed":{"block":{"id":"iyc:jungle_wood_lantern","from":"iyc"}}}}}
+					"slot": 0,
+					"item": {"id": "minecraft:stone","count": 1,"components": {"minecraft:custom_data": {"smithed": {"block": {"id": "iyc:jungle_wood_lantern","from": "iyc"}}}}}
 				}
 			]
 		}

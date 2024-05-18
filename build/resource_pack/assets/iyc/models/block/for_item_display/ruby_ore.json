@@ -1,38 +1,38 @@
 {
-	"parent":"block/cube_all",
-	"textures":{
-		"all":"iyc:block/ruby_ore"
+	"parent": "block/cube_all",
+	"textures": {
+		"all": "iyc:block/ruby_ore"
 	},
-	"display":{
-		"head":{
-			"rotation":[
+	"display": {
+		"head": {
+			"rotation": [
 				0,
 				0,
 				0
 			],
-			"translation":[
+			"translation": [
 				0,
 				-30.42,
 				0
 			],
-			"scale":[
+			"scale": [
 				1.605,
 				1.605,
 				1.605
 			]
 		},
-		"fixed":{
-			"rotation":[
+		"fixed": {
+			"rotation": [
 				-90,
 				0,
 				0
 			],
-			"translation":[
+			"translation": [
 				0,
 				0,
 				-16
 			],
-			"scale":[
+			"scale": [
 				2.0075,
 				2.0075,
 				2.0075

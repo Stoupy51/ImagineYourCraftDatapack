@@ -474,8 +474,9 @@
 		{"type": "bitmap","file": "iyc:font/none.png","ascent": 8,"height": 18,"chars": ["\u0021"]},
 		{"type": "bitmap","file": "iyc:font/none.png","ascent": 7,"height": 7,"chars": ["\u0022"]},
 		{"type": "bitmap","file": "iyc:font/none.png","ascent": 0,"height": 2,"chars": ["\u0023"]},
-		{"type": "bitmap","file": "iyc:font/wiki_information.png","ascent": 8,"height": 16,"chars": ["\u0024"]},
-		{"type": "bitmap","file": "iyc:font/wiki_result_of_craft.png","ascent": 8,"height": 16,"chars": ["\u0025"]},
-		{"type": "bitmap","file": "iyc:font/wiki_ingredient_of_craft.png","ascent": 8,"height": 16,"chars": ["\u0026"]}
+		{"type": "bitmap","file": "iyc:font/none.png","ascent": 7,"height": 16,"chars": ["\u0024"]},
+		{"type": "bitmap","file": "iyc:font/wiki_information.png","ascent": 8,"height": 16,"chars": ["\u0025"]},
+		{"type": "bitmap","file": "iyc:font/wiki_result_of_craft.png","ascent": 8,"height": 16,"chars": ["\u0026"]},
+		{"type": "bitmap","file": "iyc:font/wiki_ingredient_of_craft.png","ascent": 8,"height": 16,"chars": ["\u0027"]}
 	]
 }

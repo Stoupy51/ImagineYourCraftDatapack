@@ -126,9 +126,10 @@ NONE_FONT = get_font(0x0000)
 MEDIUM_NONE_FONT = get_font(0x0001)
 SMALL_NONE_FONT = get_font(0x0002)
 VERY_SMALL_NONE_FONT = get_font(0x0003)
-WIKI_INFO_FONT = get_font(0x0004)
-WIKI_RESULT_OF_CRAFT_FONT = get_font(0x0005)
-WIKI_INGR_OF_CRAFT_FONT = get_font(0x0006)
+WIKI_NONE_FONT = get_font(0x0004)
+WIKI_INFO_FONT = get_font(0x0005)
+WIKI_RESULT_OF_CRAFT_FONT = get_font(0x0006)
+WIKI_INGR_OF_CRAFT_FONT = get_font(0x0007)
 FONT = f"{NAMESPACE}:manual"
 
 # Generate all craft types content

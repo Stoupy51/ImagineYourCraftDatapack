@@ -246,18 +246,20 @@ else:
 						# Re-add last 5 buttons (for good hoverEvent) but we replace the wiki font by the small font
 						content += ["\n"] + [x.copy() for x in content[-5:]]
 						for j in range(5):
-							for to_replace in [WIKI_INFO_FONT, WIKI_RESULT_OF_CRAFT_FONT, WIKI_INGR_OF_CRAFT_FONT]:
-								content[-5 + j]["text"] = SMALL_NONE_FONT * 2 + VERY_SMALL_NONE_FONT * (2 if j != 4 else 0)
+							content[-5 + j]["text"] = WIKI_NONE_FONT + VERY_SMALL_NONE_FONT * (2 if j != 4 else 0)
 						content.append("\n")
 					content.append(button)
 				
 				# Duplicate the last line if not done yet
-				if last_i % 5 != 0:
+				if last_i % 5 != 0 or last_i == 0:
 					last_i = last_i % 5 + 1
+
+					# Remove VERY_SMALL_NONE_FONT from last button to prevent automatic break line
+					content[-1]["text"] = content[-1]["text"].replace(VERY_SMALL_NONE_FONT, "")
+
 					content += ["\n"] + [x.copy() for x in content[-last_i:]]
 					for j in range(last_i):
-						for to_replace in [WIKI_INFO_FONT, WIKI_RESULT_OF_CRAFT_FONT, WIKI_INGR_OF_CRAFT_FONT]:
-							content[-last_i + j]["text"] = SMALL_NONE_FONT * 2 + VERY_SMALL_NONE_FONT * (2 if j != 4 else 0)
+						content[-last_i + j]["text"] = WIKI_NONE_FONT + VERY_SMALL_NONE_FONT * (2 if j != 4 else 0)
 
 		# Add page to the book
 		book_content.append(content)
@@ -354,6 +356,7 @@ else:
 	providers.append({"type":"bitmap","file":f"{NAMESPACE}:font/none.png", "ascent": 8, "height": 18, "chars": [MEDIUM_NONE_FONT]})
 	providers.append({"type":"bitmap","file":f"{NAMESPACE}:font/none.png", "ascent": 7, "height": 7, "chars": [SMALL_NONE_FONT]})
 	providers.append({"type":"bitmap","file":f"{NAMESPACE}:font/none.png", "ascent": 0, "height": 2, "chars": [VERY_SMALL_NONE_FONT]})
+	providers.append({"type":"bitmap","file":f"{NAMESPACE}:font/none.png", "ascent": 7, "height": 16, "chars": [WIKI_NONE_FONT]})
 	providers.append({"type":"bitmap","file":f"{NAMESPACE}:font/wiki_information.png", "ascent": 8, "height": 16, "chars": [WIKI_INFO_FONT]})
 	providers.append({"type":"bitmap","file":f"{NAMESPACE}:font/wiki_result_of_craft.png", "ascent": 8, "height": 16, "chars": [WIKI_RESULT_OF_CRAFT_FONT]})
 	providers.append({"type":"bitmap","file":f"{NAMESPACE}:font/wiki_ingredient_of_craft.png", "ascent": 8, "height": 16, "chars": [WIKI_INGR_OF_CRAFT_FONT]})

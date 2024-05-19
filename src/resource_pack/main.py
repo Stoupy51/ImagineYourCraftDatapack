@@ -3,6 +3,9 @@
 from config import *
 print()
 
+# Add the sounds folder to the resource pack
+import src.resource_pack.sounds
+
 # For each item, copy textures and make models
 import src.resource_pack.item_models
 

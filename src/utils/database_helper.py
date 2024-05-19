@@ -325,6 +325,37 @@ def generate_everything_about_these_ores(database: dict[str, dict], ores: dict[s
 		generated_items[material] = generate_everything_about_this_ore(database, material, config)
 	return generated_items
 
+
+
+# Custom records
+def generate_custom_records(database: dict[str, dict], records: dict[str, str]) -> None:
+	""" Generate custom records by searching in ASSETS_FOLDER/records/ for the files and copying them to the database and resource pack folder.
+	Args:
+		database	(dict[str, dict]):	The database to add the custom records items to.
+		records		(dict[str, str]):	The custom records to apply, ex: {"record_1": "My first Record.ogg", "record_2": "A second one.ogg"}
+	"""
+	for record, sound in records.items():
+		item_name = ".".join(sound.split(".")[:-1])	# Remove the file extension
+		database[record] = {
+			"id": CUSTOM_ITEM_VANILLA,
+			"custom_data": {NAMESPACE:{record: True}, "smithed":{"dict":{"record": {record: True}}}},
+			"item_name": json.dumps({"text": item_name, "italic":False,"color":"white"}).replace('"', "'"),
+		}
+
+		# Copy sound to resource pack
+		file_path = f"{ASSETS_FOLDER}/records/{sound}"
+		if os.path.exists(file_path):
+			super_copy(file_path, f"{BUILD_RESOURCE_PACK}/assets/{NAMESPACE}/sounds/{record}.ogg")
+
+			json_sound = {"category": "music", "sounds": [{"name": f"{NAMESPACE}:{record}","stream": True}]}
+			json_sound = {record: json_sound}
+			write_to_file(f"{BUILD_RESOURCE_PACK}/assets/{NAMESPACE}/sounds.json", json.dumps(json_sound))
+		else:
+			warning(f"Error during custom record generation: path '{file_path}' does not exist")
+
+
+
+
 # Deterministic custom model data
 def deterministic_custom_model_data(database: dict[str, dict], starting_cmd: int, cache_path: str = CMD_CACHE) -> None:
 	""" Apply custom model data to all items using a cache method.

@@ -35,7 +35,29 @@
 		{ "predicate": { "custom_model_data": 2015136}, "model": "iyc:item/quiver" },
 		{ "predicate": { "custom_model_data": 2015138}, "model": "iyc:item/screwdriver" },
 		{ "predicate": { "custom_model_data": 2015139}, "model": "iyc:item/old_ruby" },
-		{ "predicate": { "custom_model_data": 2015140}, "model": "iyc:item/stone_stick" }
+		{ "predicate": { "custom_model_data": 2015140}, "model": "iyc:item/stone_stick" },
+		{ "predicate": { "custom_model_data": 2015141}, "model": "iyc:item/record_1" },
+		{ "predicate": { "custom_model_data": 2015142}, "model": "iyc:item/record_2" },
+		{ "predicate": { "custom_model_data": 2015143}, "model": "iyc:item/record_3" },
+		{ "predicate": { "custom_model_data": 2015144}, "model": "iyc:item/record_4" },
+		{ "predicate": { "custom_model_data": 2015145}, "model": "iyc:item/record_5" },
+		{ "predicate": { "custom_model_data": 2015146}, "model": "iyc:item/record_6" },
+		{ "predicate": { "custom_model_data": 2015147}, "model": "iyc:item/record_7" },
+		{ "predicate": { "custom_model_data": 2015148}, "model": "iyc:item/record_8" },
+		{ "predicate": { "custom_model_data": 2015149}, "model": "iyc:item/record_9" },
+		{ "predicate": { "custom_model_data": 2015150}, "model": "iyc:item/record_10" },
+		{ "predicate": { "custom_model_data": 2015151}, "model": "iyc:item/record_11" },
+		{ "predicate": { "custom_model_data": 2015152}, "model": "iyc:item/record_12" },
+		{ "predicate": { "custom_model_data": 2015153}, "model": "iyc:item/record_13" },
+		{ "predicate": { "custom_model_data": 2015154}, "model": "iyc:item/record_14" },
+		{ "predicate": { "custom_model_data": 2015155}, "model": "iyc:item/record_15" },
+		{ "predicate": { "custom_model_data": 2015156}, "model": "iyc:item/record_16" },
+		{ "predicate": { "custom_model_data": 2015157}, "model": "iyc:item/record_17" },
+		{ "predicate": { "custom_model_data": 2015158}, "model": "iyc:item/record_18" },
+		{ "predicate": { "custom_model_data": 2015159}, "model": "iyc:item/record_19" },
+		{ "predicate": { "custom_model_data": 2015160}, "model": "iyc:item/record_20" },
+		{ "predicate": { "custom_model_data": 2015161}, "model": "iyc:item/record_21" },
+		{ "predicate": { "custom_model_data": 2015162}, "model": "iyc:item/record_22" }
 	]
 }
 

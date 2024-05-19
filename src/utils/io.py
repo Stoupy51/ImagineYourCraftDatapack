@@ -104,7 +104,9 @@ def super_merge_dict(dict1: dict, dict2: dict) -> dict:
 		
 		# Else if it's a list, merge it
 		elif key in dict1 and isinstance(dict1[key], list) and isinstance(value, list):
-			new_dict[key] = list(set(dict1[key] + value))
+			new_dict[key] = dict1[key] + value
+			if not any(isinstance(x, dict) for x in new_dict[key]):
+				new_dict[key] = list(set(new_dict[key]))
 		
 		# Else, just overwrite or add value
 		else:
@@ -126,6 +128,13 @@ def write_to_file(file_path: str, content: str, overwrite: bool = False):
 	# If file doesn't exists or overwrite is true, made it empty
 	if file_path not in FILES_TO_WRITE or overwrite:
 		FILES_TO_WRITE[file_path] = ""
+	
+	# If the file already exists as JSON and the content is a dict, merge both dict
+	if not overwrite and file_path in FILES_TO_WRITE and file_path.endswith(".json") and FILES_TO_WRITE[file_path] != "":
+		dict_content = json.loads(content)
+		old_content = json.loads(FILES_TO_WRITE[file_path])
+		FILES_TO_WRITE[file_path] = super_json_dump(super_merge_dict(old_content, dict_content))
+		return
 	
 	# Add the content to the file
 	FILES_TO_WRITE[file_path] += str(content)

@@ -1435,5 +1435,159 @@
 		"item_name": "{'text': 'Old Ruby', 'italic': false, 'color': 'white'}",
 		"lore": ["{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"],
 		"custom_data": {"iyc": {"old_ruby": true},"smithed": {"ignore": {"functionality": true,"crafting": true}}}
+	},
+	"record_1": {
+		"id": "minecraft:command_block",
+		"custom_data": {"iyc": {"record_1": true},"smithed": {"dict": {"record": {"record_1": true}},"ignore": {"functionality": true,"crafting": true}}},
+		"item_name": "{'text': 'AntVenom - The Miner', 'italic': false, 'color': 'white'}",
+		"custom_model_data": 2015141,
+		"lore": ["{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"]
+	},
+	"record_2": {
+		"id": "minecraft:command_block",
+		"custom_data": {"iyc": {"record_2": true},"smithed": {"dict": {"record": {"record_2": true}},"ignore": {"functionality": true,"crafting": true}}},
+		"item_name": "{'text': 'BebopVox - Don't Mine At Night', 'italic': false, 'color': 'white'}",
+		"custom_model_data": 2015142,
+		"lore": ["{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"]
+	},
+	"record_3": {
+		"id": "minecraft:command_block",
+		"custom_data": {"iyc": {"record_3": true},"smithed": {"dict": {"record": {"record_3": true}},"ignore": {"functionality": true,"crafting": true}}},
+		"item_name": "{'text': 'CaptainSparklez - Fallen Kingdom', 'italic': false, 'color': 'white'}",
+		"custom_model_data": 2015143,
+		"lore": ["{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"]
+	},
+	"record_4": {
+		"id": "minecraft:command_block",
+		"custom_data": {"iyc": {"record_4": true},"smithed": {"dict": {"record": {"record_4": true}},"ignore": {"functionality": true,"crafting": true}}},
+		"item_name": "{'text': 'CaptainSparklez - Minecraft Style', 'italic': false, 'color': 'white'}",
+		"custom_model_data": 2015144,
+		"lore": ["{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"]
+	},
+	"record_5": {
+		"id": "minecraft:command_block",
+		"custom_data": {"iyc": {"record_5": true},"smithed": {"dict": {"record": {"record_5": true}},"ignore": {"functionality": true,"crafting": true}}},
+		"item_name": "{'text': 'CaptainSparklez - Revenge', 'italic': false, 'color': 'white'}",
+		"custom_model_data": 2015145,
+		"lore": ["{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"]
+	},
+	"record_6": {
+		"id": "minecraft:command_block",
+		"custom_data": {"iyc": {"record_6": true},"smithed": {"dict": {"record": {"record_6": true}},"ignore": {"functionality": true,"crafting": true}}},
+		"item_name": "{'text': 'CaptainSparklez - Tack Back the Night', 'italic': false, 'color': 'white'}",
+		"custom_model_data": 2015146,
+		"lore": ["{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"]
+	},
+	"record_7": {
+		"id": "minecraft:command_block",
+		"custom_data": {"iyc": {"record_7": true},"smithed": {"dict": {"record": {"record_7": true}},"ignore": {"functionality": true,"crafting": true}}},
+		"item_name": "{'text': 'CaptainSparklez - TNT', 'italic': false, 'color': 'white'}",
+		"custom_model_data": 2015147,
+		"lore": ["{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"]
+	},
+	"record_8": {
+		"id": "minecraft:command_block",
+		"custom_data": {"iyc": {"record_8": true},"smithed": {"dict": {"record": {"record_8": true}},"ignore": {"functionality": true,"crafting": true}}},
+		"item_name": "{'text': 'Gunther - You touch my tralala', 'italic': false, 'color': 'white'}",
+		"custom_model_data": 2015148,
+		"lore": ["{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"]
+	},
+	"record_9": {
+		"id": "minecraft:command_block",
+		"custom_data": {"iyc": {"record_9": true},"smithed": {"dict": {"record": {"record_9": true}},"ignore": {"functionality": true,"crafting": true}}},
+		"item_name": "{'text': 'GuzzProduction - Bouge Ton Cube', 'italic': false, 'color': 'white'}",
+		"custom_model_data": 2015149,
+		"lore": ["{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"]
+	},
+	"record_10": {
+		"id": "minecraft:command_block",
+		"custom_data": {"iyc": {"record_10": true},"smithed": {"dict": {"record": {"record_10": true}},"ignore": {"functionality": true,"crafting": true}}},
+		"item_name": "{'text': 'Lokoise - ACTA', 'italic': false, 'color': 'white'}",
+		"custom_model_data": 2015150,
+		"lore": ["{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"]
+	},
+	"record_11": {
+		"id": "minecraft:command_block",
+		"custom_data": {"iyc": {"record_11": true},"smithed": {"dict": {"record": {"record_11": true}},"ignore": {"functionality": true,"crafting": true}}},
+		"item_name": "{'text': 'Lokoise - Bug de chunks', 'italic': false, 'color': 'white'}",
+		"custom_model_data": 2015151,
+		"lore": ["{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"]
+	},
+	"record_12": {
+		"id": "minecraft:command_block",
+		"custom_data": {"iyc": {"record_12": true},"smithed": {"dict": {"record": {"record_12": true}},"ignore": {"functionality": true,"crafting": true}}},
+		"item_name": "{'text': 'Lokoise - J'aime le creep'', 'italic': false, 'color': 'white'}",
+		"custom_model_data": 2015152,
+		"lore": ["{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"]
+	},
+	"record_13": {
+		"id": "minecraft:command_block",
+		"custom_data": {"iyc": {"record_13": true},"smithed": {"dict": {"record": {"record_13": true}},"ignore": {"functionality": true,"crafting": true}}},
+		"item_name": "{'text': 'Lokoise - Je me give', 'italic': false, 'color': 'white'}",
+		"custom_model_data": 2015153,
+		"lore": ["{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"]
+	},
+	"record_14": {
+		"id": "minecraft:command_block",
+		"custom_data": {"iyc": {"record_14": true},"smithed": {"dict": {"record": {"record_14": true}},"ignore": {"functionality": true,"crafting": true}}},
+		"item_name": "{'text': 'Lokoise - J'fais des pelles en diam's', 'italic': false, 'color': 'white'}",
+		"custom_model_data": 2015154,
+		"lore": ["{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"]
+	},
+	"record_15": {
+		"id": "minecraft:command_block",
+		"custom_data": {"iyc": {"record_15": true},"smithed": {"dict": {"record": {"record_15": true}},"ignore": {"functionality": true,"crafting": true}}},
+		"item_name": "{'text': 'Lokoise - J'geek un max', 'italic': false, 'color': 'white'}",
+		"custom_model_data": 2015155,
+		"lore": ["{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"]
+	},
+	"record_16": {
+		"id": "minecraft:command_block",
+		"custom_data": {"iyc": {"record_16": true},"smithed": {"dict": {"record": {"record_16": true}},"ignore": {"functionality": true,"crafting": true}}},
+		"item_name": "{'text': 'Lokoise - J'suis Sean K\\u00e9vin', 'italic': false, 'color': 'white'}",
+		"custom_model_data": 2015156,
+		"lore": ["{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"]
+	},
+	"record_17": {
+		"id": "minecraft:command_block",
+		"custom_data": {"iyc": {"record_17": true},"smithed": {"dict": {"record": {"record_17": true}},"ignore": {"functionality": true,"crafting": true}}},
+		"item_name": "{'text': 'Lokoise - Le journal d'un naufragay', 'italic': false, 'color': 'white'}",
+		"custom_model_data": 2015157,
+		"lore": ["{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"]
+	},
+	"record_18": {
+		"id": "minecraft:command_block",
+		"custom_data": {"iyc": {"record_18": true},"smithed": {"dict": {"record": {"record_18": true}},"ignore": {"functionality": true,"crafting": true}}},
+		"item_name": "{'text': 'Lokoise - Tous les zombies', 'italic': false, 'color': 'white'}",
+		"custom_model_data": 2015158,
+		"lore": ["{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"]
+	},
+	"record_19": {
+		"id": "minecraft:command_block",
+		"custom_data": {"iyc": {"record_19": true},"smithed": {"dict": {"record": {"record_19": true}},"ignore": {"functionality": true,"crafting": true}}},
+		"item_name": "{'text': 'Lokoise - Un d\\u00e9bit tout pourri', 'italic': false, 'color': 'white'}",
+		"custom_model_data": 2015159,
+		"lore": ["{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"]
+	},
+	"record_20": {
+		"id": "minecraft:command_block",
+		"custom_data": {"iyc": {"record_20": true},"smithed": {"dict": {"record": {"record_20": true}},"ignore": {"functionality": true,"crafting": true}}},
+		"item_name": "{'text': 'ReAperr & MrElvilia - Mauvaise Id\\u00e9e', 'italic': false, 'color': 'white'}",
+		"custom_model_data": 2015160,
+		"lore": ["{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"]
+	},
+	"record_21": {
+		"id": "minecraft:command_block",
+		"custom_data": {"iyc": {"record_21": true},"smithed": {"dict": {"record": {"record_21": true}},"ignore": {"functionality": true,"crafting": true}}},
+		"item_name": "{'text': 'TheDudesCraft - GAGAOUTAI', 'italic': false, 'color': 'white'}",
+		"custom_model_data": 2015161,
+		"lore": ["{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"]
+	},
+	"record_22": {
+		"id": "minecraft:command_block",
+		"custom_data": {"iyc": {"record_22": true},"smithed": {"dict": {"record": {"record_22": true}},"ignore": {"functionality": true,"crafting": true}}},
+		"item_name": "{'text': 'TryHardNinja - That Girl is Crafty', 'italic': false, 'color': 'white'}",
+		"custom_model_data": 2015162,
+		"lore": ["{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"]
 	}
 }

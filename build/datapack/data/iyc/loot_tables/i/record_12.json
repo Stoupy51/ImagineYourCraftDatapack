@@ -1,0 +1,30 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:command_block",
+					"functions": [
+						{
+							"function": "minecraft:set_components",
+							"components": {
+								"minecraft:custom_data": {
+									"iyc": {"record_12": true},
+									"smithed": {"dict": {"record": {"record_12": true}},"ignore": {"functionality": true,"crafting": true}}
+								},
+								"minecraft:item_name": "{'text': 'Lokoise - J'aime le creep'', 'italic': false, 'color': 'white'}",
+								"minecraft:custom_model_data": 2015152,
+								"minecraft:lore": [
+									"{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"
+								]
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

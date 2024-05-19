@@ -1,5 +1,5 @@
 
-# Script that converts all mp3 files in the current directory to ogg files.
+# Script that converts all mp3 files in and bellow the current directory to ogg files.
 # Requires ffmpeg to be installed.
 
 import os

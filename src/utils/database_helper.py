@@ -328,7 +328,7 @@ def generate_everything_about_these_ores(database: dict[str, dict], ores: dict[s
 
 
 # Custom records
-def generate_custom_records(database: dict[str, dict], records: dict[str, str]) -> None:
+def generate_custom_records(database: dict[str, dict], records: dict[str, str], category: str|None = None) -> None:
 	""" Generate custom records by searching in ASSETS_FOLDER/records/ for the files and copying them to the database and resource pack folder.
 	Args:
 		database	(dict[str, dict]):	The database to add the custom records items to.
@@ -339,8 +339,10 @@ def generate_custom_records(database: dict[str, dict], records: dict[str, str]) 
 		database[record] = {
 			"id": CUSTOM_ITEM_VANILLA,
 			"custom_data": {NAMESPACE:{record: True}, "smithed":{"dict":{"record": {record: True}}}},
-			"item_name": json.dumps({"text": item_name, "italic":False,"color":"white"}).replace('"', "'"),
+			"item_name": json.dumps({"text": item_name, "italic":False,"color":"white"}).replace("'", "\\'").replace('"', "'"),
 		}
+		if category:
+			database[record][CATEGORY] = category
 
 		# Copy sound to resource pack
 		file_path = f"{ASSETS_FOLDER}/records/{sound}"
@@ -423,7 +425,7 @@ def add_item_name_and_lore_if_missing(database: dict[str, dict]) -> None:
 		# Add item name if none
 		if not data.get("item_name"):
 			item_str = item.replace("_"," ").title()
-			data["item_name"] = json.dumps( {"text": item_str, "italic": False, "color":"white"} ).replace('"', "'")
+			data["item_name"] = json.dumps( {"text": item_str, "italic": False, "color":"white"} ).replace("'", "\\'").replace('"', "'")
 
 		# Apply namespaced lore if none
 		if not data.get("lore"):

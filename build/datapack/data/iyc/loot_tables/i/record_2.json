@@ -14,7 +14,7 @@
 									"iyc": {"record_2": true},
 									"smithed": {"dict": {"record": {"record_2": true}},"ignore": {"functionality": true,"crafting": true}}
 								},
-								"minecraft:item_name": "{'text': 'BebopVox - Don't Mine At Night', 'italic': false, 'color': 'white'}",
+								"minecraft:item_name": "{'text': 'BebopVox - Don\\'t Mine At Night', 'italic': false, 'color': 'white'}",
 								"minecraft:custom_model_data": 2015142,
 								"minecraft:lore": [
 									"{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"

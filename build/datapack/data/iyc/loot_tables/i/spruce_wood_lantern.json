@@ -10,7 +10,7 @@
 						{
 							"function": "minecraft:set_components",
 							"components": {
-								"minecraft:custom_model_data": 2015103,
+								"minecraft:custom_model_data": 2015104,
 								"minecraft:item_name": "{'text': 'Spruce Wood Lantern', 'italic': false, 'color': 'white'}",
 								"minecraft:lore": [
 									"{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"

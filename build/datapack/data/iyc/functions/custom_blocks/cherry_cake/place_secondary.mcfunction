@@ -14,7 +14,7 @@ tag @s add iyc.cherry_cake
 tag @s add iyc.vanilla.minecraft_cake
 
 # Modify item display entity to match the custom block
-item replace entity @s container.0 with deepslate[minecraft:custom_model_data=2015124]
+item replace entity @s container.0 with deepslate[minecraft:custom_model_data=2015125]
 data modify entity @s transformation.scale set value [1.002f,1.002f,1.002f]
 data modify entity @s brightness set value {block:15,sky:15}
 

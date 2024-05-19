@@ -14,7 +14,7 @@
 									"smithed": {"dict": {"stick": {"stone": true}},"ignore": {"functionality": true,"crafting": true}},
 									"iyc": {"stone_stick": true}
 								},
-								"minecraft:custom_model_data": 2015140,
+								"minecraft:custom_model_data": 2015086,
 								"minecraft:item_name": "{'text': 'Stone Stick', 'italic': false, 'color': 'white'}",
 								"minecraft:lore": [
 									"{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"

@@ -27,7 +27,7 @@
 					"slot": "head"
 				}
 			],
-			"minecraft:custom_model_data": 2015096,
+			"minecraft:custom_model_data": 2015097,
 			"minecraft:item_name": "{'text': 'Helice Hat', 'italic': false, 'color': 'white'}",
 			"minecraft:custom_data": {
 				"iyc": {

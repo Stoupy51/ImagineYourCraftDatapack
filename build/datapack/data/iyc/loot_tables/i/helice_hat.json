@@ -17,7 +17,7 @@
 								"minecraft:attribute_modifiers": [
 									{"type": "generic.gravity","uuid": [16052024,1,1,1],"name": "generic.gravity","amount": -0.09,"operation": "add_value","slot": "head"}
 								],
-								"minecraft:custom_model_data": 2015096,
+								"minecraft:custom_model_data": 2015097,
 								"minecraft:item_name": "{'text': 'Helice Hat', 'italic': false, 'color': 'white'}",
 								"minecraft:custom_data": {
 									"iyc": {"helice_hat": true},

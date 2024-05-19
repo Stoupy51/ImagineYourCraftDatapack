@@ -12,7 +12,7 @@
 		{ "predicate": { "custom_model_data": 2015049}, "model": "iyc:item/obsidian_helmet" },
 		{ "predicate": { "custom_model_data": 2015058}, "model": "iyc:item/emerald_helmet" },
 		{ "predicate": { "custom_model_data": 2015071}, "model": "iyc:item/steel_helmet" },
-		{ "predicate": { "custom_model_data": 2015096}, "model": "iyc:item/helice_hat" }
+		{ "predicate": { "custom_model_data": 2015097}, "model": "iyc:item/helice_hat" }
 	]
 }
 

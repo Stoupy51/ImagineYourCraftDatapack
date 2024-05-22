@@ -1,0 +1,31 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:command_block",
+					"functions": [
+						{
+							"function": "minecraft:set_components",
+							"components": {
+								"minecraft:lore": [
+									"{'text':'Uses steel nuggets as bullets','color':'gray','italic':false}",
+									"{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"
+								],
+								"minecraft:custom_model_data": 2015100,
+								"minecraft:item_name": "{'text': 'L118A', 'italic': false, 'color': 'white'}",
+								"minecraft:custom_data": {
+									"iyc": {"l118a": true},
+									"smithed": {"ignore": {"functionality": true,"crafting": true}}
+								}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

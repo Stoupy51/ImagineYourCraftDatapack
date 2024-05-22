@@ -1,0 +1,22 @@
+{
+	"condition": "minecraft:any_of",
+	"terms": [
+		{"condition": "minecraft:entity_properties","entity": "this","predicate": {"nbt": "{Tags:[\"iyc.vanilla.minecraft_cake\"]}","location": {"block": {"blocks": ["minecraft:cake"]}}}},
+		{"condition": "minecraft:entity_properties","entity": "this","predicate": {"nbt": "{Tags:[\"iyc.vanilla.minecraft_coal_block\"]}","location": {"block": {"blocks": ["minecraft:coal_block"]}}}},
+		{"condition": "minecraft:entity_properties","entity": "this","predicate": {"nbt": "{Tags:[\"iyc.vanilla.minecraft_diamond_block\"]}","location": {"block": {"blocks": ["minecraft:diamond_block"]}}}},
+		{"condition": "minecraft:entity_properties","entity": "this","predicate": {"nbt": "{Tags:[\"iyc.vanilla.minecraft_furnace\"]}","location": {"block": {"blocks": ["minecraft:furnace"]}}}},
+		{"condition": "minecraft:entity_properties","entity": "this","predicate": {"nbt": "{Tags:[\"iyc.vanilla.minecraft_glass\"]}","location": {"block": {"blocks": ["minecraft:glass"]}}}},
+		{"condition": "minecraft:entity_properties","entity": "this","predicate": {"nbt": "{Tags:[\"iyc.vanilla.minecraft_iron_block\"]}","location": {"block": {"blocks": ["minecraft:iron_block"]}}}},
+		{"condition": "minecraft:entity_properties","entity": "this","predicate": {"nbt": "{Tags:[\"iyc.vanilla.minecraft_ladder\"]}","location": {"block": {"blocks": ["minecraft:ladder"]}}}},
+		{"condition": "minecraft:entity_properties","entity": "this","predicate": {"nbt": "{Tags:[\"iyc.vanilla.minecraft_netherite_block\"]}","location": {"block": {"blocks": ["minecraft:netherite_block"]}}}},
+		{"condition": "minecraft:entity_properties","entity": "this","predicate": {"nbt": "{Tags:[\"iyc.vanilla.minecraft_oak_planks\"]}","location": {"block": {"blocks": ["minecraft:oak_planks"]}}}},
+		{"condition": "minecraft:entity_properties","entity": "this","predicate": {"nbt": "{Tags:[\"iyc.vanilla.minecraft_ochre_froglight\"]}","location": {"block": {"blocks": ["minecraft:ochre_froglight"]}}}},
+		{"condition": "minecraft:entity_properties","entity": "this","predicate": {"nbt": "{Tags:[\"iyc.vanilla.minecraft_polished_deepslate\"]}","location": {"block": {"blocks": ["minecraft:polished_deepslate"]}}}},
+		{"condition": "minecraft:entity_properties","entity": "this","predicate": {"nbt": "{Tags:[\"iyc.vanilla.minecraft_red_concrete\"]}","location": {"block": {"blocks": ["minecraft:red_concrete"]}}}},
+		{"condition": "minecraft:entity_properties","entity": "this","predicate": {"nbt": "{Tags:[\"iyc.vanilla.minecraft_structure_void\"]}","location": {"block": {"blocks": ["minecraft:structure_void"]}}}},
+		{"condition": "minecraft:entity_properties","entity": "this","predicate": {"nbt": "{Tags:[\"iyc.vanilla.minecraft_tnt\"]}","location": {"block": {"blocks": ["minecraft:tnt"]}}}},
+		{"condition": "minecraft:entity_properties","entity": "this","predicate": {"nbt": "{Tags:[\"iyc.vanilla.minecraft_torch\"]}","location": {"block": {"blocks": ["minecraft:torch"]}}}},
+		{"condition": "minecraft:entity_properties","entity": "this","predicate": {"nbt": "{Tags:[\"iyc.vanilla.minecraft_wheat\"]}","location": {"block": {"blocks": ["minecraft:wheat"]}}}}
+	]
+}
+

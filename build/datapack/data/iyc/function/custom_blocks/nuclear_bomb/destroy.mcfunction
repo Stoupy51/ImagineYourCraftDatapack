@@ -1,0 +1,12 @@
+
+#> iyc:custom_blocks/nuclear_bomb/destroy
+#
+# @within	iyc:custom_blocks/_groups/minecraft_tnt
+#
+
+# Replace the item with the custom one
+execute as @e[type=item,nbt={Item:{id:"minecraft:tnt"}},limit=1,sort=nearest,distance=..1] run function iyc:custom_blocks/nuclear_bomb/replace_item
+
+# Kill the custom block entity
+kill @s
+

@@ -1,0 +1,34 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:leather_helmet",
+					"functions": [
+						{
+							"function": "minecraft:set_components",
+							"components": {
+								"minecraft:lore": [
+									"{'text':'A hat that makes you fly','color':'gray','italic':false}",
+									"{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"
+								],
+								"minecraft:attribute_modifiers": [
+									{"type": "generic.gravity","amount": -0.09,"operation": "add_value","slot": "head","id": "iyc:generic.gravity.head"}
+								],
+								"minecraft:custom_model_data": 2015097,
+								"minecraft:item_name": "{'text': 'Helice Hat', 'italic': false, 'color': 'white'}",
+								"minecraft:custom_data": {
+									"iyc": {"helice_hat": true},
+									"smithed": {"ignore": {"functionality": true,"crafting": true}}
+								}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

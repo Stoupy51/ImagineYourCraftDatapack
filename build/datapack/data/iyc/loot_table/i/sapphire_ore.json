@@ -1,0 +1,33 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:furnace",
+					"functions": [
+						{
+							"function": "minecraft:set_components",
+							"components": {
+								"minecraft:custom_data": {
+									"smithed": {"dict": {"block": {"sapphire": true},"ore": {"sapphire": true}},"ignore": {"functionality": true,"crafting": true}},
+									"iyc": {"sapphire_ore": true}
+								},
+								"minecraft:custom_model_data": 2015013,
+								"minecraft:item_name": "{'text': 'Sapphire Ore', 'italic': false, 'color': 'white'}",
+								"minecraft:lore": [
+									"{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"
+								],
+								"minecraft:container": [
+									{"slot": 0,"item": {"id": "minecraft:stone","count": 1,"components": {"minecraft:custom_data": {"smithed": {"block": {"id": "iyc:sapphire_ore","from": "iyc"}}}}}}
+								]
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

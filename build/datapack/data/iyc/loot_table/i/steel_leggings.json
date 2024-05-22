@@ -1,0 +1,38 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:leather_leggings",
+					"functions": [
+						{
+							"function": "minecraft:set_components",
+							"components": {
+								"minecraft:custom_data": {
+									"smithed": {"dict": {"armor": {"steel": true,"leggings": true}},"ignore": {"functionality": true,"crafting": true}},
+									"iyc": {"steel_leggings": true}
+								},
+								"minecraft:dyed_color": {
+									"rgb": 5460819,
+									"show_in_tooltip": false
+								},
+								"minecraft:max_damage": 399,
+								"minecraft:attribute_modifiers": [
+									{"type": "generic.armor","amount": 5,"operation": "add_value","slot": "legs","id": "iyc:generic.armor.legs"}
+								],
+								"minecraft:custom_model_data": 2015073,
+								"minecraft:item_name": "{'text': 'Steel Leggings', 'italic': false, 'color': 'white'}",
+								"minecraft:lore": [
+									"{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"
+								]
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

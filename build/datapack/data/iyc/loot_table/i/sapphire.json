@@ -1,0 +1,30 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:command_block",
+					"functions": [
+						{
+							"function": "minecraft:set_components",
+							"components": {
+								"minecraft:custom_data": {
+									"smithed": {"dict": {"sapphire": {"sapphire": true}},"ignore": {"functionality": true,"crafting": true}},
+									"iyc": {"sapphire": true}
+								},
+								"minecraft:custom_model_data": 2015014,
+								"minecraft:item_name": "{'text': 'Sapphire', 'italic': false, 'color': 'white'}",
+								"minecraft:lore": [
+									"{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"
+								]
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

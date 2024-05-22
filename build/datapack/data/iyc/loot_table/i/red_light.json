@@ -1,0 +1,33 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:furnace",
+					"functions": [
+						{
+							"function": "minecraft:set_components",
+							"components": {
+								"minecraft:custom_model_data": 2015106,
+								"minecraft:item_name": "{'text': 'Red Light', 'italic': false, 'color': 'white'}",
+								"minecraft:lore": [
+									"{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"
+								],
+								"minecraft:custom_data": {
+									"iyc": {"red_light": true},
+									"smithed": {"ignore": {"functionality": true,"crafting": true}}
+								},
+								"minecraft:container": [
+									{"slot": 0,"item": {"id": "minecraft:stone","count": 1,"components": {"minecraft:custom_data": {"smithed": {"block": {"id": "iyc:red_light","from": "iyc"}}}}}}
+								]
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

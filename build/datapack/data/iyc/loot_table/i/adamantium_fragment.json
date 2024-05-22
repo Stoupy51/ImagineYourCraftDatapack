@@ -1,0 +1,30 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:command_block",
+					"functions": [
+						{
+							"function": "minecraft:set_components",
+							"components": {
+								"minecraft:custom_data": {
+									"smithed": {"dict": {"fragment": {"adamantium": true}},"ignore": {"functionality": true,"crafting": true}},
+									"iyc": {"adamantium_fragment": true}
+								},
+								"minecraft:custom_model_data": 2015002,
+								"minecraft:item_name": "{'text': 'Adamantium Fragment', 'italic': false, 'color': 'white'}",
+								"minecraft:lore": [
+									"{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"
+								]
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

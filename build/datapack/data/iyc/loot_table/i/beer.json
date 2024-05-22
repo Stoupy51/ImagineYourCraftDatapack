@@ -1,0 +1,36 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:command_block",
+					"functions": [
+						{
+							"function": "minecraft:set_components",
+							"components": {
+								"minecraft:food": {
+									"can_always_eat": true,
+									"nutrition": 2,
+									"saturation": 0.6,
+									"effects": [{"effect": {"id": "minecraft:nausea","duration": 600,"amplifier": 0},"probability": 1.0}]
+								},
+								"minecraft:custom_model_data": 2015123,
+								"minecraft:item_name": "{'text': 'Beer', 'italic': false, 'color': 'white'}",
+								"minecraft:lore": [
+									"{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"
+								],
+								"minecraft:custom_data": {
+									"iyc": {"beer": true},
+									"smithed": {"ignore": {"functionality": true,"crafting": true}}
+								}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

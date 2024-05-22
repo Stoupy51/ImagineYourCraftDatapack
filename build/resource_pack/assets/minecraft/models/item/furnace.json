@@ -1,0 +1,37 @@
+{
+	"parent": "block/furnace",
+	"overrides": [
+		{ "predicate": { "custom_model_data": 2015000}, "model": "iyc:block/adamantium_block" },
+		{ "predicate": { "custom_model_data": 2015001}, "model": "iyc:block/adamantium_ore" },
+		{ "predicate": { "custom_model_data": 2015012}, "model": "iyc:block/sapphire_block" },
+		{ "predicate": { "custom_model_data": 2015013}, "model": "iyc:block/sapphire_ore" },
+		{ "predicate": { "custom_model_data": 2015024}, "model": "iyc:block/ruby_block" },
+		{ "predicate": { "custom_model_data": 2015025}, "model": "iyc:block/ruby_ore" },
+		{ "predicate": { "custom_model_data": 2015036}, "model": "iyc:block/topaz_block" },
+		{ "predicate": { "custom_model_data": 2015037}, "model": "iyc:block/topaz_ore" },
+		{ "predicate": { "custom_model_data": 2015067}, "model": "iyc:block/steel_block" },
+		{ "predicate": { "custom_model_data": 2015068}, "model": "iyc:block/steel_ore" },
+		{ "predicate": { "custom_model_data": 2015080}, "model": "iyc:block/lignite_block" },
+		{ "predicate": { "custom_model_data": 2015081}, "model": "iyc:block/lignite_ore" },
+		{ "predicate": { "custom_model_data": 2015083}, "model": "iyc:block/slate_block" },
+		{ "predicate": { "custom_model_data": 2015084}, "model": "iyc:block/slate_ore" },
+		{ "predicate": { "custom_model_data": 2015087}, "model": "iyc:block/massive_obsidian_block" },
+		{ "predicate": { "custom_model_data": 2015088}, "model": "iyc:block/iron_furnace" },
+		{ "predicate": { "custom_model_data": 2015089}, "model": "iyc:block/iron_furnace_on" },
+		{ "predicate": { "custom_model_data": 2015090}, "model": "iyc:block/box_jump" },
+		{ "predicate": { "custom_model_data": 2015091}, "model": "iyc:block/box_speed" },
+		{ "predicate": { "custom_model_data": 2015092}, "model": "iyc:block/blue_block_ctf" },
+		{ "predicate": { "custom_model_data": 2015094}, "model": "iyc:block/clear_glass" },
+		{ "predicate": { "custom_model_data": 2015101}, "model": "iyc:block/birch_wood_lantern" },
+		{ "predicate": { "custom_model_data": 2015102}, "model": "iyc:block/jungle_wood_lantern" },
+		{ "predicate": { "custom_model_data": 2015103}, "model": "iyc:block/oak_wood_lantern" },
+		{ "predicate": { "custom_model_data": 2015104}, "model": "iyc:block/spruce_wood_lantern" },
+		{ "predicate": { "custom_model_data": 2015105}, "model": "iyc:block/iron_lantern" },
+		{ "predicate": { "custom_model_data": 2015106}, "model": "iyc:block/red_light" },
+		{ "predicate": { "custom_model_data": 2015107}, "model": "iyc:block/red_light_on" },
+		{ "predicate": { "custom_model_data": 2015108}, "model": "iyc:block/reversed_oak_planks" },
+		{ "predicate": { "custom_model_data": 2015125}, "model": "iyc:block/cherry_cake" },
+		{ "predicate": { "custom_model_data": 2015136}, "model": "iyc:block/nuclear_bomb" }
+	]
+}
+

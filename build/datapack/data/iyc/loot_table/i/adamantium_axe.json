@@ -1,0 +1,36 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:netherite_axe",
+					"functions": [
+						{
+							"function": "minecraft:set_components",
+							"components": {
+								"minecraft:custom_data": {
+									"smithed": {"dict": {"tools": {"adamantium": true,"axe": true}},"ignore": {"functionality": true,"crafting": true}},
+									"iyc": {"adamantium_axe": true}
+								},
+								"minecraft:max_damage": 1873,
+								"minecraft:attribute_modifiers": [
+									{"type": "generic.attack_damage","amount": 10.2,"operation": "add_value","slot": "mainhand","id": "iyc:generic.attack_damage.mainhand"},
+									{"type": "generic.attack_speed","amount": -3.0,"operation": "add_value","slot": "mainhand","id": "iyc:generic.attack_speed.mainhand"},
+									{"type": "player.mining_efficiency","amount": 0.2,"operation": "add_value","slot": "mainhand","id": "iyc:player.mining_efficiency.mainhand"}
+								],
+								"minecraft:custom_model_data": 2015009,
+								"minecraft:item_name": "{'text': 'Adamantium Axe', 'italic': false, 'color': 'white'}",
+								"minecraft:lore": [
+									"{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"
+								]
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

@@ -1,8 +1,0 @@
-{
-	"parent": "item/generated",
-	"textures": {
-		"layer0": "iyc:item/ruby_boots",
-		"layer1": "iyc:item/ruby_boots"
-	}
-}
-

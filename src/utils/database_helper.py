@@ -327,7 +327,7 @@ def generate_custom_records(database: dict[str, dict], records: dict[str, tuple[
 			database[record][CATEGORY] = category
 		
 		# Set jukebox song
-		json_song = {"comparator_output": duration % 16, "length_in_seconds": duration, "sound_event": {"sound_id":f"{NAMESPACE}:{record}"}, "description": {"text": item_name}}
+		json_song = {"comparator_output": duration % 16, "length_in_seconds": duration + 1, "sound_event": {"sound_id":f"{NAMESPACE}:{record}"}, "description": {"text": item_name}}
 		write_to_file(f"{BUILD_DATAPACK}/data/{NAMESPACE}/jukebox_song/{record}.json", super_json_dump(json_song))
 
 		# Copy sound to resource pack

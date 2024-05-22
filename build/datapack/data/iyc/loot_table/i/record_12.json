@@ -14,7 +14,13 @@
 									"iyc": {"record_12": true},
 									"smithed": {"dict": {"record": {"record_12": true}},"ignore": {"functionality": true,"crafting": true}}
 								},
-								"minecraft:item_name": "{'text': 'Lokoise - J\\'aime le creep\\'', 'italic': false, 'color': 'white'}",
+								"minecraft:item_name": "{'text':'Music Disc', 'italic': false}",
+								"minecraft:jukebox_playable": {
+									"song": "iyc:record_12",
+									"show_in_tooltip": true
+								},
+								"minecraft:max_stack_size": 1,
+								"minecraft:rarity": "rare",
 								"minecraft:custom_model_data": 2015152,
 								"minecraft:lore": [
 									"{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"

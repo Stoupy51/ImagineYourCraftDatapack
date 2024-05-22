@@ -307,21 +307,28 @@ def generate_everything_about_these_ores(database: dict[str, dict], ores: dict[s
 
 
 # Custom records
-def generate_custom_records(database: dict[str, dict], records: dict[str, str], category: str|None = None) -> None:
+def generate_custom_records(database: dict[str, dict], records: dict[str, tuple[str,float]], category: str|None = None) -> None:
 	""" Generate custom records by searching in ASSETS_FOLDER/records/ for the files and copying them to the database and resource pack folder.
 	Args:
 		database	(dict[str, dict]):	The database to add the custom records items to.
 		records		(dict[str, str]):	The custom records to apply, ex: {"record_1": "My first Record.ogg", "record_2": "A second one.ogg"}
 	"""
-	for record, sound in records.items():
+	for record, (sound, duration) in records.items():
 		item_name = ".".join(sound.split(".")[:-1])	# Remove the file extension
 		database[record] = {
 			"id": CUSTOM_ITEM_VANILLA,
 			"custom_data": {NAMESPACE:{record: True}, "smithed":{"dict":{"record": {record: True}}}},
-			"item_name": json.dumps({"text": item_name, "italic":False,"color":"white"}).replace("'", "\\'").replace('"', "'"),
+			"item_name": "{'text':'Music Disc', 'italic': false}",
+			"jukebox_playable": {"song": f"{NAMESPACE}:{record}", "show_in_tooltip": True},
+			"max_stack_size": 1,
+			"rarity": "rare",
 		}
 		if category:
 			database[record][CATEGORY] = category
+		
+		# Set jukebox song
+		json_song = {"comparator_output": duration % 16, "length_in_seconds": duration, "sound_event": {"sound_id":f"{NAMESPACE}:{record}"}, "description": {"text": item_name}}
+		write_to_file(f"{BUILD_DATAPACK}/data/{NAMESPACE}/jukebox_song/{record}.json", super_json_dump(json_song))
 
 		# Copy sound to resource pack
 		file_path = f"{ASSETS_FOLDER}/records/{sound}"
@@ -330,7 +337,7 @@ def generate_custom_records(database: dict[str, dict], records: dict[str, str], 
 
 			json_sound = {"category": "music", "sounds": [{"name": f"{NAMESPACE}:{record}","stream": True}]}
 			json_sound = {record: json_sound}
-			write_to_file(f"{BUILD_RESOURCE_PACK}/assets/{NAMESPACE}/sounds.json", json.dumps(json_sound))
+			write_to_file(f"{BUILD_RESOURCE_PACK}/assets/{NAMESPACE}/sounds.json", super_json_dump(json_sound))
 		else:
 			warning(f"Error during custom record generation: path '{file_path}' does not exist")
 

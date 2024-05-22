@@ -198,7 +198,8 @@ else:
 				# Append ingredients
 				if craft.get("ingredient"):
 					id = ingr_to_id(craft["ingredient"], False).replace("_", " ").title()
-					hover_text.append({"text": f"\n- x1 {id}", "color": "gray"})
+					hover_text.append({"text": f"\n- x1 ", "color": "gray"})
+					hover_text.append({"text": id, "color": "gray"})
 				elif craft.get("ingredients"):
 
 					# If it's a shaped crafting
@@ -206,7 +207,8 @@ else:
 						for k, v in craft["ingredients"].items():
 							id = ingr_to_id(v, False).replace("_", " ").title()
 							count = sum([line.count(k) for line in craft["shape"]])
-							hover_text.append({"text": f"\n- x{count} {id}", "color": "gray"})
+							hover_text.append({"text": f"\n- x{count} ", "color": "gray"})
+							hover_text.append({"text": id, "color": "gray"})
 					
 					# If it's shapeless
 					elif isinstance(craft["ingredients"], list):
@@ -217,7 +219,8 @@ else:
 								ids[id] = 0
 							ids[id] += 1
 						for id, count in ids.items():
-							hover_text.append({"text": f"\n- x{count} {id}", "color": "gray"})
+							hover_text.append({"text": f"\n- x{count} ", "color": "gray"})
+							hover_text.append({"text": id, "color": "gray"})
 
 				# Add the craft to the content
 				result_or_ingredient = WIKI_RESULT_OF_CRAFT_FONT if "result" not in craft else generate_wiki_font_for_ingr(name, craft)

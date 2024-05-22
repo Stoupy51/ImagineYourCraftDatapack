@@ -7,7 +7,7 @@ import json
 
 # Get all mcfunctions paths
 mcfunctions = {}
-functions_folder = "/functions/"
+functions_folder = "/function/"
 for file_path in FILES_TO_WRITE:
 	if functions_folder in file_path and file_path.endswith(".mcfunction"):
 
@@ -23,7 +23,7 @@ for file_path in FILES_TO_WRITE:
 
 
 # For each json file, get the functions that it calls
-functions_tags_folder = "/tags/functions/"
+functions_tags_folder = "/tags/function/"
 for file_path in FILES_TO_WRITE:
 	if functions_tags_folder in file_path and file_path.endswith(".json"):
 

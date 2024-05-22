@@ -95,14 +95,14 @@ for item, data in DATABASE.items():
 				if any(i.get("item") == None for i in ingr):
 					continue
 				r = shapeless_recipe(recipe, item)
-				write_to_file(f"{BUILD_DATAPACK}/data/{NAMESPACE}/recipes/{name}.json", super_json_dump(r, max_level = 5))
+				write_to_file(f"{BUILD_DATAPACK}/data/{NAMESPACE}/recipe/{name}.json", super_json_dump(r, max_level = 5))
 				i += 1
 				generated_recipes.append(name)
 			elif recipe["type"] == "crafting_shaped":
 				if any(i.get("item") == None for i in ingr.values()):
 					continue
 				r = shaped_recipe(recipe, item)
-				write_to_file(f"{BUILD_DATAPACK}/data/{NAMESPACE}/recipes/{name}.json", super_json_dump(r, max_level = 5))
+				write_to_file(f"{BUILD_DATAPACK}/data/{NAMESPACE}/recipe/{name}.json", super_json_dump(r, max_level = 5))
 				i += 1
 				generated_recipes.append(name)
 	pass

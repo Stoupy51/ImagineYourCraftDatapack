@@ -17,7 +17,7 @@ for item, data in DATABASE.items():
 	# Add functions
 	loot_table["pools"][0]["entries"][0]["functions"] = [set_components]
 
-	write_to_file(f"{BUILD_DATAPACK}/data/{NAMESPACE}/loot_tables/i/{item}.json", super_json_dump(loot_table, max_level = 9))
+	write_to_file(f"{BUILD_DATAPACK}/data/{NAMESPACE}/loot_table/i/{item}.json", super_json_dump(loot_table, max_level = 9))
 info("Made loot tables for every item")
 
 
@@ -33,13 +33,13 @@ for item, data in DATABASE.items():
 		# For each result count, create a loot table for it
 		for result_count in results:
 			loot_table = {"pools":[{"rolls":1,"entries":[{"type":"minecraft:loot_table","value":f"{NAMESPACE}:i/{item}","functions":[{"function":"minecraft:set_count","count":result_count}]}]}]}
-			write_to_file(f"{BUILD_DATAPACK}/data/{NAMESPACE}/loot_tables/i/{item}_x{result_count}.json", super_json_dump(loot_table, max_level = -1), overwrite = True)
+			write_to_file(f"{BUILD_DATAPACK}/data/{NAMESPACE}/loot_table/i/{item}_x{result_count}.json", super_json_dump(loot_table, max_level = -1), overwrite = True)
 info("Multiple counts loot tables made for every item with crafting recipes")
 
 # Second loot table for the manual (if present)
 if "manual" in DATABASE:
 	loot_table = {"pools":[{"rolls":1,"entries":[{"type":"minecraft:loot_table","value":f"{NAMESPACE}:i/manual"}]}]}
-	write_to_file(f"{BUILD_DATAPACK}/data/{NAMESPACE}/loot_tables/i/{NAMESPACE}_manual.json", super_json_dump(loot_table, max_level = -1), overwrite = True)
+	write_to_file(f"{BUILD_DATAPACK}/data/{NAMESPACE}/loot_table/i/{NAMESPACE}_manual.json", super_json_dump(loot_table, max_level = -1), overwrite = True)
 
 # Make a give all command that gives chests with all the items
 CHEST_SIZE = 27

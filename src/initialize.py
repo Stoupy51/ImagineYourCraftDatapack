@@ -12,7 +12,7 @@ shutil.rmtree(DATABASE_DEBUG, ignore_errors=True)
 
 
 # Setup pack.mcmeta for the datapack
-pack_mcmeta =  {"pack":{"pack_format": PACK_FORMAT, "description": DESCRIPTION}, "id": NAMESPACE}
+pack_mcmeta =  {"pack":{"pack_format": DATAPACK_PACK_FORMAT, "description": DESCRIPTION}, "id": NAMESPACE}
 write_to_file(f"{BUILD_DATAPACK}/pack.mcmeta", super_json_dump(pack_mcmeta))
 info(f"pack.mcmeta file created for datapack")
 

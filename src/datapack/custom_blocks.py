@@ -89,7 +89,7 @@ execute if score #rotation {NAMESPACE}.data matches 0 store success score #rotat
 	pass
 
 # Link the custom block library to the datapack
-write_to_file(f"{BUILD_DATAPACK}/data/smithed.custom_block/tags/functions/event/on_place.json", super_json_dump({"values": [f"{NAMESPACE}:custom_blocks/on_place"]}))
+write_to_file(f"{BUILD_DATAPACK}/data/smithed.custom_block/tags/function/event/on_place.json", super_json_dump({"values": [f"{NAMESPACE}:custom_blocks/on_place"]}))
 write_to_file(f"{DATAPACK_FUNCTIONS}/custom_blocks/on_place.mcfunction", f"execute if data storage smithed.custom_block:main blockApi.__data.Items[0].components.\"minecraft:custom_data\".smithed.block{{from:\"{NAMESPACE}\"}} run function {NAMESPACE}:custom_blocks/place\n")
 content = f"tag @s add {NAMESPACE}.placer\n"
 for item, data in DATABASE.items():
@@ -198,13 +198,13 @@ execute store result entity @s Item.count byte 1 run scoreboard players get #ite
 VANILLA_BLOCKS_TAG = "used_vanilla_blocks"
 write_to_file(f"{BUILD_DATAPACK}/data/{NAMESPACE}/tags/block/{VANILLA_BLOCKS_TAG}.json", super_json_dump({"values": list(unique_blocks)}))
 predicate = {"condition": "minecraft:location_check", "predicate": {"block": {"blocks": f"#{NAMESPACE}:{VANILLA_BLOCKS_TAG}"}}}
-write_to_file(f"{BUILD_DATAPACK}/data/{NAMESPACE}/predicates/check_vanilla_blocks.json", super_json_dump(predicate))
+write_to_file(f"{BUILD_DATAPACK}/data/{NAMESPACE}/predicate/check_vanilla_blocks.json", super_json_dump(predicate))
 advanced_predicate = {"condition": "minecraft:any_of", "terms": []}
 for block in unique_blocks:
 	block_underscore = block.replace(":","_")
 	predicate = {"condition": "minecraft:entity_properties", "entity": "this", "predicate": { "nbt": f"{{Tags:[\"iyc.vanilla.{block_underscore}\"]}}", "location": { "block": { "blocks": [block] }}}}
 	advanced_predicate["terms"].append(predicate)
-write_to_file(f"{BUILD_DATAPACK}/data/{NAMESPACE}/predicates/advanced_check_vanilla_blocks.json", super_json_dump(advanced_predicate))
+write_to_file(f"{BUILD_DATAPACK}/data/{NAMESPACE}/predicate/advanced_check_vanilla_blocks.json", super_json_dump(advanced_predicate))
 
 # Write a destroy check every 2 ticks, every second, and every 5 seconds
 write_to_file(f"{DATAPACK_FUNCTIONS}/tick_2.mcfunction", f"""
@@ -223,7 +223,7 @@ execute as @e[type=item_display,tag={NAMESPACE}.custom_block,predicate=!{NAMESPA
 
 
 ## Custom ores break detection
-write_to_file(f"{BUILD_DATAPACK}/data/common_signals/tags/functions/signals/on_new_item.json", super_json_dump({"values": [f"{NAMESPACE}:calls/common_signals/new_item"]}))
+write_to_file(f"{BUILD_DATAPACK}/data/common_signals/tags/function/signals/on_new_item.json", super_json_dump({"values": [f"{NAMESPACE}:calls/common_signals/new_item"]}))
 write_to_file(f"{DATAPACK_FUNCTIONS}/calls/common_signals/new_item.mcfunction", f"""
 # If the item is from a custom ore, launch the on_ore_destroyed function
 execute if data entity @s Item.components.\"minecraft:custom_data\".common_signals.temp at @s align xyz run function {NAMESPACE}:calls/common_signals/on_ore_destroyed

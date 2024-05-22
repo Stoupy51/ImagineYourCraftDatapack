@@ -114,34 +114,13 @@ class EquipmentsConfig():
 		return {key: value for key, value in self.attributes.items() if key not in NOT_ON_ARMOR}
 
 # UUIDs utils
-UUIDS = {}
-def get_uuid(attribute_name: str, slot: str) -> list[int]:
-	""" Function to get a non-random fixed UUID for an attribute name and a slot
-	Args:
-		attribute_name	(str):	The attribute name (ex: "generic.attack_damage")
-		slot			(str):	The slot where the attribute will be applied (ex: "head")
-	Returns:
-		list[int]:	The list of 4 integers that represent the UUID
-	"""
-
-	# If UUID is not in the list, add it
-	if attribute_name not in UUIDS:
-		i = len(UUIDS) + 1
-		j = 1
-		UUIDS[attribute_name] = {}
-		for slot in UNIQUE_SLOTS_VALUES:
-			UUIDS[attribute_name][slot] = [i, j, j+1, j+2]
-			j += 3
-	
-	# Return the UUID
-	return UUIDS[attribute_name][slot]
 def format_attributes(attributes: str, slot: str, config: dict = {}) -> list[dict]:
 	""" Returns generated attribute_modifiers key for an item (adds up attributes and config) """
 	# Get attributes from config
 	attribute_modifiers = []
 	for attribute_name, value in config.items():
 		if attribute_name != "durability":
-			attribute_modifiers.append({"type": attribute_name, "name": attribute_name, "amount": value, "operation": "add_value", "slot": slot, "uuid": get_uuid(attribute_name, slot)})
+			attribute_modifiers.append({"type": attribute_name, "amount": value, "operation": "add_value", "slot": slot, "id": f"{NAMESPACE}:{attribute_name}.{slot}"})
 
 	# For each attribute, add it to the list if not in, else add the value
 	for attribute_name, value in attributes.items():
@@ -152,7 +131,7 @@ def format_attributes(attributes: str, slot: str, config: dict = {}) -> list[dic
 				found = True
 				break
 		if not found:
-			attribute_modifiers.append({"type": attribute_name, "name": attribute_name, "amount": value, "operation": "add_value", "slot": slot, "uuid": get_uuid(attribute_name, slot)})
+			attribute_modifiers.append({"type": attribute_name, "amount": value, "operation": "add_value", "slot": slot, "id": f"{NAMESPACE}:{attribute_name}.{slot}"})
 
 	# Return the list of attributes
 	return attribute_modifiers

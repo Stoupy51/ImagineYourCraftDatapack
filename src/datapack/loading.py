@@ -6,11 +6,11 @@ from src.utils.print import *
 
 
 # Setup load json files and tick json file
-write_to_file(f"{BUILD_DATAPACK}/data/load/tags/functions/load.json", super_json_dump({"values": [f"#{NAMESPACE}:load/main"]}))
-write_to_file(f"{BUILD_DATAPACK}/data/{NAMESPACE}/tags/functions/load/main.json", super_json_dump({"values": [{"id":f"#{NAMESPACE}:load/dependencies","required":False}, f"{NAMESPACE}:load/main"]}, max_level = 3))
+write_to_file(f"{BUILD_DATAPACK}/data/load/tags/function/load.json", super_json_dump({"values": [f"#{NAMESPACE}:load/main"]}))
+write_to_file(f"{BUILD_DATAPACK}/data/{NAMESPACE}/tags/function/load/main.json", super_json_dump({"values": [{"id":f"#{NAMESPACE}:load/dependencies","required":False}, f"{NAMESPACE}:load/main"]}, max_level = 3))
 calls = [{"id":f"#{namespace}:load", "required": False} for namespace in DEPENDENCIES.keys()]
-write_to_file(f"{BUILD_DATAPACK}/data/{NAMESPACE}/tags/functions/load/dependencies.json", super_json_dump({"values": calls}))
-write_to_file(f"{BUILD_DATAPACK}/data/minecraft/tags/functions/tick.json", super_json_dump({"values": [f"{NAMESPACE}:load/tick_verification"]}))
+write_to_file(f"{BUILD_DATAPACK}/data/{NAMESPACE}/tags/function/load/dependencies.json", super_json_dump({"values": calls}))
+write_to_file(f"{BUILD_DATAPACK}/data/minecraft/tags/function/tick.json", super_json_dump({"values": [f"{NAMESPACE}:load/tick_verification"]}))
 
 
 # Setup load main and secondary function

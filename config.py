@@ -17,7 +17,7 @@ ASSETS_FILES: list[str] = [f"{root}/{f}".replace("\\","/") for root, _, files in
 TEXTURES_FILES: list[str] = [path.split(f"{TEXTURES_FOLDER}/")[1] for path in ASSETS_FILES if path.startswith(TEXTURES_FOLDER) and path.endswith(".png")]
 
 # Dev constants
-HAS_MANUAL: bool = True								# Do the program generate a manual/guide?
+HAS_MANUAL: bool = True								# Do the program generate a manual/guide? (WARNING: if an item is malformed in the database, the server log will be flooded on load by the manual hiding the malformed item)
 DEBUG_MODE: bool = True								# Shows up grids in manual,
 DATABASE_DEBUG: str = f"{ROOT}/database_debug.json"	# Dump of the database for debugging purposes
 CMD_CACHE: str = f"{ROOT}/cmd_cache.json"			# Cache of all items Custom Model Data
@@ -37,8 +37,8 @@ MINECRAFT_VERSION: str = "1.20.6"		# Text used when loading the datapack to warn
 DATA_VERSION: int = 3835				# Depending on MC version, given by /data get entity @p DataVersion to check if the datapack is not running in an older version of MC
 VERSION: str = "0.0.1"					# Datapack version in the following mandatory format: major.minor.patch, ex: 1.0.0 or 1.21.615
 NAMESPACE: str = "iyc"					# Should be the same you use in the merge folder. Used to namespace functions, tags, etc.
-PACK_FORMAT: int = 41					# Pack format version, see https://minecraft.wiki/w/Pack_format#List_of_data_pack_formats
-RESOURCE_PACK_FORMAT: int = 32			# Resource pack format version, see https://minecraft.wiki/w/Pack_format#List_of_resource_pack_formats
+DATAPACK_PACK_FORMAT: int = 45			# Pack format version, see https://minecraft.wiki/w/Pack_format#List_of_data_pack_formats
+RESOURCE_PACK_FORMAT: int = 34			# Resource pack format version, see https://minecraft.wiki/w/Pack_format#List_of_resource_pack_formats
 MANUAL_NAME: str = f"{DATAPACK_NAME} Manual"				# Name of the manual, used for the title of the book and first page
 DESCRIPTION = f"{DATAPACK_NAME} [{VERSION}] by {AUTHOR}"	# Pack description displayed in pack.mcmeta
 DEPENDENCIES: dict[str, dict[str, list[int] | str]] = {
@@ -58,7 +58,7 @@ DEPENDENCIES: dict[str, dict[str, list[int] | str]] = {
 
 # Technical constants
 BUILD_DATAPACK: str = f"{BUILD_FOLDER}/datapack"									# Folder where the final datapack will be built
-DATAPACK_FUNCTIONS: str = f"{BUILD_DATAPACK}/data/{NAMESPACE}/functions"			# Folder where the datapack functions are built
+DATAPACK_FUNCTIONS: str = f"{BUILD_DATAPACK}/data/{NAMESPACE}/function"				# Folder where the datapack functions are built
 BUILD_RESOURCE_PACK: str = f"{BUILD_FOLDER}/resource_pack"							# Folder where the final resource pack will be built
 SOURCE_LORE: list[dict] = [{"text": DATAPACK_NAME,"italic":True,"color":"blue"}]	# Appended lore to any custom item, can be an empty string
 FACES: tuple = ("down", "up", "north", "south", "west", "east")						# Faces of a block, used for resource pack and blocks orientation

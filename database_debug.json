@@ -36,7 +36,7 @@
 		"dyed_color": {"rgb": 2511745,"show_in_tooltip": false},
 		"result_of_crafting": [{"type": "crafting_shaped","result_count": 1,"category": "equipment","shape": ["XXX","X X"],"ingredients": {"X": {"components": {"custom_data": {"iyc": {"adamantium_fragment": true}}}}}}],
 		"max_damage": 375,
-		"attribute_modifiers": [{"type": "generic.armor","name": "generic.armor","amount": 3.2,"operation": "add_value","slot": "head","uuid": [1,13,14,15]},{"type": "generic.armor_toughness","name": "generic.armor_toughness","amount": 3,"operation": "add_value","slot": "head","uuid": [2,13,14,15]},{"type": "generic.knockback_resistance","name": "generic.knockback_resistance","amount": 0.1,"operation": "add_value","slot": "head","uuid": [3,13,14,15]}],
+		"attribute_modifiers": [{"type": "generic.armor","amount": 3.2,"operation": "add_value","slot": "head","id": "iyc:generic.armor.head"},{"type": "generic.armor_toughness","amount": 3,"operation": "add_value","slot": "head","id": "iyc:generic.armor_toughness.head"},{"type": "generic.knockback_resistance","amount": 0.1,"operation": "add_value","slot": "head","id": "iyc:generic.knockback_resistance.head"}],
 		"custom_model_data": 2015003,
 		"item_name": "{'text': 'Adamantium Helmet', 'italic': false, 'color': 'white'}",
 		"lore": ["{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"]
@@ -48,7 +48,7 @@
 		"dyed_color": {"rgb": 2511745,"show_in_tooltip": false},
 		"result_of_crafting": [{"type": "crafting_shaped","result_count": 1,"category": "equipment","shape": ["X X","XXX","XXX"],"ingredients": {"X": {"components": {"custom_data": {"iyc": {"adamantium_fragment": true}}}}}}],
 		"max_damage": 545,
-		"attribute_modifiers": [{"type": "generic.armor","name": "generic.armor","amount": 8.2,"operation": "add_value","slot": "chest","uuid": [1,4,5,6]},{"type": "generic.armor_toughness","name": "generic.armor_toughness","amount": 3,"operation": "add_value","slot": "chest","uuid": [2,4,5,6]},{"type": "generic.knockback_resistance","name": "generic.knockback_resistance","amount": 0.1,"operation": "add_value","slot": "chest","uuid": [3,4,5,6]}],
+		"attribute_modifiers": [{"type": "generic.armor","amount": 8.2,"operation": "add_value","slot": "chest","id": "iyc:generic.armor.chest"},{"type": "generic.armor_toughness","amount": 3,"operation": "add_value","slot": "chest","id": "iyc:generic.armor_toughness.chest"},{"type": "generic.knockback_resistance","amount": 0.1,"operation": "add_value","slot": "chest","id": "iyc:generic.knockback_resistance.chest"}],
 		"custom_model_data": 2015004,
 		"item_name": "{'text': 'Adamantium Chestplate', 'italic': false, 'color': 'white'}",
 		"lore": ["{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"]
@@ -60,7 +60,7 @@
 		"dyed_color": {"rgb": 2511745,"show_in_tooltip": false},
 		"result_of_crafting": [{"type": "crafting_shaped","result_count": 1,"category": "equipment","shape": ["XXX","X X","X X"],"ingredients": {"X": {"components": {"custom_data": {"iyc": {"adamantium_fragment": true}}}}}}],
 		"max_damage": 511,
-		"attribute_modifiers": [{"type": "generic.armor","name": "generic.armor","amount": 6.2,"operation": "add_value","slot": "legs","uuid": [1,7,8,9]},{"type": "generic.armor_toughness","name": "generic.armor_toughness","amount": 3,"operation": "add_value","slot": "legs","uuid": [2,7,8,9]},{"type": "generic.knockback_resistance","name": "generic.knockback_resistance","amount": 0.1,"operation": "add_value","slot": "legs","uuid": [3,7,8,9]}],
+		"attribute_modifiers": [{"type": "generic.armor","amount": 6.2,"operation": "add_value","slot": "legs","id": "iyc:generic.armor.legs"},{"type": "generic.armor_toughness","amount": 3,"operation": "add_value","slot": "legs","id": "iyc:generic.armor_toughness.legs"},{"type": "generic.knockback_resistance","amount": 0.1,"operation": "add_value","slot": "legs","id": "iyc:generic.knockback_resistance.legs"}],
 		"custom_model_data": 2015005,
 		"item_name": "{'text': 'Adamantium Leggings', 'italic': false, 'color': 'white'}",
 		"lore": ["{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"]
@@ -72,7 +72,7 @@
 		"dyed_color": {"rgb": 2511745,"show_in_tooltip": false},
 		"result_of_crafting": [{"type": "crafting_shaped","result_count": 1,"category": "equipment","shape": ["X X","X X"],"ingredients": {"X": {"components": {"custom_data": {"iyc": {"adamantium_fragment": true}}}}}}],
 		"max_damage": 443,
-		"attribute_modifiers": [{"type": "generic.armor","name": "generic.armor","amount": 3.2,"operation": "add_value","slot": "feet","uuid": [1,10,11,12]},{"type": "generic.armor_toughness","name": "generic.armor_toughness","amount": 3,"operation": "add_value","slot": "feet","uuid": [2,10,11,12]},{"type": "generic.knockback_resistance","name": "generic.knockback_resistance","amount": 0.1,"operation": "add_value","slot": "feet","uuid": [3,10,11,12]}],
+		"attribute_modifiers": [{"type": "generic.armor","amount": 3.2,"operation": "add_value","slot": "feet","id": "iyc:generic.armor.feet"},{"type": "generic.armor_toughness","amount": 3,"operation": "add_value","slot": "feet","id": "iyc:generic.armor_toughness.feet"},{"type": "generic.knockback_resistance","amount": 0.1,"operation": "add_value","slot": "feet","id": "iyc:generic.knockback_resistance.feet"}],
 		"custom_model_data": 2015006,
 		"item_name": "{'text': 'Adamantium Boots', 'italic': false, 'color': 'white'}",
 		"lore": ["{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"]
@@ -83,7 +83,7 @@
 		"custom_data": {"smithed": {"dict": {"tools": {"adamantium": true,"sword": true}},"ignore": {"functionality": true,"crafting": true}},"iyc": {"adamantium_sword": true}},
 		"max_damage": 1873,
 		"result_of_crafting": [{"type": "crafting_shaped","result_count": 1,"category": "equipment","shape": ["X","X","S"],"ingredients": {"X": {"components": {"custom_data": {"iyc": {"adamantium_fragment": true}}}},"S": {"item": "minecraft:stick"}}}],
-		"attribute_modifiers": [{"type": "generic.attack_damage","name": "generic.attack_damage","amount": 8.2,"operation": "add_value","slot": "mainhand","uuid": [4,13,14,15]},{"type": "generic.attack_speed","name": "generic.attack_speed","amount": -2.5,"operation": "add_value","slot": "mainhand","uuid": [5,13,14,15]},{"type": "player.mining_efficiency","name": "player.mining_efficiency","amount": 0.2,"operation": "add_value","slot": "mainhand","uuid": [6,13,14,15]}],
+		"attribute_modifiers": [{"type": "generic.attack_damage","amount": 8.2,"operation": "add_value","slot": "mainhand","id": "iyc:generic.attack_damage.mainhand"},{"type": "generic.attack_speed","amount": -2.5,"operation": "add_value","slot": "mainhand","id": "iyc:generic.attack_speed.mainhand"},{"type": "player.mining_efficiency","amount": 0.2,"operation": "add_value","slot": "mainhand","id": "iyc:player.mining_efficiency.mainhand"}],
 		"custom_model_data": 2015007,
 		"item_name": "{'text': 'Adamantium Sword', 'italic': false, 'color': 'white'}",
 		"lore": ["{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"]
@@ -94,7 +94,7 @@
 		"custom_data": {"smithed": {"dict": {"tools": {"adamantium": true,"pickaxe": true}},"ignore": {"functionality": true,"crafting": true}},"iyc": {"adamantium_pickaxe": true}},
 		"max_damage": 1873,
 		"result_of_crafting": [{"type": "crafting_shaped","result_count": 1,"category": "equipment","shape": ["XXX"," S "," S "],"ingredients": {"X": {"components": {"custom_data": {"iyc": {"adamantium_fragment": true}}}},"S": {"item": "minecraft:stick"}}}],
-		"attribute_modifiers": [{"type": "generic.attack_damage","name": "generic.attack_damage","amount": 6.2,"operation": "add_value","slot": "mainhand","uuid": [4,13,14,15]},{"type": "generic.attack_speed","name": "generic.attack_speed","amount": -2.75,"operation": "add_value","slot": "mainhand","uuid": [5,13,14,15]},{"type": "player.mining_efficiency","name": "player.mining_efficiency","amount": 0.2,"operation": "add_value","slot": "mainhand","uuid": [6,13,14,15]}],
+		"attribute_modifiers": [{"type": "generic.attack_damage","amount": 6.2,"operation": "add_value","slot": "mainhand","id": "iyc:generic.attack_damage.mainhand"},{"type": "generic.attack_speed","amount": -2.75,"operation": "add_value","slot": "mainhand","id": "iyc:generic.attack_speed.mainhand"},{"type": "player.mining_efficiency","amount": 0.2,"operation": "add_value","slot": "mainhand","id": "iyc:player.mining_efficiency.mainhand"}],
 		"custom_model_data": 2015008,
 		"item_name": "{'text': 'Adamantium Pickaxe', 'italic': false, 'color': 'white'}",
 		"lore": ["{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"]
@@ -105,7 +105,7 @@
 		"custom_data": {"smithed": {"dict": {"tools": {"adamantium": true,"axe": true}},"ignore": {"functionality": true,"crafting": true}},"iyc": {"adamantium_axe": true}},
 		"max_damage": 1873,
 		"result_of_crafting": [{"type": "crafting_shaped","result_count": 1,"category": "equipment","shape": ["XX","XS"," S"],"ingredients": {"X": {"components": {"custom_data": {"iyc": {"adamantium_fragment": true}}}},"S": {"item": "minecraft:stick"}}}],
-		"attribute_modifiers": [{"type": "generic.attack_damage","name": "generic.attack_damage","amount": 10.2,"operation": "add_value","slot": "mainhand","uuid": [4,13,14,15]},{"type": "generic.attack_speed","name": "generic.attack_speed","amount": -3.0,"operation": "add_value","slot": "mainhand","uuid": [5,13,14,15]},{"type": "player.mining_efficiency","name": "player.mining_efficiency","amount": 0.2,"operation": "add_value","slot": "mainhand","uuid": [6,13,14,15]}],
+		"attribute_modifiers": [{"type": "generic.attack_damage","amount": 10.2,"operation": "add_value","slot": "mainhand","id": "iyc:generic.attack_damage.mainhand"},{"type": "generic.attack_speed","amount": -3.0,"operation": "add_value","slot": "mainhand","id": "iyc:generic.attack_speed.mainhand"},{"type": "player.mining_efficiency","amount": 0.2,"operation": "add_value","slot": "mainhand","id": "iyc:player.mining_efficiency.mainhand"}],
 		"custom_model_data": 2015009,
 		"item_name": "{'text': 'Adamantium Axe', 'italic': false, 'color': 'white'}",
 		"lore": ["{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"]
@@ -116,7 +116,7 @@
 		"custom_data": {"smithed": {"dict": {"tools": {"adamantium": true,"shovel": true}},"ignore": {"functionality": true,"crafting": true}},"iyc": {"adamantium_shovel": true}},
 		"max_damage": 1873,
 		"result_of_crafting": [{"type": "crafting_shaped","result_count": 1,"category": "equipment","shape": ["X","S","S"],"ingredients": {"X": {"components": {"custom_data": {"iyc": {"adamantium_fragment": true}}}},"S": {"item": "minecraft:stick"}}}],
-		"attribute_modifiers": [{"type": "generic.attack_damage","name": "generic.attack_damage","amount": 6.7,"operation": "add_value","slot": "mainhand","uuid": [4,13,14,15]},{"type": "generic.attack_speed","name": "generic.attack_speed","amount": -3.0,"operation": "add_value","slot": "mainhand","uuid": [5,13,14,15]},{"type": "player.mining_efficiency","name": "player.mining_efficiency","amount": 0.2,"operation": "add_value","slot": "mainhand","uuid": [6,13,14,15]}],
+		"attribute_modifiers": [{"type": "generic.attack_damage","amount": 6.7,"operation": "add_value","slot": "mainhand","id": "iyc:generic.attack_damage.mainhand"},{"type": "generic.attack_speed","amount": -3.0,"operation": "add_value","slot": "mainhand","id": "iyc:generic.attack_speed.mainhand"},{"type": "player.mining_efficiency","amount": 0.2,"operation": "add_value","slot": "mainhand","id": "iyc:player.mining_efficiency.mainhand"}],
 		"custom_model_data": 2015010,
 		"item_name": "{'text': 'Adamantium Shovel', 'italic': false, 'color': 'white'}",
 		"lore": ["{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"]
@@ -127,7 +127,7 @@
 		"custom_data": {"smithed": {"dict": {"tools": {"adamantium": true,"hoe": true}},"ignore": {"functionality": true,"crafting": true}},"iyc": {"adamantium_hoe": true}},
 		"max_damage": 1873,
 		"result_of_crafting": [{"type": "crafting_shaped","result_count": 1,"category": "equipment","shape": ["XX"," S"," S"],"ingredients": {"X": {"components": {"custom_data": {"iyc": {"adamantium_fragment": true}}}},"S": {"item": "minecraft:stick"}}}],
-		"attribute_modifiers": [{"type": "generic.attack_damage","name": "generic.attack_damage","amount": 1.2,"operation": "add_value","slot": "mainhand","uuid": [4,13,14,15]},{"type": "generic.attack_speed","name": "generic.attack_speed","amount": 0,"operation": "add_value","slot": "mainhand","uuid": [5,13,14,15]},{"type": "player.mining_efficiency","name": "player.mining_efficiency","amount": 0.2,"operation": "add_value","slot": "mainhand","uuid": [6,13,14,15]}],
+		"attribute_modifiers": [{"type": "generic.attack_damage","amount": 1.2,"operation": "add_value","slot": "mainhand","id": "iyc:generic.attack_damage.mainhand"},{"type": "generic.attack_speed","amount": 0,"operation": "add_value","slot": "mainhand","id": "iyc:generic.attack_speed.mainhand"},{"type": "player.mining_efficiency","amount": 0.2,"operation": "add_value","slot": "mainhand","id": "iyc:player.mining_efficiency.mainhand"}],
 		"custom_model_data": 2015011,
 		"item_name": "{'text': 'Adamantium Hoe', 'italic': false, 'color': 'white'}",
 		"lore": ["{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"]
@@ -168,7 +168,7 @@
 		"dyed_color": {"rgb": 2887831,"show_in_tooltip": false},
 		"result_of_crafting": [{"type": "crafting_shaped","result_count": 1,"category": "equipment","shape": ["XXX","X X"],"ingredients": {"X": {"components": {"custom_data": {"iyc": {"sapphire": true}}}}}}],
 		"max_damage": 407,
-		"attribute_modifiers": [{"type": "generic.armor","name": "generic.armor","amount": 3,"operation": "add_value","slot": "head","uuid": [1,1,2,3]},{"type": "generic.armor_toughness","name": "generic.armor_toughness","amount": 2,"operation": "add_value","slot": "head","uuid": [2,1,2,3]}],
+		"attribute_modifiers": [{"type": "generic.armor","amount": 3,"operation": "add_value","slot": "head","id": "iyc:generic.armor.head"},{"type": "generic.armor_toughness","amount": 2,"operation": "add_value","slot": "head","id": "iyc:generic.armor_toughness.head"}],
 		"custom_model_data": 2015015,
 		"item_name": "{'text': 'Sapphire Helmet', 'italic': false, 'color': 'white'}",
 		"lore": ["{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"]
@@ -180,7 +180,7 @@
 		"dyed_color": {"rgb": 2887831,"show_in_tooltip": false},
 		"result_of_crafting": [{"type": "crafting_shaped","result_count": 1,"category": "equipment","shape": ["X X","XXX","XXX"],"ingredients": {"X": {"components": {"custom_data": {"iyc": {"sapphire": true}}}}}}],
 		"max_damage": 592,
-		"attribute_modifiers": [{"type": "generic.armor","name": "generic.armor","amount": 8,"operation": "add_value","slot": "chest","uuid": [1,4,5,6]},{"type": "generic.armor_toughness","name": "generic.armor_toughness","amount": 2,"operation": "add_value","slot": "chest","uuid": [2,4,5,6]}],
+		"attribute_modifiers": [{"type": "generic.armor","amount": 8,"operation": "add_value","slot": "chest","id": "iyc:generic.armor.chest"},{"type": "generic.armor_toughness","amount": 2,"operation": "add_value","slot": "chest","id": "iyc:generic.armor_toughness.chest"}],
 		"custom_model_data": 2015016,
 		"item_name": "{'text': 'Sapphire Chestplate', 'italic': false, 'color': 'white'}",
 		"lore": ["{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"]
@@ -192,7 +192,7 @@
 		"dyed_color": {"rgb": 2887831,"show_in_tooltip": false},
 		"result_of_crafting": [{"type": "crafting_shaped","result_count": 1,"category": "equipment","shape": ["XXX","X X","X X"],"ingredients": {"X": {"components": {"custom_data": {"iyc": {"sapphire": true}}}}}}],
 		"max_damage": 555,
-		"attribute_modifiers": [{"type": "generic.armor","name": "generic.armor","amount": 6,"operation": "add_value","slot": "legs","uuid": [1,7,8,9]},{"type": "generic.armor_toughness","name": "generic.armor_toughness","amount": 2,"operation": "add_value","slot": "legs","uuid": [2,7,8,9]}],
+		"attribute_modifiers": [{"type": "generic.armor","amount": 6,"operation": "add_value","slot": "legs","id": "iyc:generic.armor.legs"},{"type": "generic.armor_toughness","amount": 2,"operation": "add_value","slot": "legs","id": "iyc:generic.armor_toughness.legs"}],
 		"custom_model_data": 2015017,
 		"item_name": "{'text': 'Sapphire Leggings', 'italic': false, 'color': 'white'}",
 		"lore": ["{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"]
@@ -204,7 +204,7 @@
 		"dyed_color": {"rgb": 2887831,"show_in_tooltip": false},
 		"result_of_crafting": [{"type": "crafting_shaped","result_count": 1,"category": "equipment","shape": ["X X","X X"],"ingredients": {"X": {"components": {"custom_data": {"iyc": {"sapphire": true}}}}}}],
 		"max_damage": 481,
-		"attribute_modifiers": [{"type": "generic.armor","name": "generic.armor","amount": 3,"operation": "add_value","slot": "feet","uuid": [1,10,11,12]},{"type": "generic.armor_toughness","name": "generic.armor_toughness","amount": 2,"operation": "add_value","slot": "feet","uuid": [2,10,11,12]}],
+		"attribute_modifiers": [{"type": "generic.armor","amount": 3,"operation": "add_value","slot": "feet","id": "iyc:generic.armor.feet"},{"type": "generic.armor_toughness","amount": 2,"operation": "add_value","slot": "feet","id": "iyc:generic.armor_toughness.feet"}],
 		"custom_model_data": 2015018,
 		"item_name": "{'text': 'Sapphire Boots', 'italic': false, 'color': 'white'}",
 		"lore": ["{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"]
@@ -215,7 +215,7 @@
 		"custom_data": {"smithed": {"dict": {"tools": {"sapphire": true,"sword": true}},"ignore": {"functionality": true,"crafting": true}},"iyc": {"sapphire_sword": true}},
 		"max_damage": 1752,
 		"result_of_crafting": [{"type": "crafting_shaped","result_count": 1,"category": "equipment","shape": ["X","X","S"],"ingredients": {"X": {"components": {"custom_data": {"iyc": {"sapphire": true}}}},"S": {"item": "minecraft:stick"}}}],
-		"attribute_modifiers": [{"type": "generic.attack_damage","name": "generic.attack_damage","amount": 7,"operation": "add_value","slot": "mainhand","uuid": [4,13,14,15]},{"type": "generic.attack_speed","name": "generic.attack_speed","amount": -2.5,"operation": "add_value","slot": "mainhand","uuid": [5,13,14,15]},{"type": "player.mining_efficiency","name": "player.mining_efficiency","amount": 0.2,"operation": "add_value","slot": "mainhand","uuid": [6,13,14,15]}],
+		"attribute_modifiers": [{"type": "generic.attack_damage","amount": 7,"operation": "add_value","slot": "mainhand","id": "iyc:generic.attack_damage.mainhand"},{"type": "generic.attack_speed","amount": -2.5,"operation": "add_value","slot": "mainhand","id": "iyc:generic.attack_speed.mainhand"},{"type": "player.mining_efficiency","amount": 0.2,"operation": "add_value","slot": "mainhand","id": "iyc:player.mining_efficiency.mainhand"}],
 		"custom_model_data": 2015019,
 		"item_name": "{'text': 'Sapphire Sword', 'italic': false, 'color': 'white'}",
 		"lore": ["{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"]
@@ -226,7 +226,7 @@
 		"custom_data": {"smithed": {"dict": {"tools": {"sapphire": true,"pickaxe": true}},"ignore": {"functionality": true,"crafting": true}},"iyc": {"sapphire_pickaxe": true}},
 		"max_damage": 1752,
 		"result_of_crafting": [{"type": "crafting_shaped","result_count": 1,"category": "equipment","shape": ["XXX"," S "," S "],"ingredients": {"X": {"components": {"custom_data": {"iyc": {"sapphire": true}}}},"S": {"item": "minecraft:stick"}}}],
-		"attribute_modifiers": [{"type": "generic.attack_damage","name": "generic.attack_damage","amount": 5,"operation": "add_value","slot": "mainhand","uuid": [4,13,14,15]},{"type": "generic.attack_speed","name": "generic.attack_speed","amount": -2.75,"operation": "add_value","slot": "mainhand","uuid": [5,13,14,15]},{"type": "player.mining_efficiency","name": "player.mining_efficiency","amount": 0.2,"operation": "add_value","slot": "mainhand","uuid": [6,13,14,15]}],
+		"attribute_modifiers": [{"type": "generic.attack_damage","amount": 5,"operation": "add_value","slot": "mainhand","id": "iyc:generic.attack_damage.mainhand"},{"type": "generic.attack_speed","amount": -2.75,"operation": "add_value","slot": "mainhand","id": "iyc:generic.attack_speed.mainhand"},{"type": "player.mining_efficiency","amount": 0.2,"operation": "add_value","slot": "mainhand","id": "iyc:player.mining_efficiency.mainhand"}],
 		"custom_model_data": 2015020,
 		"item_name": "{'text': 'Sapphire Pickaxe', 'italic': false, 'color': 'white'}",
 		"lore": ["{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"]
@@ -237,7 +237,7 @@
 		"custom_data": {"smithed": {"dict": {"tools": {"sapphire": true,"axe": true}},"ignore": {"functionality": true,"crafting": true}},"iyc": {"sapphire_axe": true}},
 		"max_damage": 1752,
 		"result_of_crafting": [{"type": "crafting_shaped","result_count": 1,"category": "equipment","shape": ["XX","XS"," S"],"ingredients": {"X": {"components": {"custom_data": {"iyc": {"sapphire": true}}}},"S": {"item": "minecraft:stick"}}}],
-		"attribute_modifiers": [{"type": "generic.attack_damage","name": "generic.attack_damage","amount": 9,"operation": "add_value","slot": "mainhand","uuid": [4,13,14,15]},{"type": "generic.attack_speed","name": "generic.attack_speed","amount": -3.0,"operation": "add_value","slot": "mainhand","uuid": [5,13,14,15]},{"type": "player.mining_efficiency","name": "player.mining_efficiency","amount": 0.2,"operation": "add_value","slot": "mainhand","uuid": [6,13,14,15]}],
+		"attribute_modifiers": [{"type": "generic.attack_damage","amount": 9,"operation": "add_value","slot": "mainhand","id": "iyc:generic.attack_damage.mainhand"},{"type": "generic.attack_speed","amount": -3.0,"operation": "add_value","slot": "mainhand","id": "iyc:generic.attack_speed.mainhand"},{"type": "player.mining_efficiency","amount": 0.2,"operation": "add_value","slot": "mainhand","id": "iyc:player.mining_efficiency.mainhand"}],
 		"custom_model_data": 2015021,
 		"item_name": "{'text': 'Sapphire Axe', 'italic': false, 'color': 'white'}",
 		"lore": ["{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"]
@@ -248,7 +248,7 @@
 		"custom_data": {"smithed": {"dict": {"tools": {"sapphire": true,"shovel": true}},"ignore": {"functionality": true,"crafting": true}},"iyc": {"sapphire_shovel": true}},
 		"max_damage": 1752,
 		"result_of_crafting": [{"type": "crafting_shaped","result_count": 1,"category": "equipment","shape": ["X","S","S"],"ingredients": {"X": {"components": {"custom_data": {"iyc": {"sapphire": true}}}},"S": {"item": "minecraft:stick"}}}],
-		"attribute_modifiers": [{"type": "generic.attack_damage","name": "generic.attack_damage","amount": 5.5,"operation": "add_value","slot": "mainhand","uuid": [4,13,14,15]},{"type": "generic.attack_speed","name": "generic.attack_speed","amount": -3.0,"operation": "add_value","slot": "mainhand","uuid": [5,13,14,15]},{"type": "player.mining_efficiency","name": "player.mining_efficiency","amount": 0.2,"operation": "add_value","slot": "mainhand","uuid": [6,13,14,15]}],
+		"attribute_modifiers": [{"type": "generic.attack_damage","amount": 5.5,"operation": "add_value","slot": "mainhand","id": "iyc:generic.attack_damage.mainhand"},{"type": "generic.attack_speed","amount": -3.0,"operation": "add_value","slot": "mainhand","id": "iyc:generic.attack_speed.mainhand"},{"type": "player.mining_efficiency","amount": 0.2,"operation": "add_value","slot": "mainhand","id": "iyc:player.mining_efficiency.mainhand"}],
 		"custom_model_data": 2015022,
 		"item_name": "{'text': 'Sapphire Shovel', 'italic': false, 'color': 'white'}",
 		"lore": ["{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"]
@@ -259,7 +259,7 @@
 		"custom_data": {"smithed": {"dict": {"tools": {"sapphire": true,"hoe": true}},"ignore": {"functionality": true,"crafting": true}},"iyc": {"sapphire_hoe": true}},
 		"max_damage": 1752,
 		"result_of_crafting": [{"type": "crafting_shaped","result_count": 1,"category": "equipment","shape": ["XX"," S"," S"],"ingredients": {"X": {"components": {"custom_data": {"iyc": {"sapphire": true}}}},"S": {"item": "minecraft:stick"}}}],
-		"attribute_modifiers": [{"type": "generic.attack_damage","name": "generic.attack_damage","amount": 1,"operation": "add_value","slot": "mainhand","uuid": [4,13,14,15]},{"type": "generic.attack_speed","name": "generic.attack_speed","amount": 0,"operation": "add_value","slot": "mainhand","uuid": [5,13,14,15]},{"type": "player.mining_efficiency","name": "player.mining_efficiency","amount": 0.2,"operation": "add_value","slot": "mainhand","uuid": [6,13,14,15]}],
+		"attribute_modifiers": [{"type": "generic.attack_damage","amount": 1,"operation": "add_value","slot": "mainhand","id": "iyc:generic.attack_damage.mainhand"},{"type": "generic.attack_speed","amount": 0,"operation": "add_value","slot": "mainhand","id": "iyc:generic.attack_speed.mainhand"},{"type": "player.mining_efficiency","amount": 0.2,"operation": "add_value","slot": "mainhand","id": "iyc:player.mining_efficiency.mainhand"}],
 		"custom_model_data": 2015023,
 		"item_name": "{'text': 'Sapphire Hoe', 'italic': false, 'color': 'white'}",
 		"lore": ["{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"]
@@ -300,7 +300,7 @@
 		"dyed_color": {"rgb": 9571615,"show_in_tooltip": false},
 		"result_of_crafting": [{"type": "crafting_shaped","result_count": 1,"category": "equipment","shape": ["XXX","X X"],"ingredients": {"X": {"components": {"custom_data": {"iyc": {"ruby": true}}}}}}],
 		"max_damage": 382,
-		"attribute_modifiers": [{"type": "generic.armor","name": "generic.armor","amount": 3.5,"operation": "add_value","slot": "head","uuid": [1,1,2,3]},{"type": "generic.armor_toughness","name": "generic.armor_toughness","amount": 2,"operation": "add_value","slot": "head","uuid": [2,1,2,3]}],
+		"attribute_modifiers": [{"type": "generic.armor","amount": 3.5,"operation": "add_value","slot": "head","id": "iyc:generic.armor.head"},{"type": "generic.armor_toughness","amount": 2,"operation": "add_value","slot": "head","id": "iyc:generic.armor_toughness.head"}],
 		"custom_model_data": 2015027,
 		"item_name": "{'text': 'Ruby Helmet', 'italic': false, 'color': 'white'}",
 		"lore": ["{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"]
@@ -312,7 +312,7 @@
 		"dyed_color": {"rgb": 9571615,"show_in_tooltip": false},
 		"result_of_crafting": [{"type": "crafting_shaped","result_count": 1,"category": "equipment","shape": ["X X","XXX","XXX"],"ingredients": {"X": {"components": {"custom_data": {"iyc": {"ruby": true}}}}}}],
 		"max_damage": 557,
-		"attribute_modifiers": [{"type": "generic.armor","name": "generic.armor","amount": 8.5,"operation": "add_value","slot": "chest","uuid": [1,4,5,6]},{"type": "generic.armor_toughness","name": "generic.armor_toughness","amount": 2,"operation": "add_value","slot": "chest","uuid": [2,4,5,6]}],
+		"attribute_modifiers": [{"type": "generic.armor","amount": 8.5,"operation": "add_value","slot": "chest","id": "iyc:generic.armor.chest"},{"type": "generic.armor_toughness","amount": 2,"operation": "add_value","slot": "chest","id": "iyc:generic.armor_toughness.chest"}],
 		"custom_model_data": 2015028,
 		"item_name": "{'text': 'Ruby Chestplate', 'italic': false, 'color': 'white'}",
 		"lore": ["{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"]
@@ -324,7 +324,7 @@
 		"dyed_color": {"rgb": 9571615,"show_in_tooltip": false},
 		"result_of_crafting": [{"type": "crafting_shaped","result_count": 1,"category": "equipment","shape": ["XXX","X X","X X"],"ingredients": {"X": {"components": {"custom_data": {"iyc": {"ruby": true}}}}}}],
 		"max_damage": 522,
-		"attribute_modifiers": [{"type": "generic.armor","name": "generic.armor","amount": 6.5,"operation": "add_value","slot": "legs","uuid": [1,7,8,9]},{"type": "generic.armor_toughness","name": "generic.armor_toughness","amount": 2,"operation": "add_value","slot": "legs","uuid": [2,7,8,9]}],
+		"attribute_modifiers": [{"type": "generic.armor","amount": 6.5,"operation": "add_value","slot": "legs","id": "iyc:generic.armor.legs"},{"type": "generic.armor_toughness","amount": 2,"operation": "add_value","slot": "legs","id": "iyc:generic.armor_toughness.legs"}],
 		"custom_model_data": 2015029,
 		"item_name": "{'text': 'Ruby Leggings', 'italic': false, 'color': 'white'}",
 		"lore": ["{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"]
@@ -336,7 +336,7 @@
 		"dyed_color": {"rgb": 9571615,"show_in_tooltip": false},
 		"result_of_crafting": [{"type": "crafting_shaped","result_count": 1,"category": "equipment","shape": ["X X","X X"],"ingredients": {"X": {"components": {"custom_data": {"iyc": {"ruby": true}}}}}}],
 		"max_damage": 452,
-		"attribute_modifiers": [{"type": "generic.armor","name": "generic.armor","amount": 3.5,"operation": "add_value","slot": "feet","uuid": [1,10,11,12]},{"type": "generic.armor_toughness","name": "generic.armor_toughness","amount": 2,"operation": "add_value","slot": "feet","uuid": [2,10,11,12]}],
+		"attribute_modifiers": [{"type": "generic.armor","amount": 3.5,"operation": "add_value","slot": "feet","id": "iyc:generic.armor.feet"},{"type": "generic.armor_toughness","amount": 2,"operation": "add_value","slot": "feet","id": "iyc:generic.armor_toughness.feet"}],
 		"custom_model_data": 2015030,
 		"item_name": "{'text': 'Ruby Boots', 'italic': false, 'color': 'white'}",
 		"lore": ["{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"]
@@ -347,7 +347,7 @@
 		"custom_data": {"smithed": {"dict": {"tools": {"ruby": true,"sword": true}},"ignore": {"functionality": true,"crafting": true}},"iyc": {"ruby_sword": true}},
 		"max_damage": 1647,
 		"result_of_crafting": [{"type": "crafting_shaped","result_count": 1,"category": "equipment","shape": ["X","X","S"],"ingredients": {"X": {"components": {"custom_data": {"iyc": {"ruby": true}}}},"S": {"item": "minecraft:stick"}}}],
-		"attribute_modifiers": [{"type": "generic.attack_damage","name": "generic.attack_damage","amount": 7.5,"operation": "add_value","slot": "mainhand","uuid": [4,13,14,15]},{"type": "generic.attack_speed","name": "generic.attack_speed","amount": -2.5,"operation": "add_value","slot": "mainhand","uuid": [5,13,14,15]},{"type": "player.mining_efficiency","name": "player.mining_efficiency","amount": 0.1,"operation": "add_value","slot": "mainhand","uuid": [6,13,14,15]}],
+		"attribute_modifiers": [{"type": "generic.attack_damage","amount": 7.5,"operation": "add_value","slot": "mainhand","id": "iyc:generic.attack_damage.mainhand"},{"type": "generic.attack_speed","amount": -2.5,"operation": "add_value","slot": "mainhand","id": "iyc:generic.attack_speed.mainhand"},{"type": "player.mining_efficiency","amount": 0.1,"operation": "add_value","slot": "mainhand","id": "iyc:player.mining_efficiency.mainhand"}],
 		"custom_model_data": 2015031,
 		"item_name": "{'text': 'Ruby Sword', 'italic': false, 'color': 'white'}",
 		"lore": ["{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"]
@@ -358,7 +358,7 @@
 		"custom_data": {"smithed": {"dict": {"tools": {"ruby": true,"pickaxe": true}},"ignore": {"functionality": true,"crafting": true}},"iyc": {"ruby_pickaxe": true}},
 		"max_damage": 1647,
 		"result_of_crafting": [{"type": "crafting_shaped","result_count": 1,"category": "equipment","shape": ["XXX"," S "," S "],"ingredients": {"X": {"components": {"custom_data": {"iyc": {"ruby": true}}}},"S": {"item": "minecraft:stick"}}}],
-		"attribute_modifiers": [{"type": "generic.attack_damage","name": "generic.attack_damage","amount": 5.5,"operation": "add_value","slot": "mainhand","uuid": [4,13,14,15]},{"type": "generic.attack_speed","name": "generic.attack_speed","amount": -2.75,"operation": "add_value","slot": "mainhand","uuid": [5,13,14,15]},{"type": "player.mining_efficiency","name": "player.mining_efficiency","amount": 0.1,"operation": "add_value","slot": "mainhand","uuid": [6,13,14,15]}],
+		"attribute_modifiers": [{"type": "generic.attack_damage","amount": 5.5,"operation": "add_value","slot": "mainhand","id": "iyc:generic.attack_damage.mainhand"},{"type": "generic.attack_speed","amount": -2.75,"operation": "add_value","slot": "mainhand","id": "iyc:generic.attack_speed.mainhand"},{"type": "player.mining_efficiency","amount": 0.1,"operation": "add_value","slot": "mainhand","id": "iyc:player.mining_efficiency.mainhand"}],
 		"custom_model_data": 2015032,
 		"item_name": "{'text': 'Ruby Pickaxe', 'italic': false, 'color': 'white'}",
 		"lore": ["{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"]
@@ -369,7 +369,7 @@
 		"custom_data": {"smithed": {"dict": {"tools": {"ruby": true,"axe": true}},"ignore": {"functionality": true,"crafting": true}},"iyc": {"ruby_axe": true}},
 		"max_damage": 1647,
 		"result_of_crafting": [{"type": "crafting_shaped","result_count": 1,"category": "equipment","shape": ["XX","XS"," S"],"ingredients": {"X": {"components": {"custom_data": {"iyc": {"ruby": true}}}},"S": {"item": "minecraft:stick"}}}],
-		"attribute_modifiers": [{"type": "generic.attack_damage","name": "generic.attack_damage","amount": 9.5,"operation": "add_value","slot": "mainhand","uuid": [4,13,14,15]},{"type": "generic.attack_speed","name": "generic.attack_speed","amount": -3.0,"operation": "add_value","slot": "mainhand","uuid": [5,13,14,15]},{"type": "player.mining_efficiency","name": "player.mining_efficiency","amount": 0.1,"operation": "add_value","slot": "mainhand","uuid": [6,13,14,15]}],
+		"attribute_modifiers": [{"type": "generic.attack_damage","amount": 9.5,"operation": "add_value","slot": "mainhand","id": "iyc:generic.attack_damage.mainhand"},{"type": "generic.attack_speed","amount": -3.0,"operation": "add_value","slot": "mainhand","id": "iyc:generic.attack_speed.mainhand"},{"type": "player.mining_efficiency","amount": 0.1,"operation": "add_value","slot": "mainhand","id": "iyc:player.mining_efficiency.mainhand"}],
 		"custom_model_data": 2015033,
 		"item_name": "{'text': 'Ruby Axe', 'italic': false, 'color': 'white'}",
 		"lore": ["{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"]
@@ -380,7 +380,7 @@
 		"custom_data": {"smithed": {"dict": {"tools": {"ruby": true,"shovel": true}},"ignore": {"functionality": true,"crafting": true}},"iyc": {"ruby_shovel": true}},
 		"max_damage": 1647,
 		"result_of_crafting": [{"type": "crafting_shaped","result_count": 1,"category": "equipment","shape": ["X","S","S"],"ingredients": {"X": {"components": {"custom_data": {"iyc": {"ruby": true}}}},"S": {"item": "minecraft:stick"}}}],
-		"attribute_modifiers": [{"type": "generic.attack_damage","name": "generic.attack_damage","amount": 6.0,"operation": "add_value","slot": "mainhand","uuid": [4,13,14,15]},{"type": "generic.attack_speed","name": "generic.attack_speed","amount": -3.0,"operation": "add_value","slot": "mainhand","uuid": [5,13,14,15]},{"type": "player.mining_efficiency","name": "player.mining_efficiency","amount": 0.1,"operation": "add_value","slot": "mainhand","uuid": [6,13,14,15]}],
+		"attribute_modifiers": [{"type": "generic.attack_damage","amount": 6.0,"operation": "add_value","slot": "mainhand","id": "iyc:generic.attack_damage.mainhand"},{"type": "generic.attack_speed","amount": -3.0,"operation": "add_value","slot": "mainhand","id": "iyc:generic.attack_speed.mainhand"},{"type": "player.mining_efficiency","amount": 0.1,"operation": "add_value","slot": "mainhand","id": "iyc:player.mining_efficiency.mainhand"}],
 		"custom_model_data": 2015034,
 		"item_name": "{'text': 'Ruby Shovel', 'italic': false, 'color': 'white'}",
 		"lore": ["{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"]
@@ -391,7 +391,7 @@
 		"custom_data": {"smithed": {"dict": {"tools": {"ruby": true,"hoe": true}},"ignore": {"functionality": true,"crafting": true}},"iyc": {"ruby_hoe": true}},
 		"max_damage": 1647,
 		"result_of_crafting": [{"type": "crafting_shaped","result_count": 1,"category": "equipment","shape": ["XX"," S"," S"],"ingredients": {"X": {"components": {"custom_data": {"iyc": {"ruby": true}}}},"S": {"item": "minecraft:stick"}}}],
-		"attribute_modifiers": [{"type": "generic.attack_damage","name": "generic.attack_damage","amount": 1.5,"operation": "add_value","slot": "mainhand","uuid": [4,13,14,15]},{"type": "generic.attack_speed","name": "generic.attack_speed","amount": 0,"operation": "add_value","slot": "mainhand","uuid": [5,13,14,15]},{"type": "player.mining_efficiency","name": "player.mining_efficiency","amount": 0.1,"operation": "add_value","slot": "mainhand","uuid": [6,13,14,15]}],
+		"attribute_modifiers": [{"type": "generic.attack_damage","amount": 1.5,"operation": "add_value","slot": "mainhand","id": "iyc:generic.attack_damage.mainhand"},{"type": "generic.attack_speed","amount": 0,"operation": "add_value","slot": "mainhand","id": "iyc:generic.attack_speed.mainhand"},{"type": "player.mining_efficiency","amount": 0.1,"operation": "add_value","slot": "mainhand","id": "iyc:player.mining_efficiency.mainhand"}],
 		"custom_model_data": 2015035,
 		"item_name": "{'text': 'Ruby Hoe', 'italic': false, 'color': 'white'}",
 		"lore": ["{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"]
@@ -432,7 +432,7 @@
 		"dyed_color": {"rgb": 12153387,"show_in_tooltip": false},
 		"result_of_crafting": [{"type": "crafting_shaped","result_count": 1,"category": "equipment","shape": ["XXX","X X"],"ingredients": {"X": {"components": {"custom_data": {"iyc": {"topaz": true}}}}}}],
 		"max_damage": 297,
-		"attribute_modifiers": [{"type": "generic.armor","name": "generic.armor","amount": 4.0,"operation": "add_value","slot": "head","uuid": [1,1,2,3]},{"type": "generic.armor_toughness","name": "generic.armor_toughness","amount": 2,"operation": "add_value","slot": "head","uuid": [2,1,2,3]}],
+		"attribute_modifiers": [{"type": "generic.armor","amount": 4.0,"operation": "add_value","slot": "head","id": "iyc:generic.armor.head"},{"type": "generic.armor_toughness","amount": 2,"operation": "add_value","slot": "head","id": "iyc:generic.armor_toughness.head"}],
 		"custom_model_data": 2015039,
 		"item_name": "{'text': 'Topaz Helmet', 'italic': false, 'color': 'white'}",
 		"lore": ["{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"]
@@ -444,7 +444,7 @@
 		"dyed_color": {"rgb": 12153387,"show_in_tooltip": false},
 		"result_of_crafting": [{"type": "crafting_shaped","result_count": 1,"category": "equipment","shape": ["X X","XXX","XXX"],"ingredients": {"X": {"components": {"custom_data": {"iyc": {"topaz": true}}}}}}],
 		"max_damage": 433,
-		"attribute_modifiers": [{"type": "generic.armor","name": "generic.armor","amount": 9.0,"operation": "add_value","slot": "chest","uuid": [1,4,5,6]},{"type": "generic.armor_toughness","name": "generic.armor_toughness","amount": 2,"operation": "add_value","slot": "chest","uuid": [2,4,5,6]}],
+		"attribute_modifiers": [{"type": "generic.armor","amount": 9.0,"operation": "add_value","slot": "chest","id": "iyc:generic.armor.chest"},{"type": "generic.armor_toughness","amount": 2,"operation": "add_value","slot": "chest","id": "iyc:generic.armor_toughness.chest"}],
 		"custom_model_data": 2015040,
 		"item_name": "{'text': 'Topaz Chestplate', 'italic': false, 'color': 'white'}",
 		"lore": ["{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"]
@@ -456,7 +456,7 @@
 		"dyed_color": {"rgb": 12153387,"show_in_tooltip": false},
 		"result_of_crafting": [{"type": "crafting_shaped","result_count": 1,"category": "equipment","shape": ["XXX","X X","X X"],"ingredients": {"X": {"components": {"custom_data": {"iyc": {"topaz": true}}}}}}],
 		"max_damage": 406,
-		"attribute_modifiers": [{"type": "generic.armor","name": "generic.armor","amount": 7.0,"operation": "add_value","slot": "legs","uuid": [1,7,8,9]},{"type": "generic.armor_toughness","name": "generic.armor_toughness","amount": 2,"operation": "add_value","slot": "legs","uuid": [2,7,8,9]}],
+		"attribute_modifiers": [{"type": "generic.armor","amount": 7.0,"operation": "add_value","slot": "legs","id": "iyc:generic.armor.legs"},{"type": "generic.armor_toughness","amount": 2,"operation": "add_value","slot": "legs","id": "iyc:generic.armor_toughness.legs"}],
 		"custom_model_data": 2015041,
 		"item_name": "{'text': 'Topaz Leggings', 'italic': false, 'color': 'white'}",
 		"lore": ["{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"]
@@ -468,7 +468,7 @@
 		"dyed_color": {"rgb": 12153387,"show_in_tooltip": false},
 		"result_of_crafting": [{"type": "crafting_shaped","result_count": 1,"category": "equipment","shape": ["X X","X X"],"ingredients": {"X": {"components": {"custom_data": {"iyc": {"topaz": true}}}}}}],
 		"max_damage": 352,
-		"attribute_modifiers": [{"type": "generic.armor","name": "generic.armor","amount": 4.0,"operation": "add_value","slot": "feet","uuid": [1,10,11,12]},{"type": "generic.armor_toughness","name": "generic.armor_toughness","amount": 2,"operation": "add_value","slot": "feet","uuid": [2,10,11,12]}],
+		"attribute_modifiers": [{"type": "generic.armor","amount": 4.0,"operation": "add_value","slot": "feet","id": "iyc:generic.armor.feet"},{"type": "generic.armor_toughness","amount": 2,"operation": "add_value","slot": "feet","id": "iyc:generic.armor_toughness.feet"}],
 		"custom_model_data": 2015042,
 		"item_name": "{'text': 'Topaz Boots', 'italic': false, 'color': 'white'}",
 		"lore": ["{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"]
@@ -479,7 +479,7 @@
 		"custom_data": {"smithed": {"dict": {"tools": {"topaz": true,"sword": true}},"ignore": {"functionality": true,"crafting": true}},"iyc": {"topaz_sword": true}},
 		"max_damage": 1281,
 		"result_of_crafting": [{"type": "crafting_shaped","result_count": 1,"category": "equipment","shape": ["X","X","S"],"ingredients": {"X": {"components": {"custom_data": {"iyc": {"topaz": true}}}},"S": {"item": "minecraft:stick"}}}],
-		"attribute_modifiers": [{"type": "generic.attack_damage","name": "generic.attack_damage","amount": 8.0,"operation": "add_value","slot": "mainhand","uuid": [4,13,14,15]},{"type": "generic.attack_speed","name": "generic.attack_speed","amount": -2.5,"operation": "add_value","slot": "mainhand","uuid": [5,13,14,15]}],
+		"attribute_modifiers": [{"type": "generic.attack_damage","amount": 8.0,"operation": "add_value","slot": "mainhand","id": "iyc:generic.attack_damage.mainhand"},{"type": "generic.attack_speed","amount": -2.5,"operation": "add_value","slot": "mainhand","id": "iyc:generic.attack_speed.mainhand"}],
 		"custom_model_data": 2015043,
 		"item_name": "{'text': 'Topaz Sword', 'italic': false, 'color': 'white'}",
 		"lore": ["{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"]
@@ -490,7 +490,7 @@
 		"custom_data": {"smithed": {"dict": {"tools": {"topaz": true,"pickaxe": true}},"ignore": {"functionality": true,"crafting": true}},"iyc": {"topaz_pickaxe": true}},
 		"max_damage": 1281,
 		"result_of_crafting": [{"type": "crafting_shaped","result_count": 1,"category": "equipment","shape": ["XXX"," S "," S "],"ingredients": {"X": {"components": {"custom_data": {"iyc": {"topaz": true}}}},"S": {"item": "minecraft:stick"}}}],
-		"attribute_modifiers": [{"type": "generic.attack_damage","name": "generic.attack_damage","amount": 6.0,"operation": "add_value","slot": "mainhand","uuid": [4,13,14,15]},{"type": "generic.attack_speed","name": "generic.attack_speed","amount": -2.75,"operation": "add_value","slot": "mainhand","uuid": [5,13,14,15]}],
+		"attribute_modifiers": [{"type": "generic.attack_damage","amount": 6.0,"operation": "add_value","slot": "mainhand","id": "iyc:generic.attack_damage.mainhand"},{"type": "generic.attack_speed","amount": -2.75,"operation": "add_value","slot": "mainhand","id": "iyc:generic.attack_speed.mainhand"}],
 		"custom_model_data": 2015044,
 		"item_name": "{'text': 'Topaz Pickaxe', 'italic': false, 'color': 'white'}",
 		"lore": ["{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"]
@@ -501,7 +501,7 @@
 		"custom_data": {"smithed": {"dict": {"tools": {"topaz": true,"axe": true}},"ignore": {"functionality": true,"crafting": true}},"iyc": {"topaz_axe": true}},
 		"max_damage": 1281,
 		"result_of_crafting": [{"type": "crafting_shaped","result_count": 1,"category": "equipment","shape": ["XX","XS"," S"],"ingredients": {"X": {"components": {"custom_data": {"iyc": {"topaz": true}}}},"S": {"item": "minecraft:stick"}}}],
-		"attribute_modifiers": [{"type": "generic.attack_damage","name": "generic.attack_damage","amount": 10.0,"operation": "add_value","slot": "mainhand","uuid": [4,13,14,15]},{"type": "generic.attack_speed","name": "generic.attack_speed","amount": -3.0,"operation": "add_value","slot": "mainhand","uuid": [5,13,14,15]}],
+		"attribute_modifiers": [{"type": "generic.attack_damage","amount": 10.0,"operation": "add_value","slot": "mainhand","id": "iyc:generic.attack_damage.mainhand"},{"type": "generic.attack_speed","amount": -3.0,"operation": "add_value","slot": "mainhand","id": "iyc:generic.attack_speed.mainhand"}],
 		"custom_model_data": 2015045,
 		"item_name": "{'text': 'Topaz Axe', 'italic': false, 'color': 'white'}",
 		"lore": ["{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"]
@@ -512,7 +512,7 @@
 		"custom_data": {"smithed": {"dict": {"tools": {"topaz": true,"shovel": true}},"ignore": {"functionality": true,"crafting": true}},"iyc": {"topaz_shovel": true}},
 		"max_damage": 1281,
 		"result_of_crafting": [{"type": "crafting_shaped","result_count": 1,"category": "equipment","shape": ["X","S","S"],"ingredients": {"X": {"components": {"custom_data": {"iyc": {"topaz": true}}}},"S": {"item": "minecraft:stick"}}}],
-		"attribute_modifiers": [{"type": "generic.attack_damage","name": "generic.attack_damage","amount": 6.5,"operation": "add_value","slot": "mainhand","uuid": [4,13,14,15]},{"type": "generic.attack_speed","name": "generic.attack_speed","amount": -3.0,"operation": "add_value","slot": "mainhand","uuid": [5,13,14,15]}],
+		"attribute_modifiers": [{"type": "generic.attack_damage","amount": 6.5,"operation": "add_value","slot": "mainhand","id": "iyc:generic.attack_damage.mainhand"},{"type": "generic.attack_speed","amount": -3.0,"operation": "add_value","slot": "mainhand","id": "iyc:generic.attack_speed.mainhand"}],
 		"custom_model_data": 2015046,
 		"item_name": "{'text': 'Topaz Shovel', 'italic': false, 'color': 'white'}",
 		"lore": ["{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"]
@@ -523,7 +523,7 @@
 		"custom_data": {"smithed": {"dict": {"tools": {"topaz": true,"hoe": true}},"ignore": {"functionality": true,"crafting": true}},"iyc": {"topaz_hoe": true}},
 		"max_damage": 1281,
 		"result_of_crafting": [{"type": "crafting_shaped","result_count": 1,"category": "equipment","shape": ["XX"," S"," S"],"ingredients": {"X": {"components": {"custom_data": {"iyc": {"topaz": true}}}},"S": {"item": "minecraft:stick"}}}],
-		"attribute_modifiers": [{"type": "generic.attack_damage","name": "generic.attack_damage","amount": 2.0,"operation": "add_value","slot": "mainhand","uuid": [4,13,14,15]},{"type": "generic.attack_speed","name": "generic.attack_speed","amount": 0,"operation": "add_value","slot": "mainhand","uuid": [5,13,14,15]}],
+		"attribute_modifiers": [{"type": "generic.attack_damage","amount": 2.0,"operation": "add_value","slot": "mainhand","id": "iyc:generic.attack_damage.mainhand"},{"type": "generic.attack_speed","amount": 0,"operation": "add_value","slot": "mainhand","id": "iyc:generic.attack_speed.mainhand"}],
 		"custom_model_data": 2015047,
 		"item_name": "{'text': 'Topaz Hoe', 'italic': false, 'color': 'white'}",
 		"lore": ["{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"]
@@ -544,7 +544,7 @@
 		"dyed_color": {"rgb": 2168364,"show_in_tooltip": false},
 		"result_of_crafting": [{"type": "crafting_shaped","result_count": 1,"category": "equipment","shape": ["XXX","X X"],"ingredients": {"X": {"components": {"custom_data": {"iyc": {"obsidian_ingot": true}}}}}}],
 		"max_damage": 907,
-		"attribute_modifiers": [{"type": "generic.armor","name": "generic.armor","amount": 3,"operation": "add_value","slot": "head","uuid": [1,1,2,3]},{"type": "generic.armor_toughness","name": "generic.armor_toughness","amount": 2,"operation": "add_value","slot": "head","uuid": [2,1,2,3]}],
+		"attribute_modifiers": [{"type": "generic.armor","amount": 3,"operation": "add_value","slot": "head","id": "iyc:generic.armor.head"},{"type": "generic.armor_toughness","amount": 2,"operation": "add_value","slot": "head","id": "iyc:generic.armor_toughness.head"}],
 		"custom_model_data": 2015049,
 		"item_name": "{'text': 'Obsidian Helmet', 'italic': false, 'color': 'white'}",
 		"lore": ["{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"]
@@ -556,7 +556,7 @@
 		"dyed_color": {"rgb": 2168364,"show_in_tooltip": false},
 		"result_of_crafting": [{"type": "crafting_shaped","result_count": 1,"category": "equipment","shape": ["X X","XXX","XXX"],"ingredients": {"X": {"components": {"custom_data": {"iyc": {"obsidian_ingot": true}}}}}}],
 		"max_damage": 1319,
-		"attribute_modifiers": [{"type": "generic.armor","name": "generic.armor","amount": 8,"operation": "add_value","slot": "chest","uuid": [1,4,5,6]},{"type": "generic.armor_toughness","name": "generic.armor_toughness","amount": 2,"operation": "add_value","slot": "chest","uuid": [2,4,5,6]}],
+		"attribute_modifiers": [{"type": "generic.armor","amount": 8,"operation": "add_value","slot": "chest","id": "iyc:generic.armor.chest"},{"type": "generic.armor_toughness","amount": 2,"operation": "add_value","slot": "chest","id": "iyc:generic.armor_toughness.chest"}],
 		"custom_model_data": 2015050,
 		"item_name": "{'text': 'Obsidian Chestplate', 'italic': false, 'color': 'white'}",
 		"lore": ["{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"]
@@ -568,7 +568,7 @@
 		"dyed_color": {"rgb": 2168364,"show_in_tooltip": false},
 		"result_of_crafting": [{"type": "crafting_shaped","result_count": 1,"category": "equipment","shape": ["XXX","X X","X X"],"ingredients": {"X": {"components": {"custom_data": {"iyc": {"obsidian_ingot": true}}}}}}],
 		"max_damage": 1237,
-		"attribute_modifiers": [{"type": "generic.armor","name": "generic.armor","amount": 6,"operation": "add_value","slot": "legs","uuid": [1,7,8,9]},{"type": "generic.armor_toughness","name": "generic.armor_toughness","amount": 2,"operation": "add_value","slot": "legs","uuid": [2,7,8,9]}],
+		"attribute_modifiers": [{"type": "generic.armor","amount": 6,"operation": "add_value","slot": "legs","id": "iyc:generic.armor.legs"},{"type": "generic.armor_toughness","amount": 2,"operation": "add_value","slot": "legs","id": "iyc:generic.armor_toughness.legs"}],
 		"custom_model_data": 2015051,
 		"item_name": "{'text': 'Obsidian Leggings', 'italic': false, 'color': 'white'}",
 		"lore": ["{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"]
@@ -580,7 +580,7 @@
 		"dyed_color": {"rgb": 2168364,"show_in_tooltip": false},
 		"result_of_crafting": [{"type": "crafting_shaped","result_count": 1,"category": "equipment","shape": ["X X","X X"],"ingredients": {"X": {"components": {"custom_data": {"iyc": {"obsidian_ingot": true}}}}}}],
 		"max_damage": 1072,
-		"attribute_modifiers": [{"type": "generic.armor","name": "generic.armor","amount": 3,"operation": "add_value","slot": "feet","uuid": [1,10,11,12]},{"type": "generic.armor_toughness","name": "generic.armor_toughness","amount": 2,"operation": "add_value","slot": "feet","uuid": [2,10,11,12]}],
+		"attribute_modifiers": [{"type": "generic.armor","amount": 3,"operation": "add_value","slot": "feet","id": "iyc:generic.armor.feet"},{"type": "generic.armor_toughness","amount": 2,"operation": "add_value","slot": "feet","id": "iyc:generic.armor_toughness.feet"}],
 		"custom_model_data": 2015052,
 		"item_name": "{'text': 'Obsidian Boots', 'italic': false, 'color': 'white'}",
 		"lore": ["{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"]
@@ -591,7 +591,7 @@
 		"custom_data": {"smithed": {"dict": {"tools": {"obsidian": true,"sword": true}},"ignore": {"functionality": true,"crafting": true}},"iyc": {"obsidian_sword": true}},
 		"max_damage": 3902,
 		"result_of_crafting": [{"type": "crafting_shaped","result_count": 1,"category": "equipment","shape": ["X","X","S"],"ingredients": {"X": {"components": {"custom_data": {"iyc": {"obsidian_ingot": true}}}},"S": {"item": "minecraft:stick"}}}],
-		"attribute_modifiers": [{"type": "generic.attack_damage","name": "generic.attack_damage","amount": 6.8,"operation": "add_value","slot": "mainhand","uuid": [4,13,14,15]},{"type": "generic.attack_speed","name": "generic.attack_speed","amount": -2.5,"operation": "add_value","slot": "mainhand","uuid": [5,13,14,15]},{"type": "player.mining_efficiency","name": "player.mining_efficiency","amount": -0.2,"operation": "add_value","slot": "mainhand","uuid": [6,13,14,15]}],
+		"attribute_modifiers": [{"type": "generic.attack_damage","amount": 6.8,"operation": "add_value","slot": "mainhand","id": "iyc:generic.attack_damage.mainhand"},{"type": "generic.attack_speed","amount": -2.5,"operation": "add_value","slot": "mainhand","id": "iyc:generic.attack_speed.mainhand"},{"type": "player.mining_efficiency","amount": -0.2,"operation": "add_value","slot": "mainhand","id": "iyc:player.mining_efficiency.mainhand"}],
 		"custom_model_data": 2015053,
 		"item_name": "{'text': 'Obsidian Sword', 'italic': false, 'color': 'white'}",
 		"lore": ["{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"]
@@ -602,7 +602,7 @@
 		"custom_data": {"smithed": {"dict": {"tools": {"obsidian": true,"pickaxe": true}},"ignore": {"functionality": true,"crafting": true}},"iyc": {"obsidian_pickaxe": true}},
 		"max_damage": 3902,
 		"result_of_crafting": [{"type": "crafting_shaped","result_count": 1,"category": "equipment","shape": ["XXX"," S "," S "],"ingredients": {"X": {"components": {"custom_data": {"iyc": {"obsidian_ingot": true}}}},"S": {"item": "minecraft:stick"}}}],
-		"attribute_modifiers": [{"type": "generic.attack_damage","name": "generic.attack_damage","amount": 4.8,"operation": "add_value","slot": "mainhand","uuid": [4,13,14,15]},{"type": "generic.attack_speed","name": "generic.attack_speed","amount": -2.75,"operation": "add_value","slot": "mainhand","uuid": [5,13,14,15]},{"type": "player.mining_efficiency","name": "player.mining_efficiency","amount": -0.2,"operation": "add_value","slot": "mainhand","uuid": [6,13,14,15]}],
+		"attribute_modifiers": [{"type": "generic.attack_damage","amount": 4.8,"operation": "add_value","slot": "mainhand","id": "iyc:generic.attack_damage.mainhand"},{"type": "generic.attack_speed","amount": -2.75,"operation": "add_value","slot": "mainhand","id": "iyc:generic.attack_speed.mainhand"},{"type": "player.mining_efficiency","amount": -0.2,"operation": "add_value","slot": "mainhand","id": "iyc:player.mining_efficiency.mainhand"}],
 		"custom_model_data": 2015054,
 		"item_name": "{'text': 'Obsidian Pickaxe', 'italic': false, 'color': 'white'}",
 		"lore": ["{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"]
@@ -613,7 +613,7 @@
 		"custom_data": {"smithed": {"dict": {"tools": {"obsidian": true,"axe": true}},"ignore": {"functionality": true,"crafting": true}},"iyc": {"obsidian_axe": true}},
 		"max_damage": 3902,
 		"result_of_crafting": [{"type": "crafting_shaped","result_count": 1,"category": "equipment","shape": ["XX","XS"," S"],"ingredients": {"X": {"components": {"custom_data": {"iyc": {"obsidian_ingot": true}}}},"S": {"item": "minecraft:stick"}}}],
-		"attribute_modifiers": [{"type": "generic.attack_damage","name": "generic.attack_damage","amount": 8.8,"operation": "add_value","slot": "mainhand","uuid": [4,13,14,15]},{"type": "generic.attack_speed","name": "generic.attack_speed","amount": -3.0,"operation": "add_value","slot": "mainhand","uuid": [5,13,14,15]},{"type": "player.mining_efficiency","name": "player.mining_efficiency","amount": -0.2,"operation": "add_value","slot": "mainhand","uuid": [6,13,14,15]}],
+		"attribute_modifiers": [{"type": "generic.attack_damage","amount": 8.8,"operation": "add_value","slot": "mainhand","id": "iyc:generic.attack_damage.mainhand"},{"type": "generic.attack_speed","amount": -3.0,"operation": "add_value","slot": "mainhand","id": "iyc:generic.attack_speed.mainhand"},{"type": "player.mining_efficiency","amount": -0.2,"operation": "add_value","slot": "mainhand","id": "iyc:player.mining_efficiency.mainhand"}],
 		"custom_model_data": 2015055,
 		"item_name": "{'text': 'Obsidian Axe', 'italic': false, 'color': 'white'}",
 		"lore": ["{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"]
@@ -624,7 +624,7 @@
 		"custom_data": {"smithed": {"dict": {"tools": {"obsidian": true,"shovel": true}},"ignore": {"functionality": true,"crafting": true}},"iyc": {"obsidian_shovel": true}},
 		"max_damage": 3902,
 		"result_of_crafting": [{"type": "crafting_shaped","result_count": 1,"category": "equipment","shape": ["X","S","S"],"ingredients": {"X": {"components": {"custom_data": {"iyc": {"obsidian_ingot": true}}}},"S": {"item": "minecraft:stick"}}}],
-		"attribute_modifiers": [{"type": "generic.attack_damage","name": "generic.attack_damage","amount": 5.3,"operation": "add_value","slot": "mainhand","uuid": [4,13,14,15]},{"type": "generic.attack_speed","name": "generic.attack_speed","amount": -3.0,"operation": "add_value","slot": "mainhand","uuid": [5,13,14,15]},{"type": "player.mining_efficiency","name": "player.mining_efficiency","amount": -0.2,"operation": "add_value","slot": "mainhand","uuid": [6,13,14,15]}],
+		"attribute_modifiers": [{"type": "generic.attack_damage","amount": 5.3,"operation": "add_value","slot": "mainhand","id": "iyc:generic.attack_damage.mainhand"},{"type": "generic.attack_speed","amount": -3.0,"operation": "add_value","slot": "mainhand","id": "iyc:generic.attack_speed.mainhand"},{"type": "player.mining_efficiency","amount": -0.2,"operation": "add_value","slot": "mainhand","id": "iyc:player.mining_efficiency.mainhand"}],
 		"custom_model_data": 2015056,
 		"item_name": "{'text': 'Obsidian Shovel', 'italic': false, 'color': 'white'}",
 		"lore": ["{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"]
@@ -635,7 +635,7 @@
 		"custom_data": {"smithed": {"dict": {"tools": {"obsidian": true,"hoe": true}},"ignore": {"functionality": true,"crafting": true}},"iyc": {"obsidian_hoe": true}},
 		"max_damage": 3902,
 		"result_of_crafting": [{"type": "crafting_shaped","result_count": 1,"category": "equipment","shape": ["XX"," S"," S"],"ingredients": {"X": {"components": {"custom_data": {"iyc": {"obsidian_ingot": true}}}},"S": {"item": "minecraft:stick"}}}],
-		"attribute_modifiers": [{"type": "generic.attack_damage","name": "generic.attack_damage","amount": 0.8,"operation": "add_value","slot": "mainhand","uuid": [4,13,14,15]},{"type": "generic.attack_speed","name": "generic.attack_speed","amount": 0,"operation": "add_value","slot": "mainhand","uuid": [5,13,14,15]},{"type": "player.mining_efficiency","name": "player.mining_efficiency","amount": -0.2,"operation": "add_value","slot": "mainhand","uuid": [6,13,14,15]}],
+		"attribute_modifiers": [{"type": "generic.attack_damage","amount": 0.8,"operation": "add_value","slot": "mainhand","id": "iyc:generic.attack_damage.mainhand"},{"type": "generic.attack_speed","amount": 0,"operation": "add_value","slot": "mainhand","id": "iyc:generic.attack_speed.mainhand"},{"type": "player.mining_efficiency","amount": -0.2,"operation": "add_value","slot": "mainhand","id": "iyc:player.mining_efficiency.mainhand"}],
 		"custom_model_data": 2015057,
 		"item_name": "{'text': 'Obsidian Hoe', 'italic': false, 'color': 'white'}",
 		"lore": ["{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"]
@@ -647,7 +647,7 @@
 		"dyed_color": {"rgb": 2532680,"show_in_tooltip": false},
 		"result_of_crafting": [{"type": "crafting_shaped","result_count": 1,"category": "equipment","shape": ["XXX","X X"],"ingredients": {"X": {"item": "minecraft:emerald"}}}],
 		"max_damage": 171,
-		"attribute_modifiers": [{"type": "generic.armor","name": "generic.armor","amount": 3,"operation": "add_value","slot": "head","uuid": [1,1,2,3]},{"type": "generic.armor_toughness","name": "generic.armor_toughness","amount": 2,"operation": "add_value","slot": "head","uuid": [2,1,2,3]},{"type": "generic.luck","name": "generic.luck","amount": 0.25,"operation": "add_value","slot": "head","uuid": [7,13,14,15]}],
+		"attribute_modifiers": [{"type": "generic.armor","amount": 3,"operation": "add_value","slot": "head","id": "iyc:generic.armor.head"},{"type": "generic.armor_toughness","amount": 2,"operation": "add_value","slot": "head","id": "iyc:generic.armor_toughness.head"},{"type": "generic.luck","amount": 0.25,"operation": "add_value","slot": "head","id": "iyc:generic.luck.head"}],
 		"custom_model_data": 2015058,
 		"item_name": "{'text': 'Emerald Helmet', 'italic': false, 'color': 'white'}",
 		"lore": ["{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"]
@@ -659,7 +659,7 @@
 		"dyed_color": {"rgb": 2532680,"show_in_tooltip": false},
 		"result_of_crafting": [{"type": "crafting_shaped","result_count": 1,"category": "equipment","shape": ["X X","XXX","XXX"],"ingredients": {"X": {"item": "minecraft:emerald"}}}],
 		"max_damage": 248,
-		"attribute_modifiers": [{"type": "generic.armor","name": "generic.armor","amount": 8,"operation": "add_value","slot": "chest","uuid": [1,4,5,6]},{"type": "generic.armor_toughness","name": "generic.armor_toughness","amount": 2,"operation": "add_value","slot": "chest","uuid": [2,4,5,6]},{"type": "generic.luck","name": "generic.luck","amount": 0.25,"operation": "add_value","slot": "chest","uuid": [7,4,5,6]}],
+		"attribute_modifiers": [{"type": "generic.armor","amount": 8,"operation": "add_value","slot": "chest","id": "iyc:generic.armor.chest"},{"type": "generic.armor_toughness","amount": 2,"operation": "add_value","slot": "chest","id": "iyc:generic.armor_toughness.chest"},{"type": "generic.luck","amount": 0.25,"operation": "add_value","slot": "chest","id": "iyc:generic.luck.chest"}],
 		"custom_model_data": 2015059,
 		"item_name": "{'text': 'Emerald Chestplate', 'italic': false, 'color': 'white'}",
 		"lore": ["{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"]
@@ -671,7 +671,7 @@
 		"dyed_color": {"rgb": 2532680,"show_in_tooltip": false},
 		"result_of_crafting": [{"type": "crafting_shaped","result_count": 1,"category": "equipment","shape": ["XXX","X X","X X"],"ingredients": {"X": {"item": "minecraft:emerald"}}}],
 		"max_damage": 233,
-		"attribute_modifiers": [{"type": "generic.armor","name": "generic.armor","amount": 6,"operation": "add_value","slot": "legs","uuid": [1,7,8,9]},{"type": "generic.armor_toughness","name": "generic.armor_toughness","amount": 2,"operation": "add_value","slot": "legs","uuid": [2,7,8,9]},{"type": "generic.luck","name": "generic.luck","amount": 0.25,"operation": "add_value","slot": "legs","uuid": [7,7,8,9]}],
+		"attribute_modifiers": [{"type": "generic.armor","amount": 6,"operation": "add_value","slot": "legs","id": "iyc:generic.armor.legs"},{"type": "generic.armor_toughness","amount": 2,"operation": "add_value","slot": "legs","id": "iyc:generic.armor_toughness.legs"},{"type": "generic.luck","amount": 0.25,"operation": "add_value","slot": "legs","id": "iyc:generic.luck.legs"}],
 		"custom_model_data": 2015060,
 		"item_name": "{'text': 'Emerald Leggings', 'italic': false, 'color': 'white'}",
 		"lore": ["{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"]
@@ -683,7 +683,7 @@
 		"dyed_color": {"rgb": 2532680,"show_in_tooltip": false},
 		"result_of_crafting": [{"type": "crafting_shaped","result_count": 1,"category": "equipment","shape": ["X X","X X"],"ingredients": {"X": {"item": "minecraft:emerald"}}}],
 		"max_damage": 202,
-		"attribute_modifiers": [{"type": "generic.armor","name": "generic.armor","amount": 3,"operation": "add_value","slot": "feet","uuid": [1,10,11,12]},{"type": "generic.armor_toughness","name": "generic.armor_toughness","amount": 2,"operation": "add_value","slot": "feet","uuid": [2,10,11,12]},{"type": "generic.luck","name": "generic.luck","amount": 0.25,"operation": "add_value","slot": "feet","uuid": [7,10,11,12]}],
+		"attribute_modifiers": [{"type": "generic.armor","amount": 3,"operation": "add_value","slot": "feet","id": "iyc:generic.armor.feet"},{"type": "generic.armor_toughness","amount": 2,"operation": "add_value","slot": "feet","id": "iyc:generic.armor_toughness.feet"},{"type": "generic.luck","amount": 0.25,"operation": "add_value","slot": "feet","id": "iyc:generic.luck.feet"}],
 		"custom_model_data": 2015061,
 		"item_name": "{'text': 'Emerald Boots', 'italic': false, 'color': 'white'}",
 		"lore": ["{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"]
@@ -694,7 +694,7 @@
 		"custom_data": {"smithed": {"dict": {"tools": {"emerald": true,"sword": true}},"ignore": {"functionality": true,"crafting": true}},"iyc": {"emerald_sword": true}},
 		"max_damage": 736,
 		"result_of_crafting": [{"type": "crafting_shaped","result_count": 1,"category": "equipment","shape": ["X","X","S"],"ingredients": {"X": {"item": "minecraft:emerald"},"S": {"item": "minecraft:stick"}}}],
-		"attribute_modifiers": [{"type": "generic.attack_damage","name": "generic.attack_damage","amount": 7,"operation": "add_value","slot": "mainhand","uuid": [4,13,14,15]},{"type": "generic.attack_speed","name": "generic.attack_speed","amount": -2.5,"operation": "add_value","slot": "mainhand","uuid": [5,13,14,15]},{"type": "generic.luck","name": "generic.luck","amount": 0.25,"operation": "add_value","slot": "mainhand","uuid": [7,13,14,15]}],
+		"attribute_modifiers": [{"type": "generic.attack_damage","amount": 7,"operation": "add_value","slot": "mainhand","id": "iyc:generic.attack_damage.mainhand"},{"type": "generic.attack_speed","amount": -2.5,"operation": "add_value","slot": "mainhand","id": "iyc:generic.attack_speed.mainhand"},{"type": "generic.luck","amount": 0.25,"operation": "add_value","slot": "mainhand","id": "iyc:generic.luck.mainhand"}],
 		"custom_model_data": 2015062,
 		"item_name": "{'text': 'Emerald Sword', 'italic': false, 'color': 'white'}",
 		"lore": ["{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"]
@@ -705,7 +705,7 @@
 		"custom_data": {"smithed": {"dict": {"tools": {"emerald": true,"pickaxe": true}},"ignore": {"functionality": true,"crafting": true}},"iyc": {"emerald_pickaxe": true}},
 		"max_damage": 736,
 		"result_of_crafting": [{"type": "crafting_shaped","result_count": 1,"category": "equipment","shape": ["XXX"," S "," S "],"ingredients": {"X": {"item": "minecraft:emerald"},"S": {"item": "minecraft:stick"}}}],
-		"attribute_modifiers": [{"type": "generic.attack_damage","name": "generic.attack_damage","amount": 5,"operation": "add_value","slot": "mainhand","uuid": [4,13,14,15]},{"type": "generic.attack_speed","name": "generic.attack_speed","amount": -2.75,"operation": "add_value","slot": "mainhand","uuid": [5,13,14,15]},{"type": "generic.luck","name": "generic.luck","amount": 0.25,"operation": "add_value","slot": "mainhand","uuid": [7,13,14,15]}],
+		"attribute_modifiers": [{"type": "generic.attack_damage","amount": 5,"operation": "add_value","slot": "mainhand","id": "iyc:generic.attack_damage.mainhand"},{"type": "generic.attack_speed","amount": -2.75,"operation": "add_value","slot": "mainhand","id": "iyc:generic.attack_speed.mainhand"},{"type": "generic.luck","amount": 0.25,"operation": "add_value","slot": "mainhand","id": "iyc:generic.luck.mainhand"}],
 		"custom_model_data": 2015063,
 		"item_name": "{'text': 'Emerald Pickaxe', 'italic': false, 'color': 'white'}",
 		"lore": ["{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"]
@@ -716,7 +716,7 @@
 		"custom_data": {"smithed": {"dict": {"tools": {"emerald": true,"axe": true}},"ignore": {"functionality": true,"crafting": true}},"iyc": {"emerald_axe": true}},
 		"max_damage": 736,
 		"result_of_crafting": [{"type": "crafting_shaped","result_count": 1,"category": "equipment","shape": ["XX","XS"," S"],"ingredients": {"X": {"item": "minecraft:emerald"},"S": {"item": "minecraft:stick"}}}],
-		"attribute_modifiers": [{"type": "generic.attack_damage","name": "generic.attack_damage","amount": 9,"operation": "add_value","slot": "mainhand","uuid": [4,13,14,15]},{"type": "generic.attack_speed","name": "generic.attack_speed","amount": -3.0,"operation": "add_value","slot": "mainhand","uuid": [5,13,14,15]},{"type": "generic.luck","name": "generic.luck","amount": 0.25,"operation": "add_value","slot": "mainhand","uuid": [7,13,14,15]}],
+		"attribute_modifiers": [{"type": "generic.attack_damage","amount": 9,"operation": "add_value","slot": "mainhand","id": "iyc:generic.attack_damage.mainhand"},{"type": "generic.attack_speed","amount": -3.0,"operation": "add_value","slot": "mainhand","id": "iyc:generic.attack_speed.mainhand"},{"type": "generic.luck","amount": 0.25,"operation": "add_value","slot": "mainhand","id": "iyc:generic.luck.mainhand"}],
 		"custom_model_data": 2015064,
 		"item_name": "{'text': 'Emerald Axe', 'italic': false, 'color': 'white'}",
 		"lore": ["{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"]
@@ -727,7 +727,7 @@
 		"custom_data": {"smithed": {"dict": {"tools": {"emerald": true,"shovel": true}},"ignore": {"functionality": true,"crafting": true}},"iyc": {"emerald_shovel": true}},
 		"max_damage": 736,
 		"result_of_crafting": [{"type": "crafting_shaped","result_count": 1,"category": "equipment","shape": ["X","S","S"],"ingredients": {"X": {"item": "minecraft:emerald"},"S": {"item": "minecraft:stick"}}}],
-		"attribute_modifiers": [{"type": "generic.attack_damage","name": "generic.attack_damage","amount": 5.5,"operation": "add_value","slot": "mainhand","uuid": [4,13,14,15]},{"type": "generic.attack_speed","name": "generic.attack_speed","amount": -3.0,"operation": "add_value","slot": "mainhand","uuid": [5,13,14,15]},{"type": "generic.luck","name": "generic.luck","amount": 0.25,"operation": "add_value","slot": "mainhand","uuid": [7,13,14,15]}],
+		"attribute_modifiers": [{"type": "generic.attack_damage","amount": 5.5,"operation": "add_value","slot": "mainhand","id": "iyc:generic.attack_damage.mainhand"},{"type": "generic.attack_speed","amount": -3.0,"operation": "add_value","slot": "mainhand","id": "iyc:generic.attack_speed.mainhand"},{"type": "generic.luck","amount": 0.25,"operation": "add_value","slot": "mainhand","id": "iyc:generic.luck.mainhand"}],
 		"custom_model_data": 2015065,
 		"item_name": "{'text': 'Emerald Shovel', 'italic': false, 'color': 'white'}",
 		"lore": ["{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"]
@@ -738,7 +738,7 @@
 		"custom_data": {"smithed": {"dict": {"tools": {"emerald": true,"hoe": true}},"ignore": {"functionality": true,"crafting": true}},"iyc": {"emerald_hoe": true}},
 		"max_damage": 736,
 		"result_of_crafting": [{"type": "crafting_shaped","result_count": 1,"category": "equipment","shape": ["XX"," S"," S"],"ingredients": {"X": {"item": "minecraft:emerald"},"S": {"item": "minecraft:stick"}}}],
-		"attribute_modifiers": [{"type": "generic.attack_damage","name": "generic.attack_damage","amount": 1,"operation": "add_value","slot": "mainhand","uuid": [4,13,14,15]},{"type": "generic.attack_speed","name": "generic.attack_speed","amount": 0,"operation": "add_value","slot": "mainhand","uuid": [5,13,14,15]},{"type": "generic.luck","name": "generic.luck","amount": 0.25,"operation": "add_value","slot": "mainhand","uuid": [7,13,14,15]}],
+		"attribute_modifiers": [{"type": "generic.attack_damage","amount": 1,"operation": "add_value","slot": "mainhand","id": "iyc:generic.attack_damage.mainhand"},{"type": "generic.attack_speed","amount": 0,"operation": "add_value","slot": "mainhand","id": "iyc:generic.attack_speed.mainhand"},{"type": "generic.luck","amount": 0.25,"operation": "add_value","slot": "mainhand","id": "iyc:generic.luck.mainhand"}],
 		"custom_model_data": 2015066,
 		"item_name": "{'text': 'Emerald Hoe', 'italic': false, 'color': 'white'}",
 		"lore": ["{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"]
@@ -788,7 +788,7 @@
 		"dyed_color": {"rgb": 5460819,"show_in_tooltip": false},
 		"result_of_crafting": [{"type": "crafting_shaped","result_count": 1,"category": "equipment","shape": ["XXX","X X"],"ingredients": {"X": {"components": {"custom_data": {"iyc": {"steel_ingot": true}}}}}}],
 		"max_damage": 293,
-		"attribute_modifiers": [{"type": "generic.armor","name": "generic.armor","amount": 2,"operation": "add_value","slot": "head","uuid": [1,1,2,3]}],
+		"attribute_modifiers": [{"type": "generic.armor","amount": 2,"operation": "add_value","slot": "head","id": "iyc:generic.armor.head"}],
 		"custom_model_data": 2015071,
 		"item_name": "{'text': 'Steel Helmet', 'italic': false, 'color': 'white'}",
 		"lore": ["{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"]
@@ -800,7 +800,7 @@
 		"dyed_color": {"rgb": 5460819,"show_in_tooltip": false},
 		"result_of_crafting": [{"type": "crafting_shaped","result_count": 1,"category": "equipment","shape": ["X X","XXX","XXX"],"ingredients": {"X": {"components": {"custom_data": {"iyc": {"steel_ingot": true}}}}}}],
 		"max_damage": 426,
-		"attribute_modifiers": [{"type": "generic.armor","name": "generic.armor","amount": 6,"operation": "add_value","slot": "chest","uuid": [1,4,5,6]}],
+		"attribute_modifiers": [{"type": "generic.armor","amount": 6,"operation": "add_value","slot": "chest","id": "iyc:generic.armor.chest"}],
 		"custom_model_data": 2015072,
 		"item_name": "{'text': 'Steel Chestplate', 'italic': false, 'color': 'white'}",
 		"lore": ["{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"]
@@ -812,7 +812,7 @@
 		"dyed_color": {"rgb": 5460819,"show_in_tooltip": false},
 		"result_of_crafting": [{"type": "crafting_shaped","result_count": 1,"category": "equipment","shape": ["XXX","X X","X X"],"ingredients": {"X": {"components": {"custom_data": {"iyc": {"steel_ingot": true}}}}}}],
 		"max_damage": 399,
-		"attribute_modifiers": [{"type": "generic.armor","name": "generic.armor","amount": 5,"operation": "add_value","slot": "legs","uuid": [1,7,8,9]}],
+		"attribute_modifiers": [{"type": "generic.armor","amount": 5,"operation": "add_value","slot": "legs","id": "iyc:generic.armor.legs"}],
 		"custom_model_data": 2015073,
 		"item_name": "{'text': 'Steel Leggings', 'italic': false, 'color': 'white'}",
 		"lore": ["{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"]
@@ -824,7 +824,7 @@
 		"dyed_color": {"rgb": 5460819,"show_in_tooltip": false},
 		"result_of_crafting": [{"type": "crafting_shaped","result_count": 1,"category": "equipment","shape": ["X X","X X"],"ingredients": {"X": {"components": {"custom_data": {"iyc": {"steel_ingot": true}}}}}}],
 		"max_damage": 346,
-		"attribute_modifiers": [{"type": "generic.armor","name": "generic.armor","amount": 2,"operation": "add_value","slot": "feet","uuid": [1,10,11,12]}],
+		"attribute_modifiers": [{"type": "generic.armor","amount": 2,"operation": "add_value","slot": "feet","id": "iyc:generic.armor.feet"}],
 		"custom_model_data": 2015074,
 		"item_name": "{'text': 'Steel Boots', 'italic': false, 'color': 'white'}",
 		"lore": ["{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"]
@@ -835,7 +835,7 @@
 		"custom_data": {"smithed": {"dict": {"tools": {"steel": true,"sword": true}},"ignore": {"functionality": true,"crafting": true}},"iyc": {"steel_sword": true}},
 		"max_damage": 444,
 		"result_of_crafting": [{"type": "crafting_shaped","result_count": 1,"category": "equipment","shape": ["X","X","S"],"ingredients": {"X": {"components": {"custom_data": {"iyc": {"steel_ingot": true}}}},"S": {"item": "minecraft:stick"}}}],
-		"attribute_modifiers": [{"type": "generic.attack_damage","name": "generic.attack_damage","amount": 6,"operation": "add_value","slot": "mainhand","uuid": [4,13,14,15]},{"type": "generic.attack_speed","name": "generic.attack_speed","amount": -2.5,"operation": "add_value","slot": "mainhand","uuid": [5,13,14,15]},{"type": "player.mining_efficiency","name": "player.mining_efficiency","amount": 0.1,"operation": "add_value","slot": "mainhand","uuid": [6,13,14,15]}],
+		"attribute_modifiers": [{"type": "generic.attack_damage","amount": 6,"operation": "add_value","slot": "mainhand","id": "iyc:generic.attack_damage.mainhand"},{"type": "generic.attack_speed","amount": -2.5,"operation": "add_value","slot": "mainhand","id": "iyc:generic.attack_speed.mainhand"},{"type": "player.mining_efficiency","amount": 0.1,"operation": "add_value","slot": "mainhand","id": "iyc:player.mining_efficiency.mainhand"}],
 		"custom_model_data": 2015075,
 		"item_name": "{'text': 'Steel Sword', 'italic': false, 'color': 'white'}",
 		"lore": ["{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"]
@@ -846,7 +846,7 @@
 		"custom_data": {"smithed": {"dict": {"tools": {"steel": true,"pickaxe": true}},"ignore": {"functionality": true,"crafting": true}},"iyc": {"steel_pickaxe": true}},
 		"max_damage": 444,
 		"result_of_crafting": [{"type": "crafting_shaped","result_count": 1,"category": "equipment","shape": ["XXX"," S "," S "],"ingredients": {"X": {"components": {"custom_data": {"iyc": {"steel_ingot": true}}}},"S": {"item": "minecraft:stick"}}}],
-		"attribute_modifiers": [{"type": "generic.attack_damage","name": "generic.attack_damage","amount": 4,"operation": "add_value","slot": "mainhand","uuid": [4,13,14,15]},{"type": "generic.attack_speed","name": "generic.attack_speed","amount": -2.75,"operation": "add_value","slot": "mainhand","uuid": [5,13,14,15]},{"type": "player.mining_efficiency","name": "player.mining_efficiency","amount": 0.1,"operation": "add_value","slot": "mainhand","uuid": [6,13,14,15]}],
+		"attribute_modifiers": [{"type": "generic.attack_damage","amount": 4,"operation": "add_value","slot": "mainhand","id": "iyc:generic.attack_damage.mainhand"},{"type": "generic.attack_speed","amount": -2.75,"operation": "add_value","slot": "mainhand","id": "iyc:generic.attack_speed.mainhand"},{"type": "player.mining_efficiency","amount": 0.1,"operation": "add_value","slot": "mainhand","id": "iyc:player.mining_efficiency.mainhand"}],
 		"custom_model_data": 2015076,
 		"item_name": "{'text': 'Steel Pickaxe', 'italic': false, 'color': 'white'}",
 		"lore": ["{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"]
@@ -857,7 +857,7 @@
 		"custom_data": {"smithed": {"dict": {"tools": {"steel": true,"axe": true}},"ignore": {"functionality": true,"crafting": true}},"iyc": {"steel_axe": true}},
 		"max_damage": 444,
 		"result_of_crafting": [{"type": "crafting_shaped","result_count": 1,"category": "equipment","shape": ["XX","XS"," S"],"ingredients": {"X": {"components": {"custom_data": {"iyc": {"steel_ingot": true}}}},"S": {"item": "minecraft:stick"}}}],
-		"attribute_modifiers": [{"type": "generic.attack_damage","name": "generic.attack_damage","amount": 9,"operation": "add_value","slot": "mainhand","uuid": [4,13,14,15]},{"type": "generic.attack_speed","name": "generic.attack_speed","amount": -3.1,"operation": "add_value","slot": "mainhand","uuid": [5,13,14,15]},{"type": "player.mining_efficiency","name": "player.mining_efficiency","amount": 0.1,"operation": "add_value","slot": "mainhand","uuid": [6,13,14,15]}],
+		"attribute_modifiers": [{"type": "generic.attack_damage","amount": 9,"operation": "add_value","slot": "mainhand","id": "iyc:generic.attack_damage.mainhand"},{"type": "generic.attack_speed","amount": -3.1,"operation": "add_value","slot": "mainhand","id": "iyc:generic.attack_speed.mainhand"},{"type": "player.mining_efficiency","amount": 0.1,"operation": "add_value","slot": "mainhand","id": "iyc:player.mining_efficiency.mainhand"}],
 		"custom_model_data": 2015077,
 		"item_name": "{'text': 'Steel Axe', 'italic': false, 'color': 'white'}",
 		"lore": ["{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"]
@@ -868,7 +868,7 @@
 		"custom_data": {"smithed": {"dict": {"tools": {"steel": true,"shovel": true}},"ignore": {"functionality": true,"crafting": true}},"iyc": {"steel_shovel": true}},
 		"max_damage": 444,
 		"result_of_crafting": [{"type": "crafting_shaped","result_count": 1,"category": "equipment","shape": ["X","S","S"],"ingredients": {"X": {"components": {"custom_data": {"iyc": {"steel_ingot": true}}}},"S": {"item": "minecraft:stick"}}}],
-		"attribute_modifiers": [{"type": "generic.attack_damage","name": "generic.attack_damage","amount": 4.5,"operation": "add_value","slot": "mainhand","uuid": [4,13,14,15]},{"type": "generic.attack_speed","name": "generic.attack_speed","amount": -3.1,"operation": "add_value","slot": "mainhand","uuid": [5,13,14,15]},{"type": "player.mining_efficiency","name": "player.mining_efficiency","amount": 0.1,"operation": "add_value","slot": "mainhand","uuid": [6,13,14,15]}],
+		"attribute_modifiers": [{"type": "generic.attack_damage","amount": 4.5,"operation": "add_value","slot": "mainhand","id": "iyc:generic.attack_damage.mainhand"},{"type": "generic.attack_speed","amount": -3.1,"operation": "add_value","slot": "mainhand","id": "iyc:generic.attack_speed.mainhand"},{"type": "player.mining_efficiency","amount": 0.1,"operation": "add_value","slot": "mainhand","id": "iyc:player.mining_efficiency.mainhand"}],
 		"custom_model_data": 2015078,
 		"item_name": "{'text': 'Steel Shovel', 'italic': false, 'color': 'white'}",
 		"lore": ["{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"]
@@ -879,7 +879,7 @@
 		"custom_data": {"smithed": {"dict": {"tools": {"steel": true,"hoe": true}},"ignore": {"functionality": true,"crafting": true}},"iyc": {"steel_hoe": true}},
 		"max_damage": 444,
 		"result_of_crafting": [{"type": "crafting_shaped","result_count": 1,"category": "equipment","shape": ["XX"," S"," S"],"ingredients": {"X": {"components": {"custom_data": {"iyc": {"steel_ingot": true}}}},"S": {"item": "minecraft:stick"}}}],
-		"attribute_modifiers": [{"type": "generic.attack_damage","name": "generic.attack_damage","amount": 1,"operation": "add_value","slot": "mainhand","uuid": [4,13,14,15]},{"type": "generic.attack_speed","name": "generic.attack_speed","amount": -1.0,"operation": "add_value","slot": "mainhand","uuid": [5,13,14,15]},{"type": "player.mining_efficiency","name": "player.mining_efficiency","amount": 0.1,"operation": "add_value","slot": "mainhand","uuid": [6,13,14,15]}],
+		"attribute_modifiers": [{"type": "generic.attack_damage","amount": 1,"operation": "add_value","slot": "mainhand","id": "iyc:generic.attack_damage.mainhand"},{"type": "generic.attack_speed","amount": -1.0,"operation": "add_value","slot": "mainhand","id": "iyc:generic.attack_speed.mainhand"},{"type": "player.mining_efficiency","amount": 0.1,"operation": "add_value","slot": "mainhand","id": "iyc:player.mining_efficiency.mainhand"}],
 		"custom_model_data": 2015079,
 		"item_name": "{'text': 'Steel Hoe', 'italic': false, 'color': 'white'}",
 		"lore": ["{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"]
@@ -1043,7 +1043,7 @@
 		"category": "equipment",
 		"lore": ["{'text':'A hat that makes you fly','color':'gray','italic':false}","{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"],
 		"result_of_crafting": [{"type": "crafting_shapeless","result_count": 1,"category": "equipment","ingredients": [{"item": "minecraft:iron_ingot"},{"item": "minecraft:elytra"}]}],
-		"attribute_modifiers": [{"type": "generic.gravity","uuid": [16052024,1,1,1],"name": "generic.gravity","amount": -0.09,"operation": "add_value","slot": "head"}],
+		"attribute_modifiers": [{"type": "generic.gravity","amount": -0.09,"operation": "add_value","slot": "head","id": "iyc:generic.gravity.head"}],
 		"custom_model_data": 2015097,
 		"item_name": "{'text': 'Helice Hat', 'italic': false, 'color': 'white'}",
 		"custom_data": {"iyc": {"helice_hat": true},"smithed": {"ignore": {"functionality": true,"crafting": true}}}

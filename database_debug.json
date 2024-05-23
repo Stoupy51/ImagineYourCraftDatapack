@@ -20,11 +20,21 @@
 		"item_name": "{'text': 'Adamantium Ore', 'italic': false, 'color': 'white'}",
 		"lore": ["{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"]
 	},
+	"deepslate_adamantium_ore": {
+		"id": "minecraft:furnace",
+		"category": "material",
+		"custom_data": {"smithed": {"dict": {"block": {"adamantium": true},"ore": {"adamantium": true}},"ignore": {"functionality": true,"crafting": true}},"iyc": {"deepslate_adamantium_ore": true}},
+		"vanilla_block": "minecraft:polished_deepslate",
+		"no_silk_touch_drop": "adamantium_fragment",
+		"custom_model_data": 2015163,
+		"item_name": "{'text': 'Deepslate Adamantium Ore', 'italic': false, 'color': 'white'}",
+		"lore": ["{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"]
+	},
 	"adamantium_fragment": {
 		"id": "minecraft:command_block",
 		"category": "material",
 		"custom_data": {"smithed": {"dict": {"fragment": {"adamantium": true}},"ignore": {"functionality": true,"crafting": true}},"iyc": {"adamantium_fragment": true}},
-		"result_of_crafting": [{"type": "crafting_shapeless","result_count": 9,"category": "misc","group": "adamantium","ingredients": [{"components": {"custom_data": {"iyc": {"adamantium_block": true}}}}]},{"type": "smelting","result_count": 1,"category": "misc","group": "adamantium","experience": 0.8,"cookingtime": 200,"ingredient": {"components": {"custom_data": {"iyc": {"adamantium_ore": true}}}}},{"type": "blasting","result_count": 1,"category": "misc","group": "adamantium","experience": 0.8,"cookingtime": 100,"ingredient": {"components": {"custom_data": {"iyc": {"adamantium_ore": true}}}}}],
+		"result_of_crafting": [{"type": "crafting_shapeless","result_count": 9,"category": "misc","group": "adamantium","ingredients": [{"components": {"custom_data": {"iyc": {"adamantium_block": true}}}}]},{"type": "smelting","result_count": 1,"category": "misc","group": "adamantium","experience": 0.8,"cookingtime": 200,"ingredient": {"components": {"custom_data": {"iyc": {"adamantium_ore": true}}}}},{"type": "blasting","result_count": 1,"category": "misc","group": "adamantium","experience": 0.8,"cookingtime": 100,"ingredient": {"components": {"custom_data": {"iyc": {"adamantium_ore": true}}}}},{"type": "smelting","result_count": 1,"category": "misc","group": "adamantium","experience": 0.8,"cookingtime": 200,"ingredient": {"components": {"custom_data": {"iyc": {"deepslate_adamantium_ore": true}}}}},{"type": "blasting","result_count": 1,"category": "misc","group": "adamantium","experience": 0.8,"cookingtime": 100,"ingredient": {"components": {"custom_data": {"iyc": {"deepslate_adamantium_ore": true}}}}}],
 		"custom_model_data": 2015002,
 		"item_name": "{'text': 'Adamantium Fragment', 'italic': false, 'color': 'white'}",
 		"lore": ["{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"]
@@ -152,11 +162,21 @@
 		"item_name": "{'text': 'Sapphire Ore', 'italic': false, 'color': 'white'}",
 		"lore": ["{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"]
 	},
+	"deepslate_sapphire_ore": {
+		"id": "minecraft:furnace",
+		"category": "material",
+		"custom_data": {"smithed": {"dict": {"block": {"sapphire": true},"ore": {"sapphire": true}},"ignore": {"functionality": true,"crafting": true}},"iyc": {"deepslate_sapphire_ore": true}},
+		"vanilla_block": "minecraft:polished_deepslate",
+		"no_silk_touch_drop": "sapphire",
+		"custom_model_data": 2015164,
+		"item_name": "{'text': 'Deepslate Sapphire Ore', 'italic': false, 'color': 'white'}",
+		"lore": ["{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"]
+	},
 	"sapphire": {
 		"id": "minecraft:command_block",
 		"category": "material",
 		"custom_data": {"smithed": {"dict": {"sapphire": {"sapphire": true}},"ignore": {"functionality": true,"crafting": true}},"iyc": {"sapphire": true}},
-		"result_of_crafting": [{"type": "crafting_shapeless","result_count": 9,"category": "misc","group": "sapphire","ingredients": [{"components": {"custom_data": {"iyc": {"sapphire_block": true}}}}]},{"type": "smelting","result_count": 1,"category": "misc","group": "sapphire","experience": 0.8,"cookingtime": 200,"ingredient": {"components": {"custom_data": {"iyc": {"sapphire_ore": true}}}}},{"type": "blasting","result_count": 1,"category": "misc","group": "sapphire","experience": 0.8,"cookingtime": 100,"ingredient": {"components": {"custom_data": {"iyc": {"sapphire_ore": true}}}}}],
+		"result_of_crafting": [{"type": "crafting_shapeless","result_count": 9,"category": "misc","group": "sapphire","ingredients": [{"components": {"custom_data": {"iyc": {"sapphire_block": true}}}}]},{"type": "smelting","result_count": 1,"category": "misc","group": "sapphire","experience": 0.8,"cookingtime": 200,"ingredient": {"components": {"custom_data": {"iyc": {"sapphire_ore": true}}}}},{"type": "blasting","result_count": 1,"category": "misc","group": "sapphire","experience": 0.8,"cookingtime": 100,"ingredient": {"components": {"custom_data": {"iyc": {"sapphire_ore": true}}}}},{"type": "smelting","result_count": 1,"category": "misc","group": "sapphire","experience": 0.8,"cookingtime": 200,"ingredient": {"components": {"custom_data": {"iyc": {"deepslate_sapphire_ore": true}}}}},{"type": "blasting","result_count": 1,"category": "misc","group": "sapphire","experience": 0.8,"cookingtime": 100,"ingredient": {"components": {"custom_data": {"iyc": {"deepslate_sapphire_ore": true}}}}}],
 		"custom_model_data": 2015014,
 		"item_name": "{'text': 'Sapphire', 'italic': false, 'color': 'white'}",
 		"lore": ["{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"]
@@ -284,11 +304,21 @@
 		"item_name": "{'text': 'Ruby Ore', 'italic': false, 'color': 'white'}",
 		"lore": ["{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"]
 	},
+	"deepslate_ruby_ore": {
+		"id": "minecraft:furnace",
+		"category": "material",
+		"custom_data": {"smithed": {"dict": {"block": {"ruby": true},"ore": {"ruby": true}},"ignore": {"functionality": true,"crafting": true}},"iyc": {"deepslate_ruby_ore": true}},
+		"vanilla_block": "minecraft:polished_deepslate",
+		"no_silk_touch_drop": "ruby",
+		"custom_model_data": 2015165,
+		"item_name": "{'text': 'Deepslate Ruby Ore', 'italic': false, 'color': 'white'}",
+		"lore": ["{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"]
+	},
 	"ruby": {
 		"id": "minecraft:command_block",
 		"category": "material",
 		"custom_data": {"smithed": {"dict": {"ruby": {"ruby": true}},"ignore": {"functionality": true,"crafting": true}},"iyc": {"ruby": true}},
-		"result_of_crafting": [{"type": "crafting_shapeless","result_count": 9,"category": "misc","group": "ruby","ingredients": [{"components": {"custom_data": {"iyc": {"ruby_block": true}}}}]},{"type": "smelting","result_count": 1,"category": "misc","group": "ruby","experience": 0.8,"cookingtime": 200,"ingredient": {"components": {"custom_data": {"iyc": {"ruby_ore": true}}}}},{"type": "blasting","result_count": 1,"category": "misc","group": "ruby","experience": 0.8,"cookingtime": 100,"ingredient": {"components": {"custom_data": {"iyc": {"ruby_ore": true}}}}}],
+		"result_of_crafting": [{"type": "crafting_shapeless","result_count": 9,"category": "misc","group": "ruby","ingredients": [{"components": {"custom_data": {"iyc": {"ruby_block": true}}}}]},{"type": "smelting","result_count": 1,"category": "misc","group": "ruby","experience": 0.8,"cookingtime": 200,"ingredient": {"components": {"custom_data": {"iyc": {"ruby_ore": true}}}}},{"type": "blasting","result_count": 1,"category": "misc","group": "ruby","experience": 0.8,"cookingtime": 100,"ingredient": {"components": {"custom_data": {"iyc": {"ruby_ore": true}}}}},{"type": "smelting","result_count": 1,"category": "misc","group": "ruby","experience": 0.8,"cookingtime": 200,"ingredient": {"components": {"custom_data": {"iyc": {"deepslate_ruby_ore": true}}}}},{"type": "blasting","result_count": 1,"category": "misc","group": "ruby","experience": 0.8,"cookingtime": 100,"ingredient": {"components": {"custom_data": {"iyc": {"deepslate_ruby_ore": true}}}}}],
 		"custom_model_data": 2015026,
 		"item_name": "{'text': 'Ruby', 'italic': false, 'color': 'white'}",
 		"lore": ["{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"]
@@ -416,11 +446,21 @@
 		"item_name": "{'text': 'Topaz Ore', 'italic': false, 'color': 'white'}",
 		"lore": ["{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"]
 	},
+	"deepslate_topaz_ore": {
+		"id": "minecraft:furnace",
+		"category": "material",
+		"custom_data": {"smithed": {"dict": {"block": {"topaz": true},"ore": {"topaz": true}},"ignore": {"functionality": true,"crafting": true}},"iyc": {"deepslate_topaz_ore": true}},
+		"vanilla_block": "minecraft:polished_deepslate",
+		"no_silk_touch_drop": "topaz",
+		"custom_model_data": 2015166,
+		"item_name": "{'text': 'Deepslate Topaz Ore', 'italic': false, 'color': 'white'}",
+		"lore": ["{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"]
+	},
 	"topaz": {
 		"id": "minecraft:command_block",
 		"category": "material",
 		"custom_data": {"smithed": {"dict": {"topaz": {"topaz": true}},"ignore": {"functionality": true,"crafting": true}},"iyc": {"topaz": true}},
-		"result_of_crafting": [{"type": "crafting_shapeless","result_count": 9,"category": "misc","group": "topaz","ingredients": [{"components": {"custom_data": {"iyc": {"topaz_block": true}}}}]},{"type": "smelting","result_count": 1,"category": "misc","group": "topaz","experience": 0.8,"cookingtime": 200,"ingredient": {"components": {"custom_data": {"iyc": {"topaz_ore": true}}}}},{"type": "blasting","result_count": 1,"category": "misc","group": "topaz","experience": 0.8,"cookingtime": 100,"ingredient": {"components": {"custom_data": {"iyc": {"topaz_ore": true}}}}}],
+		"result_of_crafting": [{"type": "crafting_shapeless","result_count": 9,"category": "misc","group": "topaz","ingredients": [{"components": {"custom_data": {"iyc": {"topaz_block": true}}}}]},{"type": "smelting","result_count": 1,"category": "misc","group": "topaz","experience": 0.8,"cookingtime": 200,"ingredient": {"components": {"custom_data": {"iyc": {"topaz_ore": true}}}}},{"type": "blasting","result_count": 1,"category": "misc","group": "topaz","experience": 0.8,"cookingtime": 100,"ingredient": {"components": {"custom_data": {"iyc": {"topaz_ore": true}}}}},{"type": "smelting","result_count": 1,"category": "misc","group": "topaz","experience": 0.8,"cookingtime": 200,"ingredient": {"components": {"custom_data": {"iyc": {"deepslate_topaz_ore": true}}}}},{"type": "blasting","result_count": 1,"category": "misc","group": "topaz","experience": 0.8,"cookingtime": 100,"ingredient": {"components": {"custom_data": {"iyc": {"deepslate_topaz_ore": true}}}}}],
 		"custom_model_data": 2015038,
 		"item_name": "{'text': 'Topaz', 'italic': false, 'color': 'white'}",
 		"lore": ["{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"]

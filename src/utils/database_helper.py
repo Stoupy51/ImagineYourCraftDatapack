@@ -167,7 +167,7 @@ def generate_everything_about_this_ore(database: dict[str, dict], material: str 
 		color = int(color[0]) << 16 | int(color[1]) << 8 | int(color[2])	# Convert to int (Minecraft format: Red<<16 + Green<<8 + Blue)
 
 	# Placeables (ore, block, raw_block)
-	for block in [f"{material_base}_block", f"{material_base}_ore", f"raw_{material_base}_block"]:
+	for block in [f"{material_base}_block", f"{material_base}_ore", f"deepslate_{material_base}_ore", f"raw_{material_base}_block"]:
 		if block + ".png" not in TEXTURES_FILES:
 			continue
 		if block not in database:
@@ -213,6 +213,9 @@ def generate_everything_about_this_ore(database: dict[str, dict], material: str 
 			if f"{material_base}_ore.png" in TEXTURES_FILES:
 				database[item][RESULT_OF_CRAFTING].append({"type":"smelting","result_count":1,"category":"misc","group":material_base,"experience":0.8,"cookingtime":200,"ingredient":ingr_repr(f"{material_base}_ore")})
 				database[item][RESULT_OF_CRAFTING].append({"type":"blasting","result_count":1,"category":"misc","group":material_base,"experience":0.8,"cookingtime":100,"ingredient":ingr_repr(f"{material_base}_ore")})
+			if f"deepslate_{material_base}_ore.png" in TEXTURES_FILES:
+				database[item][RESULT_OF_CRAFTING].append({"type":"smelting","result_count":1,"category":"misc","group":material_base,"experience":0.8,"cookingtime":200,"ingredient":ingr_repr(f"deepslate_{material_base}_ore")})
+				database[item][RESULT_OF_CRAFTING].append({"type":"blasting","result_count":1,"category":"misc","group":material_base,"experience":0.8,"cookingtime":100,"ingredient":ingr_repr(f"deepslate_{material_base}_ore")})
 		if item.endswith("nugget"):
 			for gear in SLOTS.keys():
 				if f"{material_base}_{gear}.png" in TEXTURES_FILES:

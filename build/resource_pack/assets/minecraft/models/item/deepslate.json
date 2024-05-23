@@ -39,7 +39,11 @@
 		{ "predicate": { "custom_model_data": 2015125}, "model": "iyc:block/for_item_display/cherry_cake" },
 		{ "predicate": { "custom_model_data": 2015133}, "model": "iyc:block/for_item_display/blob" },
 		{ "predicate": { "custom_model_data": 2015134}, "model": "iyc:block/for_item_display/lignite_torch" },
-		{ "predicate": { "custom_model_data": 2015136}, "model": "iyc:block/for_item_display/nuclear_bomb" }
+		{ "predicate": { "custom_model_data": 2015136}, "model": "iyc:block/for_item_display/nuclear_bomb" },
+		{ "predicate": { "custom_model_data": 2015163}, "model": "iyc:block/for_item_display/deepslate_adamantium_ore" },
+		{ "predicate": { "custom_model_data": 2015164}, "model": "iyc:block/for_item_display/deepslate_sapphire_ore" },
+		{ "predicate": { "custom_model_data": 2015165}, "model": "iyc:block/for_item_display/deepslate_ruby_ore" },
+		{ "predicate": { "custom_model_data": 2015166}, "model": "iyc:block/for_item_display/deepslate_topaz_ore" }
 	]
 }
 

@@ -7,12 +7,16 @@
 tag @s add iyc.placer
 execute if data storage smithed.custom_block:main blockApi{id:"iyc:adamantium_block"} run function iyc:custom_blocks/adamantium_block/place_main
 execute if data storage smithed.custom_block:main blockApi{id:"iyc:adamantium_ore"} run function iyc:custom_blocks/adamantium_ore/place_main
+execute if data storage smithed.custom_block:main blockApi{id:"iyc:deepslate_adamantium_ore"} run function iyc:custom_blocks/deepslate_adamantium_ore/place_main
 execute if data storage smithed.custom_block:main blockApi{id:"iyc:sapphire_block"} run function iyc:custom_blocks/sapphire_block/place_main
 execute if data storage smithed.custom_block:main blockApi{id:"iyc:sapphire_ore"} run function iyc:custom_blocks/sapphire_ore/place_main
+execute if data storage smithed.custom_block:main blockApi{id:"iyc:deepslate_sapphire_ore"} run function iyc:custom_blocks/deepslate_sapphire_ore/place_main
 execute if data storage smithed.custom_block:main blockApi{id:"iyc:ruby_block"} run function iyc:custom_blocks/ruby_block/place_main
 execute if data storage smithed.custom_block:main blockApi{id:"iyc:ruby_ore"} run function iyc:custom_blocks/ruby_ore/place_main
+execute if data storage smithed.custom_block:main blockApi{id:"iyc:deepslate_ruby_ore"} run function iyc:custom_blocks/deepslate_ruby_ore/place_main
 execute if data storage smithed.custom_block:main blockApi{id:"iyc:topaz_block"} run function iyc:custom_blocks/topaz_block/place_main
 execute if data storage smithed.custom_block:main blockApi{id:"iyc:topaz_ore"} run function iyc:custom_blocks/topaz_ore/place_main
+execute if data storage smithed.custom_block:main blockApi{id:"iyc:deepslate_topaz_ore"} run function iyc:custom_blocks/deepslate_topaz_ore/place_main
 execute if data storage smithed.custom_block:main blockApi{id:"iyc:steel_block"} run function iyc:custom_blocks/steel_block/place_main
 execute if data storage smithed.custom_block:main blockApi{id:"iyc:steel_ore"} run function iyc:custom_blocks/steel_ore/place_main
 execute if data storage smithed.custom_block:main blockApi{id:"iyc:lignite_block"} run function iyc:custom_blocks/lignite_block/place_main

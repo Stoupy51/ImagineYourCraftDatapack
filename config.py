@@ -18,7 +18,7 @@ TEXTURES_FILES: list[str] = [path.split(f"{TEXTURES_FOLDER}/")[1] for path in AS
 
 # Dev constants
 HAS_MANUAL: bool = True								# Do the program generate a manual/guide? (WARNING: if an item is malformed in the database, the server log will be flooded on load by the manual hiding the malformed item)
-DEBUG_MODE: bool = True								# Shows up grids in manual,
+DEBUG_MODE: bool = False							# Shows up grids in manual,
 DATABASE_DEBUG: str = f"{ROOT}/database_debug.json"	# Dump of the database for debugging purposes
 CMD_CACHE: str = f"{ROOT}/cmd_cache.json"			# Cache of all items Custom Model Data
 CACHE_MANUAL_ASSETS: bool = True					# Caches the MC assets and the items renders for the manual (manual/items/*.png)

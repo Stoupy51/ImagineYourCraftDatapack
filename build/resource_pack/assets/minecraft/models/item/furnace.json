@@ -31,7 +31,11 @@
 		{ "predicate": { "custom_model_data": 2015107}, "model": "iyc:block/red_light_on" },
 		{ "predicate": { "custom_model_data": 2015108}, "model": "iyc:block/reversed_oak_planks" },
 		{ "predicate": { "custom_model_data": 2015125}, "model": "iyc:block/cherry_cake" },
-		{ "predicate": { "custom_model_data": 2015136}, "model": "iyc:block/nuclear_bomb" }
+		{ "predicate": { "custom_model_data": 2015136}, "model": "iyc:block/nuclear_bomb" },
+		{ "predicate": { "custom_model_data": 2015163}, "model": "iyc:block/deepslate_adamantium_ore" },
+		{ "predicate": { "custom_model_data": 2015164}, "model": "iyc:block/deepslate_sapphire_ore" },
+		{ "predicate": { "custom_model_data": 2015165}, "model": "iyc:block/deepslate_ruby_ore" },
+		{ "predicate": { "custom_model_data": 2015166}, "model": "iyc:block/deepslate_topaz_ore" }
 	]
 }
 

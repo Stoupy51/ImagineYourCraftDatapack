@@ -39,7 +39,7 @@ for id in vanilla_ids:
 	content["overrides"].sort(key=lambda x: x["predicate"]["custom_model_data"])
 	write_to_file(
 		f"{BUILD_RESOURCE_PACK}/assets/minecraft/models/item/{id}.json",
-		super_json_dump(content).replace('{"','{ "').replace('"}','" }').replace(',"', ', "') + "\n"
+		super_json_dump(content).replace('{"','{ "').replace('"}','" }').replace(',"', ', "')
 	)
 
 
@@ -53,7 +53,7 @@ content["overrides"].append({"predicate": { "custom_model_data": 2010000}, "mode
 content["overrides"].sort(key=lambda x: x["predicate"]["custom_model_data"])
 write_to_file(
 	f"{BUILD_RESOURCE_PACK}/assets/minecraft/models/item/deepslate.json",
-	super_json_dump(content).replace('{"','{ "').replace('"}','" }').replace(',"', ', "') + "\n"
+	super_json_dump(content).replace('{"','{ "').replace('"}','" }').replace(',"', ', "')
 )
 write_to_file(f"{BUILD_RESOURCE_PACK}/assets/minecraft/models/item/none.json", "{}")
 

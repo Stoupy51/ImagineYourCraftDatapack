@@ -28,13 +28,13 @@ if __name__ == "__main__":
 	from user.setup_database import *
 	from src.verify_database import *
 
+	# Generate resource pack
+	from src.resource_pack.main import *
+
 	# TODO: resource pack before manual & use Airdox's model resolver
 	# Generate manual
 	if HAS_MANUAL:
 		from src.manual.main import *
-
-	# Generate resource pack
-	from src.resource_pack.main import *
 
 	# Generate datapack
 	from src.datapack.main import *

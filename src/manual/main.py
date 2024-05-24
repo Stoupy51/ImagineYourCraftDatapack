@@ -381,6 +381,7 @@ super_copy(f"{MANUAL_PATH}/font/wiki_icons/", f"{BUILD_RESOURCE_PACK}/assets/{NA
 
 
 # Finally, prepend the manual to the database
+manual_cmd = min(x["custom_model_data"] for x in DATABASE.values() if x.get("custom_model_data")) - 1		# First custom_model_data minus 1
 manual_database = {"manual":
 	{
 		"id": "minecraft:written_book",
@@ -390,10 +391,18 @@ manual_database = {"manual":
 			"pages": [str(i).replace("\\\\", "\\") for i in book_content],
 		},
 		"lore": [json.dumps(SOURCE_LORE).replace('"', "'")],
-		"custom_model_data": min(x["custom_model_data"] for x in DATABASE.values()) - 1,	# First custom_model_data minus 1
+		"custom_model_data": manual_cmd,
 		"enchantment_glint_override": False,
 	}
 }
 DATABASE.update(manual_database)
+
+# Add the model to the resource pack
+from src.resource_pack.item_models import handle_item
+handle_item("manual", DATABASE["manual"])
+vanilla_model = {"parent": "item/handheld","textures": {"layer0": "item/written_book"},"overrides": [{ "predicate": { "custom_model_data": manual_cmd}, "model": f"{NAMESPACE}:item/manual" }]}
+vanilla_model = super_json_dump(vanilla_model).replace('{"','{ "').replace('"}','" }').replace(',"', ', "')
+write_to_file(f"{BUILD_RESOURCE_PACK}/assets/minecraft/models/item/written_book.json", vanilla_model)
+
 info(f"Added manual to the database")
 

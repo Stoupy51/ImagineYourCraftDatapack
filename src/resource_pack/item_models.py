@@ -4,15 +4,8 @@ from src.importer import *
 from src.utils.io import *
 from src.utils.print import *
 
-# Get every block variant
-variants = FACES + SIDES + ("_on",)
-armors = ["helmet", "chestplate", "leggings", "boots"]
-tools = ["sword", "pickaxe", "axe", "shovel", "hoe"]
-
-
-# For each item,
-used_textures = set()
-for item, data in DATABASE.items():
+# Function to handle item
+def handle_item(item: str, data: dict, used_textures: set|None = None):
 	block_or_item = "block" if data.get("id") == CUSTOM_BLOCK_VANILLA else "item"
 	dest_base_textu = f"{BUILD_RESOURCE_PACK}/assets/{NAMESPACE}/textures/{block_or_item}"
 
@@ -22,18 +15,17 @@ for item, data in DATABASE.items():
 		destination = f"{dest_base_textu}/{item}.png"
 		super_copy(source, destination)
 
-	# Get all textures for the block
+	# Get all textures for the item
 	additional_textures = []
-	for root, dirs, files in os.walk(f"{TEXTURES_FOLDER}/"):
-		for file in files:
-			if file.startswith(item):
-				if any(x in file.replace(item, "") for x in variants):
-					additional_textures.append(file.replace(".png", ""))	# Only keep the textures for SIDES/FACES
+	for file in TEXTURES_FILES:
+		if file.startswith(item):
+			if any(x in file.replace(item, "") for x in variants):
+				additional_textures.append(file.replace(".png", ""))	# Only keep the textures for SIDES/FACES
 
-				# Copy textures to the resource pack
-				source = f"{TEXTURES_FOLDER}/{file}"
-				destination = f"{dest_base_textu}/{file}"
-				super_copy(source, destination)
+			# Copy textures to the resource pack
+			source = f"{TEXTURES_FOLDER}/{file}"
+			destination = f"{dest_base_textu}/{file}"
+			super_copy(source, destination)
 		pass
 
 	# Generate its model file
@@ -69,7 +61,8 @@ for item, data in DATABASE.items():
 						path = f"{NAMESPACE}:{block_or_item}/{item}_{side}"
 						if on_off == "_on" and f"{item}_{side}_on" in additional_textures:
 							path += "_on"
-						used_textures.add(path)
+						if used_textures is not None:
+							used_textures.add(path)
 
 						# If it's a side, apply to all FACES (as it is first, it will be overwritten by the others)
 						if side == "side":
@@ -89,7 +82,8 @@ for item, data in DATABASE.items():
 		else:
 
 			path = f"{NAMESPACE}:{block_or_item}/{item}{on_off}"
-			used_textures.add(path)
+			if used_textures is not None:
+				used_textures.add(path)
 			content = {"parent": "item/generated",	"textures": {"layer0": path}}
 			if any(x in item for x in armors):
 				content["textures"]["layer1"] = content["textures"]["layer0"]
@@ -104,6 +98,17 @@ for item, data in DATABASE.items():
 			dest_base_model = f"{BUILD_RESOURCE_PACK}/assets/{NAMESPACE}/models/{block_or_item}/for_item_display"
 			content["display"] = MODEL_DISPLAY
 			write_to_file(f"{dest_base_model}/{item}{on_off}.json", super_json_dump(content, max_level = 4))
+
+# Get every block variant
+variants = FACES + SIDES + ("_on",)
+armors = ["helmet", "chestplate", "leggings", "boots"]
+tools = ["sword", "pickaxe", "axe", "shovel", "hoe"]
+
+
+# For each item,
+used_textures = set()
+for item, data in DATABASE.items():
+	handle_item(item, data, used_textures)
 
 
 # Make warning for missing textures

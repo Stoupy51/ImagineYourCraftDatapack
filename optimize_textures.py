@@ -1,6 +1,6 @@
 
 # Get start time & Enable colors in Windows 10 console
-from config import *
+from src.importer import *
 from src.utils.print import *
 import os
 import time

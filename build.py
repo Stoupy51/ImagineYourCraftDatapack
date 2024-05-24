@@ -14,10 +14,12 @@ for package in required:
 if __name__ == "__main__":
 	# Get start time & Enable colors in Windows 10 console
 	import time
+	from src.utils.print import *
 	START_TIME = time.time()
 	os.system("color")
+	info("Starting build process...")
 
-	from config import *
+	from src.importer import *
 
 	# Initialize build process
 	from src.initialize import *

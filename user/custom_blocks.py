@@ -1,6 +1,6 @@
 
 # Imports
-from config import *
+from src.importer import *
 
 #
 vanilla_blocks = {

@@ -1,6 +1,6 @@
 
 # Verify database
-from config import *
+from src.importer import *
 from src.utils.ingredients import *
 from src.utils.print import *
 from src.utils.io import *

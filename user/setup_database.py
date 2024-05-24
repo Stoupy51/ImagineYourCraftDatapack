@@ -1,6 +1,6 @@
 
 # Imports and constant
-from config import *
+from src.importer import *
 from src.utils.database_helper import *
 STARTING_CMD = 2015000	# Prefix for custom_model_data
 

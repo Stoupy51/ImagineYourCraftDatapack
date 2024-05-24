@@ -1,6 +1,6 @@
 
 # Import config
-from config import *
+from src.importer import *
 from src.utils.io import *
 from src.utils.print import *
 import shutil
@@ -32,16 +32,12 @@ REPLACEMENTS = {
 	"_west": "_left",
 	"_east": "_right",
 }
-for root, _, files in os.walk(TEXTURES_FOLDER):
-	for file in files:
-		if not file.endswith(".png"):
-			continue
-		new_name = file.lower()
-		for k, v in REPLACEMENTS.items():
-			if k in file:
-				new_name = new_name.replace(k, v)
-		if new_name != file:
-			os.rename(f"{root}/{file}", f"{root}/{new_name}")
-			info(f"Renamed {file} to {new_name}")
-	pass
+for file in TEXTURES_FILES:
+	new_name = file.lower()
+	for k, v in REPLACEMENTS.items():
+		if k in file:
+			new_name = new_name.replace(k, v)
+	if new_name != file:
+		os.rename(f"{TEXTURES_FOLDER}/{file}", f"{TEXTURES_FOLDER}/{new_name}")
+		info(f"Renamed {file} to {new_name}")
 

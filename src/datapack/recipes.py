@@ -1,6 +1,6 @@
 
 # Import config
-from config import *
+from src.importer import *
 from src.utils.io import *
 from src.utils.print import *
 from src.utils.cache import simple_cache

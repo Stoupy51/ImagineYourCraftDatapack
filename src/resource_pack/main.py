@@ -1,6 +1,6 @@
 
 # Import config
-from config import *
+from src.importer import *
 print()
 
 # Add the sounds folder to the resource pack

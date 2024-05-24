@@ -1,6 +1,6 @@
 
 # Import config
-from config import *
+from src.importer import *
 from src.manual.utils import *
 
 # Page optimizer

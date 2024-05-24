@@ -1,5 +1,5 @@
 
-from config import *
+from src.importer import *
 from multiprocessing import Pool
 
 # Easy multiprocessing functions

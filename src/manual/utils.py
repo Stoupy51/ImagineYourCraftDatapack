@@ -1,6 +1,6 @@
 
 # Import config & font textures
-from config import *
+from src.importer import *
 from src.manual.font_textures import *
 from src.utils.cache import simple_cache
 MANUAL_ASSETS_PATH = f"{ROOT}/src/manual/assets/"

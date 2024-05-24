@@ -1,6 +1,6 @@
 
 # Imports
-from config import *
+from src.importer import *
 from src.utils.io import *
 from src.utils.print import *
 from smithed.weld.toolchain.cli import weld

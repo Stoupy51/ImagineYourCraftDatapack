@@ -1,5 +1,5 @@
 
-from config import *
+from src.importer import *
 
 # Easy cache function
 def simple_cache(func: callable):

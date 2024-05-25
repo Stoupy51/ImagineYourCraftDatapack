@@ -12,7 +12,7 @@ execute store result score #game_version iyc.data run data get entity @p DataVer
 
 # Check if the game version is supported
 scoreboard players set #mcload_error iyc.data 0
-execute unless score #game_version iyc.data matches 3835.. run scoreboard players set #mcload_error iyc.data 1
+execute unless score #game_version iyc.data matches 3947.. run scoreboard players set #mcload_error iyc.data 1
 
 # Decode errors
 execute if score #mcload_error iyc.data matches 1 run tellraw @a {"text":"ImagineYourCraft Error: This version is made for Minecraft 1.20.6+.","color":"red"}

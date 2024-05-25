@@ -1,7 +1,6 @@
 
 # Get start time & Enable colors in Windows 10 console
-from src.importer import *
-from src.utils.print import *
+from python_datapack.utils.print import *
 import os
 import time
 START_TIME = time.time()

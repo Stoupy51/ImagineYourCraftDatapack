@@ -4,7 +4,7 @@
 			"path": "."
 		},
 		{
-			"path": "D:/5) Energy System/world/datapacks/SimplEnergy"
+			"path": "../Python Datapack"
 		}
 	],
 	"settings": {}

@@ -4,7 +4,7 @@
 		{"text": "ImagineYourCraft Manual\n","underlined": true},
 		{"text": "\u0021\u0021\u1020","font": "iyc:manual","color": "white"},
 		"\n\n\n\n\n\n",
-		{"text": "This manual is very interactive and will guide you through the different items and blocks available in the datapack!","color": "#505050"}
+		[{"text": "This manual is very interactive and will guide you through the different items and blocks available in the datapack!","color": "#505050"}]
 	],
 	[
 		{"text": "","font": "iyc:manual","color": "white"},

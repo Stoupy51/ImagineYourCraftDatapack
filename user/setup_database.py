@@ -1,11 +1,14 @@
 
-# Imports and constant
-from src.importer import *
-from src.utils.database_helper import *
-STARTING_CMD = 2015000	# Prefix for custom_model_data
+# Import database helper
+from python_datapack.utils.database_helper import *
 
-# Generate ores in database
-ores_configs = {
+# Imports
+from .additions import main as additions_main
+from .custom_blocks import main as custom_blocks_main
+
+# Constants
+STARTING_CMD: int = 2015000	# Prefix for custom_model_data
+ORES_CONFIGS: dict[str, EquipmentsConfig|None] = {
 	"adamantium_fragment":	EquipmentsConfig(DEFAULT_ORE.NETHERITE, 1873, {"generic.attack_damage": 0.2, "generic.armor": 0.2, "player.mining_efficiency": 0.2}),
 	"sapphire":				EquipmentsConfig(DEFAULT_ORE.DIAMOND, 1752, {"player.mining_efficiency": 0.2}),
 	"ruby":					EquipmentsConfig(DEFAULT_ORE.DIAMOND, 1647, {"generic.attack_damage": 0.5, "generic.armor": 0.5, "player.mining_efficiency": 0.1}),
@@ -17,16 +20,7 @@ ores_configs = {
 	"slate":				None,
 	"minecraft:stone":		None,
 }
-generate_everything_about_these_ores(DATABASE, ores_configs)
-
-# Apply database additions
-from user.additions import *
-
-# Add custom blocks vanilla block
-from user.custom_blocks import *
-
-# Add custom records
-records = {
+RECORDS: dict[str, tuple[str, float]] = {
 	"record_1":		("AntVenom - The Miner.ogg", 252.0),
 	"record_2":		("BebopVox - Don't Mine At Night.ogg", 228.0),
 	"record_3":		("CaptainSparklez - Fallen Kingdom.ogg", 287.0),
@@ -50,13 +44,31 @@ records = {
 	"record_21":	("TheDudesCraft - GAGAOUTAI.ogg", 234.0),
 	"record_22":	("TryHardNinja - That Girl is Crafty.ogg", 236.0),
 }
-generate_custom_records(DATABASE, records)
 
-# Final adjustments
-deterministic_custom_model_data(DATABASE, STARTING_CMD)
-clean_up_empty_recipes(DATABASE)
-add_item_name_and_lore_if_missing(DATABASE)
-add_private_custom_data_for_namespace(DATABASE)
-add_smithed_ignore_vanilla_behaviours_convention(DATABASE)
-print()
+# Main function should return a database
+def main(config: dict) -> dict[str, dict]:
+	database = {}
+
+	# Generate ores in database
+	generate_everything_about_these_ores(config, database, ORES_CONFIGS)
+
+	# Apply database additions
+	database = additions_main(database)
+
+	# Add custom blocks vanilla block
+	custom_blocks_main(database)
+
+	# Add custom records
+	generate_custom_records(config, database, RECORDS)
+
+	# Final adjustments
+	deterministic_custom_model_data(config, database, STARTING_CMD)
+	clean_up_empty_recipes(database)
+	add_item_name_and_lore_if_missing(config, database)
+	add_private_custom_data_for_namespace(config, database)
+	add_smithed_ignore_vanilla_behaviours_convention(database)
+	print()
+
+	# Return database
+	return database
 

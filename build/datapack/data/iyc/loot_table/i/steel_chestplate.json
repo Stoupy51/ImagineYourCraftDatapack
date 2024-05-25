@@ -22,7 +22,7 @@
 								"minecraft:attribute_modifiers": [
 									{"type": "generic.armor","amount": 6,"operation": "add_value","slot": "chest","id": "iyc:generic.armor.chest"}
 								],
-								"minecraft:custom_model_data": 2015072,
+								"minecraft:custom_model_data": 2015076,
 								"minecraft:item_name": "{'text': 'Steel Chestplate', 'italic': false, 'color': 'white'}",
 								"minecraft:lore": [
 									"{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"

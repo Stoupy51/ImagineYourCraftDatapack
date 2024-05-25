@@ -4,7 +4,7 @@
 		"layer0": "item/iron_sword"
 	},
 	"overrides": [
-		{ "predicate": { "custom_model_data": 2015075}, "model": "iyc:item/steel_sword" }
+		{ "predicate": { "custom_model_data": 2015079}, "model": "iyc:item/steel_sword" }
 	]
 }
 

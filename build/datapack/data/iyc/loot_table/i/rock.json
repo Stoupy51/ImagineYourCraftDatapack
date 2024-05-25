@@ -15,7 +15,7 @@
 									"{'text':'Can be thrown','color':'gray','italic':false}",
 									"{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"
 								],
-								"minecraft:custom_model_data": 2015138,
+								"minecraft:custom_model_data": 2015142,
 								"minecraft:item_name": "{'text': 'Rock', 'italic': false, 'color': 'white'}",
 								"minecraft:custom_data": {
 									"iyc": {"rock": true},

@@ -51,7 +51,7 @@
 					"id": "iyc:generic.luck.head"
 				}
 			],
-			"minecraft:custom_model_data": 2015058,
+			"minecraft:custom_model_data": 2015062,
 			"minecraft:item_name": "{'text': 'Emerald Helmet', 'italic': false, 'color': 'white'}",
 			"minecraft:lore": [
 				"{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"

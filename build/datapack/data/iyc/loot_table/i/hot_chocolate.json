@@ -16,7 +16,7 @@
 									"saturation": 0.8,
 									"effects": [{"effect": {"id": "minecraft:speed","duration": 600,"amplifier": 0},"probability": 1.0}]
 								},
-								"minecraft:custom_model_data": 2015127,
+								"minecraft:custom_model_data": 2015131,
 								"minecraft:item_name": "{'text': 'Hot Chocolate', 'italic': false, 'color': 'white'}",
 								"minecraft:lore": [
 									"{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"

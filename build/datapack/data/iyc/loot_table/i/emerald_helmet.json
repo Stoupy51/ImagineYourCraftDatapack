@@ -24,7 +24,7 @@
 									{"type": "generic.armor_toughness","amount": 2,"operation": "add_value","slot": "head","id": "iyc:generic.armor_toughness.head"},
 									{"type": "generic.luck","amount": 0.25,"operation": "add_value","slot": "head","id": "iyc:generic.luck.head"}
 								],
-								"minecraft:custom_model_data": 2015058,
+								"minecraft:custom_model_data": 2015062,
 								"minecraft:item_name": "{'text': 'Emerald Helmet', 'italic': false, 'color': 'white'}",
 								"minecraft:lore": [
 									"{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"

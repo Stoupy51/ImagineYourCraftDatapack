@@ -4,7 +4,7 @@
 		"layer0": "item/arrow"
 	},
 	"overrides": [
-		{ "predicate": { "custom_model_data": 2015093}, "model": "iyc:item/bolt" }
+		{ "predicate": { "custom_model_data": 2015097}, "model": "iyc:item/bolt" }
 	]
 }
 

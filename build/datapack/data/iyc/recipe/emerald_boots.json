@@ -51,7 +51,7 @@
 					"id": "iyc:generic.luck.feet"
 				}
 			],
-			"minecraft:custom_model_data": 2015061,
+			"minecraft:custom_model_data": 2015065,
 			"minecraft:item_name": "{'text': 'Emerald Boots', 'italic': false, 'color': 'white'}",
 			"minecraft:lore": [
 				"{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"

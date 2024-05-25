@@ -24,7 +24,7 @@
 									{"type": "generic.armor_toughness","amount": 3,"operation": "add_value","slot": "legs","id": "iyc:generic.armor_toughness.legs"},
 									{"type": "generic.knockback_resistance","amount": 0.1,"operation": "add_value","slot": "legs","id": "iyc:generic.knockback_resistance.legs"}
 								],
-								"minecraft:custom_model_data": 2015005,
+								"minecraft:custom_model_data": 2015006,
 								"minecraft:item_name": "{'text': 'Adamantium Leggings', 'italic': false, 'color': 'white'}",
 								"minecraft:lore": [
 									"{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"

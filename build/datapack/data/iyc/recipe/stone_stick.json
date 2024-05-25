@@ -23,7 +23,7 @@
 					"stone_stick": true
 				}
 			},
-			"minecraft:custom_model_data": 2015086,
+			"minecraft:custom_model_data": 2015090,
 			"minecraft:item_name": "{'text': 'Stone Stick', 'italic': false, 'color': 'white'}",
 			"minecraft:lore": [
 				"{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"

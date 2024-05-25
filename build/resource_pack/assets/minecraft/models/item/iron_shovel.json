@@ -4,7 +4,7 @@
 		"layer0": "item/iron_shovel"
 	},
 	"overrides": [
-		{ "predicate": { "custom_model_data": 2015078}, "model": "iyc:item/steel_shovel" }
+		{ "predicate": { "custom_model_data": 2015082}, "model": "iyc:item/steel_shovel" }
 	]
 }
 

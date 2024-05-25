@@ -15,7 +15,7 @@
 									"nutrition": 2,
 									"saturation": 0.8
 								},
-								"minecraft:custom_model_data": 2015124,
+								"minecraft:custom_model_data": 2015128,
 								"minecraft:item_name": "{'text': 'Cherry', 'italic': false, 'color': 'white'}",
 								"minecraft:lore": [
 									"{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"

@@ -4,7 +4,7 @@
 		"layer0": "item/iron_axe"
 	},
 	"overrides": [
-		{ "predicate": { "custom_model_data": 2015077}, "model": "iyc:item/steel_axe" }
+		{ "predicate": { "custom_model_data": 2015081}, "model": "iyc:item/steel_axe" }
 	]
 }
 

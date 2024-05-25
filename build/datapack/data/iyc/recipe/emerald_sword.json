@@ -51,7 +51,7 @@
 					"id": "iyc:generic.luck.mainhand"
 				}
 			],
-			"minecraft:custom_model_data": 2015062,
+			"minecraft:custom_model_data": 2015066,
 			"minecraft:item_name": "{'text': 'Emerald Sword', 'italic': false, 'color': 'white'}",
 			"minecraft:lore": [
 				"{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"

@@ -18,7 +18,7 @@
 		"id": "minecraft:furnace",
 		"count": 8,
 		"components": {
-			"minecraft:custom_model_data": 2015092,
+			"minecraft:custom_model_data": 2015096,
 			"minecraft:item_name": "{'text': 'Blue Block Ctf', 'italic': false, 'color': 'white'}",
 			"minecraft:lore": [
 				"{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"

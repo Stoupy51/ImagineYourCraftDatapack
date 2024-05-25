@@ -14,7 +14,7 @@ tag @s add iyc.lignite_ore
 tag @s add iyc.vanilla.minecraft_polished_deepslate
 
 # Modify item display entity to match the custom block
-item replace entity @s container.0 with deepslate[minecraft:custom_model_data=2015081]
+item replace entity @s container.0 with deepslate[minecraft:custom_model_data=2015085]
 data modify entity @s transformation.scale set value [1.002f,1.002f,1.002f]
 data modify entity @s brightness set value {block:15,sky:15}
 

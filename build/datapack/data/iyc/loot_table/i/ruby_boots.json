@@ -23,7 +23,7 @@
 									{"type": "generic.armor","amount": 3.5,"operation": "add_value","slot": "feet","id": "iyc:generic.armor.feet"},
 									{"type": "generic.armor_toughness","amount": 2,"operation": "add_value","slot": "feet","id": "iyc:generic.armor_toughness.feet"}
 								],
-								"minecraft:custom_model_data": 2015030,
+								"minecraft:custom_model_data": 2015033,
 								"minecraft:item_name": "{'text': 'Ruby Boots', 'italic': false, 'color': 'white'}",
 								"minecraft:lore": [
 									"{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"

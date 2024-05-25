@@ -23,7 +23,7 @@
 									{"type": "generic.armor","amount": 8,"operation": "add_value","slot": "chest","id": "iyc:generic.armor.chest"},
 									{"type": "generic.armor_toughness","amount": 2,"operation": "add_value","slot": "chest","id": "iyc:generic.armor_toughness.chest"}
 								],
-								"minecraft:custom_model_data": 2015016,
+								"minecraft:custom_model_data": 2015018,
 								"minecraft:item_name": "{'text': 'Sapphire Chestplate', 'italic': false, 'color': 'white'}",
 								"minecraft:lore": [
 									"{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"

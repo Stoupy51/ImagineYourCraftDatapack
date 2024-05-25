@@ -16,7 +16,7 @@
 		"id": "minecraft:command_block",
 		"count": 4,
 		"components": {
-			"minecraft:custom_model_data": 2015113,
+			"minecraft:custom_model_data": 2015117,
 			"minecraft:item_name": "{'text': 'Beer Mug', 'italic': false, 'color': 'white'}",
 			"minecraft:lore": [
 				"{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"

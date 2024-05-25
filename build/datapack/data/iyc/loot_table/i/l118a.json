@@ -14,7 +14,7 @@
 									"{'text':'Uses steel nuggets as bullets','color':'gray','italic':false}",
 									"{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"
 								],
-								"minecraft:custom_model_data": 2015100,
+								"minecraft:custom_model_data": 2015104,
 								"minecraft:item_name": "{'text': 'L118A', 'italic': false, 'color': 'white'}",
 								"minecraft:custom_data": {
 									"iyc": {"l118a": true},

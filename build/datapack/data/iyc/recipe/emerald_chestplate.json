@@ -52,7 +52,7 @@
 					"id": "iyc:generic.luck.chest"
 				}
 			],
-			"minecraft:custom_model_data": 2015059,
+			"minecraft:custom_model_data": 2015063,
 			"minecraft:item_name": "{'text': 'Emerald Chestplate', 'italic': false, 'color': 'white'}",
 			"minecraft:lore": [
 				"{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"

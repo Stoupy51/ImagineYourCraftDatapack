@@ -13,7 +13,7 @@
 		"id": "minecraft:furnace",
 		"count": 1,
 		"components": {
-			"minecraft:custom_model_data": 2015106,
+			"minecraft:custom_model_data": 2015110,
 			"minecraft:item_name": "{'text': 'Red Light', 'italic': false, 'color': 'white'}",
 			"minecraft:lore": [
 				"{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"

@@ -14,7 +14,7 @@
 									"smithed": {"dict": {"block": {"slate": true},"ore": {"slate": true}},"ignore": {"functionality": true,"crafting": true}},
 									"iyc": {"slate_ore": true}
 								},
-								"minecraft:custom_model_data": 2015084,
+								"minecraft:custom_model_data": 2015088,
 								"minecraft:item_name": "{'text': 'Slate Ore', 'italic': false, 'color': 'white'}",
 								"minecraft:lore": [
 									"{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"

@@ -5,14 +5,14 @@
 		"layer1": "item/leather_helmet_overlay"
 	},
 	"overrides": [
-		{ "predicate": { "custom_model_data": 2015003}, "model": "iyc:item/adamantium_helmet" },
-		{ "predicate": { "custom_model_data": 2015015}, "model": "iyc:item/sapphire_helmet" },
-		{ "predicate": { "custom_model_data": 2015027}, "model": "iyc:item/ruby_helmet" },
-		{ "predicate": { "custom_model_data": 2015039}, "model": "iyc:item/topaz_helmet" },
-		{ "predicate": { "custom_model_data": 2015049}, "model": "iyc:item/obsidian_helmet" },
-		{ "predicate": { "custom_model_data": 2015058}, "model": "iyc:item/emerald_helmet" },
-		{ "predicate": { "custom_model_data": 2015071}, "model": "iyc:item/steel_helmet" },
-		{ "predicate": { "custom_model_data": 2015097}, "model": "iyc:item/helice_hat" }
+		{ "predicate": { "custom_model_data": 2015004}, "model": "iyc:item/adamantium_helmet" },
+		{ "predicate": { "custom_model_data": 2015017}, "model": "iyc:item/sapphire_helmet" },
+		{ "predicate": { "custom_model_data": 2015030}, "model": "iyc:item/ruby_helmet" },
+		{ "predicate": { "custom_model_data": 2015043}, "model": "iyc:item/topaz_helmet" },
+		{ "predicate": { "custom_model_data": 2015053}, "model": "iyc:item/obsidian_helmet" },
+		{ "predicate": { "custom_model_data": 2015062}, "model": "iyc:item/emerald_helmet" },
+		{ "predicate": { "custom_model_data": 2015075}, "model": "iyc:item/steel_helmet" },
+		{ "predicate": { "custom_model_data": 2015101}, "model": "iyc:item/helice_hat" }
 	]
 }
 

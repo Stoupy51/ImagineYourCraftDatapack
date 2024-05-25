@@ -14,7 +14,7 @@
 									"{'text':'x1.5 damage arrow','color':'gray','italic':false}",
 									"{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"
 								],
-								"minecraft:custom_model_data": 2015093,
+								"minecraft:custom_model_data": 2015097,
 								"minecraft:item_name": "{'text': 'Bolt', 'italic': false, 'color': 'white'}",
 								"minecraft:custom_data": {
 									"iyc": {"bolt": true},

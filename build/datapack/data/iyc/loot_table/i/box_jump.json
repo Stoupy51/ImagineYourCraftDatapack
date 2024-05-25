@@ -10,7 +10,7 @@
 						{
 							"function": "minecraft:set_components",
 							"components": {
-								"minecraft:custom_model_data": 2015090,
+								"minecraft:custom_model_data": 2015094,
 								"minecraft:item_name": "{'text': 'Box Jump', 'italic': false, 'color': 'white'}",
 								"minecraft:lore": [
 									"{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"

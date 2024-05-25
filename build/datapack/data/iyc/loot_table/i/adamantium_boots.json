@@ -24,7 +24,7 @@
 									{"type": "generic.armor_toughness","amount": 3,"operation": "add_value","slot": "feet","id": "iyc:generic.armor_toughness.feet"},
 									{"type": "generic.knockback_resistance","amount": 0.1,"operation": "add_value","slot": "feet","id": "iyc:generic.knockback_resistance.feet"}
 								],
-								"minecraft:custom_model_data": 2015006,
+								"minecraft:custom_model_data": 2015007,
 								"minecraft:item_name": "{'text': 'Adamantium Boots', 'italic': false, 'color': 'white'}",
 								"minecraft:lore": [
 									"{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"

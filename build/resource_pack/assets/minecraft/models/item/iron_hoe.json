@@ -4,7 +4,7 @@
 		"layer0": "item/iron_hoe"
 	},
 	"overrides": [
-		{ "predicate": { "custom_model_data": 2015079}, "model": "iyc:item/steel_hoe" }
+		{ "predicate": { "custom_model_data": 2015083}, "model": "iyc:item/steel_hoe" }
 	]
 }
 

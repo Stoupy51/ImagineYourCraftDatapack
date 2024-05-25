@@ -4,7 +4,7 @@
 		"layer0": "item/netherite_sword"
 	},
 	"overrides": [
-		{ "predicate": { "custom_model_data": 2015007}, "model": "iyc:item/adamantium_sword" }
+		{ "predicate": { "custom_model_data": 2015008}, "model": "iyc:item/adamantium_sword" }
 	]
 }
 

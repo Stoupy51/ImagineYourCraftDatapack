@@ -51,7 +51,7 @@
 					"id": "iyc:generic.luck.mainhand"
 				}
 			],
-			"minecraft:custom_model_data": 2015065,
+			"minecraft:custom_model_data": 2015069,
 			"minecraft:item_name": "{'text': 'Emerald Shovel', 'italic': false, 'color': 'white'}",
 			"minecraft:lore": [
 				"{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"

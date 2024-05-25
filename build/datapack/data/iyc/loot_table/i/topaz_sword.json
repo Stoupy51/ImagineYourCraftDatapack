@@ -19,7 +19,7 @@
 									{"type": "generic.attack_damage","amount": 8.0,"operation": "add_value","slot": "mainhand","id": "iyc:generic.attack_damage.mainhand"},
 									{"type": "generic.attack_speed","amount": -2.5,"operation": "add_value","slot": "mainhand","id": "iyc:generic.attack_speed.mainhand"}
 								],
-								"minecraft:custom_model_data": 2015043,
+								"minecraft:custom_model_data": 2015047,
 								"minecraft:item_name": "{'text': 'Topaz Sword', 'italic': false, 'color': 'white'}",
 								"minecraft:lore": [
 									"{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"

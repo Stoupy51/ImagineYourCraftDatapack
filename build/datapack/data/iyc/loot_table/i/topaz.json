@@ -14,7 +14,7 @@
 									"smithed": {"dict": {"topaz": {"topaz": true}},"ignore": {"functionality": true,"crafting": true}},
 									"iyc": {"topaz": true}
 								},
-								"minecraft:custom_model_data": 2015038,
+								"minecraft:custom_model_data": 2015042,
 								"minecraft:item_name": "{'text': 'Topaz', 'italic': false, 'color': 'white'}",
 								"minecraft:lore": [
 									"{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"

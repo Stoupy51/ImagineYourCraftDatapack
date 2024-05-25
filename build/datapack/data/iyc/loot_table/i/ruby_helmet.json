@@ -23,7 +23,7 @@
 									{"type": "generic.armor","amount": 3.5,"operation": "add_value","slot": "head","id": "iyc:generic.armor.head"},
 									{"type": "generic.armor_toughness","amount": 2,"operation": "add_value","slot": "head","id": "iyc:generic.armor_toughness.head"}
 								],
-								"minecraft:custom_model_data": 2015027,
+								"minecraft:custom_model_data": 2015030,
 								"minecraft:item_name": "{'text': 'Ruby Helmet', 'italic': false, 'color': 'white'}",
 								"minecraft:lore": [
 									"{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"

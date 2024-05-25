@@ -23,7 +23,7 @@
 									{"type": "generic.armor","amount": 6,"operation": "add_value","slot": "legs","id": "iyc:generic.armor.legs"},
 									{"type": "generic.armor_toughness","amount": 2,"operation": "add_value","slot": "legs","id": "iyc:generic.armor_toughness.legs"}
 								],
-								"minecraft:custom_model_data": 2015051,
+								"minecraft:custom_model_data": 2015055,
 								"minecraft:item_name": "{'text': 'Obsidian Leggings', 'italic': false, 'color': 'white'}",
 								"minecraft:lore": [
 									"{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"

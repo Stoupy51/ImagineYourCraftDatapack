@@ -15,7 +15,7 @@ from config import configuration
 # Import my code
 from user.setup_database import main as setup_database_main
 from user.setup_external_database import main as setup_external_database_main
-from user.link import main as link_main
+from user.link import main as link_main	# Called near the end of the build process
 
 # Run build process
 from python_datapack import build_process

@@ -50,18 +50,15 @@ DEPENDENCIES: dict[str, dict[str, list[int] | str]] = {
 SOURCE_LORE: list[dict] = [{"text": DATAPACK_NAME,"italic":True,"color":"blue"}]	# Appended lore to any custom item, can be an empty string
 
 # Manual configuration
-if HAS_MANUAL:
-	MANUAL_PATH: str = f"{ROOT}/manual"					# Cached manual assets
-	CACHE_MANUAL_ASSETS: bool = True					# Caches the MC assets and the items renders for the manual (manual/items/*.png)
-	CACHE_MANUAL_PAGES: bool = True						# Caches the content of the manual and the images (manual/pages/*.png)
-	MANUAL_DEBUG: str = f"{ROOT}/debug_manual.json"		# Dump of the manual for debugging purposes
-	MANUAL_NAME: str = f"{DATAPACK_NAME} Manual"		# Name of the manual, used for the title of the book and first page
-	MAX_ITEMS_PER_ROW: int = 5		# Max number of items per row in the manual, should not exceed 6
-	MAX_ROWS_PER_PAGE: int = 5		# Max number of rows per page in the manual, should not exceed 6
-	OPENGL_RESOLUTION: int = 64		# Resolution of the OpenGL renders used in the manual, best value is 64 <--- 64x64
-
-	# Text for the first page of the manual
-	MANUAL_FIRST_PAGE_TEXT: list[dict] = [{"text":"This manual is very interactive and will guide you through the different items and blocks available in the datapack!", "color":"#505050"}]
+MANUAL_PATH: str = f"{ROOT}/manual"					# Cached manual assets
+CACHE_MANUAL_ASSETS: bool = True					# Caches the MC assets and the items renders for the manual (manual/items/*.png)
+CACHE_MANUAL_PAGES: bool = True						# Caches the content of the manual and the images (manual/pages/*.png)
+MANUAL_DEBUG: str = f"{ROOT}/debug_manual.json"		# Dump of the manual for debugging purposes
+MANUAL_NAME: str = f"{DATAPACK_NAME} Manual"		# Name of the manual, used for the title of the book and first page
+MAX_ITEMS_PER_ROW: int = 5		# Max number of items per row in the manual, should not exceed 6
+MAX_ROWS_PER_PAGE: int = 5		# Max number of rows per page in the manual, should not exceed 6
+OPENGL_RESOLUTION: int = 64		# Resolution of the OpenGL renders used in the manual, best value is 64 <--- 64x64
+MANUAL_FIRST_PAGE_TEXT: list[dict] = [{"text":"This manual is very interactive and will guide you through the different items and blocks available in the datapack!", "color":"#505050"}]	# Text for the first page of the manual
 
 
 

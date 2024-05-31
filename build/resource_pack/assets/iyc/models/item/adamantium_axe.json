@@ -1,5 +1,5 @@
 {
-	"parent": "item/handheld",
+	"parent": "minecraft:item/netherite_axe",
 	"textures": {
 		"layer0": "iyc:item/adamantium_axe"
 	}

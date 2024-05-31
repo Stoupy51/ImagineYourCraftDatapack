@@ -1,5 +1,5 @@
 {
-	"parent": "item/handheld",
+	"parent": "minecraft:item/diamond_sword",
 	"textures": {
 		"layer0": "iyc:item/sapphire_sword"
 	}

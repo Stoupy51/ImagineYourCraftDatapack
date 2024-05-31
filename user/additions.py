@@ -44,7 +44,7 @@ def main(database: dict[str, dict]) -> dict[str, dict]:
 		"white_flower": {"id": CUSTOM_BLOCK_ALTERNATIVE, CATEGORY: "building"},
 
 		# Materials for food
-		"beer_mug":			{"id": CUSTOM_ITEM_VANILLA, CATEGORY: "material",	RESULT_OF_CRAFTING:[{"type":"crafting_shaped","result_count":4,"category":"misc","group":"beer_mug","shape":["XX ","X X","XX "],"ingredients":{"X":ingr_repr("minecraft:glass")}},{"type":"shaped","result_count":4,"category":"misc","group":"beer_mug","shape":[" XX","X X"," XX"],"ingredients":{"X":ingr_repr("minecraft:glass")}}]},
+		"beer_mug":			{"id": CUSTOM_ITEM_VANILLA, CATEGORY: "material",	RESULT_OF_CRAFTING:[{"type":"crafting_shaped","result_count":4,"category":"misc","group":"beer_mug","shape":["XX ","X X","XX "],"ingredients":{"X":ingr_repr("minecraft:glass")}},{"type":"crafting_shaped","result_count":4,"category":"misc","group":"beer_mug","shape":[" XX","X X"," XX"],"ingredients":{"X":ingr_repr("minecraft:glass")}}]},
 		"caffeine":			{"id": CUSTOM_ITEM_VANILLA, CATEGORY: "material"},
 		"can":				{"id": CUSTOM_ITEM_VANILLA, CATEGORY: "material",	RESULT_OF_CRAFTING:[{"type":"crafting_shaped","result_count":4,"category":"misc","shape":["XSX"," X "],"ingredients":{"X":ingr_repr("minecraft:iron_ingot"),"S":ingr_repr("steel_ingot", NAMESPACE)}}]},
 		"cola":				{"id": CUSTOM_ITEM_VANILLA, CATEGORY: "material"},

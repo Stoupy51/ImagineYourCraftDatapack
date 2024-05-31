@@ -1,5 +1,5 @@
 {
-	"parent": "item/handheld",
+	"parent": "minecraft:item/diamond_hoe",
 	"textures": {
 		"layer0": "iyc:item/emerald_hoe"
 	}

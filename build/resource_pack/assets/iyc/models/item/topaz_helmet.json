@@ -1,5 +1,5 @@
 {
-	"parent": "item/generated",
+	"parent": "minecraft:item/leather_helmet",
 	"textures": {
 		"layer0": "iyc:item/topaz_helmet",
 		"layer1": "iyc:item/topaz_helmet"

@@ -1,5 +1,5 @@
 {
-	"parent": "item/handheld",
+	"parent": "minecraft:item/netherite_hoe",
 	"textures": {
 		"layer0": "iyc:item/adamantium_hoe"
 	}

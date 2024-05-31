@@ -30,6 +30,7 @@ recipe give @s iyc:iron_lantern
 recipe give @s iyc:red_light
 recipe give @s iyc:reversed_oak_planks
 recipe give @s iyc:beer_mug
+recipe give @s iyc:beer_mug_2
 recipe give @s iyc:empty_glass
 recipe give @s iyc:toast
 recipe give @s iyc:glass_pot

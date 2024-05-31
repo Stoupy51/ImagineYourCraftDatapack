@@ -1,5 +1,5 @@
 {
-	"parent": "item/generated",
+	"parent": "minecraft:item/snowball",
 	"textures": {
 		"layer0": "iyc:item/rock"
 	}

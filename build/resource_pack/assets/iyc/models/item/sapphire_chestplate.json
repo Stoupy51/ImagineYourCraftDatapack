@@ -1,5 +1,5 @@
 {
-	"parent": "item/generated",
+	"parent": "minecraft:item/leather_chestplate",
 	"textures": {
 		"layer0": "iyc:item/sapphire_chestplate",
 		"layer1": "iyc:item/sapphire_chestplate"

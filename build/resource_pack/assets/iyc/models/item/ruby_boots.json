@@ -1,5 +1,5 @@
 {
-	"parent": "item/generated",
+	"parent": "minecraft:item/leather_boots",
 	"textures": {
 		"layer0": "iyc:item/ruby_boots",
 		"layer1": "iyc:item/ruby_boots"

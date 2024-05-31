@@ -1,5 +1,5 @@
 {
-	"parent": "item/handheld",
+	"parent": "minecraft:item/diamond_pickaxe",
 	"textures": {
 		"layer0": "iyc:item/sapphire_pickaxe"
 	}

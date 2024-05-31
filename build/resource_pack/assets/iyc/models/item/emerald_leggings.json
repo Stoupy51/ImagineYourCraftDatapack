@@ -1,5 +1,5 @@
 {
-	"parent": "item/generated",
+	"parent": "minecraft:item/leather_leggings",
 	"textures": {
 		"layer0": "iyc:item/emerald_leggings",
 		"layer1": "iyc:item/emerald_leggings"

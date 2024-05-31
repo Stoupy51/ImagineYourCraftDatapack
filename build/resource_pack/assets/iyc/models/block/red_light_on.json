@@ -1,34 +1,7 @@
 {
 	"parent": "block/cube_all",
 	"textures": {
-		"down": "iyc:block/red_light_on",
-		"up": "iyc:block/red_light_on",
-		"north": "iyc:block/red_light_on",
-		"south": "iyc:block/red_light_on",
-		"west": "iyc:block/red_light_on",
-		"east": "iyc:block/red_light_on"
-	},
-	"elements": [
-		{
-			"from": [
-				0,
-				0,
-				0
-			],
-			"to": [
-				16,
-				16,
-				16
-			],
-			"faces": {
-				"down": {"texture": "#down","cullface": "down"},
-				"up": {"texture": "#up","cullface": "up"},
-				"north": {"texture": "#north","cullface": "north"},
-				"south": {"texture": "#south","cullface": "south"},
-				"west": {"texture": "#west","cullface": "west"},
-				"east": {"texture": "#east","cullface": "east"}
-			}
-		}
-	]
+		"all": "iyc:block/red_light_on"
+	}
 }
 

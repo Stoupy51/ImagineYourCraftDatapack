@@ -15,7 +15,7 @@
 									"nutrition": 12,
 									"saturation": 0.6
 								},
-								"minecraft:custom_model_data": 2015133,
+								"minecraft:custom_model_data": 2015139,
 								"minecraft:item_name": "{'text': 'Nutella Toast', 'italic': false, 'color': 'white'}",
 								"minecraft:lore": [
 									"{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"

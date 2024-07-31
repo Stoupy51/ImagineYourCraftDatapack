@@ -1,91 +1,91 @@
 {
-	"record_1": {
+	"antvenom_the_miner": {
 		"category": "music",
-		"sounds": [{"name": "iyc:record_1","stream": true}]
+		"sounds": [{"name": "iyc:antvenom_the_miner","stream": true}]
 	},
-	"record_2": {
+	"bebopvox_dont_mine_at_night": {
 		"category": "music",
-		"sounds": [{"name": "iyc:record_2","stream": true}]
+		"sounds": [{"name": "iyc:bebopvox_dont_mine_at_night","stream": true}]
 	},
-	"record_3": {
+	"captainsparklez_fallen_kingdom": {
 		"category": "music",
-		"sounds": [{"name": "iyc:record_3","stream": true}]
+		"sounds": [{"name": "iyc:captainsparklez_fallen_kingdom","stream": true}]
 	},
-	"record_4": {
+	"captainsparklez_minecraft_style": {
 		"category": "music",
-		"sounds": [{"name": "iyc:record_4","stream": true}]
+		"sounds": [{"name": "iyc:captainsparklez_minecraft_style","stream": true}]
 	},
-	"record_5": {
+	"captainsparklez_revenge": {
 		"category": "music",
-		"sounds": [{"name": "iyc:record_5","stream": true}]
+		"sounds": [{"name": "iyc:captainsparklez_revenge","stream": true}]
 	},
-	"record_6": {
+	"captainsparklez_tack_back_the_night": {
 		"category": "music",
-		"sounds": [{"name": "iyc:record_6","stream": true}]
+		"sounds": [{"name": "iyc:captainsparklez_tack_back_the_night","stream": true}]
 	},
-	"record_7": {
+	"captainsparklez_tnt": {
 		"category": "music",
-		"sounds": [{"name": "iyc:record_7","stream": true}]
+		"sounds": [{"name": "iyc:captainsparklez_tnt","stream": true}]
 	},
-	"record_8": {
+	"gunther_you_touch_my_tralala": {
 		"category": "music",
-		"sounds": [{"name": "iyc:record_8","stream": true}]
+		"sounds": [{"name": "iyc:gunther_you_touch_my_tralala","stream": true}]
 	},
-	"record_9": {
+	"guzzproduction_bouge_ton_cube": {
 		"category": "music",
-		"sounds": [{"name": "iyc:record_9","stream": true}]
+		"sounds": [{"name": "iyc:guzzproduction_bouge_ton_cube","stream": true}]
 	},
-	"record_10": {
+	"lokoise_acta": {
 		"category": "music",
-		"sounds": [{"name": "iyc:record_10","stream": true}]
+		"sounds": [{"name": "iyc:lokoise_acta","stream": true}]
 	},
-	"record_11": {
+	"lokoise_bug_de_chunks": {
 		"category": "music",
-		"sounds": [{"name": "iyc:record_11","stream": true}]
+		"sounds": [{"name": "iyc:lokoise_bug_de_chunks","stream": true}]
 	},
-	"record_12": {
+	"lokoise_jaime_le_creep": {
 		"category": "music",
-		"sounds": [{"name": "iyc:record_12","stream": true}]
+		"sounds": [{"name": "iyc:lokoise_jaime_le_creep","stream": true}]
 	},
-	"record_13": {
+	"lokoise_jfais_des_pelles_en_diams": {
 		"category": "music",
-		"sounds": [{"name": "iyc:record_13","stream": true}]
+		"sounds": [{"name": "iyc:lokoise_jfais_des_pelles_en_diams","stream": true}]
 	},
-	"record_14": {
+	"lokoise_jgeek_un_max": {
 		"category": "music",
-		"sounds": [{"name": "iyc:record_14","stream": true}]
+		"sounds": [{"name": "iyc:lokoise_jgeek_un_max","stream": true}]
 	},
-	"record_15": {
+	"lokoise_jsuis_sean_kvin": {
 		"category": "music",
-		"sounds": [{"name": "iyc:record_15","stream": true}]
+		"sounds": [{"name": "iyc:lokoise_jsuis_sean_kvin","stream": true}]
 	},
-	"record_16": {
+	"lokoise_je_me_give": {
 		"category": "music",
-		"sounds": [{"name": "iyc:record_16","stream": true}]
+		"sounds": [{"name": "iyc:lokoise_je_me_give","stream": true}]
 	},
-	"record_17": {
+	"lokoise_le_journal_dun_naufragay": {
 		"category": "music",
-		"sounds": [{"name": "iyc:record_17","stream": true}]
+		"sounds": [{"name": "iyc:lokoise_le_journal_dun_naufragay","stream": true}]
 	},
-	"record_18": {
+	"lokoise_tous_les_zombies": {
 		"category": "music",
-		"sounds": [{"name": "iyc:record_18","stream": true}]
+		"sounds": [{"name": "iyc:lokoise_tous_les_zombies","stream": true}]
 	},
-	"record_19": {
+	"lokoise_un_dbit_tout_pourri": {
 		"category": "music",
-		"sounds": [{"name": "iyc:record_19","stream": true}]
+		"sounds": [{"name": "iyc:lokoise_un_dbit_tout_pourri","stream": true}]
 	},
-	"record_20": {
+	"reaperr__mrelvilia_mauvaise_ide": {
 		"category": "music",
-		"sounds": [{"name": "iyc:record_20","stream": true}]
+		"sounds": [{"name": "iyc:reaperr__mrelvilia_mauvaise_ide","stream": true}]
 	},
-	"record_21": {
+	"thedudescraft_gagaoutai": {
 		"category": "music",
-		"sounds": [{"name": "iyc:record_21","stream": true}]
+		"sounds": [{"name": "iyc:thedudescraft_gagaoutai","stream": true}]
 	},
-	"record_22": {
+	"tryhardninja_that_girl_is_crafty": {
 		"category": "music",
-		"sounds": [{"name": "iyc:record_22","stream": true}]
+		"sounds": [{"name": "iyc:tryhardninja_that_girl_is_crafty","stream": true}]
 	},
 	"ahhhhhrrr": {
 		"subtitle": "Ahhhhhrrr",

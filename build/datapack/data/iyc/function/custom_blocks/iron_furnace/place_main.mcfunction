@@ -6,10 +6,16 @@
 
 tag @s add iyc.placer
 function iyc:custom_blocks/get_rotation
-execute if predicate iyc:facing/north run setblock ~ ~ ~ minecraft:furnace[facing=north,]
-execute if predicate iyc:facing/east run setblock ~ ~ ~ minecraft:furnace[facing=east,]
-execute if predicate iyc:facing/south run setblock ~ ~ ~ minecraft:furnace[facing=south,]
-execute if predicate iyc:facing/west run setblock ~ ~ ~ minecraft:furnace[facing=west,]
+setblock ~ ~ ~ air
+execute if score #rotation iyc.data matches 1 run setblock ~ ~ ~ minecraft:furnace[facing=north]{"CustomName": "\"Iron Furnace\""}
+execute if score #rotation iyc.data matches 2 run setblock ~ ~ ~ minecraft:furnace[facing=east]{"CustomName": "\"Iron Furnace\""}
+execute if score #rotation iyc.data matches 3 run setblock ~ ~ ~ minecraft:furnace[facing=south]{"CustomName": "\"Iron Furnace\""}
+execute if score #rotation iyc.data matches 4 run setblock ~ ~ ~ minecraft:furnace[facing=west]{"CustomName": "\"Iron Furnace\""}
 execute align xyz positioned ~.5 ~.5 ~.5 summon item_display at @s run function iyc:custom_blocks/iron_furnace/place_secondary
 tag @s remove iyc.placer
+
+# Increment count scores
+scoreboard players add #total_custom_blocks iyc.data 1
+scoreboard players add #total_vanilla_furnace iyc.data 1
+scoreboard players add #total_iron_furnace iyc.data 1
 

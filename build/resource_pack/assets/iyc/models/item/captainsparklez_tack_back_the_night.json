@@ -1,0 +1,7 @@
+{
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "iyc:item/captainsparklez_tack_back_the_night"
+	}
+}
+

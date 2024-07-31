@@ -7,6 +7,11 @@
 # Replace the item with the custom one
 execute as @e[type=item,nbt={Item:{id:"minecraft:ochre_froglight"}},limit=1,sort=nearest,distance=..1] run function iyc:custom_blocks/birch_wood_lantern/replace_item
 
+# Decrease count scores
+scoreboard players remove #total_custom_blocks iyc.data 1
+scoreboard players remove #total_vanilla_ochre_froglight iyc.data 1
+scoreboard players remove #total_birch_wood_lantern iyc.data 1
+
 # Kill the custom block entity
 kill @s
 

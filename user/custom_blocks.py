@@ -36,7 +36,7 @@ def main(database: dict[str, dict]):
 		"iron_lantern": {VANILLA_BLOCK: {"id":"minecraft:ochre_froglight", "apply_facing": False}},
 		"red_light": {VANILLA_BLOCK: {"id":"minecraft:red_concrete", "apply_facing": False}},
 		"reversed_oak_planks": {VANILLA_BLOCK: {"id":"minecraft:oak_planks", "apply_facing": False}},
-		"cherry_cake": {VANILLA_BLOCK: {"id":"minecraft:cake", "apply_facing": False}, OVERRIDE_MODEL: {"parent":"block/cake","textures":{"bottom":f"{NAMESPACE}:block/cherry_cake_bottom","top":f"{NAMESPACE}:block/cherry_cake_top","side":f"{NAMESPACE}:block/cherry_cake_side"}}},
+		"cherry_cake": {VANILLA_BLOCK: {"id":"minecraft:cake", "apply_facing": False}},
 		"nuclear_bomb": {VANILLA_BLOCK: {"id":"minecraft:tnt", "apply_facing": False}},
 
 		# Items using item_frame for placing

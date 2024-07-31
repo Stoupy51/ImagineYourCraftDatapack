@@ -2,8 +2,9 @@
 	"parent": "block/cake",
 	"textures": {
 		"bottom": "iyc:block/cherry_cake_bottom",
+		"side": "iyc:block/cherry_cake_side",
 		"top": "iyc:block/cherry_cake_top",
-		"side": "iyc:block/cherry_cake_side"
+		"inside": "iyc:block/cherry_cake_inner"
 	}
 }
 

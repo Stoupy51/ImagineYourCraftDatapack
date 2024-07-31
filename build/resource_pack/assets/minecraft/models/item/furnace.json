@@ -35,7 +35,13 @@
 		{ "predicate": { "custom_model_data": 2015111}, "model": "iyc:block/red_light_on" },
 		{ "predicate": { "custom_model_data": 2015112}, "model": "iyc:block/reversed_oak_planks" },
 		{ "predicate": { "custom_model_data": 2015129}, "model": "iyc:block/cherry_cake" },
-		{ "predicate": { "custom_model_data": 2015140}, "model": "iyc:block/nuclear_bomb" }
+		{ "predicate": { "custom_model_data": 2015130}, "model": "iyc:block/cherry_cake_slice1" },
+		{ "predicate": { "custom_model_data": 2015131}, "model": "iyc:block/cherry_cake_slice2" },
+		{ "predicate": { "custom_model_data": 2015132}, "model": "iyc:block/cherry_cake_slice3" },
+		{ "predicate": { "custom_model_data": 2015133}, "model": "iyc:block/cherry_cake_slice4" },
+		{ "predicate": { "custom_model_data": 2015134}, "model": "iyc:block/cherry_cake_slice5" },
+		{ "predicate": { "custom_model_data": 2015135}, "model": "iyc:block/cherry_cake_slice6" },
+		{ "predicate": { "custom_model_data": 2015146}, "model": "iyc:block/nuclear_bomb" }
 	]
 }
 

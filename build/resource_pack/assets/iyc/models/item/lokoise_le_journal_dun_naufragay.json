@@ -1,0 +1,7 @@
+{
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "iyc:item/lokoise_le_journal_dun_naufragay"
+	}
+}
+

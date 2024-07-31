@@ -1,0 +1,11 @@
+{
+	"values": [
+		{
+			"id": "#iyc:dependencies",
+			"required": false
+		},
+		"#iyc:enumerate",
+		"#iyc:resolve"
+	]
+}
+

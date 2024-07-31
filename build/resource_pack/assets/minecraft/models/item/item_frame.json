@@ -1,18 +1,15 @@
 {
-	"parent": "item/handheld",
-	"textures": {
-		"layer0": "item/item_frame"
-	},
+	"parent": "block/item_frame",
 	"overrides": [
-		{ "predicate": { "custom_model_data": 2015099}, "model": "iyc:item/cloud" },
-		{ "predicate": { "custom_model_data": 2015100}, "model": "iyc:item/flatware" },
-		{ "predicate": { "custom_model_data": 2015102}, "model": "iyc:item/hops_seeds" },
-		{ "predicate": { "custom_model_data": 2015103}, "model": "iyc:item/iron_ladder" },
-		{ "predicate": { "custom_model_data": 2015114}, "model": "iyc:item/black_flower" },
-		{ "predicate": { "custom_model_data": 2015115}, "model": "iyc:item/blue_flower" },
-		{ "predicate": { "custom_model_data": 2015116}, "model": "iyc:item/white_flower" },
-		{ "predicate": { "custom_model_data": 2015137}, "model": "iyc:item/blob" },
-		{ "predicate": { "custom_model_data": 2015138}, "model": "iyc:item/lignite_torch" }
+		{ "predicate": { "custom_model_data": 2015099}, "model": "iyc:block/cloud" },
+		{ "predicate": { "custom_model_data": 2015100}, "model": "iyc:block/flatware" },
+		{ "predicate": { "custom_model_data": 2015102}, "model": "iyc:block/hops_seeds" },
+		{ "predicate": { "custom_model_data": 2015103}, "model": "iyc:block/iron_ladder" },
+		{ "predicate": { "custom_model_data": 2015114}, "model": "iyc:block/black_flower" },
+		{ "predicate": { "custom_model_data": 2015115}, "model": "iyc:block/blue_flower" },
+		{ "predicate": { "custom_model_data": 2015116}, "model": "iyc:block/white_flower" },
+		{ "predicate": { "custom_model_data": 2015143}, "model": "iyc:block/blob" },
+		{ "predicate": { "custom_model_data": 2015144}, "model": "iyc:block/lignite_torch" }
 	]
 }
 

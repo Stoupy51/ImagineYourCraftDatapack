@@ -1,10 +1,10 @@
 {
-	"parent": "item/handheld",
+	"parent": "item/generated",
 	"textures": {
 		"layer0": "item/snowball"
 	},
 	"overrides": [
-		{ "predicate": { "custom_model_data": 2015142}, "model": "iyc:item/rock" }
+		{ "predicate": { "custom_model_data": 2015148}, "model": "iyc:item/rock" }
 	]
 }
 

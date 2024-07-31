@@ -14,7 +14,7 @@ tag @s add iyc.nuclear_bomb
 tag @s add iyc.vanilla.minecraft_tnt
 
 # Modify item display entity to match the custom block
-item replace entity @s container.0 with minecraft:furnace[minecraft:custom_model_data=2015140]
+item replace entity @s container.0 with minecraft:furnace[minecraft:custom_model_data=2015146]
 data modify entity @s transformation.scale set value [1.002f,1.008f,1.002f]
 data modify entity @s transformation.translation[1] set value 0.003f
 data modify entity @s brightness set value {block:15,sky:15}

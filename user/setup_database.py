@@ -20,37 +20,13 @@ ORES_CONFIGS: dict[str, EquipmentsConfig|None] = {
 	"slate":				None,
 	"minecraft:stone":		None,
 }
-RECORDS: dict[str, tuple[str, float]] = {
-	"record_1":		("AntVenom - The Miner.ogg", 252.0),
-	"record_2":		("BebopVox - Don't Mine At Night.ogg", 228.0),
-	"record_3":		("CaptainSparklez - Fallen Kingdom.ogg", 287.0),
-	"record_4":		("CaptainSparklez - Minecraft Style.ogg", 237.0),
-	"record_5":		("CaptainSparklez - Revenge.ogg", 264.0),
-	"record_6":		("CaptainSparklez - Tack Back the Night.ogg", 390.0),
-	"record_7":		("CaptainSparklez - TNT.ogg", 204.0),
-	"record_8":		("Gunther - You touch my tralala.ogg", 240.0),
-	"record_9":		("GuzzProduction - Bouge Ton Cube.ogg", 151.0),
-	"record_10":	("Lokoise - ACTA.ogg", 200.0),
-	"record_11":	("Lokoise - Bug de chunks.ogg", 233.0),
-	"record_12":	("Lokoise - J'aime le creep'.ogg", 199.0),
-	"record_13":	("Lokoise - Je me give.ogg", 209.0),
-	"record_14":	("Lokoise - J'fais des pelles en diam's.ogg", 209.0),
-	"record_15":	("Lokoise - J'geek un max.ogg", 124.0),
-	"record_16":	("Lokoise - J'suis Sean Kévin.ogg", 227.0),
-	"record_17":	("Lokoise - Le journal d'un naufragay.ogg", 95.0),
-	"record_18":	("Lokoise - Tous les zombies.ogg", 204.0),
-	"record_19":	("Lokoise - Un débit tout pourri.ogg", 200.0),
-	"record_20":	("ReAperr & MrElvilia - Mauvaise Idée.ogg", 191.0),
-	"record_21":	("TheDudesCraft - GAGAOUTAI.ogg", 234.0),
-	"record_22":	("TryHardNinja - That Girl is Crafty.ogg", 236.0),
-}
 
 # Main function should return a database
 def main(config: dict) -> dict[str, dict]:
 	database = {}
 
 	# Generate ores in database
-	generate_everything_about_these_ores(config, database, ORES_CONFIGS)
+	generate_everything_about_these_materials(config, database, ORES_CONFIGS)
 
 	# Apply database additions
 	database = additions_main(database)
@@ -59,11 +35,10 @@ def main(config: dict) -> dict[str, dict]:
 	custom_blocks_main(database)
 
 	# Add custom records
-	generate_custom_records(config, database, RECORDS)
+	generate_custom_records(config, database, "auto")
 
 	# Final adjustments
 	deterministic_custom_model_data(config, database, STARTING_CMD)
-	clean_up_empty_recipes(database)
 	add_item_name_and_lore_if_missing(config, database)
 	add_private_custom_data_for_namespace(config, database)
 	add_smithed_ignore_vanilla_behaviours_convention(database)

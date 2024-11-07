@@ -7,7 +7,6 @@ from .additions import main as additions_main
 from .custom_blocks import main as custom_blocks_main
 
 # Constants
-STARTING_CMD: int = 2015000	# Prefix for custom_model_data
 ORES_CONFIGS: dict[str, EquipmentsConfig|None] = {
 	"adamantium_fragment":	EquipmentsConfig(DEFAULT_ORE.NETHERITE, 1873, {"attack_damage": 0.2, "armor": 0.2, "mining_efficiency": 0.2}),
 	"sapphire":				EquipmentsConfig(DEFAULT_ORE.DIAMOND, 1752, {"mining_efficiency": 0.2}),

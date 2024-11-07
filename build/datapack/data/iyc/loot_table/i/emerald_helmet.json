@@ -19,12 +19,16 @@
 									"show_in_tooltip": false
 								},
 								"minecraft:max_damage": 171,
+								"minecraft:equippable": {
+									"slot": "head",
+									"model": "iyc:emerald"
+								},
 								"minecraft:attribute_modifiers": [
-									{"type": "generic.armor","amount": 3,"operation": "add_value","slot": "head","id": "iyc:generic.armor.head"},
-									{"type": "generic.armor_toughness","amount": 2,"operation": "add_value","slot": "head","id": "iyc:generic.armor_toughness.head"},
-									{"type": "generic.luck","amount": 0.25,"operation": "add_value","slot": "head","id": "iyc:generic.luck.head"}
+									{"type": "armor","amount": 3,"operation": "add_value","slot": "head","id": "iyc:armor.head"},
+									{"type": "armor_toughness","amount": 2,"operation": "add_value","slot": "head","id": "iyc:armor_toughness.head"},
+									{"type": "luck","amount": 0.25,"operation": "add_value","slot": "head","id": "iyc:luck.head"}
 								],
-								"minecraft:custom_model_data": 2015062,
+								"minecraft:item_model": "iyc:emerald_helmet",
 								"minecraft:item_name": "{'text': 'Emerald Helmet', 'italic': false, 'color': 'white'}",
 								"minecraft:lore": [
 									"{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"

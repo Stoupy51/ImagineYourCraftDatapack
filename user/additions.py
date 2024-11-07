@@ -9,7 +9,7 @@ def main(database: dict[str, dict]) -> dict[str, dict]:
 	MISC = "miscellaneous"
 	database_additions = {
 		"adamantium_ore": {
-			"wiki": [
+			WIKI_COMPONENT: [
 				{"text":"Description: "},		{"text":"Adamantium Ore is a mineable ore found in the overworld caves.\n","color":"gray"},
 				{"text":"How to get one? "},	{"text":"In the overworld, anywhere below y=40.\n","color":"gray"},
 				{"text":"Can be mined with: "},	{"text":"Any pickaxe.\n","color":"gray"},
@@ -17,7 +17,13 @@ def main(database: dict[str, dict]) -> dict[str, dict]:
 				{"text":"Silk Touch? "},		{"text":"Also supported","color":"gray"},
 			]
 		},
-		"massive_obsidian_block" : {"id": CUSTOM_BLOCK_VANILLA,						RESULT_OF_CRAFTING:[{"type":"crafting_shapeless","result_count":1,"category":"misc","group":"obsidian","ingredients":[ingr_repr("minecraft:obsidian")] * 9}]},
+		"adamantium_fragment": {
+			WIKI_COMPONENT: [
+				{"text":"Description: "},		{"text":"Adamantium Fragment is a material used to craft Adamantium stuff.\n","color":"gray"},
+				{"text":"How to get one? "},	{"text":"By mining Adamantium Ore.","color":"gray"},
+			]
+		},
+		"massive_obsidian_block" : {"id": CUSTOM_BLOCK_VANILLA, "category": MISC,	RESULT_OF_CRAFTING:[{"type":"crafting_shapeless","result_count":1,"category":"misc","group":"obsidian","ingredients":[ingr_repr("minecraft:obsidian")] * 9}]},
 		"obsidian_ingot" : {RESULT_OF_CRAFTING:[{"type":"smelting","result_count":1,"category":"misc","group":"obsidian","experience":0.2,"cookingtime":800,"ingredient":ingr_repr("massive_obsidian_block", NAMESPACE)},{"type":"blasting","result_count":1,"category":"misc","group":"obsidian","experience":0.2,"cookingtime":400,"ingredient":ingr_repr("massive_obsidian_block", NAMESPACE)}]},
 		"iron_furnace": {"id": CUSTOM_BLOCK_VANILLA, CATEGORY: "building",			RESULT_OF_CRAFTING:[{"type":"crafting_shaped","result_count":1,"category":"misc","shape":["XXX","XFX","XXX"],"ingredients":{"X":ingr_repr("minecraft:iron_ingot"),"F":ingr_repr("minecraft:furnace")}}]},
 		"box_jump": {"id": CUSTOM_BLOCK_VANILLA, CATEGORY: "building",				RESULT_OF_CRAFTING:[{"type":"crafting_shapeless","result_count":1,"category":"misc","ingredients":[ingr_repr("minecraft:oak_planks"),ingr_repr("ruby", NAMESPACE)]}]},
@@ -27,7 +33,7 @@ def main(database: dict[str, dict]) -> dict[str, dict]:
 		"clear_glass": {"id": CUSTOM_BLOCK_VANILLA, CATEGORY: "building",			RESULT_OF_CRAFTING:[{"type":"crafting_shapeless","result_count":4,"category":"misc","ingredients":[ingr_repr("minecraft:glass")]*9}]},
 		"cloud": {"id": CUSTOM_BLOCK_ALTERNATIVE, CATEGORY: "building"},
 		"flatware": {"id": CUSTOM_BLOCK_ALTERNATIVE, CATEGORY: "building"},
-		"helice_hat": {"id": "minecraft:leather_helmet", CATEGORY: "equipment",		"lore": ["{'text':'A hat that makes you fly','color':'gray','italic':false}"], RESULT_OF_CRAFTING:[{"type":"crafting_shapeless","result_count":1,"category":"equipment","ingredients":[ingr_repr("minecraft:iron_ingot"),ingr_repr("minecraft:elytra")]}], "attribute_modifiers":[{"type":"generic.gravity","amount":-0.09,"operation":"add_value","slot":"head","id":"iyc:generic.gravity.head"}]},
+		"helice_hat": {"id": "minecraft:leather_helmet", CATEGORY: "equipment",		"lore": ["{'text':'A hat that makes you fly','color':'gray','italic':false}"], RESULT_OF_CRAFTING:[{"type":"crafting_shapeless","result_count":1,"category":"equipment","ingredients":[ingr_repr("minecraft:iron_ingot"),ingr_repr("minecraft:elytra")]}], "attribute_modifiers":[{"type":"gravity","amount":-0.09,"operation":"add_value","slot":"head","id":"iyc:gravity.head"}]},
 		"hops_seeds": {"id": CUSTOM_BLOCK_ALTERNATIVE, CATEGORY: "material"},
 		"iron_ladder": {"id": CUSTOM_BLOCK_ALTERNATIVE, CATEGORY: "building",			RESULT_OF_CRAFTING:[{"type":"crafting_shaped","result_count":4,"category":"misc","shape":["X X","XXX","X X"],"ingredients":{"X":ingr_repr("minecraft:iron_ingot")}}]},
 		"l118a": {"id": CUSTOM_ITEM_VANILLA, CATEGORY: "equipment",					"lore": ["{'text':'Uses steel nuggets as bullets','color':'gray','italic':false}"], RESULT_OF_CRAFTING:[{"type":"crafting_shaped","result_count":1,"category":"equipment","shape":["X  "," XX"," XS"],"ingredients":{"X":ingr_repr("steel_ingot", NAMESPACE),"S":ingr_repr("slate", NAMESPACE)}}]},

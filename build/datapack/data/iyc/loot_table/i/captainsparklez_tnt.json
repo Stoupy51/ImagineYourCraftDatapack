@@ -21,7 +21,7 @@
 								},
 								"minecraft:max_stack_size": 1,
 								"minecraft:rarity": "rare",
-								"minecraft:custom_model_data": 2015157,
+								"minecraft:item_model": "iyc:captainsparklez_tnt",
 								"minecraft:lore": [
 									"{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"
 								]

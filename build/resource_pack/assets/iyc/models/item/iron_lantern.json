@@ -1,0 +1,8 @@
+{
+	"parent": "block/cube_column",
+	"textures": {
+		"end": "iyc:item/iron_lantern_end",
+		"side": "iyc:item/iron_lantern_side"
+	}
+}
+

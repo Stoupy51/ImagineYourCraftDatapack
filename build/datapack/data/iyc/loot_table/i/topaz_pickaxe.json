@@ -16,10 +16,10 @@
 								},
 								"minecraft:max_damage": 1281,
 								"minecraft:attribute_modifiers": [
-									{"type": "generic.attack_damage","amount": 6.0,"operation": "add_value","slot": "mainhand","id": "iyc:generic.attack_damage.mainhand"},
-									{"type": "generic.attack_speed","amount": -2.75,"operation": "add_value","slot": "mainhand","id": "iyc:generic.attack_speed.mainhand"}
+									{"type": "attack_damage","amount": 6.0,"operation": "add_value","slot": "mainhand","id": "iyc:attack_damage.mainhand"},
+									{"type": "attack_speed","amount": -2.75,"operation": "add_value","slot": "mainhand","id": "iyc:attack_speed.mainhand"}
 								],
-								"minecraft:custom_model_data": 2015048,
+								"minecraft:item_model": "iyc:topaz_pickaxe",
 								"minecraft:item_name": "{'text': 'Topaz Pickaxe', 'italic': false, 'color': 'white'}",
 								"minecraft:lore": [
 									"{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"

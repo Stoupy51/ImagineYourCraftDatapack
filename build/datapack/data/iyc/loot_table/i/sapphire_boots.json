@@ -19,11 +19,15 @@
 									"show_in_tooltip": false
 								},
 								"minecraft:max_damage": 481,
+								"minecraft:equippable": {
+									"slot": "feet",
+									"model": "iyc:sapphire"
+								},
 								"minecraft:attribute_modifiers": [
-									{"type": "generic.armor","amount": 3,"operation": "add_value","slot": "feet","id": "iyc:generic.armor.feet"},
-									{"type": "generic.armor_toughness","amount": 2,"operation": "add_value","slot": "feet","id": "iyc:generic.armor_toughness.feet"}
+									{"type": "armor","amount": 3,"operation": "add_value","slot": "feet","id": "iyc:armor.feet"},
+									{"type": "armor_toughness","amount": 2,"operation": "add_value","slot": "feet","id": "iyc:armor_toughness.feet"}
 								],
-								"minecraft:custom_model_data": 2015020,
+								"minecraft:item_model": "iyc:sapphire_boots",
 								"minecraft:item_name": "{'text': 'Sapphire Boots', 'italic': false, 'color': 'white'}",
 								"minecraft:lore": [
 									"{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"

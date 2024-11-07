@@ -2,12 +2,8 @@
 	"type": "minecraft:crafting_shapeless",
 	"category": "equipment",
 	"ingredients": [
-		{
-			"item": "minecraft:iron_ingot"
-		},
-		{
-			"item": "minecraft:elytra"
-		}
+		"minecraft:iron_ingot",
+		"minecraft:elytra"
 	],
 	"result": {
 		"id": "minecraft:leather_helmet",
@@ -19,14 +15,14 @@
 			],
 			"minecraft:attribute_modifiers": [
 				{
-					"type": "generic.gravity",
+					"type": "gravity",
 					"amount": -0.09,
 					"operation": "add_value",
 					"slot": "head",
-					"id": "iyc:generic.gravity.head"
+					"id": "iyc:gravity.head"
 				}
 			],
-			"minecraft:custom_model_data": 2015101,
+			"minecraft:item_model": "iyc:helice_hat",
 			"minecraft:item_name": "{'text': 'Helice Hat', 'italic': false, 'color': 'white'}",
 			"minecraft:custom_data": {
 				"iyc": {

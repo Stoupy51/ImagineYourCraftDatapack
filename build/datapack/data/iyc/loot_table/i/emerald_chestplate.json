@@ -19,12 +19,16 @@
 									"show_in_tooltip": false
 								},
 								"minecraft:max_damage": 248,
+								"minecraft:equippable": {
+									"slot": "chest",
+									"model": "iyc:emerald"
+								},
 								"minecraft:attribute_modifiers": [
-									{"type": "generic.armor","amount": 8,"operation": "add_value","slot": "chest","id": "iyc:generic.armor.chest"},
-									{"type": "generic.armor_toughness","amount": 2,"operation": "add_value","slot": "chest","id": "iyc:generic.armor_toughness.chest"},
-									{"type": "generic.luck","amount": 0.25,"operation": "add_value","slot": "chest","id": "iyc:generic.luck.chest"}
+									{"type": "armor","amount": 8,"operation": "add_value","slot": "chest","id": "iyc:armor.chest"},
+									{"type": "armor_toughness","amount": 2,"operation": "add_value","slot": "chest","id": "iyc:armor_toughness.chest"},
+									{"type": "luck","amount": 0.25,"operation": "add_value","slot": "chest","id": "iyc:luck.chest"}
 								],
-								"minecraft:custom_model_data": 2015063,
+								"minecraft:item_model": "iyc:emerald_chestplate",
 								"minecraft:item_name": "{'text': 'Emerald Chestplate', 'italic': false, 'color': 'white'}",
 								"minecraft:lore": [
 									"{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"

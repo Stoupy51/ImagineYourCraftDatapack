@@ -7,9 +7,7 @@
 		"X X"
 	],
 	"key": {
-		"X": {
-			"item": "minecraft:emerald"
-		}
+		"X": "minecraft:emerald"
 	},
 	"result": {
 		"id": "minecraft:leather_leggings",
@@ -29,30 +27,34 @@
 				"show_in_tooltip": false
 			},
 			"minecraft:max_damage": 233,
+			"minecraft:equippable": {
+				"slot": "legs",
+				"model": "iyc:emerald"
+			},
 			"minecraft:attribute_modifiers": [
 				{
-					"type": "generic.armor",
+					"type": "armor",
 					"amount": 6,
 					"operation": "add_value",
 					"slot": "legs",
-					"id": "iyc:generic.armor.legs"
+					"id": "iyc:armor.legs"
 				},
 				{
-					"type": "generic.armor_toughness",
+					"type": "armor_toughness",
 					"amount": 2,
 					"operation": "add_value",
 					"slot": "legs",
-					"id": "iyc:generic.armor_toughness.legs"
+					"id": "iyc:armor_toughness.legs"
 				},
 				{
-					"type": "generic.luck",
+					"type": "luck",
 					"amount": 0.25,
 					"operation": "add_value",
 					"slot": "legs",
-					"id": "iyc:generic.luck.legs"
+					"id": "iyc:luck.legs"
 				}
 			],
-			"minecraft:custom_model_data": 2015064,
+			"minecraft:item_model": "iyc:emerald_leggings",
 			"minecraft:item_name": "{'text': 'Emerald Leggings', 'italic': false, 'color': 'white'}",
 			"minecraft:lore": [
 				"{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"

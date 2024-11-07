@@ -2,18 +2,14 @@
 	"type": "minecraft:crafting_shapeless",
 	"category": "blocks",
 	"ingredients": [
-		{
-			"item": "minecraft:glowstone"
-		},
-		{
-			"item": "minecraft:iron_block"
-		}
+		"minecraft:glowstone",
+		"minecraft:iron_block"
 	],
 	"result": {
 		"id": "minecraft:furnace",
 		"count": 1,
 		"components": {
-			"minecraft:custom_model_data": 2015109,
+			"minecraft:item_model": "iyc:iron_lantern",
 			"minecraft:item_name": "{'text': 'Iron Lantern', 'italic': false, 'color': 'white'}",
 			"minecraft:lore": [
 				"{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"

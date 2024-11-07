@@ -1,8 +1,6 @@
 {
 	"type": "minecraft:smelting",
-	"ingredient": {
-		"item": "minecraft:furnace"
-	},
+	"ingredient": "minecraft:furnace",
 	"result": {
 		"id": "minecraft:command_block",
 		"count": 1,
@@ -23,7 +21,7 @@
 					"obsidian_ingot": true
 				}
 			},
-			"minecraft:custom_model_data": 2015052,
+			"minecraft:item_model": "iyc:obsidian_ingot",
 			"minecraft:item_name": "{'text': 'Obsidian Ingot', 'italic': false, 'color': 'white'}",
 			"minecraft:lore": [
 				"{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"

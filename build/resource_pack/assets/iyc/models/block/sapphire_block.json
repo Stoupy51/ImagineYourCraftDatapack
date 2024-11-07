@@ -1,7 +1,0 @@
-{
-	"parent": "block/cube_all",
-	"textures": {
-		"all": "iyc:block/sapphire_block"
-	}
-}
-

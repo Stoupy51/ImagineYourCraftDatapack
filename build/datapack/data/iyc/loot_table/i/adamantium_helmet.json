@@ -19,12 +19,16 @@
 									"show_in_tooltip": false
 								},
 								"minecraft:max_damage": 375,
+								"minecraft:equippable": {
+									"slot": "head",
+									"model": "iyc:adamantium"
+								},
 								"minecraft:attribute_modifiers": [
-									{"type": "generic.armor","amount": 3.2,"operation": "add_value","slot": "head","id": "iyc:generic.armor.head"},
-									{"type": "generic.armor_toughness","amount": 3,"operation": "add_value","slot": "head","id": "iyc:generic.armor_toughness.head"},
-									{"type": "generic.knockback_resistance","amount": 0.1,"operation": "add_value","slot": "head","id": "iyc:generic.knockback_resistance.head"}
+									{"type": "armor","amount": 3.2,"operation": "add_value","slot": "head","id": "iyc:armor.head"},
+									{"type": "armor_toughness","amount": 3,"operation": "add_value","slot": "head","id": "iyc:armor_toughness.head"},
+									{"type": "knockback_resistance","amount": 0.1,"operation": "add_value","slot": "head","id": "iyc:knockback_resistance.head"}
 								],
-								"minecraft:custom_model_data": 2015004,
+								"minecraft:item_model": "iyc:adamantium_helmet",
 								"minecraft:item_name": "{'text': 'Adamantium Helmet', 'italic': false, 'color': 'white'}",
 								"minecraft:lore": [
 									"{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"

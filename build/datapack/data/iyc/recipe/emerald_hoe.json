@@ -7,12 +7,8 @@
 		" S"
 	],
 	"key": {
-		"X": {
-			"item": "minecraft:emerald"
-		},
-		"S": {
-			"item": "minecraft:stick"
-		}
+		"X": "minecraft:emerald",
+		"S": "minecraft:stick"
 	},
 	"result": {
 		"id": "minecraft:diamond_hoe",
@@ -30,28 +26,28 @@
 			"minecraft:max_damage": 736,
 			"minecraft:attribute_modifiers": [
 				{
-					"type": "generic.attack_damage",
+					"type": "attack_damage",
 					"amount": 1,
 					"operation": "add_value",
 					"slot": "mainhand",
-					"id": "iyc:generic.attack_damage.mainhand"
+					"id": "iyc:attack_damage.mainhand"
 				},
 				{
-					"type": "generic.attack_speed",
+					"type": "attack_speed",
 					"amount": 0,
 					"operation": "add_value",
 					"slot": "mainhand",
-					"id": "iyc:generic.attack_speed.mainhand"
+					"id": "iyc:attack_speed.mainhand"
 				},
 				{
-					"type": "generic.luck",
+					"type": "luck",
 					"amount": 0.25,
 					"operation": "add_value",
 					"slot": "mainhand",
-					"id": "iyc:generic.luck.mainhand"
+					"id": "iyc:luck.mainhand"
 				}
 			],
-			"minecraft:custom_model_data": 2015070,
+			"minecraft:item_model": "iyc:emerald_hoe",
 			"minecraft:item_name": "{'text': 'Emerald Hoe', 'italic': false, 'color': 'white'}",
 			"minecraft:lore": [
 				"{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"

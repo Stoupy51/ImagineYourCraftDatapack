@@ -2,39 +2,21 @@
 	"type": "minecraft:crafting_shapeless",
 	"category": "misc",
 	"ingredients": [
-		{
-			"item": "minecraft:glass"
-		},
-		{
-			"item": "minecraft:glass"
-		},
-		{
-			"item": "minecraft:glass"
-		},
-		{
-			"item": "minecraft:glass"
-		},
-		{
-			"item": "minecraft:glass"
-		},
-		{
-			"item": "minecraft:glass"
-		},
-		{
-			"item": "minecraft:glass"
-		},
-		{
-			"item": "minecraft:glass"
-		},
-		{
-			"item": "minecraft:glass"
-		}
+		"minecraft:glass",
+		"minecraft:glass",
+		"minecraft:glass",
+		"minecraft:glass",
+		"minecraft:glass",
+		"minecraft:glass",
+		"minecraft:glass",
+		"minecraft:glass",
+		"minecraft:glass"
 	],
 	"result": {
 		"id": "minecraft:furnace",
 		"count": 4,
 		"components": {
-			"minecraft:custom_model_data": 2015098,
+			"minecraft:item_model": "iyc:clear_glass",
 			"minecraft:item_name": "{'text': 'Clear Glass', 'italic': false, 'color': 'white'}",
 			"minecraft:lore": [
 				"{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"

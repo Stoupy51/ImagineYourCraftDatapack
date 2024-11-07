@@ -3,39 +3,21 @@
 	"category": "misc",
 	"group": "obsidian",
 	"ingredients": [
-		{
-			"item": "minecraft:obsidian"
-		},
-		{
-			"item": "minecraft:obsidian"
-		},
-		{
-			"item": "minecraft:obsidian"
-		},
-		{
-			"item": "minecraft:obsidian"
-		},
-		{
-			"item": "minecraft:obsidian"
-		},
-		{
-			"item": "minecraft:obsidian"
-		},
-		{
-			"item": "minecraft:obsidian"
-		},
-		{
-			"item": "minecraft:obsidian"
-		},
-		{
-			"item": "minecraft:obsidian"
-		}
+		"minecraft:obsidian",
+		"minecraft:obsidian",
+		"minecraft:obsidian",
+		"minecraft:obsidian",
+		"minecraft:obsidian",
+		"minecraft:obsidian",
+		"minecraft:obsidian",
+		"minecraft:obsidian",
+		"minecraft:obsidian"
 	],
 	"result": {
 		"id": "minecraft:furnace",
 		"count": 1,
 		"components": {
-			"minecraft:custom_model_data": 2015091,
+			"minecraft:item_model": "iyc:massive_obsidian_block",
 			"minecraft:item_name": "{'text': 'Massive Obsidian Block', 'italic': false, 'color': 'white'}",
 			"minecraft:lore": [
 				"{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"

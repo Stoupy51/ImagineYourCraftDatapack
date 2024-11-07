@@ -11,24 +11,24 @@ advancement revoke @s only iyc:unlock_recipes
 # minecraft:emerald
 scoreboard players set #success iyc.data 0
 execute store success score #success iyc.data if items entity @s container.* minecraft:emerald
-execute if score #success iyc.data matches 1 run recipe give @s iyc:emerald_shovel
-execute if score #success iyc.data matches 1 run recipe give @s iyc:emerald_pickaxe
-execute if score #success iyc.data matches 1 run recipe give @s iyc:emerald_sword
-execute if score #success iyc.data matches 1 run recipe give @s iyc:emerald_leggings
+execute if score #success iyc.data matches 1 run recipe give @s iyc:emerald_axe
+execute if score #success iyc.data matches 1 run recipe give @s iyc:emerald_boots
 execute if score #success iyc.data matches 1 run recipe give @s iyc:emerald_chestplate
 execute if score #success iyc.data matches 1 run recipe give @s iyc:emerald_helmet
-execute if score #success iyc.data matches 1 run recipe give @s iyc:emerald_boots
-execute if score #success iyc.data matches 1 run recipe give @s iyc:emerald_axe
 execute if score #success iyc.data matches 1 run recipe give @s iyc:emerald_hoe
+execute if score #success iyc.data matches 1 run recipe give @s iyc:emerald_leggings
+execute if score #success iyc.data matches 1 run recipe give @s iyc:emerald_pickaxe
+execute if score #success iyc.data matches 1 run recipe give @s iyc:emerald_shovel
+execute if score #success iyc.data matches 1 run recipe give @s iyc:emerald_sword
 
 # minecraft:stick
 scoreboard players set #success iyc.data 0
 execute store success score #success iyc.data if items entity @s container.* minecraft:stick
-execute if score #success iyc.data matches 1 run recipe give @s iyc:emerald_shovel
-execute if score #success iyc.data matches 1 run recipe give @s iyc:emerald_pickaxe
-execute if score #success iyc.data matches 1 run recipe give @s iyc:emerald_sword
 execute if score #success iyc.data matches 1 run recipe give @s iyc:emerald_axe
 execute if score #success iyc.data matches 1 run recipe give @s iyc:emerald_hoe
+execute if score #success iyc.data matches 1 run recipe give @s iyc:emerald_pickaxe
+execute if score #success iyc.data matches 1 run recipe give @s iyc:emerald_shovel
+execute if score #success iyc.data matches 1 run recipe give @s iyc:emerald_sword
 
 # minecraft:stone
 scoreboard players set #success iyc.data 0
@@ -44,9 +44,9 @@ execute if score #success iyc.data matches 1 run recipe give @s iyc:massive_obsi
 scoreboard players set #success iyc.data 0
 execute store success score #success iyc.data if items entity @s container.* minecraft:iron_ingot
 execute if score #success iyc.data matches 1 run recipe give @s iyc:bolt
+execute if score #success iyc.data matches 1 run recipe give @s iyc:helice_hat
 execute if score #success iyc.data matches 1 run recipe give @s iyc:iron_furnace
 execute if score #success iyc.data matches 1 run recipe give @s iyc:iron_ladder
-execute if score #success iyc.data matches 1 run recipe give @s iyc:helice_hat
 
 # minecraft:furnace
 scoreboard players set #success iyc.data 0
@@ -61,11 +61,11 @@ execute if score #success iyc.data matches 1 run recipe give @s iyc:blue_block_c
 # minecraft:glass
 scoreboard players set #success iyc.data 0
 execute store success score #success iyc.data if items entity @s container.* minecraft:glass
+execute if score #success iyc.data matches 1 run recipe give @s iyc:beer_mug
+execute if score #success iyc.data matches 1 run recipe give @s iyc:beer_mug_2
 execute if score #success iyc.data matches 1 run recipe give @s iyc:blue_block_ctf
 execute if score #success iyc.data matches 1 run recipe give @s iyc:clear_glass
 execute if score #success iyc.data matches 1 run recipe give @s iyc:empty_glass
-execute if score #success iyc.data matches 1 run recipe give @s iyc:beer_mug_2
-execute if score #success iyc.data matches 1 run recipe give @s iyc:beer_mug
 execute if score #success iyc.data matches 1 run recipe give @s iyc:glass_pot
 
 # minecraft:arrow
@@ -81,11 +81,11 @@ execute if score #success iyc.data matches 1 run recipe give @s iyc:helice_hat
 # minecraft:glowstone
 scoreboard players set #success iyc.data 0
 execute store success score #success iyc.data if items entity @s container.* minecraft:glowstone
-execute if score #success iyc.data matches 1 run recipe give @s iyc:oak_wood_lantern
-execute if score #success iyc.data matches 1 run recipe give @s iyc:spruce_wood_lantern
-execute if score #success iyc.data matches 1 run recipe give @s iyc:jungle_wood_lantern
 execute if score #success iyc.data matches 1 run recipe give @s iyc:birch_wood_lantern
 execute if score #success iyc.data matches 1 run recipe give @s iyc:iron_lantern
+execute if score #success iyc.data matches 1 run recipe give @s iyc:jungle_wood_lantern
+execute if score #success iyc.data matches 1 run recipe give @s iyc:oak_wood_lantern
+execute if score #success iyc.data matches 1 run recipe give @s iyc:spruce_wood_lantern
 
 # minecraft:birch_wood
 scoreboard players set #success iyc.data 0

@@ -7,18 +7,14 @@
 		"XXX"
 	],
 	"key": {
-		"X": {
-			"item": "minecraft:blue_wool"
-		},
-		"G": {
-			"item": "minecraft:glass"
-		}
+		"X": "minecraft:blue_wool",
+		"G": "minecraft:glass"
 	},
 	"result": {
 		"id": "minecraft:furnace",
 		"count": 8,
 		"components": {
-			"minecraft:custom_model_data": 2015096,
+			"minecraft:item_model": "iyc:blue_block_ctf",
 			"minecraft:item_name": "{'text': 'Blue Block Ctf', 'italic': false, 'color': 'white'}",
 			"minecraft:lore": [
 				"{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"

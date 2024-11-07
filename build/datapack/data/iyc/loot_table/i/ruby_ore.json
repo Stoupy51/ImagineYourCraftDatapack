@@ -14,7 +14,7 @@
 									"smithed": {"dict": {"block": {"ruby": true},"ore": {"ruby": true}},"ignore": {"functionality": true,"crafting": true}},
 									"iyc": {"ruby_ore": true}
 								},
-								"minecraft:custom_model_data": 2015027,
+								"minecraft:item_model": "iyc:ruby_ore",
 								"minecraft:item_name": "{'text': 'Ruby Ore', 'italic': false, 'color': 'white'}",
 								"minecraft:lore": [
 									"{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"

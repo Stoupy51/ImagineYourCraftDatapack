@@ -7,15 +7,13 @@
 		"X X"
 	],
 	"key": {
-		"X": {
-			"item": "minecraft:iron_ingot"
-		}
+		"X": "minecraft:iron_ingot"
 	},
 	"result": {
 		"id": "minecraft:item_frame",
 		"count": 4,
 		"components": {
-			"minecraft:custom_model_data": 2015103,
+			"minecraft:item_model": "iyc:iron_ladder",
 			"minecraft:item_name": "{'text': 'Iron Ladder', 'italic': false, 'color': 'white'}",
 			"minecraft:lore": [
 				"{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"

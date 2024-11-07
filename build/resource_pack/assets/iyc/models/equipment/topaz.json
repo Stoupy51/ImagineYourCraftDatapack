@@ -1,0 +1,7 @@
+{
+	"layers": {
+		"humanoid": [{"texture": "iyc:topaz_layer_1"}],
+		"humanoid_leggings": [{"texture": "iyc:topaz_layer_2"}]
+	}
+}
+

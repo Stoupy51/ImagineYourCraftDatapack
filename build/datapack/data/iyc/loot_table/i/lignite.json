@@ -14,7 +14,7 @@
 									"smithed": {"dict": {"lignite": {"lignite": true}},"ignore": {"functionality": true,"crafting": true}},
 									"iyc": {"lignite": true}
 								},
-								"minecraft:custom_model_data": 2015086,
+								"minecraft:item_model": "iyc:lignite",
 								"minecraft:item_name": "{'text': 'Lignite', 'italic': false, 'color': 'white'}",
 								"minecraft:lore": [
 									"{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"

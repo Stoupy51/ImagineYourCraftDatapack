@@ -3,18 +3,14 @@
 	"category": "blocks",
 	"group": "wood_lantern",
 	"ingredients": [
-		{
-			"item": "minecraft:glowstone"
-		},
-		{
-			"item": "minecraft:birch_wood"
-		}
+		"minecraft:glowstone",
+		"minecraft:birch_wood"
 	],
 	"result": {
 		"id": "minecraft:furnace",
 		"count": 1,
 		"components": {
-			"minecraft:custom_model_data": 2015105,
+			"minecraft:item_model": "iyc:birch_wood_lantern",
 			"minecraft:item_name": "{'text': 'Birch Wood Lantern', 'italic': false, 'color': 'white'}",
 			"minecraft:lore": [
 				"{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"

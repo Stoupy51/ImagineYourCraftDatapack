@@ -10,7 +10,7 @@
 						{
 							"function": "minecraft:set_components",
 							"components": {
-								"minecraft:custom_model_data": 2015105,
+								"minecraft:item_model": "iyc:birch_wood_lantern",
 								"minecraft:item_name": "{'text': 'Birch Wood Lantern', 'italic': false, 'color': 'white'}",
 								"minecraft:lore": [
 									"{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"

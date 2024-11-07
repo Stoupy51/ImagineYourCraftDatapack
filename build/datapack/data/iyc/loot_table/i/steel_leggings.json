@@ -19,10 +19,14 @@
 									"show_in_tooltip": false
 								},
 								"minecraft:max_damage": 399,
+								"minecraft:equippable": {
+									"slot": "legs",
+									"model": "iyc:steel"
+								},
 								"minecraft:attribute_modifiers": [
-									{"type": "generic.armor","amount": 5,"operation": "add_value","slot": "legs","id": "iyc:generic.armor.legs"}
+									{"type": "armor","amount": 5,"operation": "add_value","slot": "legs","id": "iyc:armor.legs"}
 								],
-								"minecraft:custom_model_data": 2015077,
+								"minecraft:item_model": "iyc:steel_leggings",
 								"minecraft:item_name": "{'text': 'Steel Leggings', 'italic': false, 'color': 'white'}",
 								"minecraft:lore": [
 									"{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"

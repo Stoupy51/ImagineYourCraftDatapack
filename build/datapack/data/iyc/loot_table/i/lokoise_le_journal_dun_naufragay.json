@@ -21,7 +21,7 @@
 								},
 								"minecraft:max_stack_size": 1,
 								"minecraft:rarity": "rare",
-								"minecraft:custom_model_data": 2015167,
+								"minecraft:item_model": "iyc:lokoise_le_journal_dun_naufragay",
 								"minecraft:lore": [
 									"{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"
 								]

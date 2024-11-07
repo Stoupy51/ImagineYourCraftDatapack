@@ -19,11 +19,15 @@
 									"show_in_tooltip": false
 								},
 								"minecraft:max_damage": 1319,
+								"minecraft:equippable": {
+									"slot": "chest",
+									"model": "iyc:obsidian"
+								},
 								"minecraft:attribute_modifiers": [
-									{"type": "generic.armor","amount": 8,"operation": "add_value","slot": "chest","id": "iyc:generic.armor.chest"},
-									{"type": "generic.armor_toughness","amount": 2,"operation": "add_value","slot": "chest","id": "iyc:generic.armor_toughness.chest"}
+									{"type": "armor","amount": 8,"operation": "add_value","slot": "chest","id": "iyc:armor.chest"},
+									{"type": "armor_toughness","amount": 2,"operation": "add_value","slot": "chest","id": "iyc:armor_toughness.chest"}
 								],
-								"minecraft:custom_model_data": 2015054,
+								"minecraft:item_model": "iyc:obsidian_chestplate",
 								"minecraft:item_name": "{'text': 'Obsidian Chestplate', 'italic': false, 'color': 'white'}",
 								"minecraft:lore": [
 									"{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"

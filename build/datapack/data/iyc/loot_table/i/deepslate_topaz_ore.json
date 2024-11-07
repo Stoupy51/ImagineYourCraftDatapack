@@ -14,7 +14,7 @@
 									"smithed": {"dict": {"block": {"topaz": true},"ore": {"topaz": true}},"ignore": {"functionality": true,"crafting": true}},
 									"iyc": {"deepslate_topaz_ore": true}
 								},
-								"minecraft:custom_model_data": 2015041,
+								"minecraft:item_model": "iyc:deepslate_topaz_ore",
 								"minecraft:item_name": "{'text': 'Deepslate Topaz Ore', 'italic': false, 'color': 'white'}",
 								"minecraft:lore": [
 									"{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"

@@ -6,9 +6,7 @@
 		"X"
 	],
 	"key": {
-		"X": {
-			"item": "minecraft:stone"
-		}
+		"X": "minecraft:stone"
 	},
 	"result": {
 		"id": "minecraft:command_block",
@@ -23,7 +21,7 @@
 					"stone_stick": true
 				}
 			},
-			"minecraft:custom_model_data": 2015090,
+			"minecraft:item_model": "iyc:stone_stick",
 			"minecraft:item_name": "{'text': 'Stone Stick', 'italic': false, 'color': 'white'}",
 			"minecraft:lore": [
 				"{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"

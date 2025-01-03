@@ -14,14 +14,10 @@
 									"smithed": {"dict": {"armor": {"adamantium": true,"boots": true}},"ignore": {"functionality": true,"crafting": true}},
 									"iyc": {"adamantium_boots": true}
 								},
-								"minecraft:dyed_color": {
-									"rgb": 2511745,
-									"show_in_tooltip": false
-								},
 								"minecraft:max_damage": 443,
 								"minecraft:equippable": {
 									"slot": "feet",
-									"model": "iyc:adamantium"
+									"asset_id": "iyc:adamantium"
 								},
 								"minecraft:attribute_modifiers": [
 									{"type": "armor","amount": 3.2,"operation": "add_value","slot": "feet","id": "iyc:armor.feet"},
@@ -29,9 +25,9 @@
 									{"type": "knockback_resistance","amount": 0.1,"operation": "add_value","slot": "feet","id": "iyc:knockback_resistance.feet"}
 								],
 								"minecraft:item_model": "iyc:adamantium_boots",
-								"minecraft:item_name": "{'text': 'Adamantium Boots', 'italic': false, 'color': 'white'}",
+								"minecraft:item_name": "{\"text\": \"Adamantium Boots\", \"italic\": false, \"color\": \"white\"}",
 								"minecraft:lore": [
-									"{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"
+									"[\"\", {\"text\": \"I\", \"color\": \"white\", \"italic\": false, \"font\": \"iyc:icons\"}, {\"text\": \" ImagineYourCraft\", \"italic\": true, \"color\": \"blue\"}]"
 								]
 							}
 						}

@@ -22,9 +22,9 @@
 				}
 			},
 			"minecraft:item_model": "iyc:ruby",
-			"minecraft:item_name": "{'text': 'Ruby', 'italic': false, 'color': 'white'}",
+			"minecraft:item_name": "{\"text\": \"Ruby\", \"italic\": false, \"color\": \"white\"}",
 			"minecraft:lore": [
-				"{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"
+				"[\"\", {\"text\": \"I\", \"color\": \"white\", \"italic\": false, \"font\": \"iyc:icons\"}, {\"text\": \" ImagineYourCraft\", \"italic\": true, \"color\": \"blue\"}]"
 			]
 		}
 	},

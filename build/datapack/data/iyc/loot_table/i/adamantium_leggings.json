@@ -14,14 +14,10 @@
 									"smithed": {"dict": {"armor": {"adamantium": true,"leggings": true}},"ignore": {"functionality": true,"crafting": true}},
 									"iyc": {"adamantium_leggings": true}
 								},
-								"minecraft:dyed_color": {
-									"rgb": 2511745,
-									"show_in_tooltip": false
-								},
 								"minecraft:max_damage": 511,
 								"minecraft:equippable": {
 									"slot": "legs",
-									"model": "iyc:adamantium"
+									"asset_id": "iyc:adamantium"
 								},
 								"minecraft:attribute_modifiers": [
 									{"type": "armor","amount": 6.2,"operation": "add_value","slot": "legs","id": "iyc:armor.legs"},
@@ -29,9 +25,9 @@
 									{"type": "knockback_resistance","amount": 0.1,"operation": "add_value","slot": "legs","id": "iyc:knockback_resistance.legs"}
 								],
 								"minecraft:item_model": "iyc:adamantium_leggings",
-								"minecraft:item_name": "{'text': 'Adamantium Leggings', 'italic': false, 'color': 'white'}",
+								"minecraft:item_name": "{\"text\": \"Adamantium Leggings\", \"italic\": false, \"color\": \"white\"}",
 								"minecraft:lore": [
-									"{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"
+									"[\"\", {\"text\": \"I\", \"color\": \"white\", \"italic\": false, \"font\": \"iyc:icons\"}, {\"text\": \" ImagineYourCraft\", \"italic\": true, \"color\": \"blue\"}]"
 								]
 							}
 						}

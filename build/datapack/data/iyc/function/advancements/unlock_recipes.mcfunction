@@ -152,3 +152,36 @@ scoreboard players set #success iyc.data 0
 execute store success score #success iyc.data if items entity @s container.* minecraft:chain
 execute if score #success iyc.data matches 1 run recipe give @s iyc:chainmail
 
+## Add result items
+execute if items entity @s container.* *[custom_data~{"iyc": {"emerald_helmet":true} }] run recipe give @s iyc:emerald_helmet
+execute if items entity @s container.* *[custom_data~{"iyc": {"emerald_chestplate":true} }] run recipe give @s iyc:emerald_chestplate
+execute if items entity @s container.* *[custom_data~{"iyc": {"emerald_leggings":true} }] run recipe give @s iyc:emerald_leggings
+execute if items entity @s container.* *[custom_data~{"iyc": {"emerald_boots":true} }] run recipe give @s iyc:emerald_boots
+execute if items entity @s container.* *[custom_data~{"iyc": {"emerald_sword":true} }] run recipe give @s iyc:emerald_sword
+execute if items entity @s container.* *[custom_data~{"iyc": {"emerald_pickaxe":true} }] run recipe give @s iyc:emerald_pickaxe
+execute if items entity @s container.* *[custom_data~{"iyc": {"emerald_axe":true} }] run recipe give @s iyc:emerald_axe
+execute if items entity @s container.* *[custom_data~{"iyc": {"emerald_shovel":true} }] run recipe give @s iyc:emerald_shovel
+execute if items entity @s container.* *[custom_data~{"iyc": {"emerald_hoe":true} }] run recipe give @s iyc:emerald_hoe
+execute if items entity @s container.* *[custom_data~{"iyc": {"stone_stick":true} }] run recipe give @s iyc:stone_stick
+execute if items entity @s container.* *[custom_data~{"iyc": {"massive_obsidian_block":true} }] run recipe give @s iyc:massive_obsidian_block
+execute if items entity @s container.* *[custom_data~{"iyc": {"iron_furnace":true} }] run recipe give @s iyc:iron_furnace
+execute if items entity @s container.* *[custom_data~{"iyc": {"blue_block_ctf":true} }] run recipe give @s iyc:blue_block_ctf
+execute if items entity @s container.* *[custom_data~{"iyc": {"bolt":true} }] run recipe give @s iyc:bolt
+execute if items entity @s container.* *[custom_data~{"iyc": {"clear_glass":true} }] run recipe give @s iyc:clear_glass
+execute if items entity @s container.* *[custom_data~{"iyc": {"helice_hat":true} }] run recipe give @s iyc:helice_hat
+execute if items entity @s container.* *[custom_data~{"iyc": {"iron_ladder":true} }] run recipe give @s iyc:iron_ladder
+execute if items entity @s container.* *[custom_data~{"iyc": {"birch_wood_lantern":true} }] run recipe give @s iyc:birch_wood_lantern
+execute if items entity @s container.* *[custom_data~{"iyc": {"jungle_wood_lantern":true} }] run recipe give @s iyc:jungle_wood_lantern
+execute if items entity @s container.* *[custom_data~{"iyc": {"oak_wood_lantern":true} }] run recipe give @s iyc:oak_wood_lantern
+execute if items entity @s container.* *[custom_data~{"iyc": {"spruce_wood_lantern":true} }] run recipe give @s iyc:spruce_wood_lantern
+execute if items entity @s container.* *[custom_data~{"iyc": {"iron_lantern":true} }] run recipe give @s iyc:iron_lantern
+execute if items entity @s container.* *[custom_data~{"iyc": {"red_light":true} }] run recipe give @s iyc:red_light
+execute if items entity @s container.* *[custom_data~{"iyc": {"reversed_oak_planks":true} }] run recipe give @s iyc:reversed_oak_planks
+execute if items entity @s container.* *[custom_data~{"iyc": {"beer_mug":true} }] run recipe give @s iyc:beer_mug
+execute if items entity @s container.* *[custom_data~{"iyc": {"beer_mug":true} }] run recipe give @s iyc:beer_mug_2
+execute if items entity @s container.* *[custom_data~{"iyc": {"empty_glass":true} }] run recipe give @s iyc:empty_glass
+execute if items entity @s container.* *[custom_data~{"iyc": {"toast":true} }] run recipe give @s iyc:toast
+execute if items entity @s container.* *[custom_data~{"iyc": {"glass_pot":true} }] run recipe give @s iyc:glass_pot
+execute if items entity @s container.* *[custom_data~{"iyc": {"hot_chocolate":true} }] run recipe give @s iyc:hot_chocolate
+execute if items entity @s container.* *[custom_data~{"iyc": {"chainmail":true} }] run recipe give @s iyc:chainmail
+

@@ -23,7 +23,7 @@
 								"minecraft:rarity": "rare",
 								"minecraft:item_model": "iyc:captainsparklez_minecraft_style",
 								"minecraft:lore": [
-									"{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"
+									"[\"\", {\"text\": \"I\", \"color\": \"white\", \"italic\": false, \"font\": \"iyc:icons\"}, {\"text\": \" ImagineYourCraft\", \"italic\": true, \"color\": \"blue\"}]"
 								]
 							}
 						}

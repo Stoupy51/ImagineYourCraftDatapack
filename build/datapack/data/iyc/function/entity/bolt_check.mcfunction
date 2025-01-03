@@ -1,7 +1,7 @@
 
 #> iyc:entity/bolt_check
 #
-# @within	iyc:tick
+# @within	iyc:v0.0.1/tick
 #
 
 # Add tag to prevent function from running again

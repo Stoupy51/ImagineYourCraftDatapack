@@ -18,6 +18,7 @@ def main(database: dict[str, dict]):
 		"topaz_ore": {VANILLA_BLOCK: VANILLA_BLOCK_FOR_ORES, NO_SILK_TOUCH_DROP: "topaz"},
 		"deepslate_topaz_ore": {VANILLA_BLOCK: VANILLA_BLOCK_FOR_ORES, NO_SILK_TOUCH_DROP: "topaz"},
 		"massive_obsidian_block": {VANILLA_BLOCK: {"id":"minecraft:netherite_block", "apply_facing": False}},
+		"raw_steel_block": {VANILLA_BLOCK: {"id":"minecraft:raw_iron_block", "apply_facing": False}},
 		"steel_block": {VANILLA_BLOCK: {"id":"minecraft:iron_block", "apply_facing": False}},
 		"steel_ore": {VANILLA_BLOCK: VANILLA_BLOCK_FOR_ORES, NO_SILK_TOUCH_DROP: "raw_steel"},
 		"lignite_block": {VANILLA_BLOCK: {"id":"minecraft:coal_block", "apply_facing": False}},

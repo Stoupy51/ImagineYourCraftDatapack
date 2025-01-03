@@ -13,13 +13,15 @@
 								"minecraft:food": {
 									"can_always_eat": true,
 									"nutrition": 2,
-									"saturation": 0.6,
-									"effects": [{"effect": {"id": "minecraft:regeneration","duration": 600,"amplifier": 0},"probability": 1.0}]
+									"saturation": 0.6
+								},
+								"minecraft:consumable": {
+									"on_consume_effects": [{"type": "minecraft:apply_effects","effects": [{"id": "minecraft:regeneration","duration": 600,"amplifier": 0}]}]
 								},
 								"minecraft:item_model": "iyc:red_bull",
-								"minecraft:item_name": "{'text': 'Red Bull', 'italic': false, 'color': 'white'}",
+								"minecraft:item_name": "{\"text\": \"Red Bull\", \"italic\": false, \"color\": \"white\"}",
 								"minecraft:lore": [
-									"{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"
+									"[\"\", {\"text\": \"I\", \"color\": \"white\", \"italic\": false, \"font\": \"iyc:icons\"}, {\"text\": \" ImagineYourCraft\", \"italic\": true, \"color\": \"blue\"}]"
 								],
 								"minecraft:custom_data": {
 									"iyc": {"red_bull": true},

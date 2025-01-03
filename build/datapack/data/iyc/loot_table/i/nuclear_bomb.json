@@ -12,10 +12,10 @@
 							"components": {
 								"minecraft:lore": [
 									"{'text':'Power of 5 TNTs','color':'gray','italic':false}",
-									"{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"
+									"[\"\", {\"text\": \"I\", \"color\": \"white\", \"italic\": false, \"font\": \"iyc:icons\"}, {\"text\": \" ImagineYourCraft\", \"italic\": true, \"color\": \"blue\"}]"
 								],
 								"minecraft:item_model": "iyc:nuclear_bomb",
-								"minecraft:item_name": "{'text': 'Nuclear Bomb', 'italic': false, 'color': 'white'}",
+								"minecraft:item_name": "{\"text\": \"Nuclear Bomb\", \"italic\": false, \"color\": \"white\"}",
 								"minecraft:custom_data": {
 									"iyc": {"nuclear_bomb": true},
 									"smithed": {"ignore": {"functionality": true,"crafting": true}}

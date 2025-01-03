@@ -23,7 +23,7 @@
 								"minecraft:rarity": "rare",
 								"minecraft:item_model": "iyc:lokoise_acta",
 								"minecraft:lore": [
-									"{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"
+									"[\"\", {\"text\": \"I\", \"color\": \"white\", \"italic\": false, \"font\": \"iyc:icons\"}, {\"text\": \" ImagineYourCraft\", \"italic\": true, \"color\": \"blue\"}]"
 								]
 							}
 						}

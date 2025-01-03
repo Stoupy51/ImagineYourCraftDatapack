@@ -2,6 +2,7 @@
 #> iyc:custom_blocks/sapphire_ore/place_main
 #
 # @within	iyc:custom_blocks/place
+#			iyc:calls/smart_ore_generation/veins/sapphire_ore
 #
 
 tag @s add iyc.placer

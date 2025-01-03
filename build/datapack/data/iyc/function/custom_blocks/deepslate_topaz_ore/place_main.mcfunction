@@ -2,6 +2,7 @@
 #> iyc:custom_blocks/deepslate_topaz_ore/place_main
 #
 # @within	iyc:custom_blocks/place
+#			iyc:calls/smart_ore_generation/veins/deepslate_topaz_ore
 #
 
 tag @s add iyc.placer

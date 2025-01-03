@@ -12,6 +12,7 @@
 		{"condition": "minecraft:entity_properties","entity": "this","predicate": {"nbt": "{Tags:[\"iyc.vanilla.minecraft_oak_planks\"]}","location": {"block": {"blocks": "minecraft:oak_planks"}}}},
 		{"condition": "minecraft:entity_properties","entity": "this","predicate": {"nbt": "{Tags:[\"iyc.vanilla.minecraft_ochre_froglight\"]}","location": {"block": {"blocks": "minecraft:ochre_froglight"}}}},
 		{"condition": "minecraft:entity_properties","entity": "this","predicate": {"nbt": "{Tags:[\"iyc.vanilla.minecraft_polished_deepslate\"]}","location": {"block": {"blocks": "minecraft:polished_deepslate"}}}},
+		{"condition": "minecraft:entity_properties","entity": "this","predicate": {"nbt": "{Tags:[\"iyc.vanilla.minecraft_raw_iron_block\"]}","location": {"block": {"blocks": "minecraft:raw_iron_block"}}}},
 		{"condition": "minecraft:entity_properties","entity": "this","predicate": {"nbt": "{Tags:[\"iyc.vanilla.minecraft_red_concrete\"]}","location": {"block": {"blocks": "minecraft:red_concrete"}}}},
 		{"condition": "minecraft:entity_properties","entity": "this","predicate": {"nbt": "{Tags:[\"iyc.vanilla.minecraft_structure_void\"]}","location": {"block": {"blocks": "minecraft:structure_void"}}}},
 		{"condition": "minecraft:entity_properties","entity": "this","predicate": {"nbt": "{Tags:[\"iyc.vanilla.minecraft_tnt\"]}","location": {"block": {"blocks": "minecraft:tnt"}}}},

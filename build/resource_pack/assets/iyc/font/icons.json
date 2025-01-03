@@ -1,0 +1,6 @@
+{
+	"providers": [
+		{"type": "bitmap","file": "iyc:font/original_icon.png","ascent": 8,"height": 9,"chars": ["I"]}
+	]
+}
+

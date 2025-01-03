@@ -14,23 +14,19 @@
 									"smithed": {"dict": {"armor": {"ruby": true,"boots": true}},"ignore": {"functionality": true,"crafting": true}},
 									"iyc": {"ruby_boots": true}
 								},
-								"minecraft:dyed_color": {
-									"rgb": 9571615,
-									"show_in_tooltip": false
-								},
 								"minecraft:max_damage": 452,
 								"minecraft:equippable": {
 									"slot": "feet",
-									"model": "iyc:ruby"
+									"asset_id": "iyc:ruby"
 								},
 								"minecraft:attribute_modifiers": [
 									{"type": "armor","amount": 3.5,"operation": "add_value","slot": "feet","id": "iyc:armor.feet"},
 									{"type": "armor_toughness","amount": 2,"operation": "add_value","slot": "feet","id": "iyc:armor_toughness.feet"}
 								],
 								"minecraft:item_model": "iyc:ruby_boots",
-								"minecraft:item_name": "{'text': 'Ruby Boots', 'italic': false, 'color': 'white'}",
+								"minecraft:item_name": "{\"text\": \"Ruby Boots\", \"italic\": false, \"color\": \"white\"}",
 								"minecraft:lore": [
-									"{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"
+									"[\"\", {\"text\": \"I\", \"color\": \"white\", \"italic\": false, \"font\": \"iyc:icons\"}, {\"text\": \" ImagineYourCraft\", \"italic\": true, \"color\": \"blue\"}]"
 								]
 							}
 						}

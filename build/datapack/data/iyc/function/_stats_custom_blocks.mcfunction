@@ -10,6 +10,7 @@ scoreboard players add #total_vanilla_torch iyc.data 0
 scoreboard players add #total_vanilla_tnt iyc.data 0
 scoreboard players add #total_vanilla_structure_void iyc.data 0
 scoreboard players add #total_vanilla_red_concrete iyc.data 0
+scoreboard players add #total_vanilla_raw_iron_block iyc.data 0
 scoreboard players add #total_vanilla_polished_deepslate iyc.data 0
 scoreboard players add #total_vanilla_ochre_froglight iyc.data 0
 scoreboard players add #total_vanilla_oak_planks iyc.data 0
@@ -49,6 +50,8 @@ scoreboard players add #total_slate_ore iyc.data 0
 scoreboard players add #total_slate_block iyc.data 0
 scoreboard players add #total_lignite_ore iyc.data 0
 scoreboard players add #total_lignite_block iyc.data 0
+scoreboard players add #total_raw_steel_block iyc.data 0
+scoreboard players add #total_deepslate_steel_ore iyc.data 0
 scoreboard players add #total_steel_ore iyc.data 0
 scoreboard players add #total_steel_block iyc.data 0
 scoreboard players add #total_deepslate_topaz_ore iyc.data 0
@@ -77,6 +80,8 @@ tellraw @s [{"text":"- Total 'Topaz Ore': ","color":"gold"},{"score":{"name":"#t
 tellraw @s [{"text":"- Total 'Deepslate Topaz Ore': ","color":"gold"},{"score":{"name":"#total_deepslate_topaz_ore","objective":"iyc.data"},"color":"yellow"}]
 tellraw @s [{"text":"- Total 'Steel Block': ","color":"gold"},{"score":{"name":"#total_steel_block","objective":"iyc.data"},"color":"yellow"}]
 tellraw @s [{"text":"- Total 'Steel Ore': ","color":"gold"},{"score":{"name":"#total_steel_ore","objective":"iyc.data"},"color":"yellow"}]
+tellraw @s [{"text":"- Total 'Deepslate Steel Ore': ","color":"gold"},{"score":{"name":"#total_deepslate_steel_ore","objective":"iyc.data"},"color":"yellow"}]
+tellraw @s [{"text":"- Total 'Raw Steel Block': ","color":"gold"},{"score":{"name":"#total_raw_steel_block","objective":"iyc.data"},"color":"yellow"}]
 tellraw @s [{"text":"- Total 'Lignite Block': ","color":"gold"},{"score":{"name":"#total_lignite_block","objective":"iyc.data"},"color":"yellow"}]
 tellraw @s [{"text":"- Total 'Lignite Ore': ","color":"gold"},{"score":{"name":"#total_lignite_ore","objective":"iyc.data"},"color":"yellow"}]
 tellraw @s [{"text":"- Total 'Slate Block': ","color":"gold"},{"score":{"name":"#total_slate_block","objective":"iyc.data"},"color":"yellow"}]
@@ -116,6 +121,7 @@ tellraw @s [{"text":"- Vanilla 'minecraft:netherite_block': ","color":"gray"},{"
 tellraw @s [{"text":"- Vanilla 'minecraft:oak_planks': ","color":"gray"},{"score":{"name":"#total_vanilla_oak_planks","objective":"iyc.data"},"color":"white"}]
 tellraw @s [{"text":"- Vanilla 'minecraft:ochre_froglight': ","color":"gray"},{"score":{"name":"#total_vanilla_ochre_froglight","objective":"iyc.data"},"color":"white"}]
 tellraw @s [{"text":"- Vanilla 'minecraft:polished_deepslate': ","color":"gray"},{"score":{"name":"#total_vanilla_polished_deepslate","objective":"iyc.data"},"color":"white"}]
+tellraw @s [{"text":"- Vanilla 'minecraft:raw_iron_block': ","color":"gray"},{"score":{"name":"#total_vanilla_raw_iron_block","objective":"iyc.data"},"color":"white"}]
 tellraw @s [{"text":"- Vanilla 'minecraft:red_concrete': ","color":"gray"},{"score":{"name":"#total_vanilla_red_concrete","objective":"iyc.data"},"color":"white"}]
 tellraw @s [{"text":"- Vanilla 'minecraft:structure_void': ","color":"gray"},{"score":{"name":"#total_vanilla_structure_void","objective":"iyc.data"},"color":"white"}]
 tellraw @s [{"text":"- Vanilla 'minecraft:tnt': ","color":"gray"},{"score":{"name":"#total_vanilla_tnt","objective":"iyc.data"},"color":"white"}]

@@ -14,14 +14,10 @@
 									"smithed": {"dict": {"armor": {"emerald": true,"chestplate": true}},"ignore": {"functionality": true,"crafting": true}},
 									"iyc": {"emerald_chestplate": true}
 								},
-								"minecraft:dyed_color": {
-									"rgb": 2532680,
-									"show_in_tooltip": false
-								},
 								"minecraft:max_damage": 248,
 								"minecraft:equippable": {
 									"slot": "chest",
-									"model": "iyc:emerald"
+									"asset_id": "iyc:emerald"
 								},
 								"minecraft:attribute_modifiers": [
 									{"type": "armor","amount": 8,"operation": "add_value","slot": "chest","id": "iyc:armor.chest"},
@@ -29,9 +25,9 @@
 									{"type": "luck","amount": 0.25,"operation": "add_value","slot": "chest","id": "iyc:luck.chest"}
 								],
 								"minecraft:item_model": "iyc:emerald_chestplate",
-								"minecraft:item_name": "{'text': 'Emerald Chestplate', 'italic': false, 'color': 'white'}",
+								"minecraft:item_name": "{\"text\": \"Emerald Chestplate\", \"italic\": false, \"color\": \"white\"}",
 								"minecraft:lore": [
-									"{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"
+									"[\"\", {\"text\": \"I\", \"color\": \"white\", \"italic\": false, \"font\": \"iyc:icons\"}, {\"text\": \" ImagineYourCraft\", \"italic\": true, \"color\": \"blue\"}]"
 								]
 							}
 						}

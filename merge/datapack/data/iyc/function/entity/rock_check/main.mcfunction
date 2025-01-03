@@ -1,5 +1,5 @@
 
-# # Add tag to prevent function from running again
+# Add tag to prevent function from running again
 tag @s add iyc.rock_checked
 
 # Stop function if not rock and if no owner

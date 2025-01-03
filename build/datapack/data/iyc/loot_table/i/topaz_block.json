@@ -15,9 +15,9 @@
 									"iyc": {"topaz_block": true}
 								},
 								"minecraft:item_model": "iyc:topaz_block",
-								"minecraft:item_name": "{'text': 'Topaz Block', 'italic': false, 'color': 'white'}",
+								"minecraft:item_name": "{\"text\": \"Topaz Block\", \"italic\": false, \"color\": \"white\"}",
 								"minecraft:lore": [
-									"{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"
+									"[\"\", {\"text\": \"I\", \"color\": \"white\", \"italic\": false, \"font\": \"iyc:icons\"}, {\"text\": \" ImagineYourCraft\", \"italic\": true, \"color\": \"blue\"}]"
 								],
 								"minecraft:container": [
 									{"slot": 0,"item": {"id": "minecraft:stone","count": 1,"components": {"minecraft:custom_data": {"smithed": {"block": {"id": "iyc:topaz_block","from": "iyc"}}}}}}

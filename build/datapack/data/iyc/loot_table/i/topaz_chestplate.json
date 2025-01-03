@@ -14,23 +14,19 @@
 									"smithed": {"dict": {"armor": {"topaz": true,"chestplate": true}},"ignore": {"functionality": true,"crafting": true}},
 									"iyc": {"topaz_chestplate": true}
 								},
-								"minecraft:dyed_color": {
-									"rgb": 12153387,
-									"show_in_tooltip": false
-								},
 								"minecraft:max_damage": 433,
 								"minecraft:equippable": {
 									"slot": "chest",
-									"model": "iyc:topaz"
+									"asset_id": "iyc:topaz"
 								},
 								"minecraft:attribute_modifiers": [
 									{"type": "armor","amount": 9.0,"operation": "add_value","slot": "chest","id": "iyc:armor.chest"},
 									{"type": "armor_toughness","amount": 2,"operation": "add_value","slot": "chest","id": "iyc:armor_toughness.chest"}
 								],
 								"minecraft:item_model": "iyc:topaz_chestplate",
-								"minecraft:item_name": "{'text': 'Topaz Chestplate', 'italic': false, 'color': 'white'}",
+								"minecraft:item_name": "{\"text\": \"Topaz Chestplate\", \"italic\": false, \"color\": \"white\"}",
 								"minecraft:lore": [
-									"{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"
+									"[\"\", {\"text\": \"I\", \"color\": \"white\", \"italic\": false, \"font\": \"iyc:icons\"}, {\"text\": \" ImagineYourCraft\", \"italic\": true, \"color\": \"blue\"}]"
 								]
 							}
 						}

@@ -1,7 +1,7 @@
 
 #> iyc:entity/rock_check/marker_final
 #
-# @within	iyc:tick
+# @within	iyc:v0.0.1/tick
 #
 
 # Tag the player who throwed the rock

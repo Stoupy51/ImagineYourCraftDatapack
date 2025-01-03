@@ -21,14 +21,10 @@
 					"emerald_helmet": true
 				}
 			},
-			"minecraft:dyed_color": {
-				"rgb": 2532680,
-				"show_in_tooltip": false
-			},
 			"minecraft:max_damage": 171,
 			"minecraft:equippable": {
 				"slot": "head",
-				"model": "iyc:emerald"
+				"asset_id": "iyc:emerald"
 			},
 			"minecraft:attribute_modifiers": [
 				{
@@ -54,9 +50,9 @@
 				}
 			],
 			"minecraft:item_model": "iyc:emerald_helmet",
-			"minecraft:item_name": "{'text': 'Emerald Helmet', 'italic': false, 'color': 'white'}",
+			"minecraft:item_name": "{\"text\": \"Emerald Helmet\", \"italic\": false, \"color\": \"white\"}",
 			"minecraft:lore": [
-				"{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"
+				"[\"\", {\"text\": \"I\", \"color\": \"white\", \"italic\": false, \"font\": \"iyc:icons\"}, {\"text\": \" ImagineYourCraft\", \"italic\": true, \"color\": \"blue\"}]"
 			]
 		}
 	}

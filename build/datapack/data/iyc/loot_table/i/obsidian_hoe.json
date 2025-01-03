@@ -16,14 +16,14 @@
 								},
 								"minecraft:max_damage": 3902,
 								"minecraft:attribute_modifiers": [
-									{"type": "attack_damage","amount": 0.8,"operation": "add_value","slot": "mainhand","id": "iyc:attack_damage.mainhand"},
-									{"type": "attack_speed","amount": 0,"operation": "add_value","slot": "mainhand","id": "iyc:attack_speed.mainhand"},
+									{"type": "attack_damage","amount": -0.2,"operation": "add_value","slot": "mainhand","id": "minecraft:base_attack_damage"},
+									{"type": "attack_speed","amount": 0.0,"operation": "add_value","slot": "mainhand","id": "minecraft:base_attack_speed"},
 									{"type": "mining_efficiency","amount": -0.2,"operation": "add_value","slot": "mainhand","id": "iyc:mining_efficiency.mainhand"}
 								],
 								"minecraft:item_model": "iyc:obsidian_hoe",
-								"minecraft:item_name": "{'text': 'Obsidian Hoe', 'italic': false, 'color': 'white'}",
+								"minecraft:item_name": "{\"text\": \"Obsidian Hoe\", \"italic\": false, \"color\": \"white\"}",
 								"minecraft:lore": [
-									"{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"
+									"[\"\", {\"text\": \"I\", \"color\": \"white\", \"italic\": false, \"font\": \"iyc:icons\"}, {\"text\": \" ImagineYourCraft\", \"italic\": true, \"color\": \"blue\"}]"
 								]
 							}
 						}

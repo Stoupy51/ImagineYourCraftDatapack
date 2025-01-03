@@ -19,6 +19,8 @@ execute if data storage smithed.custom_block:main blockApi{id:"iyc:topaz_ore"} r
 execute if data storage smithed.custom_block:main blockApi{id:"iyc:deepslate_topaz_ore"} run function iyc:custom_blocks/deepslate_topaz_ore/place_main
 execute if data storage smithed.custom_block:main blockApi{id:"iyc:steel_block"} run function iyc:custom_blocks/steel_block/place_main
 execute if data storage smithed.custom_block:main blockApi{id:"iyc:steel_ore"} run function iyc:custom_blocks/steel_ore/place_main
+execute if data storage smithed.custom_block:main blockApi{id:"iyc:deepslate_steel_ore"} run function iyc:custom_blocks/deepslate_steel_ore/place_main
+execute if data storage smithed.custom_block:main blockApi{id:"iyc:raw_steel_block"} run function iyc:custom_blocks/raw_steel_block/place_main
 execute if data storage smithed.custom_block:main blockApi{id:"iyc:lignite_block"} run function iyc:custom_blocks/lignite_block/place_main
 execute if data storage smithed.custom_block:main blockApi{id:"iyc:lignite_ore"} run function iyc:custom_blocks/lignite_ore/place_main
 execute if data storage smithed.custom_block:main blockApi{id:"iyc:slate_block"} run function iyc:custom_blocks/slate_block/place_main

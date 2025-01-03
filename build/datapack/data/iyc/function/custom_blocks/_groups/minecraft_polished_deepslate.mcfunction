@@ -13,6 +13,7 @@ execute if score #total_deepslate_ruby_ore iyc.data matches 1.. if entity @s[tag
 execute if score #total_topaz_ore iyc.data matches 1.. if entity @s[tag=iyc.topaz_ore] run function iyc:custom_blocks/topaz_ore/destroy
 execute if score #total_deepslate_topaz_ore iyc.data matches 1.. if entity @s[tag=iyc.deepslate_topaz_ore] run function iyc:custom_blocks/deepslate_topaz_ore/destroy
 execute if score #total_steel_ore iyc.data matches 1.. if entity @s[tag=iyc.steel_ore] run function iyc:custom_blocks/steel_ore/destroy
+execute if score #total_deepslate_steel_ore iyc.data matches 1.. if entity @s[tag=iyc.deepslate_steel_ore] run function iyc:custom_blocks/deepslate_steel_ore/destroy
 execute if score #total_lignite_ore iyc.data matches 1.. if entity @s[tag=iyc.lignite_ore] run function iyc:custom_blocks/lignite_ore/destroy
 execute if score #total_slate_ore iyc.data matches 1.. if entity @s[tag=iyc.slate_ore] run function iyc:custom_blocks/slate_ore/destroy
 

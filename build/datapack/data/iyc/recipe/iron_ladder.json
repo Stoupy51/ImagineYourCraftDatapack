@@ -14,9 +14,9 @@
 		"count": 4,
 		"components": {
 			"minecraft:item_model": "iyc:iron_ladder",
-			"minecraft:item_name": "{'text': 'Iron Ladder', 'italic': false, 'color': 'white'}",
+			"minecraft:item_name": "{\"text\": \"Iron Ladder\", \"italic\": false, \"color\": \"white\"}",
 			"minecraft:lore": [
-				"{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"
+				"[\"\", {\"text\": \"I\", \"color\": \"white\", \"italic\": false, \"font\": \"iyc:icons\"}, {\"text\": \" ImagineYourCraft\", \"italic\": true, \"color\": \"blue\"}]"
 			],
 			"minecraft:custom_data": {
 				"iyc": {

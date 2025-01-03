@@ -14,22 +14,18 @@
 									"smithed": {"dict": {"armor": {"steel": true,"helmet": true}},"ignore": {"functionality": true,"crafting": true}},
 									"iyc": {"steel_helmet": true}
 								},
-								"minecraft:dyed_color": {
-									"rgb": 5460819,
-									"show_in_tooltip": false
-								},
 								"minecraft:max_damage": 293,
 								"minecraft:equippable": {
 									"slot": "head",
-									"model": "iyc:steel"
+									"asset_id": "iyc:steel"
 								},
 								"minecraft:attribute_modifiers": [
 									{"type": "armor","amount": 2,"operation": "add_value","slot": "head","id": "iyc:armor.head"}
 								],
 								"minecraft:item_model": "iyc:steel_helmet",
-								"minecraft:item_name": "{'text': 'Steel Helmet', 'italic': false, 'color': 'white'}",
+								"minecraft:item_name": "{\"text\": \"Steel Helmet\", \"italic\": false, \"color\": \"white\"}",
 								"minecraft:lore": [
-									"{'text': 'ImagineYourCraft', 'italic': true, 'color': 'blue'}"
+									"[\"\", {\"text\": \"I\", \"color\": \"white\", \"italic\": false, \"font\": \"iyc:icons\"}, {\"text\": \" ImagineYourCraft\", \"italic\": true, \"color\": \"blue\"}]"
 								]
 							}
 						}

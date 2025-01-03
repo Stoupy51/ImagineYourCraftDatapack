@@ -3,6 +3,7 @@
 #
 # @within	iyc:calls/simpledrawer/steel/block
 #			iyc:calls/simpledrawer/steel/ingot
+#			iyc:calls/simpledrawer/steel/nugget
 #
 
 # Set score of material found to 1
@@ -18,4 +19,5 @@ data modify storage simpledrawer:io material set value {material: "iyc.steel", m
 # Fill the NBT with your own items
 data modify storage simpledrawer:io material.block.item set from storage iyc:items all.steel_block
 data modify storage simpledrawer:io material.ingot.item set from storage iyc:items all.steel_ingot
+data modify storage simpledrawer:io material.nugget.item set from storage iyc:items all.steel_nugget
 

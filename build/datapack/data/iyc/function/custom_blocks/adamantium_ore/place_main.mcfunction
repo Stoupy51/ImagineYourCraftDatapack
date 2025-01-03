@@ -2,6 +2,7 @@
 #> iyc:custom_blocks/adamantium_ore/place_main
 #
 # @within	iyc:custom_blocks/place
+#			iyc:calls/smart_ore_generation/veins/adamantium_ore
 #
 
 tag @s add iyc.placer

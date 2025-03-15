@@ -15,9 +15,13 @@
 									"iyc": {"steel_stick": true}
 								},
 								"minecraft:item_model": "iyc:steel_stick",
-								"minecraft:item_name": "{\"text\": \"Steel Stick\", \"italic\": false, \"color\": \"white\"}",
+								"minecraft:item_name": {
+									"text": "Steel Stick",
+									"italic": false,
+									"color": "white"
+								},
 								"minecraft:lore": [
-									"[\"\", {\"text\": \"I\", \"color\": \"white\", \"italic\": false, \"font\": \"iyc:icons\"}, {\"text\": \" ImagineYourCraft\", \"italic\": true, \"color\": \"blue\"}]"
+									["",{"text": "I","color": "white","italic": false,"font": "iyc:icons"},{"text": " ImagineYourCraft","italic": true,"color": "blue"}]
 								]
 							}
 						}

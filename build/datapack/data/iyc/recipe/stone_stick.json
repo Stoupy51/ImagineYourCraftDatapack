@@ -22,9 +22,17 @@
 				}
 			},
 			"minecraft:item_model": "iyc:stone_stick",
-			"minecraft:item_name": "{\"text\": \"Stone Stick\", \"italic\": false, \"color\": \"white\"}",
+			"minecraft:item_name": {
+				"text": "Stone Stick",
+				"italic": false,
+				"color": "white"
+			},
 			"minecraft:lore": [
-				"[\"\", {\"text\": \"I\", \"color\": \"white\", \"italic\": false, \"font\": \"iyc:icons\"}, {\"text\": \" ImagineYourCraft\", \"italic\": true, \"color\": \"blue\"}]"
+				[
+					"",
+					{"text": "I","color": "white","italic": false,"font": "iyc:icons"},
+					{"text": " ImagineYourCraft","italic": true,"color": "blue"}
+				]
 			]
 		}
 	}

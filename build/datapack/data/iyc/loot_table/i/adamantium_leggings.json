@@ -25,9 +25,13 @@
 									{"type": "knockback_resistance","amount": 0.1,"operation": "add_value","slot": "legs","id": "iyc:knockback_resistance.legs"}
 								],
 								"minecraft:item_model": "iyc:adamantium_leggings",
-								"minecraft:item_name": "{\"text\": \"Adamantium Leggings\", \"italic\": false, \"color\": \"white\"}",
+								"minecraft:item_name": {
+									"text": "Adamantium Leggings",
+									"italic": false,
+									"color": "white"
+								},
 								"minecraft:lore": [
-									"[\"\", {\"text\": \"I\", \"color\": \"white\", \"italic\": false, \"font\": \"iyc:icons\"}, {\"text\": \" ImagineYourCraft\", \"italic\": true, \"color\": \"blue\"}]"
+									["",{"text": "I","color": "white","italic": false,"font": "iyc:icons"},{"text": " ImagineYourCraft","italic": true,"color": "blue"}]
 								]
 							}
 						}

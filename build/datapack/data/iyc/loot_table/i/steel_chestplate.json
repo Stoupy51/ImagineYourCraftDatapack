@@ -23,9 +23,13 @@
 									{"type": "armor","amount": 6,"operation": "add_value","slot": "chest","id": "iyc:armor.chest"}
 								],
 								"minecraft:item_model": "iyc:steel_chestplate",
-								"minecraft:item_name": "{\"text\": \"Steel Chestplate\", \"italic\": false, \"color\": \"white\"}",
+								"minecraft:item_name": {
+									"text": "Steel Chestplate",
+									"italic": false,
+									"color": "white"
+								},
 								"minecraft:lore": [
-									"[\"\", {\"text\": \"I\", \"color\": \"white\", \"italic\": false, \"font\": \"iyc:icons\"}, {\"text\": \" ImagineYourCraft\", \"italic\": true, \"color\": \"blue\"}]"
+									["",{"text": "I","color": "white","italic": false,"font": "iyc:icons"},{"text": " ImagineYourCraft","italic": true,"color": "blue"}]
 								]
 							}
 						}

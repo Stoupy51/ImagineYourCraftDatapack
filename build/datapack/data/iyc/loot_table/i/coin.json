@@ -11,9 +11,13 @@
 							"function": "minecraft:set_components",
 							"components": {
 								"minecraft:item_model": "iyc:coin",
-								"minecraft:item_name": "{\"text\": \"Coin\", \"italic\": false, \"color\": \"white\"}",
+								"minecraft:item_name": {
+									"text": "Coin",
+									"italic": false,
+									"color": "white"
+								},
 								"minecraft:lore": [
-									"[\"\", {\"text\": \"I\", \"color\": \"white\", \"italic\": false, \"font\": \"iyc:icons\"}, {\"text\": \" ImagineYourCraft\", \"italic\": true, \"color\": \"blue\"}]"
+									["",{"text": "I","color": "white","italic": false,"font": "iyc:icons"},{"text": " ImagineYourCraft","italic": true,"color": "blue"}]
 								],
 								"minecraft:custom_data": {
 									"iyc": {"coin": true},

@@ -10,8 +10,16 @@
 		"count": 1,
 		"components": {
 			"minecraft:lore": [
-				"{'text':'A hat that makes you fly','color':'gray','italic':false}",
-				"[\"\", {\"text\": \"I\", \"color\": \"white\", \"italic\": false, \"font\": \"iyc:icons\"}, {\"text\": \" ImagineYourCraft\", \"italic\": true, \"color\": \"blue\"}]"
+				{
+					"text": "A hat that makes you fly",
+					"color": "gray",
+					"italic": false
+				},
+				[
+					"",
+					{"text": "I","color": "white","italic": false,"font": "iyc:icons"},
+					{"text": " ImagineYourCraft","italic": true,"color": "blue"}
+				]
 			],
 			"minecraft:attribute_modifiers": [
 				{
@@ -23,7 +31,11 @@
 				}
 			],
 			"minecraft:item_model": "iyc:helice_hat",
-			"minecraft:item_name": "{\"text\": \"Helice Hat\", \"italic\": false, \"color\": \"white\"}",
+			"minecraft:item_name": {
+				"text": "Helice Hat",
+				"italic": false,
+				"color": "white"
+			},
 			"minecraft:custom_data": {
 				"iyc": {
 					"helice_hat": true

@@ -21,9 +21,13 @@
 									{"type": "mining_efficiency","amount": 0.1,"operation": "add_value","slot": "mainhand","id": "iyc:mining_efficiency.mainhand"}
 								],
 								"minecraft:item_model": "iyc:ruby_hoe",
-								"minecraft:item_name": "{\"text\": \"Ruby Hoe\", \"italic\": false, \"color\": \"white\"}",
+								"minecraft:item_name": {
+									"text": "Ruby Hoe",
+									"italic": false,
+									"color": "white"
+								},
 								"minecraft:lore": [
-									"[\"\", {\"text\": \"I\", \"color\": \"white\", \"italic\": false, \"font\": \"iyc:icons\"}, {\"text\": \" ImagineYourCraft\", \"italic\": true, \"color\": \"blue\"}]"
+									["",{"text": "I","color": "white","italic": false,"font": "iyc:icons"},{"text": " ImagineYourCraft","italic": true,"color": "blue"}]
 								]
 							}
 						}

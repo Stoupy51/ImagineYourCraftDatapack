@@ -11,9 +11,13 @@
 							"function": "minecraft:set_components",
 							"components": {
 								"minecraft:item_model": "iyc:glass_pot",
-								"minecraft:item_name": "{\"text\": \"Glass Pot\", \"italic\": false, \"color\": \"white\"}",
+								"minecraft:item_name": {
+									"text": "Glass Pot",
+									"italic": false,
+									"color": "white"
+								},
 								"minecraft:lore": [
-									"[\"\", {\"text\": \"I\", \"color\": \"white\", \"italic\": false, \"font\": \"iyc:icons\"}, {\"text\": \" ImagineYourCraft\", \"italic\": true, \"color\": \"blue\"}]"
+									["",{"text": "I","color": "white","italic": false,"font": "iyc:icons"},{"text": " ImagineYourCraft","italic": true,"color": "blue"}]
 								],
 								"minecraft:custom_data": {
 									"iyc": {"glass_pot": true},

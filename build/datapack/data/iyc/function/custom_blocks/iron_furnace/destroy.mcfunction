@@ -5,7 +5,7 @@
 #
 
 # Replace the item with the custom one
-execute as @e[type=item,nbt={Item:{id:"minecraft:furnace"}},limit=1,sort=nearest,distance=..1] run function iyc:custom_blocks/iron_furnace/replace_item
+execute as @n[type=item,nbt={Item:{id:"minecraft:furnace"}},distance=..1] run function iyc:custom_blocks/iron_furnace/replace_item
 
 # Decrease count scores
 scoreboard players remove #total_custom_blocks iyc.data 1

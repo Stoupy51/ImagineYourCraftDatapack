@@ -14,16 +14,16 @@
 									"iyc": {"lokoise_jaime_le_creep": true},
 									"smithed": {"dict": {"record": {"lokoise_jaime_le_creep": true}},"ignore": {"functionality": true,"crafting": true}}
 								},
-								"minecraft:item_name": "{'text':'Music Disc', 'italic': false}",
-								"minecraft:jukebox_playable": {
-									"song": "iyc:lokoise_jaime_le_creep",
-									"show_in_tooltip": true
+								"minecraft:item_name": {
+									"text": "Music Disc",
+									"italic": false
 								},
+								"minecraft:jukebox_playable": "iyc:lokoise_jaime_le_creep",
 								"minecraft:max_stack_size": 1,
 								"minecraft:rarity": "rare",
 								"minecraft:item_model": "iyc:lokoise_jaime_le_creep",
 								"minecraft:lore": [
-									"[\"\", {\"text\": \"I\", \"color\": \"white\", \"italic\": false, \"font\": \"iyc:icons\"}, {\"text\": \" ImagineYourCraft\", \"italic\": true, \"color\": \"blue\"}]"
+									["",{"text": "I","color": "white","italic": false,"font": "iyc:icons"},{"text": " ImagineYourCraft","italic": true,"color": "blue"}]
 								]
 							}
 						}

@@ -50,9 +50,17 @@
 				}
 			],
 			"minecraft:item_model": "iyc:emerald_boots",
-			"minecraft:item_name": "{\"text\": \"Emerald Boots\", \"italic\": false, \"color\": \"white\"}",
+			"minecraft:item_name": {
+				"text": "Emerald Boots",
+				"italic": false,
+				"color": "white"
+			},
 			"minecraft:lore": [
-				"[\"\", {\"text\": \"I\", \"color\": \"white\", \"italic\": false, \"font\": \"iyc:icons\"}, {\"text\": \" ImagineYourCraft\", \"italic\": true, \"color\": \"blue\"}]"
+				[
+					"",
+					{"text": "I","color": "white","italic": false,"font": "iyc:icons"},
+					{"text": " ImagineYourCraft","italic": true,"color": "blue"}
+				]
 			]
 		}
 	}

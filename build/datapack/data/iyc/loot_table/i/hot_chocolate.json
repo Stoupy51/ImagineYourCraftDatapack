@@ -19,9 +19,13 @@
 									"on_consume_effects": [{"type": "minecraft:apply_effects","effects": [{"id": "minecraft:speed","duration": 600,"amplifier": 0}]}]
 								},
 								"minecraft:item_model": "iyc:hot_chocolate",
-								"minecraft:item_name": "{\"text\": \"Hot Chocolate\", \"italic\": false, \"color\": \"white\"}",
+								"minecraft:item_name": {
+									"text": "Hot Chocolate",
+									"italic": false,
+									"color": "white"
+								},
 								"minecraft:lore": [
-									"[\"\", {\"text\": \"I\", \"color\": \"white\", \"italic\": false, \"font\": \"iyc:icons\"}, {\"text\": \" ImagineYourCraft\", \"italic\": true, \"color\": \"blue\"}]"
+									["",{"text": "I","color": "white","italic": false,"font": "iyc:icons"},{"text": " ImagineYourCraft","italic": true,"color": "blue"}]
 								],
 								"minecraft:custom_data": {
 									"iyc": {"hot_chocolate": true},

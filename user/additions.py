@@ -1,5 +1,6 @@
 
 # Imports
+import stouputils as stp
 from python_datapack.utils.database_helper import *
 from config import NAMESPACE
 
@@ -29,14 +30,14 @@ def main(database: dict[str, dict]) -> dict[str, dict]:
 		"box_jump": {"id": CUSTOM_BLOCK_VANILLA, CATEGORY: "building",				RESULT_OF_CRAFTING:[{"type":"crafting_shapeless","result_count":1,"category":"misc","ingredients":[ingr_repr("minecraft:oak_planks"),ingr_repr("ruby", NAMESPACE)]}]},
 		"box_speed": {"id": CUSTOM_BLOCK_VANILLA, CATEGORY: "building",				RESULT_OF_CRAFTING:[{"type":"crafting_shapeless","result_count":1,"category":"misc","ingredients":[ingr_repr("minecraft:oak_planks"),ingr_repr("sapphire", NAMESPACE)]}]},
 		"blue_block_ctf": {"id": CUSTOM_BLOCK_VANILLA, CATEGORY: "building",		RESULT_OF_CRAFTING:[{"type":"crafting_shaped","result_count":8,"category":"misc","shape":["XXX","XGX","XXX"],"ingredients":{"X":ingr_repr("minecraft:blue_wool"),"G":ingr_repr("minecraft:glass")}}]},
-		"bolt": {"id": "minecraft:arrow", CATEGORY: "equipment",					"lore": ["{'text':'x1.5 damage arrow','color':'gray','italic':false}"], RESULT_OF_CRAFTING:[{"type":"crafting_shapeless","result_count":1,"category":"equipment","ingredients":[ingr_repr("minecraft:iron_ingot"),ingr_repr("minecraft:arrow")]}]},
+		"bolt": {"id": "minecraft:arrow", CATEGORY: "equipment",					"lore": [{"text":"x1.5 damage arrow","color":"gray","italic":False}], RESULT_OF_CRAFTING:[{"type":"crafting_shapeless","result_count":1,"category":"equipment","ingredients":[ingr_repr("minecraft:iron_ingot"),ingr_repr("minecraft:arrow")]}]},
 		"clear_glass": {"id": CUSTOM_BLOCK_VANILLA, CATEGORY: "building",			RESULT_OF_CRAFTING:[{"type":"crafting_shapeless","result_count":4,"category":"misc","ingredients":[ingr_repr("minecraft:glass")]*9}]},
 		"cloud": {"id": CUSTOM_BLOCK_ALTERNATIVE, CATEGORY: "building"},
 		"flatware": {"id": CUSTOM_BLOCK_ALTERNATIVE, CATEGORY: "building"},
-		"helice_hat": {"id": "minecraft:leather_helmet", CATEGORY: "equipment",		"lore": ["{'text':'A hat that makes you fly','color':'gray','italic':false}"], RESULT_OF_CRAFTING:[{"type":"crafting_shapeless","result_count":1,"category":"equipment","ingredients":[ingr_repr("minecraft:iron_ingot"),ingr_repr("minecraft:elytra")]}], "attribute_modifiers":[{"type":"gravity","amount":-0.09,"operation":"add_value","slot":"head","id":"iyc:gravity.head"}]},
+		"helice_hat": {"id": "minecraft:leather_helmet", CATEGORY: "equipment",		"lore": [{"text":"A hat that makes you fly","color":"gray","italic":False}], RESULT_OF_CRAFTING:[{"type":"crafting_shapeless","result_count":1,"category":"equipment","ingredients":[ingr_repr("minecraft:iron_ingot"),ingr_repr("minecraft:elytra")]}], "attribute_modifiers":[{"type":"gravity","amount":-0.09,"operation":"add_value","slot":"head","id":"iyc:gravity.head"}]},
 		"hops_seeds": {"id": CUSTOM_BLOCK_ALTERNATIVE, CATEGORY: "material"},
 		"iron_ladder": {"id": CUSTOM_BLOCK_ALTERNATIVE, CATEGORY: "building",		RESULT_OF_CRAFTING:[{"type":"crafting_shaped","result_count":4,"category":"misc","shape":["X X","XXX","X X"],"ingredients":{"X":ingr_repr("minecraft:iron_ingot")}}]},
-		"l118a": {"id": CUSTOM_ITEM_VANILLA, CATEGORY: "equipment",					"lore": ["{'text':'Uses steel nuggets as bullets','color':'gray','italic':false}"], RESULT_OF_CRAFTING:[{"type":"crafting_shaped","result_count":1,"category":"equipment","shape":["X  "," XX"," XS"],"ingredients":{"X":ingr_repr("steel_ingot", NAMESPACE),"S":ingr_repr("slate", NAMESPACE)}}]},
+		"l118a": {"id": CUSTOM_ITEM_VANILLA, CATEGORY: "equipment",					"lore": [{"text":"Uses steel nuggets as bullets","color":"gray","italic":False}], RESULT_OF_CRAFTING:[{"type":"crafting_shaped","result_count":1,"category":"equipment","shape":["X  "," XX"," XS"],"ingredients":{"X":ingr_repr("steel_ingot", NAMESPACE),"S":ingr_repr("slate", NAMESPACE)}}]},
 		"birch_wood_lantern": {"id": CUSTOM_BLOCK_VANILLA, CATEGORY: "building",	RESULT_OF_CRAFTING:[{"type":"crafting_shapeless","result_count":1,"category":"blocks","group":"wood_lantern","ingredients":[ingr_repr("minecraft:glowstone"),ingr_repr("minecraft:birch_wood")]}]},
 		"jungle_wood_lantern": {"id": CUSTOM_BLOCK_VANILLA, CATEGORY: "building",	RESULT_OF_CRAFTING:[{"type":"crafting_shapeless","result_count":1,"category":"blocks","group":"wood_lantern","ingredients":[ingr_repr("minecraft:glowstone"),ingr_repr("minecraft:jungle_wood")]}]},
 		"oak_wood_lantern": {"id": CUSTOM_BLOCK_VANILLA, CATEGORY: "building",		RESULT_OF_CRAFTING:[{"type":"crafting_shapeless","result_count":1,"category":"blocks","group":"wood_lantern","ingredients":[ingr_repr("minecraft:glowstone"),ingr_repr("minecraft:oak_wood")]}]},
@@ -44,7 +45,7 @@ def main(database: dict[str, dict]) -> dict[str, dict]:
 		"iron_lantern": {"id": CUSTOM_BLOCK_VANILLA, CATEGORY: "building",			RESULT_OF_CRAFTING:[{"type":"crafting_shapeless","result_count":1,"category":"blocks","ingredients":[ingr_repr("minecraft:glowstone"),ingr_repr("minecraft:iron_block")]}]},
 		"red_light": {"id": CUSTOM_BLOCK_VANILLA, CATEGORY: "building",				RESULT_OF_CRAFTING:[{"type":"crafting_shapeless","result_count":1,"category":"blocks","ingredients":[ingr_repr("minecraft:redstone_lamp"),ingr_repr("minecraft:red_wool")]}]},
 		"reversed_oak_planks": {"id": CUSTOM_BLOCK_VANILLA, CATEGORY: "building",	RESULT_OF_CRAFTING:[{"type":"crafting_shaped","result_count":4,"category":"blocks","shape":[" X","XX","X "],"ingredients":{"X":ingr_repr("minecraft:oak_planks")}}]},
-		"sw1911": {"id": CUSTOM_ITEM_VANILLA, CATEGORY: "equipment",				"lore": ["{'text':'Uses steel nuggets as bullets','color':'gray','italic':false}"], RESULT_OF_CRAFTING:[{"type":"crafting_shaped","result_count":1,"category":"equipment","shape":["SX ","  X"," X "],"ingredients":{"X":ingr_repr("steel_ingot", NAMESPACE),"S":ingr_repr("slate", NAMESPACE)}}]},
+		"sw1911": {"id": CUSTOM_ITEM_VANILLA, CATEGORY: "equipment",				"lore": [{"text":"Uses steel nuggets as bullets","color":"gray","italic":False}], RESULT_OF_CRAFTING:[{"type":"crafting_shaped","result_count":1,"category":"equipment","shape":["SX ","  X"," X "],"ingredients":{"X":ingr_repr("steel_ingot", NAMESPACE),"S":ingr_repr("slate", NAMESPACE)}}]},
 		"black_flower": {"id": CUSTOM_BLOCK_ALTERNATIVE, CATEGORY: "building"},
 		"blue_flower": {"id": CUSTOM_BLOCK_ALTERNATIVE, CATEGORY: "building"},
 		"white_flower": {"id": CUSTOM_BLOCK_ALTERNATIVE, CATEGORY: "building"},
@@ -86,9 +87,9 @@ def main(database: dict[str, dict]) -> dict[str, dict]:
 		"blob": {"id": CUSTOM_BLOCK_ALTERNATIVE},
 		"lignite_torch": {"id": CUSTOM_BLOCK_ALTERNATIVE, CATEGORY: MISC,			RESULT_OF_CRAFTING:[{"type":"crafting_shaped","result_count":4,"category":"blocks","shape":["X","S"],"ingredients":{"S":ingr_repr("minecraft:stick"),"X":ingr_repr("lignite", NAMESPACE)}}]},
 		"coin": {"id": CUSTOM_ITEM_VANILLA, CATEGORY: MISC},
-		"nuclear_bomb": {"id": CUSTOM_BLOCK_VANILLA, CATEGORY: MISC,				"lore": ["{'text':'Power of 5 TNTs','color':'gray','italic':false}"], RESULT_OF_CRAFTING:[{"type":"crafting_shaped","result_count":1,"category":"blocks","shape":[" X ","XTX","XXX"],"ingredients":{"X":ingr_repr("minecraft:tnt"),"T":ingr_repr("topaz", NAMESPACE)}}]},
+		"nuclear_bomb": {"id": CUSTOM_BLOCK_VANILLA, CATEGORY: MISC,				"lore": [{"text":"Power of 5 TNTs","color":"gray","italic":False}], RESULT_OF_CRAFTING:[{"type":"crafting_shaped","result_count":1,"category":"blocks","shape":[" X ","XTX","XXX"],"ingredients":{"X":ingr_repr("minecraft:tnt"),"T":ingr_repr("topaz", NAMESPACE)}}]},
 		"quiver": {"id": CUSTOM_ITEM_VANILLA, CATEGORY: MISC},
-		"rock": {"id": "minecraft:snowball", CATEGORY: MISC, "max_stack_size": 99,	"lore": ["{'text':'Can be thrown','color':'gray','italic':false}"]},
+		"rock": {"id": "minecraft:snowball", CATEGORY: MISC, "max_stack_size": 99,	"lore": [{"text":"Can be thrown","color":"gray","italic":False}]},
 		"screwdriver": {"id": CUSTOM_ITEM_VANILLA, CATEGORY: MISC},
 		"old_ruby": {"id": CUSTOM_ITEM_VANILLA},
 	}
@@ -99,6 +100,6 @@ def main(database: dict[str, dict]) -> dict[str, dict]:
 			database[k].update(v)
 		else:
 			database[k] = v
-	info("Database additions loaded")
+	stp.info("Database additions loaded")
 	return database
 

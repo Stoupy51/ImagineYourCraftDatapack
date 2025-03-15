@@ -12,11 +12,15 @@
 							"components": {
 								"minecraft:max_stack_size": 99,
 								"minecraft:lore": [
-									"{'text':'Can be thrown','color':'gray','italic':false}",
-									"[\"\", {\"text\": \"I\", \"color\": \"white\", \"italic\": false, \"font\": \"iyc:icons\"}, {\"text\": \" ImagineYourCraft\", \"italic\": true, \"color\": \"blue\"}]"
+									{"text": "Can be thrown","color": "gray","italic": false},
+									["",{"text": "I","color": "white","italic": false,"font": "iyc:icons"},{"text": " ImagineYourCraft","italic": true,"color": "blue"}]
 								],
 								"minecraft:item_model": "iyc:rock",
-								"minecraft:item_name": "{\"text\": \"Rock\", \"italic\": false, \"color\": \"white\"}",
+								"minecraft:item_name": {
+									"text": "Rock",
+									"italic": false,
+									"color": "white"
+								},
 								"minecraft:custom_data": {
 									"iyc": {"rock": true},
 									"smithed": {"ignore": {"functionality": true,"crafting": true}}

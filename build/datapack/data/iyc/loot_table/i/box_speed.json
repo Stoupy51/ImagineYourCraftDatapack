@@ -11,9 +11,13 @@
 							"function": "minecraft:set_components",
 							"components": {
 								"minecraft:item_model": "iyc:box_speed",
-								"minecraft:item_name": "{\"text\": \"Box Speed\", \"italic\": false, \"color\": \"white\"}",
+								"minecraft:item_name": {
+									"text": "Box Speed",
+									"italic": false,
+									"color": "white"
+								},
 								"minecraft:lore": [
-									"[\"\", {\"text\": \"I\", \"color\": \"white\", \"italic\": false, \"font\": \"iyc:icons\"}, {\"text\": \" ImagineYourCraft\", \"italic\": true, \"color\": \"blue\"}]"
+									["",{"text": "I","color": "white","italic": false,"font": "iyc:icons"},{"text": " ImagineYourCraft","italic": true,"color": "blue"}]
 								],
 								"minecraft:custom_data": {
 									"iyc": {"box_speed": true},
@@ -21,7 +25,10 @@
 								},
 								"minecraft:container": [
 									{"slot": 0,"item": {"id": "minecraft:stone","count": 1,"components": {"minecraft:custom_data": {"smithed": {"block": {"id": "iyc:box_speed","from": "iyc"}}}}}}
-								]
+								],
+								"minecraft:tooltip_display": {
+									"hidden_components": ["minecraft:container"]
+								}
 							}
 						}
 					]

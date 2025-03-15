@@ -13,6 +13,10 @@ tag @s add iyc.custom_block
 tag @s add iyc.lignite_torch
 tag @s add iyc.vanilla.minecraft_torch
 
+# Add a custom name
+data merge entity @s {"CustomName": {"text": "Lignite Torch","italic": false,"color": "white"}}
+
+
 # Modify item display entity to match the custom block
 item replace entity @s container.0 with minecraft:furnace[item_model="iyc:lignite_torch"]
 data modify entity @s transformation.scale set value [1.002f,1.002f,1.002f]

@@ -19,9 +19,13 @@
 									"on_consume_effects": [{"type": "minecraft:apply_effects","effects": [{"id": "minecraft:jump_boost","duration": 600,"amplifier": 0}]}]
 								},
 								"minecraft:item_model": "iyc:apple_juice",
-								"minecraft:item_name": "{\"text\": \"Apple Juice\", \"italic\": false, \"color\": \"white\"}",
+								"minecraft:item_name": {
+									"text": "Apple Juice",
+									"italic": false,
+									"color": "white"
+								},
 								"minecraft:lore": [
-									"[\"\", {\"text\": \"I\", \"color\": \"white\", \"italic\": false, \"font\": \"iyc:icons\"}, {\"text\": \" ImagineYourCraft\", \"italic\": true, \"color\": \"blue\"}]"
+									["",{"text": "I","color": "white","italic": false,"font": "iyc:icons"},{"text": " ImagineYourCraft","italic": true,"color": "blue"}]
 								],
 								"minecraft:custom_data": {
 									"iyc": {"apple_juice": true},

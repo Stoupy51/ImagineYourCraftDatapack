@@ -22,9 +22,26 @@
 				}
 			},
 			"minecraft:item_model": "iyc:topaz",
-			"minecraft:item_name": "{\"text\": \"Topaz\", \"italic\": false, \"color\": \"white\"}",
+			"minecraft:item_name": {
+				"text": "Topaz",
+				"italic": false,
+				"color": "white"
+			},
 			"minecraft:lore": [
-				"[\"\", {\"text\": \"I\", \"color\": \"white\", \"italic\": false, \"font\": \"iyc:icons\"}, {\"text\": \" ImagineYourCraft\", \"italic\": true, \"color\": \"blue\"}]"
+				[
+					"",
+					{
+						"text": "I",
+						"color": "white",
+						"italic": false,
+						"font": "iyc:icons"
+					},
+					{
+						"text": " ImagineYourCraft",
+						"italic": true,
+						"color": "blue"
+					}
+				]
 			]
 		}
 	},

@@ -5,7 +5,7 @@
 #
 
 # Replace the item with the custom one
-execute as @e[type=item,nbt={Item:{id:"minecraft:structure_void"}},limit=1,sort=nearest,distance=..1] run function iyc:custom_blocks/cloud/replace_item
+execute as @n[type=item,nbt={Item:{id:"minecraft:structure_void"}},distance=..1] run function iyc:custom_blocks/cloud/replace_item
 
 # Decrease count scores
 scoreboard players remove #total_custom_blocks iyc.data 1

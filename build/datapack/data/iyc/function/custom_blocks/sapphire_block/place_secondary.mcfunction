@@ -13,6 +13,10 @@ tag @s add iyc.custom_block
 tag @s add iyc.sapphire_block
 tag @s add iyc.vanilla.minecraft_diamond_block
 
+# Add a custom name
+data merge entity @s {"CustomName": {"text": "Sapphire Block","italic": false,"color": "white"}}
+
+
 # Modify item display entity to match the custom block
 item replace entity @s container.0 with minecraft:furnace[item_model="iyc:sapphire_block"]
 data modify entity @s transformation.scale set value [1.002f,1.002f,1.002f]

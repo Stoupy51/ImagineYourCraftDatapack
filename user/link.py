@@ -8,7 +8,7 @@ def main(config: dict) -> None:
     namespace: str = config["namespace"]
 
     # Write to tick
-    write_to_tick_file(config, f"""
+    write_tick_file(config, f"""
 # Check for bolts
 execute as @e[type=arrow,tag=!{namespace}.bolt_checked] run function {namespace}:entity/bolt_check
 

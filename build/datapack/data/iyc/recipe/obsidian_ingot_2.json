@@ -1,0 +1,46 @@
+{
+	"type": "minecraft:blasting",
+	"category": "misc",
+	"group": "obsidian",
+	"ingredient": "minecraft:obsidian",
+	"result": {
+		"id": "minecraft:recovery_compass",
+		"count": 1,
+		"components": {
+			"minecraft:custom_data": {
+				"smithed": {
+					"dict": {
+						"ingot": {
+							"obsidian": true
+						}
+					},
+					"id": "iyc:obsidian_ingot",
+					"origin": "iyc",
+					"ignore": {
+						"functionality": true,
+						"crafting": true
+					}
+				},
+				"iyc": {
+					"obsidian_ingot": true
+				}
+			},
+			"minecraft:item_model": "iyc:obsidian_ingot",
+			"minecraft:item_name": {
+				"text": "Obsidian Ingot"
+			},
+			"minecraft:lore": [
+				[
+					{
+						"text": "ImagineYourCraft",
+						"italic": false,
+						"color": "white",
+						"font": "iyc:tooltip"
+					}
+				]
+			]
+		}
+	},
+	"experience": 0.25,
+	"cookingtime": 200
+}

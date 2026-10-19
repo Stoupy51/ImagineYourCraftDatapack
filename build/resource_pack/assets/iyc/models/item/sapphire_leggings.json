@@ -1,8 +1,6 @@
 {
-	"parent": "minecraft:item/leather_leggings",
+	"parent": "minecraft:item/diamond_leggings",
 	"textures": {
-		"layer0": "iyc:item/sapphire_leggings",
-		"layer1": "iyc:item/sapphire_leggings"
+		"layer0": "iyc:item/sapphire_leggings"
 	}
 }
-

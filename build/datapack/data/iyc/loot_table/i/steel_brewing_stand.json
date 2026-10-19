@@ -1,0 +1,55 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:furnace",
+					"modifier": [
+						{
+							"type": "minecraft:set_components",
+							"components": {
+								"minecraft:lore": [
+									{
+										"text": "Brews in 12.5 seconds instead of 20",
+										"color": "gray",
+										"italic": false
+									},
+									[
+										{"text": "ImagineYourCraft","italic": false,"color": "white","font": "iyc:tooltip"}
+									]
+								],
+								"minecraft:container": [
+									{
+										"slot": 0,
+										"item": {"id": "minecraft:stone","count": 1,"components": {"minecraft:custom_data": {"smithed": {"block": {"id": "iyc:steel_brewing_stand","from": "iyc"}}}}}
+									}
+								],
+								"minecraft:tooltip_display": {
+									"hidden_components": [
+										"minecraft:container"
+									]
+								},
+								"minecraft:item_model": "iyc:steel_brewing_stand",
+								"minecraft:item_name": {
+									"text": "Steel Brewing Stand"
+								},
+								"minecraft:custom_data": {
+									"iyc": {
+										"steel_brewing_stand": true
+									},
+									"smithed": {
+										"id": "iyc:steel_brewing_stand",
+										"origin": "iyc",
+										"ignore": {"functionality": true,"crafting": true}
+									}
+								}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

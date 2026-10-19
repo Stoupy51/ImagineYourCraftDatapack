@@ -1,7 +1,10 @@
 
 #> iyc:custom_blocks/nuclear_bomb/destroy
 #
-# @within	iyc:custom_blocks/_groups/minecraft_tnt
+# @executed	at @s
+#
+# @within	iyc:custom_blocks/no_block_below
+#			iyc:custom_blocks/_groups/minecraft_tnt
 #
 
 # Replace the item with the custom one
@@ -14,4 +17,6 @@ scoreboard players remove #total_nuclear_bomb iyc.data 1
 
 # Kill the custom block entity
 kill @s
+
+execute as @e[type=tnt,distance=..1,tag=!iyc.bomb] run function iyc:bomb/prime
 

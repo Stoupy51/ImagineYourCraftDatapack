@@ -5,33 +5,54 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "minecraft:leather_chestplate",
-					"functions": [
+					"name": "minecraft:diamond_chestplate",
+					"modifier": [
 						{
-							"function": "minecraft:set_components",
+							"type": "minecraft:set_components",
 							"components": {
 								"minecraft:custom_data": {
-									"smithed": {"dict": {"armor": {"adamantium": true,"chestplate": true}},"ignore": {"functionality": true,"crafting": true}},
-									"iyc": {"adamantium_chestplate": true}
+									"smithed": {
+										"dict": {"armor": {"adamantium": true,"chestplate": true}},
+										"id": "iyc:adamantium_chestplate",
+										"origin": "iyc",
+										"ignore": {"functionality": true,"crafting": true}
+									},
+									"iyc": {
+										"adamantium_chestplate": true
+									}
 								},
-								"minecraft:max_damage": 545,
+								"minecraft:max_damage": 944,
 								"minecraft:equippable": {
 									"slot": "chest",
 									"asset_id": "iyc:adamantium"
 								},
 								"minecraft:attribute_modifiers": [
-									{"type": "armor","amount": 8.2,"operation": "add_value","slot": "chest","id": "iyc:armor.chest"},
-									{"type": "armor_toughness","amount": 3,"operation": "add_value","slot": "chest","id": "iyc:armor_toughness.chest"},
-									{"type": "knockback_resistance","amount": 0.1,"operation": "add_value","slot": "chest","id": "iyc:knockback_resistance.chest"}
+									{
+										"type": "armor",
+										"amount": 8,
+										"operation": "add_value",
+										"slot": "chest",
+										"id": "iyc:armor.chest"
+									},
+									{
+										"type": "armor_toughness",
+										"amount": 2,
+										"operation": "add_value",
+										"slot": "chest",
+										"id": "iyc:armor_toughness.chest"
+									}
 								],
+								"minecraft:enchantable": {
+									"value": 6
+								},
 								"minecraft:item_model": "iyc:adamantium_chestplate",
 								"minecraft:item_name": {
-									"text": "Adamantium Chestplate",
-									"italic": false,
-									"color": "white"
+									"text": "Adamantium Chestplate"
 								},
 								"minecraft:lore": [
-									["",{"text": "I","color": "white","italic": false,"font": "iyc:icons"},{"text": " ImagineYourCraft","italic": true,"color": "blue"}]
+									[
+										{"text": "ImagineYourCraft","italic": false,"color": "white","font": "iyc:tooltip"}
+									]
 								]
 							}
 						}
@@ -41,4 +62,3 @@
 		}
 	]
 }
-

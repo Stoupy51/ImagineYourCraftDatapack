@@ -1,7 +1,9 @@
 
 #> iyc:entity/rock_check/marker_final
 #
-# @within	iyc:v0.0.1/tick
+# @executed	as @e[tag=iyc.rock_marker,predicate=!iyc:has_vehicle] & at @s & positioned ~ ~-0.5 ~
+#
+# @within	iyc:v0.1.0/tick [ as @e[tag=iyc.rock_marker,predicate=!iyc:has_vehicle] & at @s & positioned ~ ~-0.5 ~ ]
 #
 
 # Tag the player who throwed the rock

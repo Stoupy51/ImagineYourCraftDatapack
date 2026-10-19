@@ -1,7 +1,6 @@
 {
-	"parent": "minecraft:item/netherite_sword",
+	"parent": "minecraft:item/diamond_sword",
 	"textures": {
 		"layer0": "iyc:item/adamantium_sword"
 	}
 }
-

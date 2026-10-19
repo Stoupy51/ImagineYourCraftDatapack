@@ -5,14 +5,21 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "minecraft:command_block",
-					"functions": [
+					"name": "minecraft:recovery_compass",
+					"modifier": [
 						{
-							"function": "minecraft:set_components",
+							"type": "minecraft:set_components",
 							"components": {
 								"minecraft:custom_data": {
-									"iyc": {"guzzproduction_bouge_ton_cube": true},
-									"smithed": {"dict": {"record": {"guzzproduction_bouge_ton_cube": true}},"ignore": {"functionality": true,"crafting": true}}
+									"iyc": {
+										"guzzproduction_bouge_ton_cube": true
+									},
+									"smithed": {
+										"dict": {"record": {"guzzproduction_bouge_ton_cube": true,"item_name": "GuzzProduction - Bouge Ton Cube"},"jukebox_song": {"comparator_output": 8,"length_in_seconds": 153,"sound_event": {"sound_id": "iyc:guzzproduction_bouge_ton_cube"},"description": {"text": "GuzzProduction - Bouge Ton Cube"}}},
+										"id": "iyc:guzzproduction_bouge_ton_cube",
+										"origin": "iyc",
+										"ignore": {"functionality": true,"crafting": true}
+									}
 								},
 								"minecraft:item_name": {
 									"text": "Music Disc",
@@ -23,7 +30,9 @@
 								"minecraft:rarity": "rare",
 								"minecraft:item_model": "iyc:guzzproduction_bouge_ton_cube",
 								"minecraft:lore": [
-									["",{"text": "I","color": "white","italic": false,"font": "iyc:icons"},{"text": " ImagineYourCraft","italic": true,"color": "blue"}]
+									[
+										{"text": "ImagineYourCraft","italic": false,"color": "white","font": "iyc:tooltip"}
+									]
 								]
 							}
 						}
@@ -33,4 +42,3 @@
 		}
 	]
 }
-

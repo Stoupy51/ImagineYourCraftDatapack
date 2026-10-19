@@ -1,0 +1,8 @@
+{
+	"parent": "iyc:block/legacy/cube_bottom_top",
+	"textures": {
+		"side": "iyc:block/lantern_wood_spruce",
+		"top": "minecraft:block/spruce_log_top",
+		"bottom": "minecraft:block/spruce_log_top"
+	}
+}

@@ -2,12 +2,13 @@
 #> iyc:custom_blocks/oak_wood_lantern/place_main
 #
 # @within	iyc:custom_blocks/place
+#			iyc:interaction/light
 #
 
 tag @s add iyc.placer
-setblock ~ ~ ~ air
+setblock ~ ~ ~ air strict
 setblock ~ ~ ~ minecraft:ochre_froglight
-execute align xyz positioned ~.5 ~.5 ~.5 summon item_display at @s run function iyc:custom_blocks/oak_wood_lantern/place_secondary
+execute align xyz positioned ~0.5 ~0.5 ~0.5 summon item_display at @s run function iyc:custom_blocks/oak_wood_lantern/place_secondary
 tag @s remove iyc.placer
 
 # Increment count scores

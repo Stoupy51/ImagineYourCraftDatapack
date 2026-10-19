@@ -1,8 +1,6 @@
 {
-	"parent": "minecraft:item/leather_helmet",
+	"parent": "minecraft:item/iron_helmet",
 	"textures": {
-		"layer0": "iyc:item/steel_helmet",
-		"layer1": "iyc:item/steel_helmet"
+		"layer0": "iyc:item/steel_helmet"
 	}
 }
-

@@ -5,14 +5,21 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "minecraft:command_block",
-					"functions": [
+					"name": "minecraft:recovery_compass",
+					"modifier": [
 						{
-							"function": "minecraft:set_components",
+							"type": "minecraft:set_components",
 							"components": {
 								"minecraft:custom_data": {
-									"iyc": {"thedudescraft_gagaoutai": true},
-									"smithed": {"dict": {"record": {"thedudescraft_gagaoutai": true}},"ignore": {"functionality": true,"crafting": true}}
+									"iyc": {
+										"thedudescraft_gagaoutai": true
+									},
+									"smithed": {
+										"dict": {"record": {"thedudescraft_gagaoutai": true,"item_name": "TheDudesCraft - GAGAOUTAI"},"jukebox_song": {"comparator_output": 11,"length_in_seconds": 236,"sound_event": {"sound_id": "iyc:thedudescraft_gagaoutai"},"description": {"text": "TheDudesCraft - GAGAOUTAI"}}},
+										"id": "iyc:thedudescraft_gagaoutai",
+										"origin": "iyc",
+										"ignore": {"functionality": true,"crafting": true}
+									}
 								},
 								"minecraft:item_name": {
 									"text": "Music Disc",
@@ -23,7 +30,9 @@
 								"minecraft:rarity": "rare",
 								"minecraft:item_model": "iyc:thedudescraft_gagaoutai",
 								"minecraft:lore": [
-									["",{"text": "I","color": "white","italic": false,"font": "iyc:icons"},{"text": " ImagineYourCraft","italic": true,"color": "blue"}]
+									[
+										{"text": "ImagineYourCraft","italic": false,"color": "white","font": "iyc:tooltip"}
+									]
 								]
 							}
 						}
@@ -33,4 +42,3 @@
 		}
 	]
 }
-

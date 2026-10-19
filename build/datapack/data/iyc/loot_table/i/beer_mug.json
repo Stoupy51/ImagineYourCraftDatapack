@@ -5,23 +5,29 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "minecraft:command_block",
-					"functions": [
+					"name": "minecraft:recovery_compass",
+					"modifier": [
 						{
-							"function": "minecraft:set_components",
+							"type": "minecraft:set_components",
 							"components": {
 								"minecraft:item_model": "iyc:beer_mug",
 								"minecraft:item_name": {
-									"text": "Beer Mug",
-									"italic": false,
-									"color": "white"
+									"text": "Beer Mug"
 								},
 								"minecraft:lore": [
-									["",{"text": "I","color": "white","italic": false,"font": "iyc:icons"},{"text": " ImagineYourCraft","italic": true,"color": "blue"}]
+									[
+										{"text": "ImagineYourCraft","italic": false,"color": "white","font": "iyc:tooltip"}
+									]
 								],
 								"minecraft:custom_data": {
-									"iyc": {"beer_mug": true},
-									"smithed": {"ignore": {"functionality": true,"crafting": true}}
+									"iyc": {
+										"beer_mug": true
+									},
+									"smithed": {
+										"id": "iyc:beer_mug",
+										"origin": "iyc",
+										"ignore": {"functionality": true,"crafting": true}
+									}
 								}
 							}
 						}
@@ -31,4 +37,3 @@
 		}
 	]
 }
-

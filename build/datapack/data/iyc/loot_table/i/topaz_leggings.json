@@ -5,32 +5,54 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "minecraft:leather_leggings",
-					"functions": [
+					"name": "minecraft:diamond_leggings",
+					"modifier": [
 						{
-							"function": "minecraft:set_components",
+							"type": "minecraft:set_components",
 							"components": {
 								"minecraft:custom_data": {
-									"smithed": {"dict": {"armor": {"topaz": true,"leggings": true}},"ignore": {"functionality": true,"crafting": true}},
-									"iyc": {"topaz_leggings": true}
+									"smithed": {
+										"dict": {"armor": {"topaz": true,"leggings": true}},
+										"id": "iyc:topaz_leggings",
+										"origin": "iyc",
+										"ignore": {"functionality": true,"crafting": true}
+									},
+									"iyc": {
+										"topaz_leggings": true
+									}
 								},
-								"minecraft:max_damage": 406,
+								"minecraft:max_damage": 795,
 								"minecraft:equippable": {
 									"slot": "legs",
 									"asset_id": "iyc:topaz"
 								},
 								"minecraft:attribute_modifiers": [
-									{"type": "armor","amount": 7.0,"operation": "add_value","slot": "legs","id": "iyc:armor.legs"},
-									{"type": "armor_toughness","amount": 2,"operation": "add_value","slot": "legs","id": "iyc:armor_toughness.legs"}
+									{
+										"type": "armor",
+										"amount": 6,
+										"operation": "add_value",
+										"slot": "legs",
+										"id": "iyc:armor.legs"
+									},
+									{
+										"type": "armor_toughness",
+										"amount": 2,
+										"operation": "add_value",
+										"slot": "legs",
+										"id": "iyc:armor_toughness.legs"
+									}
 								],
+								"minecraft:enchantable": {
+									"value": 6
+								},
 								"minecraft:item_model": "iyc:topaz_leggings",
 								"minecraft:item_name": {
-									"text": "Topaz Leggings",
-									"italic": false,
-									"color": "white"
+									"text": "Topaz Leggings"
 								},
 								"minecraft:lore": [
-									["",{"text": "I","color": "white","italic": false,"font": "iyc:icons"},{"text": " ImagineYourCraft","italic": true,"color": "blue"}]
+									[
+										{"text": "ImagineYourCraft","italic": false,"color": "white","font": "iyc:tooltip"}
+									]
 								]
 							}
 						}
@@ -40,4 +62,3 @@
 		}
 	]
 }
-

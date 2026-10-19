@@ -1,0 +1,292 @@
+{
+	"model": {
+		"type": "minecraft:select",
+		"property": "minecraft:custom_model_data",
+		"index": 0,
+		"cases": [
+			{
+				"when": "0",
+				"model": {
+					"type": "minecraft:model",
+					"model": "iyc:block/lantern",
+					"tints": [{"type": "minecraft:custom_model_data","index": 0,"default": 16777215}]
+				}
+			},
+			{
+				"when": "1",
+				"model": {
+					"type": "minecraft:model",
+					"model": "iyc:block/lantern_b",
+					"tints": [{"type": "minecraft:custom_model_data","index": 0,"default": 16777215}]
+				}
+			},
+			{
+				"when": "2",
+				"model": {
+					"type": "minecraft:model",
+					"model": "iyc:block/lantern_bt",
+					"tints": [{"type": "minecraft:custom_model_data","index": 0,"default": 16777215}]
+				}
+			},
+			{
+				"when": "3",
+				"model": {
+					"type": "minecraft:model",
+					"model": "iyc:block/lantern_t",
+					"tints": [{"type": "minecraft:custom_model_data","index": 0,"default": 16777215}]
+				}
+			},
+			{
+				"when": "4",
+				"model": {
+					"type": "minecraft:model",
+					"model": "iyc:block/lantern_tn",
+					"tints": [{"type": "minecraft:custom_model_data","index": 0,"default": 16777215}]
+				}
+			},
+			{
+				"when": "5",
+				"model": {
+					"type": "minecraft:model",
+					"model": "iyc:block/lantern_tn_x0_y90",
+					"tints": [{"type": "minecraft:custom_model_data","index": 0,"default": 16777215}]
+				}
+			},
+			{
+				"when": "6",
+				"model": {
+					"type": "minecraft:model",
+					"model": "iyc:block/lantern_tn_x0_y180",
+					"tints": [{"type": "minecraft:custom_model_data","index": 0,"default": 16777215}]
+				}
+			},
+			{
+				"when": "7",
+				"model": {
+					"type": "minecraft:model",
+					"model": "iyc:block/lantern_tn_x0_y270",
+					"tints": [{"type": "minecraft:custom_model_data","index": 0,"default": 16777215}]
+				}
+			},
+			{
+				"when": "8",
+				"model": {
+					"type": "minecraft:model",
+					"model": "iyc:block/lantern_tne",
+					"tints": [{"type": "minecraft:custom_model_data","index": 0,"default": 16777215}]
+				}
+			},
+			{
+				"when": "9",
+				"model": {
+					"type": "minecraft:model",
+					"model": "iyc:block/lantern_tne_x0_y90",
+					"tints": [{"type": "minecraft:custom_model_data","index": 0,"default": 16777215}]
+				}
+			},
+			{
+				"when": "10",
+				"model": {
+					"type": "minecraft:model",
+					"model": "iyc:block/lantern_tne_x0_y180",
+					"tints": [{"type": "minecraft:custom_model_data","index": 0,"default": 16777215}]
+				}
+			},
+			{
+				"when": "11",
+				"model": {
+					"type": "minecraft:model",
+					"model": "iyc:block/lantern_tne_x0_y270",
+					"tints": [{"type": "minecraft:custom_model_data","index": 0,"default": 16777215}]
+				}
+			},
+			{
+				"when": "12",
+				"model": {
+					"type": "minecraft:model",
+					"model": "iyc:block/lantern_tns",
+					"tints": [{"type": "minecraft:custom_model_data","index": 0,"default": 16777215}]
+				}
+			},
+			{
+				"when": "13",
+				"model": {
+					"type": "minecraft:model",
+					"model": "iyc:block/lantern_tns_x0_y90",
+					"tints": [{"type": "minecraft:custom_model_data","index": 0,"default": 16777215}]
+				}
+			},
+			{
+				"when": "14",
+				"model": {
+					"type": "minecraft:model",
+					"model": "iyc:block/lantern_tnse",
+					"tints": [{"type": "minecraft:custom_model_data","index": 0,"default": 16777215}]
+				}
+			},
+			{
+				"when": "15",
+				"model": {
+					"type": "minecraft:model",
+					"model": "iyc:block/lantern_tnse_x0_y90",
+					"tints": [{"type": "minecraft:custom_model_data","index": 0,"default": 16777215}]
+				}
+			},
+			{
+				"when": "16",
+				"model": {
+					"type": "minecraft:model",
+					"model": "iyc:block/lantern_tnse_x0_y180",
+					"tints": [{"type": "minecraft:custom_model_data","index": 0,"default": 16777215}]
+				}
+			},
+			{
+				"when": "17",
+				"model": {
+					"type": "minecraft:model",
+					"model": "iyc:block/lantern_tnse_x0_y270",
+					"tints": [{"type": "minecraft:custom_model_data","index": 0,"default": 16777215}]
+				}
+			},
+			{
+				"when": "18",
+				"model": {
+					"type": "minecraft:model",
+					"model": "iyc:block/lantern_tnsew",
+					"tints": [{"type": "minecraft:custom_model_data","index": 0,"default": 16777215}]
+				}
+			},
+			{
+				"when": "19",
+				"model": {
+					"type": "minecraft:model",
+					"model": "iyc:block/lantern_btn",
+					"tints": [{"type": "minecraft:custom_model_data","index": 0,"default": 16777215}]
+				}
+			},
+			{
+				"when": "20",
+				"model": {
+					"type": "minecraft:model",
+					"model": "iyc:block/lantern_btn_x0_y90",
+					"tints": [{"type": "minecraft:custom_model_data","index": 0,"default": 16777215}]
+				}
+			},
+			{
+				"when": "21",
+				"model": {
+					"type": "minecraft:model",
+					"model": "iyc:block/lantern_btn_x0_y180",
+					"tints": [{"type": "minecraft:custom_model_data","index": 0,"default": 16777215}]
+				}
+			},
+			{
+				"when": "22",
+				"model": {
+					"type": "minecraft:model",
+					"model": "iyc:block/lantern_btn_x0_y270",
+					"tints": [{"type": "minecraft:custom_model_data","index": 0,"default": 16777215}]
+				}
+			},
+			{
+				"when": "23",
+				"model": {
+					"type": "minecraft:model",
+					"model": "iyc:block/lantern_btne",
+					"tints": [{"type": "minecraft:custom_model_data","index": 0,"default": 16777215}]
+				}
+			},
+			{
+				"when": "24",
+				"model": {
+					"type": "minecraft:model",
+					"model": "iyc:block/lantern_btne_x0_y90",
+					"tints": [{"type": "minecraft:custom_model_data","index": 0,"default": 16777215}]
+				}
+			},
+			{
+				"when": "25",
+				"model": {
+					"type": "minecraft:model",
+					"model": "iyc:block/lantern_btne_x0_y180",
+					"tints": [{"type": "minecraft:custom_model_data","index": 0,"default": 16777215}]
+				}
+			},
+			{
+				"when": "26",
+				"model": {
+					"type": "minecraft:model",
+					"model": "iyc:block/lantern_btne_x0_y270",
+					"tints": [{"type": "minecraft:custom_model_data","index": 0,"default": 16777215}]
+				}
+			},
+			{
+				"when": "27",
+				"model": {
+					"type": "minecraft:model",
+					"model": "iyc:block/lantern_btns",
+					"tints": [{"type": "minecraft:custom_model_data","index": 0,"default": 16777215}]
+				}
+			},
+			{
+				"when": "28",
+				"model": {
+					"type": "minecraft:model",
+					"model": "iyc:block/lantern_btns_x0_y90",
+					"tints": [{"type": "minecraft:custom_model_data","index": 0,"default": 16777215}]
+				}
+			},
+			{
+				"when": "29",
+				"model": {
+					"type": "minecraft:model",
+					"model": "iyc:block/lantern_btnse",
+					"tints": [{"type": "minecraft:custom_model_data","index": 0,"default": 16777215}]
+				}
+			},
+			{
+				"when": "30",
+				"model": {
+					"type": "minecraft:model",
+					"model": "iyc:block/lantern_btnse_x0_y90",
+					"tints": [{"type": "minecraft:custom_model_data","index": 0,"default": 16777215}]
+				}
+			},
+			{
+				"when": "31",
+				"model": {
+					"type": "minecraft:model",
+					"model": "iyc:block/lantern_btnse_x0_y180",
+					"tints": [{"type": "minecraft:custom_model_data","index": 0,"default": 16777215}]
+				}
+			},
+			{
+				"when": "32",
+				"model": {
+					"type": "minecraft:model",
+					"model": "iyc:block/lantern_btnse_x0_y270",
+					"tints": [{"type": "minecraft:custom_model_data","index": 0,"default": 16777215}]
+				}
+			},
+			{
+				"when": "33",
+				"model": {
+					"type": "minecraft:model",
+					"model": "iyc:block/lantern_btnsew",
+					"tints": [{"type": "minecraft:custom_model_data","index": 0,"default": 16777215}]
+				}
+			}
+		],
+		"fallback": {
+			"type": "minecraft:model",
+			"model": "iyc:item/purple_lit_lamp",
+			"tints": [
+				{
+					"type": "minecraft:custom_model_data",
+					"index": 0,
+					"default": 16777215
+				}
+			]
+		}
+	}
+}

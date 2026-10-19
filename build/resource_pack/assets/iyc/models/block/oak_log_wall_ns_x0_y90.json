@@ -1,0 +1,10 @@
+{
+	"parent": "iyc:block/oak_log_wall_ns",
+	"elements": [
+		{
+			"from": [-0.0625,-0.0625,4.9375],
+			"to": [16.0625,13.0625,11.0625],
+			"faces": {"down": {"uv": [0.0,5.0,16.0,11.0],"texture": "#wall","cullface": "down"},"up": {"uv": [0.0,5.0,16.0,11.0],"texture": "#wall"},"east": {"uv": [5.0,3.0,11.0,16.0],"texture": "#wall","cullface": "north"},"west": {"uv": [5.0,3.0,11.0,16.0],"texture": "#wall","cullface": "south"},"north": {"uv": [0.0,3.0,16.0,16.0],"texture": "#wall"},"south": {"uv": [0.0,3.0,16.0,16.0],"texture": "#wall"}}
+		}
+	]
+}

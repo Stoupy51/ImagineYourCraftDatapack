@@ -1,7 +1,62 @@
 {
 	"model": {
-		"type": "minecraft:model",
-		"model": "iyc:item/cherry_cake"
+		"type": "minecraft:select",
+		"property": "minecraft:custom_model_data",
+		"index": 0,
+		"cases": [
+			{
+				"when": "0",
+				"model": {
+					"type": "minecraft:model",
+					"model": "iyc:block/cherry_cake_uneaten"
+				}
+			},
+			{
+				"when": "1",
+				"model": {
+					"type": "minecraft:model",
+					"model": "iyc:block/cherry_cake_slice1"
+				}
+			},
+			{
+				"when": "2",
+				"model": {
+					"type": "minecraft:model",
+					"model": "iyc:block/cherry_cake_slice2"
+				}
+			},
+			{
+				"when": "3",
+				"model": {
+					"type": "minecraft:model",
+					"model": "iyc:block/cherry_cake_slice3"
+				}
+			},
+			{
+				"when": "4",
+				"model": {
+					"type": "minecraft:model",
+					"model": "iyc:block/cherry_cake_slice4"
+				}
+			},
+			{
+				"when": "5",
+				"model": {
+					"type": "minecraft:model",
+					"model": "iyc:block/cherry_cake_slice5"
+				}
+			},
+			{
+				"when": "6",
+				"model": {
+					"type": "minecraft:model",
+					"model": "iyc:block/cherry_cake_slice6"
+				}
+			}
+		],
+		"fallback": {
+			"type": "minecraft:model",
+			"model": "iyc:item/cherry_cake"
+		}
 	}
 }
-

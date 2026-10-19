@@ -1,0 +1,55 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:furnace",
+					"modifier": [
+						{
+							"type": "minecraft:set_components",
+							"components": {
+								"minecraft:container": [
+									{
+										"slot": 0,
+										"item": {"id": "minecraft:stone","count": 1,"components": {"minecraft:custom_data": {"smithed": {"block": {"id": "iyc:gray_rod","from": "iyc"}}}}}
+									}
+								],
+								"minecraft:tooltip_display": {
+									"hidden_components": [
+										"minecraft:container"
+									]
+								},
+								"minecraft:custom_model_data": {
+									"colors": [
+										5000268
+									]
+								},
+								"minecraft:item_model": "iyc:gray_rod",
+								"minecraft:item_name": {
+									"text": "Gray Rod"
+								},
+								"minecraft:lore": [
+									[
+										{"text": "ImagineYourCraft","italic": false,"color": "white","font": "iyc:tooltip"}
+									]
+								],
+								"minecraft:custom_data": {
+									"iyc": {
+										"gray_rod": true
+									},
+									"smithed": {
+										"id": "iyc:gray_rod",
+										"origin": "iyc",
+										"ignore": {"functionality": true,"crafting": true}
+									}
+								}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

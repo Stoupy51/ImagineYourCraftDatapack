@@ -1,0 +1,14 @@
+{
+	"values": [
+		"#minecraft:air",
+		"minecraft:barrier",
+		"minecraft:short_grass",
+		"minecraft:tall_grass",
+		"minecraft:fern",
+		"minecraft:snow_block",
+		"minecraft:fire",
+		"minecraft:soul_fire",
+		"#minecraft:flowers",
+		"#minecraft:saplings"
+	]
+}

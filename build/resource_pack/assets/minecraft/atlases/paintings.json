@@ -1,0 +1,5 @@
+{
+	"sources": [
+		{"type": "minecraft:single","resource": "iyc:item/tele","sprite": "iyc:tele"}
+	]
+}

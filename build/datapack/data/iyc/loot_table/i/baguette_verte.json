@@ -1,0 +1,44 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:recovery_compass",
+					"modifier": [
+						{
+							"type": "minecraft:set_components",
+							"components": {
+								"minecraft:max_stack_size": 1,
+								"minecraft:max_damage": 2000,
+								"minecraft:weapon": {
+									"item_damage_per_attack": 2
+								},
+								"minecraft:item_model": "iyc:baguette_verte",
+								"minecraft:item_name": {
+									"text": "Baguette Verte"
+								},
+								"minecraft:lore": [
+									[
+										{"text": "ImagineYourCraft","italic": false,"color": "white","font": "iyc:tooltip"}
+									]
+								],
+								"minecraft:custom_data": {
+									"iyc": {
+										"baguette_verte": true
+									},
+									"smithed": {
+										"id": "iyc:baguette_verte",
+										"origin": "iyc",
+										"ignore": {"functionality": true,"crafting": true}
+									}
+								}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

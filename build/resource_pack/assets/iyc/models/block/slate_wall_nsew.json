@@ -1,0 +1,6 @@
+{
+	"parent": "iyc:block/legacy/wall_nsew",
+	"textures": {
+		"wall": "iyc:block/slate_block"
+	}
+}

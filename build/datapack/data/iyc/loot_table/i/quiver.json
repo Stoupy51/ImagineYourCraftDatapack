@@ -5,23 +5,29 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "minecraft:command_block",
-					"functions": [
+					"name": "minecraft:recovery_compass",
+					"modifier": [
 						{
-							"function": "minecraft:set_components",
+							"type": "minecraft:set_components",
 							"components": {
 								"minecraft:item_model": "iyc:quiver",
 								"minecraft:item_name": {
-									"text": "Quiver",
-									"italic": false,
-									"color": "white"
+									"text": "Quiver"
 								},
 								"minecraft:lore": [
-									["",{"text": "I","color": "white","italic": false,"font": "iyc:icons"},{"text": " ImagineYourCraft","italic": true,"color": "blue"}]
+									[
+										{"text": "ImagineYourCraft","italic": false,"color": "white","font": "iyc:tooltip"}
+									]
 								],
 								"minecraft:custom_data": {
-									"iyc": {"quiver": true},
-									"smithed": {"ignore": {"functionality": true,"crafting": true}}
+									"iyc": {
+										"quiver": true
+									},
+									"smithed": {
+										"id": "iyc:quiver",
+										"origin": "iyc",
+										"ignore": {"functionality": true,"crafting": true}
+									}
 								}
 							}
 						}
@@ -31,4 +37,3 @@
 		}
 	]
 }
-

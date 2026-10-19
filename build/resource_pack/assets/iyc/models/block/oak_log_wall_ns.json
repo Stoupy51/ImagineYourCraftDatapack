@@ -1,0 +1,6 @@
+{
+	"parent": "iyc:block/legacy/wall_ns",
+	"textures": {
+		"wall": "minecraft:block/oak_log"
+	}
+}

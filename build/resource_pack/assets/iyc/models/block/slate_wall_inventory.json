@@ -1,0 +1,6 @@
+{
+	"parent": "iyc:block/legacy/wall_inventory",
+	"textures": {
+		"wall": "iyc:block/slate_block"
+	}
+}

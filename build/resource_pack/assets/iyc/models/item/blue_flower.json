@@ -1,7 +1,6 @@
 {
-	"parent": "minecraft:item/item_frame",
+	"parent": "item/generated",
 	"textures": {
 		"layer0": "iyc:item/blue_flower"
 	}
 }
-

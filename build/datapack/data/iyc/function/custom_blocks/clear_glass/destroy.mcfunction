@@ -1,15 +1,18 @@
 
 #> iyc:custom_blocks/clear_glass/destroy
 #
-# @within	iyc:custom_blocks/_groups/minecraft_structure_void
+# @executed	at @s
+#
+# @within	iyc:custom_blocks/no_block_below
+#			iyc:custom_blocks/_groups/minecraft_glass
 #
 
 # Replace the item with the custom one
-execute as @n[type=item,nbt={Item:{id:"minecraft:structure_void"}},distance=..1] run function iyc:custom_blocks/clear_glass/replace_item
+execute as @n[type=item,nbt={Item:{id:"minecraft:glass"}},distance=..1] run function iyc:custom_blocks/clear_glass/replace_item
 
 # Decrease count scores
 scoreboard players remove #total_custom_blocks iyc.data 1
-scoreboard players remove #total_vanilla_structure_void iyc.data 1
+scoreboard players remove #total_vanilla_glass iyc.data 1
 scoreboard players remove #total_clear_glass iyc.data 1
 
 # Kill the custom block entity

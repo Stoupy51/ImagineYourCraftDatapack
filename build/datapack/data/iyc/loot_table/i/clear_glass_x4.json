@@ -6,9 +6,9 @@
 				{
 					"type": "minecraft:loot_table",
 					"value": "iyc:i/clear_glass",
-					"functions": [
+					"modifier": [
 						{
-							"function": "minecraft:set_count",
+							"type": "minecraft:set_count",
 							"count": 4
 						}
 					]
@@ -17,4 +17,3 @@
 		}
 	]
 }
-

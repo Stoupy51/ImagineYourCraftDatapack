@@ -1,0 +1,15 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"category": "misc",
+	"pattern": [
+		"##",
+		"##"
+	],
+	"key": {
+		"#": "minecraft:slime_ball"
+	},
+	"result": {
+		"id": "minecraft:ender_pearl",
+		"count": 1
+	}
+}

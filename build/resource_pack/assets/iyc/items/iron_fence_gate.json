@@ -1,0 +1,125 @@
+{
+	"model": {
+		"type": "minecraft:select",
+		"property": "minecraft:custom_model_data",
+		"index": 0,
+		"cases": [
+			{
+				"when": "0",
+				"model": {
+					"type": "minecraft:model",
+					"model": "iyc:block/iron_fence_gate_closed"
+				}
+			},
+			{
+				"when": "1",
+				"model": {
+					"type": "minecraft:model",
+					"model": "iyc:block/iron_fence_gate_closed_x0_y90"
+				}
+			},
+			{
+				"when": "2",
+				"model": {
+					"type": "minecraft:model",
+					"model": "iyc:block/iron_fence_gate_closed_x0_y180"
+				}
+			},
+			{
+				"when": "3",
+				"model": {
+					"type": "minecraft:model",
+					"model": "iyc:block/iron_fence_gate_closed_x0_y270"
+				}
+			},
+			{
+				"when": "4",
+				"model": {
+					"type": "minecraft:model",
+					"model": "iyc:block/iron_fence_gate_open"
+				}
+			},
+			{
+				"when": "5",
+				"model": {
+					"type": "minecraft:model",
+					"model": "iyc:block/iron_fence_gate_open_x0_y90"
+				}
+			},
+			{
+				"when": "6",
+				"model": {
+					"type": "minecraft:model",
+					"model": "iyc:block/iron_fence_gate_open_x0_y180"
+				}
+			},
+			{
+				"when": "7",
+				"model": {
+					"type": "minecraft:model",
+					"model": "iyc:block/iron_fence_gate_open_x0_y270"
+				}
+			},
+			{
+				"when": "8",
+				"model": {
+					"type": "minecraft:model",
+					"model": "iyc:block/iron_wall_gate_closed"
+				}
+			},
+			{
+				"when": "9",
+				"model": {
+					"type": "minecraft:model",
+					"model": "iyc:block/iron_wall_gate_closed_x0_y90"
+				}
+			},
+			{
+				"when": "10",
+				"model": {
+					"type": "minecraft:model",
+					"model": "iyc:block/iron_wall_gate_closed_x0_y180"
+				}
+			},
+			{
+				"when": "11",
+				"model": {
+					"type": "minecraft:model",
+					"model": "iyc:block/iron_wall_gate_closed_x0_y270"
+				}
+			},
+			{
+				"when": "12",
+				"model": {
+					"type": "minecraft:model",
+					"model": "iyc:block/iron_wall_gate_open"
+				}
+			},
+			{
+				"when": "13",
+				"model": {
+					"type": "minecraft:model",
+					"model": "iyc:block/iron_wall_gate_open_x0_y90"
+				}
+			},
+			{
+				"when": "14",
+				"model": {
+					"type": "minecraft:model",
+					"model": "iyc:block/iron_wall_gate_open_x0_y180"
+				}
+			},
+			{
+				"when": "15",
+				"model": {
+					"type": "minecraft:model",
+					"model": "iyc:block/iron_wall_gate_open_x0_y270"
+				}
+			}
+		],
+		"fallback": {
+			"type": "minecraft:model",
+			"model": "iyc:item/iron_fence_gate"
+		}
+	}
+}

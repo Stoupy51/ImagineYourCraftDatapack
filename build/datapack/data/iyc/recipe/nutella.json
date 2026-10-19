@@ -1,0 +1,52 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"category": "misc",
+	"group": "nutella",
+	"pattern": [
+		"X X",
+		"X#X",
+		" X "
+	],
+	"key": {
+		"X": "minecraft:glass",
+		"#": "minecraft:cocoa_beans"
+	},
+	"result": {
+		"id": "minecraft:recovery_compass",
+		"count": 1,
+		"components": {
+			"minecraft:food": {
+				"nutrition": 10,
+				"saturation": 20.0,
+				"can_always_eat": false
+			},
+			"minecraft:item_model": "iyc:nutella",
+			"minecraft:item_name": {
+				"text": "Nutella"
+			},
+			"minecraft:lore": [
+				[
+					{
+						"text": "ImagineYourCraft",
+						"italic": false,
+						"color": "white",
+						"font": "iyc:tooltip"
+					}
+				]
+			],
+			"minecraft:custom_data": {
+				"iyc": {
+					"nutella": true
+				},
+				"smithed": {
+					"id": "iyc:nutella",
+					"origin": "iyc",
+					"ignore": {
+						"functionality": true,
+						"crafting": true
+					}
+				}
+			}
+		}
+	}
+}

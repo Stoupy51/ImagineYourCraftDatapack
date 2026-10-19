@@ -1,10 +1,6 @@
 {
-	"parent": "block/cake",
+	"parent": "item/generated",
 	"textures": {
-		"bottom": "iyc:item/cherry_cake_bottom",
-		"side": "iyc:item/cherry_cake_side",
-		"top": "iyc:item/cherry_cake_top",
-		"inside": "iyc:item/cherry_cake_inner"
+		"layer0": "iyc:item/cherry_cake"
 	}
 }
-

@@ -1,0 +1,27 @@
+{
+	"model": {
+		"type": "minecraft:select",
+		"property": "minecraft:custom_model_data",
+		"index": 0,
+		"cases": [
+			{
+				"when": "0",
+				"model": {
+					"type": "minecraft:model",
+					"model": "iyc:block/glowstone_pressure_plate_up"
+				}
+			},
+			{
+				"when": "1",
+				"model": {
+					"type": "minecraft:model",
+					"model": "iyc:block/glowstone_pressure_plate_down"
+				}
+			}
+		],
+		"fallback": {
+			"type": "minecraft:model",
+			"model": "iyc:item/glowstone_pressure_plate"
+		}
+	}
+}

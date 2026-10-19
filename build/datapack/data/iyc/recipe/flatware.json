@@ -1,0 +1,70 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"category": "misc",
+	"group": "flatware",
+	"pattern": [
+		"X#X",
+		"X#X"
+	],
+	"key": {
+		"X": "minecraft:iron_ingot",
+		"#": "minecraft:glass"
+	},
+	"result": {
+		"id": "minecraft:furnace",
+		"count": 2,
+		"components": {
+			"minecraft:container": [
+				{
+					"slot": 0,
+					"item": {
+						"id": "minecraft:stone",
+						"count": 1,
+						"components": {
+							"minecraft:custom_data": {
+								"smithed": {
+									"block": {
+										"id": "iyc:flatware",
+										"from": "iyc"
+									}
+								}
+							}
+						}
+					}
+				}
+			],
+			"minecraft:tooltip_display": {
+				"hidden_components": [
+					"minecraft:container"
+				]
+			},
+			"minecraft:item_model": "iyc:flatware",
+			"minecraft:item_name": {
+				"text": "Flatware"
+			},
+			"minecraft:lore": [
+				[
+					{
+						"text": "ImagineYourCraft",
+						"italic": false,
+						"color": "white",
+						"font": "iyc:tooltip"
+					}
+				]
+			],
+			"minecraft:custom_data": {
+				"iyc": {
+					"flatware": true
+				},
+				"smithed": {
+					"id": "iyc:flatware",
+					"origin": "iyc",
+					"ignore": {
+						"functionality": true,
+						"crafting": true
+					}
+				}
+			}
+		}
+	}
+}

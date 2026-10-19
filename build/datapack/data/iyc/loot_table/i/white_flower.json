@@ -5,23 +5,40 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "minecraft:item_frame",
-					"functions": [
+					"name": "minecraft:furnace",
+					"modifier": [
 						{
-							"function": "minecraft:set_components",
+							"type": "minecraft:set_components",
 							"components": {
+								"minecraft:container": [
+									{
+										"slot": 0,
+										"item": {"id": "minecraft:stone","count": 1,"components": {"minecraft:custom_data": {"smithed": {"block": {"id": "iyc:white_flower","from": "iyc"}}}}}
+									}
+								],
+								"minecraft:tooltip_display": {
+									"hidden_components": [
+										"minecraft:container"
+									]
+								},
 								"minecraft:item_model": "iyc:white_flower",
 								"minecraft:item_name": {
-									"text": "White Flower",
-									"italic": false,
-									"color": "white"
+									"text": "White Flower"
 								},
 								"minecraft:lore": [
-									["",{"text": "I","color": "white","italic": false,"font": "iyc:icons"},{"text": " ImagineYourCraft","italic": true,"color": "blue"}]
+									[
+										{"text": "ImagineYourCraft","italic": false,"color": "white","font": "iyc:tooltip"}
+									]
 								],
 								"minecraft:custom_data": {
-									"iyc": {"white_flower": true},
-									"smithed": {"ignore": {"functionality": true,"crafting": true}}
+									"iyc": {
+										"white_flower": true
+									},
+									"smithed": {
+										"id": "iyc:white_flower",
+										"origin": "iyc",
+										"ignore": {"functionality": true,"crafting": true}
+									}
 								}
 							}
 						}
@@ -31,4 +48,3 @@
 		}
 	]
 }
-

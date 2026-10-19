@@ -1,7 +1,9 @@
 
 #> iyc:custom_blocks/hops_seeds/place_secondary
 #
-# @within	iyc:custom_blocks/hops_seeds/place_main
+# @executed	at @s
+#
+# @within	iyc:custom_blocks/hops_seeds/place_main [ at @s ]
 #
 
 # Add convention and utils tags, and the custom block tag
@@ -12,13 +14,21 @@ tag @s add smithed.block
 tag @s add iyc.custom_block
 tag @s add iyc.hops_seeds
 tag @s add iyc.vanilla.minecraft_wheat
+tag @s add iyc.growing_seed
 
 # Add a custom name
-data merge entity @s {"CustomName": {"text": "Hops Seeds","italic": false,"color": "white"}}
-
+data merge entity @s {"CustomName": {"text": "Hops Seeds"}}
 
 # Modify item display entity to match the custom block
-item replace entity @s container.0 with minecraft:furnace[item_model="iyc:hops_seeds"]
+item replace entity @s contents with minecraft:furnace[item_model="iyc:hops_seeds"]
 data modify entity @s transformation.scale set value [1.002f,1.002f,1.002f]
-data modify entity @s brightness set value {block:15,sky:15}
+function iyc:custom_blocks/compute_brightness
+
+# Update seed model
+scoreboard players add @s iyc.growth_time 0
+function iyc:custom_blocks/hops_seeds/update_seed_model
+
+# Add tag for loop every minute
+tag @s add iyc.minute
+scoreboard players add #minute_entities iyc.data 1
 

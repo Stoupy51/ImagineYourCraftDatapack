@@ -6,22 +6,37 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:item_frame",
-					"functions": [
+					"modifier": [
 						{
-							"function": "minecraft:set_components",
+							"type": "minecraft:set_components",
 							"components": {
+								"minecraft:entity_data": {
+									"id": "minecraft:item_frame",
+									"Tags": [
+										"iyc.new",
+										"iyc.hops_seeds"
+									],
+									"Invisible": true,
+									"Silent": true
+								},
 								"minecraft:item_model": "iyc:hops_seeds",
 								"minecraft:item_name": {
-									"text": "Hops Seeds",
-									"italic": false,
-									"color": "white"
+									"text": "Hops Seeds"
 								},
 								"minecraft:lore": [
-									["",{"text": "I","color": "white","italic": false,"font": "iyc:icons"},{"text": " ImagineYourCraft","italic": true,"color": "blue"}]
+									[
+										{"text": "ImagineYourCraft","italic": false,"color": "white","font": "iyc:tooltip"}
+									]
 								],
 								"minecraft:custom_data": {
-									"iyc": {"hops_seeds": true},
-									"smithed": {"ignore": {"functionality": true,"crafting": true}}
+									"iyc": {
+										"hops_seeds": true
+									},
+									"smithed": {
+										"id": "iyc:hops_seeds",
+										"origin": "iyc",
+										"ignore": {"functionality": true,"crafting": true}
+									}
 								}
 							}
 						}
@@ -31,4 +46,3 @@
 		}
 	]
 }
-

@@ -1,7 +1,9 @@
 
 #> iyc:custom_blocks/spruce_wood_lantern/place_secondary
 #
-# @within	iyc:custom_blocks/spruce_wood_lantern/place_main
+# @executed	at @s
+#
+# @within	iyc:custom_blocks/spruce_wood_lantern/place_main [ at @s ]
 #
 
 # Add convention and utils tags, and the custom block tag
@@ -14,11 +16,15 @@ tag @s add iyc.spruce_wood_lantern
 tag @s add iyc.vanilla.minecraft_ochre_froglight
 
 # Add a custom name
-data merge entity @s {"CustomName": {"text": "Spruce Wood Lantern","italic": false,"color": "white"}}
-
+data merge entity @s {"CustomName": {"text": "Spruce Wood Lantern"}}
 
 # Modify item display entity to match the custom block
-item replace entity @s container.0 with minecraft:furnace[item_model="iyc:spruce_wood_lantern"]
+item replace entity @s contents with minecraft:furnace[item_model="iyc:spruce_wood_lantern"]
 data modify entity @s transformation.scale set value [1.002f,1.002f,1.002f]
-data modify entity @s brightness set value {block:15,sky:15}
+function iyc:custom_blocks/compute_brightness
+
+# Original model
+tag @s add iyc.original
+scoreboard players set @s iyc.shape -1
+function iyc:shapes/fixed_0
 

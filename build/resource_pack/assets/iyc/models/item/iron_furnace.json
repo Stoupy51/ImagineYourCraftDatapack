@@ -1,9 +1,3 @@
 {
-	"parent": "block/orientable",
-	"textures": {
-		"front": "iyc:item/iron_furnace_front",
-		"side": "iyc:item/iron_furnace_side",
-		"top": "iyc:item/iron_furnace_top"
-	}
+	"parent": "iyc:block/iron_furnace"
 }
-

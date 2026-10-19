@@ -1,0 +1,70 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"category": "building",
+	"group": "step_block",
+	"pattern": [
+		"XXX",
+		"XXX",
+		"XXX"
+	],
+	"key": {
+		"X": "minecraft:smooth_stone_slab"
+	},
+	"result": {
+		"id": "minecraft:furnace",
+		"count": 5,
+		"components": {
+			"minecraft:container": [
+				{
+					"slot": 0,
+					"item": {
+						"id": "minecraft:stone",
+						"count": 1,
+						"components": {
+							"minecraft:custom_data": {
+								"smithed": {
+									"block": {
+										"id": "iyc:step_block",
+										"from": "iyc"
+									}
+								}
+							}
+						}
+					}
+				}
+			],
+			"minecraft:tooltip_display": {
+				"hidden_components": [
+					"minecraft:container"
+				]
+			},
+			"minecraft:item_model": "iyc:step_block",
+			"minecraft:item_name": {
+				"text": "Step Block"
+			},
+			"minecraft:lore": [
+				[
+					{
+						"text": "ImagineYourCraft",
+						"italic": false,
+						"color": "white",
+						"font": "iyc:tooltip"
+					}
+				]
+			],
+			"minecraft:custom_data": {
+				"iyc": {
+					"step_block": true
+				},
+				"smithed": {
+					"id": "iyc:step_block",
+					"origin": "iyc",
+					"ignore": {
+						"functionality": true,
+						"crafting": true
+					}
+				}
+			}
+		}
+	}
+}

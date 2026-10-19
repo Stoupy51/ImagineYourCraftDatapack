@@ -1,0 +1,55 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:furnace",
+					"modifier": [
+						{
+							"type": "minecraft:set_components",
+							"components": {
+								"minecraft:container": [
+									{
+										"slot": 0,
+										"item": {"id": "minecraft:stone","count": 1,"components": {"minecraft:custom_data": {"smithed": {"block": {"id": "iyc:light_gray_blob","from": "iyc"}}}}}
+									}
+								],
+								"minecraft:tooltip_display": {
+									"hidden_components": [
+										"minecraft:container"
+									]
+								},
+								"minecraft:custom_model_data": {
+									"colors": [
+										10066329
+									]
+								},
+								"minecraft:item_model": "iyc:light_gray_blob",
+								"minecraft:item_name": {
+									"text": "Light Gray Blob"
+								},
+								"minecraft:lore": [
+									[
+										{"text": "ImagineYourCraft","italic": false,"color": "white","font": "iyc:tooltip"}
+									]
+								],
+								"minecraft:custom_data": {
+									"iyc": {
+										"light_gray_blob": true
+									},
+									"smithed": {
+										"id": "iyc:light_gray_blob",
+										"origin": "iyc",
+										"ignore": {"functionality": true,"crafting": true}
+									}
+								}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

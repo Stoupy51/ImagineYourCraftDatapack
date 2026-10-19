@@ -1,0 +1,17 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"category": "misc",
+	"pattern": [
+		"###",
+		"#D#",
+		"###"
+	],
+	"key": {
+		"#": "minecraft:sand",
+		"D": "minecraft:blue_dye"
+	},
+	"result": {
+		"id": "minecraft:blue_concrete_powder",
+		"count": 8
+	}
+}

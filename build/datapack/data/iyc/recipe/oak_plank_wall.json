@@ -1,0 +1,69 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"category": "building",
+	"group": "oak_plank_wall",
+	"pattern": [
+		"###",
+		"###"
+	],
+	"key": {
+		"#": "minecraft:stick"
+	},
+	"result": {
+		"id": "minecraft:furnace",
+		"count": 5,
+		"components": {
+			"minecraft:container": [
+				{
+					"slot": 0,
+					"item": {
+						"id": "minecraft:stone",
+						"count": 1,
+						"components": {
+							"minecraft:custom_data": {
+								"smithed": {
+									"block": {
+										"id": "iyc:oak_plank_wall",
+										"from": "iyc"
+									}
+								}
+							}
+						}
+					}
+				}
+			],
+			"minecraft:tooltip_display": {
+				"hidden_components": [
+					"minecraft:container"
+				]
+			},
+			"minecraft:item_model": "iyc:oak_plank_wall",
+			"minecraft:item_name": {
+				"text": "Oak Plank Wall"
+			},
+			"minecraft:lore": [
+				[
+					{
+						"text": "ImagineYourCraft",
+						"italic": false,
+						"color": "white",
+						"font": "iyc:tooltip"
+					}
+				]
+			],
+			"minecraft:custom_data": {
+				"iyc": {
+					"oak_plank_wall": true
+				},
+				"smithed": {
+					"id": "iyc:oak_plank_wall",
+					"origin": "iyc",
+					"ignore": {
+						"functionality": true,
+						"crafting": true
+					}
+				}
+			}
+		}
+	}
+}

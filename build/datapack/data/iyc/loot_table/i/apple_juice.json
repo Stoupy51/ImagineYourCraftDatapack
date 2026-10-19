@@ -5,31 +5,51 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "minecraft:command_block",
-					"functions": [
+					"name": "minecraft:recovery_compass",
+					"modifier": [
 						{
-							"function": "minecraft:set_components",
+							"type": "minecraft:set_components",
 							"components": {
 								"minecraft:food": {
-									"can_always_eat": true,
-									"nutrition": 2,
-									"saturation": 0.6
+									"nutrition": 4,
+									"saturation": 4.8,
+									"can_always_eat": true
 								},
+								"minecraft:max_stack_size": 1,
 								"minecraft:consumable": {
-									"on_consume_effects": [{"type": "minecraft:apply_effects","effects": [{"id": "minecraft:jump_boost","duration": 600,"amplifier": 0}]}]
+									"animation": "drink",
+									"sound": "minecraft:entity.generic.drink",
+									"on_consume_effects": [
+										{"type": "minecraft:apply_effects","effects": [{"id": "minecraft:jump_boost","duration": 600,"amplifier": 0}]}
+									]
 								},
 								"minecraft:item_model": "iyc:apple_juice",
 								"minecraft:item_name": {
-									"text": "Apple Juice",
-									"italic": false,
-									"color": "white"
+									"text": "Apple Juice"
 								},
 								"minecraft:lore": [
-									["",{"text": "I","color": "white","italic": false,"font": "iyc:icons"},{"text": " ImagineYourCraft","italic": true,"color": "blue"}]
+									[
+										{"text": "ImagineYourCraft","italic": false,"color": "white","font": "iyc:tooltip"}
+									]
 								],
 								"minecraft:custom_data": {
-									"iyc": {"apple_juice": true},
-									"smithed": {"ignore": {"functionality": true,"crafting": true}}
+									"iyc": {
+										"apple_juice": true
+									},
+									"smithed": {
+										"id": "iyc:apple_juice",
+										"origin": "iyc",
+										"ignore": {"functionality": true,"crafting": true}
+									}
+								},
+								"minecraft:use_remainder": {
+									"id": "minecraft:recovery_compass",
+									"count": 1,
+									"components": {
+										"minecraft:item_name": {"text": "Empty Glass"},
+										"minecraft:item_model": "iyc:empty_glass",
+										"minecraft:custom_data": {"iyc": {"empty_glass": true},"smithed": {"id": "iyc:empty_glass","origin": "iyc","ignore": {"functionality": true,"crafting": true}}}
+									}
 								}
 							}
 						}
@@ -39,4 +59,3 @@
 		}
 	]
 }
-

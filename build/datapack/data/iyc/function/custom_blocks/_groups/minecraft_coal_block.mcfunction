@@ -1,6 +1,8 @@
 
 #> iyc:custom_blocks/_groups/minecraft_coal_block
 #
+# @executed	as @e[type=item_display,tag=...,predicate=!iyc:check_vanilla_blocks] & at @s
+#
 # @within	iyc:custom_blocks/destroy
 #
 

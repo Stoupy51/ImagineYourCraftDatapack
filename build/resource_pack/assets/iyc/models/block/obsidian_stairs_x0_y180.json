@@ -1,0 +1,15 @@
+{
+	"parent": "iyc:block/obsidian_stairs",
+	"elements": [
+		{
+			"from": [-0.0625,-0.0625,-0.0625],
+			"to": [16.0625,8.0625,16.0625],
+			"faces": {"down": {"uv": [0.0,0.0,16.0,16.0],"texture": "#bottom","cullface": "down"},"up": {"uv": [0.0,0.0,16.0,16.0],"texture": "#top"},"south": {"uv": [0.0,8.0,16.0,16.0],"texture": "#side","cullface": "north"},"north": {"uv": [0.0,8.0,16.0,16.0],"texture": "#side","cullface": "south"},"east": {"uv": [0.0,8.0,16.0,16.0],"texture": "#side","cullface": "west"},"west": {"uv": [0.0,8.0,16.0,16.0],"texture": "#side","cullface": "east"}}
+		},
+		{
+			"from": [-0.0625,7.9375,-0.0625],
+			"to": [8.0625,16.0625,16.0625],
+			"faces": {"down": {"uv": [0.0,0.0,8.0,16.0],"texture": "#bottom","cullface": "down"},"up": {"uv": [0.0,0.0,8.0,16.0],"texture": "#top","cullface": "up"},"south": {"uv": [0.0,0.0,8.0,8.0],"texture": "#side","cullface": "north"},"north": {"uv": [8.0,0.0,16.0,8.0],"texture": "#side","cullface": "south"},"east": {"uv": [0.0,0.0,16.0,8.0],"texture": "#side"},"west": {"uv": [0.0,0.0,16.0,8.0],"texture": "#side","cullface": "east"}}
+		}
+	]
+}

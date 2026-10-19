@@ -1,0 +1,55 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:furnace",
+					"modifier": [
+						{
+							"type": "minecraft:set_components",
+							"components": {
+								"minecraft:container": [
+									{
+										"slot": 0,
+										"item": {"id": "minecraft:stone","count": 1,"components": {"minecraft:custom_data": {"smithed": {"block": {"id": "iyc:purple_iron_fence","from": "iyc"}}}}}
+									}
+								],
+								"minecraft:tooltip_display": {
+									"hidden_components": [
+										"minecraft:container"
+									]
+								},
+								"minecraft:custom_model_data": {
+									"colors": [
+										8339378
+									]
+								},
+								"minecraft:item_model": "iyc:purple_iron_fence",
+								"minecraft:item_name": {
+									"text": "Purple Iron Fence"
+								},
+								"minecraft:lore": [
+									[
+										{"text": "ImagineYourCraft","italic": false,"color": "white","font": "iyc:tooltip"}
+									]
+								],
+								"minecraft:custom_data": {
+									"iyc": {
+										"purple_iron_fence": true
+									},
+									"smithed": {
+										"id": "iyc:purple_iron_fence",
+										"origin": "iyc",
+										"ignore": {"functionality": true,"crafting": true}
+									}
+								}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

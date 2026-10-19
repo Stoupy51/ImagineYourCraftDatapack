@@ -5,14 +5,21 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "minecraft:leather_chestplate",
-					"functions": [
+					"name": "minecraft:iron_chestplate",
+					"modifier": [
 						{
-							"function": "minecraft:set_components",
+							"type": "minecraft:set_components",
 							"components": {
 								"minecraft:custom_data": {
-									"smithed": {"dict": {"armor": {"steel": true,"chestplate": true}},"ignore": {"functionality": true,"crafting": true}},
-									"iyc": {"steel_chestplate": true}
+									"smithed": {
+										"dict": {"armor": {"steel": true,"chestplate": true}},
+										"id": "iyc:steel_chestplate",
+										"origin": "iyc",
+										"ignore": {"functionality": true,"crafting": true}
+									},
+									"iyc": {
+										"steel_chestplate": true
+									}
 								},
 								"minecraft:max_damage": 426,
 								"minecraft:equippable": {
@@ -20,16 +27,22 @@
 									"asset_id": "iyc:steel"
 								},
 								"minecraft:attribute_modifiers": [
-									{"type": "armor","amount": 6,"operation": "add_value","slot": "chest","id": "iyc:armor.chest"}
+									{
+										"type": "armor",
+										"amount": 6,
+										"operation": "add_value",
+										"slot": "chest",
+										"id": "iyc:armor.chest"
+									}
 								],
 								"minecraft:item_model": "iyc:steel_chestplate",
 								"minecraft:item_name": {
-									"text": "Steel Chestplate",
-									"italic": false,
-									"color": "white"
+									"text": "Steel Chestplate"
 								},
 								"minecraft:lore": [
-									["",{"text": "I","color": "white","italic": false,"font": "iyc:icons"},{"text": " ImagineYourCraft","italic": true,"color": "blue"}]
+									[
+										{"text": "ImagineYourCraft","italic": false,"color": "white","font": "iyc:tooltip"}
+									]
 								]
 							}
 						}
@@ -39,4 +52,3 @@
 		}
 	]
 }
-

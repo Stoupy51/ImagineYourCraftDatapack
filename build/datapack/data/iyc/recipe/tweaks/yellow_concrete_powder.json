@@ -1,0 +1,17 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"category": "misc",
+	"pattern": [
+		"###",
+		"#D#",
+		"###"
+	],
+	"key": {
+		"#": "minecraft:sand",
+		"D": "minecraft:yellow_dye"
+	},
+	"result": {
+		"id": "minecraft:yellow_concrete_powder",
+		"count": 8
+	}
+}

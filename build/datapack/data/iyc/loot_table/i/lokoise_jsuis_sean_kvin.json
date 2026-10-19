@@ -5,14 +5,21 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "minecraft:command_block",
-					"functions": [
+					"name": "minecraft:recovery_compass",
+					"modifier": [
 						{
-							"function": "minecraft:set_components",
+							"type": "minecraft:set_components",
 							"components": {
 								"minecraft:custom_data": {
-									"iyc": {"lokoise_jsuis_sean_kvin": true},
-									"smithed": {"dict": {"record": {"lokoise_jsuis_sean_kvin": true}},"ignore": {"functionality": true,"crafting": true}}
+									"iyc": {
+										"lokoise_jsuis_sean_kvin": true
+									},
+									"smithed": {
+										"dict": {"record": {"lokoise_jsuis_sean_kvin": true,"item_name": "Lokoise - J'suis Sean Kévin"},"jukebox_song": {"comparator_output": 4,"length_in_seconds": 229,"sound_event": {"sound_id": "iyc:lokoise_jsuis_sean_kvin"},"description": {"text": "Lokoise - J'suis Sean Kévin"}}},
+										"id": "iyc:lokoise_jsuis_sean_kvin",
+										"origin": "iyc",
+										"ignore": {"functionality": true,"crafting": true}
+									}
 								},
 								"minecraft:item_name": {
 									"text": "Music Disc",
@@ -23,7 +30,9 @@
 								"minecraft:rarity": "rare",
 								"minecraft:item_model": "iyc:lokoise_jsuis_sean_kvin",
 								"minecraft:lore": [
-									["",{"text": "I","color": "white","italic": false,"font": "iyc:icons"},{"text": " ImagineYourCraft","italic": true,"color": "blue"}]
+									[
+										{"text": "ImagineYourCraft","italic": false,"color": "white","font": "iyc:tooltip"}
+									]
 								]
 							}
 						}
@@ -33,4 +42,3 @@
 		}
 	]
 }
-

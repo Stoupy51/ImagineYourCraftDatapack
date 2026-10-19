@@ -1,0 +1,17 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"category": "misc",
+	"pattern": [
+		"###",
+		"#X#",
+		"###"
+	],
+	"key": {
+		"#": "minecraft:stone_bricks",
+		"X": "minecraft:gunpowder"
+	},
+	"result": {
+		"id": "minecraft:cracked_stone_bricks",
+		"count": 4
+	}
+}

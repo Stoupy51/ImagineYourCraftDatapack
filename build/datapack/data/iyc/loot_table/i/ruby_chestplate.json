@@ -5,32 +5,54 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "minecraft:leather_chestplate",
-					"functions": [
+					"name": "minecraft:diamond_chestplate",
+					"modifier": [
 						{
-							"function": "minecraft:set_components",
+							"type": "minecraft:set_components",
 							"components": {
 								"minecraft:custom_data": {
-									"smithed": {"dict": {"armor": {"ruby": true,"chestplate": true}},"ignore": {"functionality": true,"crafting": true}},
-									"iyc": {"ruby_chestplate": true}
+									"smithed": {
+										"dict": {"armor": {"ruby": true,"chestplate": true}},
+										"id": "iyc:ruby_chestplate",
+										"origin": "iyc",
+										"ignore": {"functionality": true,"crafting": true}
+									},
+									"iyc": {
+										"ruby_chestplate": true
+									}
 								},
-								"minecraft:max_damage": 557,
+								"minecraft:max_damage": 736,
 								"minecraft:equippable": {
 									"slot": "chest",
 									"asset_id": "iyc:ruby"
 								},
 								"minecraft:attribute_modifiers": [
-									{"type": "armor","amount": 8.5,"operation": "add_value","slot": "chest","id": "iyc:armor.chest"},
-									{"type": "armor_toughness","amount": 2,"operation": "add_value","slot": "chest","id": "iyc:armor_toughness.chest"}
+									{
+										"type": "armor",
+										"amount": 8,
+										"operation": "add_value",
+										"slot": "chest",
+										"id": "iyc:armor.chest"
+									},
+									{
+										"type": "armor_toughness",
+										"amount": 2,
+										"operation": "add_value",
+										"slot": "chest",
+										"id": "iyc:armor_toughness.chest"
+									}
 								],
+								"minecraft:enchantable": {
+									"value": 8
+								},
 								"minecraft:item_model": "iyc:ruby_chestplate",
 								"minecraft:item_name": {
-									"text": "Ruby Chestplate",
-									"italic": false,
-									"color": "white"
+									"text": "Ruby Chestplate"
 								},
 								"minecraft:lore": [
-									["",{"text": "I","color": "white","italic": false,"font": "iyc:icons"},{"text": " ImagineYourCraft","italic": true,"color": "blue"}]
+									[
+										{"text": "ImagineYourCraft","italic": false,"color": "white","font": "iyc:tooltip"}
+									]
 								]
 							}
 						}
@@ -40,4 +62,3 @@
 		}
 	]
 }
-

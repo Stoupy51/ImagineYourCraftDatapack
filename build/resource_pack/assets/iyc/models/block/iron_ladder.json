@@ -1,0 +1,7 @@
+{
+	"parent": "iyc:block/legacy/ladder",
+	"textures": {
+		"particle": "iyc:block/iron_ladder",
+		"texture": "iyc:block/iron_ladder"
+	}
+}

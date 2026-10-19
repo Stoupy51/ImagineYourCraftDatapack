@@ -1,0 +1,6 @@
+{
+	"parent": "iyc:block/shelf",
+	"textures": {
+		"texture": "minecraft:block/oak_planks"
+	}
+}

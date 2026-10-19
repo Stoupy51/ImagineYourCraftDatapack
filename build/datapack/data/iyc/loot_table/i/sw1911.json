@@ -5,24 +5,34 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "minecraft:command_block",
-					"functions": [
+					"name": "minecraft:recovery_compass",
+					"modifier": [
 						{
-							"function": "minecraft:set_components",
+							"type": "minecraft:set_components",
 							"components": {
-								"minecraft:lore": [
-									{"text": "Uses steel nuggets as bullets","color": "gray","italic": false},
-									["",{"text": "I","color": "white","italic": false,"font": "iyc:icons"},{"text": " ImagineYourCraft","italic": true,"color": "blue"}]
-								],
+								"minecraft:max_stack_size": 1,
+								"minecraft:max_damage": 2000,
+								"minecraft:weapon": {
+									"item_damage_per_attack": 2
+								},
 								"minecraft:item_model": "iyc:sw1911",
 								"minecraft:item_name": {
-									"text": "Sw1911",
-									"italic": false,
-									"color": "white"
+									"text": "Sw1911"
 								},
+								"minecraft:lore": [
+									[
+										{"text": "ImagineYourCraft","italic": false,"color": "white","font": "iyc:tooltip"}
+									]
+								],
 								"minecraft:custom_data": {
-									"iyc": {"sw1911": true},
-									"smithed": {"ignore": {"functionality": true,"crafting": true}}
+									"iyc": {
+										"sw1911": true
+									},
+									"smithed": {
+										"id": "iyc:sw1911",
+										"origin": "iyc",
+										"ignore": {"functionality": true,"crafting": true}
+									}
 								}
 							}
 						}
@@ -32,4 +42,3 @@
 		}
 	]
 }
-

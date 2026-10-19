@@ -1,7 +1,9 @@
 
 #> iyc:custom_blocks/adamantium_ore/place_secondary
 #
-# @within	iyc:custom_blocks/adamantium_ore/place_main
+# @executed	at @s
+#
+# @within	iyc:custom_blocks/adamantium_ore/place_main [ at @s ]
 #
 
 # Add convention and utils tags, and the custom block tag
@@ -14,11 +16,10 @@ tag @s add iyc.adamantium_ore
 tag @s add iyc.vanilla.minecraft_polished_deepslate
 
 # Add a custom name
-data merge entity @s {"CustomName": {"text": "Adamantium Ore","italic": false,"color": "white"}}
-
+data merge entity @s {"CustomName": {"text": "Adamantium Ore"}}
 
 # Modify item display entity to match the custom block
-item replace entity @s container.0 with minecraft:furnace[item_model="iyc:adamantium_ore"]
+item replace entity @s contents with minecraft:furnace[item_model="iyc:adamantium_ore"]
 data modify entity @s transformation.scale set value [1.002f,1.002f,1.002f]
-data modify entity @s brightness set value {block:15,sky:15}
+function iyc:custom_blocks/compute_brightness
 

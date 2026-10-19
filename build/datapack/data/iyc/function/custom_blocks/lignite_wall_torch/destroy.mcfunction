@@ -1,0 +1,22 @@
+
+#> iyc:custom_blocks/lignite_wall_torch/destroy
+#
+# @executed	at @s
+#
+# @within	iyc:custom_blocks/no_block_below
+#			iyc:custom_blocks/_groups/minecraft_wall_torch
+#
+
+execute as @n[type=item,nbt={Item:{id:"minecraft:torch"}},distance=..1] run function iyc:custom_blocks/lignite_wall_torch/foreign_drop
+
+# Replace the item with the custom one
+execute as @n[type=item,nbt={Item:{id:"minecraft:wall_torch"}},distance=..1] run function iyc:custom_blocks/lignite_wall_torch/replace_item
+
+# Decrease count scores
+scoreboard players remove #total_custom_blocks iyc.data 1
+scoreboard players remove #total_vanilla_wall_torch iyc.data 1
+scoreboard players remove #total_lignite_wall_torch iyc.data 1
+
+# Kill the custom block entity
+kill @s
+

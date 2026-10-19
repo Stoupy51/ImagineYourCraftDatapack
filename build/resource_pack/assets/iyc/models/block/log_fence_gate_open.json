@@ -1,0 +1,6 @@
+{
+	"parent": "iyc:block/legacy/fence_gate_open",
+	"textures": {
+		"texture": "minecraft:block/oak_log"
+	}
+}

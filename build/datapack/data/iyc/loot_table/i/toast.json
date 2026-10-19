@@ -5,23 +5,34 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "minecraft:command_block",
-					"functions": [
+					"name": "minecraft:recovery_compass",
+					"modifier": [
 						{
-							"function": "minecraft:set_components",
+							"type": "minecraft:set_components",
 							"components": {
+								"minecraft:food": {
+									"nutrition": 2,
+									"saturation": 4.0,
+									"can_always_eat": false
+								},
 								"minecraft:item_model": "iyc:toast",
 								"minecraft:item_name": {
-									"text": "Toast",
-									"italic": false,
-									"color": "white"
+									"text": "Toast"
 								},
 								"minecraft:lore": [
-									["",{"text": "I","color": "white","italic": false,"font": "iyc:icons"},{"text": " ImagineYourCraft","italic": true,"color": "blue"}]
+									[
+										{"text": "ImagineYourCraft","italic": false,"color": "white","font": "iyc:tooltip"}
+									]
 								],
 								"minecraft:custom_data": {
-									"iyc": {"toast": true},
-									"smithed": {"ignore": {"functionality": true,"crafting": true}}
+									"iyc": {
+										"toast": true
+									},
+									"smithed": {
+										"id": "iyc:toast",
+										"origin": "iyc",
+										"ignore": {"functionality": true,"crafting": true}
+									}
 								}
 							}
 						}
@@ -31,4 +42,3 @@
 		}
 	]
 }
-

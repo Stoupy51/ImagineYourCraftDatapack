@@ -1,7 +1,10 @@
 
 #> iyc:custom_blocks/box_jump/destroy
 #
-# @within	iyc:custom_blocks/_groups/minecraft_oak_planks
+# @executed	at @s
+#
+# @within	iyc:custom_blocks/no_block_below
+#			iyc:custom_blocks/_groups/minecraft_oak_planks
 #
 
 # Replace the item with the custom one
@@ -14,4 +17,7 @@ scoreboard players remove #total_box_jump iyc.data 1
 
 # Kill the custom block entity
 kill @s
+
+# Decrease the number of entities with tick tag
+scoreboard players remove #tick_entities iyc.data 1
 

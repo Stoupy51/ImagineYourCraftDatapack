@@ -1,0 +1,70 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"category": "building",
+	"group": "jungle_log_slopes",
+	"pattern": [
+		"  #",
+		" # ",
+		"###"
+	],
+	"key": {
+		"#": "minecraft:jungle_log"
+	},
+	"result": {
+		"id": "minecraft:furnace",
+		"count": 2,
+		"components": {
+			"minecraft:container": [
+				{
+					"slot": 0,
+					"item": {
+						"id": "minecraft:stone",
+						"count": 1,
+						"components": {
+							"minecraft:custom_data": {
+								"smithed": {
+									"block": {
+										"id": "iyc:jungle_log_slopes",
+										"from": "iyc"
+									}
+								}
+							}
+						}
+					}
+				}
+			],
+			"minecraft:tooltip_display": {
+				"hidden_components": [
+					"minecraft:container"
+				]
+			},
+			"minecraft:item_model": "iyc:jungle_log_slopes",
+			"minecraft:item_name": {
+				"text": "Jungle Log Slopes"
+			},
+			"minecraft:lore": [
+				[
+					{
+						"text": "ImagineYourCraft",
+						"italic": false,
+						"color": "white",
+						"font": "iyc:tooltip"
+					}
+				]
+			],
+			"minecraft:custom_data": {
+				"iyc": {
+					"jungle_log_slopes": true
+				},
+				"smithed": {
+					"id": "iyc:jungle_log_slopes",
+					"origin": "iyc",
+					"ignore": {
+						"functionality": true,
+						"crafting": true
+					}
+				}
+			}
+		}
+	}
+}

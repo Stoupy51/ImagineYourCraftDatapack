@@ -1,36 +1,53 @@
 {
-	"type": "minecraft:crafting_shapeless",
-	"category": "food",
-	"ingredients": [
-		"minecraft:cocoa_beans",
-		"minecraft:bowl",
-		"minecraft:milk_bucket"
+	"type": "minecraft:crafting_shaped",
+	"category": "misc",
+	"group": "hot_chocolate",
+	"pattern": [
+		"X#X",
+		" X "
 	],
+	"key": {
+		"X": "minecraft:glass",
+		"#": "minecraft:cocoa_beans"
+	},
 	"result": {
-		"id": "minecraft:command_block",
+		"id": "minecraft:recovery_compass",
 		"count": 1,
 		"components": {
 			"minecraft:food": {
-				"can_always_eat": true,
-				"nutrition": 3,
-				"saturation": 0.8
+				"nutrition": 6,
+				"saturation": 7.2,
+				"can_always_eat": true
 			},
+			"minecraft:max_stack_size": 1,
 			"minecraft:consumable": {
+				"animation": "drink",
+				"sound": "minecraft:entity.generic.drink",
 				"on_consume_effects": [
-					{"type": "minecraft:apply_effects","effects": [{"id": "minecraft:speed","duration": 600,"amplifier": 0}]}
+					{
+						"type": "minecraft:apply_effects",
+						"effects": [
+							{
+								"id": "minecraft:speed",
+								"duration": 600,
+								"amplifier": 0
+							}
+						]
+					}
 				]
 			},
 			"minecraft:item_model": "iyc:hot_chocolate",
 			"minecraft:item_name": {
-				"text": "Hot Chocolate",
-				"italic": false,
-				"color": "white"
+				"text": "Hot Chocolate"
 			},
 			"minecraft:lore": [
 				[
-					"",
-					{"text": "I","color": "white","italic": false,"font": "iyc:icons"},
-					{"text": " ImagineYourCraft","italic": true,"color": "blue"}
+					{
+						"text": "ImagineYourCraft",
+						"italic": false,
+						"color": "white",
+						"font": "iyc:tooltip"
+					}
 				]
 			],
 			"minecraft:custom_data": {
@@ -38,10 +55,37 @@
 					"hot_chocolate": true
 				},
 				"smithed": {
-					"ignore": {"functionality": true,"crafting": true}
+					"id": "iyc:hot_chocolate",
+					"origin": "iyc",
+					"ignore": {
+						"functionality": true,
+						"crafting": true
+					}
+				}
+			},
+			"minecraft:use_remainder": {
+				"id": "minecraft:recovery_compass",
+				"count": 1,
+				"components": {
+					"minecraft:item_name": {
+						"text": "Can"
+					},
+					"minecraft:item_model": "iyc:can",
+					"minecraft:custom_data": {
+						"iyc": {
+							"can": true
+						},
+						"smithed": {
+							"id": "iyc:can",
+							"origin": "iyc",
+							"ignore": {
+								"functionality": true,
+								"crafting": true
+							}
+						}
+					}
 				}
 			}
 		}
 	}
 }
-

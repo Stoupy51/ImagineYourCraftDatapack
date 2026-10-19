@@ -1,6 +1,7 @@
 {
 	"type": "minecraft:crafting_shaped",
 	"category": "equipment",
+	"group": "emerald_helmet",
 	"pattern": [
 		"XXX",
 		"X X"
@@ -9,19 +10,29 @@
 		"X": "minecraft:emerald"
 	},
 	"result": {
-		"id": "minecraft:leather_helmet",
+		"id": "minecraft:diamond_helmet",
 		"count": 1,
 		"components": {
 			"minecraft:custom_data": {
 				"smithed": {
-					"dict": {"armor": {"emerald": true,"helmet": true}},
-					"ignore": {"functionality": true,"crafting": true}
+					"dict": {
+						"armor": {
+							"emerald": true,
+							"helmet": true
+						}
+					},
+					"id": "iyc:emerald_helmet",
+					"origin": "iyc",
+					"ignore": {
+						"functionality": true,
+						"crafting": true
+					}
 				},
 				"iyc": {
 					"emerald_helmet": true
 				}
 			},
-			"minecraft:max_damage": 171,
+			"minecraft:max_damage": 286,
 			"minecraft:equippable": {
 				"slot": "head",
 				"asset_id": "iyc:emerald"
@@ -40,29 +51,25 @@
 					"operation": "add_value",
 					"slot": "head",
 					"id": "iyc:armor_toughness.head"
-				},
-				{
-					"type": "luck",
-					"amount": 0.25,
-					"operation": "add_value",
-					"slot": "head",
-					"id": "iyc:luck.head"
 				}
 			],
+			"minecraft:enchantable": {
+				"value": 15
+			},
 			"minecraft:item_model": "iyc:emerald_helmet",
 			"minecraft:item_name": {
-				"text": "Emerald Helmet",
-				"italic": false,
-				"color": "white"
+				"text": "Emerald Helmet"
 			},
 			"minecraft:lore": [
 				[
-					"",
-					{"text": "I","color": "white","italic": false,"font": "iyc:icons"},
-					{"text": " ImagineYourCraft","italic": true,"color": "blue"}
+					{
+						"text": "ImagineYourCraft",
+						"italic": false,
+						"color": "white",
+						"font": "iyc:tooltip"
+					}
 				]
 			]
 		}
 	}
 }
-

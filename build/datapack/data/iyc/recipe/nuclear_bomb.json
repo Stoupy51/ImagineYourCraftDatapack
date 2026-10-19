@@ -1,0 +1,75 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"category": "redstone",
+	"group": "nuclear_bomb",
+	"pattern": [
+		"###",
+		"###",
+		"###"
+	],
+	"key": {
+		"#": "minecraft:tnt"
+	},
+	"result": {
+		"id": "minecraft:furnace",
+		"count": 1,
+		"components": {
+			"minecraft:lore": [
+				{
+					"text": "Explosion power 12, TNT is 4",
+					"color": "gray",
+					"italic": false
+				},
+				[
+					{
+						"text": "ImagineYourCraft",
+						"italic": false,
+						"color": "white",
+						"font": "iyc:tooltip"
+					}
+				]
+			],
+			"minecraft:container": [
+				{
+					"slot": 0,
+					"item": {
+						"id": "minecraft:stone",
+						"count": 1,
+						"components": {
+							"minecraft:custom_data": {
+								"smithed": {
+									"block": {
+										"id": "iyc:nuclear_bomb",
+										"from": "iyc"
+									}
+								}
+							}
+						}
+					}
+				}
+			],
+			"minecraft:tooltip_display": {
+				"hidden_components": [
+					"minecraft:container"
+				]
+			},
+			"minecraft:item_model": "iyc:nuclear_bomb",
+			"minecraft:item_name": {
+				"text": "Nuclear Bomb"
+			},
+			"minecraft:custom_data": {
+				"iyc": {
+					"nuclear_bomb": true
+				},
+				"smithed": {
+					"id": "iyc:nuclear_bomb",
+					"origin": "iyc",
+					"ignore": {
+						"functionality": true,
+						"crafting": true
+					}
+				}
+			}
+		}
+	}
+}

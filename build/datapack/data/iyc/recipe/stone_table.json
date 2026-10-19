@@ -1,0 +1,71 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"category": "building",
+	"group": "table",
+	"pattern": [
+		"XXX",
+		"# #",
+		"# #"
+	],
+	"key": {
+		"X": "minecraft:stone",
+		"#": "minecraft:stick"
+	},
+	"result": {
+		"id": "minecraft:furnace",
+		"count": 1,
+		"components": {
+			"minecraft:container": [
+				{
+					"slot": 0,
+					"item": {
+						"id": "minecraft:stone",
+						"count": 1,
+						"components": {
+							"minecraft:custom_data": {
+								"smithed": {
+									"block": {
+										"id": "iyc:stone_table",
+										"from": "iyc"
+									}
+								}
+							}
+						}
+					}
+				}
+			],
+			"minecraft:tooltip_display": {
+				"hidden_components": [
+					"minecraft:container"
+				]
+			},
+			"minecraft:item_model": "iyc:stone_table",
+			"minecraft:item_name": {
+				"text": "Stone Table"
+			},
+			"minecraft:lore": [
+				[
+					{
+						"text": "ImagineYourCraft",
+						"italic": false,
+						"color": "white",
+						"font": "iyc:tooltip"
+					}
+				]
+			],
+			"minecraft:custom_data": {
+				"iyc": {
+					"stone_table": true
+				},
+				"smithed": {
+					"id": "iyc:stone_table",
+					"origin": "iyc",
+					"ignore": {
+						"functionality": true,
+						"crafting": true
+					}
+				}
+			}
+		}
+	}
+}

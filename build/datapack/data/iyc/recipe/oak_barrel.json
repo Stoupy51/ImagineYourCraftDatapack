@@ -1,0 +1,71 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"category": "misc",
+	"group": "oak_barrel",
+	"pattern": [
+		"XXX",
+		"###",
+		"XXX"
+	],
+	"key": {
+		"X": "minecraft:oak_planks",
+		"#": "minecraft:iron_ingot"
+	},
+	"result": {
+		"id": "minecraft:furnace",
+		"count": 4,
+		"components": {
+			"minecraft:container": [
+				{
+					"slot": 0,
+					"item": {
+						"id": "minecraft:stone",
+						"count": 1,
+						"components": {
+							"minecraft:custom_data": {
+								"smithed": {
+									"block": {
+										"id": "iyc:oak_barrel",
+										"from": "iyc"
+									}
+								}
+							}
+						}
+					}
+				}
+			],
+			"minecraft:tooltip_display": {
+				"hidden_components": [
+					"minecraft:container"
+				]
+			},
+			"minecraft:item_model": "iyc:oak_barrel",
+			"minecraft:item_name": {
+				"text": "Oak Barrel"
+			},
+			"minecraft:lore": [
+				[
+					{
+						"text": "ImagineYourCraft",
+						"italic": false,
+						"color": "white",
+						"font": "iyc:tooltip"
+					}
+				]
+			],
+			"minecraft:custom_data": {
+				"iyc": {
+					"oak_barrel": true
+				},
+				"smithed": {
+					"id": "iyc:oak_barrel",
+					"origin": "iyc",
+					"ignore": {
+						"functionality": true,
+						"crafting": true
+					}
+				}
+			}
+		}
+	}
+}

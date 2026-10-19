@@ -5,31 +5,51 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "minecraft:command_block",
-					"functions": [
+					"name": "minecraft:recovery_compass",
+					"modifier": [
 						{
-							"function": "minecraft:set_components",
+							"type": "minecraft:set_components",
 							"components": {
 								"minecraft:food": {
-									"can_always_eat": true,
-									"nutrition": 2,
-									"saturation": 0.6
+									"nutrition": 6,
+									"saturation": 7.2,
+									"can_always_eat": true
 								},
+								"minecraft:max_stack_size": 1,
 								"minecraft:consumable": {
-									"on_consume_effects": [{"type": "minecraft:apply_effects","effects": [{"id": "minecraft:haste","duration": 600,"amplifier": 0}]}]
+									"animation": "drink",
+									"sound": "minecraft:entity.generic.drink",
+									"on_consume_effects": [
+										{"type": "minecraft:apply_effects","effects": [{"id": "minecraft:haste","duration": 600,"amplifier": 0}]}
+									]
 								},
 								"minecraft:item_model": "iyc:coca",
 								"minecraft:item_name": {
-									"text": "Coca",
-									"italic": false,
-									"color": "white"
+									"text": "Coca"
 								},
 								"minecraft:lore": [
-									["",{"text": "I","color": "white","italic": false,"font": "iyc:icons"},{"text": " ImagineYourCraft","italic": true,"color": "blue"}]
+									[
+										{"text": "ImagineYourCraft","italic": false,"color": "white","font": "iyc:tooltip"}
+									]
 								],
 								"minecraft:custom_data": {
-									"iyc": {"coca": true},
-									"smithed": {"ignore": {"functionality": true,"crafting": true}}
+									"iyc": {
+										"coca": true
+									},
+									"smithed": {
+										"id": "iyc:coca",
+										"origin": "iyc",
+										"ignore": {"functionality": true,"crafting": true}
+									}
+								},
+								"minecraft:use_remainder": {
+									"id": "minecraft:recovery_compass",
+									"count": 1,
+									"components": {
+										"minecraft:item_name": {"text": "Can"},
+										"minecraft:item_model": "iyc:can",
+										"minecraft:custom_data": {"iyc": {"can": true},"smithed": {"id": "iyc:can","origin": "iyc","ignore": {"functionality": true,"crafting": true}}}
+									}
 								}
 							}
 						}
@@ -39,4 +59,3 @@
 		}
 	]
 }
-

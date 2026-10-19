@@ -1,0 +1,66 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"category": "misc",
+	"group": "campfire",
+	"ingredients": [
+		"minecraft:bricks",
+		"minecraft:flint_and_steel"
+	],
+	"result": {
+		"id": "minecraft:furnace",
+		"count": 4,
+		"components": {
+			"minecraft:container": [
+				{
+					"slot": 0,
+					"item": {
+						"id": "minecraft:stone",
+						"count": 1,
+						"components": {
+							"minecraft:custom_data": {
+								"smithed": {
+									"block": {
+										"id": "iyc:brick_campfire",
+										"from": "iyc"
+									}
+								}
+							}
+						}
+					}
+				}
+			],
+			"minecraft:tooltip_display": {
+				"hidden_components": [
+					"minecraft:container"
+				]
+			},
+			"minecraft:item_model": "iyc:brick_campfire",
+			"minecraft:item_name": {
+				"text": "Brick Campfire"
+			},
+			"minecraft:lore": [
+				[
+					{
+						"text": "ImagineYourCraft",
+						"italic": false,
+						"color": "white",
+						"font": "iyc:tooltip"
+					}
+				]
+			],
+			"minecraft:custom_data": {
+				"iyc": {
+					"brick_campfire": true
+				},
+				"smithed": {
+					"id": "iyc:brick_campfire",
+					"origin": "iyc",
+					"ignore": {
+						"functionality": true,
+						"crafting": true
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,18 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"category": "misc",
+	"pattern": [
+		"#X#",
+		"XVX",
+		"#X#"
+	],
+	"key": {
+		"#": "minecraft:red_mushroom",
+		"X": "minecraft:bone_meal",
+		"V": "#minecraft:wool"
+	},
+	"result": {
+		"id": "minecraft:red_mushroom_block",
+		"count": 4
+	}
+}

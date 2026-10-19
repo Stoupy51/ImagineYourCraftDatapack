@@ -1,0 +1,17 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"category": "misc",
+	"pattern": [
+		"###",
+		"#X#",
+		"###"
+	],
+	"key": {
+		"#": "minecraft:lime_dye",
+		"X": "minecraft:diamond"
+	},
+	"result": {
+		"id": "minecraft:slime_ball",
+		"count": 8
+	}
+}

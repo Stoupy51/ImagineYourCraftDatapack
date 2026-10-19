@@ -1,0 +1,71 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"category": "building",
+	"group": "transparent_light_block",
+	"pattern": [
+		"###",
+		"#X#",
+		"###"
+	],
+	"key": {
+		"#": "minecraft:glass",
+		"X": "minecraft:glowstone"
+	},
+	"result": {
+		"id": "minecraft:furnace",
+		"count": 4,
+		"components": {
+			"minecraft:container": [
+				{
+					"slot": 0,
+					"item": {
+						"id": "minecraft:stone",
+						"count": 1,
+						"components": {
+							"minecraft:custom_data": {
+								"smithed": {
+									"block": {
+										"id": "iyc:transparent_light_block",
+										"from": "iyc"
+									}
+								}
+							}
+						}
+					}
+				}
+			],
+			"minecraft:tooltip_display": {
+				"hidden_components": [
+					"minecraft:container"
+				]
+			},
+			"minecraft:item_model": "iyc:transparent_light_block",
+			"minecraft:item_name": {
+				"text": "Transparent Light Block"
+			},
+			"minecraft:lore": [
+				[
+					{
+						"text": "ImagineYourCraft",
+						"italic": false,
+						"color": "white",
+						"font": "iyc:tooltip"
+					}
+				]
+			],
+			"minecraft:custom_data": {
+				"iyc": {
+					"transparent_light_block": true
+				},
+				"smithed": {
+					"id": "iyc:transparent_light_block",
+					"origin": "iyc",
+					"ignore": {
+						"functionality": true,
+						"crafting": true
+					}
+				}
+			}
+		}
+	}
+}

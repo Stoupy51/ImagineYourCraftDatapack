@@ -1,0 +1,27 @@
+{
+	"model": {
+		"type": "minecraft:select",
+		"property": "minecraft:custom_model_data",
+		"index": 0,
+		"cases": [
+			{
+				"when": "0",
+				"model": {
+					"type": "minecraft:model",
+					"model": "iyc:block/normal_lignite_torch"
+				}
+			},
+			{
+				"when": "1",
+				"model": {
+					"type": "minecraft:model",
+					"model": "iyc:block/normal_lignite_torch_wall"
+				}
+			}
+		],
+		"fallback": {
+			"type": "minecraft:model",
+			"model": "iyc:item/lignite_wall_torch"
+		}
+	}
+}

@@ -5,14 +5,21 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "minecraft:command_block",
-					"functions": [
+					"name": "minecraft:recovery_compass",
+					"modifier": [
 						{
-							"function": "minecraft:set_components",
+							"type": "minecraft:set_components",
 							"components": {
 								"minecraft:custom_data": {
-									"iyc": {"lokoise_jgeek_un_max": true},
-									"smithed": {"dict": {"record": {"lokoise_jgeek_un_max": true}},"ignore": {"functionality": true,"crafting": true}}
+									"iyc": {
+										"lokoise_jgeek_un_max": true
+									},
+									"smithed": {
+										"dict": {"record": {"lokoise_jgeek_un_max": true,"item_name": "Lokoise - J'geek un max"},"jukebox_song": {"comparator_output": 12,"length_in_seconds": 125,"sound_event": {"sound_id": "iyc:lokoise_jgeek_un_max"},"description": {"text": "Lokoise - J'geek un max"}}},
+										"id": "iyc:lokoise_jgeek_un_max",
+										"origin": "iyc",
+										"ignore": {"functionality": true,"crafting": true}
+									}
 								},
 								"minecraft:item_name": {
 									"text": "Music Disc",
@@ -23,7 +30,9 @@
 								"minecraft:rarity": "rare",
 								"minecraft:item_model": "iyc:lokoise_jgeek_un_max",
 								"minecraft:lore": [
-									["",{"text": "I","color": "white","italic": false,"font": "iyc:icons"},{"text": " ImagineYourCraft","italic": true,"color": "blue"}]
+									[
+										{"text": "ImagineYourCraft","italic": false,"color": "white","font": "iyc:tooltip"}
+									]
 								]
 							}
 						}
@@ -33,4 +42,3 @@
 		}
 	]
 }
-

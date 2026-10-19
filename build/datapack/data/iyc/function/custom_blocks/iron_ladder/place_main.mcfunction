@@ -1,17 +1,18 @@
 
 #> iyc:custom_blocks/iron_ladder/place_main
 #
-# @within	???
+# @within	iyc:custom_blocks/place
+#			iyc:interaction/light
 #
 
 tag @s add iyc.placer
 function iyc:custom_blocks/get_rotation
-setblock ~ ~ ~ air
+setblock ~ ~ ~ air strict
 execute if score #rotation iyc.data matches 1 run setblock ~ ~ ~ minecraft:ladder[facing=north]
 execute if score #rotation iyc.data matches 2 run setblock ~ ~ ~ minecraft:ladder[facing=east]
 execute if score #rotation iyc.data matches 3 run setblock ~ ~ ~ minecraft:ladder[facing=south]
 execute if score #rotation iyc.data matches 4 run setblock ~ ~ ~ minecraft:ladder[facing=west]
-execute align xyz positioned ~.5 ~.5 ~.5 summon item_display at @s run function iyc:custom_blocks/iron_ladder/place_secondary
+execute align xyz positioned ~0.5 ~0.5 ~0.5 summon item_display at @s run function iyc:custom_blocks/iron_ladder/place_secondary
 tag @s remove iyc.placer
 
 # Increment count scores

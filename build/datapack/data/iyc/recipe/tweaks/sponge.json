@@ -1,0 +1,18 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"category": "misc",
+	"pattern": [
+		"X#X",
+		"#W#",
+		"X#X"
+	],
+	"key": {
+		"#": "minecraft:string",
+		"X": "#minecraft:wool",
+		"W": "minecraft:yellow_dye"
+	},
+	"result": {
+		"id": "minecraft:sponge",
+		"count": 4
+	}
+}

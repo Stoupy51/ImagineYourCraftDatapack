@@ -1,0 +1,70 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"category": "building",
+	"group": "log_fence",
+	"pattern": [
+		"X#X",
+		"X#X"
+	],
+	"key": {
+		"X": "minecraft:stick",
+		"#": "minecraft:oak_log"
+	},
+	"result": {
+		"id": "minecraft:furnace",
+		"count": 2,
+		"components": {
+			"minecraft:container": [
+				{
+					"slot": 0,
+					"item": {
+						"id": "minecraft:stone",
+						"count": 1,
+						"components": {
+							"minecraft:custom_data": {
+								"smithed": {
+									"block": {
+										"id": "iyc:log_fence",
+										"from": "iyc"
+									}
+								}
+							}
+						}
+					}
+				}
+			],
+			"minecraft:tooltip_display": {
+				"hidden_components": [
+					"minecraft:container"
+				]
+			},
+			"minecraft:item_model": "iyc:log_fence",
+			"minecraft:item_name": {
+				"text": "Log Fence"
+			},
+			"minecraft:lore": [
+				[
+					{
+						"text": "ImagineYourCraft",
+						"italic": false,
+						"color": "white",
+						"font": "iyc:tooltip"
+					}
+				]
+			],
+			"minecraft:custom_data": {
+				"iyc": {
+					"log_fence": true
+				},
+				"smithed": {
+					"id": "iyc:log_fence",
+					"origin": "iyc",
+					"ignore": {
+						"functionality": true,
+						"crafting": true
+					}
+				}
+			}
+		}
+	}
+}

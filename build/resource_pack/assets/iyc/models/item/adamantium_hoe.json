@@ -1,7 +1,6 @@
 {
-	"parent": "minecraft:item/netherite_hoe",
+	"parent": "minecraft:item/diamond_hoe",
 	"textures": {
 		"layer0": "iyc:item/adamantium_hoe"
 	}
 }
-

@@ -5,14 +5,21 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "minecraft:command_block",
-					"functions": [
+					"name": "minecraft:recovery_compass",
+					"modifier": [
 						{
-							"function": "minecraft:set_components",
+							"type": "minecraft:set_components",
 							"components": {
 								"minecraft:custom_data": {
-									"iyc": {"lokoise_bug_de_chunks": true},
-									"smithed": {"dict": {"record": {"lokoise_bug_de_chunks": true}},"ignore": {"functionality": true,"crafting": true}}
+									"iyc": {
+										"lokoise_bug_de_chunks": true
+									},
+									"smithed": {
+										"dict": {"record": {"lokoise_bug_de_chunks": true,"item_name": "Lokoise - Bug de chunks"},"jukebox_song": {"comparator_output": 9,"length_in_seconds": 234,"sound_event": {"sound_id": "iyc:lokoise_bug_de_chunks"},"description": {"text": "Lokoise - Bug de chunks"}}},
+										"id": "iyc:lokoise_bug_de_chunks",
+										"origin": "iyc",
+										"ignore": {"functionality": true,"crafting": true}
+									}
 								},
 								"minecraft:item_name": {
 									"text": "Music Disc",
@@ -23,7 +30,9 @@
 								"minecraft:rarity": "rare",
 								"minecraft:item_model": "iyc:lokoise_bug_de_chunks",
 								"minecraft:lore": [
-									["",{"text": "I","color": "white","italic": false,"font": "iyc:icons"},{"text": " ImagineYourCraft","italic": true,"color": "blue"}]
+									[
+										{"text": "ImagineYourCraft","italic": false,"color": "white","font": "iyc:tooltip"}
+									]
 								]
 							}
 						}
@@ -33,4 +42,3 @@
 		}
 	]
 }
-

@@ -1,0 +1,6 @@
+{
+	"parent": "iyc:block/legacy/trapdoor_bottom",
+	"textures": {
+		"texture": "minecraft:block/glowstone"
+	}
+}

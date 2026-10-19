@@ -5,14 +5,21 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "minecraft:command_block",
-					"functions": [
+					"name": "minecraft:recovery_compass",
+					"modifier": [
 						{
-							"function": "minecraft:set_components",
+							"type": "minecraft:set_components",
 							"components": {
 								"minecraft:custom_data": {
-									"iyc": {"lokoise_acta": true},
-									"smithed": {"dict": {"record": {"lokoise_acta": true}},"ignore": {"functionality": true,"crafting": true}}
+									"iyc": {
+										"lokoise_acta": true
+									},
+									"smithed": {
+										"dict": {"record": {"lokoise_acta": true,"item_name": "Lokoise - ACTA"},"jukebox_song": {"comparator_output": 8,"length_in_seconds": 201,"sound_event": {"sound_id": "iyc:lokoise_acta"},"description": {"text": "Lokoise - ACTA"}}},
+										"id": "iyc:lokoise_acta",
+										"origin": "iyc",
+										"ignore": {"functionality": true,"crafting": true}
+									}
 								},
 								"minecraft:item_name": {
 									"text": "Music Disc",
@@ -23,7 +30,9 @@
 								"minecraft:rarity": "rare",
 								"minecraft:item_model": "iyc:lokoise_acta",
 								"minecraft:lore": [
-									["",{"text": "I","color": "white","italic": false,"font": "iyc:icons"},{"text": " ImagineYourCraft","italic": true,"color": "blue"}]
+									[
+										{"text": "ImagineYourCraft","italic": false,"color": "white","font": "iyc:tooltip"}
+									]
 								]
 							}
 						}
@@ -33,4 +42,3 @@
 		}
 	]
 }
-

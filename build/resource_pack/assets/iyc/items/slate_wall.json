@@ -1,0 +1,139 @@
+{
+	"model": {
+		"type": "minecraft:select",
+		"property": "minecraft:custom_model_data",
+		"index": 0,
+		"cases": [
+			{
+				"when": "0",
+				"model": {
+					"type": "minecraft:model",
+					"model": "iyc:block/slate_wall_post"
+				}
+			},
+			{
+				"when": "1",
+				"model": {
+					"type": "minecraft:model",
+					"model": "iyc:block/slate_wall_n"
+				}
+			},
+			{
+				"when": "2",
+				"model": {
+					"type": "minecraft:model",
+					"model": "iyc:block/slate_wall_n_x0_y90"
+				}
+			},
+			{
+				"when": "3",
+				"model": {
+					"type": "minecraft:model",
+					"model": "iyc:block/slate_wall_n_x0_y180"
+				}
+			},
+			{
+				"when": "4",
+				"model": {
+					"type": "minecraft:model",
+					"model": "iyc:block/slate_wall_n_x0_y270"
+				}
+			},
+			{
+				"when": "5",
+				"model": {
+					"type": "minecraft:model",
+					"model": "iyc:block/slate_wall_ne"
+				}
+			},
+			{
+				"when": "6",
+				"model": {
+					"type": "minecraft:model",
+					"model": "iyc:block/slate_wall_ne_x0_y90"
+				}
+			},
+			{
+				"when": "7",
+				"model": {
+					"type": "minecraft:model",
+					"model": "iyc:block/slate_wall_ne_x0_y180"
+				}
+			},
+			{
+				"when": "8",
+				"model": {
+					"type": "minecraft:model",
+					"model": "iyc:block/slate_wall_ne_x0_y270"
+				}
+			},
+			{
+				"when": "9",
+				"model": {
+					"type": "minecraft:model",
+					"model": "iyc:block/slate_wall_ns"
+				}
+			},
+			{
+				"when": "10",
+				"model": {
+					"type": "minecraft:model",
+					"model": "iyc:block/slate_wall_ns_x0_y90"
+				}
+			},
+			{
+				"when": "11",
+				"model": {
+					"type": "minecraft:model",
+					"model": "iyc:block/slate_wall_nse"
+				}
+			},
+			{
+				"when": "12",
+				"model": {
+					"type": "minecraft:model",
+					"model": "iyc:block/slate_wall_nse_x0_y90"
+				}
+			},
+			{
+				"when": "13",
+				"model": {
+					"type": "minecraft:model",
+					"model": "iyc:block/slate_wall_nse_x0_y180"
+				}
+			},
+			{
+				"when": "14",
+				"model": {
+					"type": "minecraft:model",
+					"model": "iyc:block/slate_wall_nse_x0_y270"
+				}
+			},
+			{
+				"when": "15",
+				"model": {
+					"type": "minecraft:model",
+					"model": "iyc:block/slate_wall_nsew"
+				}
+			},
+			{
+				"when": "16",
+				"model": {
+					"type": "minecraft:model",
+					"model": "iyc:block/slate_wall_ns_above"
+				}
+			},
+			{
+				"when": "17",
+				"model": {
+					"type": "minecraft:model",
+					"model": "iyc:block/slate_wall_ns_above_x0_y90"
+				}
+			}
+		],
+		"fallback": {
+			"type": "minecraft:model",
+			"model": "iyc:item/slate_wall"
+		}
+	}
+}

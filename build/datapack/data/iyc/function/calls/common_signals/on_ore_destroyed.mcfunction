@@ -1,7 +1,9 @@
 
 #> iyc:calls/common_signals/on_ore_destroyed
 #
-# @within	iyc:calls/common_signals/new_item
+# @executed	at @s & align xyz
+#
+# @within	iyc:calls/common_signals/new_item [ at @s & align xyz ]
 #
 
 # Get in a score the item count and if it is a silk touch
@@ -11,5 +13,5 @@ execute store result score #item_count iyc.data run data get entity @s Item.coun
 execute store success score #is_silk_touch iyc.data if data entity @s Item.components."minecraft:custom_data".common_signals.silk_touch
 
 # Try to destroy the block
-execute as @e[tag=iyc.custom_block,dx=0,dy=0,dz=0] at @s run function iyc:custom_blocks/destroy
+function iyc:calls/common_signals/custom_block_destroy
 

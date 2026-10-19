@@ -1,0 +1,44 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:crossbow",
+					"modifier": [
+						{
+							"type": "minecraft:set_components",
+							"components": {
+								"minecraft:max_damage": 199,
+								"minecraft:enchantments": {
+									"iyc:heavy_draw": 1
+								},
+								"minecraft:enchantment_glint_override": false,
+								"minecraft:item_model": "iyc:crossbow",
+								"minecraft:item_name": {
+									"text": "Crossbow"
+								},
+								"minecraft:lore": [
+									[
+										{"text": "ImagineYourCraft","italic": false,"color": "white","font": "iyc:tooltip"}
+									]
+								],
+								"minecraft:custom_data": {
+									"iyc": {
+										"crossbow": true
+									},
+									"smithed": {
+										"id": "iyc:crossbow",
+										"origin": "iyc",
+										"ignore": {"functionality": true,"crafting": true}
+									}
+								}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

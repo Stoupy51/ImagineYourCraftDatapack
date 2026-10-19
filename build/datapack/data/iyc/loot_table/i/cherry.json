@@ -5,28 +5,34 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "minecraft:command_block",
-					"functions": [
+					"name": "minecraft:recovery_compass",
+					"modifier": [
 						{
-							"function": "minecraft:set_components",
+							"type": "minecraft:set_components",
 							"components": {
 								"minecraft:food": {
-									"can_always_eat": true,
-									"nutrition": 2,
-									"saturation": 0.8
+									"nutrition": 3,
+									"saturation": 6.0,
+									"can_always_eat": false
 								},
 								"minecraft:item_model": "iyc:cherry",
 								"minecraft:item_name": {
-									"text": "Cherry",
-									"italic": false,
-									"color": "white"
+									"text": "Cherry"
 								},
 								"minecraft:lore": [
-									["",{"text": "I","color": "white","italic": false,"font": "iyc:icons"},{"text": " ImagineYourCraft","italic": true,"color": "blue"}]
+									[
+										{"text": "ImagineYourCraft","italic": false,"color": "white","font": "iyc:tooltip"}
+									]
 								],
 								"minecraft:custom_data": {
-									"iyc": {"cherry": true},
-									"smithed": {"ignore": {"functionality": true,"crafting": true}}
+									"iyc": {
+										"cherry": true
+									},
+									"smithed": {
+										"id": "iyc:cherry",
+										"origin": "iyc",
+										"ignore": {"functionality": true,"crafting": true}
+									}
 								}
 							}
 						}
@@ -36,4 +42,3 @@
 		}
 	]
 }
-

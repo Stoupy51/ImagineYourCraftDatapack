@@ -1,0 +1,15 @@
+{
+	"ambientocclusion": true,
+	"textures": {
+		"particle": "iyc:block/flatware",
+		"texture": "iyc:block/flatware"
+	},
+	"elements": [
+		{
+			"from": [-0.0625,0.1875,-0.0625],
+			"to": [16.0625,0.3125,16.0625],
+			"faces": {"down": {"uv": [16,16,0,0],"texture": "#texture"},"up": {"uv": [16,0,0,16],"texture": "#texture"}}
+		}
+	],
+	"parent": "minecraft:block/block"
+}

@@ -1,0 +1,46 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"category": "misc",
+	"group": "can",
+	"pattern": [
+		"X X",
+		"X X",
+		" X "
+	],
+	"key": {
+		"X": "minecraft:iron_ingot"
+	},
+	"result": {
+		"id": "minecraft:recovery_compass",
+		"count": 4,
+		"components": {
+			"minecraft:item_model": "iyc:can",
+			"minecraft:item_name": {
+				"text": "Can"
+			},
+			"minecraft:lore": [
+				[
+					{
+						"text": "ImagineYourCraft",
+						"italic": false,
+						"color": "white",
+						"font": "iyc:tooltip"
+					}
+				]
+			],
+			"minecraft:custom_data": {
+				"iyc": {
+					"can": true
+				},
+				"smithed": {
+					"id": "iyc:can",
+					"origin": "iyc",
+					"ignore": {
+						"functionality": true,
+						"crafting": true
+					}
+				}
+			}
+		}
+	}
+}

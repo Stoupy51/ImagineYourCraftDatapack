@@ -1,7 +1,10 @@
 
 #> iyc:custom_blocks/birch_wood_lantern/destroy
 #
-# @within	iyc:custom_blocks/_groups/minecraft_ochre_froglight
+# @executed	at @s
+#
+# @within	iyc:custom_blocks/no_block_below
+#			iyc:custom_blocks/_groups/minecraft_ochre_froglight
 #
 
 # Replace the item with the custom one

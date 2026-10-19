@@ -2,7 +2,7 @@
 	"type": "minecraft:smelting",
 	"ingredient": "minecraft:iron_sword",
 	"result": {
-		"id": "minecraft:command_block",
+		"id": "minecraft:recovery_compass",
 		"count": 1,
 		"components": {
 			"minecraft:custom_data": {
@@ -12,6 +12,8 @@
 							"steel": true
 						}
 					},
+					"id": "iyc:steel_nugget",
+					"origin": "iyc",
 					"ignore": {
 						"functionality": true,
 						"crafting": true
@@ -23,23 +25,15 @@
 			},
 			"minecraft:item_model": "iyc:steel_nugget",
 			"minecraft:item_name": {
-				"text": "Steel Nugget",
-				"italic": false,
-				"color": "white"
+				"text": "Steel Nugget"
 			},
 			"minecraft:lore": [
 				[
-					"",
 					{
-						"text": "I",
-						"color": "white",
+						"text": "ImagineYourCraft",
 						"italic": false,
-						"font": "iyc:icons"
-					},
-					{
-						"text": " ImagineYourCraft",
-						"italic": true,
-						"color": "blue"
+						"color": "white",
+						"font": "iyc:tooltip"
 					}
 				]
 			]
@@ -48,4 +42,3 @@
 	"experience": 0.8,
 	"cookingtime": 200
 }
-

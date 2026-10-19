@@ -1,27 +1,34 @@
 {
 	"type": "minecraft:crafting_shaped",
 	"category": "misc",
+	"group": "toast",
 	"pattern": [
-		"XXX"
+		"###"
 	],
 	"key": {
-		"X": "minecraft:bread"
+		"#": "minecraft:bread"
 	},
 	"result": {
-		"id": "minecraft:command_block",
+		"id": "minecraft:recovery_compass",
 		"count": 4,
 		"components": {
+			"minecraft:food": {
+				"nutrition": 2,
+				"saturation": 4.0,
+				"can_always_eat": false
+			},
 			"minecraft:item_model": "iyc:toast",
 			"minecraft:item_name": {
-				"text": "Toast",
-				"italic": false,
-				"color": "white"
+				"text": "Toast"
 			},
 			"minecraft:lore": [
 				[
-					"",
-					{"text": "I","color": "white","italic": false,"font": "iyc:icons"},
-					{"text": " ImagineYourCraft","italic": true,"color": "blue"}
+					{
+						"text": "ImagineYourCraft",
+						"italic": false,
+						"color": "white",
+						"font": "iyc:tooltip"
+					}
 				]
 			],
 			"minecraft:custom_data": {
@@ -29,10 +36,14 @@
 					"toast": true
 				},
 				"smithed": {
-					"ignore": {"functionality": true,"crafting": true}
+					"id": "iyc:toast",
+					"origin": "iyc",
+					"ignore": {
+						"functionality": true,
+						"crafting": true
+					}
 				}
 			}
 		}
 	}
 }
-

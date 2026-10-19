@@ -5,14 +5,21 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "minecraft:leather_leggings",
-					"functions": [
+					"name": "minecraft:iron_leggings",
+					"modifier": [
 						{
-							"function": "minecraft:set_components",
+							"type": "minecraft:set_components",
 							"components": {
 								"minecraft:custom_data": {
-									"smithed": {"dict": {"armor": {"steel": true,"leggings": true}},"ignore": {"functionality": true,"crafting": true}},
-									"iyc": {"steel_leggings": true}
+									"smithed": {
+										"dict": {"armor": {"steel": true,"leggings": true}},
+										"id": "iyc:steel_leggings",
+										"origin": "iyc",
+										"ignore": {"functionality": true,"crafting": true}
+									},
+									"iyc": {
+										"steel_leggings": true
+									}
 								},
 								"minecraft:max_damage": 399,
 								"minecraft:equippable": {
@@ -20,16 +27,22 @@
 									"asset_id": "iyc:steel"
 								},
 								"minecraft:attribute_modifiers": [
-									{"type": "armor","amount": 5,"operation": "add_value","slot": "legs","id": "iyc:armor.legs"}
+									{
+										"type": "armor",
+										"amount": 5,
+										"operation": "add_value",
+										"slot": "legs",
+										"id": "iyc:armor.legs"
+									}
 								],
 								"minecraft:item_model": "iyc:steel_leggings",
 								"minecraft:item_name": {
-									"text": "Steel Leggings",
-									"italic": false,
-									"color": "white"
+									"text": "Steel Leggings"
 								},
 								"minecraft:lore": [
-									["",{"text": "I","color": "white","italic": false,"font": "iyc:icons"},{"text": " ImagineYourCraft","italic": true,"color": "blue"}]
+									[
+										{"text": "ImagineYourCraft","italic": false,"color": "white","font": "iyc:tooltip"}
+									]
 								]
 							}
 						}
@@ -39,4 +52,3 @@
 		}
 	]
 }
-

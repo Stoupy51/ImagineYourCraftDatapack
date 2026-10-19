@@ -1,0 +1,71 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"category": "misc",
+	"group": "red_block_ctf",
+	"pattern": [
+		"XXX",
+		"XGX",
+		"XXX"
+	],
+	"key": {
+		"X": "minecraft:red_wool",
+		"G": "minecraft:glass"
+	},
+	"result": {
+		"id": "minecraft:furnace",
+		"count": 8,
+		"components": {
+			"minecraft:container": [
+				{
+					"slot": 0,
+					"item": {
+						"id": "minecraft:stone",
+						"count": 1,
+						"components": {
+							"minecraft:custom_data": {
+								"smithed": {
+									"block": {
+										"id": "iyc:red_block_ctf",
+										"from": "iyc"
+									}
+								}
+							}
+						}
+					}
+				}
+			],
+			"minecraft:tooltip_display": {
+				"hidden_components": [
+					"minecraft:container"
+				]
+			},
+			"minecraft:item_model": "iyc:red_block_ctf",
+			"minecraft:item_name": {
+				"text": "Red Block Ctf"
+			},
+			"minecraft:lore": [
+				[
+					{
+						"text": "ImagineYourCraft",
+						"italic": false,
+						"color": "white",
+						"font": "iyc:tooltip"
+					}
+				]
+			],
+			"minecraft:custom_data": {
+				"iyc": {
+					"red_block_ctf": true
+				},
+				"smithed": {
+					"id": "iyc:red_block_ctf",
+					"origin": "iyc",
+					"ignore": {
+						"functionality": true,
+						"crafting": true
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,28 @@
+{
+	"model": {
+		"type": "minecraft:select",
+		"property": "minecraft:custom_model_data",
+		"index": 0,
+		"cases": [
+			{
+				"when": "0",
+				"model": {
+					"type": "minecraft:model",
+					"model": "iyc:block/cloud",
+					"tints": [{"type": "minecraft:custom_model_data","index": 0,"default": 16777215}]
+				}
+			}
+		],
+		"fallback": {
+			"type": "minecraft:model",
+			"model": "iyc:item/light_blue_cloud",
+			"tints": [
+				{
+					"type": "minecraft:custom_model_data",
+					"index": 0,
+					"default": 16777215
+				}
+			]
+		}
+	}
+}

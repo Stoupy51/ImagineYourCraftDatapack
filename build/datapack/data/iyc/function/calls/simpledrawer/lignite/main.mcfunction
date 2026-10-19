@@ -13,7 +13,7 @@ scoreboard players set #ingot_in_block simpledrawer.io 9
 scoreboard players set #nugget_in_ingot simpledrawer.io 9
 
 # Set the material data
-data modify storage simpledrawer:io material set value {material: "iyc.lignite", material_name:'Lignite'}
+data modify storage simpledrawer:io material set value {material: "iyc.lignite", material_name:"Lignite"}
 
 # Fill the NBT with your own items
 data modify storage simpledrawer:io material.block.item set from storage iyc:items all.lignite_block

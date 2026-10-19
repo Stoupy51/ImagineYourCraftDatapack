@@ -5,23 +5,30 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "minecraft:command_block",
-					"functions": [
+					"name": "minecraft:recovery_compass",
+					"modifier": [
 						{
-							"function": "minecraft:set_components",
+							"type": "minecraft:set_components",
 							"components": {
 								"minecraft:custom_data": {
-									"smithed": {"dict": {"ingot": {"steel": true}},"ignore": {"functionality": true,"crafting": true}},
-									"iyc": {"steel_ingot": true}
+									"smithed": {
+										"dict": {"ingot": {"steel": true}},
+										"id": "iyc:steel_ingot",
+										"origin": "iyc",
+										"ignore": {"functionality": true,"crafting": true}
+									},
+									"iyc": {
+										"steel_ingot": true
+									}
 								},
 								"minecraft:item_model": "iyc:steel_ingot",
 								"minecraft:item_name": {
-									"text": "Steel Ingot",
-									"italic": false,
-									"color": "white"
+									"text": "Steel Ingot"
 								},
 								"minecraft:lore": [
-									["",{"text": "I","color": "white","italic": false,"font": "iyc:icons"},{"text": " ImagineYourCraft","italic": true,"color": "blue"}]
+									[
+										{"text": "ImagineYourCraft","italic": false,"color": "white","font": "iyc:tooltip"}
+									]
 								]
 							}
 						}
@@ -31,4 +38,3 @@
 		}
 	]
 }
-

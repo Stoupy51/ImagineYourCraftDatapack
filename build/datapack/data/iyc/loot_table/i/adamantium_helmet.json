@@ -5,33 +5,54 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "minecraft:leather_helmet",
-					"functions": [
+					"name": "minecraft:diamond_helmet",
+					"modifier": [
 						{
-							"function": "minecraft:set_components",
+							"type": "minecraft:set_components",
 							"components": {
 								"minecraft:custom_data": {
-									"smithed": {"dict": {"armor": {"adamantium": true,"helmet": true}},"ignore": {"functionality": true,"crafting": true}},
-									"iyc": {"adamantium_helmet": true}
+									"smithed": {
+										"dict": {"armor": {"adamantium": true,"helmet": true}},
+										"id": "iyc:adamantium_helmet",
+										"origin": "iyc",
+										"ignore": {"functionality": true,"crafting": true}
+									},
+									"iyc": {
+										"adamantium_helmet": true
+									}
 								},
-								"minecraft:max_damage": 375,
+								"minecraft:max_damage": 649,
 								"minecraft:equippable": {
 									"slot": "head",
 									"asset_id": "iyc:adamantium"
 								},
 								"minecraft:attribute_modifiers": [
-									{"type": "armor","amount": 3.2,"operation": "add_value","slot": "head","id": "iyc:armor.head"},
-									{"type": "armor_toughness","amount": 3,"operation": "add_value","slot": "head","id": "iyc:armor_toughness.head"},
-									{"type": "knockback_resistance","amount": 0.1,"operation": "add_value","slot": "head","id": "iyc:knockback_resistance.head"}
+									{
+										"type": "armor",
+										"amount": 4,
+										"operation": "add_value",
+										"slot": "head",
+										"id": "iyc:armor.head"
+									},
+									{
+										"type": "armor_toughness",
+										"amount": 2,
+										"operation": "add_value",
+										"slot": "head",
+										"id": "iyc:armor_toughness.head"
+									}
 								],
+								"minecraft:enchantable": {
+									"value": 6
+								},
 								"minecraft:item_model": "iyc:adamantium_helmet",
 								"minecraft:item_name": {
-									"text": "Adamantium Helmet",
-									"italic": false,
-									"color": "white"
+									"text": "Adamantium Helmet"
 								},
 								"minecraft:lore": [
-									["",{"text": "I","color": "white","italic": false,"font": "iyc:icons"},{"text": " ImagineYourCraft","italic": true,"color": "blue"}]
+									[
+										{"text": "ImagineYourCraft","italic": false,"color": "white","font": "iyc:tooltip"}
+									]
 								]
 							}
 						}
@@ -41,4 +62,3 @@
 		}
 	]
 }
-

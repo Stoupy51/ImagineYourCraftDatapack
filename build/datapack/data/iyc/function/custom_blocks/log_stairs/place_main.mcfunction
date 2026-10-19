@@ -1,0 +1,19 @@
+
+#> iyc:custom_blocks/log_stairs/place_main
+#
+# @within	iyc:custom_blocks/place
+#			iyc:interaction/light
+#
+
+tag @s add iyc.placer
+function iyc:custom_blocks/get_rotation
+setblock ~ ~ ~ air strict
+setblock ~ ~ ~ minecraft:oak_stairs
+execute align xyz positioned ~0.5 ~0.5 ~0.5 summon item_display at @s run function iyc:custom_blocks/log_stairs/place_secondary
+tag @s remove iyc.placer
+
+# Increment count scores
+scoreboard players add #total_custom_blocks iyc.data 1
+scoreboard players add #total_vanilla_oak_stairs iyc.data 1
+scoreboard players add #total_log_stairs iyc.data 1
+

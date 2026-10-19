@@ -1,0 +1,30 @@
+{
+	"ambientocclusion": false,
+	"textures": {
+		"particle": "#torch"
+	},
+	"elements": [
+		{
+			"from": [-1.0625,3.4375,6.9375],
+			"to": [1.0625,13.5625,9.0625],
+			"rotation": {"origin": [0,3.5,8],"axis": "z","angle": -22.5},
+			"shade": false,
+			"faces": {"down": {"uv": [7,13,9,15],"texture": "#torch"},"up": {"uv": [7,6,9,8],"texture": "#torch"}}
+		},
+		{
+			"from": [-1.0625,3.4375,-0.0625],
+			"to": [1.0625,19.5625,16.0625],
+			"rotation": {"origin": [0,3.5,8],"axis": "z","angle": -22.5},
+			"shade": false,
+			"faces": {"west": {"uv": [0,0,16,16],"texture": "#torch"},"east": {"uv": [0,0,16,16],"texture": "#torch"}}
+		},
+		{
+			"from": [-8.0625,3.4375,6.9375],
+			"to": [8.0625,19.5625,9.0625],
+			"rotation": {"origin": [0,3.5,8],"axis": "z","angle": -22.5},
+			"shade": false,
+			"faces": {"north": {"uv": [0,0,16,16],"texture": "#torch"},"south": {"uv": [0,0,16,16],"texture": "#torch"}}
+		}
+	],
+	"parent": "minecraft:block/block"
+}

@@ -1,7 +1,10 @@
 
 #> iyc:custom_blocks/deepslate_sapphire_ore/destroy
 #
-# @within	iyc:custom_blocks/_groups/minecraft_polished_deepslate
+# @executed	at @s
+#
+# @within	iyc:custom_blocks/no_block_below
+#			iyc:custom_blocks/_groups/minecraft_polished_deepslate
 #
 
 # Replace the item with the custom one

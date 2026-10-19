@@ -1,0 +1,255 @@
+
+#> iyc:custom_blocks/compute_brightness
+#
+# @executed	at @s
+#
+# @within	iyc:custom_blocks/sapphire_block/place_secondary
+#			iyc:custom_blocks/sapphire_ore/place_secondary
+#			iyc:custom_blocks/deepslate_sapphire_ore/place_secondary
+#			iyc:custom_blocks/ruby_block/place_secondary
+#			iyc:custom_blocks/ruby_ore/place_secondary
+#			iyc:custom_blocks/deepslate_ruby_ore/place_secondary
+#			iyc:custom_blocks/topaz_block/place_secondary
+#			iyc:custom_blocks/topaz_ore/place_secondary
+#			iyc:custom_blocks/deepslate_topaz_ore/place_secondary
+#			iyc:custom_blocks/adamantium_block/place_secondary
+#			iyc:custom_blocks/adamantium_ore/place_secondary
+#			iyc:custom_blocks/deepslate_adamantium_ore/place_secondary
+#			iyc:custom_blocks/steel_block/place_secondary
+#			iyc:custom_blocks/steel_ore/place_secondary
+#			iyc:custom_blocks/raw_steel_block/place_secondary
+#			iyc:custom_blocks/lignite_block/place_secondary
+#			iyc:custom_blocks/lignite_ore/place_secondary
+#			iyc:custom_blocks/slate_block/place_secondary
+#			iyc:custom_blocks/slate_ore/place_secondary
+#			iyc:custom_blocks/massive_obsidian_block/place_secondary
+#			iyc:custom_blocks/hops_seeds/place_secondary
+#			iyc:custom_blocks/reversed_oak_planks/place_secondary
+#			iyc:custom_blocks/reversed_spruce_planks/place_secondary
+#			iyc:custom_blocks/reversed_birch_planks/place_secondary
+#			iyc:custom_blocks/reversed_jungle_planks/place_secondary
+#			iyc:custom_blocks/reversed_acacia_planks/place_secondary
+#			iyc:custom_blocks/reversed_dark_oak_planks/place_secondary
+#			iyc:custom_blocks/reversed_cherry_planks/place_secondary
+#			iyc:custom_blocks/step_block/place_secondary
+#			iyc:custom_blocks/clear_glass/place_secondary
+#			iyc:custom_blocks/log_stairs/place_secondary
+#			iyc:custom_blocks/glowstone_stairs/place_secondary
+#			iyc:custom_blocks/iron_stairs/place_secondary
+#			iyc:custom_blocks/obsidian_stairs/place_secondary
+#			iyc:custom_blocks/step_stairs/place_secondary
+#			iyc:custom_blocks/slate_stairs/place_secondary
+#			iyc:custom_blocks/oak_reversed_planks_stairs/place_secondary
+#			iyc:custom_blocks/glass_stairs/place_secondary
+#			iyc:custom_blocks/glass_slab/place_secondary
+#			iyc:custom_blocks/stone_slopes/place_secondary
+#			iyc:custom_blocks/slate_slopes/place_secondary
+#			iyc:custom_blocks/sandstone_slopes/place_secondary
+#			iyc:custom_blocks/glowstone_slopes/place_secondary
+#			iyc:custom_blocks/oak_planks_slopes/place_secondary
+#			iyc:custom_blocks/spruce_planks_slopes/place_secondary
+#			iyc:custom_blocks/birch_planks_slopes/place_secondary
+#			iyc:custom_blocks/jungle_planks_slopes/place_secondary
+#			iyc:custom_blocks/oak_log_slopes/place_secondary
+#			iyc:custom_blocks/spruce_log_slopes/place_secondary
+#			iyc:custom_blocks/birch_log_slopes/place_secondary
+#			iyc:custom_blocks/jungle_log_slopes/place_secondary
+#			iyc:custom_blocks/glass_slopes/place_secondary
+#			iyc:custom_blocks/netherrack_slab/place_secondary
+#			iyc:custom_blocks/reversed_planks_slab/place_secondary
+#			iyc:custom_blocks/obsidian_slab/place_secondary
+#			iyc:custom_blocks/oak_log_slab/place_secondary
+#			iyc:custom_blocks/glowstone_slab/place_secondary
+#			iyc:custom_blocks/slate_slab/place_secondary
+#			iyc:custom_blocks/stone_trapdoor/place_secondary
+#			iyc:custom_blocks/glowstone_trapdoor/place_secondary
+#			iyc:custom_blocks/glowstone_pressure_plate/place_secondary
+#			iyc:custom_blocks/iron_ladder/place_secondary
+#			iyc:custom_blocks/oak_log_wall/place_secondary
+#			iyc:custom_blocks/stone_wall/place_secondary
+#			iyc:custom_blocks/oak_plank_wall/place_secondary
+#			iyc:custom_blocks/glowstone_wall/place_secondary
+#			iyc:custom_blocks/slate_wall/place_secondary
+#			iyc:custom_blocks/glowstone_fence/place_secondary
+#			iyc:custom_blocks/log_fence/place_secondary
+#			iyc:custom_blocks/stone_fence/place_secondary
+#			iyc:custom_blocks/white_iron_fence/place_secondary
+#			iyc:custom_blocks/orange_iron_fence/place_secondary
+#			iyc:custom_blocks/magenta_iron_fence/place_secondary
+#			iyc:custom_blocks/light_blue_iron_fence/place_secondary
+#			iyc:custom_blocks/yellow_iron_fence/place_secondary
+#			iyc:custom_blocks/lime_iron_fence/place_secondary
+#			iyc:custom_blocks/pink_iron_fence/place_secondary
+#			iyc:custom_blocks/gray_iron_fence/place_secondary
+#			iyc:custom_blocks/light_gray_iron_fence/place_secondary
+#			iyc:custom_blocks/cyan_iron_fence/place_secondary
+#			iyc:custom_blocks/purple_iron_fence/place_secondary
+#			iyc:custom_blocks/blue_iron_fence/place_secondary
+#			iyc:custom_blocks/brown_iron_fence/place_secondary
+#			iyc:custom_blocks/green_iron_fence/place_secondary
+#			iyc:custom_blocks/red_iron_fence/place_secondary
+#			iyc:custom_blocks/black_iron_fence/place_secondary
+#			iyc:custom_blocks/glowstone_fence_gate/place_secondary
+#			iyc:custom_blocks/log_fence_gate/place_secondary
+#			iyc:custom_blocks/stone_fence_gate/place_secondary
+#			iyc:custom_blocks/iron_fence_gate/place_secondary
+#			iyc:custom_blocks/oak_wood_lantern/place_secondary
+#			iyc:custom_blocks/spruce_wood_lantern/place_secondary
+#			iyc:custom_blocks/birch_wood_lantern/place_secondary
+#			iyc:custom_blocks/jungle_wood_lantern/place_secondary
+#			iyc:custom_blocks/iron_lantern/place_secondary
+#			iyc:custom_blocks/red_light/place_secondary
+#			iyc:custom_blocks/redstone_lamp_always/place_secondary
+#			iyc:custom_blocks/transparent_light_block/place_secondary
+#			iyc:custom_blocks/lignite_torch/place_secondary
+#			iyc:custom_blocks/lignite_wall_torch/place_secondary
+#			iyc:custom_blocks/white_rod/place_secondary
+#			iyc:custom_blocks/white_lamp/place_secondary
+#			iyc:custom_blocks/white_lit_lamp/place_secondary
+#			iyc:custom_blocks/orange_rod/place_secondary
+#			iyc:custom_blocks/orange_lamp/place_secondary
+#			iyc:custom_blocks/orange_lit_lamp/place_secondary
+#			iyc:custom_blocks/magenta_rod/place_secondary
+#			iyc:custom_blocks/magenta_lamp/place_secondary
+#			iyc:custom_blocks/magenta_lit_lamp/place_secondary
+#			iyc:custom_blocks/light_blue_rod/place_secondary
+#			iyc:custom_blocks/light_blue_lamp/place_secondary
+#			iyc:custom_blocks/light_blue_lit_lamp/place_secondary
+#			iyc:custom_blocks/yellow_rod/place_secondary
+#			iyc:custom_blocks/yellow_lamp/place_secondary
+#			iyc:custom_blocks/yellow_lit_lamp/place_secondary
+#			iyc:custom_blocks/lime_rod/place_secondary
+#			iyc:custom_blocks/lime_lamp/place_secondary
+#			iyc:custom_blocks/lime_lit_lamp/place_secondary
+#			iyc:custom_blocks/pink_rod/place_secondary
+#			iyc:custom_blocks/pink_lamp/place_secondary
+#			iyc:custom_blocks/pink_lit_lamp/place_secondary
+#			iyc:custom_blocks/gray_rod/place_secondary
+#			iyc:custom_blocks/gray_lamp/place_secondary
+#			iyc:custom_blocks/gray_lit_lamp/place_secondary
+#			iyc:custom_blocks/light_gray_rod/place_secondary
+#			iyc:custom_blocks/light_gray_lamp/place_secondary
+#			iyc:custom_blocks/light_gray_lit_lamp/place_secondary
+#			iyc:custom_blocks/cyan_rod/place_secondary
+#			iyc:custom_blocks/cyan_lamp/place_secondary
+#			iyc:custom_blocks/cyan_lit_lamp/place_secondary
+#			iyc:custom_blocks/purple_rod/place_secondary
+#			iyc:custom_blocks/purple_lamp/place_secondary
+#			iyc:custom_blocks/purple_lit_lamp/place_secondary
+#			iyc:custom_blocks/blue_rod/place_secondary
+#			iyc:custom_blocks/blue_lamp/place_secondary
+#			iyc:custom_blocks/blue_lit_lamp/place_secondary
+#			iyc:custom_blocks/brown_rod/place_secondary
+#			iyc:custom_blocks/brown_lamp/place_secondary
+#			iyc:custom_blocks/brown_lit_lamp/place_secondary
+#			iyc:custom_blocks/green_rod/place_secondary
+#			iyc:custom_blocks/green_lamp/place_secondary
+#			iyc:custom_blocks/green_lit_lamp/place_secondary
+#			iyc:custom_blocks/red_rod/place_secondary
+#			iyc:custom_blocks/red_lamp/place_secondary
+#			iyc:custom_blocks/red_lit_lamp/place_secondary
+#			iyc:custom_blocks/black_rod/place_secondary
+#			iyc:custom_blocks/black_lamp/place_secondary
+#			iyc:custom_blocks/black_lit_lamp/place_secondary
+#			iyc:custom_blocks/oak_table/place_secondary
+#			iyc:custom_blocks/birch_table/place_secondary
+#			iyc:custom_blocks/cobblestone_table/place_secondary
+#			iyc:custom_blocks/stone_table/place_secondary
+#			iyc:custom_blocks/oak_little_table/place_secondary
+#			iyc:custom_blocks/birch_little_table/place_secondary
+#			iyc:custom_blocks/cobblestone_little_table/place_secondary
+#			iyc:custom_blocks/stone_little_table/place_secondary
+#			iyc:custom_blocks/oak_stool/place_secondary
+#			iyc:custom_blocks/birch_stool/place_secondary
+#			iyc:custom_blocks/cobblestone_stool/place_secondary
+#			iyc:custom_blocks/stone_stool/place_secondary
+#			iyc:custom_blocks/oak_high_stool/place_secondary
+#			iyc:custom_blocks/birch_high_stool/place_secondary
+#			iyc:custom_blocks/cobblestone_high_stool/place_secondary
+#			iyc:custom_blocks/stone_high_stool/place_secondary
+#			iyc:custom_blocks/oak_bench/place_secondary
+#			iyc:custom_blocks/birch_bench/place_secondary
+#			iyc:custom_blocks/cobblestone_bench/place_secondary
+#			iyc:custom_blocks/stone_bench/place_secondary
+#			iyc:custom_blocks/oak_chair/place_secondary
+#			iyc:custom_blocks/birch_chair/place_secondary
+#			iyc:custom_blocks/cobblestone_chair/place_secondary
+#			iyc:custom_blocks/stone_chair/place_secondary
+#			iyc:custom_blocks/oak_shelf/place_secondary
+#			iyc:custom_blocks/oak_barrel/place_secondary
+#			iyc:custom_blocks/flatware/place_secondary
+#			iyc:custom_blocks/box_jump/place_secondary
+#			iyc:custom_blocks/box_speed/place_secondary
+#			iyc:custom_blocks/nuclear_bomb/place_secondary
+#			iyc:custom_blocks/cobblestone_campfire/place_secondary
+#			iyc:custom_blocks/stone_campfire/place_secondary
+#			iyc:custom_blocks/brick_campfire/place_secondary
+#			iyc:custom_blocks/stonebrick_campfire/place_secondary
+#			iyc:custom_blocks/sandstone_campfire/place_secondary
+#			iyc:custom_blocks/black_smoke_effect_generator/place_secondary
+#			iyc:custom_blocks/portal_effect_generator/place_secondary
+#			iyc:custom_blocks/explosion_effect_generator/place_secondary
+#			iyc:custom_blocks/white_smoke_effect_generator/place_secondary
+#			iyc:custom_blocks/lava_effect_generator/place_secondary
+#			iyc:custom_blocks/water_effect_generator/place_secondary
+#			iyc:custom_blocks/big_black_smoke_effect_generator/place_secondary
+#			iyc:custom_blocks/heart_effect_generator/place_secondary
+#			iyc:custom_blocks/white_cloud/place_secondary
+#			iyc:custom_blocks/orange_cloud/place_secondary
+#			iyc:custom_blocks/magenta_cloud/place_secondary
+#			iyc:custom_blocks/light_blue_cloud/place_secondary
+#			iyc:custom_blocks/yellow_cloud/place_secondary
+#			iyc:custom_blocks/lime_cloud/place_secondary
+#			iyc:custom_blocks/pink_cloud/place_secondary
+#			iyc:custom_blocks/gray_cloud/place_secondary
+#			iyc:custom_blocks/light_gray_cloud/place_secondary
+#			iyc:custom_blocks/cyan_cloud/place_secondary
+#			iyc:custom_blocks/purple_cloud/place_secondary
+#			iyc:custom_blocks/blue_cloud/place_secondary
+#			iyc:custom_blocks/brown_cloud/place_secondary
+#			iyc:custom_blocks/green_cloud/place_secondary
+#			iyc:custom_blocks/red_cloud/place_secondary
+#			iyc:custom_blocks/black_cloud/place_secondary
+#			iyc:custom_blocks/white_blob/place_secondary
+#			iyc:custom_blocks/orange_blob/place_secondary
+#			iyc:custom_blocks/magenta_blob/place_secondary
+#			iyc:custom_blocks/light_blue_blob/place_secondary
+#			iyc:custom_blocks/yellow_blob/place_secondary
+#			iyc:custom_blocks/lime_blob/place_secondary
+#			iyc:custom_blocks/pink_blob/place_secondary
+#			iyc:custom_blocks/gray_blob/place_secondary
+#			iyc:custom_blocks/light_gray_blob/place_secondary
+#			iyc:custom_blocks/cyan_blob/place_secondary
+#			iyc:custom_blocks/purple_blob/place_secondary
+#			iyc:custom_blocks/blue_blob/place_secondary
+#			iyc:custom_blocks/brown_blob/place_secondary
+#			iyc:custom_blocks/green_blob/place_secondary
+#			iyc:custom_blocks/red_blob/place_secondary
+#			iyc:custom_blocks/black_blob/place_secondary
+#			iyc:custom_blocks/blue_block_ctf/place_secondary
+#			iyc:custom_blocks/red_block_ctf/place_secondary
+#			iyc:custom_blocks/iron_furnace/place_secondary
+#			iyc:custom_blocks/steel_brewing_stand/place_secondary
+#			iyc:custom_blocks/cherry_cake/place_secondary
+#			iyc:custom_blocks/blue_flower/place_secondary
+#			iyc:custom_blocks/white_flower/place_secondary
+#			iyc:custom_blocks/black_flower/place_secondary
+#			iyc:v0.1.0/second_5 [ as @e[type=item_display,tag=iyc.custom_block,sort=random,limit=50] & at @s ]
+#
+
+# Reset light score
+scoreboard players set #light iyc.data 0
+
+# Check all 6 neighboring positions
+execute if score #light iyc.data matches ..14 positioned ~ ~1 ~ run function iyc:custom_blocks/check_light
+execute if score #light iyc.data matches ..14 positioned ~ ~-1 ~ run function iyc:custom_blocks/check_light
+execute if score #light iyc.data matches ..14 positioned ~1 ~ ~ run function iyc:custom_blocks/check_light
+execute if score #light iyc.data matches ..14 positioned ~-1 ~ ~ run function iyc:custom_blocks/check_light
+execute if score #light iyc.data matches ..14 positioned ~ ~ ~1 run function iyc:custom_blocks/check_light
+execute if score #light iyc.data matches ..14 positioned ~ ~ ~-1 run function iyc:custom_blocks/check_light
+
+# Apply computed brightness to the entity
+data merge entity @s {brightness:{block:0,sky:0}}
+execute store result entity @s brightness.block int 1 run scoreboard players get #light iyc.data
+execute store result entity @s brightness.sky int 1 run scoreboard players get #light iyc.data
+

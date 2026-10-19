@@ -1,90 +1,94 @@
 {
 	"antvenom_the_miner": {
-		"category": "music",
+		"subtitle": "Antvenom The Miner",
 		"sounds": [{"name": "iyc:antvenom_the_miner","stream": true}]
 	},
 	"bebopvox_dont_mine_at_night": {
-		"category": "music",
+		"subtitle": "Bebopvox Dont Mine At Night",
 		"sounds": [{"name": "iyc:bebopvox_dont_mine_at_night","stream": true}]
 	},
 	"captainsparklez_fallen_kingdom": {
-		"category": "music",
+		"subtitle": "Captainsparklez Fallen Kingdom",
 		"sounds": [{"name": "iyc:captainsparklez_fallen_kingdom","stream": true}]
 	},
 	"captainsparklez_minecraft_style": {
-		"category": "music",
+		"subtitle": "Captainsparklez Minecraft Style",
 		"sounds": [{"name": "iyc:captainsparklez_minecraft_style","stream": true}]
 	},
 	"captainsparklez_revenge": {
-		"category": "music",
+		"subtitle": "Captainsparklez Revenge",
 		"sounds": [{"name": "iyc:captainsparklez_revenge","stream": true}]
 	},
-	"captainsparklez_tack_back_the_night": {
-		"category": "music",
-		"sounds": [{"name": "iyc:captainsparklez_tack_back_the_night","stream": true}]
-	},
 	"captainsparklez_tnt": {
-		"category": "music",
+		"subtitle": "Captainsparklez Tnt",
 		"sounds": [{"name": "iyc:captainsparklez_tnt","stream": true}]
 	},
+	"captainsparklez_tack_back_the_night": {
+		"subtitle": "Captainsparklez Tack Back The Night",
+		"sounds": [{"name": "iyc:captainsparklez_tack_back_the_night","stream": true}]
+	},
 	"gunther_you_touch_my_tralala": {
-		"category": "music",
+		"subtitle": "Gunther You Touch My Tralala",
 		"sounds": [{"name": "iyc:gunther_you_touch_my_tralala","stream": true}]
 	},
 	"guzzproduction_bouge_ton_cube": {
-		"category": "music",
+		"subtitle": "Guzzproduction Bouge Ton Cube",
 		"sounds": [{"name": "iyc:guzzproduction_bouge_ton_cube","stream": true}]
 	},
+	"hit_du_moment": {
+		"subtitle": "Hit Du Moment",
+		"sounds": [{"name": "iyc:hit_du_moment","stream": true}]
+	},
 	"lokoise_acta": {
-		"category": "music",
+		"subtitle": "Lokoise Acta",
 		"sounds": [{"name": "iyc:lokoise_acta","stream": true}]
 	},
 	"lokoise_bug_de_chunks": {
-		"category": "music",
+		"subtitle": "Lokoise Bug De Chunks",
 		"sounds": [{"name": "iyc:lokoise_bug_de_chunks","stream": true}]
 	},
 	"lokoise_jaime_le_creep": {
-		"category": "music",
+		"subtitle": "Lokoise Jaime Le Creep",
 		"sounds": [{"name": "iyc:lokoise_jaime_le_creep","stream": true}]
 	},
 	"lokoise_jfais_des_pelles_en_diams": {
-		"category": "music",
+		"subtitle": "Lokoise Jfais Des Pelles En Diams",
 		"sounds": [{"name": "iyc:lokoise_jfais_des_pelles_en_diams","stream": true}]
 	},
 	"lokoise_jgeek_un_max": {
-		"category": "music",
+		"subtitle": "Lokoise Jgeek Un Max",
 		"sounds": [{"name": "iyc:lokoise_jgeek_un_max","stream": true}]
 	},
 	"lokoise_jsuis_sean_kvin": {
-		"category": "music",
+		"subtitle": "Lokoise Jsuis Sean Kvin",
 		"sounds": [{"name": "iyc:lokoise_jsuis_sean_kvin","stream": true}]
 	},
 	"lokoise_je_me_give": {
-		"category": "music",
+		"subtitle": "Lokoise Je Me Give",
 		"sounds": [{"name": "iyc:lokoise_je_me_give","stream": true}]
 	},
 	"lokoise_le_journal_dun_naufragay": {
-		"category": "music",
+		"subtitle": "Lokoise Le Journal Dun Naufragay",
 		"sounds": [{"name": "iyc:lokoise_le_journal_dun_naufragay","stream": true}]
 	},
 	"lokoise_tous_les_zombies": {
-		"category": "music",
+		"subtitle": "Lokoise Tous Les Zombies",
 		"sounds": [{"name": "iyc:lokoise_tous_les_zombies","stream": true}]
 	},
 	"lokoise_un_dbit_tout_pourri": {
-		"category": "music",
+		"subtitle": "Lokoise Un Dbit Tout Pourri",
 		"sounds": [{"name": "iyc:lokoise_un_dbit_tout_pourri","stream": true}]
 	},
-	"reaperr__mrelvilia_mauvaise_ide": {
-		"category": "music",
-		"sounds": [{"name": "iyc:reaperr__mrelvilia_mauvaise_ide","stream": true}]
+	"reaperr_mrelvilia_mauvaise_ide": {
+		"subtitle": "Reaperr Mrelvilia Mauvaise Ide",
+		"sounds": [{"name": "iyc:reaperr_mrelvilia_mauvaise_ide","stream": true}]
 	},
 	"thedudescraft_gagaoutai": {
-		"category": "music",
+		"subtitle": "Thedudescraft Gagaoutai",
 		"sounds": [{"name": "iyc:thedudescraft_gagaoutai","stream": true}]
 	},
 	"tryhardninja_that_girl_is_crafty": {
-		"category": "music",
+		"subtitle": "Tryhardninja That Girl Is Crafty",
 		"sounds": [{"name": "iyc:tryhardninja_that_girl_is_crafty","stream": true}]
 	},
 	"ahhhhhrrr": {
@@ -97,7 +101,6 @@
 	},
 	"nyan_cat": {
 		"subtitle": "Nyan Cat",
-		"sounds": ["iyc:nyan_cat"]
+		"sounds": [{"name": "iyc:nyan_cat","stream": true}]
 	}
 }
-

@@ -1,7 +1,3 @@
 {
-	"parent": "block/cube_all",
-	"textures": {
-		"all": "iyc:item/spruce_wood_lantern"
-	}
+	"parent": "iyc:block/lantern_spruce"
 }
-

@@ -1,7 +1,20 @@
 {
 	"model": {
-		"type": "minecraft:model",
-		"model": "iyc:item/white_flower"
+		"type": "minecraft:select",
+		"property": "minecraft:custom_model_data",
+		"index": 0,
+		"cases": [
+			{
+				"when": "0",
+				"model": {
+					"type": "minecraft:model",
+					"model": "iyc:block/white_flower"
+				}
+			}
+		],
+		"fallback": {
+			"type": "minecraft:model",
+			"model": "iyc:item/white_flower"
+		}
 	}
 }
-

@@ -1,0 +1,17 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"category": "misc",
+	"pattern": [
+		"###",
+		"#X#",
+		"###"
+	],
+	"key": {
+		"#": "minecraft:vine",
+		"X": "minecraft:stone_bricks"
+	},
+	"result": {
+		"id": "minecraft:mossy_stone_bricks",
+		"count": 4
+	}
+}

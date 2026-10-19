@@ -5,23 +5,34 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "minecraft:command_block",
-					"functions": [
+					"name": "minecraft:recovery_compass",
+					"modifier": [
 						{
-							"function": "minecraft:set_components",
+							"type": "minecraft:set_components",
 							"components": {
+								"minecraft:max_stack_size": 1,
+								"minecraft:max_damage": 2000,
+								"minecraft:weapon": {
+									"item_damage_per_attack": 2
+								},
 								"minecraft:item_model": "iyc:screwdriver",
 								"minecraft:item_name": {
-									"text": "Screwdriver",
-									"italic": false,
-									"color": "white"
+									"text": "Screwdriver"
 								},
 								"minecraft:lore": [
-									["",{"text": "I","color": "white","italic": false,"font": "iyc:icons"},{"text": " ImagineYourCraft","italic": true,"color": "blue"}]
+									[
+										{"text": "ImagineYourCraft","italic": false,"color": "white","font": "iyc:tooltip"}
+									]
 								],
 								"minecraft:custom_data": {
-									"iyc": {"screwdriver": true},
-									"smithed": {"ignore": {"functionality": true,"crafting": true}}
+									"iyc": {
+										"screwdriver": true
+									},
+									"smithed": {
+										"id": "iyc:screwdriver",
+										"origin": "iyc",
+										"ignore": {"functionality": true,"crafting": true}
+									}
 								}
 							}
 						}
@@ -31,4 +42,3 @@
 		}
 	]
 }
-

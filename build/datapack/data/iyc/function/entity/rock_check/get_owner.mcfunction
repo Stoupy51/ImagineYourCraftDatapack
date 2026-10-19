@@ -1,7 +1,9 @@
 
 #> iyc:entity/rock_check/get_owner
 #
-# @within	iyc:entity/rock_check/marker_final
+# @executed	as @a
+#
+# @within	iyc:entity/rock_check/marker_final [ as @a ]
 #
 
 # Stop if already found

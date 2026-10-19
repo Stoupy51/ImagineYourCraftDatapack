@@ -1,7 +1,10 @@
 
 #> iyc:custom_blocks/blue_block_ctf/destroy
 #
-# @within	iyc:custom_blocks/_groups/minecraft_glass
+# @executed	at @s
+#
+# @within	iyc:custom_blocks/no_block_below
+#			iyc:custom_blocks/_groups/minecraft_glass
 #
 
 # Replace the item with the custom one

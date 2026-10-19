@@ -1,7 +1,3 @@
 {
-	"parent": "block/cube_all",
-	"textures": {
-		"all": "iyc:item/red_light"
-	}
+	"parent": "iyc:block/red_light_off"
 }
-

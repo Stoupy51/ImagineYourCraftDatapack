@@ -1,0 +1,6 @@
+{
+	"parent": "iyc:block/legacy/cross",
+	"textures": {
+		"cross": "iyc:block/white_flower"
+	}
+}

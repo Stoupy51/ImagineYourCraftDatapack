@@ -1,7 +1,9 @@
 
 #> iyc:entity/bolt_check
 #
-# @within	iyc:v0.0.1/tick
+# @executed	as @e[type=arrow,tag=!iyc.bolt_checked]
+#
+# @within	iyc:v0.1.0/tick [ as @e[type=arrow,tag=!iyc.bolt_checked] ]
 #
 
 # Add tag to prevent function from running again

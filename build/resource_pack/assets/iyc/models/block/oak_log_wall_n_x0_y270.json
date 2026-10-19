@@ -1,0 +1,15 @@
+{
+	"parent": "iyc:block/oak_log_wall_n",
+	"elements": [
+		{
+			"from": [3.9375,-0.0625,3.9375],
+			"to": [12.0625,16.0625,12.0625],
+			"faces": {"down": {"uv": [4.0,4.0,12.0,12.0],"texture": "#wall","cullface": "down"},"up": {"uv": [4.0,4.0,12.0,12.0],"texture": "#wall"},"west": {"uv": [4.0,0.0,12.0,16.0],"texture": "#wall"},"east": {"uv": [4.0,0.0,12.0,16.0],"texture": "#wall"},"south": {"uv": [4.0,0.0,12.0,16.0],"texture": "#wall"},"north": {"uv": [4.0,0.0,12.0,16.0],"texture": "#wall"}}
+		},
+		{
+			"from": [-0.0625,-0.0625,4.9375],
+			"to": [4.0625,13.0625,11.0625],
+			"faces": {"down": {"uv": [0.0,5.0,4.0,11.0],"texture": "#wall","cullface": "down"},"up": {"uv": [0.0,5.0,4.0,11.0],"texture": "#wall"},"west": {"uv": [5.0,3.0,11.0,16.0],"texture": "#wall","cullface": "north"},"east": {"uv": [5.0,3.0,11.0,16.0],"texture": "#wall","cullface": "south"},"south": {"uv": [0.0,3.0,4.0,16.0],"texture": "#wall"},"north": {"uv": [12.0,3.0,16.0,16.0],"texture": "#wall"}}
+		}
+	]
+}

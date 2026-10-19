@@ -5,32 +5,54 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "minecraft:leather_helmet",
-					"functions": [
+					"name": "minecraft:diamond_helmet",
+					"modifier": [
 						{
-							"function": "minecraft:set_components",
+							"type": "minecraft:set_components",
 							"components": {
 								"minecraft:custom_data": {
-									"smithed": {"dict": {"armor": {"sapphire": true,"helmet": true}},"ignore": {"functionality": true,"crafting": true}},
-									"iyc": {"sapphire_helmet": true}
+									"smithed": {
+										"dict": {"armor": {"sapphire": true,"helmet": true}},
+										"id": "iyc:sapphire_helmet",
+										"origin": "iyc",
+										"ignore": {"functionality": true,"crafting": true}
+									},
+									"iyc": {
+										"sapphire_helmet": true
+									}
 								},
-								"minecraft:max_damage": 407,
+								"minecraft:max_damage": 440,
 								"minecraft:equippable": {
 									"slot": "head",
 									"asset_id": "iyc:sapphire"
 								},
 								"minecraft:attribute_modifiers": [
-									{"type": "armor","amount": 3,"operation": "add_value","slot": "head","id": "iyc:armor.head"},
-									{"type": "armor_toughness","amount": 2,"operation": "add_value","slot": "head","id": "iyc:armor_toughness.head"}
+									{
+										"type": "armor",
+										"amount": 3,
+										"operation": "add_value",
+										"slot": "head",
+										"id": "iyc:armor.head"
+									},
+									{
+										"type": "armor_toughness",
+										"amount": 2,
+										"operation": "add_value",
+										"slot": "head",
+										"id": "iyc:armor_toughness.head"
+									}
 								],
+								"minecraft:enchantable": {
+									"value": 8
+								},
 								"minecraft:item_model": "iyc:sapphire_helmet",
 								"minecraft:item_name": {
-									"text": "Sapphire Helmet",
-									"italic": false,
-									"color": "white"
+									"text": "Sapphire Helmet"
 								},
 								"minecraft:lore": [
-									["",{"text": "I","color": "white","italic": false,"font": "iyc:icons"},{"text": " ImagineYourCraft","italic": true,"color": "blue"}]
+									[
+										{"text": "ImagineYourCraft","italic": false,"color": "white","font": "iyc:tooltip"}
+									]
 								]
 							}
 						}
@@ -40,4 +62,3 @@
 		}
 	]
 }
-

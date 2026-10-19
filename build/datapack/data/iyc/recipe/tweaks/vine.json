@@ -1,0 +1,17 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"category": "misc",
+	"pattern": [
+		"XXX",
+		"XVX",
+		"XXX"
+	],
+	"key": {
+		"X": "#minecraft:leaves",
+		"V": "minecraft:ender_pearl"
+	},
+	"result": {
+		"id": "minecraft:vine",
+		"count": 8
+	}
+}

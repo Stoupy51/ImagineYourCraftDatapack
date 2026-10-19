@@ -1,8 +1,21 @@
 {
 	"pack": {
-		"pack_format": 55,
-		"description": "ImagineYourCraft [0.0.1] by Stoupy51"
+		"pack_format": 97,
+		"description": "ImagineYourCraft [0.1.0] by Stoupy51",
+		"min_format": [
+			97,
+			1
+		],
+		"max_format": [
+			9999,
+			0
+		]
 	},
-	"id": "iyc"
+	"id": "iyc",
+	"overlays": {
+		"entries": [
+			{"formats": [0,72],"directory": "before_format_73","min_format": 0,"max_format": 72},
+			{"formats": [73,1000],"directory": "format_73_plus","min_format": 73,"max_format": 1000}
+		]
+	}
 }
-

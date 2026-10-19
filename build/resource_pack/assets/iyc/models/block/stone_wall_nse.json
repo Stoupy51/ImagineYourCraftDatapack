@@ -1,0 +1,6 @@
+{
+	"parent": "iyc:block/legacy/wall_nse",
+	"textures": {
+		"wall": "minecraft:block/stone"
+	}
+}

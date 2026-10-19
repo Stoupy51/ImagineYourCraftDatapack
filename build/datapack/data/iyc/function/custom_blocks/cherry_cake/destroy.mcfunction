@@ -1,7 +1,10 @@
 
 #> iyc:custom_blocks/cherry_cake/destroy
 #
-# @within	iyc:custom_blocks/_groups/minecraft_cake
+# @executed	at @s
+#
+# @within	iyc:custom_blocks/no_block_below
+#			iyc:custom_blocks/_groups/minecraft_cake
 #
 
 # Replace the item with the custom one

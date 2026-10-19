@@ -1,7 +1,10 @@
 
 #> iyc:custom_blocks/massive_obsidian_block/destroy
 #
-# @within	iyc:custom_blocks/_groups/minecraft_netherite_block
+# @executed	at @s
+#
+# @within	iyc:custom_blocks/no_block_below
+#			iyc:custom_blocks/_groups/minecraft_netherite_block
 #
 
 # Replace the item with the custom one

@@ -1,0 +1,6 @@
+{
+	"parent": "iyc:block/legacy/wall_n",
+	"textures": {
+		"wall": "minecraft:block/glowstone"
+	}
+}

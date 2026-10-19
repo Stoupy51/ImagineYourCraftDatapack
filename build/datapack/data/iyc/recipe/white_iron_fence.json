@@ -1,0 +1,75 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"category": "building",
+	"group": "white_iron_fence",
+	"pattern": [
+		"X#X",
+		"X#X"
+	],
+	"key": {
+		"X": "minecraft:stick",
+		"#": "minecraft:iron_ingot"
+	},
+	"result": {
+		"id": "minecraft:furnace",
+		"count": 2,
+		"components": {
+			"minecraft:container": [
+				{
+					"slot": 0,
+					"item": {
+						"id": "minecraft:stone",
+						"count": 1,
+						"components": {
+							"minecraft:custom_data": {
+								"smithed": {
+									"block": {
+										"id": "iyc:white_iron_fence",
+										"from": "iyc"
+									}
+								}
+							}
+						}
+					}
+				}
+			],
+			"minecraft:tooltip_display": {
+				"hidden_components": [
+					"minecraft:container"
+				]
+			},
+			"minecraft:custom_model_data": {
+				"colors": [
+					16777215
+				]
+			},
+			"minecraft:item_model": "iyc:white_iron_fence",
+			"minecraft:item_name": {
+				"text": "White Iron Fence"
+			},
+			"minecraft:lore": [
+				[
+					{
+						"text": "ImagineYourCraft",
+						"italic": false,
+						"color": "white",
+						"font": "iyc:tooltip"
+					}
+				]
+			],
+			"minecraft:custom_data": {
+				"iyc": {
+					"white_iron_fence": true
+				},
+				"smithed": {
+					"id": "iyc:white_iron_fence",
+					"origin": "iyc",
+					"ignore": {
+						"functionality": true,
+						"crafting": true
+					}
+				}
+			}
+		}
+	}
+}

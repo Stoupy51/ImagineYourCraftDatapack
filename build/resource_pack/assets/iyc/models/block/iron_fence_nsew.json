@@ -1,0 +1,6 @@
+{
+	"parent": "iyc:block/fence_nsew",
+	"textures": {
+		"texture": "minecraft:block/iron_block"
+	}
+}

@@ -1,7 +1,9 @@
 
 #> iyc:custom_blocks/iron_furnace/place_secondary
 #
-# @within	iyc:custom_blocks/iron_furnace/place_main
+# @executed	at @s
+#
+# @within	iyc:custom_blocks/iron_furnace/place_main [ at @s ]
 #
 
 # Add convention and utils tags, and the custom block tag
@@ -14,13 +16,12 @@ tag @s add iyc.iron_furnace
 tag @s add iyc.vanilla.minecraft_furnace
 
 # Add a custom name
-data merge entity @s {"CustomName": {"text": "Iron Furnace","italic": false,"color": "white"}}
-
+data merge entity @s {"CustomName": {"text": "Iron Furnace"}}
 
 # Modify item display entity to match the custom block
-item replace entity @s container.0 with minecraft:furnace[item_model="iyc:iron_furnace"]
+item replace entity @s contents with minecraft:furnace[item_model="iyc:iron_furnace"]
 data modify entity @s transformation.scale set value [1.002f,1.002f,1.002f]
-data modify entity @s brightness set value {block:15,sky:15}
+function iyc:custom_blocks/compute_brightness
 
 # Apply rotation
 execute if score #rotation iyc.data matches 1 run data modify entity @s Rotation[0] set value 180.0f
@@ -28,6 +29,15 @@ execute if score #rotation iyc.data matches 2 run data modify entity @s Rotation
 execute if score #rotation iyc.data matches 3 run data modify entity @s Rotation[0] set value 0.0f
 execute if score #rotation iyc.data matches 4 run data modify entity @s Rotation[0] set value 90.0f
 
-# Furnace NBT Recipes
-execute align xyz positioned ~.5 ~ ~.5 unless entity @e[type=marker,dx=-1,dy=-1,dz=-1,tag=furnace_nbt_recipes.furnace] run summon marker ~ ~ ~ {Tags:["furnace_nbt_recipes.furnace"]}
+# Original model
+tag @s add iyc.original
+scoreboard players set @s iyc.shape -1
+tag @s add iyc.follow
+tag @s add iyc.tree.furnace_21
+tag @s add iyc.iron_furnace
+function iyc:shapes/furnace_21
+
+# Add tag for loop every tick
+tag @s add iyc.tick
+scoreboard players add #tick_entities iyc.data 1
 

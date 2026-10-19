@@ -1,0 +1,6 @@
+{
+	"parent": "iyc:block/legacy/pressure_plate_down",
+	"textures": {
+		"texture": "minecraft:block/glowstone"
+	}
+}

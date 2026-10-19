@@ -5,33 +5,54 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "minecraft:leather_chestplate",
-					"functions": [
+					"name": "minecraft:diamond_chestplate",
+					"modifier": [
 						{
-							"function": "minecraft:set_components",
+							"type": "minecraft:set_components",
 							"components": {
 								"minecraft:custom_data": {
-									"smithed": {"dict": {"armor": {"emerald": true,"chestplate": true}},"ignore": {"functionality": true,"crafting": true}},
-									"iyc": {"emerald_chestplate": true}
+									"smithed": {
+										"dict": {"armor": {"emerald": true,"chestplate": true}},
+										"id": "iyc:emerald_chestplate",
+										"origin": "iyc",
+										"ignore": {"functionality": true,"crafting": true}
+									},
+									"iyc": {
+										"emerald_chestplate": true
+									}
 								},
-								"minecraft:max_damage": 248,
+								"minecraft:max_damage": 416,
 								"minecraft:equippable": {
 									"slot": "chest",
 									"asset_id": "iyc:emerald"
 								},
 								"minecraft:attribute_modifiers": [
-									{"type": "armor","amount": 8,"operation": "add_value","slot": "chest","id": "iyc:armor.chest"},
-									{"type": "armor_toughness","amount": 2,"operation": "add_value","slot": "chest","id": "iyc:armor_toughness.chest"},
-									{"type": "luck","amount": 0.25,"operation": "add_value","slot": "chest","id": "iyc:luck.chest"}
+									{
+										"type": "armor",
+										"amount": 7,
+										"operation": "add_value",
+										"slot": "chest",
+										"id": "iyc:armor.chest"
+									},
+									{
+										"type": "armor_toughness",
+										"amount": 2,
+										"operation": "add_value",
+										"slot": "chest",
+										"id": "iyc:armor_toughness.chest"
+									}
 								],
+								"minecraft:enchantable": {
+									"value": 15
+								},
 								"minecraft:item_model": "iyc:emerald_chestplate",
 								"minecraft:item_name": {
-									"text": "Emerald Chestplate",
-									"italic": false,
-									"color": "white"
+									"text": "Emerald Chestplate"
 								},
 								"minecraft:lore": [
-									["",{"text": "I","color": "white","italic": false,"font": "iyc:icons"},{"text": " ImagineYourCraft","italic": true,"color": "blue"}]
+									[
+										{"text": "ImagineYourCraft","italic": false,"color": "white","font": "iyc:tooltip"}
+									]
 								]
 							}
 						}
@@ -41,4 +62,3 @@
 		}
 	]
 }
-

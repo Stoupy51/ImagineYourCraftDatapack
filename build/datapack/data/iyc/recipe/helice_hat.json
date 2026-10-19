@@ -1,6 +1,7 @@
 {
 	"type": "minecraft:crafting_shapeless",
 	"category": "equipment",
+	"group": "helice_hat",
 	"ingredients": [
 		"minecraft:iron_ingot",
 		"minecraft:elytra"
@@ -16,9 +17,12 @@
 					"italic": false
 				},
 				[
-					"",
-					{"text": "I","color": "white","italic": false,"font": "iyc:icons"},
-					{"text": " ImagineYourCraft","italic": true,"color": "blue"}
+					{
+						"text": "ImagineYourCraft",
+						"italic": false,
+						"color": "white",
+						"font": "iyc:tooltip"
+					}
 				]
 			],
 			"minecraft:attribute_modifiers": [
@@ -32,19 +36,21 @@
 			],
 			"minecraft:item_model": "iyc:helice_hat",
 			"minecraft:item_name": {
-				"text": "Helice Hat",
-				"italic": false,
-				"color": "white"
+				"text": "Helice Hat"
 			},
 			"minecraft:custom_data": {
 				"iyc": {
 					"helice_hat": true
 				},
 				"smithed": {
-					"ignore": {"functionality": true,"crafting": true}
+					"id": "iyc:helice_hat",
+					"origin": "iyc",
+					"ignore": {
+						"functionality": true,
+						"crafting": true
+					}
 				}
 			}
 		}
 	}
 }
-

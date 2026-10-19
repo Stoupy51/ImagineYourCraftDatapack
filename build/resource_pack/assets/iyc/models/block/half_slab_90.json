@@ -1,0 +1,13 @@
+{
+	"textures": {
+		"particle": "#side"
+	},
+	"elements": [
+		{
+			"from": [-0.0625,-0.0625,-0.0625],
+			"to": [16.0625,8.0625,16.0625],
+			"faces": {"down": {"uv": [0,0,16,16],"rotation": 90,"texture": "#bottom","cullface": "down"},"up": {"uv": [0,0,16,16],"rotation": 90,"texture": "#top"},"north": {"uv": [0,0,8,16],"rotation": 90,"texture": "#side","cullface": "north"},"south": {"uv": [0,0,8,16],"rotation": 90,"texture": "#side","cullface": "south"},"west": {"uv": [0,0,8,16],"rotation": 90,"texture": "#side","cullface": "west"},"east": {"uv": [0,0,8,16],"rotation": 90,"texture": "#side","cullface": "east"}}
+		}
+	],
+	"parent": "minecraft:block/block"
+}

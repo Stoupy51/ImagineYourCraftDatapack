@@ -1,0 +1,8 @@
+{
+	"parent": "iyc:block/legacy/stairs",
+	"textures": {
+		"bottom": "minecraft:block/obsidian",
+		"top": "minecraft:block/obsidian",
+		"side": "minecraft:block/obsidian"
+	}
+}

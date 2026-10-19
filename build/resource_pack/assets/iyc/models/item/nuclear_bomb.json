@@ -1,7 +1,3 @@
 {
-	"parent": "block/cube_all",
-	"textures": {
-		"all": "iyc:item/nuclear_bomb"
-	}
+	"parent": "iyc:block/bombe"
 }
-

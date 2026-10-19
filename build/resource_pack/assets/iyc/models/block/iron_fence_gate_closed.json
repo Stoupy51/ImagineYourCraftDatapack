@@ -1,0 +1,6 @@
+{
+	"parent": "iyc:block/legacy/fence_gate_closed",
+	"textures": {
+		"texture": "minecraft:block/iron_block"
+	}
+}

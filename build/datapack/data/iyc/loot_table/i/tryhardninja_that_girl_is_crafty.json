@@ -5,14 +5,21 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "minecraft:command_block",
-					"functions": [
+					"name": "minecraft:recovery_compass",
+					"modifier": [
 						{
-							"function": "minecraft:set_components",
+							"type": "minecraft:set_components",
 							"components": {
 								"minecraft:custom_data": {
-									"iyc": {"tryhardninja_that_girl_is_crafty": true},
-									"smithed": {"dict": {"record": {"tryhardninja_that_girl_is_crafty": true}},"ignore": {"functionality": true,"crafting": true}}
+									"iyc": {
+										"tryhardninja_that_girl_is_crafty": true
+									},
+									"smithed": {
+										"dict": {"record": {"tryhardninja_that_girl_is_crafty": true,"item_name": "TryHardNinja - That Girl is Crafty"},"jukebox_song": {"comparator_output": 12,"length_in_seconds": 237,"sound_event": {"sound_id": "iyc:tryhardninja_that_girl_is_crafty"},"description": {"text": "TryHardNinja - That Girl is Crafty"}}},
+										"id": "iyc:tryhardninja_that_girl_is_crafty",
+										"origin": "iyc",
+										"ignore": {"functionality": true,"crafting": true}
+									}
 								},
 								"minecraft:item_name": {
 									"text": "Music Disc",
@@ -23,7 +30,9 @@
 								"minecraft:rarity": "rare",
 								"minecraft:item_model": "iyc:tryhardninja_that_girl_is_crafty",
 								"minecraft:lore": [
-									["",{"text": "I","color": "white","italic": false,"font": "iyc:icons"},{"text": " ImagineYourCraft","italic": true,"color": "blue"}]
+									[
+										{"text": "ImagineYourCraft","italic": false,"color": "white","font": "iyc:tooltip"}
+									]
 								]
 							}
 						}
@@ -33,4 +42,3 @@
 		}
 	]
 }
-

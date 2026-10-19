@@ -1,32 +1,55 @@
 {
-	"type": "minecraft:crafting_shapeless",
-	"category": "misc",
-	"ingredients": [
-		"minecraft:glass",
-		"minecraft:glass",
-		"minecraft:glass",
-		"minecraft:glass",
-		"minecraft:glass",
-		"minecraft:glass",
-		"minecraft:glass",
-		"minecraft:glass",
-		"minecraft:glass"
+	"type": "minecraft:crafting_shaped",
+	"category": "building",
+	"group": "clear_glass",
+	"pattern": [
+		"XXX",
+		"XXX",
+		"XXX"
 	],
+	"key": {
+		"X": "minecraft:glass"
+	},
 	"result": {
 		"id": "minecraft:furnace",
 		"count": 4,
 		"components": {
+			"minecraft:container": [
+				{
+					"slot": 0,
+					"item": {
+						"id": "minecraft:stone",
+						"count": 1,
+						"components": {
+							"minecraft:custom_data": {
+								"smithed": {
+									"block": {
+										"id": "iyc:clear_glass",
+										"from": "iyc"
+									}
+								}
+							}
+						}
+					}
+				}
+			],
+			"minecraft:tooltip_display": {
+				"hidden_components": [
+					"minecraft:container"
+				]
+			},
 			"minecraft:item_model": "iyc:clear_glass",
 			"minecraft:item_name": {
-				"text": "Clear Glass",
-				"italic": false,
-				"color": "white"
+				"text": "Clear Glass"
 			},
 			"minecraft:lore": [
 				[
-					"",
-					{"text": "I","color": "white","italic": false,"font": "iyc:icons"},
-					{"text": " ImagineYourCraft","italic": true,"color": "blue"}
+					{
+						"text": "ImagineYourCraft",
+						"italic": false,
+						"color": "white",
+						"font": "iyc:tooltip"
+					}
 				]
 			],
 			"minecraft:custom_data": {
@@ -34,21 +57,14 @@
 					"clear_glass": true
 				},
 				"smithed": {
-					"ignore": {"functionality": true,"crafting": true}
+					"id": "iyc:clear_glass",
+					"origin": "iyc",
+					"ignore": {
+						"functionality": true,
+						"crafting": true
+					}
 				}
-			},
-			"minecraft:container": [
-				{
-					"slot": 0,
-					"item": {"id": "minecraft:stone","count": 1,"components": {"minecraft:custom_data": {"smithed": {"block": {"id": "iyc:clear_glass","from": "iyc"}}}}}
-				}
-			],
-			"minecraft:tooltip_display": {
-				"hidden_components": [
-					"minecraft:container"
-				]
 			}
 		}
 	}
 }
-

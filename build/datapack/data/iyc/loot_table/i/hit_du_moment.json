@@ -1,0 +1,44 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:recovery_compass",
+					"modifier": [
+						{
+							"type": "minecraft:set_components",
+							"components": {
+								"minecraft:custom_data": {
+									"iyc": {
+										"hit_du_moment": true
+									},
+									"smithed": {
+										"dict": {"record": {"hit_du_moment": true,"item_name": "Hit du moment"},"jukebox_song": {"comparator_output": 12,"length_in_seconds": 61,"sound_event": {"sound_id": "iyc:hit_du_moment"},"description": {"text": "Hit du moment"}}},
+										"id": "iyc:hit_du_moment",
+										"origin": "iyc",
+										"ignore": {"functionality": true,"crafting": true}
+									}
+								},
+								"minecraft:item_name": {
+									"text": "Music Disc",
+									"italic": false
+								},
+								"minecraft:jukebox_playable": "iyc:hit_du_moment",
+								"minecraft:max_stack_size": 1,
+								"minecraft:rarity": "rare",
+								"minecraft:item_model": "iyc:hit_du_moment",
+								"minecraft:lore": [
+									[
+										{"text": "ImagineYourCraft","italic": false,"color": "white","font": "iyc:tooltip"}
+									]
+								]
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

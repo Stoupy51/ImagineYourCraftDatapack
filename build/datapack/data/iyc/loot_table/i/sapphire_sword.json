@@ -6,27 +6,49 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:diamond_sword",
-					"functions": [
+					"modifier": [
 						{
-							"function": "minecraft:set_components",
+							"type": "minecraft:set_components",
 							"components": {
 								"minecraft:custom_data": {
-									"smithed": {"dict": {"tools": {"sapphire": true,"sword": true}},"ignore": {"functionality": true,"crafting": true}},
-									"iyc": {"sapphire_sword": true}
+									"smithed": {
+										"dict": {"tools": {"sapphire": true,"sword": true}},
+										"id": "iyc:sapphire_sword",
+										"origin": "iyc",
+										"ignore": {"functionality": true,"crafting": true}
+									},
+									"iyc": {
+										"sapphire_sword": true
+									}
 								},
-								"minecraft:max_damage": 1752,
+								"minecraft:max_damage": 1639,
 								"minecraft:attribute_modifiers": [
-									{"type": "attack_damage","amount": 6,"operation": "add_value","slot": "mainhand","id": "minecraft:base_attack_damage"},
-									{"type": "attack_speed","amount": -2.4,"operation": "add_value","slot": "mainhand","id": "minecraft:base_attack_speed"}
+									{
+										"type": "attack_damage",
+										"amount": 6.25,
+										"operation": "add_value",
+										"slot": "mainhand",
+										"id": "minecraft:base_attack_damage"
+									},
+									{
+										"type": "attack_speed",
+										"amount": -2.4,
+										"operation": "add_value",
+										"slot": "mainhand",
+										"id": "minecraft:base_attack_speed"
+									}
 								],
+								"minecraft:enchantable": {
+									"value": 8
+								},
 								"minecraft:item_model": "iyc:sapphire_sword",
 								"minecraft:item_name": {
-									"text": "Sapphire Sword",
-									"italic": false,
-									"color": "white"
+									"text": "Sapphire Sword"
 								},
 								"minecraft:lore": [
-									["",{"text": "I","color": "white","italic": false,"font": "iyc:icons"},{"text": " ImagineYourCraft","italic": true,"color": "blue"}]
+									[
+										{"text": "ImagineYourCraft","italic": false,"color": "white","font": "iyc:tooltip"}
+									]
 								]
 							}
 						}
@@ -36,4 +58,3 @@
 		}
 	]
 }
-

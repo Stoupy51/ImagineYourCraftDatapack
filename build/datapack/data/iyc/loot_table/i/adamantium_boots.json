@@ -5,33 +5,54 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "minecraft:leather_boots",
-					"functions": [
+					"name": "minecraft:diamond_boots",
+					"modifier": [
 						{
-							"function": "minecraft:set_components",
+							"type": "minecraft:set_components",
 							"components": {
 								"minecraft:custom_data": {
-									"smithed": {"dict": {"armor": {"adamantium": true,"boots": true}},"ignore": {"functionality": true,"crafting": true}},
-									"iyc": {"adamantium_boots": true}
+									"smithed": {
+										"dict": {"armor": {"adamantium": true,"boots": true}},
+										"id": "iyc:adamantium_boots",
+										"origin": "iyc",
+										"ignore": {"functionality": true,"crafting": true}
+									},
+									"iyc": {
+										"adamantium_boots": true
+									}
 								},
-								"minecraft:max_damage": 443,
+								"minecraft:max_damage": 767,
 								"minecraft:equippable": {
 									"slot": "feet",
 									"asset_id": "iyc:adamantium"
 								},
 								"minecraft:attribute_modifiers": [
-									{"type": "armor","amount": 3.2,"operation": "add_value","slot": "feet","id": "iyc:armor.feet"},
-									{"type": "armor_toughness","amount": 3,"operation": "add_value","slot": "feet","id": "iyc:armor_toughness.feet"},
-									{"type": "knockback_resistance","amount": 0.1,"operation": "add_value","slot": "feet","id": "iyc:knockback_resistance.feet"}
+									{
+										"type": "armor",
+										"amount": 4,
+										"operation": "add_value",
+										"slot": "feet",
+										"id": "iyc:armor.feet"
+									},
+									{
+										"type": "armor_toughness",
+										"amount": 2,
+										"operation": "add_value",
+										"slot": "feet",
+										"id": "iyc:armor_toughness.feet"
+									}
 								],
+								"minecraft:enchantable": {
+									"value": 6
+								},
 								"minecraft:item_model": "iyc:adamantium_boots",
 								"minecraft:item_name": {
-									"text": "Adamantium Boots",
-									"italic": false,
-									"color": "white"
+									"text": "Adamantium Boots"
 								},
 								"minecraft:lore": [
-									["",{"text": "I","color": "white","italic": false,"font": "iyc:icons"},{"text": " ImagineYourCraft","italic": true,"color": "blue"}]
+									[
+										{"text": "ImagineYourCraft","italic": false,"color": "white","font": "iyc:tooltip"}
+									]
 								]
 							}
 						}
@@ -41,4 +62,3 @@
 		}
 	]
 }
-

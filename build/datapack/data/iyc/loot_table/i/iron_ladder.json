@@ -5,23 +5,40 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "minecraft:item_frame",
-					"functions": [
+					"name": "minecraft:furnace",
+					"modifier": [
 						{
-							"function": "minecraft:set_components",
+							"type": "minecraft:set_components",
 							"components": {
+								"minecraft:container": [
+									{
+										"slot": 0,
+										"item": {"id": "minecraft:stone","count": 1,"components": {"minecraft:custom_data": {"smithed": {"block": {"id": "iyc:iron_ladder","from": "iyc"}}}}}
+									}
+								],
+								"minecraft:tooltip_display": {
+									"hidden_components": [
+										"minecraft:container"
+									]
+								},
 								"minecraft:item_model": "iyc:iron_ladder",
 								"minecraft:item_name": {
-									"text": "Iron Ladder",
-									"italic": false,
-									"color": "white"
+									"text": "Iron Ladder"
 								},
 								"minecraft:lore": [
-									["",{"text": "I","color": "white","italic": false,"font": "iyc:icons"},{"text": " ImagineYourCraft","italic": true,"color": "blue"}]
+									[
+										{"text": "ImagineYourCraft","italic": false,"color": "white","font": "iyc:tooltip"}
+									]
 								],
 								"minecraft:custom_data": {
-									"iyc": {"iron_ladder": true},
-									"smithed": {"ignore": {"functionality": true,"crafting": true}}
+									"iyc": {
+										"iron_ladder": true
+									},
+									"smithed": {
+										"id": "iyc:iron_ladder",
+										"origin": "iyc",
+										"ignore": {"functionality": true,"crafting": true}
+									}
 								}
 							}
 						}
@@ -31,4 +48,3 @@
 		}
 	]
 }
-

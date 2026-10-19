@@ -4,75 +4,933 @@
 # @within	#smart_ore_generation:v1/signals/generate_ores
 #
 
-# Generate Adamantium Ore (x1)
+# Generate Ruby Ore (x36)
 scoreboard players set #dimension smart_ore_generation.data -1
 execute if dimension minecraft:overworld run scoreboard players set #dimension smart_ore_generation.data 0
-scoreboard players set #min_height smart_ore_generation.data 0
-scoreboard players set #max_height smart_ore_generation.data 50
-execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/adamantium_ore
-
-# Generate Deepslate Adamantium Ore (x1)
-scoreboard players set #dimension smart_ore_generation.data -1
-execute if dimension minecraft:overworld run scoreboard players set #dimension smart_ore_generation.data 0
-scoreboard players operation #min_height smart_ore_generation.data = _OVERWORLD_BOTTOM smart_ore_generation.data
-scoreboard players set #max_height smart_ore_generation.data 0
-execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_adamantium_ore
-
-# Generate Sapphire Ore (x1)
-scoreboard players set #dimension smart_ore_generation.data -1
-execute if dimension minecraft:overworld run scoreboard players set #dimension smart_ore_generation.data 0
-scoreboard players set #min_height smart_ore_generation.data 0
-scoreboard players set #max_height smart_ore_generation.data 50
-execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/sapphire_ore
-
-# Generate Deepslate Sapphire Ore (x1)
-scoreboard players set #dimension smart_ore_generation.data -1
-execute if dimension minecraft:overworld run scoreboard players set #dimension smart_ore_generation.data 0
-scoreboard players operation #min_height smart_ore_generation.data = _OVERWORLD_BOTTOM smart_ore_generation.data
-scoreboard players set #max_height smart_ore_generation.data 0
-execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_sapphire_ore
-
-# Generate Ruby Ore (x1)
-scoreboard players set #dimension smart_ore_generation.data -1
-execute if dimension minecraft:overworld run scoreboard players set #dimension smart_ore_generation.data 0
-scoreboard players set #min_height smart_ore_generation.data 0
-scoreboard players set #max_height smart_ore_generation.data 50
+scoreboard players set #min_height smart_ore_generation.data -64
+scoreboard players set #max_height smart_ore_generation.data -52
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/ruby_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/ruby_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/ruby_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/ruby_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/ruby_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/ruby_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/ruby_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/ruby_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/ruby_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/ruby_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/ruby_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/ruby_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/ruby_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/ruby_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/ruby_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/ruby_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/ruby_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/ruby_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/ruby_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/ruby_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/ruby_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/ruby_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/ruby_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/ruby_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/ruby_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/ruby_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/ruby_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/ruby_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/ruby_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/ruby_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/ruby_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/ruby_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/ruby_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/ruby_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/ruby_ore
 execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/ruby_ore
 
-# Generate Deepslate Ruby Ore (x1)
+# Generate Deepslate Ruby Ore (x36)
 scoreboard players set #dimension smart_ore_generation.data -1
 execute if dimension minecraft:overworld run scoreboard players set #dimension smart_ore_generation.data 0
-scoreboard players operation #min_height smart_ore_generation.data = _OVERWORLD_BOTTOM smart_ore_generation.data
-scoreboard players set #max_height smart_ore_generation.data 0
+scoreboard players set #min_height smart_ore_generation.data -64
+scoreboard players set #max_height smart_ore_generation.data -52
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_ruby_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_ruby_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_ruby_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_ruby_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_ruby_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_ruby_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_ruby_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_ruby_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_ruby_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_ruby_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_ruby_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_ruby_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_ruby_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_ruby_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_ruby_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_ruby_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_ruby_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_ruby_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_ruby_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_ruby_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_ruby_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_ruby_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_ruby_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_ruby_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_ruby_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_ruby_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_ruby_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_ruby_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_ruby_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_ruby_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_ruby_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_ruby_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_ruby_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_ruby_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_ruby_ore
 execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_ruby_ore
 
-# Generate Topaz Ore (x1)
+# Generate Sapphire Ore (x36)
 scoreboard players set #dimension smart_ore_generation.data -1
 execute if dimension minecraft:overworld run scoreboard players set #dimension smart_ore_generation.data 0
-scoreboard players set #min_height smart_ore_generation.data 0
-scoreboard players set #max_height smart_ore_generation.data 50
+scoreboard players set #min_height smart_ore_generation.data -64
+scoreboard players set #max_height smart_ore_generation.data -51
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/sapphire_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/sapphire_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/sapphire_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/sapphire_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/sapphire_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/sapphire_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/sapphire_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/sapphire_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/sapphire_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/sapphire_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/sapphire_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/sapphire_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/sapphire_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/sapphire_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/sapphire_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/sapphire_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/sapphire_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/sapphire_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/sapphire_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/sapphire_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/sapphire_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/sapphire_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/sapphire_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/sapphire_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/sapphire_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/sapphire_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/sapphire_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/sapphire_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/sapphire_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/sapphire_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/sapphire_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/sapphire_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/sapphire_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/sapphire_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/sapphire_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/sapphire_ore
+
+# Generate Deepslate Sapphire Ore (x36)
+scoreboard players set #dimension smart_ore_generation.data -1
+execute if dimension minecraft:overworld run scoreboard players set #dimension smart_ore_generation.data 0
+scoreboard players set #min_height smart_ore_generation.data -64
+scoreboard players set #max_height smart_ore_generation.data -51
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_sapphire_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_sapphire_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_sapphire_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_sapphire_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_sapphire_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_sapphire_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_sapphire_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_sapphire_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_sapphire_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_sapphire_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_sapphire_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_sapphire_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_sapphire_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_sapphire_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_sapphire_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_sapphire_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_sapphire_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_sapphire_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_sapphire_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_sapphire_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_sapphire_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_sapphire_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_sapphire_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_sapphire_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_sapphire_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_sapphire_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_sapphire_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_sapphire_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_sapphire_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_sapphire_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_sapphire_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_sapphire_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_sapphire_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_sapphire_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_sapphire_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_sapphire_ore
+
+# Generate Topaz Ore (x36)
+scoreboard players set #dimension smart_ore_generation.data -1
+execute if dimension minecraft:overworld run scoreboard players set #dimension smart_ore_generation.data 0
+scoreboard players set #min_height smart_ore_generation.data -64
+scoreboard players set #max_height smart_ore_generation.data -53
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/topaz_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/topaz_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/topaz_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/topaz_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/topaz_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/topaz_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/topaz_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/topaz_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/topaz_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/topaz_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/topaz_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/topaz_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/topaz_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/topaz_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/topaz_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/topaz_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/topaz_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/topaz_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/topaz_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/topaz_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/topaz_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/topaz_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/topaz_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/topaz_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/topaz_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/topaz_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/topaz_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/topaz_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/topaz_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/topaz_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/topaz_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/topaz_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/topaz_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/topaz_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/topaz_ore
 execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/topaz_ore
 
-# Generate Deepslate Topaz Ore (x1)
+# Generate Deepslate Topaz Ore (x36)
 scoreboard players set #dimension smart_ore_generation.data -1
 execute if dimension minecraft:overworld run scoreboard players set #dimension smart_ore_generation.data 0
-scoreboard players operation #min_height smart_ore_generation.data = _OVERWORLD_BOTTOM smart_ore_generation.data
-scoreboard players set #max_height smart_ore_generation.data 0
+scoreboard players set #min_height smart_ore_generation.data -64
+scoreboard players set #max_height smart_ore_generation.data -53
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_topaz_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_topaz_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_topaz_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_topaz_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_topaz_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_topaz_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_topaz_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_topaz_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_topaz_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_topaz_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_topaz_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_topaz_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_topaz_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_topaz_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_topaz_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_topaz_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_topaz_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_topaz_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_topaz_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_topaz_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_topaz_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_topaz_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_topaz_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_topaz_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_topaz_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_topaz_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_topaz_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_topaz_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_topaz_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_topaz_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_topaz_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_topaz_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_topaz_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_topaz_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_topaz_ore
 execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_topaz_ore
 
-# Generate Steel Ore (x2)
+# Generate Adamantium Ore (x36)
 scoreboard players set #dimension smart_ore_generation.data -1
 execute if dimension minecraft:overworld run scoreboard players set #dimension smart_ore_generation.data 0
-scoreboard players set #min_height smart_ore_generation.data 0
-scoreboard players set #max_height smart_ore_generation.data 50
+scoreboard players set #min_height smart_ore_generation.data -64
+scoreboard players set #max_height smart_ore_generation.data -55
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/adamantium_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/adamantium_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/adamantium_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/adamantium_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/adamantium_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/adamantium_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/adamantium_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/adamantium_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/adamantium_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/adamantium_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/adamantium_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/adamantium_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/adamantium_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/adamantium_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/adamantium_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/adamantium_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/adamantium_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/adamantium_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/adamantium_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/adamantium_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/adamantium_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/adamantium_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/adamantium_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/adamantium_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/adamantium_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/adamantium_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/adamantium_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/adamantium_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/adamantium_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/adamantium_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/adamantium_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/adamantium_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/adamantium_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/adamantium_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/adamantium_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/adamantium_ore
+
+# Generate Deepslate Adamantium Ore (x36)
+scoreboard players set #dimension smart_ore_generation.data -1
+execute if dimension minecraft:overworld run scoreboard players set #dimension smart_ore_generation.data 0
+scoreboard players set #min_height smart_ore_generation.data -64
+scoreboard players set #max_height smart_ore_generation.data -55
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_adamantium_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_adamantium_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_adamantium_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_adamantium_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_adamantium_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_adamantium_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_adamantium_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_adamantium_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_adamantium_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_adamantium_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_adamantium_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_adamantium_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_adamantium_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_adamantium_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_adamantium_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_adamantium_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_adamantium_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_adamantium_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_adamantium_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_adamantium_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_adamantium_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_adamantium_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_adamantium_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_adamantium_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_adamantium_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_adamantium_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_adamantium_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_adamantium_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_adamantium_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_adamantium_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_adamantium_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_adamantium_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_adamantium_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_adamantium_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_adamantium_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_adamantium_ore
+
+# Generate Slate Ore (x360)
+scoreboard players set #dimension smart_ore_generation.data -1
+execute if dimension minecraft:overworld run scoreboard players set #dimension smart_ore_generation.data 0
+scoreboard players set #min_height smart_ore_generation.data 60
+scoreboard players set #max_height smart_ore_generation.data 128
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/slate_ore
+
+# Generate Steel Ore (x72)
+scoreboard players set #dimension smart_ore_generation.data -1
+execute if dimension minecraft:the_nether run scoreboard players set #dimension smart_ore_generation.data 0
+scoreboard players set #min_height smart_ore_generation.data 4
+scoreboard players set #max_height smart_ore_generation.data 124
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/steel_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/steel_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/steel_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/steel_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/steel_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/steel_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/steel_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/steel_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/steel_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/steel_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/steel_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/steel_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/steel_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/steel_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/steel_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/steel_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/steel_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/steel_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/steel_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/steel_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/steel_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/steel_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/steel_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/steel_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/steel_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/steel_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/steel_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/steel_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/steel_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/steel_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/steel_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/steel_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/steel_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/steel_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/steel_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/steel_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/steel_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/steel_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/steel_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/steel_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/steel_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/steel_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/steel_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/steel_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/steel_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/steel_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/steel_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/steel_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/steel_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/steel_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/steel_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/steel_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/steel_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/steel_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/steel_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/steel_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/steel_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/steel_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/steel_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/steel_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/steel_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/steel_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/steel_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/steel_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/steel_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/steel_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/steel_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/steel_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/steel_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/steel_ore
 execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/steel_ore
 execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/steel_ore
 
-# Generate Deepslate Steel Ore (x2)
+# Generate Lignite Ore (x72)
+scoreboard players set #dimension smart_ore_generation.data -1
+execute if dimension minecraft:the_nether run scoreboard players set #dimension smart_ore_generation.data 0
+scoreboard players set #min_height smart_ore_generation.data 4
+scoreboard players set #max_height smart_ore_generation.data 124
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/lignite_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/lignite_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/lignite_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/lignite_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/lignite_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/lignite_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/lignite_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/lignite_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/lignite_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/lignite_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/lignite_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/lignite_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/lignite_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/lignite_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/lignite_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/lignite_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/lignite_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/lignite_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/lignite_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/lignite_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/lignite_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/lignite_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/lignite_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/lignite_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/lignite_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/lignite_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/lignite_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/lignite_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/lignite_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/lignite_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/lignite_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/lignite_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/lignite_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/lignite_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/lignite_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/lignite_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/lignite_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/lignite_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/lignite_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/lignite_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/lignite_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/lignite_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/lignite_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/lignite_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/lignite_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/lignite_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/lignite_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/lignite_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/lignite_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/lignite_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/lignite_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/lignite_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/lignite_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/lignite_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/lignite_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/lignite_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/lignite_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/lignite_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/lignite_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/lignite_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/lignite_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/lignite_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/lignite_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/lignite_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/lignite_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/lignite_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/lignite_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/lignite_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/lignite_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/lignite_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/lignite_ore
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/lignite_ore
+
+# Generate Blue Flower (x18.0)
 scoreboard players set #dimension smart_ore_generation.data -1
 execute if dimension minecraft:overworld run scoreboard players set #dimension smart_ore_generation.data 0
-scoreboard players operation #min_height smart_ore_generation.data = _OVERWORLD_BOTTOM smart_ore_generation.data
-scoreboard players set #max_height smart_ore_generation.data 0
-execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_steel_ore
-execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/deepslate_steel_ore
+scoreboard players set #min_height smart_ore_generation.data 50
+scoreboard players set #max_height smart_ore_generation.data 200
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/blue_flower
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/blue_flower
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/blue_flower
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/blue_flower
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/blue_flower
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/blue_flower
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/blue_flower
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/blue_flower
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/blue_flower
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/blue_flower
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/blue_flower
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/blue_flower
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/blue_flower
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/blue_flower
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/blue_flower
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/blue_flower
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/blue_flower
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/blue_flower
+
+# Generate White Flower (x18.0)
+scoreboard players set #dimension smart_ore_generation.data -1
+execute if dimension minecraft:overworld run scoreboard players set #dimension smart_ore_generation.data 0
+scoreboard players set #min_height smart_ore_generation.data 50
+scoreboard players set #max_height smart_ore_generation.data 200
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/white_flower
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/white_flower
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/white_flower
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/white_flower
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/white_flower
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/white_flower
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/white_flower
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/white_flower
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/white_flower
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/white_flower
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/white_flower
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/white_flower
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/white_flower
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/white_flower
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/white_flower
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/white_flower
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/white_flower
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/white_flower
+
+# Generate Black Flower (x18.0)
+scoreboard players set #dimension smart_ore_generation.data -1
+execute if dimension minecraft:overworld run scoreboard players set #dimension smart_ore_generation.data 0
+scoreboard players set #min_height smart_ore_generation.data 50
+scoreboard players set #max_height smart_ore_generation.data 200
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/black_flower
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/black_flower
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/black_flower
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/black_flower
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/black_flower
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/black_flower
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/black_flower
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/black_flower
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/black_flower
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/black_flower
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/black_flower
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/black_flower
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/black_flower
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/black_flower
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/black_flower
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/black_flower
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/black_flower
+execute if score #dimension smart_ore_generation.data matches 0.. run function iyc:calls/smart_ore_generation/veins/black_flower
 

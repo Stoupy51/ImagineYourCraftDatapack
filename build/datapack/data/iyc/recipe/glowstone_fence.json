@@ -1,0 +1,70 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"category": "building",
+	"group": "glowstone_fence",
+	"pattern": [
+		"X#X",
+		"X#X"
+	],
+	"key": {
+		"X": "minecraft:stick",
+		"#": "minecraft:glowstone"
+	},
+	"result": {
+		"id": "minecraft:furnace",
+		"count": 6,
+		"components": {
+			"minecraft:container": [
+				{
+					"slot": 0,
+					"item": {
+						"id": "minecraft:stone",
+						"count": 1,
+						"components": {
+							"minecraft:custom_data": {
+								"smithed": {
+									"block": {
+										"id": "iyc:glowstone_fence",
+										"from": "iyc"
+									}
+								}
+							}
+						}
+					}
+				}
+			],
+			"minecraft:tooltip_display": {
+				"hidden_components": [
+					"minecraft:container"
+				]
+			},
+			"minecraft:item_model": "iyc:glowstone_fence",
+			"minecraft:item_name": {
+				"text": "Glowstone Fence"
+			},
+			"minecraft:lore": [
+				[
+					{
+						"text": "ImagineYourCraft",
+						"italic": false,
+						"color": "white",
+						"font": "iyc:tooltip"
+					}
+				]
+			],
+			"minecraft:custom_data": {
+				"iyc": {
+					"glowstone_fence": true
+				},
+				"smithed": {
+					"id": "iyc:glowstone_fence",
+					"origin": "iyc",
+					"ignore": {
+						"functionality": true,
+						"crafting": true
+					}
+				}
+			}
+		}
+	}
+}

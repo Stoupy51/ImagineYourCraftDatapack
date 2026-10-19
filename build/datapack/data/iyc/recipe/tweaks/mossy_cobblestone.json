@@ -1,0 +1,17 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"category": "misc",
+	"pattern": [
+		"###",
+		"#X#",
+		"###"
+	],
+	"key": {
+		"#": "minecraft:vine",
+		"X": "minecraft:cobblestone"
+	},
+	"result": {
+		"id": "minecraft:mossy_cobblestone",
+		"count": 4
+	}
+}

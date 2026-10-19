@@ -1,7 +1,9 @@
 
 #> iyc:entity/rock_check/marker_setup
 #
-# @within	iyc:entity/rock_check/main
+# @executed	at @s
+#
+# @within	iyc:entity/rock_check/main [ at @s ]
 #
 
 # Copy Owner UUID

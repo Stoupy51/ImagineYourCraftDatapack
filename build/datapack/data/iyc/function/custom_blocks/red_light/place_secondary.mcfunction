@@ -1,7 +1,9 @@
 
 #> iyc:custom_blocks/red_light/place_secondary
 #
-# @within	iyc:custom_blocks/red_light/place_main
+# @executed	at @s
+#
+# @within	iyc:custom_blocks/red_light/place_main [ at @s ]
 #
 
 # Add convention and utils tags, and the custom block tag
@@ -11,14 +13,20 @@ tag @s add smithed.entity
 tag @s add smithed.block
 tag @s add iyc.custom_block
 tag @s add iyc.red_light
-tag @s add iyc.vanilla.minecraft_red_concrete
+tag @s add iyc.vanilla.minecraft_redstone_lamp
 
 # Add a custom name
-data merge entity @s {"CustomName": {"text": "Red Light","italic": false,"color": "white"}}
-
+data merge entity @s {"CustomName": {"text": "Red Light"}}
 
 # Modify item display entity to match the custom block
-item replace entity @s container.0 with minecraft:furnace[item_model="iyc:red_light"]
+item replace entity @s contents with minecraft:furnace[item_model="iyc:red_light"]
 data modify entity @s transformation.scale set value [1.002f,1.002f,1.002f]
-data modify entity @s brightness set value {block:15,sky:15}
+function iyc:custom_blocks/compute_brightness
+
+# Original model
+tag @s add iyc.original
+scoreboard players set @s iyc.shape -1
+tag @s add iyc.follow
+tag @s add iyc.tree.lamp_11
+function iyc:shapes/lamp_11
 

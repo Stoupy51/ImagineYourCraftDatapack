@@ -5,14 +5,21 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "minecraft:command_block",
-					"functions": [
+					"name": "minecraft:recovery_compass",
+					"modifier": [
 						{
-							"function": "minecraft:set_components",
+							"type": "minecraft:set_components",
 							"components": {
 								"minecraft:custom_data": {
-									"iyc": {"captainsparklez_minecraft_style": true},
-									"smithed": {"dict": {"record": {"captainsparklez_minecraft_style": true}},"ignore": {"functionality": true,"crafting": true}}
+									"iyc": {
+										"captainsparklez_minecraft_style": true
+									},
+									"smithed": {
+										"dict": {"record": {"captainsparklez_minecraft_style": true,"item_name": "CaptainSparklez - Minecraft Style"},"jukebox_song": {"comparator_output": 13,"length_in_seconds": 238,"sound_event": {"sound_id": "iyc:captainsparklez_minecraft_style"},"description": {"text": "CaptainSparklez - Minecraft Style"}}},
+										"id": "iyc:captainsparklez_minecraft_style",
+										"origin": "iyc",
+										"ignore": {"functionality": true,"crafting": true}
+									}
 								},
 								"minecraft:item_name": {
 									"text": "Music Disc",
@@ -23,7 +30,9 @@
 								"minecraft:rarity": "rare",
 								"minecraft:item_model": "iyc:captainsparklez_minecraft_style",
 								"minecraft:lore": [
-									["",{"text": "I","color": "white","italic": false,"font": "iyc:icons"},{"text": " ImagineYourCraft","italic": true,"color": "blue"}]
+									[
+										{"text": "ImagineYourCraft","italic": false,"color": "white","font": "iyc:tooltip"}
+									]
 								]
 							}
 						}
@@ -33,4 +42,3 @@
 		}
 	]
 }
-

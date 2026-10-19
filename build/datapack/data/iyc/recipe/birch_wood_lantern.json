@@ -1,26 +1,56 @@
 {
-	"type": "minecraft:crafting_shapeless",
-	"category": "blocks",
+	"type": "minecraft:crafting_shaped",
+	"category": "building",
 	"group": "wood_lantern",
-	"ingredients": [
-		"minecraft:glowstone",
-		"minecraft:birch_wood"
+	"pattern": [
+		"###",
+		"#X#",
+		"###"
 	],
+	"key": {
+		"#": "minecraft:birch_log",
+		"X": "minecraft:glowstone"
+	},
 	"result": {
 		"id": "minecraft:furnace",
-		"count": 1,
+		"count": 4,
 		"components": {
+			"minecraft:container": [
+				{
+					"slot": 0,
+					"item": {
+						"id": "minecraft:stone",
+						"count": 1,
+						"components": {
+							"minecraft:custom_data": {
+								"smithed": {
+									"block": {
+										"id": "iyc:birch_wood_lantern",
+										"from": "iyc"
+									}
+								}
+							}
+						}
+					}
+				}
+			],
+			"minecraft:tooltip_display": {
+				"hidden_components": [
+					"minecraft:container"
+				]
+			},
 			"minecraft:item_model": "iyc:birch_wood_lantern",
 			"minecraft:item_name": {
-				"text": "Birch Wood Lantern",
-				"italic": false,
-				"color": "white"
+				"text": "Birch Wood Lantern"
 			},
 			"minecraft:lore": [
 				[
-					"",
-					{"text": "I","color": "white","italic": false,"font": "iyc:icons"},
-					{"text": " ImagineYourCraft","italic": true,"color": "blue"}
+					{
+						"text": "ImagineYourCraft",
+						"italic": false,
+						"color": "white",
+						"font": "iyc:tooltip"
+					}
 				]
 			],
 			"minecraft:custom_data": {
@@ -28,21 +58,14 @@
 					"birch_wood_lantern": true
 				},
 				"smithed": {
-					"ignore": {"functionality": true,"crafting": true}
+					"id": "iyc:birch_wood_lantern",
+					"origin": "iyc",
+					"ignore": {
+						"functionality": true,
+						"crafting": true
+					}
 				}
-			},
-			"minecraft:container": [
-				{
-					"slot": 0,
-					"item": {"id": "minecraft:stone","count": 1,"components": {"minecraft:custom_data": {"smithed": {"block": {"id": "iyc:birch_wood_lantern","from": "iyc"}}}}}
-				}
-			],
-			"minecraft:tooltip_display": {
-				"hidden_components": [
-					"minecraft:container"
-				]
 			}
 		}
 	}
 }
-

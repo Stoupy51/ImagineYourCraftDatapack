@@ -1,7 +1,9 @@
 
 #> iyc:entity/rock_check/main
 #
-# @within	iyc:v0.0.1/tick
+# @executed	as @e[type=snowball,tag=!iyc.rock_checked]
+#
+# @within	iyc:v0.1.0/tick [ as @e[type=snowball,tag=!iyc.rock_checked] ]
 #
 
 # Add tag to prevent function from running again

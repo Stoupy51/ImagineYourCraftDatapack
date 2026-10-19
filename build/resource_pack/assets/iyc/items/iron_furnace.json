@@ -1,7 +1,27 @@
 {
 	"model": {
-		"type": "minecraft:model",
-		"model": "iyc:item/iron_furnace"
+		"type": "minecraft:select",
+		"property": "minecraft:custom_model_data",
+		"index": 0,
+		"cases": [
+			{
+				"when": "0",
+				"model": {
+					"type": "minecraft:model",
+					"model": "iyc:block/iron_furnace"
+				}
+			},
+			{
+				"when": "1",
+				"model": {
+					"type": "minecraft:model",
+					"model": "iyc:block/lit_iron_furnace"
+				}
+			}
+		],
+		"fallback": {
+			"type": "minecraft:model",
+			"model": "iyc:item/iron_furnace"
+		}
 	}
 }
-

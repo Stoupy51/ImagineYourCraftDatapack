@@ -5,23 +5,30 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "minecraft:command_block",
-					"functions": [
+					"name": "minecraft:recovery_compass",
+					"modifier": [
 						{
-							"function": "minecraft:set_components",
+							"type": "minecraft:set_components",
 							"components": {
 								"minecraft:custom_data": {
-									"smithed": {"dict": {"raw": {"steel": true}},"ignore": {"functionality": true,"crafting": true}},
-									"iyc": {"raw_steel": true}
+									"smithed": {
+										"dict": {"raw": {"steel": true}},
+										"id": "iyc:raw_steel",
+										"origin": "iyc",
+										"ignore": {"functionality": true,"crafting": true}
+									},
+									"iyc": {
+										"raw_steel": true
+									}
 								},
 								"minecraft:item_model": "iyc:raw_steel",
 								"minecraft:item_name": {
-									"text": "Raw Steel",
-									"italic": false,
-									"color": "white"
+									"text": "Raw Steel"
 								},
 								"minecraft:lore": [
-									["",{"text": "I","color": "white","italic": false,"font": "iyc:icons"},{"text": " ImagineYourCraft","italic": true,"color": "blue"}]
+									[
+										{"text": "ImagineYourCraft","italic": false,"color": "white","font": "iyc:tooltip"}
+									]
 								]
 							}
 						}
@@ -31,4 +38,3 @@
 		}
 	]
 }
-

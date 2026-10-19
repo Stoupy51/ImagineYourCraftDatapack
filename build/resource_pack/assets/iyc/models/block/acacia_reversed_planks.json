@@ -1,0 +1,6 @@
+{
+	"parent": "iyc:block/cube_90_all",
+	"textures": {
+		"all": "minecraft:block/acacia_planks"
+	}
+}

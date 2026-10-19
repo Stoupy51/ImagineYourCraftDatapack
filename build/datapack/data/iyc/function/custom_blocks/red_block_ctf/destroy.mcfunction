@@ -1,0 +1,20 @@
+
+#> iyc:custom_blocks/red_block_ctf/destroy
+#
+# @executed	at @s
+#
+# @within	iyc:custom_blocks/no_block_below
+#			iyc:custom_blocks/_groups/minecraft_glass
+#
+
+# Replace the item with the custom one
+execute as @n[type=item,nbt={Item:{id:"minecraft:glass"}},distance=..1] run function iyc:custom_blocks/red_block_ctf/replace_item
+
+# Decrease count scores
+scoreboard players remove #total_custom_blocks iyc.data 1
+scoreboard players remove #total_vanilla_glass iyc.data 1
+scoreboard players remove #total_red_block_ctf iyc.data 1
+
+# Kill the custom block entity
+kill @s
+

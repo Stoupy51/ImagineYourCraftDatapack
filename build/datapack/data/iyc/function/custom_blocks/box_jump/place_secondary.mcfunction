@@ -1,7 +1,9 @@
 
 #> iyc:custom_blocks/box_jump/place_secondary
 #
-# @within	iyc:custom_blocks/box_jump/place_main
+# @executed	at @s
+#
+# @within	iyc:custom_blocks/box_jump/place_main [ at @s ]
 #
 
 # Add convention and utils tags, and the custom block tag
@@ -14,11 +16,20 @@ tag @s add iyc.box_jump
 tag @s add iyc.vanilla.minecraft_oak_planks
 
 # Add a custom name
-data merge entity @s {"CustomName": {"text": "Box Jump","italic": false,"color": "white"}}
-
+data merge entity @s {"CustomName": {"text": "Box Jump"}}
 
 # Modify item display entity to match the custom block
-item replace entity @s container.0 with minecraft:furnace[item_model="iyc:box_jump"]
+item replace entity @s contents with minecraft:furnace[item_model="iyc:box_jump"]
 data modify entity @s transformation.scale set value [1.002f,1.002f,1.002f]
-data modify entity @s brightness set value {block:15,sky:15}
+function iyc:custom_blocks/compute_brightness
+
+# Original model
+tag @s add iyc.original
+scoreboard players set @s iyc.shape -1
+tag @s add iyc.jump_box
+function iyc:shapes/fixed_0
+
+# Add tag for loop every tick
+tag @s add iyc.tick
+scoreboard players add #tick_entities iyc.data 1
 

@@ -1,7 +1,3 @@
 {
-	"parent": "block/cube_all",
-	"textures": {
-		"all": "iyc:item/reversed_oak_planks"
-	}
+	"parent": "iyc:block/oak_reversed_planks"
 }
-

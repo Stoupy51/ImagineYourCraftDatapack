@@ -1,0 +1,44 @@
+{
+	"type": "minecraft:smelting",
+	"ingredient": "minecraft:iron_helmet",
+	"result": {
+		"id": "minecraft:recovery_compass",
+		"count": 1,
+		"components": {
+			"minecraft:custom_data": {
+				"smithed": {
+					"dict": {
+						"nugget": {
+							"steel": true
+						}
+					},
+					"id": "iyc:steel_nugget",
+					"origin": "iyc",
+					"ignore": {
+						"functionality": true,
+						"crafting": true
+					}
+				},
+				"iyc": {
+					"steel_nugget": true
+				}
+			},
+			"minecraft:item_model": "iyc:steel_nugget",
+			"minecraft:item_name": {
+				"text": "Steel Nugget"
+			},
+			"minecraft:lore": [
+				[
+					{
+						"text": "ImagineYourCraft",
+						"italic": false,
+						"color": "white",
+						"font": "iyc:tooltip"
+					}
+				]
+			]
+		}
+	},
+	"experience": 0.8,
+	"cookingtime": 200
+}

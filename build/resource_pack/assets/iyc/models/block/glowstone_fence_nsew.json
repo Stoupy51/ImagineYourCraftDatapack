@@ -1,0 +1,6 @@
+{
+	"parent": "iyc:block/legacy/fence_nsew",
+	"textures": {
+		"texture": "minecraft:block/glowstone"
+	}
+}

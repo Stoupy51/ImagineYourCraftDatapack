@@ -1,0 +1,181 @@
+{
+	"model": {
+		"type": "minecraft:select",
+		"property": "minecraft:custom_model_data",
+		"index": 0,
+		"cases": [
+			{
+				"when": "0",
+				"model": {
+					"type": "minecraft:model",
+					"model": "iyc:block/obsidian_stairs"
+				}
+			},
+			{
+				"when": "1",
+				"model": {
+					"type": "minecraft:model",
+					"model": "iyc:block/obsidian_stairs_x0_y180"
+				}
+			},
+			{
+				"when": "2",
+				"model": {
+					"type": "minecraft:model",
+					"model": "iyc:block/obsidian_stairs_x0_y90"
+				}
+			},
+			{
+				"when": "3",
+				"model": {
+					"type": "minecraft:model",
+					"model": "iyc:block/obsidian_stairs_x0_y270"
+				}
+			},
+			{
+				"when": "4",
+				"model": {
+					"type": "minecraft:model",
+					"model": "iyc:block/obsidian_outer_stairs"
+				}
+			},
+			{
+				"when": "5",
+				"model": {
+					"type": "minecraft:model",
+					"model": "iyc:block/obsidian_outer_stairs_x0_y180"
+				}
+			},
+			{
+				"when": "6",
+				"model": {
+					"type": "minecraft:model",
+					"model": "iyc:block/obsidian_outer_stairs_x0_y90"
+				}
+			},
+			{
+				"when": "7",
+				"model": {
+					"type": "minecraft:model",
+					"model": "iyc:block/obsidian_outer_stairs_x0_y270"
+				}
+			},
+			{
+				"when": "8",
+				"model": {
+					"type": "minecraft:model",
+					"model": "iyc:block/obsidian_inner_stairs"
+				}
+			},
+			{
+				"when": "9",
+				"model": {
+					"type": "minecraft:model",
+					"model": "iyc:block/obsidian_inner_stairs_x0_y180"
+				}
+			},
+			{
+				"when": "10",
+				"model": {
+					"type": "minecraft:model",
+					"model": "iyc:block/obsidian_inner_stairs_x0_y90"
+				}
+			},
+			{
+				"when": "11",
+				"model": {
+					"type": "minecraft:model",
+					"model": "iyc:block/obsidian_inner_stairs_x0_y270"
+				}
+			},
+			{
+				"when": "12",
+				"model": {
+					"type": "minecraft:model",
+					"model": "iyc:block/obsidian_stairs_x180_y0"
+				}
+			},
+			{
+				"when": "13",
+				"model": {
+					"type": "minecraft:model",
+					"model": "iyc:block/obsidian_stairs_x180_y180"
+				}
+			},
+			{
+				"when": "14",
+				"model": {
+					"type": "minecraft:model",
+					"model": "iyc:block/obsidian_stairs_x180_y90"
+				}
+			},
+			{
+				"when": "15",
+				"model": {
+					"type": "minecraft:model",
+					"model": "iyc:block/obsidian_stairs_x180_y270"
+				}
+			},
+			{
+				"when": "16",
+				"model": {
+					"type": "minecraft:model",
+					"model": "iyc:block/obsidian_outer_stairs_x180_y0"
+				}
+			},
+			{
+				"when": "17",
+				"model": {
+					"type": "minecraft:model",
+					"model": "iyc:block/obsidian_outer_stairs_x180_y180"
+				}
+			},
+			{
+				"when": "18",
+				"model": {
+					"type": "minecraft:model",
+					"model": "iyc:block/obsidian_outer_stairs_x180_y90"
+				}
+			},
+			{
+				"when": "19",
+				"model": {
+					"type": "minecraft:model",
+					"model": "iyc:block/obsidian_outer_stairs_x180_y270"
+				}
+			},
+			{
+				"when": "20",
+				"model": {
+					"type": "minecraft:model",
+					"model": "iyc:block/obsidian_inner_stairs_x180_y0"
+				}
+			},
+			{
+				"when": "21",
+				"model": {
+					"type": "minecraft:model",
+					"model": "iyc:block/obsidian_inner_stairs_x180_y180"
+				}
+			},
+			{
+				"when": "22",
+				"model": {
+					"type": "minecraft:model",
+					"model": "iyc:block/obsidian_inner_stairs_x180_y90"
+				}
+			},
+			{
+				"when": "23",
+				"model": {
+					"type": "minecraft:model",
+					"model": "iyc:block/obsidian_inner_stairs_x180_y270"
+				}
+			}
+		],
+		"fallback": {
+			"type": "minecraft:model",
+			"model": "iyc:item/obsidian_stairs"
+		}
+	}
+}

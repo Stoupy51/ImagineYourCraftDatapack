@@ -1,0 +1,16 @@
+{
+	"textures": {
+		"particle": "minecraft:block/cake_side",
+		"bottom": "minecraft:block/cake_bottom",
+		"top": "minecraft:block/cake_top",
+		"side": "minecraft:block/cake_side"
+	},
+	"elements": [
+		{
+			"from": [0.9375,-0.0625,0.9375],
+			"to": [15.0625,8.0625,15.0625],
+			"faces": {"down": {"uv": [1,1,15,15],"texture": "#bottom","cullface": "down"},"up": {"uv": [1,1,15,15],"texture": "#top"},"north": {"uv": [1,8,15,16],"texture": "#side"},"south": {"uv": [1,8,15,16],"texture": "#side"},"west": {"uv": [1,8,15,16],"texture": "#side"},"east": {"uv": [1,8,15,16],"texture": "#side"}}
+		}
+	],
+	"parent": "minecraft:block/block"
+}

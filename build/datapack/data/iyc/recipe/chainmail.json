@@ -1,25 +1,30 @@
 {
-	"type": "minecraft:crafting_shapeless",
+	"type": "minecraft:crafting_shaped",
 	"category": "misc",
-	"ingredients": [
-		"minecraft:chain",
-		"minecraft:chain"
+	"group": "chainmail",
+	"pattern": [
+		"#",
+		"#"
 	],
+	"key": {
+		"#": "minecraft:iron_ingot"
+	},
 	"result": {
-		"id": "minecraft:command_block",
-		"count": 4,
+		"id": "minecraft:recovery_compass",
+		"count": 6,
 		"components": {
 			"minecraft:item_model": "iyc:chainmail",
 			"minecraft:item_name": {
-				"text": "Chainmail",
-				"italic": false,
-				"color": "white"
+				"text": "Chainmail"
 			},
 			"minecraft:lore": [
 				[
-					"",
-					{"text": "I","color": "white","italic": false,"font": "iyc:icons"},
-					{"text": " ImagineYourCraft","italic": true,"color": "blue"}
+					{
+						"text": "ImagineYourCraft",
+						"italic": false,
+						"color": "white",
+						"font": "iyc:tooltip"
+					}
 				]
 			],
 			"minecraft:custom_data": {
@@ -27,10 +32,14 @@
 					"chainmail": true
 				},
 				"smithed": {
-					"ignore": {"functionality": true,"crafting": true}
+					"id": "iyc:chainmail",
+					"origin": "iyc",
+					"ignore": {
+						"functionality": true,
+						"crafting": true
+					}
 				}
 			}
 		}
 	}
 }
-

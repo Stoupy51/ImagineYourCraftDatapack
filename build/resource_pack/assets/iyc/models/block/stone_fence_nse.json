@@ -1,0 +1,6 @@
+{
+	"parent": "iyc:block/legacy/fence_nse",
+	"textures": {
+		"texture": "minecraft:block/stone"
+	}
+}

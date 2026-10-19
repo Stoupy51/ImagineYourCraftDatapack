@@ -1,25 +1,56 @@
 {
-	"type": "minecraft:crafting_shapeless",
-	"category": "blocks",
-	"ingredients": [
-		"minecraft:redstone_lamp",
-		"minecraft:red_wool"
+	"type": "minecraft:crafting_shaped",
+	"category": "redstone",
+	"group": "red_light",
+	"pattern": [
+		"###",
+		"#O#",
+		"###"
 	],
+	"key": {
+		"#": "minecraft:redstone",
+		"O": "minecraft:redstone_lamp"
+	},
 	"result": {
 		"id": "minecraft:furnace",
 		"count": 1,
 		"components": {
+			"minecraft:container": [
+				{
+					"slot": 0,
+					"item": {
+						"id": "minecraft:stone",
+						"count": 1,
+						"components": {
+							"minecraft:custom_data": {
+								"smithed": {
+									"block": {
+										"id": "iyc:red_light",
+										"from": "iyc"
+									}
+								}
+							}
+						}
+					}
+				}
+			],
+			"minecraft:tooltip_display": {
+				"hidden_components": [
+					"minecraft:container"
+				]
+			},
 			"minecraft:item_model": "iyc:red_light",
 			"minecraft:item_name": {
-				"text": "Red Light",
-				"italic": false,
-				"color": "white"
+				"text": "Red Light"
 			},
 			"minecraft:lore": [
 				[
-					"",
-					{"text": "I","color": "white","italic": false,"font": "iyc:icons"},
-					{"text": " ImagineYourCraft","italic": true,"color": "blue"}
+					{
+						"text": "ImagineYourCraft",
+						"italic": false,
+						"color": "white",
+						"font": "iyc:tooltip"
+					}
 				]
 			],
 			"minecraft:custom_data": {
@@ -27,21 +58,14 @@
 					"red_light": true
 				},
 				"smithed": {
-					"ignore": {"functionality": true,"crafting": true}
+					"id": "iyc:red_light",
+					"origin": "iyc",
+					"ignore": {
+						"functionality": true,
+						"crafting": true
+					}
 				}
-			},
-			"minecraft:container": [
-				{
-					"slot": 0,
-					"item": {"id": "minecraft:stone","count": 1,"components": {"minecraft:custom_data": {"smithed": {"block": {"id": "iyc:red_light","from": "iyc"}}}}}
-				}
-			],
-			"minecraft:tooltip_display": {
-				"hidden_components": [
-					"minecraft:container"
-				]
 			}
 		}
 	}
 }
-

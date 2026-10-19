@@ -1,0 +1,32 @@
+{
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"type": "minecraft:match_tool",
+					"predicate": {
+						"items": [
+							"minecraft:item_frame"
+						],
+						"predicates": {
+							"minecraft:custom_data": {
+								"iyc": {
+									"hops_seeds": true
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+	"requirements": [
+		[
+			"requirement"
+		]
+	],
+	"rewards": {
+		"function": "iyc:custom_blocks/hops_seeds/search"
+	}
+}

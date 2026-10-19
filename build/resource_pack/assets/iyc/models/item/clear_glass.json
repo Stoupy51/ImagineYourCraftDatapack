@@ -1,7 +1,3 @@
 {
-	"parent": "block/cube_all",
-	"textures": {
-		"all": "iyc:item/clear_glass"
-	}
+	"parent": "iyc:block/clear_glass"
 }
-

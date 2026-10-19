@@ -1,0 +1,6 @@
+{
+	"parent": "iyc:block/legacy/fence_inventory",
+	"textures": {
+		"texture": "minecraft:block/glowstone"
+	}
+}

@@ -1,0 +1,91 @@
+
+# Identity
+id: "iyc"
+name: "ImagineYourCraft"
+author: "Stoupy51"
+version: "0.1.0"
+minecraft: "26.3"
+
+# Some directories
+directory: "."
+output: "build"
+
+# A list of importable plugin strings
+require:
+    - "stewbeet"
+    #- "stewbeet.plugins.sniffer"
+
+# Takes a nested pack config, see PackConfig() documentation
+data_pack:
+    name: "datapack"
+    load: ["merge/datapack"]
+
+# Takes a nested pack config, see PackConfig() documentation
+resource_pack:
+    name: resource_pack
+
+# A list of strings or dicts representing "plugins".
+# - These plugins will execute after the pack is loaded
+# - If item = str, should be a path to an importable plugin (ex: "stewbeet.plugins.auto_lang")
+# - If item = dict, should be a nestable project config
+#     - Each sub-pipeline creates a temp context inheriting the parent context
+pipeline:
+    - "user.setup_definitions" # User code
+    - "stewbeet.plugins.resource_pack.sounds.silent"
+    - "stewbeet.plugins.resource_pack.item_models.silent"
+    # - "stewbeet.plugins.resource_pack.check_power_of_2"
+    - "stewbeet.plugins.custom_recipes.silent"
+    - "stewbeet.plugins.custom_paintings.silent"
+    # - "stewbeet.plugins.ingame_manual"
+    - "stewbeet.plugins.datapack.loading.silent"
+    - "stewbeet.plugins.datapack.custom_blocks.silent"
+    - "stewbeet.plugins.datapack.loot_tables.silent"
+    - "stewbeet.plugins.datapack.sorters.silent"
+    - "stewbeet.plugins.compatibilities.simpledrawer.silent"
+    - "stewbeet.plugins.compatibilities.neo_enchant.silent"
+    - "user.original" # User code
+    - "user.link" # User code
+    - "stewbeet.plugins.finalyze.custom_blocks_ticking.silent"
+    - "stewbeet.plugins.finalyze.basic_datapack_structure.silent"
+    - "stewbeet.plugins.finalyze.dependencies"
+    # - "stewbeet.plugins.finalyze.check_unused_textures"
+    - "stewbeet.plugins.finalyze.last_final.silent"
+    - "stewbeet.plugins.auto.scoreboard_constants.silent"
+    # - "stewbeet.plugins.auto.lang_file"
+    - "stewbeet.plugins.auto.text_renders.silent"
+    - "stewbeet.plugins.auto.headers.silent"
+    - "stewbeet.plugins.archive"
+    - "stewbeet.plugins.merge_smithed_weld.datapack"
+    - "stewbeet.plugins.merge_smithed_weld.resource_pack"
+    - "stewbeet.plugins.copy_to_destination.silent"
+    - "stewbeet.plugins.compute_sha1.silent"
+
+# Generic dict which holds extra information usable by plugins
+meta:
+    # Versions of Minecraft the pack supports, from the oldest to the newest
+    mc_supports: ["26.3", "infinite"]
+
+    # Model resolver configuration for caching models
+    model_resolver:
+        use_cache: true
+
+    # StewBeet specific configuration
+    stewbeet:
+        textures_folder: "assets/textures"
+        sounds:
+            folder: "assets/sounds"
+            exclude_patterns: []
+        records_folder: "assets/records"
+        libs_folder: "libs"
+        libs_exclude_patterns: []
+        definitions_debug: "database_debug.json"
+        build_copy_destinations:
+            datapack: []
+            resource_pack: []
+
+        manual:
+            high_resolution: true
+            cache_assets: true
+            cache_pages: true
+            json_dump_path: "debug_manual.json"
+            first_page_text: [{"text":"This manual is very interactive and will guide you through the different items and blocks available in the datapack!", "color":"#505050"}]

@@ -1,0 +1,8 @@
+{
+    "parent": "iyc:block/fire_camp",
+    "textures": {
+        "bottom": "blocks/stonebrick",
+        "top": "iyc:blocks/campFire_top_stonebrick",
+        "side": "blocks/stonebrick"
+    }
+}

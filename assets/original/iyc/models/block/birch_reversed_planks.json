@@ -1,0 +1,6 @@
+{
+    "parent": "iyc:block/cube_90_all",
+    "textures": {
+        "all": "blocks/planks_birch"
+    }
+}

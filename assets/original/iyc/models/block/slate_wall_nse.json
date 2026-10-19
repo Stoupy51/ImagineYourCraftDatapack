@@ -1,0 +1,6 @@
+{
+    "parent": "block/wall_nse",
+    "textures": {
+        "wall": "iyc:blocks/slate_block"
+    }
+}

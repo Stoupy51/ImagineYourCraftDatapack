@@ -1,0 +1,8 @@
+{
+    "parent": "block/inner_stairs",
+    "textures": {
+        "bottom": "iyc:blocks/slate_block",
+        "top": "iyc:blocks/slate_block",
+        "side": "iyc:blocks/slate_block"
+    }
+}

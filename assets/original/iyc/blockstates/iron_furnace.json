@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=north": { "model": "iyc:iron_furnace" },
+        "facing=south": { "model": "iyc:iron_furnace", "y": 180 },
+        "facing=west":  { "model": "iyc:iron_furnace", "y": 270 },
+        "facing=east":  { "model": "iyc:iron_furnace", "y": 90 }
+    }
+}

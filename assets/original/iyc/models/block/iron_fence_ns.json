@@ -1,0 +1,6 @@
+{
+    "parent": "iyc:block/fence_ns",
+    "textures": {
+        "texture": "blocks/iron_block"
+    }
+}

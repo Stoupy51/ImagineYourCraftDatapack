@@ -1,0 +1,8 @@
+{
+    "parent": "iyc:block/outer_slopes",
+    "textures": {
+        "side": "blocks/log_spruce",
+        "top": "blocks/log_spruce_top",
+        "bottom": "blocks/log_spruce_top"
+    }
+}

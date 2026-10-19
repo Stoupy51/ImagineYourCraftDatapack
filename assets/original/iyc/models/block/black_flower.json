@@ -1,0 +1,6 @@
+{
+    "parent": "block/cross",
+    "textures": {
+        "cross": "iyc:blocks/black_flower"
+    }
+}

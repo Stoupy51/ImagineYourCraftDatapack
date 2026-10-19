@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "normal": [
+            { "model": "iyc:bombe" },
+            { "model": "iyc:bombe", "y": 90 },
+            { "model": "iyc:bombe", "y": 180 },
+            { "model": "iyc:bombe", "y": 270 }
+        ]
+    }
+}

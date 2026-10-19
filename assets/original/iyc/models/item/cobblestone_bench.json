@@ -1,0 +1,6 @@
+{
+    "parent": "iyc:block/bench_item",
+    "textures": {
+        "texture": "blocks/cobblestone"
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=north": { "model": "iyc:stone_chair" },
+        "facing=south": { "model": "iyc:stone_chair", "y": 180 },
+        "facing=west":  { "model": "iyc:stone_chair", "y": 270 },
+        "facing=east":  { "model": "iyc:stone_chair", "y": 90 }
+    }
+}

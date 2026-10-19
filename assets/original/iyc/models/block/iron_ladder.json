@@ -1,0 +1,7 @@
+{
+    "parent": "minecraft:block/ladder",
+    "textures": {
+        "particle": "iyc:blocks/iron_ladder",
+        "texture": "iyc:blocks/iron_ladder"
+    }
+}

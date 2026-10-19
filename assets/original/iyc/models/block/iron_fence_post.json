@@ -1,0 +1,6 @@
+{
+    "parent": "iyc:block/fence_post",
+    "textures": {
+        "texture": "blocks/iron_block"
+    }
+}

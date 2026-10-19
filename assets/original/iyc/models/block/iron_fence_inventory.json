@@ -1,0 +1,6 @@
+{
+    "parent": "iyc:block/fence_inventory",
+    "textures": {
+        "texture": "blocks/iron_block"
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "parent": "block/cake_slice1",
+    "textures": {
+        "particle": "iyc:blocks/cherry_cake_side",
+        "bottom": "iyc:blocks/cherry_cake_bottom",
+        "top": "iyc:blocks/cherry_cake_top",
+        "side": "iyc:blocks/cherry_cake_side",
+        "inside": "iyc:blocks/cherry_cake_inner"
+    }
+}

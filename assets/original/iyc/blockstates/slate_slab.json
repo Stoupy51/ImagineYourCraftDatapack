@@ -1,0 +1,6 @@
+{
+    "variants": {
+        "half=bottom": { "model": "iyc:half_slab_slate" },
+        "half=top": { "model": "iyc:upper_slab_slate" }
+    }
+}

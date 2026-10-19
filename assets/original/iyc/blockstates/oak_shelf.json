@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=north": { "model": "iyc:oak_shelf" },
+        "facing=south": { "model": "iyc:oak_shelf", "y": 180 },
+        "facing=west":  { "model": "iyc:oak_shelf", "y": 270 },
+        "facing=east":  { "model": "iyc:oak_shelf", "y": 90 }
+    }
+}

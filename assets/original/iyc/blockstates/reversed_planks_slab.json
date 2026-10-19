@@ -1,0 +1,6 @@
+{
+    "variants": {
+        "half=bottom": { "model": "iyc:half_slab_reversed_planks" },
+        "half=top": { "model": "iyc:upper_slab_reversed_planks" }
+    }
+}

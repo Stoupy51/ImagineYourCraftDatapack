@@ -1,0 +1,6 @@
+{
+    "parent": "block/torch_wall",
+    "textures": {
+        "torch": "iyc:blocks/lignite_torch_on"
+    }
+}

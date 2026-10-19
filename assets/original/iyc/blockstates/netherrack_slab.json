@@ -1,0 +1,6 @@
+{
+    "variants": {
+        "half=bottom": { "model": "iyc:half_slab_netherrack" },
+        "half=top": { "model": "iyc:upper_slab_netherrack" }
+    }
+}

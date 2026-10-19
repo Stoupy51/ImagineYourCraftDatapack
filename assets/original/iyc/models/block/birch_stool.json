@@ -1,0 +1,6 @@
+{
+"parent": "iyc:block/stool",
+"textures": {
+    "texture": "blocks/planks_birch"
+}
+}

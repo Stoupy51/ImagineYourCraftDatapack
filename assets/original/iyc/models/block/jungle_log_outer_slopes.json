@@ -1,0 +1,8 @@
+{
+    "parent": "iyc:block/outer_slopes",
+    "textures": {
+        "side": "blocks/log_jungle",
+        "top": "blocks/log_jungle_top",
+        "bottom": "blocks/log_jungle_top"
+    }
+}

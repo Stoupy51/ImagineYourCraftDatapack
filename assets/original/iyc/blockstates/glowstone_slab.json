@@ -1,0 +1,6 @@
+{
+    "variants": {
+        "half=bottom": { "model": "iyc:half_slab_glowstone" },
+        "half=top": { "model": "iyc:upper_slab_glowstone" }
+    }
+}

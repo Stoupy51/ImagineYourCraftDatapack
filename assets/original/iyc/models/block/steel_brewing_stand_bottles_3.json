@@ -1,0 +1,8 @@
+{
+    "parent": "block/brewing_stand_bottles_3",
+    "textures": {
+        "particle": "iyc:blocks/steel_brewing_stand",
+        "base": "iyc:blocks/steel_brewing_stand_base",
+        "stand": "iyc:blocks/steel_brewing_stand"
+    }
+}

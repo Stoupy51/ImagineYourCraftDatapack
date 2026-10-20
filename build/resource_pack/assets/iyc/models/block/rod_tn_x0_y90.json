@@ -2,13 +2,13 @@
 	"parent": "iyc:block/rod_tn",
 	"elements": [
 		{
-			"from": [6.9375,13.9375,6.9375],
-			"to": [9.0625,16.0625,9.0625],
+			"from": [6.998,13.998,6.998],
+			"to": [9.002,16.002,9.002],
 			"faces": {"down": {"uv": [7.0,7.0,9.0,9.0],"texture": "#texture","tintindex": 0},"up": {"uv": [7.0,7.0,9.0,9.0],"texture": "#texture","tintindex": 0,"cullface": "up"},"west": {"uv": [7.0,0.0,9.0,2.0],"texture": "#texture","tintindex": 0},"north": {"uv": [7.0,0.0,9.0,2.0],"texture": "#texture","tintindex": 0},"south": {"uv": [7.0,0.0,9.0,2.0],"texture": "#texture","tintindex": 0}}
 		},
 		{
-			"from": [8.9375,13.9375,6.9375],
-			"to": [16.0625,16.0625,9.0625],
+			"from": [8.993,13.998,6.998],
+			"to": [16.007,16.002,9.002],
 			"faces": {"down": {"uv": [9.0,7.0,16.0,9.0],"texture": "#texture","tintindex": 0},"up": {"uv": [9.0,7.0,16.0,9.0],"texture": "#texture","tintindex": 0,"cullface": "up"},"east": {"uv": [7.0,0.0,9.0,2.0],"texture": "#texture","tintindex": 0,"cullface": "north"},"north": {"uv": [0.0,0.0,7.0,2.0],"texture": "#texture","tintindex": 0},"south": {"uv": [9.0,0.0,16.0,2.0],"texture": "#texture","tintindex": 0}}
 		}
 	]

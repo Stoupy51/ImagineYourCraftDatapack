@@ -66,7 +66,7 @@ class OriginalBlock:
 	""" The host needs a tool to drop but the original did not, so the item appears anyway when a survival player broke it. """
 	drops: str = ""
 	""" The item dropped instead of the block, when it has an interaction or a foreign drop. """
-	machine_speed: float = 1.0
+	machine_speed: float | None = None
 	emissive: bool = False
 	""" Faces drawn at full light, the shape itself giving no light around it. """
 	tags: tuple[str, ...] = field(default_factory=tuple[str, ...])

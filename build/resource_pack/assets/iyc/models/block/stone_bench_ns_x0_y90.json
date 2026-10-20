@@ -2,8 +2,8 @@
 	"parent": "iyc:block/stone_bench_ns",
 	"elements": [
 		{
-			"from": [-0.0625,7.9375,2.9375],
-			"to": [16.0625,9.5625,13.0625],
+			"from": [-0.016000000000000014,7.9985,2.99],
+			"to": [16.016,9.5015,13.01],
 			"faces": {"down": {"uv": [0.0,3.0,16.0,13.0],"texture": "#texture"},"up": {"uv": [0.0,3.0,16.0,13.0],"texture": "#texture"},"north": {"uv": [0.0,6.5,16.0,8.0],"texture": "#texture"},"south": {"uv": [0.0,6.5,16.0,8.0],"texture": "#texture"}}
 		}
 	]

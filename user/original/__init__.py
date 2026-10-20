@@ -5,6 +5,7 @@ Runs after `stewbeet.plugins.datapack.custom_blocks`, whose place and destroy fu
 # Imports
 from beet import Context, ItemModel, Model, Texture
 from stewbeet import (
+	MODEL_MARGIN,
 	Block,
 	BlockTag,
 	Mem,
@@ -44,7 +45,7 @@ def beet_default(ctx: Context) -> None:
 		write_destroy(block)
 
 	for model_id, model in converter.models.items():
-		Mem.ctx.assets.models[model_id] = set_json_encoder(Model(model_with_margin(model)), max_level=3)
+		Mem.ctx.assets.models[model_id] = set_json_encoder(Model(model_with_margin(model, MODEL_MARGIN)), max_level=3)
 	for texture_id, source in converter.textures.items():
 		Mem.ctx.assets.textures[texture_id] = Texture(source_path=source)
 

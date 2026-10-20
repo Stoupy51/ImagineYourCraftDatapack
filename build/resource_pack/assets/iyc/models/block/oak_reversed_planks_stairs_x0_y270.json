@@ -2,13 +2,13 @@
 	"parent": "iyc:block/oak_reversed_planks_stairs",
 	"elements": [
 		{
-			"from": [-0.0625,-0.0625,-0.0625],
-			"to": [16.0625,8.0625,16.0625],
+			"from": [-0.016000000000000014,-0.008000000000000007,-0.016000000000000014],
+			"to": [16.016,8.008,16.016],
 			"faces": {"down": {"uv": [0.0,0.0,16.0,16.0],"texture": "#bottom","cullface": "down"},"up": {"uv": [0.0,0.0,16.0,16.0],"texture": "#top"},"west": {"uv": [0.0,8.0,16.0,16.0],"texture": "#side","cullface": "north"},"east": {"uv": [0.0,8.0,16.0,16.0],"texture": "#side","cullface": "south"},"south": {"uv": [0.0,8.0,16.0,16.0],"texture": "#side","cullface": "west"},"north": {"uv": [0.0,8.0,16.0,16.0],"texture": "#side","cullface": "east"}}
 		},
 		{
-			"from": [-0.0625,7.9375,-0.0625],
-			"to": [16.0625,16.0625,8.0625],
+			"from": [-0.016000000000000014,7.992,-0.008000000000000007],
+			"to": [16.016,16.008,8.008],
 			"faces": {"down": {"uv": [0.0,8.0,16.0,16.0],"texture": "#bottom","cullface": "down"},"up": {"uv": [0.0,0.0,16.0,8.0],"texture": "#top","cullface": "up"},"west": {"uv": [0.0,0.0,8.0,8.0],"texture": "#side","cullface": "north"},"east": {"uv": [8.0,0.0,16.0,8.0],"texture": "#side","cullface": "south"},"south": {"uv": [0.0,0.0,16.0,8.0],"texture": "#side"},"north": {"uv": [0.0,0.0,16.0,8.0],"texture": "#side","cullface": "east"}}
 		}
 	]

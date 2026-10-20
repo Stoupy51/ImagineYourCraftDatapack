@@ -20,7 +20,6 @@ data merge entity @s {"CustomName": {"text": "Stone Campfire"}}
 
 # Modify item display entity to match the custom block
 item replace entity @s contents with minecraft:furnace[item_model="iyc:stone_campfire"]
-data modify entity @s transformation.scale set value [1.002f,1.002f,1.002f]
 function iyc:custom_blocks/compute_brightness
 
 # Original model

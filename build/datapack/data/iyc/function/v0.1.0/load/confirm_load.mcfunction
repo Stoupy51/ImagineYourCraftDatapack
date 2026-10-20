@@ -13,6 +13,10 @@ tellraw @a[tag=convention.debug] {"text":"[Loaded ImagineYourCraft v0.1.0]","col
 scoreboard players set #iyc.loaded load.status 1
 function iyc:v0.1.0/load/set_items_storage
 
+# Hits of interaction blocks
+scoreboard objectives add iyc.hits dummy
+scoreboard objectives add iyc.last_hit dummy
+
 scoreboard objectives add iyc.shape dummy
 
 scoreboard objectives add iyc.jump dummy

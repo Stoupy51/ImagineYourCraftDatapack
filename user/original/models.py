@@ -1,9 +1,9 @@
 """ Turn the mod's 1.8 block models into 26.3 models, with the vanilla 1.8 models they inherit from copied next to them. """
 # Imports
 import json
-import math
 from pathlib import Path
 
+from stewbeet import uv_locked
 from stouputils.typing import JsonDict
 
 # Constants
@@ -22,17 +22,6 @@ TEXTURE_RENAMES: dict[str, str] = {
 	"torch_on": "torch",
 }
 """ Vanilla textures whose 1.8 name the prefix rules of `modern_texture` do not cover. """
-
-INFLATION: float = 0.0625
-""" Pixels every element grows by on each side, so a face lying on a face of the host block is drawn in front of it even from far away.
-
-A depth buffer tells faces apart from about d^2 / 800000 blocks at d blocks: this 1/256 of a block holds past 50 blocks.
-"""
-
-DIRECTIONS: dict[str, tuple[int, int, int]] = {
-	"north": (0, 0, -1), "south": (0, 0, 1), "east": (1, 0, 0), "west": (-1, 0, 0), "up": (0, 1, 0), "down": (0, -1, 0),
-}
-
 
 # Functions
 def modern_texture(name: str) -> str:
@@ -80,65 +69,6 @@ def without_comments(obj: JsonDict) -> JsonDict:
 	return {key: value for key, value in obj.items() if not key.startswith("__")}
 
 
-def inflated(element: JsonDict) -> JsonDict:
-	""" The element grown by `INFLATION` on every side, each face keeping the UVs its original size gave it.
-
-	The game would read UVs past the texture's edges from the grown size, and refuses to bake them for a translucent texture.
-
-	>>> element = inflated({"from": [0, 0, 6], "to": [16, 8, 10], "faces": {"north": {"texture": "#side"}, "up": {"uv": [0, 0, 1, 1]}}})
-	>>> element["from"], element["faces"]["north"]["uv"], element["faces"]["up"]["uv"]
-	([-0.0625, -0.0625, 5.9375], [0, 8, 16, 16], [0, 0, 1, 1])
-	"""
-	(x1, y1, z1), (x2, y2, z2) = element["from"], element["to"]
-	default_uvs: dict[str, list[float]] = {
-		"down": [x1, 16 - z2, x2, 16 - z1], "up": [x1, z1, x2, z2],
-		"north": [16 - x2, 16 - y2, 16 - x1, 16 - y1], "south": [x1, 16 - y2, x2, 16 - y1],
-		"west": [z1, 16 - y2, z2, 16 - y1], "east": [16 - z2, 16 - y2, 16 - z1, 16 - y1],
-	}
-	return {
-		**element,
-		"from": [v - INFLATION for v in element["from"]], "to": [v + INFLATION for v in element["to"]],
-		"faces": {direction: {"uv": default_uvs[direction], **face} for direction, face in element["faces"].items()},
-	}
-
-
-def inflated_model(model: JsonDict) -> JsonDict:
-	""" The model with each of its own elements grown by `INFLATION`. """
-	return {**model, "elements": [inflated(element) for element in model["elements"]]} if "elements" in model else model
-
-
-def turned(vector: tuple[float, float, float], x: int, y: int) -> tuple[float, float, float]:
-	""" A vector turned as a blockstate turns its model: `x` degrees about the X axis, then `y` about the Y axis, clockwise from the positive side.
-
-	>>> turned((0, 0, -1), 0, 90), turned((0, 1, 0), 180, 0)
-	((1.0, 0.0, 0.0), (0.0, -1.0, 0.0))
-	"""
-	vx, vy, vz = vector
-	ax, ay = math.radians(-x), math.radians(-y)
-	vy, vz = vy * math.cos(ax) - vz * math.sin(ax), vy * math.sin(ax) + vz * math.cos(ax)
-	vx, vz = vx * math.cos(ay) + vz * math.sin(ay), -vx * math.sin(ay) + vz * math.cos(ay)
-	return (round(vx, 6) + 0.0, round(vy, 6) + 0.0, round(vz, 6) + 0.0)
-
-
-def rotated(element: JsonDict, x: int, y: int) -> JsonDict:
-	""" A box element turned about the block center, its faces losing their UVs so they map the texture from the world grid as `uvlock` does.
-
-	>>> element = rotated({"from": [0, 0, 0], "to": [16, 8, 8], "faces": {"north": {"uv": [0, 8, 16, 16], "texture": "#side"}}}, 0, 90)
-	>>> element["from"], element["to"], element["faces"]
-	([8.0, 0.0, 0.0], [16.0, 8.0, 16.0], {'east': {'texture': '#side'}})
-	"""
-	corners = [turned((px - 8, py - 8, pz - 8), x, y) for px, py, pz in (element["from"], element["to"])]
-	faces: JsonDict = {
-		next(name for name, vector in DIRECTIONS.items() if vector == turned(DIRECTIONS[direction], x, y)):
-		{key: value for key, value in face.items() if key not in ("uv", "rotation")}
-		for direction, face in element["faces"].items()
-	}
-	return {
-		**element, "faces": faces,
-		"from": [min(a, b) + 8 for a, b in zip(*corners, strict=True)], "to": [max(a, b) + 8 for a, b in zip(*corners, strict=True)],
-	}
-
-
 class ModelConverter:
 	""" Converts models on demand, each once, collecting the textures of the mod they need. """
 
@@ -176,8 +106,16 @@ class ModelConverter:
 		model: JsonDict = self.models[model_id]
 		while "elements" not in model:
 			model = self.models[model["parent"]]
-		self.models[locked_id] = {"parent": model_id, "elements": [rotated(element, x, y) for element in model["elements"]]}
+		self.models[locked_id] = {"parent": model_id, "elements": [uv_locked(element, x, y) for element in model["elements"]]}
 		return locked_id
+
+	def emissive(self, model_id: str) -> None:
+		""" Draw every face of a converted model at full light, its elements copied from the parent defining them. """
+		model: JsonDict = self.models[model_id]
+		source: JsonDict = model
+		while "elements" not in source:
+			source = self.models[source["parent"]]
+		model["elements"] = [{**element, "light_emission": 15} for element in source["elements"]]
 
 	def texture(self, value: str) -> str:
 		""" The 26.3 texture of a 1.8 texture value, `#side` style references being kept. """

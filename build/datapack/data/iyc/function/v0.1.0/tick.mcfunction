@@ -14,11 +14,6 @@ execute if score #second iyc.data matches 20.. run function iyc:v0.1.0/second
 execute if score #second_5 iyc.data matches 90.. run function iyc:v0.1.0/second_5
 execute if score #minute iyc.data matches 1200.. run function iyc:v0.1.0/minute
 
-execute as @e[type=item_display,tag=iyc.seat,predicate=!iyc:has_passenger] run kill @s
-
-# Check for bolts
-execute as @e[type=arrow,tag=!iyc.bolt_checked] run function iyc:entity/bolt_check
-
 # Check for rocks
 execute if score #rock_markers iyc.data matches 1.. as @e[tag=iyc.rock_marker,predicate=!iyc:has_vehicle] at @s positioned ~ ~-0.5 ~ run function iyc:entity/rock_check/marker_final
 execute as @e[type=snowball,tag=!iyc.rock_checked] run function iyc:entity/rock_check/main

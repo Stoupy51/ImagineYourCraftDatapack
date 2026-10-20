@@ -1,0 +1,20 @@
+{
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:player_hurt_entity",
+			"conditions": {
+				"entity": {
+					"type": "minecraft:entity_properties",
+					"entity": "this",
+					"predicate": {
+						"entity_type": "minecraft:interaction",
+						"nbt": "{Tags:[\"iyc.interaction\"]}"
+					}
+				}
+			}
+		}
+	},
+	"rewards": {
+		"function": "iyc:custom_blocks/_interaction/hit"
+	}
+}

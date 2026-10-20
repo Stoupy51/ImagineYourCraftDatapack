@@ -1,13 +1,11 @@
 """ Behaviours of the mod's blocks and world generation, run once every block function exists. """
 # Imports
-from beet import ItemModel
 from stewbeet import (
 	Block,
 	BlockTag,
 	Context,
 	CustomOreGeneration,
 	EntityTypeTag,
-	ItemTag,
 	LootTable,
 	Mem,
 	set_json_encoder,
@@ -15,9 +13,7 @@ from stewbeet import (
 	write_load_file,
 	write_tick_file,
 )
-from stouputils.typing import JsonDict
 
-from user.definitions.materials import ORE_DROPS, STORAGE_HOSTS
 from user.definitions.special import EFFECT_GENERATORS
 from user.definitions.tweaks import write_tweaks
 
@@ -28,11 +24,6 @@ GEM_ORES: dict[str, int] = {"ruby": 12, "sapphire": 13, "topaz": 11, "adamantium
 REGION_CHUNKS: int = 36
 """ Chunks in a 96x96 Smart Ore Generation region. """
 
-IRON_TIER_BLOCKS: list[str] = [
-	*(ore for ore in ORE_DROPS if ore != "lignite_ore"), "steel_ore", *STORAGE_HOSTS, "massive_obsidian_block",
-]
-""" Ores and storage blocks the mod's pickaxe (`er_2`) only harvests from the iron tier on, a weaker tool getting nothing. """
-
 NOT_LIVING: list[str] = [
 	"minecraft:item_display", "minecraft:block_display", "minecraft:text_display", "minecraft:interaction", "minecraft:marker",
 	"minecraft:item", "minecraft:experience_orb", "minecraft:painting", "minecraft:item_frame", "minecraft:glow_item_frame",
@@ -41,11 +32,6 @@ NOT_LIVING: list[str] = [
 	"minecraft:spawner_minecart", "minecraft:command_block_minecart", "#minecraft:boat", "#minecraft:arrows", "#minecraft:impact_projectiles",
 ]
 """ Entities that are not mobs, left alone by the jump box, the clouds and the flowers. """
-
-GLOWING: list[str] = [
-	f"glowstone_{shape}" for shape in ("stairs", "slab", "slopes", "wall", "fence", "fence_gate", "trapdoor", "pressure_plate")
-]
-""" Glowstone shapes, light 15 in the mod. No vanilla host of their shape gives light, so each keeps a light block in a free neighbour. """
 
 PARTICLES: dict[str, str] = {
 	"black_smoke": "smoke ~ ~0.5 ~ 0 0 0 0 10",
@@ -63,9 +49,6 @@ PARTICLES: dict[str, str] = {
 # Main function
 def beet_default(ctx: Context) -> None:
 	write_tick_file("""
-# Check for bolts
-execute as @e[type=arrow,tag=!iyc.bolt_checked] run function iyc:entity/bolt_check
-
 # Check for rocks
 execute if score #rock_markers iyc.data matches 1.. as @e[tag=iyc.rock_marker,predicate=!iyc:has_vehicle] at @s positioned ~ ~-0.5 ~ run function iyc:entity/rock_check/marker_final
 execute as @e[type=snowball,tag=!iyc.rock_checked] run function iyc:entity/rock_check/main
@@ -83,15 +66,11 @@ execute as @a[tag=iyc.stepping] at @s unless entity @e[type=item_display,tag=iyc
 execute as @a[tag=iyc.launched] run function iyc:jump_box/flight
 """)
 	ore_generation()
-	harvest_levels()
 	flowers(ctx)
 	touching_mobs()
 	jump_boxes()
-	glowing_shapes()
 	barrier_steps()
 	wall_torches()
-	crossbow_model()
-	machines()
 	write_tweaks()
 	for kind in EFFECT_GENERATORS:
 		write_function(Block.from_id(f"{kind}_effect_generator").functions.second, f"particle {PARTICLES[kind]}\n")
@@ -131,18 +110,6 @@ def ore_generation() -> None:
 			provider=["minecraft:air"], block_conditions=["if block ~ ~1 ~ minecraft:netherrack"],
 		)]
 	CustomOreGeneration.all_with_config(configs)
-
-
-def harvest_levels() -> None:
-	""" Make the item of an iron tier block vanish, with its experience, when the survival player breaking it holds a weaker tool. """
-	Mem.ctx.data["iyc"].item_tags["iron_tier_pickaxes"] = set_json_encoder(ItemTag({"values": [
-		"minecraft:iron_pickaxe", "minecraft:diamond_pickaxe", "minecraft:netherite_pickaxe",
-	]}))
-	for block in IRON_TIER_BLOCKS:
-		write_function(Block.from_id(block).functions.replace_item, (
-			"execute if entity @p[distance=..8,gamemode=survival] unless items entity @p[distance=..8,gamemode=survival] "
-			"weapon.mainhand #iyc:iron_tier_pickaxes run return run kill @s\n"
-		), prepend=True)
 
 
 def flowers(ctx: Context) -> None:
@@ -201,70 +168,17 @@ execute if score @s iyc.jump matches ..-5 if predicate {type:"minecraft:entity_p
 	))
 
 
-def machines() -> None:
-	""" The iron furnace cooks in 100 ticks instead of 200 (`ic_2`), the steel brewing stand brews in 250 instead of 400 (`ie_2`). """
-	write_function(Block.from_id("iron_furnace").functions.tick, """
-# The furnace's own speed_multiplier gets reset whenever it lights up, so the progress is pushed by hand while lit
-execute unless block ~ ~ ~ minecraft:furnace[lit=true] run return 0
-execute store result score #spent iyc.data run data get block ~ ~ ~ cooking_time_spent
-execute if score #spent iyc.data matches 0 run return 0
-execute store result score #total iyc.data run data get block ~ ~ ~ cooking_total_time
-scoreboard players add #spent iyc.data 1
-execute if score #spent iyc.data < #total iyc.data store result block ~ ~ ~ cooking_time_spent int 1 run scoreboard players get #spent iyc.data
-""")
-	write_function(Block.from_id("steel_brewing_stand").functions.tick, """
-# Brewing ends when BrewTime reaches 0, so it is never pushed below 1
-execute store result score #brew iyc.data run data get block ~ ~ ~ BrewTime
-execute if score #brew iyc.data matches 3.. if predicate {type:"minecraft:random_chance",chance:0.6} store result block ~ ~ ~ BrewTime short 1 run scoreboard players remove #brew iyc.data 1
-""")
-
-
-def glowing_shapes() -> None:
-	""" Each glowstone shape keeps a light block in a free neighbour, the one above first, and takes it back once broken. """
-	neighbours: list[str] = ["~ ~1 ~", "~1 ~ ~", "~-1 ~ ~", "~ ~ ~1", "~ ~ ~-1", "~ ~-1 ~"]
-	for block in GLOWING:
-		write_function(Block.from_id(block).functions.second, "function iyc:glow/refresh\n")
-		write_function(Block.from_id(block).functions.destroy, "function iyc:glow/clear\n", prepend=True)
-	write_function("iyc:glow/refresh", "".join(
-		f"execute if block {n} minecraft:light run return 0\n" for n in neighbours
-	) + "".join(
-		f"execute if block {n} #minecraft:air run return run setblock {n} minecraft:light[level=15]\n" for n in neighbours
-	))
-	write_function("iyc:glow/clear", "".join(
-		f"execute positioned {n} if block ~ ~ ~ minecraft:light unless entity @e[type=item_display,tag=iyc.custom_block,distance=..0.5] "
-		"run setblock ~ ~ ~ air\n"
-		for n in neighbours
-	))
-
-
 def barrier_steps() -> None:
 	""" Players near a stairs, slope or slab standing on a barrier step a full block up, so they walk onto it as onto the original. """
 	write_function("iyc:step/enter", "attribute @s minecraft:step_height modifier add iyc:step 0.5 add_value\ntag @s add iyc.stepping\n")
 	write_function("iyc:step/leave", "attribute @s minecraft:step_height modifier remove iyc:step\ntag @s remove iyc.stepping\n")
 
 
-def crossbow_model() -> None:
-	""" Draw the crossbow by its own charge rather than by use time as a bow, and show it drawn while loaded, the mod having no loaded texture. """
-	pulling: list[JsonDict] = [{"type": "minecraft:model", "model": f"iyc:item/crossbow_pulling_{i}"} for i in range(3)]
-	Mem.ctx.assets.item_models["iyc:crossbow"] = set_json_encoder(ItemModel({"model": {
-		"type": "minecraft:condition", "property": "minecraft:using_item",
-		"on_true": {
-			"type": "minecraft:range_dispatch", "property": "minecraft:crossbow/pull", "fallback": pulling[0],
-			"entries": [{"threshold": 0.58, "model": pulling[1]}, {"threshold": 1.0, "model": pulling[2]}],
-		},
-		"on_false": {
-			"type": "minecraft:select", "property": "minecraft:charge_type", "cases": [{"when": ["arrow", "rocket"], "model": pulling[2]}],
-			"fallback": {"type": "minecraft:model", "model": "iyc:item/crossbow"},
-		},
-	}}), max_level=4)
-
-
 def wall_torches() -> None:
 	""" A lignite torch placed against the side of a block becomes the wall one, a vanilla wall torch being another block. """
 	write_function(Block.from_id("lignite_torch").functions.place_main, f"""
 tag @s add iyc.placer
-execute align xyz positioned ~0.5 ~0.5 ~0.5 summon minecraft:marker run function iyc:placing/marker_aim
+execute align xyz positioned ~0.5 ~0.5 ~0.5 summon minecraft:marker run function iyc:custom_blocks/_aim/main
 execute if score #floor iyc.data matches 0 run return run function {Block.from_id("lignite_wall_torch").functions.place_main}
 """, prepend=True)
-	write_function("iyc:placing/marker_aim", "function iyc:placing/aim\nkill @s\n")
 

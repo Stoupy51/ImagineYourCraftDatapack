@@ -20,13 +20,14 @@ data merge entity @s {"CustomName": {"text": "Light Blue Blob"}}
 
 # Modify item display entity to match the custom block
 item replace entity @s contents with minecraft:furnace[item_model="iyc:light_blue_blob"]
-data modify entity @s transformation.scale set value [1.002f,1.002f,1.002f]
 function iyc:custom_blocks/compute_brightness
+
+# Interaction breaking the block when hit
+summon interaction ~ ~-0.5 ~ {width:1.01f,height:1.01f,response:true,Tags:["global.ignore","global.ignore.kill","smithed.entity","iyc.interaction","iyc.light_blue_blob"]}
 
 # Original model
 tag @s add iyc.original
 scoreboard players set @s iyc.shape -1
 data modify entity @s item.components."minecraft:custom_model_data" set value {colors:[6724056]}
-summon interaction ~ ~-0.5 ~ {width:1.01f,height:1.01f,response:true,Tags:["iyc.interaction"]}
 function iyc:shapes/fixed_0
 

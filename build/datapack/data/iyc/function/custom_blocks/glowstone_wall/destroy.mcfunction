@@ -7,8 +7,6 @@
 #			iyc:custom_blocks/_groups/minecraft_cobblestone_wall
 #
 
-function iyc:glow/clear
-
 execute unless entity @n[type=item,nbt={Item:{id:"minecraft:cobblestone_wall"}},distance=..1] if entity @p[distance=..8,gamemode=survival] run loot spawn ~ ~ ~ loot iyc:i/glowstone_wall
 
 # Replace the item with the custom one
@@ -21,7 +19,4 @@ scoreboard players remove #total_glowstone_wall iyc.data 1
 
 # Kill the custom block entity
 kill @s
-
-# Decrease the number of entities with second tag
-scoreboard players remove #second_entities iyc.data 1
 

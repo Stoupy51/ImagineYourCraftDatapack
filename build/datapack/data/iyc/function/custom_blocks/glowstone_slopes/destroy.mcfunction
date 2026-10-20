@@ -7,11 +7,6 @@
 #			iyc:custom_blocks/_groups/minecraft_barrier
 #
 
-function iyc:glow/clear
-
-# Replace the item with the custom one
-execute as @n[type=item,nbt={Item:{id:"minecraft:barrier"}},distance=..1] run function iyc:custom_blocks/glowstone_slopes/replace_item
-
 # Decrease count scores
 scoreboard players remove #total_custom_blocks iyc.data 1
 scoreboard players remove #total_vanilla_barrier iyc.data 1
@@ -20,9 +15,9 @@ scoreboard players remove #total_glowstone_slopes iyc.data 1
 # Kill the custom block entity
 kill @s
 
-execute if score #break_drop iyc.data matches 1 run loot spawn ~ ~ ~ loot iyc:i/glowstone_slopes
-kill @e[type=interaction,tag=iyc.interaction,distance=..0.6]
-
-# Decrease the number of entities with second tag
-scoreboard players remove #second_entities iyc.data 1
+# Break feedback, the item, and the interaction gone
+particle minecraft:item{item:{id:"minecraft:furnace",components:{"minecraft:item_model":"iyc:glowstone_slopes"}}} ~ ~ ~ 0.25 0.25 0.25 0.1 30
+playsound minecraft:block.glass.break block @a ~ ~ ~ 1.0
+execute unless score #no_drop iyc.data matches 1 run loot spawn ~ ~ ~ loot iyc:i/glowstone_slopes
+execute positioned ~ ~-0.5 ~ run kill @e[type=interaction,tag=iyc.interaction,distance=..0.01]
 

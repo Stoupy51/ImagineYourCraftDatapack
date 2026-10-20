@@ -7,9 +7,6 @@
 #			iyc:custom_blocks/_groups/minecraft_barrier
 #
 
-# Replace the item with the custom one
-execute as @n[type=item,nbt={Item:{id:"minecraft:barrier"}},distance=..1] run function iyc:custom_blocks/pink_blob/replace_item
-
 # Decrease count scores
 scoreboard players remove #total_custom_blocks iyc.data 1
 scoreboard players remove #total_vanilla_barrier iyc.data 1
@@ -18,6 +15,9 @@ scoreboard players remove #total_pink_blob iyc.data 1
 # Kill the custom block entity
 kill @s
 
-execute if score #break_drop iyc.data matches 1 run loot spawn ~ ~ ~ loot iyc:i/pink_blob
-kill @e[type=interaction,tag=iyc.interaction,distance=..0.6]
+# Break feedback, the item, and the interaction gone
+particle minecraft:item{item:{id:"minecraft:furnace",components:{"minecraft:item_model":"iyc:pink_blob"}}} ~ ~ ~ 0.25 0.25 0.25 0.1 30
+playsound minecraft:block.slime_block.break block @a ~ ~ ~ 1.0
+execute unless score #no_drop iyc.data matches 1 run loot spawn ~ ~ ~ loot iyc:i/pink_blob
+execute positioned ~ ~-0.5 ~ run kill @e[type=interaction,tag=iyc.interaction,distance=..0.01]
 

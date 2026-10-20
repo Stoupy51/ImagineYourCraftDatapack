@@ -11,6 +11,7 @@ from stewbeet import (
 	EquipmentsConfig,
 	Ingr,
 	Item,
+	Mining,
 	NoSilkTouchDrop,
 	SmeltingRecipe,
 	VanillaBlock,
@@ -67,15 +68,17 @@ ORE_DROPS: dict[str, NoSilkTouchDrop] = {
 """ What the ores giving experience drop without silk touch (`gz_2`). Steel ore drops raw steel and no experience, as it dropped itself. """
 
 STORAGE_HOSTS: dict[str, str] = {
-	"adamantium_block": "minecraft:netherite_block",
+	"adamantium_block": "minecraft:diamond_block",
 	"sapphire_block": "minecraft:diamond_block",
 	"ruby_block": "minecraft:diamond_block",
 	"topaz_block": "minecraft:diamond_block",
-	"raw_steel_block": "minecraft:raw_iron_block",
-	"steel_block": "minecraft:iron_block",
-	"lignite_block": "minecraft:coal_block",
-	"slate_block": "minecraft:coal_block",
+	"raw_steel_block": "minecraft:raw_gold_block",
+	"steel_block": "minecraft:gold_block",
+	"lignite_block": "minecraft:emerald_block",
+	"slate_block": "minecraft:emerald_block",
+	"massive_obsidian_block": "minecraft:diamond_block",
 }
+""" Iron level hosts of the storage blocks, the mod's pickaxe (`er_2`) harvesting them from the iron tier on. """
 
 
 # Functions
@@ -92,8 +95,6 @@ def main() -> None:
 	})
 	for tier in TIERS:
 		apply_tier(tier)
-	for block, host in STORAGE_HOSTS.items():
-		Block.from_id(block).vanilla_block = VanillaBlock(id=host)
 	for ore, drop in ORE_DROPS.items():
 		Block.from_id(ore).no_silk_touch_drop = drop
 	for item, xp in SMELTING_XP.items():
@@ -105,9 +106,13 @@ def main() -> None:
 		result_count=4, category="misc", shape=["  #", " # ", "#  "], ingredients={"#": Ingr("minecraft:stone")},
 	)]
 	Block(
-		id="massive_obsidian_block", vanilla_block=VanillaBlock(id="minecraft:netherite_block"), manual_category="material",
+		id="massive_obsidian_block", manual_category="material",
 		recipes=[CraftingShapedRecipe(category="misc", group="obsidian", shape=["XXX", "XXX", "XXX"], ingredients={"X": Ingr("obsidian_ingot")})],
 	)
+	for block, host in STORAGE_HOSTS.items():
+		Block.from_id(block).vanilla_block = VanillaBlock(id=host)
+	for block in (*STORAGE_HOSTS, *(ore for ore in ORE_DROPS if ore != "lignite_ore"), "steel_ore"):
+		Block.from_id(block).mining = Mining(level="iron")
 	Item.from_id("obsidian_ingot").recipes = [
 		CraftingShapelessRecipe(result_count=9, category="misc", group="obsidian", ingredients=[Ingr("massive_obsidian_block")]),
 		SmeltingRecipe(category="misc", group="obsidian", experience=0.25, cookingtime=200, ingredient=Ingr("minecraft:obsidian")),

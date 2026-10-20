@@ -4,15 +4,15 @@
 # @executed	at @s
 #
 # @within	iyc:custom_blocks/no_block_below
-#			iyc:custom_blocks/_groups/minecraft_netherite_block
+#			iyc:custom_blocks/_groups/minecraft_diamond_block
 #
 
 # Replace the item with the custom one
-execute as @n[type=item,nbt={Item:{id:"minecraft:netherite_block"}},distance=..1] run function iyc:custom_blocks/massive_obsidian_block/replace_item
+execute as @n[type=item,nbt={Item:{id:"minecraft:diamond_block"}},distance=..1] run function iyc:custom_blocks/massive_obsidian_block/replace_item
 
 # Decrease count scores
 scoreboard players remove #total_custom_blocks iyc.data 1
-scoreboard players remove #total_vanilla_netherite_block iyc.data 1
+scoreboard players remove #total_vanilla_diamond_block iyc.data 1
 scoreboard players remove #total_massive_obsidian_block iyc.data 1
 
 # Kill the custom block entity

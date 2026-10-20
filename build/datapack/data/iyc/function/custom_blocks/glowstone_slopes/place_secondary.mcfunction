@@ -20,7 +20,6 @@ data merge entity @s {"CustomName": {"text": "Glowstone Slopes"}}
 
 # Modify item display entity to match the custom block
 item replace entity @s contents with minecraft:furnace[item_model="iyc:glowstone_slopes"]
-data modify entity @s transformation.scale set value [1.002f,1.002f,1.002f]
 function iyc:custom_blocks/compute_brightness
 
 # Apply rotation
@@ -29,15 +28,13 @@ execute if score #rotation iyc.data matches 2 run data modify entity @s Rotation
 execute if score #rotation iyc.data matches 3 run data modify entity @s Rotation[0] set value 0.0f
 execute if score #rotation iyc.data matches 4 run data modify entity @s Rotation[0] set value 90.0f
 
+# Interaction breaking the block when hit
+summon interaction ~ ~-0.5 ~ {width:1.01f,height:1.01f,response:true,Tags:["global.ignore","global.ignore.kill","smithed.entity","iyc.interaction","iyc.glowstone_slopes"]}
+
 # Original model
 tag @s add iyc.original
 scoreboard players set @s iyc.shape -1
 tag @s add iyc.step
-function iyc:placing/aim
-summon interaction ~ ~-0.5 ~ {width:1.01f,height:1.01f,response:true,Tags:["iyc.interaction"]}
+execute summon marker run function iyc:custom_blocks/_aim/main
 function iyc:shapes/slope_2
-
-# Add tag for loop every second
-tag @s add iyc.second
-scoreboard players add #second_entities iyc.data 1
 

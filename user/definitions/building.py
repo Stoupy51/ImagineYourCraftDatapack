@@ -2,10 +2,10 @@
 # Imports
 from dataclasses import dataclass
 
-from stewbeet import CraftingShapedRecipe, Ingr
+from stewbeet import CraftingShapedRecipe, Ingr, Interaction
 
 from user.definitions.common import COLORS, dyed
-from user.original.blocks import Interaction, OriginalBlock, Schema
+from user.original.blocks import OriginalBlock, Schema
 
 
 # Classes
@@ -94,6 +94,13 @@ WOODS: list[str] = ["oak", "spruce", "birch", "jungle", "acacia", "dark_oak", "c
 
 
 # Functions
+def sound_of(material: str) -> str:
+	""" The sound group of the vanilla material a slope is made of. """
+	if material.endswith(("_planks", "_log")):
+		return "minecraft:block.wood"
+	return "minecraft:block.glass" if material in ("minecraft:glass", "minecraft:glowstone") else "minecraft:block.stone"
+
+
 def main() -> None:
 	full_blocks()
 	shaped_blocks()
@@ -124,23 +131,24 @@ def shaped_blocks() -> None:
 	for row in STAIRS:
 		OriginalBlock(
 			id=row.id, host=row.host, variants=((row.id, ""),), schema=Schema.STAIRS, inventory_model=row.id,
+			emissive=row.material == "minecraft:glowstone",
 		).define(recipes=[CraftingShapedRecipe(
 			result_count=row.count, category="building", shape=["#  ", "## ", "###"], ingredients={"#": Ingr(row.material)},
 		)])
 	OriginalBlock(
 		id="glass_stairs", host="minecraft:barrier", variants=(("glass_stairs", ""),), schema=Schema.SLOPE, inventory_model="glass_stairs",
-		interaction=Interaction(), tags=("step",),
+		interaction=Interaction(sound="minecraft:block.glass"), tags=("step",),
 	).define(recipes=[CraftingShapedRecipe(
 		result_count=4, category="building", shape=["#  ", "## ", "###"], ingredients={"#": Ingr("minecraft:glass")},
 	)])
 	OriginalBlock(
 		id="glass_slab", host="minecraft:barrier", variants=(("glass_slab", ""),), schema=Schema.SLOPE, inventory_model="half_slab_glass",
-		interaction=Interaction(), tags=("step",),
+		interaction=Interaction(sound="minecraft:block.glass"), tags=("step",),
 	).define(recipes=[CraftingShapedRecipe(result_count=3, category="building", shape=["###"], ingredients={"#": Ingr("minecraft:glass")})])
 	for row in SLOPES:
 		OriginalBlock(
 			id=row.id, host="minecraft:barrier", variants=((row.id, ""),), schema=Schema.SLOPE, inventory_model=row.id,
-			interaction=Interaction(), tags=("step",),
+			interaction=Interaction(sound=sound_of(row.material)), tags=("step",), emissive=row.material == "minecraft:glowstone",
 		).define(recipes=[
 			CraftingShapedRecipe(result_count=row.count, category="building", shape=shape, ingredients={"#": Ingr(row.material)})
 			for shape in (["  #", " # ", "###"], ["#  ", " # ", "###"])
@@ -148,18 +156,19 @@ def shaped_blocks() -> None:
 	for row in SLABS:
 		OriginalBlock(
 			id=f"{row.id}_slab", host=row.host, variants=((f"{row.id}_slab", ""), (f"{row.id}_double_slab", "half=double")),
-			schema=Schema.SLAB, inventory_model=f"half_slab_{row.id}",
+			schema=Schema.SLAB, inventory_model=f"half_slab_{row.id}", emissive=row.id == "glowstone",
 		).define(recipes=[CraftingShapedRecipe(result_count=row.count, category="building", shape=["###"], ingredients={"#": Ingr(row.material)})])
 	for row in TRAPDOORS:
 		OriginalBlock(
 			id=f"{row.id}_trapdoor", host=row.host, variants=((f"{row.id}_trapdoor", ""),), schema=Schema.TRAPDOOR,
+			emissive=row.material == "minecraft:glowstone",
 			inventory_model=f"{row.id}_trapdoor_bottom",
 		).define(recipes=[CraftingShapedRecipe(
 			result_count=row.count, category="redstone", shape=["#XX"], ingredients={"#": Ingr("stone_stick"), "X": Ingr(row.material)},
 		)])
 	OriginalBlock(
 		id="glowstone_pressure_plate", host="minecraft:stone_pressure_plate", variants=(("glowstone_pressure_plate", ""),),
-		schema=Schema.PLATE, inventory_model="glowstone_pressure_plate_inventory", hand_drop=True,
+		schema=Schema.PLATE, inventory_model="glowstone_pressure_plate_inventory", hand_drop=True, emissive=True,
 	).define(recipes=[CraftingShapedRecipe(result_count=3, category="redstone", shape=["##"], ingredients={"#": Ingr("minecraft:glowstone")})])
 	OriginalBlock(id="iron_ladder", host="minecraft:ladder", variants=(("iron_ladder", ""),), schema=Schema.LADDER).define(recipes=[
 		CraftingShapedRecipe(result_count=6, category="building", shape=["# #", "###", "# #"], ingredients={"#": Ingr("minecraft:iron_ingot")}),
@@ -170,12 +179,12 @@ def connected_blocks() -> None:
 	for row in WALLS:
 		OriginalBlock(
 			id=f"{row.id}_wall", host=row.host, variants=((f"{row.id}_wall", ""),), schema=Schema.WALL,
-			inventory_model=f"{row.id}_wall_inventory", hand_drop=row.hand_drop,
+			inventory_model=f"{row.id}_wall_inventory", hand_drop=row.hand_drop, emissive=row.material == "minecraft:glowstone",
 		).define(recipes=[CraftingShapedRecipe(result_count=row.count, category="building", shape=["###", "###"], ingredients={"#": Ingr(row.material)})])
 	for row in FENCES:
 		OriginalBlock(
 			id=f"{row.id}_fence", host=row.host, variants=((f"{row.id}_fence", ""),), schema=Schema.FENCE,
-			inventory_model=f"{row.id}_fence_inventory",
+			inventory_model=f"{row.id}_fence_inventory", emissive=row.material == "minecraft:glowstone",
 		).define(recipes=[CraftingShapedRecipe(
 			result_count=row.count, category="building", shape=["X#X", "X#X"], ingredients={"X": Ingr("minecraft:stick"), "#": Ingr(row.material)},
 		)])
@@ -192,7 +201,7 @@ def connected_blocks() -> None:
 	for row in GATES:
 		OriginalBlock(
 			id=f"{row.id}_fence_gate", host=row.host, variants=((f"{row.id}_fence_gate", ""),), schema=Schema.GATE,
-			inventory_model=f"{row.id}_fence_gate_closed",
+			inventory_model=f"{row.id}_fence_gate_closed", emissive=row.material == "minecraft:glowstone",
 		).define(recipes=[CraftingShapedRecipe(
 			result_count=row.count, category="redstone", shape=["#W#", "#W#"], ingredients={"#": Ingr("stone_stick"), "W": Ingr(row.material)},
 		)])

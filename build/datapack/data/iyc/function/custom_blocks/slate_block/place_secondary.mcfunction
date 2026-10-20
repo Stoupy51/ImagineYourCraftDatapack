@@ -13,13 +13,12 @@ tag @s add smithed.entity
 tag @s add smithed.block
 tag @s add iyc.custom_block
 tag @s add iyc.slate_block
-tag @s add iyc.vanilla.minecraft_coal_block
+tag @s add iyc.vanilla.minecraft_emerald_block
 
 # Add a custom name
 data merge entity @s {"CustomName": {"text": "Slate Block"}}
 
 # Modify item display entity to match the custom block
 item replace entity @s contents with minecraft:furnace[item_model="iyc:slate_block"]
-data modify entity @s transformation.scale set value [1.002f,1.002f,1.002f]
 function iyc:custom_blocks/compute_brightness
 

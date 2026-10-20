@@ -3,7 +3,7 @@
 from dataclasses import dataclass, field
 from enum import StrEnum
 
-from stewbeet import Block, Mem, RecipeBase, VanillaBlock
+from stewbeet import Block, Interaction, Mem, RecipeBase, VanillaBlock
 from stouputils.typing import JsonDict
 
 
@@ -47,15 +47,6 @@ class Schema(StrEnum):
 
 
 @dataclass(frozen=True, kw_only=True)
-class Interaction:
-	""" An interaction entity standing in the block, for hosts that cannot be mined or targeted (barrier, structure void, light). """
-	width: float = 1.01
-	height: float = 1.01
-	seat: float | None = None
-	""" Height above the block bottom a player sits at when using it, None when it is not a seat. """
-
-
-@dataclass(frozen=True, kw_only=True)
 class OriginalBlock:
 	""" A custom block shown with the original models, every instance being listed by `all()`. """
 	id: str
@@ -74,7 +65,10 @@ class OriginalBlock:
 	hand_drop: bool = False
 	""" The host needs a tool to drop but the original did not, so the item appears anyway when a survival player broke it. """
 	drops: str = ""
-	""" The item dropped when broken through its interaction, defaults to the block itself. """
+	""" The item dropped instead of the block, when it has an interaction or a foreign drop. """
+	machine_speed: float = 1.0
+	emissive: bool = False
+	""" Faces drawn at full light, the shape itself giving no light around it. """
 	tags: tuple[str, ...] = field(default_factory=tuple[str, ...])
 	""" Extra entity tags of the display, read by the behaviours of `user.link`. """
 
@@ -93,9 +87,13 @@ class OriginalBlock:
 
 	def define(self, recipes: list[RecipeBase] | None = None, manual_category: str = "building", components: JsonDict | None = None) -> Block:
 		""" Register the StewBeet block placing this one. """
-		facing: bool = self.schema in (Schema.LADDER, Schema.FURNACE)
-		turned: bool = self.schema in (Schema.STAIRS, Schema.SLOPE, Schema.GATE, Schema.TRAPDOOR, Schema.FACING_AWAY, Schema.FACING_PLAYER)
-		vanilla_block = VanillaBlock(id=self.host, block_facing="player" if facing else False, visual_facing="player" if turned else "none")
+		facing: bool = self.schema in (Schema.LADDER, Schema.FURNACE, Schema.STAIRS, Schema.GATE, Schema.TRAPDOOR)
+		turned: bool = self.schema in (Schema.SLOPE, Schema.FACING_AWAY, Schema.FACING_PLAYER)
+		vanilla_block = VanillaBlock(
+			id=self.host, block_facing="player" if facing else False, visual_facing="player" if turned else "none",
+			half="click" if self.schema in (Schema.SLAB, Schema.STAIRS, Schema.TRAPDOOR) else None,
+			interaction=self.interaction, machine_speed=self.machine_speed,
+		)
 		override_model: JsonDict = (
 			{"parent": f"iyc:block/{self.inventory_model.lower()}", "textures": None} if self.inventory_model
 			else {"parent": "item/generated", "textures": {"layer0": f"iyc:item/{self.id}"}}
@@ -103,6 +101,7 @@ class OriginalBlock:
 		block = Block(
 			id=self.id, vanilla_block=vanilla_block, manual_category=manual_category,
 			override_model=override_model, recipes=recipes or [], components=components or {},
+			no_silk_touch_drop=self.drops if self.interaction and self.drops else None,
 		)
 		if self.color is not None:
 			block.components["custom_model_data"] = {"colors": [self.color]}

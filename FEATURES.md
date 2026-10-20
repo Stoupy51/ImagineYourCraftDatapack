@@ -34,7 +34,7 @@ Conventions: hardness / resistance are the raw values given to `setHardness` / `
 | Cherry trees | Patched vanilla `log2` / `leaves2` / `sapling` with a cherry variant (`bj_0.CHERRY`) | 26.3 cherry trees and cherry groves | Vanilla |
 | Cherry from cherry leaves | `bn`: cherry leaves drop a cherry like dark oak leaves drop apples (1/200, fortune raises it) | `minecraft:blocks/cherry_leaves` loot table also drops the IYC cherry with the vanilla apple chances | Implemented |
 | Ore drops and experience | `gz_2`: XP 3-6 for ruby, sapphire, topaz and adamantium ores, 2-5 lignite, 3-5 slate, steel ore drops itself | Custom ores drop their gem, fragment, slate or lignite with the same experience (StewBeet `NoSilkTouchDrop.experience`), steel ore drops raw steel and no experience | Implemented |
-| Ore harvest level | `er_2`: gem, steel, slate and adamantium ores and storage blocks need an iron pickaxe, lignite ore any pickaxe | Their item and experience vanish when the nearest survival player breaks them with anything but an iron, diamond or netherite pickaxe | Implemented (the host block still breaks at its own speed) |
+| Ore harvest level | `er_2`: gem, steel, slate and adamantium ores and storage blocks need an iron pickaxe, lignite ore any pickaxe | StewBeet `Mining(level="iron")`: storage blocks stand on vanilla blocks of the iron level (diamond, gold, raw gold and emerald blocks), which drop nothing to a weaker pickaxe at vanilla speed; the ores keep the ore host, so their item and experience vanish when the nearest survival player within 8 blocks breaks them with anything but an iron, diamond or netherite pickaxe | Implemented (ores break at the speed of polished deepslate) |
 
 ## 2. Materials
 
@@ -121,8 +121,8 @@ The 26.3 toughness of 2 is kept from the diamond base, 1.8 had no toughness.
 
 | Id | Name | Original behaviour | Datapack | Status |
 |---|---|---|---|---|
-| `crossbow` (`hu_2`) | Arbalete | Bow subclass, durability 199, needs bolts (or Infinity / creative), fires only after a 50 tick charge, bolt speed 3.0 at full charge (bow 2.0), crits at full charge, Power, Punch, Flame, Infinity work | `crossbow`, a vanilla crossbow with 199 durability and the mod's pulling textures, drawn in 50 ticks by its hidden `Heavy Draw` curse (+1.25 s of `crossbow_charge_time`), showing its fully drawn texture while loaded; bolts keep their x1.5 damage | Partial (26.3 crossbow rules: it loads, then fires on the next use, and takes any arrow or a firework rocket) |
-| `bolt` (entity `hd_2`) | Carreau | Arrow with base damage 3.0 (arrow 2.0) | `bolt`, an arrow item whose shot damage is multiplied by 1.5 | Implemented |
+| `crossbow` (`hu_2`) | Arbalete | Bow subclass, durability 199, needs bolts (or Infinity / creative), fires only after a 50 tick charge, bolt speed 3.0 at full charge (bow 2.0), crits at full charge, Power, Punch, Flame, Infinity work | `crossbow`, a vanilla crossbow with 199 durability and the mod's pulling textures, drawn in 50 ticks by its hidden `Heavy Draw` curse (StewBeet `RangedWeapon`), showing its fully drawn texture while loaded, loading bolts only (anything else is given back) and shooting them with x1.5 damage | Partial (26.3 crossbow rules: it loads, then fires on the next use) |
+| `bolt` (entity `hd_2`) | Carreau | Arrow with base damage 3.0 (arrow 2.0) | `bolt`, the only ammunition of the crossbow, which multiplies the damage of what it shoots by 1.5 | Implemented |
 | `baguette_bleue`, `_rouge`, `_violette`, `_jaune`, `_verte`, `_orange` (`fl_1`) | Baguettes (wands) | Tool items with no effective block, stack 1, durability 2000, lose 2 durability per hit, used by server plugins | Six wand items with 2000 durability | Implemented (no plugin behaviour) |
 | `tournevis` (`fl_1`) | Tournevis sonic | Same wand class | `screwdriver`, 2000 durability | Implemented (no plugin behaviour) |
 | `L118A`, `SW1911` (`fl_1`) | Guns | Same wand class, the shooting lived in a server plugin | `l118a`, `sw1911`, 2000 durability, the datapack recipes | Partial (no shooting, the plugin was not shipped) |
@@ -212,7 +212,7 @@ The mod has no recipe for its discs (creative tab only). The datapack keeps them
 | reversed_planks | wood | `###` oak reversed planks, x6 | custom slab | Implemented |
 | obsidian | rock | `###` obsidian, x6 | custom slab | Implemented |
 | oak_log | wood | `###` oak logs, x6 | custom slab | Implemented |
-| glowstone | glass | `###` glowstone, x6 | custom slab, light 15 (see 11.10) | Implemented |
+| glowstone | glass | `###` glowstone, x6 | custom slab drawn lit (see 11.10) | Partial (no light around) |
 | slate | rock | `###` slate blocks, x6 | custom slab | Implemented |
 | glass (`glass_slab`) | hardness 0.3, glass | `XXX` glass, x3 | custom slab on a barrier, as the slopes (see 11.4) | Partial (full block collision) |
 | wool x16 (`wool_slab`, `wool_slab_2`) | hardness 0.8, cloth | `###` wool of the color, x1 | 26.3 wool slabs (x6) | Vanilla |
@@ -226,7 +226,7 @@ Slabs in the datapack take the top or bottom half from where the player clicks, 
 |---|---|---|---|---|
 | `raw_stone_stairs` | stone | none (the mod's stone recipe gives the vanilla cobblestone stairs) | 26.3 stone stairs | Vanilla |
 | `log_stairs` | oak log | 6 oak logs | custom stairs | Implemented |
-| `glowstone_stairs` | glowstone, light 15 | 6 glowstone | custom stairs, light 15 | Implemented |
+| `glowstone_stairs` | glowstone, light 15 | 6 glowstone | custom stairs drawn lit (see 11.10) | Partial (no light around) |
 | `iron_stairs` | iron block | 6 iron ingots | custom stairs | Implemented |
 | `obsidian_stairs` | obsidian | 6 obsidian ingots | custom stairs | Implemented |
 | `glass_stairs` | glass | 6 glass | custom stairs on a barrier, as the slopes | Partial (see 11.4) |
@@ -245,7 +245,7 @@ Collision is the stairs one in the original. A stairs host would show through th
 | `stone_slopes` | stone | `__# / _#_ / ###` or mirrored, 6 stone, x4 | Partial (see above) |
 | `slate_slopes` | slate block | 6 slate items, x2 | Partial |
 | `sandstone_slopes` | sandstone | 6 sandstone, x2 | Partial |
-| `glowstone_slopes` | glowstone, light 15 | 6 glowstone, x4 | Partial (light 15 through 11.10) |
+| `glowstone_slopes` | glowstone, light 15 | 6 glowstone, x4 | Partial (drawn lit, no light around, see 11.10) |
 | `glass_slopes` | glass | 6 glass, x2 | Partial |
 | `oak_planks_slopes`, `spruce_`, `birch_`, `jungle_planks_slopes` | planks | 6 planks, x4 (oak) or x2 | Partial |
 | `oak_log_slopes`, `spruce_`, `birch_`, `jungle_log_slopes` | log | 6 logs, x4 (oak) or x2 | Partial |
@@ -263,7 +263,7 @@ Recipe: `### / ###` of the material, x5.
 | 3 | oak_plank | sticks (that is the recipe of the jar) | custom wall | Implemented |
 | 4 | brick | bricks | 26.3 brick wall | Vanilla |
 | 5 | sandstone | sandstone | 26.3 sandstone wall | Vanilla |
-| 6 | glowstone | glowstone | custom wall, light 15 | Implemented |
+| 6 | glowstone | glowstone | custom wall drawn lit (see 11.10) | Partial (no light around) |
 | 7 | slate | slate block | custom wall | Implemented |
 | | `wall.cobblestone` lang entry | | 26.3 cobblestone wall | Vanilla |
 
@@ -271,11 +271,11 @@ Recipe: `### / ###` of the material, x5.
 
 | Id | Stats | Recipe | Datapack | Status |
 |---|---|---|---|---|
-| `glowstone_fence` | hardness 0.3, glass, light 15 | `X#X / X#X` sticks and glowstone, x6 | custom fence, light 15 | Implemented |
+| `glowstone_fence` | hardness 0.3, glass, light 15 | `X#X / X#X` sticks and glowstone, x6 | custom fence drawn lit (see 11.10) | Partial (no light around) |
 | `log_fence` | hardness 2, wood | sticks and oak logs, x2 | custom fence | Implemented |
 | `stone_fence` | hardness 1.5, resistance 10 | sticks and stone, x2 | custom fence | Implemented |
 | `iron_fence` x16 (`go_1`) | hardness 5, resistance 10, metal, tinted by color | sticks and iron ingots, x2 (white), then 8 fences around a dye, x8 (the jar skips black through an index slip, the datapack does not) | 16 tinted custom fences on the nether brick fence | Implemented |
-| `glowstone_fence_gate` | light 15 | `#W# / #W#` stone sticks and glowstone, x2 | custom gate, light 15 | Implemented |
+| `glowstone_fence_gate` | light 15 | `#W# / #W#` stone sticks and glowstone, x2 | custom gate drawn lit (see 11.10) | Partial (no light around) |
 | `log_fence_gate` | wood | stone sticks and oak logs, x2 | custom gate | Implemented |
 | `stone_fence_gate` | rock | stone sticks and stone, x2 | custom gate | Implemented |
 | `iron_fence_gate` | metal | stone sticks and iron ingots, x2 | custom gate | Implemented |
@@ -286,8 +286,8 @@ Recipe: `### / ###` of the material, x5.
 | Id | Stats | Recipe | Datapack | Status |
 |---|---|---|---|---|
 | `stone_trapdoor` (`dx`) | hardness 3, rock | `#XX` stone stick and 2 stone, x4 | custom trapdoor on the oak trapdoor, opened by hand like the original | Implemented (wood sounds) |
-| `glowstone_trapdoor` | hardness 0.3, light 15 | `#XX` stone stick and 2 glowstone, x4 | custom trapdoor on the oak trapdoor, light 15 | Implemented |
-| `glowstone_pressure_plate` (`bn_0`, MOBS sensitivity) | hardness 0.3, light 15 | `##` glowstone, x3 | custom plate on the stone pressure plate (mobs and players), light 15 | Implemented |
+| `glowstone_trapdoor` | hardness 0.3, light 15 | `#XX` stone stick and 2 glowstone, x4 | custom trapdoor on the oak trapdoor, drawn lit (see 11.10) | Partial (no light around) |
+| `glowstone_pressure_plate` (`bn_0`, MOBS sensitivity) | hardness 0.3, light 15 | `##` glowstone, x3 | custom plate on the stone pressure plate (mobs and players), drawn lit (see 11.10) | Partial (no light around) |
 | `iron_ladder` (`au_0`, the vanilla ladder class) | hardness 2.5, resistance 8, metal | `# # / ### / # #` iron ingots, x6 | custom ladder on the vanilla ladder: climbable, attaches to the wall the player looks at | Implemented |
 
 ### 11.8 Wool slabs and stairs
@@ -308,7 +308,7 @@ See 11.2 and 11.3: 16 colors each, vanilla wool textures (`wool_colored_<color>`
 
 ### 11.10 Light emission of glowstone shapes
 
-Glowstone stairs, slabs, slopes, walls, fences, gates, trapdoor and pressure plate emit light 15 in the mod. No vanilla stairs, slab, wall, fence, gate, trapdoor or plate emits light, so each of these blocks keeps a light block of level 15 in a free neighbour (the one above first), checked every second and taken away when the block is broken. A neighbour filled later moves the light to another free one, and a shape enclosed on all six sides lights nothing.
+Glowstone stairs, slabs, slopes, walls, fences, gates, trapdoor and pressure plate emit light 15 in the mod. No vanilla stairs, slab, wall, fence, gate, trapdoor or plate emits light, and the only invisible host giving light, the light block, has no collision. So these blocks keep the collision of their shape and their models are drawn at full light (`light_emission` 15 on every element): they look lit at night, but they light nothing around them. Lamps without collision (transparent light block, lit lamps) stand on a light block of level 15 and do light their surroundings.
 
 ### 11.11 How custom shaped blocks work in the datapack
 
@@ -330,7 +330,7 @@ All furniture: hardness 2, resistance 5, decoration tab. Recipe material: oak pl
 | `barrel` (`gz_1`) | | Chest-like container "Tonneau" | `XXX / ### / XXX` oak planks and iron ingots, x4 | block on the vanilla barrel (27 slots) with the IYC model | Implemented |
 | `flatware` (`gp_1`) | 0.07 high plate | Cutlery to put on tables | `X#X / X#X` iron ingots and glass, x2 | flat model on a light-less structure void, broken by hitting it | Implemented |
 
-Furniture (tables, little tables, seats, shelf) sits on a barrier and an interaction entity: hitting the interaction breaks the block instantly (the original took hardness 2 of mining), right clicking a seat mounts an invisible seat entity at the seat height, sneaking stands up. The interaction of tables stops under the top so blocks can still be placed on them. Every piece has a full block collision.
+Furniture (tables, little tables, seats, shelf) sits on a barrier and an interaction entity: three hits on the interaction, each less than a second after the previous one, break the block (the original took hardness 2 of mining), with particles of the block and the sound of its material, right clicking a seat mounts an invisible seat entity at the seat height, sneaking stands up. The interaction of tables stops under the top so blocks can still be placed on them. Every piece has a full block collision.
 
 ## 13. Special blocks
 
@@ -359,7 +359,7 @@ Furniture (tables, little tables, seats, shelf) sits on a barrier and an interac
 | Entity | Original | Datapack | Status |
 |---|---|---|---|
 | `PrimedBombe` (`he_2`) | Primed bomb, see 13 | vanilla primed TNT with fuse and power set | Implemented |
-| `crossbowarrow` (`hd_2`) | Bolt, damage 3.0, death message "s'est fait tirer dessus par" | vanilla arrow with damage x1.5 | Implemented (vanilla death message) |
+| `crossbowarrow` (`hd_2`) | Bolt, damage 3.0, death message "s'est fait tirer dessus par" | vanilla arrow, damage x1.5 from the crossbow's enchantment | Implemented (vanilla death message) |
 | Painting `Tele` (`zl_0.B`, 48 x 32 in `iyc:textures/painting/paintings.png`) | Extra painting variant drawn from the IYC texture | `tele` custom painting 3 x 2 | Implemented |
 
 ## 15. Gameplay tweaks (vanilla recipes added by the mod, end of `iu_1`)

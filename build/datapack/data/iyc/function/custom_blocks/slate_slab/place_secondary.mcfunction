@@ -20,7 +20,6 @@ data merge entity @s {"CustomName": {"text": "Slate Slab"}}
 
 # Modify item display entity to match the custom block
 item replace entity @s contents with minecraft:furnace[item_model="iyc:slate_slab"]
-data modify entity @s transformation.scale set value [1.002f,1.002f,1.002f]
 function iyc:custom_blocks/compute_brightness
 
 # Original model
@@ -28,7 +27,5 @@ tag @s add iyc.original
 scoreboard players set @s iyc.shape -1
 tag @s add iyc.follow
 tag @s add iyc.tree.slab_4
-function iyc:placing/aim
-execute if score #upper iyc.data matches 1 run setblock ~ ~ ~ minecraft:stone_slab[type=top]
 function iyc:shapes/slab_4
 

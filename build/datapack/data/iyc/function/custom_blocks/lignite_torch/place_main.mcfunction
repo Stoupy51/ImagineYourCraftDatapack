@@ -6,7 +6,7 @@
 #
 
 tag @s add iyc.placer
-execute align xyz positioned ~0.5 ~0.5 ~0.5 summon minecraft:marker run function iyc:placing/marker_aim
+execute align xyz positioned ~0.5 ~0.5 ~0.5 summon minecraft:marker run function iyc:custom_blocks/_aim/main
 execute if score #floor iyc.data matches 0 run return run function iyc:custom_blocks/lignite_wall_torch/place_main
 
 tag @s add iyc.placer

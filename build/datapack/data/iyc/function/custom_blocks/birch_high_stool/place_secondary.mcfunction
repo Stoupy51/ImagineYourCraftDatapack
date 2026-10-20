@@ -20,12 +20,13 @@ data merge entity @s {"CustomName": {"text": "Birch High Stool"}}
 
 # Modify item display entity to match the custom block
 item replace entity @s contents with minecraft:furnace[item_model="iyc:birch_high_stool"]
-data modify entity @s transformation.scale set value [1.002f,1.002f,1.002f]
 function iyc:custom_blocks/compute_brightness
+
+# Interaction breaking the block when hit
+summon interaction ~ ~-0.5 ~ {width:1.01f,height:1.01f,response:true,Tags:["global.ignore","global.ignore.kill","smithed.entity","iyc.interaction","iyc.birch_high_stool"]}
 
 # Original model
 tag @s add iyc.original
 scoreboard players set @s iyc.shape -1
-summon interaction ~ ~-0.5 ~ {width:1.01f,height:1.01f,response:true,Tags:["iyc.interaction","iyc.seat.88"]}
 function iyc:shapes/fixed_0
 

@@ -20,7 +20,6 @@ data merge entity @s {"CustomName": {"text": "Iron Furnace"}}
 
 # Modify item display entity to match the custom block
 item replace entity @s contents with minecraft:furnace[item_model="iyc:iron_furnace"]
-data modify entity @s transformation.scale set value [1.002f,1.002f,1.002f]
 function iyc:custom_blocks/compute_brightness
 
 # Apply rotation
@@ -34,7 +33,6 @@ tag @s add iyc.original
 scoreboard players set @s iyc.shape -1
 tag @s add iyc.follow
 tag @s add iyc.tree.furnace_21
-tag @s add iyc.iron_furnace
 function iyc:shapes/furnace_21
 
 # Add tag for loop every tick

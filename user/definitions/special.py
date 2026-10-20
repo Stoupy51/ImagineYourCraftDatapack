@@ -1,9 +1,9 @@
 """ Blocks of the mod with a behaviour of their own, the behaviours being written by `user.link` from the display tags given here. """
 # Imports
-from stewbeet import Block, CraftingShapedRecipe, CraftingShapelessRecipe, Ingr, VanillaBlock
+from stewbeet import Block, CraftingShapedRecipe, CraftingShapelessRecipe, Ingr, Interaction, VanillaBlock
 
 from user.definitions.common import COLORS, dyed, lore
-from user.original.blocks import Interaction, OriginalBlock, Schema
+from user.original.blocks import OriginalBlock, Schema
 
 # Constants
 CAMPFIRES: dict[str, str] = {
@@ -52,7 +52,7 @@ def main() -> None:
 	for color in COLORS:
 		OriginalBlock(
 			id=f"{color.name}_cloud", host="minecraft:structure_void", variants=(("cloud", ""),), schema=Schema.FIXED, inventory_model="cloud",
-			color=color.rgb, interaction=Interaction(), tags=("cloud",),
+			color=color.rgb, interaction=Interaction(sound="minecraft:block.wool"), tags=("cloud",),
 		).define(manual_category="miscellaneous", recipes=[
 			CraftingShapedRecipe(
 				result_count=8, category="building", shape=["XXX", "X#X", "XXX"],
@@ -62,7 +62,7 @@ def main() -> None:
 	for color in COLORS:
 		OriginalBlock(
 			id=f"{color.name}_blob", host="minecraft:barrier", variants=(("blob", ""),), schema=Schema.FIXED, inventory_model="blob",
-			color=color.rgb, interaction=Interaction(),
+			color=color.rgb, interaction=Interaction(sound="minecraft:block.slime_block"),
 		).define(manual_category="miscellaneous", recipes=[] if color.name == "white" else [dyed("white_blob", color)])
 	for team in ("blue", "red"):
 		OriginalBlock(
@@ -78,13 +78,13 @@ def main() -> None:
 def machines() -> None:
 	OriginalBlock(
 		id="iron_furnace", host="minecraft:furnace", variants=(("iron_furnace", "lit=false"), ("lit_iron_furnace", "lit=true")),
-		schema=Schema.FURNACE, inventory_model="iron_furnace", tags=("iron_furnace",),
+		schema=Schema.FURNACE, inventory_model="iron_furnace", machine_speed=2.0,
 	).define(manual_category="miscellaneous", components={"lore": lore("Cooks twice as fast")}, recipes=[CraftingShapedRecipe(
 		category="misc", shape=["XXX", "XFX", "XXX"], ingredients={"X": Ingr("minecraft:iron_ingot"), "F": Ingr("minecraft:furnace")},
 	)])
 	OriginalBlock(
 		id="steel_brewing_stand", host="minecraft:brewing_stand", variants=(("steel_brewing_stand", ""),), schema=Schema.BREWING,
-		tags=("steel_brewing_stand",),
+		machine_speed=1.6,
 	).define(manual_category="miscellaneous", components={"lore": lore("Brews in 12.5 seconds instead of 20")}, recipes=[CraftingShapedRecipe(
 		category="misc", shape=[" B ", "###"], ingredients={"B": Ingr("minecraft:blaze_rod"), "#": Ingr("steel_block")},
 	)])

@@ -7,12 +7,12 @@
 
 tag @s add iyc.placer
 setblock ~ ~ ~ air strict
-setblock ~ ~ ~ minecraft:coal_block
+setblock ~ ~ ~ minecraft:emerald_block
 execute align xyz positioned ~0.5 ~0.5 ~0.5 summon item_display at @s run function iyc:custom_blocks/slate_block/place_secondary
 tag @s remove iyc.placer
 
 # Increment count scores
 scoreboard players add #total_custom_blocks iyc.data 1
-scoreboard players add #total_vanilla_coal_block iyc.data 1
+scoreboard players add #total_vanilla_emerald_block iyc.data 1
 scoreboard players add #total_slate_block iyc.data 1
 

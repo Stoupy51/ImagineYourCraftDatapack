@@ -20,8 +20,10 @@ data merge entity @s {"CustomName": {"text": "White Lamp"}}
 
 # Modify item display entity to match the custom block
 item replace entity @s contents with minecraft:furnace[item_model="iyc:white_lamp"]
-data modify entity @s transformation.scale set value [1.002f,1.002f,1.002f]
 function iyc:custom_blocks/compute_brightness
+
+# Interaction breaking the block when hit
+summon interaction ~ ~-0.5 ~ {width:0.6f,height:0.8f,response:true,Tags:["global.ignore","global.ignore.kill","smithed.entity","iyc.interaction","iyc.white_lamp"]}
 
 # Original model
 tag @s add iyc.original
@@ -30,6 +32,5 @@ tag @s add iyc.follow
 tag @s add iyc.tree.solid_neighbour_14
 tag @s add iyc.lights.white_lit_lamp
 data modify entity @s item.components."minecraft:custom_model_data" set value {colors:[16777215]}
-summon interaction ~ ~-0.5 ~ {width:0.6f,height:0.8f,response:true,Tags:["iyc.interaction","iyc.lights.white_lit_lamp"]}
 function iyc:shapes/solid_neighbour_14
 

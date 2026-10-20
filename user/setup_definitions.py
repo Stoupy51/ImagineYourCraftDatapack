@@ -37,6 +37,5 @@ def beet_default(ctx: Context) -> None:
 	add_item_name_and_lore_if_missing()
 	add_private_custom_data_for_namespace()
 	add_smithed_ignore_vanilla_behaviours_convention()
-	foods.give_back_containers()
 	export_all_definitions_to_json(f"{ctx.directory}/database_debug.json")
 

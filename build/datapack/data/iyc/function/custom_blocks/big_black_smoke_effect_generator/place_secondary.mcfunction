@@ -20,7 +20,6 @@ data merge entity @s {"CustomName": {"text": "Big Black Smoke Effect Generator"}
 
 # Modify item display entity to match the custom block
 item replace entity @s contents with minecraft:furnace[item_model="iyc:big_black_smoke_effect_generator"]
-data modify entity @s transformation.scale set value [1.002f,1.002f,1.002f]
 function iyc:custom_blocks/compute_brightness
 
 # Original model

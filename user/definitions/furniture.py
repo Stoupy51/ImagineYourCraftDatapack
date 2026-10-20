@@ -1,10 +1,10 @@
 """ Furniture of the mod in its 4 materials: tables, little tables, stools, high stools, benches and chairs, plus the shelf and the barrel. """
 # Imports
-from dataclasses import dataclass
+from dataclasses import dataclass, replace
 
-from stewbeet import CraftingShapedRecipe, Ingr
+from stewbeet import CraftingShapedRecipe, Ingr, Interaction
 
-from user.original.blocks import Interaction, OriginalBlock, Schema
+from user.original.blocks import OriginalBlock, Schema
 
 
 # Classes
@@ -12,6 +12,7 @@ from user.original.blocks import Interaction, OriginalBlock, Schema
 class Material:
 	name: str
 	ingredient: str
+	sound: str
 
 
 @dataclass(frozen=True, kw_only=True)
@@ -26,10 +27,10 @@ class Furniture:
 
 # Constants
 MATERIALS: list[Material] = [
-	Material(name="oak",         ingredient="minecraft:oak_planks"),
-	Material(name="birch",       ingredient="minecraft:birch_planks"),
-	Material(name="cobblestone", ingredient="minecraft:cobblestone"),
-	Material(name="stone",       ingredient="minecraft:stone"),
+	Material(name="oak",         ingredient="minecraft:oak_planks",  sound="minecraft:block.wood"),
+	Material(name="birch",       ingredient="minecraft:birch_planks", sound="minecraft:block.wood"),
+	Material(name="cobblestone", ingredient="minecraft:cobblestone",  sound="minecraft:block.stone"),
+	Material(name="stone",       ingredient="minecraft:stone",        sound="minecraft:block.stone"),
 ]
 """ Materials of `gy_1`. The jar crafts stone furniture from stone meta 1 (granite in 1.8), read here as plain stone. """
 
@@ -43,6 +44,9 @@ FURNITURE: list[Furniture] = [
 ]
 """ Tables keep their interaction under the top, so blocks can still be placed on them. """
 
+FURNITURE_HITS: int = 3
+""" Hits breaking a piece of furniture, about the time the mod's hardness 2 took by hand. """
+
 
 # Functions
 def main() -> None:
@@ -52,14 +56,15 @@ def main() -> None:
 			OriginalBlock(
 				id=name, host="minecraft:barrier", variants=((name, ""),), schema=furniture.schema,
 				inventory_model=f"item/{name}" if furniture.name == "bench" else name,
-				connects_to=furniture.name if furniture.connects else "", interaction=furniture.interaction,
+				connects_to=furniture.name if furniture.connects else "",
+				interaction=replace(furniture.interaction, sound=material.sound, hits=FURNITURE_HITS),
 			).define(manual_category="furniture", recipes=[CraftingShapedRecipe(
 				category="building", group=furniture.name, shape=furniture.shape,
 				ingredients={"X": Ingr(material.ingredient), "#": Ingr("minecraft:stick")},
 			)])
 	OriginalBlock(
 		id="oak_shelf", host="minecraft:barrier", variants=(("oak_shelf", ""),), schema=Schema.FACING_PLAYER,
-		inventory_model="oak_shelf", interaction=Interaction(),
+		inventory_model="oak_shelf", interaction=Interaction(sound="minecraft:block.wood", hits=FURNITURE_HITS),
 	).define(manual_category="furniture", recipes=[CraftingShapedRecipe(
 		result_count=2, category="building", shape=["XXX", "X X", "X X"], ingredients={"X": Ingr("minecraft:oak_planks")},
 	)])

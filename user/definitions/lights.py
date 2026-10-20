@@ -1,9 +1,9 @@
 """ Light blocks of the mod: log and iron lanterns, the red light, the always lit lamp, the transparent light block, colored lamps and rods, the lignite torch. """
 # Imports
-from stewbeet import CraftingShapedRecipe, Ingr
+from stewbeet import CraftingShapedRecipe, Ingr, Interaction
 
 from user.definitions.common import COLORS, dyed
-from user.original.blocks import Interaction, OriginalBlock, Schema
+from user.original.blocks import OriginalBlock, Schema
 
 # Constants
 LANTERN_WOODS: list[str] = ["oak", "spruce", "birch", "jungle"]
@@ -11,6 +11,9 @@ LANTERN_WOODS: list[str] = ["oak", "spruce", "birch", "jungle"]
 
 LIGHT_HOST: str = "minecraft:ochre_froglight"
 """ A full block giving light 15 and dropping itself. """
+
+ROD: Interaction = Interaction(width=0.3, height=1.0, sound="minecraft:block.wood")
+LAMP: Interaction = Interaction(width=0.6, height=0.8, sound="minecraft:block.wood")
 
 
 # Functions
@@ -40,7 +43,7 @@ def main() -> None:
 	).define(manual_category="redstone")
 	OriginalBlock(
 		id="transparent_light_block", host="minecraft:light[level=15]", variants=(("transparent_light_block", ""),), schema=Schema.FIXED,
-		interaction=Interaction(),
+		interaction=Interaction(sound="minecraft:block.glass"),
 	).define(recipes=[CraftingShapedRecipe(
 		result_count=4, category="building", shape=["###", "#X#", "###"], ingredients={"#": Ingr("minecraft:glass"), "X": Ingr("minecraft:glowstone")},
 	)])
@@ -59,14 +62,14 @@ def lamps_and_rods() -> None:
 	for color in COLORS:
 		OriginalBlock(
 			id=f"{color.name}_rod", host="minecraft:structure_void", variants=(("rod", ""),), schema=Schema.SOLID_NEIGHBOUR,
-			inventory_model="rod_inventory", color=color.rgb, interaction=Interaction(width=0.3, height=1.0),
+			inventory_model="rod_inventory", color=color.rgb, interaction=ROD,
 		).define(recipes=[
 			CraftingShapedRecipe(result_count=2, category="building", shape=["X", "X"], ingredients={"X": Ingr("minecraft:stick")})
 			if color.name == "white" else dyed("white_rod", color),
 		])
 		OriginalBlock(
 			id=f"{color.name}_lamp", host="minecraft:structure_void", variants=(("lamp_off", ""),), schema=Schema.SOLID_NEIGHBOUR,
-			inventory_model="lantern", color=color.rgb, interaction=Interaction(width=0.6, height=0.8), tags=(f"lights.{color.name}_lit_lamp",),
+			inventory_model="lantern", color=color.rgb, interaction=LAMP, tags=(f"lights.{color.name}_lit_lamp",),
 		).define(recipes=[
 			CraftingShapedRecipe(
 				result_count=4, category="building", shape=["XXX", "WYW", "XXX"],
@@ -75,6 +78,6 @@ def lamps_and_rods() -> None:
 		])
 		OriginalBlock(
 			id=f"{color.name}_lit_lamp", host="minecraft:light[level=15]", variants=(("lamp_on", ""),), schema=Schema.SOLID_NEIGHBOUR,
-			inventory_model="lantern", color=color.rgb, interaction=Interaction(width=0.6, height=0.8), drops=f"{color.name}_lamp",
+			inventory_model="lantern", color=color.rgb, interaction=LAMP, drops=f"{color.name}_lamp",
 		).define(recipes=[] if color.name == "white" else [dyed("white_lit_lamp", color)])
 

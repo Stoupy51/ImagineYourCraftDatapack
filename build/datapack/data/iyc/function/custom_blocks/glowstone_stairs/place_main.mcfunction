@@ -6,9 +6,17 @@
 #
 
 tag @s add iyc.placer
+execute align xyz positioned ~0.5 ~0.5 ~0.5 summon marker run function iyc:custom_blocks/_aim/main
 function iyc:custom_blocks/get_rotation
 setblock ~ ~ ~ air strict
-setblock ~ ~ ~ minecraft:oak_stairs
+execute if score #rotation iyc.data matches 1 if score #upper iyc.data matches 0 run setblock ~ ~ ~ minecraft:oak_stairs[half=bottom,facing=south]
+execute if score #rotation iyc.data matches 1 if score #upper iyc.data matches 1 run setblock ~ ~ ~ minecraft:oak_stairs[half=top,facing=south]
+execute if score #rotation iyc.data matches 2 if score #upper iyc.data matches 0 run setblock ~ ~ ~ minecraft:oak_stairs[half=bottom,facing=west]
+execute if score #rotation iyc.data matches 2 if score #upper iyc.data matches 1 run setblock ~ ~ ~ minecraft:oak_stairs[half=top,facing=west]
+execute if score #rotation iyc.data matches 3 if score #upper iyc.data matches 0 run setblock ~ ~ ~ minecraft:oak_stairs[half=bottom,facing=north]
+execute if score #rotation iyc.data matches 3 if score #upper iyc.data matches 1 run setblock ~ ~ ~ minecraft:oak_stairs[half=top,facing=north]
+execute if score #rotation iyc.data matches 4 if score #upper iyc.data matches 0 run setblock ~ ~ ~ minecraft:oak_stairs[half=bottom,facing=east]
+execute if score #rotation iyc.data matches 4 if score #upper iyc.data matches 1 run setblock ~ ~ ~ minecraft:oak_stairs[half=top,facing=east]
 execute align xyz positioned ~0.5 ~0.5 ~0.5 summon item_display at @s run function iyc:custom_blocks/glowstone_stairs/place_secondary
 tag @s remove iyc.placer
 

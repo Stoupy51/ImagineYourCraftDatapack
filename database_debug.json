@@ -204,7 +204,14 @@
 			"id": "minecraft:diamond_block",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
+		},
+		"mining": {
+			"tool": "pickaxe",
+			"level": "iron"
 		}
 	},
 	"sapphire_ore": {
@@ -225,12 +232,19 @@
 			"id": "minecraft:polished_deepslate",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		},
 		"no_silk_touch_drop": {
 			"id": "sapphire",
 			"count": 1,
 			"experience": {"min": 3,"max": 6}
+		},
+		"mining": {
+			"tool": "pickaxe",
+			"level": "iron"
 		}
 	},
 	"deepslate_sapphire_ore": {
@@ -251,12 +265,19 @@
 			"id": "minecraft:polished_deepslate",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		},
 		"no_silk_touch_drop": {
 			"id": "sapphire",
 			"count": 1,
 			"experience": {"min": 3,"max": 6}
+		},
+		"mining": {
+			"tool": "pickaxe",
+			"level": "iron"
 		}
 	},
 	"sapphire_helmet": {
@@ -464,7 +485,14 @@
 			"id": "minecraft:diamond_block",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
+		},
+		"mining": {
+			"tool": "pickaxe",
+			"level": "iron"
 		}
 	},
 	"ruby_ore": {
@@ -485,12 +513,19 @@
 			"id": "minecraft:polished_deepslate",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		},
 		"no_silk_touch_drop": {
 			"id": "ruby",
 			"count": 1,
 			"experience": {"min": 3,"max": 6}
+		},
+		"mining": {
+			"tool": "pickaxe",
+			"level": "iron"
 		}
 	},
 	"deepslate_ruby_ore": {
@@ -511,12 +546,19 @@
 			"id": "minecraft:polished_deepslate",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		},
 		"no_silk_touch_drop": {
 			"id": "ruby",
 			"count": 1,
 			"experience": {"min": 3,"max": 6}
+		},
+		"mining": {
+			"tool": "pickaxe",
+			"level": "iron"
 		}
 	},
 	"ruby_helmet": {
@@ -724,7 +766,14 @@
 			"id": "minecraft:diamond_block",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
+		},
+		"mining": {
+			"tool": "pickaxe",
+			"level": "iron"
 		}
 	},
 	"topaz_ore": {
@@ -745,12 +794,19 @@
 			"id": "minecraft:polished_deepslate",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		},
 		"no_silk_touch_drop": {
 			"id": "topaz",
 			"count": 1,
 			"experience": {"min": 3,"max": 6}
+		},
+		"mining": {
+			"tool": "pickaxe",
+			"level": "iron"
 		}
 	},
 	"deepslate_topaz_ore": {
@@ -771,12 +827,19 @@
 			"id": "minecraft:polished_deepslate",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		},
 		"no_silk_touch_drop": {
 			"id": "topaz",
 			"count": 1,
 			"experience": {"min": 3,"max": 6}
+		},
+		"mining": {
+			"tool": "pickaxe",
+			"level": "iron"
 		}
 	},
 	"topaz_helmet": {
@@ -981,10 +1044,17 @@
 		},
 		"skip_gives": false,
 		"vanilla_block": {
-			"id": "minecraft:netherite_block",
+			"id": "minecraft:diamond_block",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
+		},
+		"mining": {
+			"tool": "pickaxe",
+			"level": "iron"
 		}
 	},
 	"adamantium_ore": {
@@ -1005,12 +1075,19 @@
 			"id": "minecraft:polished_deepslate",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		},
 		"no_silk_touch_drop": {
 			"id": "adamantium_fragment",
 			"count": 1,
 			"experience": {"min": 3,"max": 6}
+		},
+		"mining": {
+			"tool": "pickaxe",
+			"level": "iron"
 		}
 	},
 	"deepslate_adamantium_ore": {
@@ -1031,12 +1108,19 @@
 			"id": "minecraft:polished_deepslate",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		},
 		"no_silk_touch_drop": {
 			"id": "adamantium_fragment",
 			"count": 1,
 			"experience": {"min": 3,"max": 6}
+		},
+		"mining": {
+			"tool": "pickaxe",
+			"level": "iron"
 		}
 	},
 	"adamantium_helmet": {
@@ -1491,10 +1575,17 @@
 		},
 		"skip_gives": false,
 		"vanilla_block": {
-			"id": "minecraft:iron_block",
+			"id": "minecraft:gold_block",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
+		},
+		"mining": {
+			"tool": "pickaxe",
+			"level": "iron"
 		}
 	},
 	"steel_ore": {
@@ -1515,9 +1606,16 @@
 			"id": "minecraft:polished_deepslate",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		},
-		"no_silk_touch_drop": "raw_steel"
+		"no_silk_touch_drop": "raw_steel",
+		"mining": {
+			"tool": "pickaxe",
+			"level": "iron"
+		}
 	},
 	"raw_steel_block": {
 		"id": "raw_steel_block",
@@ -1536,10 +1634,17 @@
 		},
 		"skip_gives": false,
 		"vanilla_block": {
-			"id": "minecraft:raw_iron_block",
+			"id": "minecraft:raw_gold_block",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
+		},
+		"mining": {
+			"tool": "pickaxe",
+			"level": "iron"
 		}
 	},
 	"steel_helmet": {
@@ -1733,10 +1838,17 @@
 		},
 		"skip_gives": false,
 		"vanilla_block": {
-			"id": "minecraft:coal_block",
+			"id": "minecraft:emerald_block",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
+		},
+		"mining": {
+			"tool": "pickaxe",
+			"level": "iron"
 		}
 	},
 	"lignite_ore": {
@@ -1757,7 +1869,10 @@
 			"id": "minecraft:polished_deepslate",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		},
 		"no_silk_touch_drop": {
 			"id": "lignite",
@@ -1799,10 +1914,17 @@
 		},
 		"skip_gives": false,
 		"vanilla_block": {
-			"id": "minecraft:coal_block",
+			"id": "minecraft:emerald_block",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
+		},
+		"mining": {
+			"tool": "pickaxe",
+			"level": "iron"
 		}
 	},
 	"slate_ore": {
@@ -1823,12 +1945,19 @@
 			"id": "minecraft:polished_deepslate",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		},
 		"no_silk_touch_drop": {
 			"id": "slate",
 			"count": 1,
 			"experience": {"min": 3,"max": 5}
+		},
+		"mining": {
+			"tool": "pickaxe",
+			"level": "iron"
 		}
 	},
 	"stone_stick": {
@@ -1863,10 +1992,17 @@
 		},
 		"skip_gives": false,
 		"vanilla_block": {
-			"id": "minecraft:netherite_block",
+			"id": "minecraft:diamond_block",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
+		},
+		"mining": {
+			"tool": "pickaxe",
+			"level": "iron"
 		}
 	},
 	"antvenom_the_miner": {
@@ -2348,10 +2484,10 @@
 			"item_model": "iyc:beer",
 			"item_name": {"text": "Beer"},
 			"lore": [[{"text": "ImagineYourCraft","italic": false,"color": "white","font": "iyc:tooltip"}]],
-			"custom_data": {"iyc": {"beer": true},"smithed": {"id": "iyc:beer","origin": "iyc","ignore": {"functionality": true,"crafting": true}}},
-			"use_remainder": {"id": "minecraft:recovery_compass","count": 1,"components": {"minecraft:item_name": {"text": "Beer Mug"},"minecraft:item_model": "iyc:beer_mug","minecraft:custom_data": {"iyc": {"beer_mug": true},"smithed": {"id": "iyc:beer_mug","origin": "iyc","ignore": {"functionality": true,"crafting": true}}}}}
+			"custom_data": {"iyc": {"beer": true},"smithed": {"id": "iyc:beer","origin": "iyc","ignore": {"functionality": true,"crafting": true}}}
 		},
-		"skip_gives": false
+		"skip_gives": false,
+		"remainder": "beer_mug"
 	},
 	"hot_chocolate": {
 		"id": "hot_chocolate",
@@ -2367,10 +2503,10 @@
 			"item_model": "iyc:hot_chocolate",
 			"item_name": {"text": "Hot Chocolate"},
 			"lore": [[{"text": "ImagineYourCraft","italic": false,"color": "white","font": "iyc:tooltip"}]],
-			"custom_data": {"iyc": {"hot_chocolate": true},"smithed": {"id": "iyc:hot_chocolate","origin": "iyc","ignore": {"functionality": true,"crafting": true}}},
-			"use_remainder": {"id": "minecraft:recovery_compass","count": 1,"components": {"minecraft:item_name": {"text": "Can"},"minecraft:item_model": "iyc:can","minecraft:custom_data": {"iyc": {"can": true},"smithed": {"id": "iyc:can","origin": "iyc","ignore": {"functionality": true,"crafting": true}}}}}
+			"custom_data": {"iyc": {"hot_chocolate": true},"smithed": {"id": "iyc:hot_chocolate","origin": "iyc","ignore": {"functionality": true,"crafting": true}}}
 		},
-		"skip_gives": false
+		"skip_gives": false,
+		"remainder": "can"
 	},
 	"coca": {
 		"id": "coca",
@@ -2386,10 +2522,10 @@
 			"item_model": "iyc:coca",
 			"item_name": {"text": "Coca"},
 			"lore": [[{"text": "ImagineYourCraft","italic": false,"color": "white","font": "iyc:tooltip"}]],
-			"custom_data": {"iyc": {"coca": true},"smithed": {"id": "iyc:coca","origin": "iyc","ignore": {"functionality": true,"crafting": true}}},
-			"use_remainder": {"id": "minecraft:recovery_compass","count": 1,"components": {"minecraft:item_name": {"text": "Can"},"minecraft:item_model": "iyc:can","minecraft:custom_data": {"iyc": {"can": true},"smithed": {"id": "iyc:can","origin": "iyc","ignore": {"functionality": true,"crafting": true}}}}}
+			"custom_data": {"iyc": {"coca": true},"smithed": {"id": "iyc:coca","origin": "iyc","ignore": {"functionality": true,"crafting": true}}}
 		},
-		"skip_gives": false
+		"skip_gives": false,
+		"remainder": "can"
 	},
 	"red_bull": {
 		"id": "red_bull",
@@ -2405,10 +2541,10 @@
 			"item_model": "iyc:red_bull",
 			"item_name": {"text": "Red Bull"},
 			"lore": [[{"text": "ImagineYourCraft","italic": false,"color": "white","font": "iyc:tooltip"}]],
-			"custom_data": {"iyc": {"red_bull": true},"smithed": {"id": "iyc:red_bull","origin": "iyc","ignore": {"functionality": true,"crafting": true}}},
-			"use_remainder": {"id": "minecraft:recovery_compass","count": 1,"components": {"minecraft:item_name": {"text": "Can"},"minecraft:item_model": "iyc:can","minecraft:custom_data": {"iyc": {"can": true},"smithed": {"id": "iyc:can","origin": "iyc","ignore": {"functionality": true,"crafting": true}}}}}
+			"custom_data": {"iyc": {"red_bull": true},"smithed": {"id": "iyc:red_bull","origin": "iyc","ignore": {"functionality": true,"crafting": true}}}
 		},
-		"skip_gives": false
+		"skip_gives": false,
+		"remainder": "can"
 	},
 	"apple_juice": {
 		"id": "apple_juice",
@@ -2424,10 +2560,10 @@
 			"item_model": "iyc:apple_juice",
 			"item_name": {"text": "Apple Juice"},
 			"lore": [[{"text": "ImagineYourCraft","italic": false,"color": "white","font": "iyc:tooltip"}]],
-			"custom_data": {"iyc": {"apple_juice": true},"smithed": {"id": "iyc:apple_juice","origin": "iyc","ignore": {"functionality": true,"crafting": true}}},
-			"use_remainder": {"id": "minecraft:recovery_compass","count": 1,"components": {"minecraft:item_name": {"text": "Empty Glass"},"minecraft:item_model": "iyc:empty_glass","minecraft:custom_data": {"iyc": {"empty_glass": true},"smithed": {"id": "iyc:empty_glass","origin": "iyc","ignore": {"functionality": true,"crafting": true}}}}}
+			"custom_data": {"iyc": {"apple_juice": true},"smithed": {"id": "iyc:apple_juice","origin": "iyc","ignore": {"functionality": true,"crafting": true}}}
 		},
-		"skip_gives": false
+		"skip_gives": false,
+		"remainder": "empty_glass"
 	},
 	"toast": {
 		"id": "toast",
@@ -2510,7 +2646,10 @@
 			"id": "minecraft:wheat",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		},
 		"growing_seed": {
 			"texture_basename": "hops",
@@ -2528,14 +2667,20 @@
 		],
 		"components": {
 			"max_damage": 199,
-			"enchantments": {"iyc:heavy_draw": 1},
+			"enchantments": {"iyc:ranged_weapon/crossbow": 1},
 			"enchantment_glint_override": false,
 			"item_model": "iyc:crossbow",
 			"item_name": {"text": "Crossbow"},
 			"lore": [[{"text": "ImagineYourCraft","italic": false,"color": "white","font": "iyc:tooltip"}]],
 			"custom_data": {"iyc": {"crossbow": true},"smithed": {"id": "iyc:crossbow","origin": "iyc","ignore": {"functionality": true,"crafting": true}}}
 		},
-		"skip_gives": false
+		"skip_gives": false,
+		"ranged_weapon": {
+			"charge_time": 2.5,
+			"damage_multiplier": 1.5,
+			"ammunition": "bolt",
+			"name": "Heavy Draw"
+		}
 	},
 	"bolt": {
 		"id": "bolt",
@@ -2847,7 +2992,10 @@
 			"id": "minecraft:oak_planks",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"reversed_spruce_planks": {
@@ -2870,7 +3018,10 @@
 			"id": "minecraft:spruce_planks",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"reversed_birch_planks": {
@@ -2893,7 +3044,10 @@
 			"id": "minecraft:birch_planks",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"reversed_jungle_planks": {
@@ -2916,7 +3070,10 @@
 			"id": "minecraft:jungle_planks",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"reversed_acacia_planks": {
@@ -2939,7 +3096,10 @@
 			"id": "minecraft:acacia_planks",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"reversed_dark_oak_planks": {
@@ -2962,7 +3122,10 @@
 			"id": "minecraft:dark_oak_planks",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"reversed_cherry_planks": {
@@ -2985,7 +3148,10 @@
 			"id": "minecraft:cherry_planks",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"step_block": {
@@ -3008,7 +3174,10 @@
 			"id": "minecraft:smooth_stone",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"clear_glass": {
@@ -3031,7 +3200,10 @@
 			"id": "minecraft:glass",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"log_stairs": {
@@ -3053,8 +3225,12 @@
 		"vanilla_block": {
 			"id": "minecraft:oak_stairs",
 			"contents": false,
-			"block_facing": false,
-			"visual_facing": "player"
+			"block_facing": "player",
+			"visual_facing": "player",
+			"half": "click",
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"glowstone_stairs": {
@@ -3076,8 +3252,12 @@
 		"vanilla_block": {
 			"id": "minecraft:oak_stairs",
 			"contents": false,
-			"block_facing": false,
-			"visual_facing": "player"
+			"block_facing": "player",
+			"visual_facing": "player",
+			"half": "click",
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"iron_stairs": {
@@ -3099,8 +3279,12 @@
 		"vanilla_block": {
 			"id": "minecraft:waxed_cut_copper_stairs",
 			"contents": false,
-			"block_facing": false,
-			"visual_facing": "player"
+			"block_facing": "player",
+			"visual_facing": "player",
+			"half": "click",
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"obsidian_stairs": {
@@ -3122,8 +3306,12 @@
 		"vanilla_block": {
 			"id": "minecraft:stone_stairs",
 			"contents": false,
-			"block_facing": false,
-			"visual_facing": "player"
+			"block_facing": "player",
+			"visual_facing": "player",
+			"half": "click",
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"step_stairs": {
@@ -3145,8 +3333,12 @@
 		"vanilla_block": {
 			"id": "minecraft:stone_stairs",
 			"contents": false,
-			"block_facing": false,
-			"visual_facing": "player"
+			"block_facing": "player",
+			"visual_facing": "player",
+			"half": "click",
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"slate_stairs": {
@@ -3168,8 +3360,12 @@
 		"vanilla_block": {
 			"id": "minecraft:stone_stairs",
 			"contents": false,
-			"block_facing": false,
-			"visual_facing": "player"
+			"block_facing": "player",
+			"visual_facing": "player",
+			"half": "click",
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"oak_reversed_planks_stairs": {
@@ -3191,8 +3387,12 @@
 		"vanilla_block": {
 			"id": "minecraft:oak_stairs",
 			"contents": false,
-			"block_facing": false,
-			"visual_facing": "player"
+			"block_facing": "player",
+			"visual_facing": "player",
+			"half": "click",
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"glass_stairs": {
@@ -3215,7 +3415,11 @@
 			"id": "minecraft:barrier",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "player"
+			"visual_facing": "player",
+			"interaction": {"width": 1.01,"height": 1.01,"seat": null,"hits": 1,"hit_timeout": 20,"sound": "minecraft:block.glass"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"glass_slab": {
@@ -3238,7 +3442,11 @@
 			"id": "minecraft:barrier",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "player"
+			"visual_facing": "player",
+			"interaction": {"width": 1.01,"height": 1.01,"seat": null,"hits": 1,"hit_timeout": 20,"sound": "minecraft:block.glass"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"stone_slopes": {
@@ -3262,7 +3470,11 @@
 			"id": "minecraft:barrier",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "player"
+			"visual_facing": "player",
+			"interaction": {"width": 1.01,"height": 1.01,"seat": null,"hits": 1,"hit_timeout": 20,"sound": "minecraft:block.stone"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"slate_slopes": {
@@ -3286,7 +3498,11 @@
 			"id": "minecraft:barrier",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "player"
+			"visual_facing": "player",
+			"interaction": {"width": 1.01,"height": 1.01,"seat": null,"hits": 1,"hit_timeout": 20,"sound": "minecraft:block.stone"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"sandstone_slopes": {
@@ -3310,7 +3526,11 @@
 			"id": "minecraft:barrier",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "player"
+			"visual_facing": "player",
+			"interaction": {"width": 1.01,"height": 1.01,"seat": null,"hits": 1,"hit_timeout": 20,"sound": "minecraft:block.stone"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"glowstone_slopes": {
@@ -3334,7 +3554,11 @@
 			"id": "minecraft:barrier",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "player"
+			"visual_facing": "player",
+			"interaction": {"width": 1.01,"height": 1.01,"seat": null,"hits": 1,"hit_timeout": 20,"sound": "minecraft:block.glass"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"oak_planks_slopes": {
@@ -3358,7 +3582,11 @@
 			"id": "minecraft:barrier",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "player"
+			"visual_facing": "player",
+			"interaction": {"width": 1.01,"height": 1.01,"seat": null,"hits": 1,"hit_timeout": 20,"sound": "minecraft:block.wood"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"spruce_planks_slopes": {
@@ -3382,7 +3610,11 @@
 			"id": "minecraft:barrier",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "player"
+			"visual_facing": "player",
+			"interaction": {"width": 1.01,"height": 1.01,"seat": null,"hits": 1,"hit_timeout": 20,"sound": "minecraft:block.wood"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"birch_planks_slopes": {
@@ -3406,7 +3638,11 @@
 			"id": "minecraft:barrier",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "player"
+			"visual_facing": "player",
+			"interaction": {"width": 1.01,"height": 1.01,"seat": null,"hits": 1,"hit_timeout": 20,"sound": "minecraft:block.wood"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"jungle_planks_slopes": {
@@ -3430,7 +3666,11 @@
 			"id": "minecraft:barrier",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "player"
+			"visual_facing": "player",
+			"interaction": {"width": 1.01,"height": 1.01,"seat": null,"hits": 1,"hit_timeout": 20,"sound": "minecraft:block.wood"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"oak_log_slopes": {
@@ -3454,7 +3694,11 @@
 			"id": "minecraft:barrier",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "player"
+			"visual_facing": "player",
+			"interaction": {"width": 1.01,"height": 1.01,"seat": null,"hits": 1,"hit_timeout": 20,"sound": "minecraft:block.wood"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"spruce_log_slopes": {
@@ -3478,7 +3722,11 @@
 			"id": "minecraft:barrier",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "player"
+			"visual_facing": "player",
+			"interaction": {"width": 1.01,"height": 1.01,"seat": null,"hits": 1,"hit_timeout": 20,"sound": "minecraft:block.wood"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"birch_log_slopes": {
@@ -3502,7 +3750,11 @@
 			"id": "minecraft:barrier",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "player"
+			"visual_facing": "player",
+			"interaction": {"width": 1.01,"height": 1.01,"seat": null,"hits": 1,"hit_timeout": 20,"sound": "minecraft:block.wood"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"jungle_log_slopes": {
@@ -3526,7 +3778,11 @@
 			"id": "minecraft:barrier",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "player"
+			"visual_facing": "player",
+			"interaction": {"width": 1.01,"height": 1.01,"seat": null,"hits": 1,"hit_timeout": 20,"sound": "minecraft:block.wood"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"glass_slopes": {
@@ -3550,7 +3806,11 @@
 			"id": "minecraft:barrier",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "player"
+			"visual_facing": "player",
+			"interaction": {"width": 1.01,"height": 1.01,"seat": null,"hits": 1,"hit_timeout": 20,"sound": "minecraft:block.glass"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"netherrack_slab": {
@@ -3573,7 +3833,11 @@
 			"id": "minecraft:nether_brick_slab",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"half": "click",
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"reversed_planks_slab": {
@@ -3596,7 +3860,11 @@
 			"id": "minecraft:oak_slab",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"half": "click",
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"obsidian_slab": {
@@ -3619,7 +3887,11 @@
 			"id": "minecraft:stone_slab",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"half": "click",
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"oak_log_slab": {
@@ -3642,7 +3914,11 @@
 			"id": "minecraft:oak_slab",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"half": "click",
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"glowstone_slab": {
@@ -3665,7 +3941,11 @@
 			"id": "minecraft:oak_slab",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"half": "click",
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"slate_slab": {
@@ -3688,7 +3968,11 @@
 			"id": "minecraft:stone_slab",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"half": "click",
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"stone_trapdoor": {
@@ -3710,8 +3994,12 @@
 		"vanilla_block": {
 			"id": "minecraft:oak_trapdoor",
 			"contents": false,
-			"block_facing": false,
-			"visual_facing": "player"
+			"block_facing": "player",
+			"visual_facing": "player",
+			"half": "click",
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"glowstone_trapdoor": {
@@ -3733,8 +4021,12 @@
 		"vanilla_block": {
 			"id": "minecraft:oak_trapdoor",
 			"contents": false,
-			"block_facing": false,
-			"visual_facing": "player"
+			"block_facing": "player",
+			"visual_facing": "player",
+			"half": "click",
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"glowstone_pressure_plate": {
@@ -3757,7 +4049,10 @@
 			"id": "minecraft:stone_pressure_plate",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"iron_ladder": {
@@ -3780,7 +4075,10 @@
 			"id": "minecraft:ladder",
 			"contents": false,
 			"block_facing": "player",
-			"visual_facing": "player"
+			"visual_facing": "player",
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"oak_log_wall": {
@@ -3803,7 +4101,10 @@
 			"id": "minecraft:cobblestone_wall",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"stone_wall": {
@@ -3826,7 +4127,10 @@
 			"id": "minecraft:cobblestone_wall",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"oak_plank_wall": {
@@ -3849,7 +4153,10 @@
 			"id": "minecraft:cobblestone_wall",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"glowstone_wall": {
@@ -3872,7 +4179,10 @@
 			"id": "minecraft:cobblestone_wall",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"slate_wall": {
@@ -3895,7 +4205,10 @@
 			"id": "minecraft:cobblestone_wall",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"glowstone_fence": {
@@ -3918,7 +4231,10 @@
 			"id": "minecraft:oak_fence",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"log_fence": {
@@ -3941,7 +4257,10 @@
 			"id": "minecraft:oak_fence",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"stone_fence": {
@@ -3964,7 +4283,10 @@
 			"id": "minecraft:nether_brick_fence",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"white_iron_fence": {
@@ -3988,7 +4310,10 @@
 			"id": "minecraft:nether_brick_fence",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"orange_iron_fence": {
@@ -4012,7 +4337,10 @@
 			"id": "minecraft:nether_brick_fence",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"magenta_iron_fence": {
@@ -4036,7 +4364,10 @@
 			"id": "minecraft:nether_brick_fence",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"light_blue_iron_fence": {
@@ -4060,7 +4391,10 @@
 			"id": "minecraft:nether_brick_fence",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"yellow_iron_fence": {
@@ -4084,7 +4418,10 @@
 			"id": "minecraft:nether_brick_fence",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"lime_iron_fence": {
@@ -4108,7 +4445,10 @@
 			"id": "minecraft:nether_brick_fence",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"pink_iron_fence": {
@@ -4132,7 +4472,10 @@
 			"id": "minecraft:nether_brick_fence",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"gray_iron_fence": {
@@ -4156,7 +4499,10 @@
 			"id": "minecraft:nether_brick_fence",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"light_gray_iron_fence": {
@@ -4180,7 +4526,10 @@
 			"id": "minecraft:nether_brick_fence",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"cyan_iron_fence": {
@@ -4204,7 +4553,10 @@
 			"id": "minecraft:nether_brick_fence",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"purple_iron_fence": {
@@ -4228,7 +4580,10 @@
 			"id": "minecraft:nether_brick_fence",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"blue_iron_fence": {
@@ -4252,7 +4607,10 @@
 			"id": "minecraft:nether_brick_fence",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"brown_iron_fence": {
@@ -4276,7 +4634,10 @@
 			"id": "minecraft:nether_brick_fence",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"green_iron_fence": {
@@ -4300,7 +4661,10 @@
 			"id": "minecraft:nether_brick_fence",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"red_iron_fence": {
@@ -4324,7 +4688,10 @@
 			"id": "minecraft:nether_brick_fence",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"black_iron_fence": {
@@ -4348,7 +4715,10 @@
 			"id": "minecraft:nether_brick_fence",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"glowstone_fence_gate": {
@@ -4370,8 +4740,11 @@
 		"vanilla_block": {
 			"id": "minecraft:oak_fence_gate",
 			"contents": false,
-			"block_facing": false,
-			"visual_facing": "player"
+			"block_facing": "player",
+			"visual_facing": "player",
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"log_fence_gate": {
@@ -4393,8 +4766,11 @@
 		"vanilla_block": {
 			"id": "minecraft:oak_fence_gate",
 			"contents": false,
-			"block_facing": false,
-			"visual_facing": "player"
+			"block_facing": "player",
+			"visual_facing": "player",
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"stone_fence_gate": {
@@ -4416,8 +4792,11 @@
 		"vanilla_block": {
 			"id": "minecraft:oak_fence_gate",
 			"contents": false,
-			"block_facing": false,
-			"visual_facing": "player"
+			"block_facing": "player",
+			"visual_facing": "player",
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"iron_fence_gate": {
@@ -4439,8 +4818,11 @@
 		"vanilla_block": {
 			"id": "minecraft:oak_fence_gate",
 			"contents": false,
-			"block_facing": false,
-			"visual_facing": "player"
+			"block_facing": "player",
+			"visual_facing": "player",
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"oak_wood_lantern": {
@@ -4463,7 +4845,10 @@
 			"id": "minecraft:ochre_froglight",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"spruce_wood_lantern": {
@@ -4486,7 +4871,10 @@
 			"id": "minecraft:ochre_froglight",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"birch_wood_lantern": {
@@ -4509,7 +4897,10 @@
 			"id": "minecraft:ochre_froglight",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"jungle_wood_lantern": {
@@ -4532,7 +4923,10 @@
 			"id": "minecraft:ochre_froglight",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"iron_lantern": {
@@ -4555,7 +4949,10 @@
 			"id": "minecraft:ochre_froglight",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"red_light": {
@@ -4578,7 +4975,10 @@
 			"id": "minecraft:redstone_lamp",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"redstone_lamp_always": {
@@ -4599,7 +4999,10 @@
 			"id": "minecraft:ochre_froglight",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"transparent_light_block": {
@@ -4622,7 +5025,11 @@
 			"id": "minecraft:light[level=15]",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"interaction": {"width": 1.01,"height": 1.01,"seat": null,"hits": 1,"hit_timeout": 20,"sound": "minecraft:block.glass"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"lignite_torch": {
@@ -4645,7 +5052,10 @@
 			"id": "minecraft:torch",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"lignite_wall_torch": {
@@ -4666,7 +5076,10 @@
 			"id": "minecraft:wall_torch",
 			"contents": false,
 			"block_facing": "player",
-			"visual_facing": "player"
+			"visual_facing": "player",
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"white_rod": {
@@ -4690,7 +5103,11 @@
 			"id": "minecraft:structure_void",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"interaction": {"width": 0.3,"height": 1.0,"seat": null,"hits": 1,"hit_timeout": 20,"sound": "minecraft:block.wood"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"white_lamp": {
@@ -4714,7 +5131,11 @@
 			"id": "minecraft:structure_void",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"interaction": {"width": 0.6,"height": 0.8,"seat": null,"hits": 1,"hit_timeout": 20,"sound": "minecraft:block.wood"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"white_lit_lamp": {
@@ -4736,8 +5157,13 @@
 			"id": "minecraft:light[level=15]",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
-		}
+			"visual_facing": "none",
+			"interaction": {"width": 0.6,"height": 0.8,"seat": null,"hits": 1,"hit_timeout": 20,"sound": "minecraft:block.wood"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
+		},
+		"no_silk_touch_drop": "white_lamp"
 	},
 	"orange_rod": {
 		"id": "orange_rod",
@@ -4760,7 +5186,11 @@
 			"id": "minecraft:structure_void",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"interaction": {"width": 0.3,"height": 1.0,"seat": null,"hits": 1,"hit_timeout": 20,"sound": "minecraft:block.wood"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"orange_lamp": {
@@ -4784,7 +5214,11 @@
 			"id": "minecraft:structure_void",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"interaction": {"width": 0.6,"height": 0.8,"seat": null,"hits": 1,"hit_timeout": 20,"sound": "minecraft:block.wood"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"orange_lit_lamp": {
@@ -4808,8 +5242,13 @@
 			"id": "minecraft:light[level=15]",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
-		}
+			"visual_facing": "none",
+			"interaction": {"width": 0.6,"height": 0.8,"seat": null,"hits": 1,"hit_timeout": 20,"sound": "minecraft:block.wood"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
+		},
+		"no_silk_touch_drop": "orange_lamp"
 	},
 	"magenta_rod": {
 		"id": "magenta_rod",
@@ -4832,7 +5271,11 @@
 			"id": "minecraft:structure_void",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"interaction": {"width": 0.3,"height": 1.0,"seat": null,"hits": 1,"hit_timeout": 20,"sound": "minecraft:block.wood"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"magenta_lamp": {
@@ -4856,7 +5299,11 @@
 			"id": "minecraft:structure_void",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"interaction": {"width": 0.6,"height": 0.8,"seat": null,"hits": 1,"hit_timeout": 20,"sound": "minecraft:block.wood"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"magenta_lit_lamp": {
@@ -4880,8 +5327,13 @@
 			"id": "minecraft:light[level=15]",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
-		}
+			"visual_facing": "none",
+			"interaction": {"width": 0.6,"height": 0.8,"seat": null,"hits": 1,"hit_timeout": 20,"sound": "minecraft:block.wood"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
+		},
+		"no_silk_touch_drop": "magenta_lamp"
 	},
 	"light_blue_rod": {
 		"id": "light_blue_rod",
@@ -4904,7 +5356,11 @@
 			"id": "minecraft:structure_void",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"interaction": {"width": 0.3,"height": 1.0,"seat": null,"hits": 1,"hit_timeout": 20,"sound": "minecraft:block.wood"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"light_blue_lamp": {
@@ -4928,7 +5384,11 @@
 			"id": "minecraft:structure_void",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"interaction": {"width": 0.6,"height": 0.8,"seat": null,"hits": 1,"hit_timeout": 20,"sound": "minecraft:block.wood"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"light_blue_lit_lamp": {
@@ -4952,8 +5412,13 @@
 			"id": "minecraft:light[level=15]",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
-		}
+			"visual_facing": "none",
+			"interaction": {"width": 0.6,"height": 0.8,"seat": null,"hits": 1,"hit_timeout": 20,"sound": "minecraft:block.wood"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
+		},
+		"no_silk_touch_drop": "light_blue_lamp"
 	},
 	"yellow_rod": {
 		"id": "yellow_rod",
@@ -4976,7 +5441,11 @@
 			"id": "minecraft:structure_void",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"interaction": {"width": 0.3,"height": 1.0,"seat": null,"hits": 1,"hit_timeout": 20,"sound": "minecraft:block.wood"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"yellow_lamp": {
@@ -5000,7 +5469,11 @@
 			"id": "minecraft:structure_void",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"interaction": {"width": 0.6,"height": 0.8,"seat": null,"hits": 1,"hit_timeout": 20,"sound": "minecraft:block.wood"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"yellow_lit_lamp": {
@@ -5024,8 +5497,13 @@
 			"id": "minecraft:light[level=15]",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
-		}
+			"visual_facing": "none",
+			"interaction": {"width": 0.6,"height": 0.8,"seat": null,"hits": 1,"hit_timeout": 20,"sound": "minecraft:block.wood"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
+		},
+		"no_silk_touch_drop": "yellow_lamp"
 	},
 	"lime_rod": {
 		"id": "lime_rod",
@@ -5048,7 +5526,11 @@
 			"id": "minecraft:structure_void",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"interaction": {"width": 0.3,"height": 1.0,"seat": null,"hits": 1,"hit_timeout": 20,"sound": "minecraft:block.wood"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"lime_lamp": {
@@ -5072,7 +5554,11 @@
 			"id": "minecraft:structure_void",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"interaction": {"width": 0.6,"height": 0.8,"seat": null,"hits": 1,"hit_timeout": 20,"sound": "minecraft:block.wood"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"lime_lit_lamp": {
@@ -5096,8 +5582,13 @@
 			"id": "minecraft:light[level=15]",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
-		}
+			"visual_facing": "none",
+			"interaction": {"width": 0.6,"height": 0.8,"seat": null,"hits": 1,"hit_timeout": 20,"sound": "minecraft:block.wood"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
+		},
+		"no_silk_touch_drop": "lime_lamp"
 	},
 	"pink_rod": {
 		"id": "pink_rod",
@@ -5120,7 +5611,11 @@
 			"id": "minecraft:structure_void",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"interaction": {"width": 0.3,"height": 1.0,"seat": null,"hits": 1,"hit_timeout": 20,"sound": "minecraft:block.wood"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"pink_lamp": {
@@ -5144,7 +5639,11 @@
 			"id": "minecraft:structure_void",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"interaction": {"width": 0.6,"height": 0.8,"seat": null,"hits": 1,"hit_timeout": 20,"sound": "minecraft:block.wood"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"pink_lit_lamp": {
@@ -5168,8 +5667,13 @@
 			"id": "minecraft:light[level=15]",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
-		}
+			"visual_facing": "none",
+			"interaction": {"width": 0.6,"height": 0.8,"seat": null,"hits": 1,"hit_timeout": 20,"sound": "minecraft:block.wood"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
+		},
+		"no_silk_touch_drop": "pink_lamp"
 	},
 	"gray_rod": {
 		"id": "gray_rod",
@@ -5192,7 +5696,11 @@
 			"id": "minecraft:structure_void",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"interaction": {"width": 0.3,"height": 1.0,"seat": null,"hits": 1,"hit_timeout": 20,"sound": "minecraft:block.wood"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"gray_lamp": {
@@ -5216,7 +5724,11 @@
 			"id": "minecraft:structure_void",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"interaction": {"width": 0.6,"height": 0.8,"seat": null,"hits": 1,"hit_timeout": 20,"sound": "minecraft:block.wood"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"gray_lit_lamp": {
@@ -5240,8 +5752,13 @@
 			"id": "minecraft:light[level=15]",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
-		}
+			"visual_facing": "none",
+			"interaction": {"width": 0.6,"height": 0.8,"seat": null,"hits": 1,"hit_timeout": 20,"sound": "minecraft:block.wood"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
+		},
+		"no_silk_touch_drop": "gray_lamp"
 	},
 	"light_gray_rod": {
 		"id": "light_gray_rod",
@@ -5264,7 +5781,11 @@
 			"id": "minecraft:structure_void",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"interaction": {"width": 0.3,"height": 1.0,"seat": null,"hits": 1,"hit_timeout": 20,"sound": "minecraft:block.wood"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"light_gray_lamp": {
@@ -5288,7 +5809,11 @@
 			"id": "minecraft:structure_void",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"interaction": {"width": 0.6,"height": 0.8,"seat": null,"hits": 1,"hit_timeout": 20,"sound": "minecraft:block.wood"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"light_gray_lit_lamp": {
@@ -5312,8 +5837,13 @@
 			"id": "minecraft:light[level=15]",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
-		}
+			"visual_facing": "none",
+			"interaction": {"width": 0.6,"height": 0.8,"seat": null,"hits": 1,"hit_timeout": 20,"sound": "minecraft:block.wood"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
+		},
+		"no_silk_touch_drop": "light_gray_lamp"
 	},
 	"cyan_rod": {
 		"id": "cyan_rod",
@@ -5336,7 +5866,11 @@
 			"id": "minecraft:structure_void",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"interaction": {"width": 0.3,"height": 1.0,"seat": null,"hits": 1,"hit_timeout": 20,"sound": "minecraft:block.wood"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"cyan_lamp": {
@@ -5360,7 +5894,11 @@
 			"id": "minecraft:structure_void",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"interaction": {"width": 0.6,"height": 0.8,"seat": null,"hits": 1,"hit_timeout": 20,"sound": "minecraft:block.wood"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"cyan_lit_lamp": {
@@ -5384,8 +5922,13 @@
 			"id": "minecraft:light[level=15]",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
-		}
+			"visual_facing": "none",
+			"interaction": {"width": 0.6,"height": 0.8,"seat": null,"hits": 1,"hit_timeout": 20,"sound": "minecraft:block.wood"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
+		},
+		"no_silk_touch_drop": "cyan_lamp"
 	},
 	"purple_rod": {
 		"id": "purple_rod",
@@ -5408,7 +5951,11 @@
 			"id": "minecraft:structure_void",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"interaction": {"width": 0.3,"height": 1.0,"seat": null,"hits": 1,"hit_timeout": 20,"sound": "minecraft:block.wood"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"purple_lamp": {
@@ -5432,7 +5979,11 @@
 			"id": "minecraft:structure_void",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"interaction": {"width": 0.6,"height": 0.8,"seat": null,"hits": 1,"hit_timeout": 20,"sound": "minecraft:block.wood"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"purple_lit_lamp": {
@@ -5456,8 +6007,13 @@
 			"id": "minecraft:light[level=15]",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
-		}
+			"visual_facing": "none",
+			"interaction": {"width": 0.6,"height": 0.8,"seat": null,"hits": 1,"hit_timeout": 20,"sound": "minecraft:block.wood"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
+		},
+		"no_silk_touch_drop": "purple_lamp"
 	},
 	"blue_rod": {
 		"id": "blue_rod",
@@ -5480,7 +6036,11 @@
 			"id": "minecraft:structure_void",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"interaction": {"width": 0.3,"height": 1.0,"seat": null,"hits": 1,"hit_timeout": 20,"sound": "minecraft:block.wood"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"blue_lamp": {
@@ -5504,7 +6064,11 @@
 			"id": "minecraft:structure_void",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"interaction": {"width": 0.6,"height": 0.8,"seat": null,"hits": 1,"hit_timeout": 20,"sound": "minecraft:block.wood"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"blue_lit_lamp": {
@@ -5528,8 +6092,13 @@
 			"id": "minecraft:light[level=15]",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
-		}
+			"visual_facing": "none",
+			"interaction": {"width": 0.6,"height": 0.8,"seat": null,"hits": 1,"hit_timeout": 20,"sound": "minecraft:block.wood"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
+		},
+		"no_silk_touch_drop": "blue_lamp"
 	},
 	"brown_rod": {
 		"id": "brown_rod",
@@ -5552,7 +6121,11 @@
 			"id": "minecraft:structure_void",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"interaction": {"width": 0.3,"height": 1.0,"seat": null,"hits": 1,"hit_timeout": 20,"sound": "minecraft:block.wood"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"brown_lamp": {
@@ -5576,7 +6149,11 @@
 			"id": "minecraft:structure_void",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"interaction": {"width": 0.6,"height": 0.8,"seat": null,"hits": 1,"hit_timeout": 20,"sound": "minecraft:block.wood"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"brown_lit_lamp": {
@@ -5600,8 +6177,13 @@
 			"id": "minecraft:light[level=15]",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
-		}
+			"visual_facing": "none",
+			"interaction": {"width": 0.6,"height": 0.8,"seat": null,"hits": 1,"hit_timeout": 20,"sound": "minecraft:block.wood"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
+		},
+		"no_silk_touch_drop": "brown_lamp"
 	},
 	"green_rod": {
 		"id": "green_rod",
@@ -5624,7 +6206,11 @@
 			"id": "minecraft:structure_void",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"interaction": {"width": 0.3,"height": 1.0,"seat": null,"hits": 1,"hit_timeout": 20,"sound": "minecraft:block.wood"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"green_lamp": {
@@ -5648,7 +6234,11 @@
 			"id": "minecraft:structure_void",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"interaction": {"width": 0.6,"height": 0.8,"seat": null,"hits": 1,"hit_timeout": 20,"sound": "minecraft:block.wood"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"green_lit_lamp": {
@@ -5672,8 +6262,13 @@
 			"id": "minecraft:light[level=15]",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
-		}
+			"visual_facing": "none",
+			"interaction": {"width": 0.6,"height": 0.8,"seat": null,"hits": 1,"hit_timeout": 20,"sound": "minecraft:block.wood"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
+		},
+		"no_silk_touch_drop": "green_lamp"
 	},
 	"red_rod": {
 		"id": "red_rod",
@@ -5696,7 +6291,11 @@
 			"id": "minecraft:structure_void",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"interaction": {"width": 0.3,"height": 1.0,"seat": null,"hits": 1,"hit_timeout": 20,"sound": "minecraft:block.wood"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"red_lamp": {
@@ -5720,7 +6319,11 @@
 			"id": "minecraft:structure_void",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"interaction": {"width": 0.6,"height": 0.8,"seat": null,"hits": 1,"hit_timeout": 20,"sound": "minecraft:block.wood"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"red_lit_lamp": {
@@ -5744,8 +6347,13 @@
 			"id": "minecraft:light[level=15]",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
-		}
+			"visual_facing": "none",
+			"interaction": {"width": 0.6,"height": 0.8,"seat": null,"hits": 1,"hit_timeout": 20,"sound": "minecraft:block.wood"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
+		},
+		"no_silk_touch_drop": "red_lamp"
 	},
 	"black_rod": {
 		"id": "black_rod",
@@ -5768,7 +6376,11 @@
 			"id": "minecraft:structure_void",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"interaction": {"width": 0.3,"height": 1.0,"seat": null,"hits": 1,"hit_timeout": 20,"sound": "minecraft:block.wood"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"black_lamp": {
@@ -5792,7 +6404,11 @@
 			"id": "minecraft:structure_void",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"interaction": {"width": 0.6,"height": 0.8,"seat": null,"hits": 1,"hit_timeout": 20,"sound": "minecraft:block.wood"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"black_lit_lamp": {
@@ -5816,8 +6432,13 @@
 			"id": "minecraft:light[level=15]",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
-		}
+			"visual_facing": "none",
+			"interaction": {"width": 0.6,"height": 0.8,"seat": null,"hits": 1,"hit_timeout": 20,"sound": "minecraft:block.wood"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
+		},
+		"no_silk_touch_drop": "black_lamp"
 	},
 	"oak_table": {
 		"id": "oak_table",
@@ -5839,7 +6460,11 @@
 			"id": "minecraft:barrier",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"interaction": {"width": 1.01,"height": 0.85,"seat": null,"hits": 3,"hit_timeout": 20,"sound": "minecraft:block.wood"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"birch_table": {
@@ -5862,7 +6487,11 @@
 			"id": "minecraft:barrier",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"interaction": {"width": 1.01,"height": 0.85,"seat": null,"hits": 3,"hit_timeout": 20,"sound": "minecraft:block.wood"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"cobblestone_table": {
@@ -5885,7 +6514,11 @@
 			"id": "minecraft:barrier",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"interaction": {"width": 1.01,"height": 0.85,"seat": null,"hits": 3,"hit_timeout": 20,"sound": "minecraft:block.stone"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"stone_table": {
@@ -5908,7 +6541,11 @@
 			"id": "minecraft:barrier",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"interaction": {"width": 1.01,"height": 0.85,"seat": null,"hits": 3,"hit_timeout": 20,"sound": "minecraft:block.stone"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"oak_little_table": {
@@ -5931,7 +6568,11 @@
 			"id": "minecraft:barrier",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"interaction": {"width": 1.01,"height": 0.38,"seat": null,"hits": 3,"hit_timeout": 20,"sound": "minecraft:block.wood"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"birch_little_table": {
@@ -5954,7 +6595,11 @@
 			"id": "minecraft:barrier",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"interaction": {"width": 1.01,"height": 0.38,"seat": null,"hits": 3,"hit_timeout": 20,"sound": "minecraft:block.wood"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"cobblestone_little_table": {
@@ -5977,7 +6622,11 @@
 			"id": "minecraft:barrier",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"interaction": {"width": 1.01,"height": 0.38,"seat": null,"hits": 3,"hit_timeout": 20,"sound": "minecraft:block.stone"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"stone_little_table": {
@@ -6000,7 +6649,11 @@
 			"id": "minecraft:barrier",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"interaction": {"width": 1.01,"height": 0.38,"seat": null,"hits": 3,"hit_timeout": 20,"sound": "minecraft:block.stone"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"oak_stool": {
@@ -6023,7 +6676,11 @@
 			"id": "minecraft:barrier",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"interaction": {"width": 1.01,"height": 1.01,"seat": 0.59,"hits": 3,"hit_timeout": 20,"sound": "minecraft:block.wood"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"birch_stool": {
@@ -6046,7 +6703,11 @@
 			"id": "minecraft:barrier",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"interaction": {"width": 1.01,"height": 1.01,"seat": 0.59,"hits": 3,"hit_timeout": 20,"sound": "minecraft:block.wood"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"cobblestone_stool": {
@@ -6069,7 +6730,11 @@
 			"id": "minecraft:barrier",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"interaction": {"width": 1.01,"height": 1.01,"seat": 0.59,"hits": 3,"hit_timeout": 20,"sound": "minecraft:block.stone"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"stone_stool": {
@@ -6092,7 +6757,11 @@
 			"id": "minecraft:barrier",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"interaction": {"width": 1.01,"height": 1.01,"seat": 0.59,"hits": 3,"hit_timeout": 20,"sound": "minecraft:block.stone"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"oak_high_stool": {
@@ -6115,7 +6784,11 @@
 			"id": "minecraft:barrier",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"interaction": {"width": 1.01,"height": 1.01,"seat": 0.875,"hits": 3,"hit_timeout": 20,"sound": "minecraft:block.wood"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"birch_high_stool": {
@@ -6138,7 +6811,11 @@
 			"id": "minecraft:barrier",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"interaction": {"width": 1.01,"height": 1.01,"seat": 0.875,"hits": 3,"hit_timeout": 20,"sound": "minecraft:block.wood"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"cobblestone_high_stool": {
@@ -6161,7 +6838,11 @@
 			"id": "minecraft:barrier",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"interaction": {"width": 1.01,"height": 1.01,"seat": 0.875,"hits": 3,"hit_timeout": 20,"sound": "minecraft:block.stone"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"stone_high_stool": {
@@ -6184,7 +6865,11 @@
 			"id": "minecraft:barrier",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"interaction": {"width": 1.01,"height": 1.01,"seat": 0.875,"hits": 3,"hit_timeout": 20,"sound": "minecraft:block.stone"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"oak_bench": {
@@ -6207,7 +6892,11 @@
 			"id": "minecraft:barrier",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"interaction": {"width": 1.01,"height": 1.01,"seat": 0.59,"hits": 3,"hit_timeout": 20,"sound": "minecraft:block.wood"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"birch_bench": {
@@ -6230,7 +6919,11 @@
 			"id": "minecraft:barrier",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"interaction": {"width": 1.01,"height": 1.01,"seat": 0.59,"hits": 3,"hit_timeout": 20,"sound": "minecraft:block.wood"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"cobblestone_bench": {
@@ -6253,7 +6946,11 @@
 			"id": "minecraft:barrier",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"interaction": {"width": 1.01,"height": 1.01,"seat": 0.59,"hits": 3,"hit_timeout": 20,"sound": "minecraft:block.stone"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"stone_bench": {
@@ -6276,7 +6973,11 @@
 			"id": "minecraft:barrier",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"interaction": {"width": 1.01,"height": 1.01,"seat": 0.59,"hits": 3,"hit_timeout": 20,"sound": "minecraft:block.stone"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"oak_chair": {
@@ -6299,7 +7000,11 @@
 			"id": "minecraft:barrier",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "player"
+			"visual_facing": "player",
+			"interaction": {"width": 1.01,"height": 1.01,"seat": 0.5,"hits": 3,"hit_timeout": 20,"sound": "minecraft:block.wood"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"birch_chair": {
@@ -6322,7 +7027,11 @@
 			"id": "minecraft:barrier",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "player"
+			"visual_facing": "player",
+			"interaction": {"width": 1.01,"height": 1.01,"seat": 0.5,"hits": 3,"hit_timeout": 20,"sound": "minecraft:block.wood"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"cobblestone_chair": {
@@ -6345,7 +7054,11 @@
 			"id": "minecraft:barrier",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "player"
+			"visual_facing": "player",
+			"interaction": {"width": 1.01,"height": 1.01,"seat": 0.5,"hits": 3,"hit_timeout": 20,"sound": "minecraft:block.stone"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"stone_chair": {
@@ -6368,7 +7081,11 @@
 			"id": "minecraft:barrier",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "player"
+			"visual_facing": "player",
+			"interaction": {"width": 1.01,"height": 1.01,"seat": 0.5,"hits": 3,"hit_timeout": 20,"sound": "minecraft:block.stone"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"oak_shelf": {
@@ -6391,7 +7108,11 @@
 			"id": "minecraft:barrier",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "player"
+			"visual_facing": "player",
+			"interaction": {"width": 1.01,"height": 1.01,"seat": null,"hits": 3,"hit_timeout": 20,"sound": "minecraft:block.wood"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"oak_barrel": {
@@ -6414,7 +7135,10 @@
 			"id": "minecraft:barrel",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"flatware": {
@@ -6437,7 +7161,10 @@
 			"id": "minecraft:tripwire",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"box_jump": {
@@ -6460,7 +7187,10 @@
 			"id": "minecraft:oak_planks",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"box_speed": {
@@ -6483,7 +7213,10 @@
 			"id": "minecraft:oak_planks",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"nuclear_bomb": {
@@ -6506,7 +7239,10 @@
 			"id": "minecraft:tnt",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"cobblestone_campfire": {
@@ -6529,7 +7265,10 @@
 			"id": "minecraft:campfire",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"stone_campfire": {
@@ -6552,7 +7291,10 @@
 			"id": "minecraft:campfire",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"brick_campfire": {
@@ -6575,7 +7317,10 @@
 			"id": "minecraft:campfire",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"stonebrick_campfire": {
@@ -6598,7 +7343,10 @@
 			"id": "minecraft:campfire",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"sandstone_campfire": {
@@ -6621,7 +7369,10 @@
 			"id": "minecraft:campfire",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"black_smoke_effect_generator": {
@@ -6642,7 +7393,10 @@
 			"id": "minecraft:cobblestone",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"portal_effect_generator": {
@@ -6663,7 +7417,10 @@
 			"id": "minecraft:cobblestone",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"explosion_effect_generator": {
@@ -6684,7 +7441,10 @@
 			"id": "minecraft:cobblestone",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"white_smoke_effect_generator": {
@@ -6705,7 +7465,10 @@
 			"id": "minecraft:cobblestone",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"lava_effect_generator": {
@@ -6726,7 +7489,10 @@
 			"id": "minecraft:cobblestone",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"water_effect_generator": {
@@ -6747,7 +7513,10 @@
 			"id": "minecraft:cobblestone",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"big_black_smoke_effect_generator": {
@@ -6768,7 +7537,10 @@
 			"id": "minecraft:cobblestone",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"heart_effect_generator": {
@@ -6789,7 +7561,10 @@
 			"id": "minecraft:cobblestone",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"white_cloud": {
@@ -6813,7 +7588,11 @@
 			"id": "minecraft:structure_void",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"interaction": {"width": 1.01,"height": 1.01,"seat": null,"hits": 1,"hit_timeout": 20,"sound": "minecraft:block.wool"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"orange_cloud": {
@@ -6837,7 +7616,11 @@
 			"id": "minecraft:structure_void",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"interaction": {"width": 1.01,"height": 1.01,"seat": null,"hits": 1,"hit_timeout": 20,"sound": "minecraft:block.wool"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"magenta_cloud": {
@@ -6861,7 +7644,11 @@
 			"id": "minecraft:structure_void",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"interaction": {"width": 1.01,"height": 1.01,"seat": null,"hits": 1,"hit_timeout": 20,"sound": "minecraft:block.wool"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"light_blue_cloud": {
@@ -6885,7 +7672,11 @@
 			"id": "minecraft:structure_void",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"interaction": {"width": 1.01,"height": 1.01,"seat": null,"hits": 1,"hit_timeout": 20,"sound": "minecraft:block.wool"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"yellow_cloud": {
@@ -6909,7 +7700,11 @@
 			"id": "minecraft:structure_void",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"interaction": {"width": 1.01,"height": 1.01,"seat": null,"hits": 1,"hit_timeout": 20,"sound": "minecraft:block.wool"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"lime_cloud": {
@@ -6933,7 +7728,11 @@
 			"id": "minecraft:structure_void",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"interaction": {"width": 1.01,"height": 1.01,"seat": null,"hits": 1,"hit_timeout": 20,"sound": "minecraft:block.wool"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"pink_cloud": {
@@ -6957,7 +7756,11 @@
 			"id": "minecraft:structure_void",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"interaction": {"width": 1.01,"height": 1.01,"seat": null,"hits": 1,"hit_timeout": 20,"sound": "minecraft:block.wool"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"gray_cloud": {
@@ -6981,7 +7784,11 @@
 			"id": "minecraft:structure_void",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"interaction": {"width": 1.01,"height": 1.01,"seat": null,"hits": 1,"hit_timeout": 20,"sound": "minecraft:block.wool"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"light_gray_cloud": {
@@ -7005,7 +7812,11 @@
 			"id": "minecraft:structure_void",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"interaction": {"width": 1.01,"height": 1.01,"seat": null,"hits": 1,"hit_timeout": 20,"sound": "minecraft:block.wool"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"cyan_cloud": {
@@ -7029,7 +7840,11 @@
 			"id": "minecraft:structure_void",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"interaction": {"width": 1.01,"height": 1.01,"seat": null,"hits": 1,"hit_timeout": 20,"sound": "minecraft:block.wool"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"purple_cloud": {
@@ -7053,7 +7868,11 @@
 			"id": "minecraft:structure_void",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"interaction": {"width": 1.01,"height": 1.01,"seat": null,"hits": 1,"hit_timeout": 20,"sound": "minecraft:block.wool"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"blue_cloud": {
@@ -7077,7 +7896,11 @@
 			"id": "minecraft:structure_void",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"interaction": {"width": 1.01,"height": 1.01,"seat": null,"hits": 1,"hit_timeout": 20,"sound": "minecraft:block.wool"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"brown_cloud": {
@@ -7101,7 +7924,11 @@
 			"id": "minecraft:structure_void",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"interaction": {"width": 1.01,"height": 1.01,"seat": null,"hits": 1,"hit_timeout": 20,"sound": "minecraft:block.wool"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"green_cloud": {
@@ -7125,7 +7952,11 @@
 			"id": "minecraft:structure_void",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"interaction": {"width": 1.01,"height": 1.01,"seat": null,"hits": 1,"hit_timeout": 20,"sound": "minecraft:block.wool"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"red_cloud": {
@@ -7149,7 +7980,11 @@
 			"id": "minecraft:structure_void",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"interaction": {"width": 1.01,"height": 1.01,"seat": null,"hits": 1,"hit_timeout": 20,"sound": "minecraft:block.wool"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"black_cloud": {
@@ -7173,7 +8008,11 @@
 			"id": "minecraft:structure_void",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"interaction": {"width": 1.01,"height": 1.01,"seat": null,"hits": 1,"hit_timeout": 20,"sound": "minecraft:block.wool"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"white_blob": {
@@ -7195,7 +8034,11 @@
 			"id": "minecraft:barrier",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"interaction": {"width": 1.01,"height": 1.01,"seat": null,"hits": 1,"hit_timeout": 20,"sound": "minecraft:block.slime_block"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"orange_blob": {
@@ -7219,7 +8062,11 @@
 			"id": "minecraft:barrier",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"interaction": {"width": 1.01,"height": 1.01,"seat": null,"hits": 1,"hit_timeout": 20,"sound": "minecraft:block.slime_block"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"magenta_blob": {
@@ -7243,7 +8090,11 @@
 			"id": "minecraft:barrier",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"interaction": {"width": 1.01,"height": 1.01,"seat": null,"hits": 1,"hit_timeout": 20,"sound": "minecraft:block.slime_block"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"light_blue_blob": {
@@ -7267,7 +8118,11 @@
 			"id": "minecraft:barrier",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"interaction": {"width": 1.01,"height": 1.01,"seat": null,"hits": 1,"hit_timeout": 20,"sound": "minecraft:block.slime_block"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"yellow_blob": {
@@ -7291,7 +8146,11 @@
 			"id": "minecraft:barrier",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"interaction": {"width": 1.01,"height": 1.01,"seat": null,"hits": 1,"hit_timeout": 20,"sound": "minecraft:block.slime_block"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"lime_blob": {
@@ -7315,7 +8174,11 @@
 			"id": "minecraft:barrier",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"interaction": {"width": 1.01,"height": 1.01,"seat": null,"hits": 1,"hit_timeout": 20,"sound": "minecraft:block.slime_block"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"pink_blob": {
@@ -7339,7 +8202,11 @@
 			"id": "minecraft:barrier",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"interaction": {"width": 1.01,"height": 1.01,"seat": null,"hits": 1,"hit_timeout": 20,"sound": "minecraft:block.slime_block"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"gray_blob": {
@@ -7363,7 +8230,11 @@
 			"id": "minecraft:barrier",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"interaction": {"width": 1.01,"height": 1.01,"seat": null,"hits": 1,"hit_timeout": 20,"sound": "minecraft:block.slime_block"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"light_gray_blob": {
@@ -7387,7 +8258,11 @@
 			"id": "minecraft:barrier",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"interaction": {"width": 1.01,"height": 1.01,"seat": null,"hits": 1,"hit_timeout": 20,"sound": "minecraft:block.slime_block"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"cyan_blob": {
@@ -7411,7 +8286,11 @@
 			"id": "minecraft:barrier",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"interaction": {"width": 1.01,"height": 1.01,"seat": null,"hits": 1,"hit_timeout": 20,"sound": "minecraft:block.slime_block"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"purple_blob": {
@@ -7435,7 +8314,11 @@
 			"id": "minecraft:barrier",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"interaction": {"width": 1.01,"height": 1.01,"seat": null,"hits": 1,"hit_timeout": 20,"sound": "minecraft:block.slime_block"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"blue_blob": {
@@ -7459,7 +8342,11 @@
 			"id": "minecraft:barrier",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"interaction": {"width": 1.01,"height": 1.01,"seat": null,"hits": 1,"hit_timeout": 20,"sound": "minecraft:block.slime_block"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"brown_blob": {
@@ -7483,7 +8370,11 @@
 			"id": "minecraft:barrier",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"interaction": {"width": 1.01,"height": 1.01,"seat": null,"hits": 1,"hit_timeout": 20,"sound": "minecraft:block.slime_block"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"green_blob": {
@@ -7507,7 +8398,11 @@
 			"id": "minecraft:barrier",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"interaction": {"width": 1.01,"height": 1.01,"seat": null,"hits": 1,"hit_timeout": 20,"sound": "minecraft:block.slime_block"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"red_blob": {
@@ -7531,7 +8426,11 @@
 			"id": "minecraft:barrier",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"interaction": {"width": 1.01,"height": 1.01,"seat": null,"hits": 1,"hit_timeout": 20,"sound": "minecraft:block.slime_block"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"black_blob": {
@@ -7555,7 +8454,11 @@
 			"id": "minecraft:barrier",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"interaction": {"width": 1.01,"height": 1.01,"seat": null,"hits": 1,"hit_timeout": 20,"sound": "minecraft:block.slime_block"},
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"blue_block_ctf": {
@@ -7578,7 +8481,10 @@
 			"id": "minecraft:glass",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"red_block_ctf": {
@@ -7601,7 +8507,10 @@
 			"id": "minecraft:glass",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"iron_furnace": {
@@ -7624,7 +8533,10 @@
 			"id": "minecraft:furnace",
 			"contents": false,
 			"block_facing": "player",
-			"visual_facing": "player"
+			"visual_facing": "player",
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 2.0
 		}
 	},
 	"steel_brewing_stand": {
@@ -7647,7 +8559,10 @@
 			"id": "minecraft:brewing_stand",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.6
 		}
 	},
 	"cherry_cake": {
@@ -7670,7 +8585,10 @@
 			"id": "minecraft:cake",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"blue_flower": {
@@ -7691,7 +8609,10 @@
 			"id": "minecraft:tripwire",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"white_flower": {
@@ -7712,7 +8633,10 @@
 			"id": "minecraft:tripwire",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"black_flower": {
@@ -7733,7 +8657,10 @@
 			"id": "minecraft:tripwire",
 			"contents": false,
 			"block_facing": false,
-			"visual_facing": "none"
+			"visual_facing": "none",
+			"uvlock": false,
+			"margin": true,
+			"machine_speed": 1.0
 		}
 	},
 	"tele": {

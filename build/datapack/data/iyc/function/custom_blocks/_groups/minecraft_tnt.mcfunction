@@ -1,7 +1,7 @@
 
 #> iyc:custom_blocks/_groups/minecraft_tnt
 #
-# @executed	as @e[type=item_display,tag=...,predicate=!iyc:check_vanilla_blocks] & at @s
+# @executed	as @e[type=item_display,tag=iyc.custom_block,distance=..0.1]
 #
 # @within	iyc:custom_blocks/destroy
 #

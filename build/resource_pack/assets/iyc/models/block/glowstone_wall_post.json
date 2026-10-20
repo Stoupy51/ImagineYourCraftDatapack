@@ -2,5 +2,13 @@
 	"parent": "iyc:block/legacy/wall_post",
 	"textures": {
 		"wall": "minecraft:block/glowstone"
-	}
+	},
+	"elements": [
+		{
+			"from": [3.9375,-0.0625,3.9375],
+			"to": [12.0625,16.0625,12.0625],
+			"faces": {"down": {"uv": [4,4,12,12],"texture": "#wall","cullface": "down"},"up": {"uv": [4,4,12,12],"texture": "#wall"},"north": {"uv": [4,0,12,16],"texture": "#wall"},"south": {"uv": [4,0,12,16],"texture": "#wall"},"west": {"uv": [4,0,12,16],"texture": "#wall"},"east": {"uv": [4,0,12,16],"texture": "#wall"}},
+			"light_emission": 15
+		}
+	]
 }

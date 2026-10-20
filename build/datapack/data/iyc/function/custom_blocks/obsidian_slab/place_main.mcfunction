@@ -6,8 +6,10 @@
 #
 
 tag @s add iyc.placer
+execute align xyz positioned ~0.5 ~0.5 ~0.5 summon marker run function iyc:custom_blocks/_aim/main
 setblock ~ ~ ~ air strict
-setblock ~ ~ ~ minecraft:stone_slab
+execute if score #upper iyc.data matches 0 run setblock ~ ~ ~ minecraft:stone_slab[type=bottom]
+execute if score #upper iyc.data matches 1 run setblock ~ ~ ~ minecraft:stone_slab[type=top]
 execute align xyz positioned ~0.5 ~0.5 ~0.5 summon item_display at @s run function iyc:custom_blocks/obsidian_slab/place_secondary
 tag @s remove iyc.placer
 

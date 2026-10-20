@@ -86,7 +86,7 @@ def main() -> None:
 			components["consumable"] = {"animation": "drink", "sound": "minecraft:entity.generic.drink", "on_consume_effects": [
 				{"type": "minecraft:apply_effects", "effects": [{"id": food.effect, "duration": EFFECT_SECONDS * 20, "amplifier": 0}]},
 			]}
-		Item(id=food.id, manual_category="food", components=components, recipes=food.recipes)
+		Item(id=food.id, manual_category="food", components=components, recipes=food.recipes, remainder=food.container or None)
 	BlockAlternative(
 		id="hops_seeds", vanilla_block=VanillaBlock(id="minecraft:wheat"), manual_category="material",
 		growing_seed=GrowingSeed(texture_basename="hops", seconds=480, planted_on="farmland", loots="iyc:seeds/hops"),
@@ -95,15 +95,4 @@ def main() -> None:
 			ingredients={"#": Ingr("minecraft:water_bucket"), "W": Ingr("hops_seeds"), "V": Ingr("minecraft:dirt")},
 		)],
 	)
-
-
-def give_back_containers() -> None:
-	""" Make each drink give back its container, once the containers have their final components. """
-	for food in FOODS:
-		if not food.container:
-			continue
-		container: Item = Item.from_id(food.container)
-		Item.from_id(food.id).components["use_remainder"] = {"id": container.base_item, "count": 1, "components": {
-			f"minecraft:{key}": container.components[key] for key in ("item_name", "item_model", "custom_data")
-		}}
 

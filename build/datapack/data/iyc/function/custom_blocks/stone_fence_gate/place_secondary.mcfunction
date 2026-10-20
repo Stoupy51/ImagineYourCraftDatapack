@@ -20,7 +20,6 @@ data merge entity @s {"CustomName": {"text": "Stone Fence Gate"}}
 
 # Modify item display entity to match the custom block
 item replace entity @s contents with minecraft:furnace[item_model="iyc:stone_fence_gate"]
-data modify entity @s transformation.scale set value [1.002f,1.002f,1.002f]
 function iyc:custom_blocks/compute_brightness
 
 # Apply rotation
@@ -34,10 +33,5 @@ tag @s add iyc.original
 scoreboard players set @s iyc.shape -1
 tag @s add iyc.follow
 tag @s add iyc.tree.gate_10
-function iyc:placing/aim
-execute if score #rotation iyc.data matches 1 run setblock ~ ~ ~ minecraft:oak_fence_gate[facing=south]
-execute if score #rotation iyc.data matches 2 run setblock ~ ~ ~ minecraft:oak_fence_gate[facing=west]
-execute if score #rotation iyc.data matches 3 run setblock ~ ~ ~ minecraft:oak_fence_gate[facing=north]
-execute if score #rotation iyc.data matches 4 run setblock ~ ~ ~ minecraft:oak_fence_gate[facing=east]
 function iyc:shapes/gate_10
 

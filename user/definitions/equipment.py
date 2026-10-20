@@ -1,7 +1,6 @@
 """ Weapons and special items: crossbow and bolts (`hu_2`), the wands of `fl_1` used by the server plugins, and the datapack's own items. """
 # Imports
-from beet import Enchantment, EnchantmentTag
-from stewbeet import CraftingShapedRecipe, CraftingShapelessRecipe, Ingr, Item, Mem, set_json_encoder
+from stewbeet import CraftingShapedRecipe, CraftingShapelessRecipe, Ingr, Item, RangedWeapon
 
 from user.definitions.common import lore
 
@@ -14,10 +13,9 @@ WANDS: list[str] = [
 
 # Functions
 def main() -> None:
-	heavy_draw()
 	Item(
 		id="crossbow", base_item="minecraft:crossbow", manual_category="equipment",
-		components={"max_damage": 199, "enchantments": {"iyc:heavy_draw": 1}, "enchantment_glint_override": False},
+		components={"max_damage": 199}, ranged_weapon=RangedWeapon(charge_time=2.5, damage_multiplier=1.5, ammunition="bolt"),
 		recipes=[CraftingShapedRecipe(
 			category="equipment", shape=[" #X", "#WX", " #X"],
 			ingredients={"X": Ingr("minecraft:string"), "#": Ingr("steel_stick"), "W": Ingr("minecraft:diamond")},
@@ -59,14 +57,4 @@ def main() -> None:
 		chainmail.recipes.append(CraftingShapedRecipe(
 			category="equipment", shape=shape, ingredients={"X": Ingr("chainmail")}, result=Ingr(f"minecraft:chainmail_{piece}"),
 		))
-
-
-def heavy_draw() -> None:
-	""" The enchantment doubling the 25 tick draw of the crossbow into the mod's 50, a curse so that grindstones keep it. """
-	Mem.ctx.data["iyc"].enchantments["heavy_draw"] = set_json_encoder(Enchantment({
-		"description": "Heavy Draw", "supported_items": "minecraft:crossbow", "weight": 1, "max_level": 1, "anvil_cost": 0,
-		"min_cost": {"base": 0, "per_level_above_first": 0}, "max_cost": {"base": 0, "per_level_above_first": 0}, "slots": ["mainhand", "offhand"],
-		"effects": {"minecraft:crossbow_charge_time": {"type": "minecraft:add", "value": 1.25}},
-	}), max_level=3)
-	Mem.ctx.data["minecraft"].enchantment_tags["curse"] = set_json_encoder(EnchantmentTag({"values": ["iyc:heavy_draw"]}))
 

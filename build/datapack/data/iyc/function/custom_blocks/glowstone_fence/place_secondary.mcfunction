@@ -20,7 +20,6 @@ data merge entity @s {"CustomName": {"text": "Glowstone Fence"}}
 
 # Modify item display entity to match the custom block
 item replace entity @s contents with minecraft:furnace[item_model="iyc:glowstone_fence"]
-data modify entity @s transformation.scale set value [1.002f,1.002f,1.002f]
 function iyc:custom_blocks/compute_brightness
 
 # Original model
@@ -29,8 +28,4 @@ scoreboard players set @s iyc.shape -1
 tag @s add iyc.follow
 tag @s add iyc.tree.fence_9
 function iyc:shapes/fence_9
-
-# Add tag for loop every second
-tag @s add iyc.second
-scoreboard players add #second_entities iyc.data 1
 

@@ -4,7 +4,7 @@
 	},
 	"elements": [
 		{
-			"from": [2.99,7.9985,-0.016000000000000014],
+			"from": [2.99,7.9985,-0.016],
 			"to": [13.01,9.5015,16.016],
 			"faces": {"down": {"uv": [3,0,13,16],"texture": "#texture"},"up": {"uv": [3,0,13,16],"texture": "#texture"},"north": {"uv": [3,6.5,13,8],"texture": "#texture","cullface": "north"},"south": {"uv": [3,6.5,13,8],"texture": "#texture","cullface": "south"},"west": {"uv": [0,6.5,16,8],"texture": "#texture"},"east": {"uv": [0,6.5,16,8],"texture": "#texture"}}
 		},

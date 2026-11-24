@@ -1,9 +1,1826 @@
 {
 	"criteria": {
-		"requirement": {
-			"trigger": "minecraft:inventory_changed"
+		"0": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"minecraft:acacia_log",
+							"minecraft:birch_log",
+							"minecraft:birch_planks",
+							"minecraft:blue_wool",
+							"minecraft:bread",
+							"minecraft:bricks",
+							"minecraft:cherry_log",
+							"minecraft:cobblestone",
+							"minecraft:cocoa_beans",
+							"minecraft:dark_oak_log",
+							"minecraft:elytra",
+							"minecraft:emerald",
+							"minecraft:flint_and_steel",
+							"minecraft:furnace",
+							"minecraft:glass",
+							"minecraft:glowstone",
+							"minecraft:iron_ingot",
+							"minecraft:jungle_log",
+							"minecraft:jungle_planks",
+							"minecraft:netherrack",
+							"minecraft:oak_log",
+							"minecraft:oak_planks",
+							"minecraft:obsidian",
+							"minecraft:red_wool",
+							"minecraft:redstone",
+							"minecraft:redstone_lamp",
+							"minecraft:sandstone",
+							"minecraft:smooth_stone_slab",
+							"minecraft:spruce_log",
+							"minecraft:spruce_planks",
+							"minecraft:stick",
+							"minecraft:stone",
+							"minecraft:stone_bricks",
+							"minecraft:tnt",
+							"minecraft:water_bucket",
+							"minecraft:white_wool"
+						]
+					}
+				]
+			}
+		},
+		"1": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"predicates": {
+							"minecraft:custom_data": {
+								"iyc": {
+									"emerald_helmet": true
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"2": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"predicates": {
+							"minecraft:custom_data": {
+								"iyc": {
+									"emerald_chestplate": true
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"3": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"predicates": {
+							"minecraft:custom_data": {
+								"iyc": {
+									"emerald_leggings": true
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"4": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"predicates": {
+							"minecraft:custom_data": {
+								"iyc": {
+									"emerald_boots": true
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"5": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"predicates": {
+							"minecraft:custom_data": {
+								"iyc": {
+									"emerald_sword": true
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"6": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"predicates": {
+							"minecraft:custom_data": {
+								"iyc": {
+									"emerald_pickaxe": true
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"7": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"predicates": {
+							"minecraft:custom_data": {
+								"iyc": {
+									"emerald_axe": true
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"8": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"predicates": {
+							"minecraft:custom_data": {
+								"iyc": {
+									"emerald_shovel": true
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"9": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"predicates": {
+							"minecraft:custom_data": {
+								"iyc": {
+									"emerald_hoe": true
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"10": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"predicates": {
+							"minecraft:custom_data": {
+								"iyc": {
+									"obsidian_ingot": true
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"11": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"predicates": {
+							"minecraft:custom_data": {
+								"iyc": {
+									"stone_stick": true
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"12": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"predicates": {
+							"minecraft:custom_data": {
+								"iyc": {
+									"beer_mug": true
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"13": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"predicates": {
+							"minecraft:custom_data": {
+								"iyc": {
+									"can": true
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"14": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"predicates": {
+							"minecraft:custom_data": {
+								"iyc": {
+									"empty_glass": true
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"15": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"predicates": {
+							"minecraft:custom_data": {
+								"iyc": {
+									"hot_chocolate": true
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"16": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"predicates": {
+							"minecraft:custom_data": {
+								"iyc": {
+									"toast": true
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"17": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"predicates": {
+							"minecraft:custom_data": {
+								"iyc": {
+									"nutella": true
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"18": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"predicates": {
+							"minecraft:custom_data": {
+								"iyc": {
+									"helice_hat": true
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"19": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"predicates": {
+							"minecraft:custom_data": {
+								"iyc": {
+									"chainmail": true
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"20": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"predicates": {
+							"minecraft:custom_data": {
+								"iyc": {
+									"reversed_oak_planks": true
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"21": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"predicates": {
+							"minecraft:custom_data": {
+								"iyc": {
+									"reversed_spruce_planks": true
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"22": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"predicates": {
+							"minecraft:custom_data": {
+								"iyc": {
+									"reversed_birch_planks": true
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"23": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"predicates": {
+							"minecraft:custom_data": {
+								"iyc": {
+									"reversed_jungle_planks": true
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"24": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"predicates": {
+							"minecraft:custom_data": {
+								"iyc": {
+									"reversed_acacia_planks": true
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"25": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"predicates": {
+							"minecraft:custom_data": {
+								"iyc": {
+									"reversed_dark_oak_planks": true
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"26": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"predicates": {
+							"minecraft:custom_data": {
+								"iyc": {
+									"reversed_cherry_planks": true
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"27": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"predicates": {
+							"minecraft:custom_data": {
+								"iyc": {
+									"step_block": true
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"28": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"predicates": {
+							"minecraft:custom_data": {
+								"iyc": {
+									"clear_glass": true
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"29": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"predicates": {
+							"minecraft:custom_data": {
+								"iyc": {
+									"log_stairs": true
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"30": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"predicates": {
+							"minecraft:custom_data": {
+								"iyc": {
+									"glowstone_stairs": true
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"31": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"predicates": {
+							"minecraft:custom_data": {
+								"iyc": {
+									"iron_stairs": true
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"32": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"predicates": {
+							"minecraft:custom_data": {
+								"iyc": {
+									"step_stairs": true
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"33": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"predicates": {
+							"minecraft:custom_data": {
+								"iyc": {
+									"glass_stairs": true
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"34": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"predicates": {
+							"minecraft:custom_data": {
+								"iyc": {
+									"glass_slab": true
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"35": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"predicates": {
+							"minecraft:custom_data": {
+								"iyc": {
+									"stone_slopes": true
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"36": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"predicates": {
+							"minecraft:custom_data": {
+								"iyc": {
+									"sandstone_slopes": true
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"37": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"predicates": {
+							"minecraft:custom_data": {
+								"iyc": {
+									"glowstone_slopes": true
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"38": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"predicates": {
+							"minecraft:custom_data": {
+								"iyc": {
+									"oak_planks_slopes": true
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"39": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"predicates": {
+							"minecraft:custom_data": {
+								"iyc": {
+									"spruce_planks_slopes": true
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"40": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"predicates": {
+							"minecraft:custom_data": {
+								"iyc": {
+									"birch_planks_slopes": true
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"41": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"predicates": {
+							"minecraft:custom_data": {
+								"iyc": {
+									"jungle_planks_slopes": true
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"42": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"predicates": {
+							"minecraft:custom_data": {
+								"iyc": {
+									"oak_log_slopes": true
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"43": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"predicates": {
+							"minecraft:custom_data": {
+								"iyc": {
+									"spruce_log_slopes": true
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"44": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"predicates": {
+							"minecraft:custom_data": {
+								"iyc": {
+									"birch_log_slopes": true
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"45": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"predicates": {
+							"minecraft:custom_data": {
+								"iyc": {
+									"jungle_log_slopes": true
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"46": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"predicates": {
+							"minecraft:custom_data": {
+								"iyc": {
+									"glass_slopes": true
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"47": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"predicates": {
+							"minecraft:custom_data": {
+								"iyc": {
+									"netherrack_slab": true
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"48": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"predicates": {
+							"minecraft:custom_data": {
+								"iyc": {
+									"obsidian_slab": true
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"49": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"predicates": {
+							"minecraft:custom_data": {
+								"iyc": {
+									"oak_log_slab": true
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"50": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"predicates": {
+							"minecraft:custom_data": {
+								"iyc": {
+									"glowstone_slab": true
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"51": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"predicates": {
+							"minecraft:custom_data": {
+								"iyc": {
+									"glowstone_pressure_plate": true
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"52": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"predicates": {
+							"minecraft:custom_data": {
+								"iyc": {
+									"iron_ladder": true
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"53": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"predicates": {
+							"minecraft:custom_data": {
+								"iyc": {
+									"oak_log_wall": true
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"54": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"predicates": {
+							"minecraft:custom_data": {
+								"iyc": {
+									"stone_wall": true
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"55": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"predicates": {
+							"minecraft:custom_data": {
+								"iyc": {
+									"oak_plank_wall": true
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"56": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"predicates": {
+							"minecraft:custom_data": {
+								"iyc": {
+									"glowstone_wall": true
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"57": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"predicates": {
+							"minecraft:custom_data": {
+								"iyc": {
+									"glowstone_fence": true
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"58": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"predicates": {
+							"minecraft:custom_data": {
+								"iyc": {
+									"log_fence": true
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"59": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"predicates": {
+							"minecraft:custom_data": {
+								"iyc": {
+									"stone_fence": true
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"60": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"predicates": {
+							"minecraft:custom_data": {
+								"iyc": {
+									"white_iron_fence": true
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"61": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"predicates": {
+							"minecraft:custom_data": {
+								"iyc": {
+									"oak_wood_lantern": true
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"62": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"predicates": {
+							"minecraft:custom_data": {
+								"iyc": {
+									"spruce_wood_lantern": true
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"63": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"predicates": {
+							"minecraft:custom_data": {
+								"iyc": {
+									"birch_wood_lantern": true
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"64": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"predicates": {
+							"minecraft:custom_data": {
+								"iyc": {
+									"jungle_wood_lantern": true
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"65": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"predicates": {
+							"minecraft:custom_data": {
+								"iyc": {
+									"iron_lantern": true
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"66": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"predicates": {
+							"minecraft:custom_data": {
+								"iyc": {
+									"red_light": true
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"67": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"predicates": {
+							"minecraft:custom_data": {
+								"iyc": {
+									"transparent_light_block": true
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"68": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"predicates": {
+							"minecraft:custom_data": {
+								"iyc": {
+									"white_rod": true
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"69": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"predicates": {
+							"minecraft:custom_data": {
+								"iyc": {
+									"oak_table": true
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"70": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"predicates": {
+							"minecraft:custom_data": {
+								"iyc": {
+									"birch_table": true
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"71": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"predicates": {
+							"minecraft:custom_data": {
+								"iyc": {
+									"cobblestone_table": true
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"72": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"predicates": {
+							"minecraft:custom_data": {
+								"iyc": {
+									"stone_table": true
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"73": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"predicates": {
+							"minecraft:custom_data": {
+								"iyc": {
+									"oak_little_table": true
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"74": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"predicates": {
+							"minecraft:custom_data": {
+								"iyc": {
+									"birch_little_table": true
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"75": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"predicates": {
+							"minecraft:custom_data": {
+								"iyc": {
+									"cobblestone_little_table": true
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"76": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"predicates": {
+							"minecraft:custom_data": {
+								"iyc": {
+									"stone_little_table": true
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"77": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"predicates": {
+							"minecraft:custom_data": {
+								"iyc": {
+									"oak_stool": true
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"78": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"predicates": {
+							"minecraft:custom_data": {
+								"iyc": {
+									"birch_stool": true
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"79": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"predicates": {
+							"minecraft:custom_data": {
+								"iyc": {
+									"cobblestone_stool": true
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"80": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"predicates": {
+							"minecraft:custom_data": {
+								"iyc": {
+									"stone_stool": true
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"81": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"predicates": {
+							"minecraft:custom_data": {
+								"iyc": {
+									"oak_high_stool": true
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"82": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"predicates": {
+							"minecraft:custom_data": {
+								"iyc": {
+									"birch_high_stool": true
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"83": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"predicates": {
+							"minecraft:custom_data": {
+								"iyc": {
+									"cobblestone_high_stool": true
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"84": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"predicates": {
+							"minecraft:custom_data": {
+								"iyc": {
+									"stone_high_stool": true
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"85": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"predicates": {
+							"minecraft:custom_data": {
+								"iyc": {
+									"oak_bench": true
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"86": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"predicates": {
+							"minecraft:custom_data": {
+								"iyc": {
+									"birch_bench": true
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"87": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"predicates": {
+							"minecraft:custom_data": {
+								"iyc": {
+									"cobblestone_bench": true
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"88": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"predicates": {
+							"minecraft:custom_data": {
+								"iyc": {
+									"stone_bench": true
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"89": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"predicates": {
+							"minecraft:custom_data": {
+								"iyc": {
+									"oak_chair": true
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"90": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"predicates": {
+							"minecraft:custom_data": {
+								"iyc": {
+									"birch_chair": true
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"91": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"predicates": {
+							"minecraft:custom_data": {
+								"iyc": {
+									"cobblestone_chair": true
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"92": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"predicates": {
+							"minecraft:custom_data": {
+								"iyc": {
+									"stone_chair": true
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"93": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"predicates": {
+							"minecraft:custom_data": {
+								"iyc": {
+									"oak_shelf": true
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"94": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"predicates": {
+							"minecraft:custom_data": {
+								"iyc": {
+									"oak_barrel": true
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"95": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"predicates": {
+							"minecraft:custom_data": {
+								"iyc": {
+									"flatware": true
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"96": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"predicates": {
+							"minecraft:custom_data": {
+								"iyc": {
+									"nuclear_bomb": true
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"97": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"predicates": {
+							"minecraft:custom_data": {
+								"iyc": {
+									"cobblestone_campfire": true
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"98": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"predicates": {
+							"minecraft:custom_data": {
+								"iyc": {
+									"brick_campfire": true
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"99": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"predicates": {
+							"minecraft:custom_data": {
+								"iyc": {
+									"stonebrick_campfire": true
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"100": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"predicates": {
+							"minecraft:custom_data": {
+								"iyc": {
+									"sandstone_campfire": true
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"101": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"predicates": {
+							"minecraft:custom_data": {
+								"iyc": {
+									"white_cloud": true
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"102": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"predicates": {
+							"minecraft:custom_data": {
+								"iyc": {
+									"blue_block_ctf": true
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"103": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"predicates": {
+							"minecraft:custom_data": {
+								"iyc": {
+									"red_block_ctf": true
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"104": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"predicates": {
+							"minecraft:custom_data": {
+								"iyc": {
+									"iron_furnace": true
+								}
+							}
+						}
+					}
+				]
+			}
 		}
 	},
+	"requirements": [
+		[
+			"0",
+			"1",
+			"2",
+			"3",
+			"4",
+			"5",
+			"6",
+			"7",
+			"8",
+			"9",
+			"10",
+			"11",
+			"12",
+			"13",
+			"14",
+			"15",
+			"16",
+			"17",
+			"18",
+			"19",
+			"20",
+			"21",
+			"22",
+			"23",
+			"24",
+			"25",
+			"26",
+			"27",
+			"28",
+			"29",
+			"30",
+			"31",
+			"32",
+			"33",
+			"34",
+			"35",
+			"36",
+			"37",
+			"38",
+			"39",
+			"40",
+			"41",
+			"42",
+			"43",
+			"44",
+			"45",
+			"46",
+			"47",
+			"48",
+			"49",
+			"50",
+			"51",
+			"52",
+			"53",
+			"54",
+			"55",
+			"56",
+			"57",
+			"58",
+			"59",
+			"60",
+			"61",
+			"62",
+			"63",
+			"64",
+			"65",
+			"66",
+			"67",
+			"68",
+			"69",
+			"70",
+			"71",
+			"72",
+			"73",
+			"74",
+			"75",
+			"76",
+			"77",
+			"78",
+			"79",
+			"80",
+			"81",
+			"82",
+			"83",
+			"84",
+			"85",
+			"86",
+			"87",
+			"88",
+			"89",
+			"90",
+			"91",
+			"92",
+			"93",
+			"94",
+			"95",
+			"96",
+			"97",
+			"98",
+			"99",
+			"100",
+			"101",
+			"102",
+			"103",
+			"104"
+		]
+	],
 	"rewards": {
 		"function": "iyc:advancements/unlock_recipes"
 	}

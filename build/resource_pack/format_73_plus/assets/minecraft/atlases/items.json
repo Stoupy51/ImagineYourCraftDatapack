@@ -1,5 +1,0 @@
-{
-	"sources": [
-		{"type": "minecraft:single","resource": "minecraft:block/farmland","sprite": "iyc:atlas/farmland"}
-	]
-}

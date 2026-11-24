@@ -1946,7 +1946,7 @@
 		"base_item": "minecraft:recovery_compass",
 		"manual_category": "material",
 		"recipes": [
-			{"type": "crafting_shaped","result_count": 4,"category": "misc","shape": ["  #"," # ","#  "],"ingredients": {"#": {"item": "minecraft:stone"}}}
+			{"type": "crafting_shaped","result_count": 4,"category": "misc","group": "stone_stick","shape": ["  #"," # ","#  "],"ingredients": {"#": {"item": "minecraft:stone"}}}
 		],
 		"components": {
 			"custom_data": {"smithed": {"dict": {"stick": {"stone": true}},"id": "iyc:stone_stick","origin": "iyc","ignore": {"functionality": true,"crafting": true}},"iyc": {"stone_stick": true}},

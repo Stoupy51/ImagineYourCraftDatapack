@@ -2,7 +2,7 @@
 	"parent": "iyc:block/iron_fence_gate_closed",
 	"elements": [
 		{
-			"from": [6.998,4.989,-0.0020000000000000018],
+			"from": [6.998,4.989,-0.002],
 			"to": [9.002,16.011,2.002],
 			"faces": {"down": {"uv": [7.0,14.0,9.0,16.0],"texture": "#texture"},"up": {"uv": [7.0,0.0,9.0,2.0],"texture": "#texture"},"east": {"uv": [14.0,0.0,16.0,11.0],"texture": "#texture"},"west": {"uv": [0.0,0.0,2.0,11.0],"texture": "#texture"},"north": {"uv": [7.0,0.0,9.0,11.0],"texture": "#texture","cullface": "west"},"south": {"uv": [7.0,0.0,9.0,11.0],"texture": "#texture"}}
 		},

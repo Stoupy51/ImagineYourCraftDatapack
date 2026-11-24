@@ -2,22 +2,22 @@
 	"parent": "iyc:block/stone_wall_gate_closed",
 	"elements": [
 		{
-			"from": [6.998,1.9889999999999999,-0.0020000000000000018],
+			"from": [6.998,1.989,-0.002],
 			"to": [9.002,13.011,2.002],
 			"faces": {"down": {"uv": [7.0,14.0,9.0,16.0],"texture": "#texture"},"up": {"uv": [7.0,0.0,9.0,2.0],"texture": "#texture"},"east": {"uv": [14.0,3.0,16.0,14.0],"texture": "#texture"},"west": {"uv": [0.0,3.0,2.0,14.0],"texture": "#texture"},"north": {"uv": [7.0,3.0,9.0,14.0],"texture": "#texture","cullface": "west"},"south": {"uv": [7.0,3.0,9.0,14.0],"texture": "#texture"}}
 		},
 		{
-			"from": [6.998,1.9889999999999999,13.998],
+			"from": [6.998,1.989,13.998],
 			"to": [9.002,13.011,16.002],
 			"faces": {"down": {"uv": [7.0,0.0,9.0,2.0],"texture": "#texture"},"up": {"uv": [7.0,14.0,9.0,16.0],"texture": "#texture"},"east": {"uv": [0.0,3.0,2.0,14.0],"texture": "#texture"},"west": {"uv": [14.0,3.0,16.0,14.0],"texture": "#texture"},"north": {"uv": [7.0,3.0,9.0,14.0],"texture": "#texture"},"south": {"uv": [7.0,3.0,9.0,14.0],"texture": "#texture","cullface": "east"}}
 		},
 		{
-			"from": [6.998,2.9909999999999997,5.998],
+			"from": [6.998,2.991,5.998],
 			"to": [9.002,12.009,8.002],
 			"faces": {"down": {"uv": [7.0,8.0,9.0,10.0],"texture": "#texture"},"up": {"uv": [7.0,6.0,9.0,8.0],"texture": "#texture"},"east": {"uv": [8.0,4.0,10.0,13.0],"texture": "#texture"},"west": {"uv": [6.0,4.0,8.0,13.0],"texture": "#texture"},"north": {"uv": [7.0,4.0,9.0,13.0],"texture": "#texture"},"south": {"uv": [7.0,4.0,9.0,13.0],"texture": "#texture"}}
 		},
 		{
-			"from": [6.998,2.9909999999999997,7.998],
+			"from": [6.998,2.991,7.998],
 			"to": [9.002,12.009,10.002],
 			"faces": {"down": {"uv": [7.0,6.0,9.0,8.0],"texture": "#texture"},"up": {"uv": [7.0,8.0,9.0,10.0],"texture": "#texture"},"east": {"uv": [6.0,4.0,8.0,13.0],"texture": "#texture"},"west": {"uv": [8.0,4.0,10.0,13.0],"texture": "#texture"},"north": {"uv": [7.0,4.0,9.0,13.0],"texture": "#texture"},"south": {"uv": [7.0,4.0,9.0,13.0],"texture": "#texture"}}
 		},

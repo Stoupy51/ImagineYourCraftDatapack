@@ -5,14 +5,14 @@
 	},
 	"elements": [
 		{
-			"from": [0.7855999999999996,-0.016000000000000014,8.0],
+			"from": [0.7856,-0.016,8.0],
 			"to": [15.2144,16.016,8.0],
 			"rotation": {"origin": [8,8,8],"axis": "y","angle": 45,"rescale": true},
 			"shade": false,
 			"faces": {"north": {"uv": [0,0,16,16],"texture": "#cross"},"south": {"uv": [0,0,16,16],"texture": "#cross"}}
 		},
 		{
-			"from": [8.0,-0.016000000000000014,0.7855999999999996],
+			"from": [8.0,-0.016,0.7856],
 			"to": [8.0,16.016,15.2144],
 			"rotation": {"origin": [8,8,8],"axis": "y","angle": 45,"rescale": true},
 			"shade": false,
